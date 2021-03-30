@@ -12,7 +12,8 @@ CITATIONS <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/dat
 PFT <-  read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_pft.csv", stringsAsFactors = F)
 SITES  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_sites.csv", stringsAsFactors = F)
 PLOTS  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_plots.csv", stringsAsFactors = F)
-# VARIABLES <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_variables.csv", stringsAsFactors = F)
+HISTORY  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_history.csv", stringsAsFactors = F)
+VARIABLES <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_variables.csv", stringsAsFactors = F)
 
 V_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC_variables_mapping.csv")
 ForC_EFDB_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv")
@@ -33,12 +34,12 @@ generate_subfields <- function(field, x = ForC_simplified, y = V_mapping_subfiel
   return(eval(parse(text =  to_eval)))
 }
 
-unique(generate_subfields("Abatement/Control technologies"))
-unique(generate_subfields("Parameters/Conditions")[341])
-
-
-
-paste(ifelse(my_is.na(x$dominant.veg), '', paste0('vegetation type: ', x$dominant.veg)), ifelse(my_is.na(x$scientific.name), '', paste0('species: ', x$scientific.name)), ifelse(my_is.na(x$veg.notes), '', paste0('species/forest composition: ', x$veg.notes)), ifelse(my_is.na(x$stand.age), '', paste0('stand age: ', x$stand.age)), ifelse(my_is.na(x$min.dbh), '', paste0('biomass attributes: ', x$min.dbh)), ifelse(my_is.na(x$include.recruitment), '', paste0('recruitment included: ', x$include.recruitment)), ifelse(my_is.na(x$max.diameter), '', paste0('maximum diameter of tree part: ', x$max.diameter)), ifelse(my_is.na(x$max.diameter_root), '', paste0('maximum root diameter: ', x$max.diameter_root)), ifelse(my_is.na(x$max.height), '', paste0('maximum height: ', x$max.height)), ifelse(my_is.na(x$min.height), '', paste0('minimum height: ', x$min.height)), ifelse(my_is.na(x$min.diameter), '', paste0('minimum diameter of tree part: ', x$min.diameter)), ifelse(my_is.na(x$min.diameter_liana), '', paste0('minimum diameter of lianas censused: ', x$min.diameter_liana)), ifelse(my_is.na(x$min.diameter_root), '', paste0('minimum root diameter: ', x$min.diameter_root)), ifelse(my_is.na(x$stem.level), '', paste0('census level: ', x$stem.level)), ifelse(my_is.na(x$depth), '', paste0('depth of measurement: ', x$depth)), ifelse(my_is.na(x$soil.texture), '', paste0('soil texture: ', x$soil.texture)), ifelse(my_is.na(x$soil.classification), '', paste0('soil type: ', x$soil.classification)), ifelse(my_is.na(x$soil.notes), '', paste0('soil notes: ', x$soil.notes)), sep = "; ")[341]
+# unique(generate_subfields("Abatement/Control technologies"))
+# unique(generate_subfields("Parameters/Conditions")[341])
+# 
+# 
+# 
+# paste(ifelse(my_is.na(x$dominant.veg), '', paste0('vegetation type: ', x$dominant.veg)), ifelse(my_is.na(x$scientific.name), '', paste0('species: ', x$scientific.name)), ifelse(my_is.na(x$veg.notes), '', paste0('species/forest composition: ', x$veg.notes)), ifelse(my_is.na(x$stand.age), '', paste0('stand age: ', x$stand.age)), ifelse(my_is.na(x$min.dbh), '', paste0('biomass attributes: ', x$min.dbh)), ifelse(my_is.na(x$include.recruitment), '', paste0('recruitment included: ', x$include.recruitment)), ifelse(my_is.na(x$max.diameter), '', paste0('maximum diameter of tree part: ', x$max.diameter)), ifelse(my_is.na(x$max.diameter_root), '', paste0('maximum root diameter: ', x$max.diameter_root)), ifelse(my_is.na(x$max.height), '', paste0('maximum height: ', x$max.height)), ifelse(my_is.na(x$min.height), '', paste0('minimum height: ', x$min.height)), ifelse(my_is.na(x$min.diameter), '', paste0('minimum diameter of tree part: ', x$min.diameter)), ifelse(my_is.na(x$min.diameter_liana), '', paste0('minimum diameter of lianas censused: ', x$min.diameter_liana)), ifelse(my_is.na(x$min.diameter_root), '', paste0('minimum root diameter: ', x$min.diameter_root)), ifelse(my_is.na(x$stem.level), '', paste0('census level: ', x$stem.level)), ifelse(my_is.na(x$depth), '', paste0('depth of measurement: ', x$depth)), ifelse(my_is.na(x$soil.texture), '', paste0('soil texture: ', x$soil.texture)), ifelse(my_is.na(x$soil.classification), '', paste0('soil type: ', x$soil.classification)), ifelse(my_is.na(x$soil.notes), '', paste0('soil notes: ', x$soil.notes)), sep = "; ")[341]
 
 # subset records KEEP RECORDS WE WANT TO SEND OVER ####
 
@@ -64,7 +65,12 @@ ForC_simplified$variable.name <-  MEASUREMENTS$variable.name[m_meas]
 ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$provide.to.IPCC %in% 1], ]
 
 # Generate/modify fields we need ####
-## Define IPCC land-use category and sub-category  *** TOO finish CODing*** ####
+
+### make sure we have dominant.life.form same as MEASUREMENTS (in case it was updates and not ForC_simplified)
+m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
+any(is.na(m_meas)) # should be FALSE
+ForC_simplified$dominant.life.form <- MEASUREMENTS$dominant.life.form[m_meas]
+# ForC_simplified$distmrs.type <- MEASUREMENTS$[m_meas]
 
 ### Define current_LU
 ForC_simplified$current_LU <- ""
@@ -94,7 +100,8 @@ ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cultivation", "Shifting cultivation", "Tillage")] <- "Cropland"
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Agriculture_generic")] <- "Cropland or Grassland"
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")] <- ForC_simplified$current_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")]
-ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cut", "Harvest")] <- "Forest"
+ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cut", "Harvest")] <- ForC_simplified$current_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cut", "Harvest")]
+
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Burned", "StandClearing") | my_is.na( ForC_simplified$distmrs.type)] <- ""
 
 unique(ForC_simplified$past_LU)
@@ -103,33 +110,47 @@ unique(ForC_simplified[ForC_simplified$past_LU %in% "", c("distmrs.type", "stand
 
 ## put past and current together to make up IPCC land-use sub-category
 
-IPCC_LU_cat_mapping <- unique(ForC_simplified[, c( "past_LU", "current_LU")])
-IPCC_LU_cat_mapping[, c("IPCC_1996_CODE", "IPCC_1996_Name")] <- matrix(c("5-FL-1", "Forest Land Remaining Forest Land",
-                                                                  "5-FL", "Forest Land",
-                                                                  "5-FL-2", "Land Converted to Forest Land",
-                                                                  "5-FL-2", "Land Converted to Forest Land",
-                                                                  "5-FL-1", "Forest Land Remaining Forest Land",
-                                                                  "5-FL", "Forest Land",
-                                                                  "5-FL-1", "Forest Land Remaining Forest Land",
-                                                                  "5-FL-2", " Land Converted to Forest Land"), ncol = 2, byrow = T)
-                                                                  
-IPCC_LU_cat_mapping[, c("IPCC_2006_CODE", "IPCC_2006_Name")] <- matrix(c("3.B.1.a", "Forest land Remaining Forest land",
-                                                                         "3.B.1", "Forest land",
-                                                                         "3.B.1.b.i", "Cropland converted to Forest Land",
-                                                                         "3.B.1.b.ii", "Grassland converted to Forest Land",
-                                                                         "3.B.1.a", "Forest land Remaining Forest land",
-                                                                         "3.B.1", "Forest land",
-                                                                         "3.B.1.a", "Forest land Remaining Forest land",
-                                                                         "3.B.1.b", "Land Converted to Forest land"), ncol = 2, byrow = T)
+# IPCC_LU_cat_mapping <- unique(ForC_simplified[, c( "past_LU", "current_LU")])
+IPCC_LU_cat_mapping <- read.csv("doc/ForC-EFDB_mapping/IPCC_LandUse_mapping.csv")
 
-m_LUcat <- match(paste(ForC_simplified$past_LU, ForC_simplified$currentLU), paste(IPCC_LU_cat_mapping$past_LU, IPCC_LU_cat_mapping$current_LU))
+m_LUcat <- match(paste(ForC_simplified$past_LU, ForC_simplified$current_LU), paste(IPCC_LU_cat_mapping$past_LU, IPCC_LU_cat_mapping$current_LU))
 any(is.na(m_LUcat)) # should be FALSE
+
+paste(ForC_simplified$past_LU, ForC_simplified$current_LU)[is.na(m_LUcat)]
 
 ForC_simplified$IPCC_1996_CODE <- IPCC_LU_cat_mapping$IPCC_1996_CODE[m_LUcat]
 ForC_simplified$IPCC_2006_CODE <- IPCC_LU_cat_mapping$IPCC_2006_CODE[m_LUcat]
 
 
 
+
+## create hist.type ####
+
+### paste dite and plot for matching ####
+HISTORY$s_p <- paste(HISTORY$sites.sitename, HISTORY$plot.name)
+
+## keep only management history
+HISTORY_Management <- HISTORY[HISTORY$hist.cat %in% "Management" & !HISTORY$hist.type %in% "Other", ]
+any(my_is.na(HISTORY_Management$hist.type)) # should be FALSE
+
+### concatenate hist.type 
+
+HISTORY_Management <- tapply(HISTORY_Management$hist.type, HISTORY_Management$s_p, paste, collapse = ", ")
+head(HISTORY_Management)
+
+HISTORY_Management["Alkkia Scots pine plantation pine plantation on organic-soil cropland"] # should be "Drained, Soil disturbance, Fertilization_K, Fertilization_P, Fertilization_P"
+
+### add note about findin more details
+HISTORY_Management[] <- paste(HISTORY_Management, sep = ", see ForC record or original publication for more detailed management history")
+
+### add to ForC_simplified
+m_hist_mngmt <- match(paste(ForC_simplified$sites.sitename, ForC_simplified$plot.name), names(HISTORY_Management))
+any(is.na(m_hist_mngmt)) # should be TRUE for sites that don't have any management
+any(!is.na(m_hist_mngmt)) # should be TRUE
+
+ForC_simplified$hist.type <- ifelse(is.na(m_hist_mngmt), "", HISTORY_Management[m_hist_mngmt])
+
+unique(ForC_simplified$hist.type)
 
 ## convert ForC_simplified$dominant.veg to desctiption ####
 setdiff(ForC_simplified$dominant.veg, PFT$pftcode) # should be only "NAC
@@ -273,10 +294,10 @@ ForC_simplified$regrowth.type <- ifelse(my_is.na(ForC_simplified$regrowth.type),
 ForC_simplified$regrowth.year<- ifelse(my_is.na(ForC_simplified$regrowth.year), "", ForC_simplified$regrowth.year)
 
 ## extended.description ####
-m_vmap <- match(ForC_simplified$variable.name, V_mapping$variable.name)
+m_vmap <- match(ForC_simplified$variable.name, VARIABLES$variable.name)
 any(is.na(m_vmap)) # should be FALSE
 
-ForC_simplified$extended.description <- V_mapping$extended.description[m_vmap]
+ForC_simplified$extended.description <- VARIABLES$extended.description[m_vmap]
 
 ## modify min.dbh ####
 ForC_simplified$min.dbh <- ifelse(my_is.na(ForC_simplified$min.dbh), "", paste("dbh trees >=", ForC_simplified$min.dbh, "cm"))
@@ -375,11 +396,37 @@ ForC_simplified$plot.name <- paste0(ForC_simplified$plot.name, " (ID#: ", PLOTS$
 
 ### plot.area
 ForC_simplified$plot.area <- ifelse(my_is.na(ForC_simplified$plot.area), "", paste(ForC_simplified$plot.area, "ha"))
-  
+unique(ForC_simplified$plot.area)  
   
 ## Periodicity of Measurement ####
 ForC_simplified$Periodicity <- ""
 # only for measured: for stocks: one-time. For some fluxes (e.g., ANPP_woody_stem, woody mortality ) or increments (delta.AGB), this could be calculated as end.date-start.date, and for others (e.g., NEE), we can infer based on measurement technique.
+
+
+## Date of Measurement ####
+m_var <- match(ForC_simplified$variable.name, VARIABLES$variable.name)
+any(is.na(m_var)) # should be FALSE
+
+ForC_simplified$variable.type <- VARIABLES$variable.type[m_var]
+
+ForC_simplified$Date_IPCC <- ""
+
+idx_stock <- ForC_simplified$variable.type %in% "stock"
+idx_flux <-ForC_simplified$variable.type %in% "flux"
+idx_date_NA <- my_is.na(ForC_simplified$date)
+idx_start_end_date_NA <- my_is.na(ForC_simplified$start.date) | my_is.na(ForC_simplified$start.date)
+ForC_simplified$mean_date <- (as.numeric(ForC_simplified$start.date) +  as.numeric(ForC_simplified$end.date))/2
+ForC_simplified$start_end_date <- paste(ForC_simplified$end.date,   ForC_simplified$start.date, sep = "-")
+
+# for stocks `date`, or average of start.date and end.date
+  
+ForC_simplified$Date_IPCC[idx_stock & !idx_date_NA] <- as.numeric(ForC_simplified$date[idx_stock & !idx_date_NA])
+ForC_simplified$Date_IPCC[idx_stock & idx_date_NA & !idx_start_end_date_NA] <- ForC_simplified$mean_date[idx_stock & idx_date_NA & !idx_start_end_date_NA]
+
+# for fluxes: `start-date - end.date`, or `date` if these aren't available
+ForC_simplified$Date_IPCC[idx_flux & !idx_start_end_date_NA] <- ForC_simplified$start_end_date[idx_flux & !idx_start_end_date_NA]
+ForC_simplified$Date_IPCC[idx_flux & idx_start_end_date_NA & !idx_date_NA] <- as.numeric(ForC_simplified$date[idx_flux & idx_start_end_date_NA & !idx_date_NA])
+
 
 
 ## Date calculated ####
@@ -389,20 +436,18 @@ ForC_simplified$Date_calculated <- ""
 
 # EFDB ####
 m_vmap <- match(ForC_simplified$variable.name, V_mapping$variable.name)
-# m_sites <- match(ForC_simplified$sites.sitename, SITES$sites.sitename)
 m_citations <-  match(ForC_simplified$citation.ID, CITATIONS$citation.ID)
 any(is.na(m_vmap)) # should be FALSE
-# any(is.na(m_sites)) # shoulde be FALSE
 any(is.na(m_citations)) # shoulde be FALSE
 
 EFDB <- data.frame("EF ID" = "",
                    "1996 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_1996_CODE,
                    "2006 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_2006_CODE,
-                   "Gases (ID1,ID2,...)" = "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)",
-                   "Fuel 1996 (ID)" = "(Unspecified) (000)",
-                   "Fuel 2006 (ID)" = "(Unspecified) (000)",
+                   "Gases (ID1,ID2,...)" = ifelse(grepl(" C/", V_mapping$IPCC.Unit_.ID.[m_vmap]), "CARBON DIOXIDE (006)", "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)"),
+                   "Fuel 1996 (ID)" = "",
+                   "Fuel 2006 (ID)" = "",
                    "C pool" = V_mapping$IPCC.C_pool[m_vmap],
-                   "Description" =  V_mapping$Description[m_vmap],
+                   "Description" =  V_mapping$description[m_vmap],
                    "Technologies/Practices" = "", #generate_subfields("Technologies/Practices"),
                    "Abatement/Control technologies" =  generate_subfields( "Abatement/Control technologies"),
                    "Parameters/Conditions" = generate_subfields("Parameters/Conditions"),
@@ -436,20 +481,26 @@ EFDB <- data.frame("EF ID" = "",
                    "Data Provider Country (CODE)" = "United States of America (USA)",
                    "Data Provider Contact (email address)" = ForC_simplified$Data_provider_contact,
                    "Date Submitted to EFDB by Data Provider (yyyy-mm-dd)" = as.Date(Sys.time()),
-                   "Date Posted to EFDB by TSU" = ""
+                   "Date Posted to EFDB by TSU" = "",
+                   measurement.ID = ForC_simplified$measurement.ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
 )
 
 
-# check examples ####
+# save one csv file per citation.ID into data/1-to-review
 
 
+for(c_id in unique(ForC_simplified$citation.ID )) {
+  
+  c_id <-  "Meakem_2017_rots"
+  idx <- ForC_simplified$citation.ID %in% c_id
+  
+  to_export <- EFDB[idx,]
+  
+  write.csv(to_export, file = paste0("data/1-to-review/", c_id, ".csv"), row.names = F, fileEncoding =  "UTF-8")
+  
+}
 
-c_id <-  "Meakem_2017_rots"
-idx <- ForC_simplified$citation.ID %in% c_id
 
-to_export <- EFDB[idx,]
-to_export$X1996.Source.Sink.Categories..CODE1..... <-"5-FL-1"
-to_export$X2006.Source.Sink.Categories..CODE1..... <-"3.B.1.a"
 
 names(to_export) <- gsub("\\.",  " ", names(to_export) )
 to_export <- as.matrix(t(to_export))
