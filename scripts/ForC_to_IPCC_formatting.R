@@ -18,6 +18,7 @@ VARIABLES <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/dat
 V_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC_variables_mapping.csv")
 ForC_EFDB_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv")
 
+trace_of_measurement_IDs <- read.csv("data/3-EFDB-forms-ready/trace_of_measurement_ID_processed.csv")
 
 # create function for sub fields ####
 
@@ -43,7 +44,9 @@ generate_subfields <- function(field, x = ForC_simplified, y = V_mapping_subfiel
 
 # subset records KEEP RECORDS WE WANT TO SEND OVER ####
 
-## records not already sent ***NEED TO CODE!!!*** #####
+## only keep records we have not already processed
+ForC_simplified <- ForC_simplified[!ForC_simplified$measurement.ID %in% trace_of_measurement_IDs$measurement.ID, ]
+
 
 ## records for which we have citation  and language  #####
 CITATIONS <- CITATIONS[!my_is.na(CITATIONS$citation.citation) & !my_is.na(CITATIONS$citation.language), ]
@@ -225,14 +228,14 @@ ForC_simplified$Data_provider[idx_KAT] <- "ForC Database Team (lead: Kristina An
 ForC_simplified$Data_provider[idx_SCP] <- "GROA database (lead: Susan Cook-Patton, The Nature Conservancy), via ForC (lead: Kristina Anderson-Teixeira, Smithsonian Institution)"
 ForC_simplified$Data_provider[idx_BBL] <- "SRDB database (lead: Ben Bond Lamberty, Pacific Northwest National Lab), via ForC (lead: Kristina Anderson-Teixeira, Smithsonian Institution)"
 
-unique(ForC_simplified$ForC.investigator[ForC_simplified$Data_provider == ""]) # missing ones
+unique(ForC_simplified$ForC.investigator[ForC_simplified$Data_provider == ""]) # should be EMTPY
 
 ### Data_provider_contact
 ForC_simplified$Data_provider_contact <- ""
 ForC_simplified$Data_provider_contact[idx_KAT] <- "TeixeiraK@si.edu"
 ForC_simplified$Data_provider_contact[idx_SCP] <-  "susan.cook-patton@TNC.ORG"
-
-unique(ForC_simplified$ForC.investigator[ForC_simplified$Data_provider_contact == ""]) # missing ones
+ForC_simplified$Data_provider_contact[idx_BBL] <- "BondLamberty@pnnl.gov"
+unique(ForC_simplified$ForC.investigator[ForC_simplified$Data_provider_contact == ""]) # should be EMTPY
 
 
 ## modify and import soil info  ####
@@ -429,10 +432,6 @@ ForC_simplified$Date_IPCC[idx_flux & idx_start_end_date_NA & !idx_date_NA] <- as
 
 
 
-## Date calculated ####
-ForC_simplified$Date_calculated <- ""
-# only for measured: for stocks: one-time. For some fluxes (e.g., ANPP_woody_stem, woody mortality ) or increments (delta.AGB), this could be calculated as end.date-start.date, and for others (e.g., NEE), we can infer based on measurement technique.
-
 
 # EFDB ####
 m_vmap <- match(ForC_simplified$variable.name, V_mapping$variable.name)
@@ -483,16 +482,28 @@ EFDB <- data.frame("EF ID" = "",
                    "Date Submitted to EFDB by Data Provider (yyyy-mm-dd)" = as.Date(Sys.time()),
                    "Date Posted to EFDB by TSU" = "",
                    measurement.ID = ForC_simplified$measurement.ID, # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
-                   citation_ID =  ForC_simplified$citation_ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
+                   citation_ID =  ForC_simplified$citation.ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
 )
 
 
 # save one csv file per citation.ID into data/1-to-review
 
 
-for(c_id in unique(ForC_simplified$citation.ID )) {
-  
-  c_id <-  "Meakem_2017_rots"
+for(c_id in   c("Archibald_2009_doiv",
+                "Chave_2008_aepa",
+                "Goulden_1996_eocd",
+                "Keith_2009_mmce",
+                "Keller_2001_beit",
+                "Lin_2012_tvia",
+                "Meakem_2017_rots",
+                "Ngo_2013_csip",
+                "Orihuela-Belmonte_2013_csaa",
+                "Rice_2004_cbav",
+                "Saleska_2003_ciaf",
+                "Toky_1983_ssfs",
+                "Uhl_1984_sand")
+   ) { # unique(ForC_simplified$citation.ID )
+
   idx <- ForC_simplified$citation.ID %in% c_id
   
   to_export <- EFDB[idx,]
