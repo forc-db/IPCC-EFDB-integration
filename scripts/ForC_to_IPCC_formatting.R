@@ -66,33 +66,68 @@ ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$
 # Generate/modify fields we need ####
 ## Define IPCC land-use category and sub-category  *** TOO finish CODing*** ####
 
-### Define IPCC land-use category
-ForC_simplified$currentLU <- ""
-ForC_simplified$currentLU [ForC_simplified$dominant.life.form %in% "Woody"] <- "Forest"
-ForC_simplified$currentLU [ForC_simplified$dominant.life.form %in% "woody+grass"] <- "Forest, Grassland"
-ForC_simplified$currentLU [ForC_simplified$dominant.life.form %in% "grass" & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age > 0] <- "Forest" # ("Land Converted to Forest Land (LF)")'
-ForC_simplified$currentLU [ForC_simplified$dominant.life.form %in% "grass" & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age == 0] <- "Grassland"
-ForC_simplified$currentLU [ForC_simplified$dominant.life.form %in% "crop"] <- "Cropland"
+### Define current_LU
+ForC_simplified$current_LU <- ""
+ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "woody"] <- "Forest"
+ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "woody+grass"] <- "Forest, Grassland"
+ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "grass" & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age > 0] <- "Forest" # ("Land Converted to Forest Land (LF)")'
+ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "grass" & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age == 0] <- "Grassland"
+ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "crop"  & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age == 0] <- "Cropland"
 
 unique(ForC_simplified$dominant.life.form)
-table(ForC_simplified$IPCC_LU_category)
+unique(ForC_simplified$current_LU) # should be no ""
+unique(ForC_simplified[ForC_simplified$current_LU %in% "", c("dominant.life.form", "stand.age", "current_LU")]) # should be empty
 
-### Define IPCC land-use sub-category
+
+### Define past_LU
 ForC_simplified$past_LU <- ""
 
-ForC_simplified$currentLU <- ForC_simplified$IPCC_LU_category 
-# ForC_simplified$IPCC_LU_sUBcategory <- ""
+#### stand.age ≥ 20 or missing value for stand.ag --> past_LU = current_LU
 
-ForC_simplified$past_LU[my_is.na(ForC_simplified$stand.age) | ForC_simplified$stand.age >=20] <- ForC_simplified$currentLU[my_is.na(ForC_simplified$stand.age) | ForC_simplified$stand.age >=20] 
+ForC_simplified$past_LU[my_is.na(ForC_simplified$stand.age) | ForC_simplified$stand.age >=20] <- ForC_simplified$current_LU[my_is.na(ForC_simplified$stand.age) | ForC_simplified$stand.age >=20] 
 
+
+#### stand.age < 20 --> PAST LAND-USE is dependent on distmrs.type
 unique(ForC_simplified$distmrs.type)
 
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% "Grazed"] <- "Grassland"
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cultivation", "Shifting cultivation", "Tillage")] <- "Cropland"
-ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Agriculture_generic")] <- "Land Converted to Forest Land (LF)"
-ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")] <- ForC_simplified$currentLU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")]
+ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Agriculture_generic")] <- "Cropland or Grassland"
+ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")] <- ForC_simplified$current_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")]
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cut", "Harvest")] <- "Forest"
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Burned", "StandClearing") | my_is.na( ForC_simplified$distmrs.type)] <- ""
+
+unique(ForC_simplified$past_LU)
+sum(ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20)]%in%"")
+unique(ForC_simplified[ForC_simplified$past_LU %in% "", c("distmrs.type", "stand.age", "past_LU")]) # should be empty
+
+## put past and current together to make up IPCC land-use sub-category
+
+IPCC_LU_cat_mapping <- unique(ForC_simplified[, c( "past_LU", "current_LU")])
+IPCC_LU_cat_mapping[, c("IPCC_1996_CODE", "IPCC_1996_Name")] <- matrix(c("5-FL-1", "Forest Land Remaining Forest Land",
+                                                                  "5-FL", "Forest Land",
+                                                                  "5-FL-2", "Land Converted to Forest Land",
+                                                                  "5-FL-2", "Land Converted to Forest Land",
+                                                                  "5-FL-1", "Forest Land Remaining Forest Land",
+                                                                  "5-FL", "Forest Land",
+                                                                  "5-FL-1", "Forest Land Remaining Forest Land",
+                                                                  "5-FL-2", " Land Converted to Forest Land"), ncol = 2, byrow = T)
+                                                                  
+IPCC_LU_cat_mapping[, c("IPCC_2006_CODE", "IPCC_2006_Name")] <- matrix(c("3.B.1.a", "Forest land Remaining Forest land",
+                                                                         "3.B.1", "Forest land",
+                                                                         "3.B.1.b.i", "Cropland converted to Forest Land",
+                                                                         "3.B.1.b.ii", "Grassland converted to Forest Land",
+                                                                         "3.B.1.a", "Forest land Remaining Forest land",
+                                                                         "3.B.1", "Forest land",
+                                                                         "3.B.1.a", "Forest land Remaining Forest land",
+                                                                         "3.B.1.b", "Land Converted to Forest land"), ncol = 2, byrow = T)
+
+m_LUcat <- match(paste(ForC_simplified$past_LU, ForC_simplified$currentLU), paste(IPCC_LU_cat_mapping$past_LU, IPCC_LU_cat_mapping$current_LU))
+any(is.na(m_LUcat)) # should be FALSE
+
+ForC_simplified$IPCC_1996_CODE <- IPCC_LU_cat_mapping$IPCC_1996_CODE[m_LUcat]
+ForC_simplified$IPCC_2006_CODE <- IPCC_LU_cat_mapping$IPCC_2006_CODE[m_LUcat]
+
 
 
 
@@ -361,8 +396,8 @@ any(is.na(m_vmap)) # should be FALSE
 any(is.na(m_citations)) # shoulde be FALSE
 
 EFDB <- data.frame("EF ID" = "",
-                   "1996 Source/Sink Categories (CODE1,...)" = "to fill", # to figure out
-                   "2006 Source/Sink Categories (CODE1,...)" = "to fill", # to figure out
+                   "1996 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_1996_CODE,
+                   "2006 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_2006_CODE,
                    "Gases (ID1,ID2,...)" = "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)",
                    "Fuel 1996 (ID)" = "(Unspecified) (000)",
                    "Fuel 2006 (ID)" = "(Unspecified) (000)",
