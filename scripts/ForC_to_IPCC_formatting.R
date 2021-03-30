@@ -14,8 +14,8 @@ SITES  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/F
 PLOTS  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_plots.csv", stringsAsFactors = F)
 # VARIABLES <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_variables.csv", stringsAsFactors = F)
 
-V_mapping <- read.csv("doc/database_mapping/ForC_variables_mapping.csv")
-ForC_EFDB_mapping <- read.csv("doc/database_mapping/ForC-EFDB_mapping.csv")
+V_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC_variables_mapping.csv")
+ForC_EFDB_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv")
 
 
 # create function for sub fields ####
