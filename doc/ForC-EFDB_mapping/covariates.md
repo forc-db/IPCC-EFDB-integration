@@ -1,4 +1,4 @@
-these are the combinations of variable.name and covariates present in ForC. It needs a bit of clean up (see this issue) but once cleaned it can be usefull for  eventual inclusion in a pub.
+these are the combinations of variable.name and covariates present in ForC. It needs a bit of clean up (see [this issue](https://github.com/forc-db/ForC/issues/225)) but once cleaned it can be usefull for  eventual inclusion in a pub.
 
 variable.name|covariate_1|inlcude?|EFDB_sub_entry|Value to assign when ForC has data|mapped|
 --|--|--|--|--|--
