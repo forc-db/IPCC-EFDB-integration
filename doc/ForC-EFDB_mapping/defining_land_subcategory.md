@@ -35,6 +35,9 @@ For the vast majority of records, this will be "Forest Land Remaining Forest Lan
 (C Q1 [here](https://github.com/forc-db/IPCC_database_integration/issues/1#issuecomment-809635979))
 
 ## Assign codes
+
+follow [this document](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/IPCC_LandUse_mapping.csv). 
+
 ### 1996 Source/Sink Categories (CODE1,...)
 From Valentyna: "Regarding " 1996 source/sink categories... ", I would say that it is needed to find the matching category for the selected one from the 2006 IPCC GL to the Revised 1996 GL. I guess the majority of values will fit 5-FL-1 Forest land remaining forest land and or 5-FL-2 Land converted to forest land."
 
