@@ -61,7 +61,7 @@ any(is.na(m_meas)) # should be FALSE
 ForC_simplified$variable.name <-  MEASUREMENTS$variable.name[m_meas]
 
 
-ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$provide.to.IPCC == 1], ]
+ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$provide.to.IPCC %in% 1], ]
 
 # Generate/modify fields we need ####
 ## Define IPCC land-use category and sub-category  *** TOO finish CODing*** ####
