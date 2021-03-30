@@ -476,13 +476,14 @@ EFDB <- data.frame("EF ID" = "",
                    "External Quality Control Performed" = "", # to update?
                    "Date of Measurement" =  "", # to update?
                    "Date Calculated" = "",
-                   "Comments from Data Provider" = gsub("^; ", "", paste0(ForC_simplified$confidence_notes)),
+                   "Comments from Data Provider" = gsub("^; ", "", paste(ForC_simplified$confidence_notes, "Data imported from the Global Forest Carbon database (ForC; https://forc-db.github.io/) : Anderson-Teixeira, K. J., M. M. H. Wang, J. C. McGarvey, V. Herrmann, A. J. Tepley, B. P. Bond-Lamberty, and D. S. LeBauer (2018) ForC: a global database of forest carbon stocks and fluxes. Ecology. DOI: 10.1002/ecy.2229.", sep = "; ")),
                    "Data Provider" = ForC_simplified$Data_provider,
                    "Data Provider Country (CODE)" = "United States of America (USA)",
                    "Data Provider Contact (email address)" = ForC_simplified$Data_provider_contact,
                    "Date Submitted to EFDB by Data Provider (yyyy-mm-dd)" = as.Date(Sys.time()),
                    "Date Posted to EFDB by TSU" = "",
-                   measurement.ID = ForC_simplified$measurement.ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
+                   measurement.ID = ForC_simplified$measurement.ID, # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
+                   citation_ID =  ForC_simplified$citation_ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
 )
 
 
@@ -499,17 +500,4 @@ for(c_id in unique(ForC_simplified$citation.ID )) {
   write.csv(to_export, file = paste0("data/1-to-review/", c_id, ".csv"), row.names = F, fileEncoding =  "UTF-8")
   
 }
-
-
-
-names(to_export) <- gsub("\\.",  " ", names(to_export) )
-to_export <- as.matrix(t(to_export))
-
-write.table(to_export, file = paste0("EFDB_formatted_data/test_", c_id, ".csv") ,  col.names=FALSE , row.names = T, fileEncoding =  "UTF-8", sep = ",")
-
-
-library(XLConnect)
-wb <- XLConnect::loadWorkbook("EFDB_formatted_data/EFDB Bulk Import Meakem_2017_rots.xlsm")
-XLConnect::writeWorksheet(wb,to_export,"Data",startRow  = 1, startCol = 3, header = F, rownames = NULL)
-XLConnect::saveWorkbook(wb)
 
