@@ -290,7 +290,7 @@ ForC_simplified$distmrs.type <- ifelse(my_is.na(ForC_simplified$distmrs.type), "
 idx_no_dist <- ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance") & !my_is.na(ForC_simplified$distmrs.year)
 
 ForC_simplified$distmrs.type[idx_no_dist] <- paste(ForC_simplified$distmrs.type[idx_no_dist], "since", ForC_simplified$distmrs.year[idx_no_dist] )
-ForC_simplified$distmrs.type[idx_no_dist] <- ""
+ForC_simplified$distmrs.year[idx_no_dist] <- ""
 
 ## regrowth
 ForC_simplified$regrowth.type <- ifelse(my_is.na(ForC_simplified$regrowth.type), "", ForC_simplified$regrowth.type)
