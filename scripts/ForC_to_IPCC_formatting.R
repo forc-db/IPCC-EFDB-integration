@@ -382,6 +382,9 @@ unique(ForC_simplified$depth) # should not be any "NA cm"
 ForC_simplified$depth[grepl("NA", ForC_simplified$depth)] <- ""
 
 
+### stand.age "mature" if 999 ####
+ForC_simplified$stand.age[ForC_simplified$stand.age %in% '999'] <- "mature"
+
 ## import and/or modify ForC specific info ####
 
 ### sites.sitename
@@ -501,7 +504,10 @@ for(c_id in   c("Archibald_2009_doiv",
                 "Rice_2004_cbav",
                 "Saleska_2003_ciaf",
                 "Toky_1983_ssfs",
-                "Uhl_1984_sand")
+                "Uhl_1984_sand",
+                "Lutz_2018_giol",
+                "Johnson_2018_csss",
+                "Gonzalez-Akre_2016_potm")
    ) { # unique(ForC_simplified$citation.ID )
 
   idx <- ForC_simplified$citation.ID %in% c_id
