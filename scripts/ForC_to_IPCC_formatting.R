@@ -388,13 +388,13 @@ ForC_simplified$depth[grepl("NA", ForC_simplified$depth)] <- ""
 m_sites <- match(ForC_simplified$sites.sitename, SITES$sites.sitename)
 any(is.na(m_sites)) # should be FALSE
 
-ForC_simplified$sites.sitename <- paste0(ForC_simplified$sites.sitename, " (ID#: ", SITES$site.ID[m_sites], ")")
+ForC_simplified$site.ID <- paste0(ForC_simplified$sites.sitename, " (ID#: ", SITES$site.ID[m_sites], ")")
 
 ### plot.name
 m_plots <- match(paste(ForC_simplified$sites.sitename,ForC_simplified$plot.name) , paste(PLOTS$sites.sitename,PLOTS$plot.name))
 any(is.na(m_plots)) # should be FALSE
 
-ForC_simplified$plot.name <- paste0(ForC_simplified$plot.name, " (ID#: ", PLOTS$plot.ID[m_plots], ")")
+ForC_simplified$plot.ID <- paste0(ForC_simplified$plot.name, " (ID#: ", PLOTS$plot.ID[m_plots], ")")
 
 
 ### plot.area
