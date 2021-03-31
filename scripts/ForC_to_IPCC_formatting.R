@@ -421,7 +421,13 @@ idx_stock <- ForC_simplified$variable.type %in% "stock"
 idx_flux <-ForC_simplified$variable.type %in% "flux"
 idx_date_NA <- my_is.na(ForC_simplified$date)
 idx_start_end_date_NA <- my_is.na(ForC_simplified$start.date) | my_is.na(ForC_simplified$start.date)
-ForC_simplified$mean_date <- (as.numeric(ForC_simplified$start.date) +  as.numeric(ForC_simplified$end.date))/2
+
+ForC_simplified$mean <- round(as.numeric(ForC_simplified$mean), 1)
+ForC_simplified$start.date <- round(as.numeric(ForC_simplified$start.date), 1)
+ForC_simplified$end.date <- round(as.numeric(ForC_simplified$end.date), 1)
+
+
+ForC_simplified$mean_date <- round(as.numeric(ForC_simplified$start.date) +  as.numeric(ForC_simplified$end.date)/2, 1)
 ForC_simplified$start_end_date <- paste(ForC_simplified$end.date,   ForC_simplified$start.date, sep = "-")
 
 # for stocks `date`, or average of start.date and end.date
