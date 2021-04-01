@@ -6,21 +6,25 @@ rm(list = ls())
 # load library ####
 
 # load data ####
-approved_files <- list.files("data/2-approved/", pattern = ".csv")
-trace_of_measurement_IDs <- read.csv("data/3-EFDB-forms-ready/trace_of_measurement_ID_processed.csv")
+approved_csv_path <- "data/2-approved/"
+EFDB_forms_ready_path <- "data/3-EFDB-forms-ready/"
+                      
+approved_files <- list.files(approved_csv_path, pattern = ".csv")
+trace_of_measurement_IDs <- read.csv(paste0(EFDB_forms_ready_path, "trace_of_measurement_ID_processed.csv"))
 
 # transform file to EFGB form and save in 3-EFDB-forms-ready + save a list of measurement that are transfered ####
 
 for(file_to_export in approved_files) {
   
-  EFDB_export_form_name <- gsub(".scv", ".xlsm", file_to_export)
+  EFDB_export_form_name <- gsub(".csv", ".xlsm", file_to_export)
   
-  to_export <- read.csv(file_to_export)
+  to_export <- read.csv(paste0(approved_csv_path, file_to_export))
   
   trace_of_measurement_IDs <- rbind(trace_of_measurement_IDs, 
                                     data.frame(measurement.ID = to_export$measurement.ID,
                                                citation_ID = to_export$citation.ID,
-                                               EFDB_export_form_name))
+                                               EFDB_export_form_name,
+                                               date_generated = Sys.Date()))
 
   
   
@@ -31,9 +35,9 @@ for(file_to_export in approved_files) {
   
   
   # create a new EFDB for for this file
-  file.copy("[NAME OF BLACK FORM]", EFDB_export_form_name)
+  file.copy("doc/EFDB_template/EFDB_Bulk_Import_Blank_Template.xlsm",paste0(EFDB_forms_ready_path, EFDB_export_form_name))
   
-  wb <- XLConnect::loadWorkbook(EFDB_export_form_name)
+  wb <- XLConnect::loadWorkbook(paste0(EFDB_forms_ready_path, EFDB_export_form_name))
   XLConnect::writeWorksheet(wb,to_export,"Data",startRow  = 1, startCol = 3, header = F, rownames = NULL)
   XLConnect::saveWorkbook(wb)
   
