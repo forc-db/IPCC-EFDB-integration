@@ -511,6 +511,8 @@ EFDB <- data.frame("EF ID" = "",
 
 # save one csv file per citation.ID into data/1-to-review
 
+## first delete any file so that if slightly different number od records, still ovewrites.
+file.remove(list.files("data/1-to-review/", pattern = ".csv"))
 
 for(c_id in   c("Archibald_2009_doiv",
                 "Chave_2008_aepa",
