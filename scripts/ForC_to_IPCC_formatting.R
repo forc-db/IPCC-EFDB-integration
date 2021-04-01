@@ -214,12 +214,15 @@ ForC_simplified[, v_to_transfer_to_fc_simpl] <-  MEASUREMENTS[m_meas, v_to_trans
 
 
 
-## add veg.notes ####
+## add veg.notes and species ####
 # merge relevant info in ForC_simplified
 m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
 any(is.na(m_meas)) # should be FALSE
 
-ForC_simplified$veg.notes <-  MEASUREMENTS$veg.notes[m_meas]
+v_to_transfer_to_fc_simpl <- c("veg.notes", "scientific.name") # 
+
+
+ForC_simplified[, v_to_transfer_to_fc_simpl] <-  MEASUREMENTS[m_meas, v_to_transfer_to_fc_simpl]
 
 
 
