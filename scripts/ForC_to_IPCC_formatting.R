@@ -491,7 +491,7 @@ EFDB <- data.frame("EF ID" = "",
                    "Date Submitted to EFDB by Data Provider (yyyy-mm-dd)" = as.Date(Sys.time()),
                    "Date Posted to EFDB by TSU" = "",
                    measurement.ID = ForC_simplified$measurement.ID, # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
-                   citation_ID =  ForC_simplified$citation.ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
+                   citation.ID =  ForC_simplified$citation.ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
 )
 
 
