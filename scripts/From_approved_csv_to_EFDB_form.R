@@ -41,16 +41,7 @@ for(file_to_export in approved_files) {
   XLConnect::writeWorksheet(wb,to_export,"Data",startRow  = 1, startCol = 3, header = F, rownames = NULL)
   XLConnect::saveWorkbook(wb)
   
+  rm(wb)
+  .rs.restartR()
   
 }
-
-
-
-# write.table(to_export, file = paste0("EFDB_formatted_data/test_", c_id, ".csv") ,  col.names=FALSE , row.names = T, fileEncoding =  "UTF-8", sep = ",")
-
-
-# library(XLConnect)
-# wb <- XLConnect::loadWorkbook("EFDB_formatted_data/EFDB Bulk Import Meakem_2017_rots.xlsm")
-# XLConnect::writeWorksheet(wb,to_export,"Data",startRow  = 1, startCol = 3, header = F, rownames = NULL)
-# XLConnect::saveWorkbook(wb)
-
