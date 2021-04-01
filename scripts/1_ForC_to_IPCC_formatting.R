@@ -193,13 +193,13 @@ MEASUREMENTS$confidence_notes[idx_95CI & grepl("95%CI", MEASUREMENTS$notes)] <- 
 unique(MEASUREMENTS$confidence_notes[idx_95CI])
 
 # enter info when we have sd and n>3
-MEASUREMENTS$LCL[idx_SD & idx_N3] <- MEASUREMENTS$mean[idx_SD & idx_N3] - 1.96 * MEASUREMENTS$sd[idx_SD & idx_N3]/sqrt(MEASUREMENTS$n[idx_SD & idx_N3])
-MEASUREMENTS$UCL[idx_SD & idx_N3] <- MEASUREMENTS$mean[idx_SD & idx_N3] + 1.96 * MEASUREMENTS$sd[idx_SD & idx_N3]/sqrt(MEASUREMENTS$n[idx_SD & idx_N3])
+MEASUREMENTS$LCL[idx_SD & idx_N3] <- round(MEASUREMENTS$mean[idx_SD & idx_N3] - 1.96 * MEASUREMENTS$sd[idx_SD & idx_N3]/sqrt(MEASUREMENTS$n[idx_SD & idx_N3]),3)
+MEASUREMENTS$UCL[idx_SD & idx_N3] <- round(MEASUREMENTS$mean[idx_SD & idx_N3] + 1.96 * MEASUREMENTS$sd[idx_SD & idx_N3]/sqrt(MEASUREMENTS$n[idx_SD & idx_N3]), 3)
 MEASUREMENTS$confidence_notes[idx_SD & idx_N3] <- paste("95%CI post-generated using z = 1.96, sd =", MEASUREMENTS$sd[idx_SD & idx_N3], "and n =", MEASUREMENTS$n[idx_SD & idx_N3] )
 
 # enter info when we have se
-MEASUREMENTS$LCL[idx_SE] <- MEASUREMENTS$mean[idx_SE] - 1.96 * MEASUREMENTS$se[idx_SE]
-MEASUREMENTS$UCL[idx_SE] <- MEASUREMENTS$mean[idx_SE] + 1.96 * MEASUREMENTS$se[idx_SE]
+MEASUREMENTS$LCL[idx_SE] <- round(MEASUREMENTS$mean[idx_SE] - 1.96 * MEASUREMENTS$se[idx_SE], 3)
+MEASUREMENTS$UCL[idx_SE] <- round(MEASUREMENTS$mean[idx_SE] + 1.96 * MEASUREMENTS$se[idx_SE], 3)
 MEASUREMENTS$confidence_notes[idx_SE] <- paste("95%CI post-generated using z = 1.96 and se =", MEASUREMENTS$se[idx_SE])
 
 
