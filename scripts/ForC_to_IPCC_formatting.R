@@ -129,7 +129,7 @@ ForC_simplified$IPCC_2006_CODE <- IPCC_LU_cat_mapping$IPCC_2006_CODE[m_LUcat]
 
 ## create hist.type ####
 
-### paste dite and plot for matching ####
+### paste site and plot for matching
 HISTORY$s_p <- paste(HISTORY$sites.sitename, HISTORY$plot.name)
 
 ## keep only management history
@@ -154,6 +154,10 @@ any(!is.na(m_hist_mngmt)) # should be TRUE
 ForC_simplified$hist.type <- ifelse(is.na(m_hist_mngmt), "", HISTORY_Management[m_hist_mngmt])
 
 unique(ForC_simplified$hist.type)
+
+
+## update "managed" ####
+ForC_simplified$managed <- ifelse(ForC_simplified$managed %in% 1, "managed forest land", "unmanaged forest land")
 
 ## convert ForC_simplified$dominant.veg to desctiption ####
 setdiff(ForC_simplified$dominant.veg, PFT$pftcode) # should be only "NAC
@@ -466,7 +470,7 @@ EFDB <- data.frame("EF ID" = "",
                    "Fuel 2006 (ID)" = "",
                    "C pool" = V_mapping$IPCC.C_pool[m_vmap],
                    "Description" =  V_mapping$description[m_vmap],
-                   "Technologies/Practices" = "", #generate_subfields("Technologies/Practices"),
+                   "Technologies/Practices" = generate_subfields("Technologies/Practices"),
                    "Abatement/Control technologies" =  generate_subfields( "Abatement/Control technologies"),
                    "Parameters/Conditions" = generate_subfields("Parameters/Conditions"),
                    "Region/Regional conditions" = generate_subfields("Region/Regional conditions"),
