@@ -533,8 +533,9 @@ for(c_id in   c("Archibald_2009_doiv",
   idx <- ForC_simplified$citation.ID %in% c_id
   
   to_export <- EFDB[idx,]
+  n_records <- nrow(to_export)
   
-  write.csv(to_export, file = paste0("data/1-to-review/", c_id, ".csv"), row.names = F, fileEncoding =  "UTF-8")
+  write.csv(to_export, file = paste0("data/1-to-review/n_",n_records, "_", c_id, ".csv"), row.names = F, fileEncoding =  "UTF-8")
   
 }
 
