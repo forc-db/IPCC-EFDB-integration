@@ -168,6 +168,15 @@ ForC_simplified$dominant.veg <- ifelse(is.na(m_pft), "", PFT$description[m_pft])
 
 ## add Confidence on records ####
 
+# convert to numeric
+MEASUREMENTS$lower95CI <- as.numeric(MEASUREMENTS$lower95CI)
+MEASUREMENTS$upper95CI <- as.numeric(MEASUREMENTS$upper95CI)
+MEASUREMENTS$sd <- as.numeric(MEASUREMENTS$sd)
+MEASUREMENTS$se <- as.numeric(MEASUREMENTS$se)
+MEASUREMENTS$n <- as.numeric(MEASUREMENTS$n)
+
+
+
 idx_95CI <- !my_is.na(MEASUREMENTS$lower95CI) &  !my_is.na(MEASUREMENTS$upper95CI) # MEASUREMENTS$stat.name %in% "95%CI"
 idx_SE <-  !my_is.na(MEASUREMENTS$se) # MEASUREMENTS$stat.name %in% "SE"
 idx_SD <-  !my_is.na(MEASUREMENTS$sd) # MEASUREMENTS$stat.name %in% "SD" #& !is.na(MEASUREMENTS$n) & MEASUREMENTS$n > 3
@@ -179,12 +188,6 @@ MEASUREMENTS$LCL <- NA # default
 MEASUREMENTS$UCL <- NA # default
 MEASUREMENTS$confidence_notes <- "" # default
 
-# convert to numeric
-MEASUREMENTS$lower95CI <- as.numeric(MEASUREMENTS$lower95CI)
-MEASUREMENTS$upper95CI <- as.numeric(MEASUREMENTS$upper95CI)
-MEASUREMENTS$sd <- as.numeric(MEASUREMENTS$sd)
-MEASUREMENTS$se <- as.numeric(MEASUREMENTS$se)
-MEASUREMENTS$n <- as.numeric(MEASUREMENTS$n)
 
 # enter info when we have 95% interval
 MEASUREMENTS$LCL[idx_95CI] <- MEASUREMENTS$lower95CI[idx_95CI]
