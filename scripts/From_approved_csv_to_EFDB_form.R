@@ -35,13 +35,20 @@ for(file_to_export in approved_files) {
   
   
   # create a new EFDB for for this file
-  file.copy("doc/EFDB_template/EFDB_Bulk_Import_Blank_Template.xlsm",paste0(EFDB_forms_ready_path, EFDB_export_form_name))
+  file.copy("doc/EFDB_template/EFDB_Bulk_Import_Blank_Template.xlsm",paste0(EFDB_forms_ready_path, EFDB_export_form_name), overwrite = T)
   
   wb <- XLConnect::loadWorkbook(paste0(EFDB_forms_ready_path, EFDB_export_form_name))
   XLConnect::writeWorksheet(wb,to_export,"Data",startRow  = 1, startCol = 3, header = F, rownames = NULL)
   XLConnect::saveWorkbook(wb)
   
   rm(wb)
-  .rs.restartR()
+ 
+  # move approved file to "processed" sub folder
+  file.rename(paste0(approved_csv_path, file_to_export), paste0(approved_csv_path, "processed/", file_to_export))
+  
+  # append to trace_of_measurement_IDs
+  write.csv(trace_of_measurement_IDs,paste0(EFDB_forms_ready_path, "trace_of_measurement_ID_processed.csv"), append = T, row.names = F )
   
 }
+
+.rs.restartR()
