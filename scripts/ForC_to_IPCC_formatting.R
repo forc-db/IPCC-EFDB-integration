@@ -298,7 +298,7 @@ ForC_simplified$map <- ifelse(my_is.na(ForC_simplified$map), "", paste(ForC_simp
 # any(is.na(m_plots)) # should be FALSE
 
 ## disturbance
-ForC_simplified$distmrs.year <-  ifelse(my_is.na(ForC_simplified$distmrs.year), "", ForC_simplified$distmrs.year)
+ForC_simplified$distmrs.year <-  ifelse(my_is.na(ForC_simplified$distmrs.year), "", round(as.numeric(ForC_simplified$distmrs.year), 1))
 ForC_simplified$distmrs.type <- ifelse(my_is.na(ForC_simplified$distmrs.type), "", ForC_simplified$distmrs.type)
 
 idx_no_dist <- ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance") & !my_is.na(ForC_simplified$distmrs.year)
@@ -308,7 +308,7 @@ ForC_simplified$distmrs.year[idx_no_dist] <- ""
 
 ## regrowth
 ForC_simplified$regrowth.type <- ifelse(my_is.na(ForC_simplified$regrowth.type), "", ForC_simplified$regrowth.type)
-ForC_simplified$regrowth.year<- ifelse(my_is.na(ForC_simplified$regrowth.year), "", ForC_simplified$regrowth.year)
+ForC_simplified$regrowth.year<- ifelse(my_is.na(ForC_simplified$regrowth.year), "", round(as.numeric(ForC_simplified$regrowth.year), 1))
 
 ## extended.description ####
 m_vmap <- match(ForC_simplified$variable.name, VARIABLES$variable.name)
