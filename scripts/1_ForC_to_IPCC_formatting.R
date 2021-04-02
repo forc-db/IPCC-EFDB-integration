@@ -14,6 +14,9 @@ SITES  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/F
 PLOTS  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_plots.csv", stringsAsFactors = F)
 HISTORY  <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_history.csv", stringsAsFactors = F)
 VARIABLES <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_variables.csv", stringsAsFactors = F)
+ALLOMETRY <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_allometry.csv", stringsAsFactors = F)
+
+
 
 V_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC_variables_mapping.csv")
 ForC_EFDB_mapping <- read.csv("doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv")
@@ -321,8 +324,44 @@ ForC_simplified$extended.description <- VARIABLES$extended.description[m_vmap]
 
 ## modify min.dbh ####
 ForC_simplified$min.dbh <- ifelse(my_is.na(ForC_simplified$min.dbh), "", paste("dbh trees >=", ForC_simplified$min.dbh, "cm"))
+ForC_simplified$min.dbh[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$requires.min.dbh %in% 0]] <- "" # remove when for a varibale not required
 
-## import and/or modify COVARIATES *** TOO CODE*** ####
+
+## allometry ####
+m_all_cit <- match(ALLOMETRY$allometry.citation, CITATIONS$citation.ID)
+any(is.na(m_all_cit))
+ALLOMETRY$allometry.citation[is.na(m_all_cit)]
+
+ALLOMETRY$allometry.citation.citation <- CITATIONS$citation.citation[m_all_cit]
+
+
+m_allo_1 <- match(MEASUREMENTS$allometry_1, ALLOMETRY$allometric.equation)
+m_allo_2 <- match(MEASUREMENTS$allometry_2, ALLOMETRY$allometric.equation)
+
+any(is.na(m_allo_1)) # ok if TRUE
+any(is.na(m_allo_2)) # ok if TRUE
+
+MEASUREMENTS$allometry_1 <-  ALLOMETRY$allometry.citation.citation[m_allo_1]
+MEASUREMENTS$allometry_2 <-  ALLOMETRY$allometry.citation.citation[m_allo_2]
+
+MEASUREMENTS$allometry <- apply(MEASUREMENTS, 1, function(x) gsub(" and NA", "", paste(unique(x[c("allometry_1", "allometry_2")]), collapse =  " and ")))
+MEASUREMENTS$allometry[my_is.na(MEASUREMENTS$allometry)] <- ""
+                                
+m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
+any(is.na(m_meas)) # should be FALSE
+
+ForC_simplified$allometry <- MEASUREMENTS$allometry[m_meas]
+ForC_simplified$allometry[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$requires.allometry %in% 0]] <- "" # remove when for a varibale not required
+
+## data.location.within.source ####
+m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
+any(is.na(m_meas)) # should be FALSE
+
+ForC_simplified$data.location.within.source <- MEASUREMENTS$data.location.within.source[m_meas]
+
+ForC_simplified$send_SI <- ifelse(grepl("Table S", ForC_simplified$data.location.within.source), 1, 0)
+
+## import and/or modify COVARIATES ####
 m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
 any(is.na(m_meas)) # should be FALSE
 
@@ -395,6 +434,8 @@ ForC_simplified$min.length[!grepl("deadwood", ForC_simplified$variable.name)] <-
 
 ### depth ####
 ForC_simplified$depth <-  ifelse(my_is.na(MEASUREMENTS$depth), "", paste(MEASUREMENTS$depth, "cm") )[m_meas] 
+
+ForC_simplified$depth[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$requires.depth %in% 0]] <- "" # remove when for a variable not required
 unique(ForC_simplified$depth) # should not be any "NA cm"
 ForC_simplified$depth[grepl("NA", ForC_simplified$depth)] <- ""
 
@@ -501,14 +542,17 @@ EFDB <- data.frame("EF ID" = "",
                    "External Quality Control Performed" = "", # to update?
                    "Date of Measurement" =  "", # to update?
                    "Date Calculated" = "",
-                   "Comments from Data Provider" = gsub("^; ", "", paste(ForC_simplified$confidence_notes, "Data imported from the Global Forest Carbon database (ForC; https://forc-db.github.io/) : Anderson-Teixeira, K. J., M. M. H. Wang, J. C. McGarvey, V. Herrmann, A. J. Tepley, B. P. Bond-Lamberty, and D. S. LeBauer (2018) ForC: a global database of forest carbon stocks and fluxes. Ecology. DOI: 10.1002/ecy.2229.", sep = "; ")),
+                   "Comments from Data Provider" = gsub("^; |; $", "", paste(ForC_simplified$confidence_notes, "Data imported from the Global Forest Carbon database (ForC; https://forc-db.github.io/) : Anderson-Teixeira, K. J., M. M. H. Wang, J. C. McGarvey, V. Herrmann, A. J. Tepley, B. P. Bond-Lamberty, and D. S. LeBauer (2018) ForC: a global database of forest carbon stocks and fluxes. Ecology. DOI: 10.1002/ecy.2229.",  generate_subfields( "Comments from Data Provider"), sep = "; ")),
                    "Data Provider" = ForC_simplified$Data_provider,
                    "Data Provider Country (CODE)" = "United States of America (USA)",
                    "Data Provider Contact (email address)" = ForC_simplified$Data_provider_contact,
                    "Date Submitted to EFDB by Data Provider (yyyy-mm-dd)" = as.Date(Sys.time()),
                    "Date Posted to EFDB by TSU" = "",
-                   measurement.ID = ForC_simplified$measurement.ID, # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
-                   citation.ID =  ForC_simplified$citation.ID # *** THIS FIELD HAS TO BE REMOVED BEFORE SAvING INTO EFDB FORM ! *** just for book keeping
+                   measurement.ID = ForC_simplified$measurement.ID, # *** THIS FIELD HAS TO BE REMOVED BEFORE SAVING INTO EFDB FORM ! *** just for book keeping
+                   citation.ID =  ForC_simplified$citation.ID, # *** THIS FIELD HAS TO BE REMOVED BEFORE SAVING INTO EFDB FORM ! *** just for book keeping
+                   
+                   send_SI = ForC_simplified$send_SI # *** THIS FIELD HAS TO BE REMOVED BEFORE SAVING INTO EFDB FORM ! *** just for book keeping
+                   
 )
 
 
