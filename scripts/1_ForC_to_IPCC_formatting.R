@@ -210,9 +210,9 @@ MEASUREMENTS$confidence_notes[idx_SE] <- paste("95%CI post-generated using z = 1
 
 
 # enter info when we have n = 1
-MEASUREMENTS$LCL[idx_N1 & is.na(MEASUREMENTS$LCL)] <- "NA"
-MEASUREMENTS$UCL[idx_N1 & is.na(MEASUREMENTS$UCL)] <- "NA"
-MEASUREMENTS$confidence_notes[idx_N1 & is.na(MEASUREMENTS$LCL)] <- paste("95%CI is NA because only 1 plot was measured")
+MEASUREMENTS$LCL[idx_N1 & (is.na(MEASUREMENTS$LCL) | MEASUREMENTS$LCL %in% c("Unknown", "NA"))] <- "NA"
+MEASUREMENTS$UCL[idx_N1 & (is.na(MEASUREMENTS$UCL) | MEASUREMENTS$UCL %in% c("Unknown", "NA"))] <- "NA"
+MEASUREMENTS$confidence_notes[idx_N1 & (is.na(MEASUREMENTS$LCL) | MEASUREMENTS$LCL %in% c("Unknown", "NA"))] <- paste("95%CI is NA because only 1 plot was measured")
 
 # merge relevant info in ForC_simplified
 m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
