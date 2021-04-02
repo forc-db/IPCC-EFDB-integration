@@ -475,17 +475,19 @@ ForC_simplified$variable.type <- VARIABLES$variable.type[m_var]
 
 ForC_simplified$Date_IPCC <- ""
 
-idx_stock <- ForC_simplified$variable.type %in% "stock"
-idx_flux <-ForC_simplified$variable.type %in% "flux"
-idx_date_NA <- my_is.na(ForC_simplified$date)
-idx_start_end_date_NA <- my_is.na(ForC_simplified$start.date) | my_is.na(ForC_simplified$start.date)
 
-ForC_simplified$mean <- round(as.numeric(ForC_simplified$mean), 1)
+ForC_simplified$date <- round(as.numeric(ForC_simplified$date), 1)
 ForC_simplified$start.date <- round(as.numeric(ForC_simplified$start.date), 1)
 ForC_simplified$end.date <- round(as.numeric(ForC_simplified$end.date), 1)
 
 
-ForC_simplified$mean_date <- round(as.numeric(ForC_simplified$start.date) +  as.numeric(ForC_simplified$end.date)/2, 1)
+idx_stock <- ForC_simplified$variable.type %in% "stock"
+idx_flux <-ForC_simplified$variable.type %in% c("flux", "increment")
+idx_date_NA <- my_is.na(ForC_simplified$date)
+idx_start_end_date_NA <- my_is.na(ForC_simplified$start.date) | my_is.na(ForC_simplified$start.date)
+
+
+ForC_simplified$mean_date <- round((as.numeric(ForC_simplified$start.date) +  as.numeric(ForC_simplified$end.date))/2, 1)
 ForC_simplified$start_end_date <- paste(ForC_simplified$end.date,   ForC_simplified$start.date, sep = "-")
 
 # for stocks `date`, or average of start.date and end.date
@@ -494,11 +496,11 @@ ForC_simplified$Date_IPCC[idx_stock & !idx_date_NA] <- as.numeric(ForC_simplifie
 ForC_simplified$Date_IPCC[idx_stock & idx_date_NA & !idx_start_end_date_NA] <- ForC_simplified$mean_date[idx_stock & idx_date_NA & !idx_start_end_date_NA]
 
 # for fluxes: `start-date - end.date`, or `date` if these aren't available
-ForC_simplified$Date_IPCC[idx_flux & !idx_start_end_date_NA] <- ForC_simplified$start_end_date[idx_flux & !idx_start_end_date_NA]
+ForC_simplified$Date_IPCC[idx_flux & !idx_start_end_date_NA] <- ForC_simplified$start_end_date[idx_flux & !idx_start_end_date_NA] 
 ForC_simplified$Date_IPCC[idx_flux & idx_start_end_date_NA & !idx_date_NA] <- as.numeric(ForC_simplified$date[idx_flux & idx_start_end_date_NA & !idx_date_NA])
 
 
-
+unique(ForC_simplified$Date_IPCC[!idx_date_NA & !idx_start_end_date_NA]) # should be nothing empty
 
 # EFDB ####
 m_vmap <- match(ForC_simplified$variable.name, V_mapping$variable.name)
@@ -519,7 +521,7 @@ EFDB <- data.frame("EF ID" = "",
                    "Parameters/Conditions" = generate_subfields("Parameters/Conditions"),
                    "Region/Regional conditions" = generate_subfields("Region/Regional conditions"),
                    "Other Properties" = generate_subfields("Other Properties"),
-                   "Value" = ForC_simplified$mean,
+                   "Value" = round(ForC_simplified$mean, 3),
                    "Unit (ID)" = V_mapping$IPCC.Unit_.ID.[m_vmap],
                    "Value in Common Units" = "",
                    "Common Unit" = "",
