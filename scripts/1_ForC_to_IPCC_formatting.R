@@ -34,7 +34,7 @@ generate_subfields <- function(field, x = ForC_simplified, y = V_mapping_subfiel
   
   y <- y[y$EFDB.field == field,]
   to_eval <- paste0("ifelse(my_is.na(x$",y$ForC.field, "), '', paste0('", y$EFDB_sub_entry, ": ', ", "x$",y$ForC.field, "))")
-  to_eval <- paste0("gsub('^; (; )*|(; )*;$', '', gsub('(; ){2, }', '; ', paste(", paste(to_eval, collapse = ", "), ", sep = '; ')))")
+  to_eval <- paste0("gsub('^; (; )*|(; )*;$|(; )*; $', '', gsub('(; ){2, }', '; ', paste(", paste(to_eval, collapse = ", "), ", sep = '; ')))")
   return(eval(parse(text =  to_eval)))
 }
 
