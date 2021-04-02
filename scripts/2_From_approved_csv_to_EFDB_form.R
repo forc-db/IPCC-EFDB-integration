@@ -19,6 +19,9 @@ for(file_to_export in approved_files) {
   EFDB_export_form_name <- gsub(".csv", ".xlsm", file_to_export)
   
   to_export <- read.csv(paste0(approved_csv_path, file_to_export))
+  to_export$Lower.Confidence.Limit[is.na(to_export$Lower.Confidence.Limit)] <- "NA"
+  to_export$Upper.Confidence.Limit[is.na(to_export$Upper.Confidence.Limit)] <- "NA"
+  
   
   trace_of_measurement_IDs <- rbind(trace_of_measurement_IDs, 
                                     data.frame(measurement.ID = to_export$measurement.ID,
