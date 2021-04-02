@@ -26,9 +26,9 @@ for(file_to_export in approved_files) {
                                                EFDB_export_form_name,
                                                date_generated = Sys.Date()))
 
+  if(any(to_export$send_SI %in% 1)) write.table("", file = paste0(EFDB_forms_ready_path, "ATTENTION_Send_SI_for_", gsub(".xlsm", ".txt", EFDB_export_form_name)))
   
-  
-  to_export[, c("measurement.ID", "citation.ID")] <- NULL # 
+  to_export[, c("measurement.ID", "citation.ID", "send_SI")] <- NULL # 
   
   names(to_export) <- gsub("\\.",  " ", names(to_export))
   to_export <- as.matrix(t(to_export))
