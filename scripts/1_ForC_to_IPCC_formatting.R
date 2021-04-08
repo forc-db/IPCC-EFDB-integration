@@ -70,6 +70,15 @@ ForC_simplified$variable.name <-  MEASUREMENTS$variable.name[m_meas]
 
 ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$provide.to.IPCC %in% 1], ]
 
+## exclude any records for which data.location.within.source includes "Figure" or "Fig", or source.notes includes "digitized".
+m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
+any(is.na(m_meas)) # should be FALSE
+
+ForC_simplified$source.notes <-  MEASUREMENTS$source.notes[m_meas]
+
+ForC_simplified <- ForC_simplified[!grepl("Fig|Figure|digitized", ForC_simplified$source.notes, ignore.case = T), ]
+
+
 # Generate/modify fields we need ####
 
 ### make sure we have dominant.life.form same as MEASUREMENTS (in case it was updates and not ForC_simplified)
