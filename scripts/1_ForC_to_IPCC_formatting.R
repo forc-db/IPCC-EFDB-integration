@@ -520,7 +520,7 @@ any(is.na(m_citations)) # shoulde be FALSE
 EFDB <- data.frame("EF ID" = "",
                    "1996 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_1996_CODE,
                    "2006 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_2006_CODE,
-                   "Gases (ID1,ID2,...)" = ifelse(grepl(" C/", V_mapping$IPCC.Unit_.ID.[m_vmap]), "CARBON DIOXIDE (006)", "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)"),
+                   "Gases (ID1,ID2,...)" = ifelse(grepl("_OM", V_mapping$variable.name[m_vmap] & V_mapping$variable.type[m_vmap] %in% "stock"), "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)", "CARBON DIOXIDE (006)"),
                    "Fuel 1996 (ID)" = "",
                    "Fuel 2006 (ID)" = "",
                    "C pool" = V_mapping$IPCC.C_pool[m_vmap],
