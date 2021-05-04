@@ -42,7 +42,7 @@ citation_list <- MEASUREMENTS %>%
             variables_represented = length(unique(gsub("_C|_OM", "", variable.name))),
             sites_represented = length(unique(sites.sitename)),
             n_pot_dup_sites = sum(sites.sitename %in% SITES$sites.sitename[!SITES$potential_duplicate_group %in% 0]),
-            review_priority_score = n_potential_records * n_records_pts - n_pot_dup_sites * n_dup_sites_pts,
+            review_priority_score = n_potential_records * n_records_pts + n_pot_dup_sites * n_dup_sites_pts,
             ready_to_rerun_and_send = "") %>% arrange(desc(review_priority_score))
 
 
