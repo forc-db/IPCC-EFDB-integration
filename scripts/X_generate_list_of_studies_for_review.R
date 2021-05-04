@@ -39,7 +39,8 @@ MEASUREMENTS$potential_duplicate_sites <- MEASUREMENTS$sites.sitename %in% SITES
 citation_list <- MEASUREMENTS %>% 
   group_by(citation.ID) %>%
   summarize(n_potential_records = n(),
-            variables_represented = length(unique(gsub("_C|_OM", "", variable.name))),
+            n_variables = length(unique(gsub("_C|_OM", "", variable.name))),
+            variables_represented =  paste(unique(gsub("_C|_OM", "", variable.name)), collapse = ", "),
             sites_represented = length(unique(sites.sitename)),
             n_pot_dup_sites = sum(sites.sitename %in% SITES$sites.sitename[!SITES$potential_duplicate_group %in% 0]),
             review_priority_score = n_potential_records * n_records_pts + n_pot_dup_sites * n_dup_sites_pts,
