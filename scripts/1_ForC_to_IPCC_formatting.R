@@ -227,11 +227,24 @@ MEASUREMENTS$confidence_notes[idx_N1 & (is.na(MEASUREMENTS$LCL) | MEASUREMENTS$L
 m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
 any(is.na(m_meas)) # should be FALSE
 
-v_to_transfer_to_fc_simpl <- c("variable.name", "mean", "LCL", "UCL", "confidence_notes", "scientific.name", "citation.ID") # 
+v_to_transfer_to_fc_simpl <- c("variable.name", "mean", "LCL", "UCL", "mean.in.original.units", "original.units", "confidence_notes", "scientific.name", "citation.ID") # 
 
 ForC_simplified[, v_to_transfer_to_fc_simpl] <-  MEASUREMENTS[m_meas, v_to_transfer_to_fc_simpl]
 
+# update mean.in.original.units and original.units ####
 
+### fill with "" if original.units is NA, as there is no conversion needed, then fill mean.in.original.units with "".
+ForC_simplified$original.units[is.na(ForC_simplified$mean.in.original.units)] <- ""
+ForC_simplified$mean.in.original.units[is.na(ForC_simplified$mean.in.original.units)] <- ""
+
+ForC_simplified$original.units[ForC_simplified$original.units %in% "NAC"] <- ""
+
+### if mean.in.original.units is NAC, replace with "" and throw a warning in original_units_notes
+ForC_simplified$original_units_notes <- ""
+ForC_simplified$original_units_notes[ForC_simplified$mean.in.original.units %in% "NAC"] <- "it is possible the record is not in the original publication's unit"
+
+ForC_simplified$mean.in.original.units <- round(as.numeric(ForC_simplified$mean.in.original.units), 3)
+ForC_simplified$mean.in.original.units[is.na(ForC_simplified$mean.in.original.units)] <- ""
 
 ## add veg.notes and species ####
 # merge relevant info in ForC_simplified
@@ -520,7 +533,7 @@ any(is.na(m_citations)) # shoulde be FALSE
 EFDB <- data.frame("EF ID" = "",
                    "1996 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_1996_CODE,
                    "2006 Source/Sink Categories (CODE1,...)" = ForC_simplified$IPCC_2006_CODE,
-                   "Gases (ID1,ID2,...)" = ifelse(grepl("_OM", V_mapping$variable.name[m_vmap] & V_mapping$variable.type[m_vmap] %in% "stock"), "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)", "CARBON DIOXIDE (006)"),
+                   "Gases (ID1,ID2,...)" = ifelse(grepl("_OM", V_mapping$variable.name[m_vmap]) & V_mapping$variable.type[m_vmap] %in% "stock", "CARBON DIOXIDE (006),CARBON MONOXIDE (005),METHANE (004),NITROGEN OXIDES (NO+NO2) (002),NITROUS OXIDE (007)", "CARBON DIOXIDE (006)"),
                    "Fuel 1996 (ID)" = "",
                    "Fuel 2006 (ID)" = "",
                    "C pool" = V_mapping$IPCC.C_pool[m_vmap],
@@ -532,8 +545,8 @@ EFDB <- data.frame("EF ID" = "",
                    "Other Properties" = generate_subfields("Other Properties"),
                    "Value" = round(ForC_simplified$mean, 3),
                    "Unit (ID)" = V_mapping$IPCC.Unit_.ID.[m_vmap],
-                   "Value in Common Units" = "",
-                   "Common Unit" = "",
+                   "Value in Common Units" = ForC_simplified$mean.in.original.units,
+                   "Common Unit" = ForC_simplified$original.units,
                    "Equation" =  ifelse(my_is.na(V_mapping$Equation[m_vmap]), "", V_mapping$Equation[m_vmap]),
                    "IPCC Worksheet Number" = ifelse(my_is.na(V_mapping$IPCC.Worksheet.Number[m_vmap]), "", my_is.na(V_mapping$IPCC.Worksheet.Number[m_vmap])),
                    "Source of Data" = "Peer-reviewed journal", #  Peer-reviewed journal (usually), maybe not if no ref? to check
@@ -553,7 +566,7 @@ EFDB <- data.frame("EF ID" = "",
                    "External Quality Control Performed" = "", # to update?
                    "Date of Measurement" =  "", # to update?
                    "Date Calculated" = "",
-                   "Comments from Data Provider" = gsub("^; |; $", "", paste(ForC_simplified$confidence_notes, "Data imported from the Global Forest Carbon database (ForC; https://forc-db.github.io/) : Anderson-Teixeira, K. J., M. M. H. Wang, J. C. McGarvey, V. Herrmann, A. J. Tepley, B. P. Bond-Lamberty, and D. S. LeBauer (2018) ForC: a global database of forest carbon stocks and fluxes. Ecology. DOI: 10.1002/ecy.2229.",  generate_subfields( "Comments from Data Provider"), sep = "; ")),
+                   "Comments from Data Provider" = gsub("^; |; $", "", paste(generate_subfields( "Comments from Data Provider"), "Data imported from the Global Forest Carbon database (ForC; https://forc-db.github.io/) : Anderson-Teixeira, K. J., M. M. H. Wang, J. C. McGarvey, V. Herrmann, A. J. Tepley, B. P. Bond-Lamberty, and D. S. LeBauer (2018) ForC: a global database of forest carbon stocks and fluxes. Ecology. DOI: 10.1002/ecy.2229.", sep = "; ")),
                    "Data Provider" = ForC_simplified$Data_provider,
                    "Data Provider Country (CODE)" = "United States of America (USA)",
                    "Data Provider Contact (email address)" = ForC_simplified$Data_provider_contact,
