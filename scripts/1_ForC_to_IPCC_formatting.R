@@ -47,7 +47,7 @@ generate_subfields <- function(field, x = ForC_simplified, y = V_mapping_subfiel
 
 # subset records KEEP RECORDS WE WANT TO SEND OVER ####
 
-## only keep records we have not already processed
+## only keep records we have not already processed ####
 ForC_simplified <- ForC_simplified[!ForC_simplified$measurement.ID %in% trace_of_measurement_IDs$measurement.ID, ]
 
 
