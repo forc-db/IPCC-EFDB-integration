@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 JUN 2021 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 JUN 2021 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2973,90 +2973,100 @@ Overfull \hbox (164.30348pt too wide) in paragraph at lines 153--158
 <figures_tables/C_pools_fig.png, id=26, 816.04875pt x 826.08624pt>
 File: figures_tables/C_pools_fig.png Graphic file (type png)
 <use figures_tables/C_pools_fig.png>
-Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 225
+Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 226
 .
 (pdftex.def)             Requested size: 341.43306pt x 345.63033pt.
+
+Overfull \hbox (149.16582pt too wide) in paragraph at lines 231--240
+ []$[]$ 
+ []
+
+
+Overfull \hbox (149.16582pt too wide) in paragraph at lines 240--241
+ []|$[]$ 
+ []
+
 [3 <./figures_tables/C_pools_fig.png>]
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 257.
+(textcomp)             Default family used instead on input line 272.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-57.
+72.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-257.
+272.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 257.
+(textcomp)             Default family used instead on input line 272.
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 257.
-[4]
-<Nikolaus_Kopernikus.jpg, id=50, 206.7725pt x 240.9pt>
+(textcomp)             Default family used instead on input line 272.
+[4] [5]
+<Nikolaus_Kopernikus.jpg, id=55, 206.7725pt x 240.9pt>
 File: Nikolaus_Kopernikus.jpg Graphic file (type jpg)
 <use Nikolaus_Kopernikus.jpg>
-Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 303.
+Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 318.
 (pdftex.def)             Requested size: 236.15796pt x 275.14345pt.
 File: Nikolaus_Kopernikus.jpg Graphic file (type jpg)
 <use Nikolaus_Kopernikus.jpg>
-Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 311.
+Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 326.
 (pdftex.def)             Requested size: 341.43306pt x 397.82806pt.
 
-Overfull \hbox (170.03976pt too wide) in paragraph at lines 353--359
+Overfull \hbox (170.03976pt too wide) in paragraph at lines 368--374
 \T1/ptm/m/n/10 PAC: Quan-ti-ties, Units and Sym-bols in Phys-i-cal Chem-istry, 
 2nd Edn., Black-well Sci-ence, avail-able at: http://old.iupac.org/publications
 /books/gbook/green_book_2ed.pdf,
  []
 
-[5
+[6
 
- <./Nikolaus_Kopernikus.jpg>] [6] [7]
-Overfull \hbox (14.92061pt too wide) in paragraph at lines 422--430
+ <./Nikolaus_Kopernikus.jpg>] [7] [8]
+Overfull \hbox (14.92061pt too wide) in paragraph at lines 437--445
 \T1/pcr/m/n/10 true\T1/ptm/m/n/10 ), or make sure your-self that the L[]T[]Xpac
 kages \T1/pcr/m/n/10 algorithms \T1/ptm/m/n/10 and \T1/pcr/m/n/10 algorithmicx 
 \T1/ptm/m/n/10 are in-stalled so that \T1/pcr/m/n/10 algorithm.sty
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 432.
-[8]pdfTeX warning (ext4): destination with the same identifier (name{equation.6
+put line 447.
+[9]pdfTeX warning (ext4): destination with the same identifier (name{equation.6
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.466 \begin{reaction}
+l.481 \begin{reaction}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.469 \begin{reaction}
+l.484 \begin{reaction}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.6.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.472 \begin{reaction}
+l.487 \begin{reaction}
                       
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 487--489
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 502--504
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
 
-[9] (./ESSDmanuscript.bbl [10]) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 590.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 590.
+[10] (./ESSDmanuscript.bbl [11]) [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 605.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 605.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 590.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 590.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 590.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 605.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 605.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 605.
  ) 
 Here is how much of TeX's memory you used:
- 13049 strings out of 480608
- 171595 string characters out of 5903631
- 490142 words of memory out of 5000000
+ 13051 strings out of 480608
+ 171617 string characters out of 5903631
+ 490143 words of memory out of 5000000
  28592 multiletter control sequences out of 15000+600000
  578316 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3079,10 +3089,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on ESSDmanuscript.pdf (11 pages, 414125 bytes).
+Output written on ESSDmanuscript.pdf (12 pages, 415133 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 72 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

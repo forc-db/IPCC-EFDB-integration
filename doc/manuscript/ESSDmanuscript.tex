@@ -218,12 +218,27 @@ these requires a one-time measurement.
 \textbf{Table 1: variables with definitions and measurement methods.}
 Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).
 (\emph{Currently adding this as a figure (generated from original draft)
-because kableExtra doesn't seem to work in this template. Table that we
-want here is ``figures\_tables/C\_pools.csv''})
+because kableExtra doesn't seem to work in this template, and I can't
+quickly get the template format to work. Table that we want here is
+``figures\_tables/C\_pools.csv''})
 
 \begin{figure}
 \includegraphics[width=12cm]{figures_tables/C_pools_fig} \caption{Table 1}\label{fig:unnamed-chunk-1}
 \end{figure}
+
+\begin{table*}[t]
+\caption{This is a start at table 1 using the template format. }
+\begin{tabular}{l c c c r}
+\tophline
+
+pool & subpool & definition & major sources of estimate variation & IPCC guidance \\
+\middlehline
+biomass & aboveground & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory  \\
+
+\bottomhline
+\end{tabular}
+\belowtable{I don't know how to adjust so that it doesn't run off the page.}
+\end{table*}
 
 \subsection{Carbon increments}
 
