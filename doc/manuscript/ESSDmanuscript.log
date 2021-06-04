@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 JUN 2021 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 JUN 2021 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2914,18 +2914,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 137
+LaTeX Font Info:    Trying to load font information for U+msa on input line 139
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 137
+LaTeX Font Info:    Trying to load font information for U+msb on input line 139
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
-2.
+4.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -2950,62 +2950,50 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 142.
+(Font)              scaled to size 8.54997pt on input line 144.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-3.
+5.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 1
-55.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)
-Overfull \hbox (164.30348pt too wide) in paragraph at lines 153--158
-[]\T1/ptm/m/n/10 The \T1/pcr/m/n/10 journal \T1/ptm/m/n/10 you are sub-mit-ting
- to us-ing the of-fi-cial ab-bre-vi-a-tion. You can use the func-tion \T1/pcr/m
-/n/10 rticles::copernicus_journal_abbreviations(name
- []
-
-[1
+) [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures_tables/C_pools_fig.png, id=29, 816.04875pt x 826.08624pt>
+<figures_tables/C_pools_fig.png, id=26, 816.04875pt x 826.08624pt>
 File: figures_tables/C_pools_fig.png Graphic file (type png)
 <use figures_tables/C_pools_fig.png>
-Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 228
+Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 195
 .
 (pdftex.def)             Requested size: 341.43306pt x 345.63033pt.
 
-Overfull \hbox (149.16582pt too wide) in paragraph at lines 233--242
+Overfull \hbox (149.16582pt too wide) in paragraph at lines 200--209
  []$[]$ 
  []
 
 
-Overfull \hbox (149.16582pt too wide) in paragraph at lines 242--243
+Overfull \hbox (149.16582pt too wide) in paragraph at lines 209--210
  []|$[]$ 
  []
 
-[3 <./figures_tables/C_pools_fig.png>]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 259--261
+[3 <./figures_tables/C_pools_fig.png>] [4]
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 321--323
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
 
-[4] (./ESSDmanuscript.bbl [5]) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+[5] (./ESSDmanuscript.bbl [6]) [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 362.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 394.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 394.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 394.
  ) 
 Here is how much of TeX's memory you used:
- 12904 strings out of 480608
- 169151 string characters out of 5903631
+ 12889 strings out of 480608
+ 168879 string characters out of 5903631
  487002 words of memory out of 5000000
- 28506 multiletter control sequences out of 15000+600000
- 574949 words of font info for 86 fonts, out of 8000000 for 9000
+ 28487 multiletter control sequences out of 15000+600000
+ 574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,8n,46p,329b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -3014,10 +3002,10 @@ exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (6 pages, 302531 bytes).
+Output written on ESSDmanuscript.pdf (7 pages, 305608 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 29 named destinations out of 1000 (max. 500000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 37 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

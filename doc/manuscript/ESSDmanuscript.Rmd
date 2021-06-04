@@ -15,10 +15,10 @@ author:
     surname: Bond-Lamberty (confirm)
     affiliation: "3" 
   - given_name: Susan 
-    surname: Cook-Patton (confirm)
+    surname: Cook-Patton
     affiliation: "4" 
   - given_name: Sandro 
-    surname: Federici (confirm)
+    surname: Federici 
     affiliation: "5" 
   - given_name: Helene
     surname: Muller-Landau
@@ -30,7 +30,7 @@ author:
     surname: Rogers
     affiliation: "1"
   - given_name: Valentyna
-    surname: Slivinska (confirm)
+    surname: Slivinska 
     affiliation: "5"
   - given_name: Kristina J.
     surname: Anderson-Teixeira
@@ -50,7 +50,7 @@ affiliation:
   - code: 4
     address: 
   - code: 5
-    address: 
+    address:  IPCC Task Force on National Greenhouse Gas Inventories Technical Support Unit, Institute for Global Environmental Strategies, Hayama, Japan
   - code: 6
     address: Forest Global Earth Observatory, Smithsonian Tropical Research Institute, Panama, Republic of Panama
   - code: 7
@@ -83,79 +83,42 @@ availability:
   #  use this to add a statement when having only data sets available
   codedata: |
     use this to add a statement when having data sets and software code available
-  sample: |
-    use this section when having geoscientific samples available
-videosupplement: |
-  use this section when having video supplements available
 authorcontribution: |
-  Daniel wrote the package. Josiah thought about poterry. Markus filled in for a second author.
+  (fill this in)
 disclaimer: |
-  We like Copernicus.
 acknowledgements: |
-  Thanks to the rticles contributors!
+  Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have helped to build the database.
+  Funding for this study was provided by The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
 appendix: |
-  \section{Figures and tables in appendices}
-  Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
-  \subsection{Option 1}
-  If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
-  They will be correctly named automatically.
-  \subsection{Option 2}
-  If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
-  
-  To rename them correctly to A1, A2, etc., please add the following commands in front of them:
-  `\appendixfigures` needs to be added in front of appendix figures
-  `\appendixtables` needs to be added in front of appendix tables
-  
-  Please add `\clearpage` between each table and/or figure. Further guidelines on figures and tables can be found below.
+
 output:
   rticles::copernicus_article: default
   bookdown::pdf_book:
     base_format: rticles::copernicus_article # for using bookdown features like \@ref()
 ---
 
-The following settings can or must be configured in the header of this file and are bespoke for Copernicus manuscripts:
-
-- The `journal` you are submitting to using the official abbreviation. You can use the function `rticles::copernicus_journal_abbreviations(name = '...')` to search the existing journals.
-
-- Specific sections of the manuscript:
-
-  - `running` with `title` and `author`
-
-  - `competinginterests`
-
-  - `copyrightstatement` (optional)
-
-  - `availability` (strongly recommended if any used), one of `code`, `data`, or `codedata`
-
-  - `authorcontribution`
-
-  - `disclaimer`
-
-  - `acknowledgements`
-
-See the defaults and examples from the skeleton and the official Copernicus documentation for details.
 
 **Important**: Always double-check with the official manuscript preparation guidelines at [https://publications.copernicus.org/for_authors/manuscript_preparation.html](https://publications.copernicus.org/for_authors/manuscript_preparation.html), especially the sections "Technical instructions for LaTeX" and "Manuscript composition".
 Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.
 
 \introduction[Introduction]
 
-*(Importance of forests for climate change mitigation)*
+**(Forest are critical for climate change mitigation)**
 
 
-*(Need for good data in international carbon accounting)*
+**(Need for good data in international carbon accounting)**
 
 
-*(Introduce EFDb & forc)*
+**(Introduce EFDB & ForC)**
 
-Example citation [@anderson-teixeira_forc_2018]
 
 Here, we:
-(1) clarify C cycle terminology
+(1) clarify definitions of relevant carbon stocks and increments
 (2) describe mapping of ForC to IPCC's EFDB,
-(3) describe updates to ForC  (ForC v4.0)
-(4) summarize the data in ForC that's relevant to EFDB, identifying gaps
-(5) provide recommendations for improving data collection, analysis, database, and accounting
+(3) describe updates to ForC  (ForC v4.0),
+(4) summarize the data in ForC that's relevant to EFDB, identifying gaps, and
+(5) provide recommendations for improving data collection, analysis, database, and accounting.
+We note that 
 
 # Defining carbon stocks and incremenets
 
@@ -205,6 +168,79 @@ Fluxes are the inputs and outputs to each pool.
 
 
 **Figure: schematic illustrating fluxes in and out of each pool**
+
+# Mapping ForC to EFDB
+
+## Carbon cycle variables
+
+**Table: variable  mapping and equations-- give equations to calculate IPCC variables from C cycle variables**
+
+Define relationship among NEE, NEP, and delta.C., especially noting role of harvest.
+
+## Land use categories
+
+# Updates to ForC  (ForC v4.0)
+
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we implemented some modest restructuring, resolved duplicate records, and conducted quality control.
+
+This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].
+
+## ForC restructuring
+
+
+**Table: changes to ForC fields**.  
+Use  this table : https://github.com/forc-db/ForC/blob/master/database_management_records/record_of_changes.csv.
+
+## Resolving duplicates
+
+## Quality control
+
+
+
+# Results
+
+**figure: map of relevant ForC data with underlying FAO ecozones**
+
+summarize the data in ForC that's relevant to EFDB, identifying gaps
+
+dead wood and litter comparisons will be particularly interesting, as IPCC values are based on just a handful of references for each climate zone (table 2.2 in 2019 guidelines)
+
+# Recommendations
+
+## Data collection and analysis needs
+
+**(Paragraph highlighting important gaps in variables / regions)**
+
+
+Several variables of value to IPCC, including standing dead wood, woody mortality, delta.agb, are not calculated and presented as frequently as are AGB and ANPP_woody, even though they can readily be derived from the same census data. 
+We recommend that researchers calculate and report these, as specified below.
+Furthermore, there is an opportunity to fill data gaps by calculating these from existing census data.
+For example, the core census protocol of the Forest Global Earth Observatory [ForestGEO; REFS] collects the data required to calculate standing dead wood, woody mortality, and delta.agb, but these have not been calculated and reported for all sites for which the appropriate number of censuses are available (n=1 for standing dead wood, n=2 for woody mortality and delta.agb) [but see REFS].
+
+
+**A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.**
+*(Camille/Helene can write this paragraph easily.)*
+
+## Data reporting needs
+
+**We recommend that, unless they have some specific reason to do otherwise, researchers calculate and report the values according to IPCC standards:**
+
+  - adopt common standards for variables like min diameter of deadwood, select soil sampling increments to include a cutoff at 30.
+  
+  - report 95% CIs, SE, or STD and n
+  
+  - report C variables in article text, table, or SI table. EFDB cannot accept data digitized from figures
+
+## Database needs
+
+There are plenty of relevant, published data that are not included in ForC. 
+Systematic review of the literature could vastly improve data coverage.
+*(There are some efforts underway, including a few that Susan can specify.)*
+
+## IPCC 
+
+An important challenge is that forests are changing rapidly, and data collected a decaade ago may no longer be relevant, particularly in the cases of C increments and fluxes.
+
 
 
 
