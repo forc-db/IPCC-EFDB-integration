@@ -1,48 +1,69 @@
 ---
-title: Template for preparing your manuscript submission to Copernicus journals using RMarkdown
-journal: "`r rticles::copernicus_journal_abbreviations(journal_name = 'communication')`"
+title: Informing IPCC accounting of forest carbon using the global forest carbon database (ForC v4.0)
+journal: "`r rticles::copernicus_journal_abbreviations(journal_name = 'ESSD')`"
 author:
-  - given_name: Daniel
-    surname: Nüst
-    affiliation: "1, *"
-    email: daniel.nuest@uni-muenster.de
+  - given_name: Madison 
+    surname: Williams
+    affiliation: "1"
+  - given_name: Valentine
+    surname: Herrmann
+    affiliation: "1"
+  - given_name: Rebecca
+    surname: Banbury Morgan
+    affiliation: "2" 
+  - given_name: Ben 
+    surname: Bond-Lamberty (confirm)
+    affiliation: "3" 
+  - given_name: Susan 
+    surname: Cook-Patton (confirm)
+    affiliation: "4" 
+  - given_name: Sandro 
+    surname: Federici (confirm)
+    affiliation: "5" 
+  - given_name: Helene
+    surname: Muller-Landau
+    affiliation: "6" 
+  - given_name: Camille
+    surname: Piponiot
+    affiliation: "7" 
+  - given_name: Teagan
+    surname: Rogers
+    affiliation: "1"
+  - given_name: Valentyna
+    surname: Slivinska (confirm)
+    affiliation: "5"
+  - given_name: Kristina J.
+    surname: Anderson-Teixeira
+    affiliation: "1,6 *"
+    email: teixeirak@si.edu
     corresponding: true
-  - given_name: Josiah
-    surname: Carberry
-    affiliation: 2
-    email: j.carberry@orcid.org
-  - given_name: Markus
-    surname: Konkol
-    affiliation: "1, *"
-  - given_name: Nikolaus
-    surname: Copernicus
-    # authors can have multiple affiliations, which can also be used to mark deceased coauthors
-    affiliation: "3, †"
-# If you have more than one corresponding author, add them manually using the following structure (note the commas):
-# Two authors: Daniel Nüst (daniel.nuest@uni-muenster.de) and Josiah Carberry (j.carberry@orcid.org)
-# Three authors or more: Daniel Nüst (daniel.nuest@uni-muenster.de), Josiah Carberry (j.carberry@orcid.org), and Markus Konkol (m.konkol@wwu.de)
-# If the following line is uncommented, the "corresponding: true" above are ignored
-#correspongdingauthors: Daniel Nüst (daniel.nuest@uni-muenster.de) and Josiah Carberry (j.carberry@orcid.org)
-# If an author is deceased, please mark the respective author name(s) with a dagger '†' and add a further affiliation; put the decease date in the 'address' field", see 'Nikolaus Copernicus' in template.
-# If authors contributed equally, please mark the respective author names with an asterisk '*' and add a further affiliation: 'These authors contributed equally to this work.'", see template.
+
+#affiliation numbering will need to be fixed
+
 affiliation:
   - code: 1
-    address: Institute for Geoinformatics, University of Münster, 48149 Münster, Germany
+    address: Center for Conservatiton Ecology, Smithsonian Conservation Biology Institute, Front Royal, VA, United States
   - code: 2
-    address: Psychoceramics, Wesleyan University, Middletown, CT, United States
+    address: 
   - code: 3
-    address: University of Ferrara, Ferrara, Italy
-  - code: "†"
-    address: deceased, 24 May 1543
-  - code: "*"
-    address: These authors contributed equally to this work.
+    address: 
+  - code: 4
+    address: 
+  - code: 5
+    address: 
+  - code: 6
+    address: Forest Global Earth Observatory, Smithsonian Tropical Research Institute, Panama, Republic of Panama
+  - code: 7
+    address: CIRAD, Montpellier, France
+
+
 abstract: |
   The abstract goes here.
   It can also be on _multiple lines_.
-bibliography: sample.bib
+bibliography: references.bib
 running:
-  title: R Markdown Template for Copernicus
-  author: Nüst et al.
+  title: IPCC forest C accounting with ForC
+  author: Williams et al.
 # This section is mandatory even if you declare that no competing interests are present.
 competinginterests: |
   The authors declare no competing interests.
@@ -137,7 +158,7 @@ Subsubsection text here.
 See the [R Markdown docs for bibliographies and citations](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
 
 Copernicus supports biblatex and a sample bibliography is in file `sample.bib`.
-Read [@Feynman1963118], and [see @Dirac1953888].
+Example citation [@anderson-teixeira_forc_2018]
 
 # Content section with R code chunks
 

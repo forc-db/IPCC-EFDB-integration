@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 JUN 2021 07:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  4 JUN 2021 08:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Copernicus-template-rticles.tex
-(./Copernicus-template-rticles.tex
+**ESSDmanuscript.tex
+(./ESSDmanuscript.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (./copernicus.cls
 Document Class: copernicus 2021/01/12 9.25 Copernicus papers
@@ -2841,8 +2841,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \c@reaction=\count297
 \tabularwidth=\dimen188
-Package color Info: Redefining color textcol on input line 2613.
-Package color Info: Redefining color bgcol on input line 2613.
 Package color Info: Redefining color textcol on input line 2617.
 Package color Info: Redefining color bgcol on input line 2618.
 Package color Info: Redefining color barcol on input line 2619.
@@ -2852,8 +2850,8 @@ LaTeX Info: Redefining \vec on input line 14.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count298
 \l__pdf_internal_box=\box58
-) (./Copernicus-template-rticles.aux)
-\openout1 = `Copernicus-template-rticles.aux'.
+) (./ESSDmanuscript.aux)
+\openout1 = `ESSDmanuscript.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
 LaTeX Font Info:    ... okay on input line 87.
@@ -2916,23 +2914,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 128
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 128
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-28.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 13
-3.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+2.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -2957,18 +2950,18 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 133.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
-3.
+(Font)              scaled to size 8.54997pt on input line 142.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
+2.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 1
-52.
+61.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-Overfull \hbox (164.30348pt too wide) in paragraph at lines 150--155
+Overfull \hbox (164.30348pt too wide) in paragraph at lines 159--164
 []\T1/ptm/m/n/10 The \T1/pcr/m/n/10 journal \T1/ptm/m/n/10 you are sub-mit-ting
  to us-ing the of-fi-cial ab-bre-vi-a-tion. You can use the func-tion \T1/pcr/m
 /n/10 rticles::copernicus_journal_abbreviations(name
@@ -2979,35 +2972,35 @@ Overfull \hbox (164.30348pt too wide) in paragraph at lines 150--155
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 213.
+(textcomp)             Default family used instead on input line 222.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-13.
+22.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-213.
+222.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 213.
+(textcomp)             Default family used instead on input line 222.
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family pcr in TS1 encoding.
-(textcomp)             Default family used instead on input line 213.
+(textcomp)             Default family used instead on input line 222.
 [2] [3]
-<Nikolaus_Kopernikus.jpg, id=45, 206.7725pt x 240.9pt>
+<Nikolaus_Kopernikus.jpg, id=42, 206.7725pt x 240.9pt>
 File: Nikolaus_Kopernikus.jpg Graphic file (type jpg)
 <use Nikolaus_Kopernikus.jpg>
-Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 259.
+Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 268.
 (pdftex.def)             Requested size: 236.15796pt x 275.14345pt.
 File: Nikolaus_Kopernikus.jpg Graphic file (type jpg)
 <use Nikolaus_Kopernikus.jpg>
-Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 267.
+Package pdftex.def Info: Nikolaus_Kopernikus.jpg  used on input line 276.
 (pdftex.def)             Requested size: 341.43306pt x 397.82806pt.
 
-Overfull \hbox (170.03976pt too wide) in paragraph at lines 309--315
+Overfull \hbox (170.03976pt too wide) in paragraph at lines 318--324
 \T1/ptm/m/n/10 PAC: Quan-ti-ties, Units and Sym-bols in Phys-i-cal Chem-istry, 
 2nd Edn., Black-well Sci-ence, avail-able at: http://old.iupac.org/publications
 /books/gbook/green_book_2ed.pdf,
@@ -3016,51 +3009,51 @@ Overfull \hbox (170.03976pt too wide) in paragraph at lines 309--315
 [4
 
  <./Nikolaus_Kopernikus.jpg>] [5] [6]
-Overfull \hbox (14.92061pt too wide) in paragraph at lines 378--386
+Overfull \hbox (14.92061pt too wide) in paragraph at lines 387--395
 \T1/pcr/m/n/10 true\T1/ptm/m/n/10 ), or make sure your-self that the L[]T[]Xpac
 kages \T1/pcr/m/n/10 algorithms \T1/ptm/m/n/10 and \T1/pcr/m/n/10 algorithmicx 
 \T1/ptm/m/n/10 are in-stalled so that \T1/pcr/m/n/10 algorithm.sty
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 388.
+put line 397.
 [7]pdfTeX warning (ext4): destination with the same identifier (name{equation.6
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.422 \begin{reaction}
+l.431 \begin{reaction}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.425 \begin{reaction}
+l.434 \begin{reaction}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{equation.6.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.428 \begin{reaction}
+l.437 \begin{reaction}
                       
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 443--445
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 452--454
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
 
-[8] (./Copernicus-template-rticles.bbl [9]) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 546.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 546.
-(./Copernicus-template-rticles.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 546.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 546.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 546.
+[8] (./ESSDmanuscript.bbl [9]) [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 555.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 555.
+(./ESSDmanuscript.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 555.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 555.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 555.
  ) 
 Here is how much of TeX's memory you used:
- 13062 strings out of 480608
- 171848 string characters out of 5903631
- 490314 words of memory out of 5000000
- 28603 multiletter control sequences out of 15000+600000
- 578944 words of font info for 99 fonts, out of 8000000 for 9000
+ 13037 strings out of 480608
+ 171301 string characters out of 5903631
+ 490104 words of memory out of 5000000
+ 28584 multiletter control sequences out of 15000+600000
+ 578316 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,46p,342b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,8n,46p,329b,718s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -3079,10 +3072,10 @@ fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on Copernicus-template-rticles.pdf (10 pages, 177777 bytes).
+Output written on ESSDmanuscript.pdf (10 pages, 177796 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
