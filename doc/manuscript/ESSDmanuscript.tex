@@ -145,12 +145,6 @@ The abstract goes here. It can also be on \emph{multiple lines}.
 transferred to institution/company.}
 
 
-\introduction[Introduction]
-
-Introduction text goes here. You can change the name of the section if
-neccessary using
-\texttt{\textbackslash{}introduction{[}modified\ heading{]}}.
-
 The following settings can or must be configured in the header of this
 file and are bespoke for Copernicus manuscripts:
 
@@ -192,15 +186,56 @@ especially the sections ``Technical instructions for LaTeX'' and
 ``Manuscript composition''. Please contact Daniel Nüst,
 \texttt{daniel.nuest@uni-muenster.de}, with any problems.
 
-\section{Content section one}
+\introduction[Introduction]
 
-\subsection{Subsection Heading Here}
+\emph{(Importance of forests for climate change mitigation)}
 
-Subsection text here.
+\emph{(Need for good data in international carbon accounting)}
 
-\subsubsection{Subsubsection Heading Here}
+\emph{(Introduce EFDb \& forc)}
 
-Subsubsection text here.
+Here, we: (1) clarify C cycle terminology (2) describe mapping of ForC
+to IPCC's EFDB, (3) describe updates to ForC (ForC v4.0) (4) summarize
+the data in ForC that's relevant to EFDB, identifying gaps (5) provide
+recommendations for improving data collection, analysis, database, and
+accounting
+
+\section{Defining carbon stocks and incremenets}
+
+For quantifying forest role in global C cycle, we ultimately care about:
+(1) C stocks --stores of C that would be released to the atmosphere upon
+and use change (2) C increments -- changes in those C stocks.
+
+\subsection{Carbon stocks}
+
+Forest ecosystem C stocks may be parsed into pools in various ways. IPCC
+parses into biomass (aboveground and belowground), dead organic matter
+(dead wood and litter), and soil organic matter (Table 1). Quantifying
+these requires a one-time measurement.
+
+\newpage
+
+\textbf{Table 1: variables with definitions and measurement methods.}
+Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).
+(\emph{Currently adding this as a figure (generated from original draft)
+because kableExtra doesn't seem to work in this template. Table that we
+want here is ``figures\_tables/C\_pools.csv''})
+
+\begin{figure}
+\includegraphics[width=12cm]{figures_tables/C_pools_fig} \caption{Table 1}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+\subsection{Carbon increments}
+
+C increments are defined as the change over time, in annual increments,
+in each C pool. These may be estimated as the difference between C
+stocks at two time points, or as the difference between inputs and
+outputs to the pool (i.e., fluxes). Quantifying these requires at least
+two measurements.
+
+Fluxes are the inputs and outputs to each pool.
+
+\textbf{Figure: schematic illustrating fluxes in and out of each pool}
 
 \section{Content section with citations}
 
@@ -265,7 +300,7 @@ Include a 12cm width figure of Nikolaus Copernicus from
 with caption using R Markdown.
 
 \begin{figure}
-\includegraphics[width=8.3cm]{Nikolaus_Kopernikus} \caption{one column figure}\label{fig:unnamed-chunk-2}
+\includegraphics[width=8.3cm]{Nikolaus_Kopernikus} \caption{one column figure}\label{fig:unnamed-chunk-3}
 \end{figure}
 
 \subsubsection{TWO-COLUMN FIGURES}
@@ -273,7 +308,7 @@ with caption using R Markdown.
 You can also include a larger figure.
 
 \begin{figure}
-\includegraphics[width=12cm]{Nikolaus_Kopernikus} \caption{two column figure}\label{fig:unnamed-chunk-3}
+\includegraphics[width=12cm]{Nikolaus_Kopernikus} \caption{two column figure}\label{fig:unnamed-chunk-4}
 \end{figure}
 
 \subsection{TABLES}
