@@ -10,7 +10,7 @@ author:
     affiliation: "1"
   - given_name: Rebecca
     surname: Banbury Morgan
-    affiliation: "2" 
+    affiliation: "1,2" 
   - given_name: Ben 
     surname: Bond-Lamberty (confirm)
     affiliation: "3" 
@@ -118,7 +118,7 @@ Here, we:
 (3) describe updates to ForC  (ForC v4.0),
 (4) summarize the data in ForC that's relevant to EFDB, identifying gaps, and
 (5) provide recommendations for improving data collection, analysis, database, and accounting.
-We note that 
+
 
 # Defining carbon stocks and incremenets
 
@@ -182,26 +182,29 @@ Define relationship among NEE, NEP, and delta.C., especially noting role of harv
 # Updates to ForC  (ForC v4.0)
 
 To support export of data to EFDB, and to improve the overall quality of the ForC database, we implemented some modest restructuring, resolved duplicate records, and conducted quality control.
-
 This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].
 
 ## ForC restructuring
 
+```{r, out.width = "12cm", echo = FALSE,fig.pos="H", fig.cap = "Table of changes to ForC fields (placeholder) "}
+#this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
+knitr::include_graphics("figures_tables/ForC_updates_placeholder_fig.png")
+```
+*(The above is a placeholder for the table located at  https://github.com/forc-db/ForC/blob/master/database_management_records/record_of_changes.csv, which we'll need to format.)*
 
-**Table: changes to ForC fields**.  
-Use  this table : https://github.com/forc-db/ForC/blob/master/database_management_records/record_of_changes.csv.
+## Quality control measures
+Prior to releasing ForC v4.0, we executed several quality control measures.
+First, to improve information on geographic coordinates, we flagged and reviewed records with suspected low precision *(Issue #29)[https://github.com/forc-db/ForC/issues/229]*.
+Second, to identify erroneous climate data... *(Issue #212)[https://github.com/forc-db/ForC/issues/212]*.
 
 ## Resolving duplicates
-
-## Quality control
-
 
 
 # Results
 
 **figure: map of relevant ForC data with underlying FAO ecozones**
 
-summarize the data in ForC that's relevant to EFDB, identifying gaps
+**(summarize the data in ForC that's relevant to EFDB, identifying gaps)**
 
 dead wood and litter comparisons will be particularly interesting, as IPCC values are based on just a handful of references for each climate zone (table 2.2 in 2019 guidelines)
 
@@ -218,18 +221,22 @@ Furthermore, there is an opportunity to fill data gaps by calculating these from
 For example, the core census protocol of the Forest Global Earth Observatory [ForestGEO; REFS] collects the data required to calculate standing dead wood, woody mortality, and delta.agb, but these have not been calculated and reported for all sites for which the appropriate number of censuses are available (n=1 for standing dead wood, n=2 for woody mortality and delta.agb) [but see REFS].
 
 
-**A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.**
+A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.
 *(Camille/Helene can write this paragraph easily.)*
 
 ## Data reporting needs
 
-**We recommend that, unless they have some specific reason to do otherwise, researchers calculate and report the values according to IPCC standards:**
+We recommend that, unless they have some specific reason to do otherwise, researchers calculate and report the values according to IPCC standards:
 
   - adopt common standards for variables like min diameter of deadwood, select soil sampling increments to include a cutoff at 30.
   
   - report 95% CIs, SE, or STD and n
   
   - report C variables in article text, table, or SI table. EFDB cannot accept data digitized from figures
+  
+
+**Contributing data to ForC and/or EFDB directly will ensure its broader impact.**
+The latter is more efficient for getting data to EFDB, but does not get the data into ForC, where it can be more broadly useful--for example, being used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021] or model benchmarking [@fer_ecosystem_2021].
 
 ## Database needs
 
@@ -241,7 +248,7 @@ Systematic review of the literature could vastly improve data coverage.
 
 An important challenge is that forests are changing rapidly, and data collected a decaade ago may no longer be relevant, particularly in the cases of C increments and fluxes.
 
-
+Remote sensing biomass estimates include standing dead wood [@duncanson_aboveground_2021].
 
 
 \conclusions[Conclusions]

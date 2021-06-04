@@ -92,7 +92,7 @@ forest carbon database (ForC v4.0)}
 
 \Author[1]{Madison}{Williams}
 \Author[1]{Valentine}{Herrmann}
-\Author[2]{Rebecca}{Banbury Morgan}
+\Author[1,2]{Rebecca}{Banbury Morgan}
 \Author[3]{Ben}{Bond-Lamberty (confirm)}
 \Author[4]{Susan}{Cook-Patton}
 \Author[5]{Sandro}{Federici}
@@ -166,8 +166,7 @@ Here, we: (1) clarify definitions of relevant carbon stocks and
 increments (2) describe mapping of ForC to IPCC's EFDB, (3) describe
 updates to ForC (ForC v4.0), (4) summarize the data in ForC that's
 relevant to EFDB, identifying gaps, and (5) provide recommendations for
-improving data collection, analysis, database, and accounting. We note
-that
+improving data collection, analysis, database, and accounting.
 
 \section{Defining carbon stocks and incremenets}
 
@@ -237,26 +236,36 @@ of harvest.
 
 To support export of data to EFDB, and to improve the overall quality of
 the ForC database, we implemented some modest restructuring, resolved
-duplicate records, and conducted quality control.
-
-This section describes changes relative to ForC v2.0
-\citep{anderson-teixeira_forc_2018}.
+duplicate records, and conducted quality control. This section describes
+changes relative to ForC v2.0 \citep{anderson-teixeira_forc_2018}.
 
 \subsection{ForC restructuring}
 
-\textbf{Table: changes to ForC fields}.\\
-Use this table :
-https://github.com/forc-db/ForC/blob/master/database\_management\_records/record\_of\_changes.csv.
+\begin{figure}[H]
+\includegraphics[width=12cm]{figures_tables/ForC_updates_placeholder_fig} \caption{Table of changes to ForC fields (placeholder) }\label{fig:unnamed-chunk-2}
+\end{figure}
+
+\emph{(The above is a placeholder for the table located at
+https://github.com/forc-db/ForC/blob/master/database\_management\_records/record\_of\_changes.csv,
+which we'll need to format.)}
+
+\subsection{Quality control measures}
+
+Prior to releasing ForC v4.0, we executed several quality control
+measures. First, to improve information on geographic coordinates, we
+flagged and reviewed records with suspected low precision \emph{(Issue
+\#29){[}https://github.com/forc-db/ForC/issues/229{]}}. Second, to
+identify erroneous climate data\ldots{} \emph{(Issue
+\#212){[}https://github.com/forc-db/ForC/issues/212{]}}.
 
 \subsection{Resolving duplicates}
-
-\subsection{Quality control}
 
 \section{Results}
 
 \textbf{figure: map of relevant ForC data with underlying FAO ecozones}
 
-summarize the data in ForC that's relevant to EFDB, identifying gaps
+\textbf{(summarize the data in ForC that's relevant to EFDB, identifying
+gaps)}
 
 dead wood and litter comparisons will be particularly interesting, as
 IPCC values are based on just a handful of references for each climate
@@ -281,16 +290,16 @@ calculated and reported for all sites for which the appropriate number
 of censuses are available (n=1 for standing dead wood, n=2 for woody
 mortality and delta.agb) {[}but see REFS{]}.
 
-\textbf{A universal challenge in estimating biomass (living or dead)
-from forest census data is applying appropriate allometries to convert
-DBH measurements to biomass.} \emph{(Camille/Helene can write this
-paragraph easily.)}
+A universal challenge in estimating biomass (living or dead) from forest
+census data is applying appropriate allometries to convert DBH
+measurements to biomass. \emph{(Camille/Helene can write this paragraph
+easily.)}
 
 \subsection{Data reporting needs}
 
-\textbf{We recommend that, unless they have some specific reason to do
+We recommend that, unless they have some specific reason to do
 otherwise, researchers calculate and report the values according to IPCC
-standards:}
+standards:
 
 \begin{itemize}
 \item
@@ -302,6 +311,13 @@ standards:}
   report C variables in article text, table, or SI table. EFDB cannot
   accept data digitized from figures
 \end{itemize}
+
+\textbf{Contributing data to ForC and/or EFDB directly will ensure its
+broader impact.} The latter is more efficient for getting data to EFDB,
+but does not get the data into ForC, where it can be more broadly
+useful--for example, being used for basic science
+\citep[e.g.,][]{banburymorgan_global_2021, anderson-teixeira_carbon_2021}
+or model benchmarking \citep{fer_ecosystem_2021}.
 
 \subsection{Database needs}
 
@@ -315,6 +331,9 @@ Susan can specify.)}
 An important challenge is that forests are changing rapidly, and data
 collected a decaade ago may no longer be relevant, particularly in the
 cases of C increments and fluxes.
+
+Remote sensing biomass estimates include standing dead wood
+\citep{duncanson_aboveground_2021}.
 
 \conclusions[Conclusions]
 
