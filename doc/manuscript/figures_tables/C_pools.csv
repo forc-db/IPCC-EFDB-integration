@@ -1,0 +1,6 @@
+﻿ pool ,definition ,major sources of estimate variation ,IPCC guidance,
+biomass , aboveground ," all biomass of living vegetation, both woody and herbaceous, above the soil "," allometry, min dbh ", acceptable to exclude understory
+  , belowground , all biomass of live roots ," allometry, min dbh, assumed ratio of belowground to aboveground biomass (IPCC table 4.4) ", fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter
+dead organic matter , dead wood ," all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil "," min dbh,  ... "," default min dbh = 10cm, but may be chosen by country"
+ , litter ," all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil "," min dbh for dead wood , ..",
+soils , soil organic matter , organic carbon in mineral soils to a specified depth , sampling depth ," default sampling depth = 30cm, but may be chosen by country"
