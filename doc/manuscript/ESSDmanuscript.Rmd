@@ -12,7 +12,7 @@ author:
     surname: Banbury Morgan
     affiliation: "1,2" 
   - given_name: Ben 
-    surname: Bond-Lamberty (confirm)
+    surname: Bond-Lamberty
     affiliation: "3" 
   - given_name: Susan 
     surname: Cook-Patton
@@ -46,7 +46,7 @@ affiliation:
   - code: 2
     address: 
   - code: 3
-    address: 
+    address: Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, United States
   - code: 4
     address: 
   - code: 5
