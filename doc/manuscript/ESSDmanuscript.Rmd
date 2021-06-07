@@ -44,11 +44,11 @@ affiliation:
   - code: 1
     address: Center for Conservatiton Ecology, Smithsonian Conservation Biology Institute, Front Royal, VA, United States
   - code: 2
-    address: 
+    address: School of Geography, University of Leeds, Leeds, UK
   - code: 3
     address: Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, United States
   - code: 4
-    address: 
+    address: The Nature Conservancy; Arlington VA 22203, USA
   - code: 5
     address:  IPCC Task Force on National Greenhouse Gas Inventories Technical Support Unit, Institute for Global Environmental Strategies, Hayama, Japan
   - code: 6
@@ -103,16 +103,23 @@ Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.
 
 \introduction[Introduction]
 
-**(Forest are critical for climate change mitigation)**
+**As we seek to mitigate climate change [@unfccc_adoption_2015], forests are critical.**
+*(See intros to other papers for relevant refs)*
+Under Paris Agreement, **##**% of Nationally Determined Contributions relate to forests [@grassi_key_2017].
 
+**The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories [(REFS for older guidelines), @ipcc_2019_2019].**
+These include guidance for accounting for forest land [@ipcc_agriculture_2006; @ipcc_2019_2019a].
+This guidance has improved as more of the relevant underlying data has become available [@requenasuarez_estimating_2019], but there remains room for continuous improvement as the science advances.
+For example, @cook-patton_mapping_2020 *(summarize IPCC comparison results)*. 
+*Moreover, it is useful for those compiling national greenhouse gas inventories to have access to locally-specific information, when available.*
+To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 
-**(Need for good data in international carbon accounting)**
+**The Global Forest Carbon Database, ForC, is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].**
+*(add stats/ details)*
+As such, ForC is positioned to improve forest C accounting through the transfer of data to EFDB.
+The purpose of this publication is to document that process and provide recommendations for future improvements.
 
-
-**(Introduce EFDB & ForC)**
-
-
-Here, we:
+**Here, we**
 (1) clarify definitions of relevant carbon stocks and increments
 (2) describe mapping of ForC to IPCC's EFDB,
 (3) describe updates to ForC  (ForC v4.0),
