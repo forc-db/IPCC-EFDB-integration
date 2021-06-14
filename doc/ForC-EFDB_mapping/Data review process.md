@@ -16,12 +16,21 @@ Note that studies with multiple files (e.g., manuscript and supplementary info f
 If there is not already a copy of the article in the References repository, please add it, named with `Citation.ID`, along with any supplementary files containing data. If there are supplementary files, create a folder with the `Citation_ID` name and put all files in that folder. (Remember to push to GitHub!)
 
 ## Step 3. Check/correct info in `citations.csv`
+(*instructions not yet complete.*)
+
 ## Step 4. Check/correct info in `sites.csv`
+(*instructions not yet complete.*)
+
 ## Step 5. Check/correct info in `history.csv`
+(*instructions not yet complete.*)
+
 ## Step 6. Check/correct info in `measurements.csv`
+(*instructions not yet complete.*)
+
 ### Focus on:
 - check measurement value (`mean`)
 - documentation of conversion from original units: `original.units`, `mean.in.original.units`, `C.conversion.factor` (*not required*)
 - info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
 
 ## Step 7. Communicate that the study has been checked
+- We need to come up with a good system for this ([issue #18](https://github.com/forc-db/IPCC-EFDB-integration/issues/18))
