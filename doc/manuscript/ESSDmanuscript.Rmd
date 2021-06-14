@@ -240,7 +240,8 @@ We recommend that, unless they have some specific reason to do otherwise, resear
   - report 95% CIs, SE, or STD and n
   
   - report C variables in article text, table, or SI table. EFDB cannot accept data digitized from figures
-  
+
+For data synthesis projects, compilation can only be useful to the EFDB if they include all the required, along with transparent description on the methodology applied to derive emission factors (or have a brief description and a reference to the original source) and the original emission factor values are present (not modified/rounded).  
 
 **Contributing data to ForC and/or EFDB directly will ensure its broader impact.**
 The latter is more efficient for getting data to EFDB, but does not get the data into ForC, where it can be more broadly useful--for example, being used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021] or model benchmarking [@fer_ecosystem_2021].
