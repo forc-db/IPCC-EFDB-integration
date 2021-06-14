@@ -19,4 +19,9 @@ If there is not already a copy of the article in the References repository, plea
 ## Step 4. Check/correct info in `sites.csv`
 ## Step 5. Check/correct info in `history.csv`
 ## Step 6. Check/correct info in `measurements.csv`
+### Focus on:
+- check measurement value (`mean`)
+- documentation of conversion from original units: `original.units`, `mean.in.original.units`, `C.conversion.factor` (*not required*)
+- info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
+
 ## Step 7. Communicate that the study has been checked
