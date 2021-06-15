@@ -6,7 +6,9 @@ Instructions are [here](https://github.com/forc-db/ForC/blob/master/how_to/edit_
 ## Step 1. Identify study to check
 We created [`citations_ordered_by_priority_score.csv`](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/data/citations_ordered_by_priority_score.csv) to help prioritize studies to review and send. We will probably want to refine the algorithm (see [issue #16](https://github.com/forc-db/IPCC-EFDB-integration/issues/16)), but it's a start. 
 
-In the beginning, please ask Krista which to prioritize. 
+Before you invest time in checking a study, it would be good to check that at least some of the data come from tables or the text, as opposed to having been digitized from figures. Once you understand the structure of the databse, you'll be able to do this quickly. (Early on, Krista will try to direct you to studies with no digitized data.)
+
+In the beginning, please ask Krista which studies to prioritize. 
 
 ## Step 2. Retrieve the original article and ensure that it is saved in the [References repository](https://github.com/forc-db/References)
 Instructions are [here](https://github.com/forc-db/ForC/blob/master/how_to/find_original_publications.md). Note that a lot of citations are available here: https://www.dropbox.com/sh/znee1tak8t7zu6o/AAA-poV8sBLKvAPdIDBC4B0ga?dl=0 . These are references from another database (SRDB) that we imported. 
@@ -57,7 +59,10 @@ If there is not already a copy of the article in the References repository, plea
     `regrowth.year`
 
 ## Step 6. Check/correct info in `measurements.csv`
-These are the most critical checks, including mandatory fields, and assuring that the core data are correct. 
+
+*These are the most critical checks, including mandatory fields, and assuring that the core data are correct.* 
+
+- filter `citation.ID` to display records that include this study
 
 ### Focus on:
 - check values of **mandatory fields**: 
