@@ -80,6 +80,7 @@ If there is not already a copy of the article in the References repository, plea
   `covariate_2`	
   `coV_2.value`
   `allometry`
+ - fill `data.location.within.source`. This is **required** for us to know whether data were digitized from a figure (not allowed) or pulled from text/table (allowed). 
 
 ## Step 7. Communicate that the study has been checked
 - We need to come up with a good system for this ([issue #18](https://github.com/forc-db/IPCC-EFDB-integration/issues/18))
