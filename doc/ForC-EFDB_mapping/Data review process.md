@@ -73,20 +73,20 @@ If there is not already a copy of the article in the References repository, plea
   - info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
 - documentation of conversion from original units: `original.units` (**mandatory**), `mean.in.original.units` (**mandatory**), `C.conversion.factor` (*not sent to EFDB, but good to have*)
 - fields sent to EFDB (not mandatory):
-  `dominant.veg`
-  `scientific.name`
-  `veg.notes`
-  `stand.age`
-  `min.dbh`
-  `allometry_1`	
-  `allometry_2`
-  `min.dbh`	
-  `depth`	
-  `covariate_1`
-  `coV_1.value`	
-  `covariate_2`	
-  `coV_2.value`
-  `allometry`
+  -  `dominant.veg` (check that it matches `veg.notes`, fill in both if missing and the info is provided)
+  -  `scientific.name`
+  -  `veg.notes` (fill in if missing and the info is provided. In some cases, the info may even be given in plot name!)
+  -  `stand.age`
+  -  `min.dbh`
+  -  `allometry_1`	
+  -  `allometry_2`
+  -  `min.dbh`	
+  -  `depth`	
+  -  `covariate_1`
+  -  `coV_1.value`	
+  -  `covariate_2`	
+  -  `coV_2.value`
+  -  `allometry`
  - fill `data.location.within.source`. This is **required** for us to know whether data were digitized from a figure (not allowed) or pulled from text/table (allowed). 
 
 ## Step 7. Communicate that the study has been checked
