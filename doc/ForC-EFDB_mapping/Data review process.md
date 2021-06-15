@@ -23,7 +23,28 @@ If there is not already a copy of the article in the References repository, plea
 *NOTE: `citation.title`, `citation.citation`, `citation.url`, and `citation.abstract` can all be filled automatically via code, so no need to bother with these.*
 
 ## Step 4. Check/correct info in `sites.csv`
-(*instructions not yet complete.*)
+- filter `measurement.refs` to display records that include this study
+- check that for all sites included in the study, `potential_duplicate_group` = 0 OR `confirmed.unique` = 1. If neither of these is true, there is a potential duplicate site in the database. At first, we want to skip over those studies.
+- It is not necessary to thoroughly review all fields-- just check that the info looks reasonable. 
+- If the current ForC record has little info (e.g., lacks mat, map, etc.) and the publication reports it, please fill in that info.
+ 
+### Focus on:
+- double check lat/lon and fill `coordinates.precision` (this is not sent to EFDB, but important for resolving duplicates and ensuring quality of extracted data (e.g., climate)
+- fields sent to EFDB:
+      country,
+      state,
+      city,
+      lat,
+      lon,
+      mat,
+      map,
+      masl,
+      soil.texture,
+      sand,
+      silt,
+      clay,
+      soil.classification
+
 
 ## Step 5. Check/correct info in `history.csv`
 (*instructions not yet complete.*)
