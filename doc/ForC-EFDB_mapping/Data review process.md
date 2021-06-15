@@ -60,9 +60,11 @@ If there is not already a copy of the article in the References repository, plea
 (*instructions not yet complete.*)
 
 ### Focus on:
-- check measurement value (`mean`)
-- documentation of conversion from original units: `original.units`, `mean.in.original.units`, `C.conversion.factor` (*not required*)
-- info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
+- check values of **mandatory fields**: 
+  - `mean`
+  - info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
+- documentation of conversion from original units: `original.units` (**mandatory**), `mean.in.original.units` (**mandatory**), `C.conversion.factor` (*not sent tto EFDB, but good to have*)
+
 
 ## Step 7. Communicate that the study has been checked
 - We need to come up with a good system for this ([issue #18](https://github.com/forc-db/IPCC-EFDB-integration/issues/18))
