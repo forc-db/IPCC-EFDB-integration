@@ -25,12 +25,12 @@ If there is not already a copy of the article in the References repository, plea
 ## Step 4. Check/correct info in `sites.csv`
 - filter `measurement.refs` to display records that include this study
 - check that for all sites included in the study, `potential_duplicate_group` = 0 OR `confirmed.unique` = 1. If neither of these is true, there is a potential duplicate site in the database. At first, we want to skip over those studies.
-- It is not necessary to thoroughly review all fields-- just check that the info looks reasonable. 
+- It is not necessary to thoroughly review all fields-- just check that the info looks reasonable. If there are many sites, spot-check a few, but no need to thoroughly double check each one.  
 - If the current ForC record has little info (e.g., lacks mat, map, etc.) and the publication reports it, please fill in that info.
  
 ### Focus on:
-- double check lat/lon and fill `coordinates.precision` (this is not sent to EFDB, but important for resolving duplicates and ensuring quality of extracted data (e.g., climate)
-- fields sent to EFDB (none required):
+- double check lat/lon (or spot check just a few sites if there are many) and fill `coordinates.precision` (this is not sent to EFDB, but important for resolving duplicates and ensuring quality of extracted data (e.g., climate)
+- fields sent to EFDB (none mandatory):
       `country`,
       `state`,
       `city`,
@@ -47,7 +47,14 @@ If there is not already a copy of the article in the References repository, plea
 
 
 ## Step 5. Check/correct info in `history.csv`
-(*instructions not yet complete.*)
+(*This is complex and will be a bit of a pain to manually review, as citation.ID is not associated to history records. For now, skip this and KAT will check that everything looks reasonable prior to approving the data. In the longer run, I'll need to provide instructions for this. We may also want to improve the ForC structure around this.*)
+
+- fields sent to EFDB (none mandatory):
+    `plot.area`
+    `distmrs.type`
+    `distmrs.year`
+    `regrowth.type`
+    `regrowth.year`
 
 ## Step 6. Check/correct info in `measurements.csv`
 (*instructions not yet complete.*)
