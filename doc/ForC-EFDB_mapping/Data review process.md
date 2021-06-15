@@ -9,7 +9,7 @@ We created [`citations_ordered_by_priority_score.csv`](https://github.com/forc-d
 In the beginning, please ask Krista which to prioritize. 
 
 ## Step 2. Retrieve the original article and ensure that it is saved in the [References repository](https://github.com/forc-db/References)
-Instructions are [here](https://github.com/forc-db/ForC/blob/master/how_to/find_original_publications.md).
+Instructions are [here](https://github.com/forc-db/ForC/blob/master/how_to/find_original_publications.md). Note that a lot of citations are available here: https://www.dropbox.com/sh/znee1tak8t7zu6o/AAA-poV8sBLKvAPdIDBC4B0ga?dl=0 . These are references from another database (SRDB) that we imported. 
 
 Note that studies with multiple files (e.g., manuscript and supplementary info file) are contained in folders named with the `Citation.ID`, so depending on how folders are sorted in your computer's file management system, you might not see those in the alphabetical list of .pdfs.
 
