@@ -258,6 +258,21 @@ of harvest.
 
 \subsection{Land use categories}
 
+Documented at
+https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/defining\_land\_subcategory.md,
+https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/IPCC\_LandUse\_mapping.csv,
+and in
+\href{https://github.com/forc-db/IPCC_database_integration/issues/8}{issue
+\#8}.
+
+Land classification under UNFCCC (e.g.,
+https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-018-0095-3)
+is (i) defined differently across countries and (ii) probably not
+defined the same way as it might be defined in publications included in
+ForC. Therefore, we do not transfer any classification of land as
+managed/unmanaged, but do provide any auxiliary info that may be useful
+in making this determination.
+
 \section{Updates to ForC (ForC v4.0)}
 
 To support export of data to EFDB, and to improve the overall quality of
@@ -337,6 +352,12 @@ standards:
   report C variables in article text, table, or SI table. EFDB cannot
   accept data digitized from figures
 \end{itemize}
+
+For data synthesis projects, compilation can only be useful to the EFDB
+if they include all the required, along with transparent description on
+the methodology applied to derive emission factors (or have a brief
+description and a reference to the original source) and the original
+emission factor values are present (not modified/rounded).
 
 \textbf{Contributing data to ForC and/or EFDB directly will ensure its
 broader impact.} The latter is more efficient for getting data to EFDB,
