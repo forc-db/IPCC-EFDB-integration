@@ -57,12 +57,12 @@ If there is not already a copy of the article in the References repository, plea
     `regrowth.year`
 
 ## Step 6. Check/correct info in `measurements.csv`
-(*instructions not yet complete.*)
+These are the most critical checks, including mandatory fields, and assuring that the core data are correct. 
 
 ### Focus on:
 - check values of **mandatory fields**: 
   - `variable.name` (this is important, in that "OM" and "C" can get swithced sometimes, or vairable names confused)
-  - `mean`
+  - `mean` (This -- or `mean.in.original.units`, whichever applies- - should be reported *exactly* as in the original article, including the same number of digits.) 
   - info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
 - documentation of conversion from original units: `original.units` (**mandatory**), `mean.in.original.units` (**mandatory**), `C.conversion.factor` (*not sent to EFDB, but good to have*)
 - fields sent to EFDB (not mandatory):
