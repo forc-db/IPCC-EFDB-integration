@@ -16,7 +16,11 @@ Note that studies with multiple files (e.g., manuscript and supplementary info f
 If there is not already a copy of the article in the References repository, please add it, named with `Citation.ID`, along with any supplementary files containing data. If there are supplementary files, create a folder with the `Citation_ID` name and put all files in that folder. (Remember to push to GitHub!)
 
 ## Step 3. Check/correct info in `citations.csv`
-(*instructions not yet complete.*)
+- if `citation.doi` is NAC, fill in DOI (there should be few of these)
+- check `citation.language` (may be wrong if abstract is in English, article in other language)
+- check `pdf.in.repository` -- should be 1 if pdf is there, 0 if not.
+
+*NOTE: `citation.title`, `citation.citation`, `citation.url`, and `citation.abstract` can all be filled automatically via code, so no need to bother with these.*
 
 ## Step 4. Check/correct info in `sites.csv`
 (*instructions not yet complete.*)
