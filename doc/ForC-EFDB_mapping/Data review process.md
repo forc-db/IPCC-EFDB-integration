@@ -61,10 +61,25 @@ If there is not already a copy of the article in the References repository, plea
 
 ### Focus on:
 - check values of **mandatory fields**: 
+  - `variable.name` (this is important, in that "OM" and "C" can get swithced sometimes, or vairable names confused)
   - `mean`
   - info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
-- documentation of conversion from original units: `original.units` (**mandatory**), `mean.in.original.units` (**mandatory**), `C.conversion.factor` (*not sent tto EFDB, but good to have*)
-
+- documentation of conversion from original units: `original.units` (**mandatory**), `mean.in.original.units` (**mandatory**), `C.conversion.factor` (*not sent to EFDB, but good to have*)
+- fields sent to EFDB (not mandatory):
+  `dominant.veg`
+  `scientific.name`
+  `veg.notes`
+  `stand.age`
+  `min.dbh`
+  `allometry_1`	
+  `allometry_2`
+  `min.dbh`	
+  `depth`	
+  `covariate_1`
+  `coV_1.value`	
+  `covariate_2`	
+  `coV_2.value`
+  `allometry`
 
 ## Step 7. Communicate that the study has been checked
 - We need to come up with a good system for this ([issue #18](https://github.com/forc-db/IPCC-EFDB-integration/issues/18))
