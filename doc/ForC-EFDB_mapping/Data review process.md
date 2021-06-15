@@ -6,6 +6,8 @@ Instructions are [here](https://github.com/forc-db/ForC/blob/master/how_to/edit_
 ## Step 1. Identify study to check
 We created [`citations_ordered_by_priority_score.csv`](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/data/citations_ordered_by_priority_score.csv) to help prioritize studies to review and send. We will probably want to refine the algorithm (see [issue #16](https://github.com/forc-db/IPCC-EFDB-integration/issues/16)), but it's a start. 
 
+Start with simple studies: `n_pot_dup_sites` =0 (most important), 	`sites_represented` =1 (or not too many),	 and --less importantly -- fewer variables represented and n records. 
+
 Before you invest time in checking a study, it would be good to check that at least some of the data come from tables or the text, as opposed to having been digitized from figures. Once you understand the structure of the databse, you'll be able to do this quickly. (Early on, Krista will try to direct you to studies with no digitized data.)
 
 In the beginning, please ask Krista which studies to prioritize. 
