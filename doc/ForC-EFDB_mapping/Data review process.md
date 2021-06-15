@@ -31,19 +31,19 @@ If there is not already a copy of the article in the References repository, plea
 ### Focus on:
 - double check lat/lon and fill `coordinates.precision` (this is not sent to EFDB, but important for resolving duplicates and ensuring quality of extracted data (e.g., climate)
 - fields sent to EFDB:
-      country,
-      state,
-      city,
-      lat,
-      lon,
-      mat,
-      map,
-      masl,
-      soil.texture,
-      sand,
-      silt,
-      clay,
-      soil.classification
+      `country`,
+      `state`,
+      `city`,
+      `lat`,
+      `lon`,
+      `mat`,
+      `map`,
+      `masl`,
+      `soil.texture`,
+      `sand`,
+      `silt`,
+      `clay`,
+      `soil.classification`
 
 
 ## Step 5. Check/correct info in `history.csv`
