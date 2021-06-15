@@ -30,7 +30,7 @@ If there is not already a copy of the article in the References repository, plea
  
 ### Focus on:
 - double check lat/lon and fill `coordinates.precision` (this is not sent to EFDB, but important for resolving duplicates and ensuring quality of extracted data (e.g., climate)
-- fields sent to EFDB:
+- fields sent to EFDB (none required):
       `country`,
       `state`,
       `city`,
