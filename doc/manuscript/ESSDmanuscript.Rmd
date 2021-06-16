@@ -108,7 +108,7 @@ Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.
 Under Paris Agreement, **##**% of Nationally Determined Contributions relate to forests [@grassi_key_2017].
 
 **The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas (GHG) inventories for reporting to the United Nations Framework Convention on Climate Change [UNFCCC, (REFS for older guidelines), @ipcc_2019_2019].**
-Under this guidance, GHG inventories are to include all managed land, including most of the world's forest land [@ogle_delineating_2018].
+Under this guidance, GHG inventories include all managed land, including most of the world's forest land [@ogle_delineating_2018].
 The IPCC inventory guidelines include specific instructions for accounting for forest land ... [@ipcc_agriculture_2006; @ipcc_2019_2019a].
 This guidance has improved as more of the relevant underlying data has become available [@requenasuarez_estimating_2019], but there remains room for continuous improvement as the science advances.
 For example, @cook-patton_mapping_2020 *(summarize IPCC comparison results)*. 
