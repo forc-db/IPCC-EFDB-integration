@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JUN 2021 07:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JUN 2021 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2846,139 +2846,46 @@ Package color Info: Redefining color bgcol on input line 2618.
 Package color Info: Redefining color barcol on input line 2619.
 )
 LaTeX Info: Redefining \vec on input line 14.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count298
-\mult@box=\box58
-\multicol@leftmargin=\dimen189
-\c@unbalance=\count299
-\c@collectmore=\count300
-\doublecol@number=\count301
-\multicoltolerance=\count302
-\multicolpretolerance=\count303
-\full@width=\dimen190
-\page@free=\dimen191
-\premulticols=\dimen192
-\postmulticols=\dimen193
-\multicolsep=\skip74
-\multicolbaselineskip=\skip75
-\partial@page=\box59
-\last@line=\box60
-\maxbalancingoverflow=\dimen194
-\mult@rightbox=\box61
-\mult@grightbox=\box62
-\mult@gfirstbox=\box63
-\mult@firstbox=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\c@minrows=\count304
-\c@columnbadness=\count305
-\c@finalcolumnbadness=\count306
-\last@try=\dimen195
-\multicolovershoot=\dimen196
-\multicolundershoot=\dimen197
-\mult@nat@firstbox=\box102
-\colbreak@box=\box103
-\mc@col@check@num=\count307
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks38
-\minrowclearance=\skip76
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/hhline.sty
-Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip77
-\LTright=\skip78
-\LTpre=\skip79
-\LTpost=\skip80
-\LTchunksize=\count308
-\LTcapwidth=\dimen198
-\LT@head=\box104
-\LT@firsthead=\box105
-\LT@foot=\box106
-\LT@lastfoot=\box107
-\LT@cols=\count309
-\LT@rows=\count310
-\c@LT@tables=\count311
-\c@LT@chunks=\count312
-\LT@p@ftn=\toks39
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count313
-\l__pdf_internal_box=\box108
-)
-No file ESSDmanuscript.aux.
+\l__kernel_color_stack_int=\count298
+\l__pdf_internal_box=\box58
+) (./ESSDmanuscript.aux)
 \openout1 = `ESSDmanuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 94
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 87
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count314
-\scratchdimen=\dimen199
-\scratchbox=\box109
-\nofMPsegments=\count315
-\nofMParguments=\count316
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count317
-\MPscratchDim=\dimen256
-\MPnumerator=\count318
-\makeMPintoPDFobject=\count319
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count299
+\scratchdimen=\dimen189
+\scratchbox=\box59
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen190
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2989,14 +2896,10 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
-)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box110
-Package hyperref Info: Link coloring OFF on input line 94.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 87.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -3006,23 +2909,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count320
+\c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 94.
-LaTeX Info: Redefining \pageref on input line 94.
-LaTeX Info: Redefining \nameref on input line 94.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 147
+LaTeX Info: Redefining \ref on input line 87.
+LaTeX Info: Redefining \pageref on input line 87.
+LaTeX Info: Redefining \nameref on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 140
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 147
+LaTeX Font Info:    Trying to load font information for U+msb on input line 140
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
-2.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+5.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -3047,79 +2950,94 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 152.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
-3.
+(Font)              scaled to size 8.54997pt on input line 145.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
+6.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-
-Package natbib Warning: Citation `unfccc_adoption_2015' on page 1 undefined on 
-input line 168.
-
-
-Package natbib Warning: Citation `grassi_key_2017' on page 1 undefined on input
- line 171.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 1 undefined on input 
-line 175.
-
-
-Package natbib Warning: Citation `ipcc_agriculture_2006' on page 1 undefined on
- input line 176.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019a' on page 1 undefined on input
- line 176.
-
-
-Package natbib Warning: Citation `requenasuarez_estimating_2019' on page 1 unde
-fined on input line 178.
-
-
-Package natbib Warning: Citation `cook-patton_mapping_2020' on page 1 undefined
- on input line 180.
-
-
-Overfull \hbox (1.52129pt too wide) in paragraph at lines 175--188
-[]\T1/ptm/b/n/10 The In-ter-na-tional Panel on Cli-mate Change (IPCC) pro-vides
- guid-ance for na-tional green-house gas in-ven-to-ries ((REFS
- []
-
-
-Package natbib Warning: Citation `anderson-teixeira_forc_2018' on page 1 undefi
-ned on input line 192.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 1 unde
-fined on input line 192.
-
-[1
+) [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures_tables/C_pools_fig.png, id=26, 816.04875pt x 826.08624pt>
+<figures_tables/C_pools_fig.png, id=56, 816.04875pt x 826.08624pt>
 File: figures_tables/C_pools_fig.png Graphic file (type png)
 <use figures_tables/C_pools_fig.png>
-Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 227
+Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 225
 .
 (pdftex.def)             Requested size: 341.43306pt x 345.63033pt.
 
-! LaTeX Error: Undefined color model `HTML'.
+Overfull \hbox (149.16582pt too wide) in paragraph at lines 230--239
+ []$[]$ 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.240 ...TML]{666666}\global\arrayrulewidth=2pt}-}
-                                                   
+
+Overfull \hbox (149.16582pt too wide) in paragraph at lines 239--240
+ []|$[]$ 
+ []
+
+[3 <./figures_tables/C_pools_fig.png>]
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 266--272
+\T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
+lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
+ []
+
+
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 266--272
+\T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
+orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
+ []
+
+<figures_tables/ForC_updates_placeholder_fig.png, id=70, 1185.42876pt x 287.072
+5pt>
+File: figures_tables/ForC_updates_placeholder_fig.png Graphic file (type png)
+<use figures_tables/ForC_updates_placeholder_fig.png>
+Package pdftex.def Info: figures_tables/ForC_updates_placeholder_fig.png  used 
+on input line 295.
+(pdftex.def)             Requested size: 341.43306pt x 82.68382pt.
+[4]
+Overfull \hbox (102.14014pt too wide) in paragraph at lines 300--301
+\T1/ptm/m/it/10 (The above is a place-holder for the ta-ble lo-cated at https:/
+/github.com/forc-db/ForC/blob/master/database_management_records/record_of_chan
+ges.csv,
+ []
+
+[5 <./figures_tables/ForC_updates_placeholder_fig.png>]
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 396--398
+\T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
+th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
+ []
+
+[6] (./ESSDmanuscript.bbl [7]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+[]\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
+t Val-i-da-tion Good Prac-tices Pro-to-col,
+ []
+
+) [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 469.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 469.
+(./ESSDmanuscript.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 469.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 469.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 469.
+ ) 
 Here is how much of TeX's memory you used:
- 13134 strings out of 480608
- 172572 string characters out of 5903631
- 495038 words of memory out of 5000000
- 28758 multiletter control sequences out of 15000+600000
- 572004 words of font info for 78 fonts, out of 8000000 for 9000
+ 12950 strings out of 480608
+ 170699 string characters out of 5903631
+ 491561 words of memory out of 5000000
+ 28533 multiletter control sequences out of 15000+600000
+ 574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,6n,46p,336b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,8n,46p,494b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on ESSDmanuscript.pdf (8 pages, 413912 bytes).
+PDF statistics:
+ 167 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!

@@ -107,8 +107,9 @@ Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.
 *(See intros to other papers for relevant refs)*
 Under Paris Agreement, **##**% of Nationally Determined Contributions relate to forests [@grassi_key_2017].
 
-**The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories [(REFS for older guidelines), @ipcc_2019_2019].**
-These include guidance for accounting for forest land [@ipcc_agriculture_2006; @ipcc_2019_2019a].
+**The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas (GHG) inventories for reporting to the United Nations Framework Convention on Climate Change [UNFCCC, (REFS for older guidelines), @ipcc_2019_2019].**
+Under this guidance, GHG inventories are to include all managed land, including most of the world's forest land [@ogle_delineating_2018].
+The IPCC inventory guidelines include specific instructions for accounting for forest land ... [@ipcc_agriculture_2006; @ipcc_2019_2019a].
 This guidance has improved as more of the relevant underlying data has become available [@requenasuarez_estimating_2019], but there remains room for continuous improvement as the science advances.
 For example, @cook-patton_mapping_2020 *(summarize IPCC comparison results)*. 
 *Moreover, it is useful for those compiling national greenhouse gas inventories to have access to locally-specific information, when available.*
@@ -130,7 +131,7 @@ The purpose of this publication is to document that process and provide recommen
 # Defining carbon stocks and incremenets
 
 For quantifying forest role in global C cycle, we ultimately care about:
-(1) C stocks --stores of C that would be released to the atmosphere upon and use change
+(1) C stocks -- stores of C that would be vulnerable to release to the atmosphere upon land use change
 (2) C increments -- changes in those C stocks.
 
 ## Carbon stocks
@@ -196,8 +197,10 @@ Define relationship among NEE, NEP, and delta.C., especially noting role of harv
 
 Documented at https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md, https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in [issue #8](https://github.com/forc-db/IPCC_database_integration/issues/8). 
 
-Land classification under UNFCCC (e.g., https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-018-0095-3) is (i) defined differently across countries and (ii) probably not defined the same way as it might be defined in publications included in ForC.
-Therefore, we do not transfer any classification of land as managed/unmanaged, but do provide any auxiliary info that may be useful in making this determination.
+
+The UNFCCC requires GHG reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [*IPCC 2006 full report REF*]. 
+This definition is applied differently across countries, and is not clearly defined by the majority of governments [@ogle_delineating_2018]. 
+Given this, and because the IPCC definition of management does not necessarily match that which would be reported in scientific publications and hence in ForC, we do not transfer any classification of land management status from ForC to the EFDB, but do provide auxiliary info that may be useful in making this determination (e.g., geographical location).
 
 # Updates to ForC  (ForC v4.0)
 
