@@ -148,6 +148,14 @@ Quantifying these requires a one-time measurement.
 knitr::include_graphics("figures_tables/C_pools_fig.png")
 ```
 
+```{r eval = FALSE, echo=FALSE, warning=FALSE}
+#another failed attempt at the table
+library(flextable)
+C_pools_table <- read.csv("figures_tables/C_pools.csv")
+ft <- flextable(C_pools_table)
+ft  
+
+```
 
 
 \begin{table*}[t]
