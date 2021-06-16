@@ -204,11 +204,11 @@ Given this, and because the IPCC definition of management does not necessarily m
 
 # Updates to ForC  (ForC v4.0)
 
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added ## increment variables, implemented some modest restructuring, resolved duplicate records, and conducted quality control.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added ten increment variables, implemented some modest restructuring, resolved duplicate records, and conducted quality control.
 This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].
 
 ## Increment variables
-We added ## increment variables to the set of named and defined variables. 
+We added ten increment variables to the set of named and defined variables (or 20, counting _OM and _C versions), which previously included only one (aboveground biomass increment, *delta.agb*). 
 *(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)*
 These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
 
