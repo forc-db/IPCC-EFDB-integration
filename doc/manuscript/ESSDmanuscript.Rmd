@@ -121,7 +121,7 @@ As such, ForC is positioned to improve forest C accounting through the transfer 
 The purpose of this publication is to document that process and provide recommendations for future improvements.
 
 **Here, we**
-(1) clarify definitions of relevant carbon stocks and increments
+(1) review definitions of relevant carbon stocks and increments
 (2) describe mapping of ForC to IPCC's EFDB,
 (3) describe updates to ForC  (ForC v4.0),
 (4) summarize the data in ForC that's relevant to EFDB, identifying gaps, and
@@ -204,8 +204,15 @@ Given this, and because the IPCC definition of management does not necessarily m
 
 # Updates to ForC  (ForC v4.0)
 
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we implemented some modest restructuring, resolved duplicate records, and conducted quality control.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added ## increment variables, implemented some modest restructuring, resolved duplicate records, and conducted quality control.
 This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].
+
+## Increment variables
+We added ## increment variables to the set of named and defined variables. 
+*(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)*
+These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
+
+Although these variables currently lack records, the structure exists such that records can be populated over time. 
 
 ## ForC restructuring
 

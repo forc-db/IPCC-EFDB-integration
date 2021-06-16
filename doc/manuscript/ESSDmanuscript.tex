@@ -167,13 +167,13 @@ to other papers for relevant refs)} Under Paris Agreement,
 guidance for national greenhouse gas (GHG) inventories for reporting to
 the United Nations Framework Convention on Climate Change \citep[UNFCCC,
 (REFS for older guidelines),][]{ipcc_2019_2019}.} Under this guidance,
-GHG inventories are to include all managed land, including most of the
-world's forest land \citep{ogle_delineating_2018}. The IPCC inventory
-guidelines include specific instructions for accounting for forest land
-\ldots{} \citep{ipcc_agriculture_2006, ipcc_2019_2019a}. This guidance
-has improved as more of the relevant underlying data has become
-available \citep{requenasuarez_estimating_2019}, but there remains room
-for continuous improvement as the science advances. For example,
+GHG inventories include all managed land, including most of the world's
+forest land \citep{ogle_delineating_2018}. The IPCC inventory guidelines
+include specific instructions for accounting for forest land \ldots{}
+\citep{ipcc_agriculture_2006, ipcc_2019_2019a}. This guidance has
+improved as more of the relevant underlying data has become available
+\citep{requenasuarez_estimating_2019}, but there remains room for
+continuous improvement as the science advances. For example,
 \citet{cook-patton_mapping_2020} \emph{(summarize IPCC comparison
 results)}. \emph{Moreover, it is useful for those compiling national
 greenhouse gas inventories to have access to locally-specific
@@ -192,7 +192,7 @@ forest C accounting through the transfer of data to EFDB. The purpose of
 this publication is to document that process and provide recommendations
 for future improvements.
 
-\textbf{Here, we} (1) clarify definitions of relevant carbon stocks and
+\textbf{Here, we} (1) review definitions of relevant carbon stocks and
 increments (2) describe mapping of ForC to IPCC's EFDB, (3) describe
 updates to ForC (ForC v4.0), (4) summarize the data in ForC that's
 relevant to EFDB, identifying gaps, and (5) provide recommendations for
@@ -285,9 +285,21 @@ this determination (e.g., geographical location).
 \section{Updates to ForC (ForC v4.0)}
 
 To support export of data to EFDB, and to improve the overall quality of
-the ForC database, we implemented some modest restructuring, resolved
-duplicate records, and conducted quality control. This section describes
-changes relative to ForC v2.0 \citep{anderson-teixeira_forc_2018}.
+the ForC database, we added \#\# increment variables, implemented some
+modest restructuring, resolved duplicate records, and conducted quality
+control. This section describes changes relative to ForC v2.0
+\citep{anderson-teixeira_forc_2018}.
+
+\subsection{Increment variables}
+
+We added \#\# increment variables to the set of named and defined
+variables.
+\emph{(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)} These
+are directly related to C stocks as previously defined in ForC, with
+``\emph{delta.}'' added in front of the variable name.
+
+Although these variables currently lack records, the structure exists
+such that records can be populated over time.
 
 \subsection{ForC restructuring}
 
