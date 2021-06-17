@@ -245,19 +245,19 @@ Belowground biomass is defined as ``all biomass of live roots'' {[}{]}.
 
 \caption{\label{tab:table_variables}\textbf{Variables with definitions and measurement methods.} Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).}
 \centering
-\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
-\textbf{pool} & \textbf{subpool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
+\textbf{pool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
 \hline
-biomass & aboveground & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory\\
+aboveground biomass & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory\\
 \hline
- & belowground & all biomass of live roots & allometry, min dbh, assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter\\
+belowground biomass & all biomass of live roots & allometry, min dbh, assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter\\
 \hline
-dead organic matter & dead wood & all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil & min dbh,  ... & default min dbh = 10cm, but may be chosen by country\\
+dead wood & all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil & min dbh,  ... & default min dbh = 10cm, but may be chosen by country\\
 \hline
- & litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & min dbh for dead wood , .. & \\
+litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & min dbh for dead wood , .. & \\
 \hline
-soils & soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & default sampling depth = 30cm, but may be chosen by country\\
+soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & default sampling depth = 30cm, but may be chosen by country\\
 \hline
 \end{tabu}
 \end{table}
@@ -273,15 +273,14 @@ two measurements.
 Fluxes are the inputs and outputs to each pool.
 
 \begin{figure}
-\includegraphics[width=12cm]{figures_tables/C_variable_mapping} \caption{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them. In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes minimal non-respiratory C fluxes,... (Chapin et al. 2006); 2- assumes that change in foliage biomass is negligible (see note 7); 3- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 4- incomplete: excludes belowground components;  5-incomplete: excludes breakage into pieces less than dead wood threshold size; 6-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter; 7-foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year).}\label{fig:unnamed-chunk-1}
+\includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes minimal non-respiratory C fluxes,... (Chapin et al. 2006); 2- assumes that change in foliage biomass is negligible (see note 7); 3- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 4- incomplete: excludes belowground components;  5-incomplete: excludes breakage into pieces less than dead wood threshold size; 6-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter; 7-foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year).}\label{fig:unnamed-chunk-1}
 \end{figure}
 
 \section{Mapping ForC to EFDB}
 
 \subsection{Carbon cycle variables}
 
-\textbf{Table: variable mapping and equations-- give equations to
-calculate IPCC variables from C cycle variables}
+Mapping is shown in Fig. 1
 
 Define relationship among NEE, NEP, and delta.C., especially noting role
 of harvest \citep{chapin_reconciling_2006}.
