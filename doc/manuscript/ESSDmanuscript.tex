@@ -273,7 +273,7 @@ two measurements.
 Fluxes are the inputs and outputs to each pool.
 
 \begin{figure}
-\includegraphics[width=12cm]{figures_tables/C_variable_mapping} \caption{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them. In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes minimal non-respiratory CO2 fluxes,... (Chapin et al. 2006); 2- assumes that change in foliage biomass is negligible (see note 7); 3- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 4- incomplete: excludes belowground components;  5-incomplete: excludes breakage into pieces less than dead wood threshold size; 6-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter; 7-foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year).}\label{fig:unnamed-chunk-1}
+\includegraphics[width=12cm]{figures_tables/C_variable_mapping} \caption{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them. In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes minimal non-respiratory C fluxes,... (Chapin et al. 2006); 2- assumes that change in foliage biomass is negligible (see note 7); 3- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 4- incomplete: excludes belowground components;  5-incomplete: excludes breakage into pieces less than dead wood threshold size; 6-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter; 7-foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year).}\label{fig:unnamed-chunk-1}
 \end{figure}
 
 \section{Mapping ForC to EFDB}
@@ -284,7 +284,7 @@ Fluxes are the inputs and outputs to each pool.
 calculate IPCC variables from C cycle variables}
 
 Define relationship among NEE, NEP, and delta.C., especially noting role
-of harvest.
+of harvest \citep{chapin_reconciling_2006}.
 
 \subsection{Land use categories}
 
@@ -329,13 +329,32 @@ such that records can be populated over time.
 
 \subsection{ForC restructuring}
 
-\begin{figure}[H]
-\includegraphics[width=12cm]{figures_tables/ForC_updates_placeholder_fig} \caption{Table of changes to ForC fields (placeholder) }\label{fig:unnamed-chunk-2}
-\end{figure}
+\begin{table}
 
-\emph{(The above is a placeholder for the table located at
-https://github.com/forc-db/ForC/blob/master/database\_management\_records/record\_of\_changes.csv,
-which we'll need to format.)}
+\caption{\label{tab:table_ForCchanges}\textbf{Table of changes to ForC fields.}}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\hline
+\textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
+\hline
+Sites & coordinates.precision & Precision of geographic coordinates, as reported by source or estimated from maps. & field added & allow identification of records with poor coordinate precision\\
+\hline
+Measuremennts & data.location.within.source & Location of data within the source listed in citation.ID. & field added & facilitate review, ensure traceability\\
+\hline
+ & sd, se, lower95\%CI, upper 95\%CI & Standard deviation, standard error, and lower and upper 95 percent confidence intvervals, respectively. & replaces `stat` and `stat.name` & cleaner format; ability to handle assymetrical 95 percent confidence intervals\\
+\hline
+ & mean.in.original.units, original.units & mean value and units presented in original publication & fields added & provide IPCC with original units, reduce errors/improve reproducibility\\
+\hline
+ & C.conversion.factor & Assumed/ measured C content of organic matter used to convert organic matter to C. & field added & track units conversion, allow back-calculation of OM if conversion factor deemed inappropriate\\
+\hline
+PFT & description & Definition of the pftcode at the community level. Differs from individual level in that properly describes mixed plant functional types. & field added & \\
+\hline
+ & description.individual & Definition of the pftcode at the individual plant level. & field name change (previously `description`) & \\
+\hline
+Citations & (several fields) &  &  & \\
+\hline
+\end{tabu}
+\end{table}
 
 \subsection{Quality control measures}
 

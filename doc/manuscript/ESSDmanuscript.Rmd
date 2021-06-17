@@ -172,7 +172,9 @@ Quantifying these requires at least two measurements.
 Fluxes are the inputs and outputs to each pool. 
 
 
-```{r, out.width = "12cm", echo = FALSE, fig.cap = "Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them. In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes minimal non-respiratory CO2 fluxes,... (Chapin et al. 2006); 2- assumes that change in foliage biomass is negligible (see note 7); 3- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 4- incomplete: excludes belowground components;  5-incomplete: excludes breakage into pieces less than dead wood threshold size; 6-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter; 7-foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year)."}
+
+
+```{r, out.width = "12cm", echo = FALSE, fig.cap = "Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them. In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes minimal non-respiratory C fluxes,... (Chapin et al. 2006); 2- assumes that change in foliage biomass is negligible (see note 7); 3- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 4- incomplete: excludes belowground components;  5-incomplete: excludes breakage into pieces less than dead wood threshold size; 6-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter; 7-foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year)."}
 #this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
 knitr::include_graphics("figures_tables/C_variable_mapping.png")
 ```
@@ -184,7 +186,7 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 
 **Table: variable  mapping and equations-- give equations to calculate IPCC variables from C cycle variables**
 
-Define relationship among NEE, NEP, and delta.C., especially noting role of harvest.
+Define relationship among NEE, NEP, and delta.C., especially noting role of harvest [@chapin_reconciling_2006].
 
 ## Land use categories
 
@@ -209,11 +211,21 @@ Although these variables currently lack records, the structure exists such that 
 
 ## ForC restructuring
 
-```{r, out.width = "12cm", echo = FALSE,fig.pos="H", fig.cap = "Table of changes to ForC fields (placeholder) "}
-#this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
-knitr::include_graphics("figures_tables/ForC_updates_placeholder_fig.png")
+```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE}
+#"figures_tables/record_of_changes.csv" is copied over from the table located at  https://github.com/forc-db/ForC/blob/master/database_management_records/record_of_changes.csv, and I deleted the date field.
+
+record_of_changes <- read.csv("figures_tables/record_of_changes.csv")
+names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
+
+library(knitr)
+library(kableExtra)
+knitr::kable(record_of_changes, format = "latex",
+             longtable = FALSE,
+             caption = "\\textbf{Table of changes to ForC fields.}") %>%
+  kableExtra::kable_styling(full_width = TRUE) %>%
+  row_spec(0, bold = TRUE)
 ```
-*(The above is a placeholder for the table located at  https://github.com/forc-db/ForC/blob/master/database_management_records/record_of_changes.csv, which we'll need to format.)*
+
 
 ## Quality control measures
 Prior to releasing ForC v4.0, we executed several quality control measures.
