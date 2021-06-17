@@ -137,42 +137,21 @@ For quantifying forest role in global C cycle, we ultimately care about:
 ## Carbon stocks
 
 Forest ecosystem C stocks may be parsed into pools in various ways. 
-IPCC parses into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table 1).
+IPCC parses into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table&nbsp;\@ref(table_variables)).
 Quantifying these requires a one-time measurement.
 
-\newpage 
-
-**Table 1: variables with definitions and measurement methods.** Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance). (*Currently adding this as a figure (generated from original draft) because kableExtra doesn't seem to work in this template, and I can't quickly get the template format to work. Table that we want here is "figures_tables/C_pools.csv"*)
-
-```{r, out.width = "12cm", echo = FALSE, fig.cap = "Table 1"}
-#this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
-knitr::include_graphics("figures_tables/C_pools_fig.png")
-```
-
-```{r eval = FALSE, echo=FALSE, warning=FALSE}
-#another failed attempt at the table
-library(flextable)
+```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
 C_pools_table <- read.csv("figures_tables/C_pools.csv")
-ft <- flextable(C_pools_table)
-ft  
+names(C_pools_table) <- stringr::str_replace_all(names(C_pools_table), "\\.", " ")
 
+library(knitr)
+library(kableExtra)
+knitr::kable(C_pools_table, format = "latex",
+             longtable = FALSE,
+             caption = "\\textbf{Variables with definitions and measurement methods.} Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).") %>%
+  kableExtra::kable_styling(full_width = TRUE) %>%
+  row_spec(0, bold = TRUE)
 ```
-
-
-\begin{table*}[t]
-\caption{This is a start at table 1 using the template format. }
-\begin{tabular}{l c c c r}
-\tophline
-
-pool & subpool & definition & major sources of estimate variation & IPCC guidance \\
-\middlehline
-biomass & aboveground & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory  \\
-
-\bottomhline
-\end{tabular}
-\belowtable{I don't know how to adjust so that it doesn't run off the page.}
-\end{table*}
-
 
 ## Carbon increments
 
