@@ -79,6 +79,20 @@
 % Pandoc citation processing
 
 % The "Technical instructions for LaTex" by Copernicus require _not_ to insert any additional packages.
+%%\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 %
 \usepackage{algorithmic}
 \usepackage{algorithm}
@@ -209,35 +223,44 @@ stocks.
 
 Forest ecosystem C stocks may be parsed into pools in various ways. IPCC
 parses into biomass (aboveground and belowground), dead organic matter
-(dead wood and litter), and soil organic matter (Table 1). Quantifying
-these requires a one-time measurement.
+(dead wood and litter), and soil organic matter
+(Table~@ref(table\_variables)). Quantifying these requires a one-time
+measurement.
 
-\newpage
+\subsubsection{Biomass}
 
-\textbf{Table 1: variables with definitions and measurement methods.}
-Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).
-(\emph{Currently adding this as a figure (generated from original draft)
-because kableExtra doesn't seem to work in this template, and I can't
-quickly get the template format to work. Table that we want here is
-``figures\_tables/C\_pools.csv''})
+Biomass includes living vegetation, above- and below-ground.
 
-\begin{figure}
-\includegraphics[width=12cm]{figures_tables/C_pools_fig} \caption{Table 1}\label{fig:unnamed-chunk-1}
-\end{figure}
+The IPCC defines aboveground biomass as ``all biomass of living
+vegetation, both woody and herbaceous, above the soil including stems,
+stumps, branches, bark, seeds, and foliage'' {[}{]}.
 
-\begin{table*}[t]
-\caption{This is a start at table 1 using the template format. }
-\begin{tabular}{l c c c r}
-\tophline
+Belowground biomass is defined as ``all biomass of live roots'' {[}{]}.
 
-pool & subpool & definition & major sources of estimate variation & IPCC guidance \\
-\middlehline
-biomass & aboveground & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory  \\
+\subsubsection{Dead Organic Matter}
 
-\bottomhline
-\end{tabular}
-\belowtable{I don't know how to adjust so that it doesn't run off the page.}
-\end{table*}
+\subsubsection{Soil Organic Matter}
+
+\begin{table}
+
+\caption{\label{tab:table_variables}\textbf{Variables with definitions and measurement methods.} Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\hline
+\textbf{pool} & \textbf{subpool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
+\hline
+biomass & aboveground & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory\\
+\hline
+ & belowground & all biomass of live roots & allometry, min dbh, assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter\\
+\hline
+dead organic matter & dead wood & all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil & min dbh,  ... & default min dbh = 10cm, but may be chosen by country\\
+\hline
+ & litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & min dbh for dead wood , .. & \\
+\hline
+soils & soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & default sampling depth = 30cm, but may be chosen by country\\
+\hline
+\end{tabu}
+\end{table}
 
 \subsection{Carbon increments}
 
@@ -285,15 +308,16 @@ this determination (e.g., geographical location).
 \section{Updates to ForC (ForC v4.0)}
 
 To support export of data to EFDB, and to improve the overall quality of
-the ForC database, we added \#\# increment variables, implemented some
+the ForC database, we added ten increment variables, implemented some
 modest restructuring, resolved duplicate records, and conducted quality
 control. This section describes changes relative to ForC v2.0
 \citep{anderson-teixeira_forc_2018}.
 
 \subsection{Increment variables}
 
-We added \#\# increment variables to the set of named and defined
-variables.
+We added ten increment variables to the set of named and defined
+variables (or 20, counting \_OM and \_C versions), which previously
+included only one (aboveground biomass increment, \emph{delta.agb}).
 \emph{(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)} These
 are directly related to C stocks as previously defined in ForC, with
 ``\emph{delta.}'' added in front of the variable name.
@@ -304,7 +328,7 @@ such that records can be populated over time.
 \subsection{ForC restructuring}
 
 \begin{figure}[H]
-\includegraphics[width=12cm]{figures_tables/ForC_updates_placeholder_fig} \caption{Table of changes to ForC fields (placeholder) }\label{fig:unnamed-chunk-3}
+\includegraphics[width=12cm]{figures_tables/ForC_updates_placeholder_fig} \caption{Table of changes to ForC fields (placeholder) }\label{fig:unnamed-chunk-1}
 \end{figure}
 
 \emph{(The above is a placeholder for the table located at

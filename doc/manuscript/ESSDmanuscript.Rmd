@@ -1,6 +1,6 @@
 ---
 title: Informing IPCC accounting of forest carbon using the global forest carbon database (ForC v4.0)
-journal: "`r rticles::copernicus_journal_abbreviations(journal_name = 'ESSD')`"
+journal: "`r rticles::copernicus_journal_abbreviations(journal_name = 'essd')`"
 author:
   - given_name: Madison 
     surname: Williams
@@ -139,6 +139,16 @@ For quantifying forest role in global C cycle, we ultimately care about:
 Forest ecosystem C stocks may be parsed into pools in various ways. 
 IPCC parses into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table&nbsp;\@ref(table_variables)).
 Quantifying these requires a one-time measurement.
+
+### Biomass
+Biomass includes living vegetation, above- and below-ground.
+
+The IPCC defines aboveground biomass as "all biomass of living vegetation, both woody and herbaceous, above the soil including stems, stumps, branches, bark, seeds, and foliage" [].
+
+Belowground biomass is defined as "all biomass of live roots" [].
+
+### Dead Organic Matter
+### Soil Organic Matter
 
 ```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
 C_pools_table <- read.csv("figures_tables/C_pools.csv")

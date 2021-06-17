@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 JUN 2021 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  17 JUN 2021 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2846,46 +2846,146 @@ Package color Info: Redefining color bgcol on input line 2618.
 Package color Info: Redefining color barcol on input line 2619.
 )
 LaTeX Info: Redefining \vec on input line 14.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip74
+\LTright=\skip75
+\LTpre=\skip76
+\LTpost=\skip77
+\LTchunksize=\count298
+\LTcapwidth=\dimen189
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@cols=\count299
+\LT@rows=\count300
+\c@LT@tables=\count301
+\c@LT@chunks=\count302
+\LT@p@ftn=\toks38
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen190
+\WF@size=\dimen191
+\c@WF@wrappedlines=\count303
+\WF@box=\box62
+\WF@everypar=\toks39
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks40
+\minrowclearance=\skip78
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box63
+\sift@deathcycles=\count304
+\@vwid@loff=\dimen192
+\@vwid@roff=\dimen193
+)
+\c@taburow=\count305
+\tabu@nbcols=\count306
+\tabu@cnt=\count307
+\tabu@Xcol=\count308
+\tabu@alloc=\count309
+\tabu@nested=\count310
+\tabu@target=\dimen194
+\tabu@spreadtarget=\dimen195
+\tabu@naturalX=\dimen196
+\tabucolX=\dimen197
+\tabu@Xsum=\dimen198
+\extrarowdepth=\dimen199
+\abovetabulinesep=\dimen256
+\belowtabulinesep=\dimen257
+\tabustrutrule=\dimen258
+\tabu@thebody=\toks41
+\tabu@footnotes=\toks42
+\tabu@box=\box64
+\tabu@arstrutbox=\box65
+\tabu@hleads=\box66
+\tabu@vleads=\box67
+\tabu@cellskip=\skip79
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box68
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttablex/threeparttablex.s
+ty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(/usr/local/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/local/texlive/2020/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip80
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen259
+\c@nlinenum=\count311
+\TeXr@lab=\toks43
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count298
-\l__pdf_internal_box=\box58
+\l__kernel_color_stack_int=\count312
+\l__pdf_internal_box=\box69
 ) (./ESSDmanuscript.aux)
 \openout1 = `ESSDmanuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 87
-.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 10
+1.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen189
-\scratchbox=\box59
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen190
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count313
+\scratchdimen=\dimen260
+\scratchbox=\box70
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen261
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks45
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2896,10 +2996,16 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
 Package caption Info: rotating package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 87.
+\AtBeginShipoutBox=\box71
+Package hyperref Info: Link coloring OFF on input line 101.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -2909,23 +3015,29 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count305
+\c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 140
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 154
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 140
+LaTeX Font Info:    Trying to load font information for U+msb on input line 154
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
-5.
+
+Package xcolor Warning: Incompatible color definition on input line 154.
+
+
+Package xcolor Warning: Incompatible color definition on input line 156.
+
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
+9.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -2950,66 +3062,49 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 145.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-6.
+(Font)              scaled to size 8.54997pt on input line 159.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
+0.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figures_tables/C_pools_fig.png, id=56, 816.04875pt x 826.08624pt>
-File: figures_tables/C_pools_fig.png Graphic file (type png)
-<use figures_tables/C_pools_fig.png>
-Package pdftex.def Info: figures_tables/C_pools_fig.png  used on input line 225
-.
-(pdftex.def)             Requested size: 341.43306pt x 345.63033pt.
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-Overfull \hbox (149.16582pt too wide) in paragraph at lines 230--239
- []$[]$ 
- []
-
-
-Overfull \hbox (149.16582pt too wide) in paragraph at lines 239--240
- []|$[]$ 
- []
-
-[3 <./figures_tables/C_pools_fig.png>]
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 266--272
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 289--295
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 266--272
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 289--295
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
 
-Overfull \hbox (39.50075pt too wide) in paragraph at lines 295--300
-\T1/ptm/m/n/10 We added ## in-cre-ment vari-ables to the set of named and de-fi
-ned vari-ables. \T1/ptm/m/it/10 (https://github.com/forc-db/IPCC-EFDB-integrati
-on/issues/6)
+Overfull \hbox (28.57141pt too wide) in paragraph at lines 318--324
+\T1/ptm/m/n/10 vi-ously in-cluded only one (above-ground biomass in-cre-ment, \
+T1/ptm/m/it/10 delta.agb\T1/ptm/m/n/10 ). \T1/ptm/m/it/10 (https://github.com/f
+orc-db/IPCC-EFDB-integration/issues/6)
  []
 
-[4]
-<figures_tables/ForC_updates_placeholder_fig.png, id=80, 1185.42876pt x 287.072
+<figures_tables/ForC_updates_placeholder_fig.png, id=70, 1185.42876pt x 287.072
 5pt>
 File: figures_tables/ForC_updates_placeholder_fig.png Graphic file (type png)
 <use figures_tables/ForC_updates_placeholder_fig.png>
 Package pdftex.def Info: figures_tables/ForC_updates_placeholder_fig.png  used 
-on input line 307.
+on input line 331.
 (pdftex.def)             Requested size: 341.43306pt x 82.68382pt.
-
-Overfull \hbox (102.14014pt too wide) in paragraph at lines 312--313
+[4]
+Overfull \hbox (102.14014pt too wide) in paragraph at lines 336--337
 \T1/ptm/m/it/10 (The above is a place-holder for the ta-ble lo-cated at https:/
 /github.com/forc-db/ForC/blob/master/database_management_records/record_of_chan
 ges.csv,
  []
 
 [5 <./figures_tables/ForC_updates_placeholder_fig.png>]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 408--410
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 432--434
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
@@ -3021,31 +3116,31 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
 ) [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 481.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 505.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
  ) 
 Here is how much of TeX's memory you used:
- 12951 strings out of 480608
- 170713 string characters out of 5903631
- 491561 words of memory out of 5000000
- 28533 multiletter control sequences out of 15000+600000
+ 14577 strings out of 480608
+ 192829 string characters out of 5903631
+ 528414 words of memory out of 5000000
+ 30104 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,46p,494b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,46p,494b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (8 pages, 414661 bytes).
+Output written on ESSDmanuscript.pdf (8 pages, 183746 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 compressed objects within 2 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
