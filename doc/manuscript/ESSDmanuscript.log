@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  17 JUN 2021 09:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  17 JUN 2021 10:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3069,78 +3069,84 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 289--295
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<figures_tables/C_variable_mapping.png, id=48, 787.94376pt x 817.0525pt>
+File: figures_tables/C_variable_mapping.png Graphic file (type png)
+<use figures_tables/C_variable_mapping.png>
+Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
+ine 276.
+(pdftex.def)             Requested size: 341.43306pt x 354.04358pt.
+[2] [3] [4 <./figures_tables/C_variable_mapping.png>]
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 291--297
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 289--295
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 291--297
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
 
-Overfull \hbox (28.57141pt too wide) in paragraph at lines 318--324
+Overfull \hbox (28.57141pt too wide) in paragraph at lines 320--326
 \T1/ptm/m/n/10 vi-ously in-cluded only one (above-ground biomass in-cre-ment, \
 T1/ptm/m/it/10 delta.agb\T1/ptm/m/n/10 ). \T1/ptm/m/it/10 (https://github.com/f
 orc-db/IPCC-EFDB-integration/issues/6)
  []
 
-<figures_tables/ForC_updates_placeholder_fig.png, id=70, 1185.42876pt x 287.072
+<figures_tables/ForC_updates_placeholder_fig.png, id=78, 1185.42876pt x 287.072
 5pt>
 File: figures_tables/ForC_updates_placeholder_fig.png Graphic file (type png)
 <use figures_tables/ForC_updates_placeholder_fig.png>
 Package pdftex.def Info: figures_tables/ForC_updates_placeholder_fig.png  used 
-on input line 331.
+on input line 333.
 (pdftex.def)             Requested size: 341.43306pt x 82.68382pt.
-[4]
-Overfull \hbox (102.14014pt too wide) in paragraph at lines 336--337
+[5]
+Overfull \hbox (102.14014pt too wide) in paragraph at lines 338--339
 \T1/ptm/m/it/10 (The above is a place-holder for the ta-ble lo-cated at https:/
 /github.com/forc-db/ForC/blob/master/database_management_records/record_of_chan
 ges.csv,
  []
 
-[5 <./figures_tables/ForC_updates_placeholder_fig.png>]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 432--434
+[6 <./figures_tables/ForC_updates_placeholder_fig.png>]
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 434--436
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
 
-[6] (./ESSDmanuscript.bbl [7]
+[7] (./ESSDmanuscript.bbl [8]
 Underfull \hbox (badness 10000) in paragraph at lines 48--50
 []\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
 t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
-) [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
+) [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 505.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 507.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 507.
  ) 
 Here is how much of TeX's memory you used:
- 14577 strings out of 480608
- 192829 string characters out of 5903631
- 528414 words of memory out of 5000000
- 30104 multiletter control sequences out of 15000+600000
+ 14588 strings out of 480608
+ 193168 string characters out of 5903631
+ 531303 words of memory out of 5000000
+ 30112 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,15n,46p,494b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,46p,1305b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (8 pages, 183746 bytes).
+Output written on ESSDmanuscript.pdf (9 pages, 466598 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
