@@ -168,7 +168,7 @@ Dead organic matter includes all non-living biomass that is not within the miner
 
 Dead wood is defined as...
 
-Litter is defined as including " all  non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil. This includes litter,  fumic,  and  humic  layers.  Live  fine  roots  (of  less  than  the  suggested  diameter  limit for  belowground  biomass) are included in litter where they cannot be distinguished from it empirically." (2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
+Litter is defined as including " all  non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil. This includes litter (OL),  fumic (OF),  and  humic (OH) layers.  Live  fine  roots  (of  less  than  the  suggested  diameter  limit for  belowground  biomass) are included in litter where they cannot be distinguished from it empirically." (2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
 
 ### Soil Organic Matter
 
@@ -223,7 +223,7 @@ These are directly related to C stocks as previously defined in ForC, with "*del
 
 Although these variables currently lack records, the structure exists such that records can be populated over time. 
 
-We clarified the definition of *organic.layer* (O-horizon, including *litter*) and added the variable *litter* (relatively undecomposed plant material/ OL horizon).
+To provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including *litter* (OL)).
 
 ## ForC restructuring
 

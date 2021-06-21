@@ -268,10 +268,10 @@ Dead wood is defined as\ldots{}
 Litter is defined as including " all non-living biomass with a diameter
 less than a minimum diameter chosen by the country (for example 10 cm),
 lying dead, in various states of decomposition above the mineral or
-organic soil. This includes litter, fumic, and humic layers. Live fine
-roots (of less than the suggested diameter limit for belowground
-biomass) are included in litter where they cannot be distinguished from
-it empirically." (2003 IPCc GPG for LULUCF
+organic soil. This includes litter (OL), fumic (OF), and humic (OH)
+layers. Live fine roots (of less than the suggested diameter limit for
+belowground biomass) are included in litter where they cannot be
+distinguished from it empirically." (2003 IPCc GPG for LULUCF
 (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
 
 \subsubsection{Soil Organic Matter}
@@ -326,15 +326,15 @@ this determination (e.g., geographical location).
 \section{Updates to ForC (ForC v4.0)}
 
 To support export of data to EFDB, and to improve the overall quality of
-the ForC database, we added ten increment variables, implemented some
+the ForC database, we defined \#\# new variables, implemented some
 modest restructuring, resolved duplicate records, and conducted quality
 control. This section describes changes relative to ForC v2.0
 \citep{anderson-teixeira_forc_2018}.
 
-\subsection{Increment variables}
+\subsection{Defining new variables}
 
-We added ten increment variables to the set of named and defined
-variables (or 20, counting \_OM and \_C versions), which previously
+We added eleven increment variables to the set of named and defined
+variables (or 22, counting \_OM and \_C versions), which previously
 included only one (aboveground biomass increment, \emph{delta.agb}).
 \emph{(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)} These
 are directly related to C stocks as previously defined in ForC, with
@@ -342,6 +342,13 @@ are directly related to C stocks as previously defined in ForC, with
 
 Although these variables currently lack records, the structure exists
 such that records can be populated over time.
+
+To provide better definition of the previously existing variable
+\emph{organic.layer}, which has a nebulous definition that reflects the
+varied definitions adopted by original studies, we added two clearly
+defined variables: \emph{litter} (relatively undecomposed plant
+material/ OL horizon), and \emph{O.horizon} (entire O-horizon, including
+\emph{litter} (OL)).
 
 \subsection{ForC restructuring}
 

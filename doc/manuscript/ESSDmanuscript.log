@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 JUN 2021 07:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 JUN 2021 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3070,14 +3070,14 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<figures_tables/C_variable_mapping.png, id=65, 787.94376pt x 817.0525pt>
+<figures_tables/C_variable_mapping.png, id=65, 783.92876pt x 816.04875pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
 ine 293.
-(pdftex.def)             Requested size: 426.79134pt x 442.54825pt.
+(pdftex.def)             Requested size: 426.79134pt x 444.28326pt.
 
-LaTeX Warning: Float too large for page by 8.62566pt on input line 294.
+LaTeX Warning: Float too large for page by 10.36067pt on input line 294.
 
 
 Overfull \hbox (44.51099pt too wide) in paragraph at lines 307--313
@@ -3092,21 +3092,14 @@ orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
 
-Overfull \hbox (28.57141pt too wide) in paragraph at lines 336--342
-\T1/ptm/m/n/10 vi-ously in-cluded only one (above-ground biomass in-cre-ment, \
-T1/ptm/m/it/10 delta.agb\T1/ptm/m/n/10 ). \T1/ptm/m/it/10 (https://github.com/f
-orc-db/IPCC-EFDB-integration/issues/6)
- []
-
-
-Overfull \hbox (8.51208pt too wide) in paragraph at lines 372--372
+Overfull \hbox (8.51208pt too wide) in paragraph at lines 379--379
 []\T1/ptm/m/n/9 data.location.within.source|  
  []
 
 [4
 
 ] [5 <./figures_tables/C_variable_mapping.png>] [6] [7]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 469--471
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 476--478
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
@@ -3118,12 +3111,12 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
 [9]) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 542.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 542.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 542.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 542.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 542.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 549.
  ) 
 Here is how much of TeX's memory you used:
  14590 strings out of 480608
@@ -3139,7 +3132,7 @@ exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (10 pages, 372571 bytes).
+Output written on ESSDmanuscript.pdf (10 pages, 370540 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams
