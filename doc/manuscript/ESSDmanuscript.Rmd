@@ -164,9 +164,15 @@ Belowground biomass is defined as "all biomass of live roots" [].
 
 ### Dead Organic Matter
 
+Dead organic matter includes all non-living biomass that is not within the mineral soil layer and smaller than the litter size threshold.
+
+Dead wood is defined as...
+
 Litter is defined as including " all  non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil. This includes litter,  fumic,  and  humic  layers.  Live  fine  roots  (of  less  than  the  suggested  diameter  limit for  belowground  biomass) are included in litter where they cannot be distinguished from it empirically." (2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
 
 ### Soil Organic Matter
+
+Soil organic matter is defined as...
 
 ## Carbon increments
 
