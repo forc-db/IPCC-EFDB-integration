@@ -1,6 +1,6 @@
 ﻿ForC table,ForC field,EFDB field,Use,Required
 Sites,,,,
-Measuremennts,variable.name,-,link to variable info in ForC_variables table,y
+Measurements,variable.name,-,link to variable info in ForC_variables table,y
 ,mean,Value,(direct),y
 ,mean.in.original.units,Value in Common Units,(direct),y
 ,original.units,Common Unit,(direct),y
