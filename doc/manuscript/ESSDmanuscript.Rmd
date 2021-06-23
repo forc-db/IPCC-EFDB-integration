@@ -88,7 +88,7 @@ authorcontribution: |
 disclaimer: |
 acknowledgements: |
   Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have helped to build the database.
-  Funding for this study was provided by The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
+  Funding for this study was provided by Bezos Earth Fund to The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
 appendix: |
 
 output:
@@ -116,7 +116,7 @@ For example, @cook-patton_mapping_2020 *(summarize IPCC comparison results)*.
 To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 
 **The Global Forest Carbon Database, ForC, is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].**
-*(add stats/ details)*
+*(add stats/ details, maybe record of how ForC has grown over time)*
 As such, ForC is positioned to improve forest C accounting through the transfer of data to EFDB.
 The purpose of this publication is to document that process and provide recommendations for future improvements.
 
@@ -179,7 +179,7 @@ Soil organic matter is defined as...
 C increments are defined as the change over time, in annual increments, in each C pool.
 These may be estimated as the difference between C stocks at two time points, or as the difference between inputs and outputs to the pool (i.e., fluxes).
 Quantifying these requires at least two measurements.
-
+(*But, Can carbon increments be inferred from a single measure and a known age (i.e., the approach we used in GROA)?*)
 Fluxes are the inputs and outputs to each pool. 
 
 
@@ -275,6 +275,8 @@ Second, to identify erroneous climate data... *(Issue #212)[https://github.com/f
 dead wood and litter comparisons will be particularly interesting, as IPCC values are based on just a handful of references for each climate zone (table 2.2 in 2019 guidelines)
 
 # Recommendations
+
+(*strongly flag both useful variables that the EFDB does not track and useful variables that papers fail to include that EFDB needs*)
 
 ## Data collection and analysis needs
 
