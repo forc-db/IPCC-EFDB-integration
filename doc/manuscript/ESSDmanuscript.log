@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 JUN 2021 12:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 JUN 2021 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3099,12 +3099,15 @@ orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
 [4
 
 ] [5 <./figures_tables/C_variable_mapping.png>]
-Overfull \hbox (8.51208pt too wide) in paragraph at lines 413--413
+Overfull \hbox (8.51208pt too wide) in paragraph at lines 434--434
 []\T1/ptm/m/n/9 data.location.within.source|  
  []
 
+
+LaTeX Warning: Float too large for page by 254.37735pt on input line 435.
+
 [6] [7] [8]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 513--515
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 534--536
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
@@ -3116,18 +3119,18 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
 [10]) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 586.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 586.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 607.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 607.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 586.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 586.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 586.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 607.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 607.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 607.
  ) 
 Here is how much of TeX's memory you used:
- 14599 strings out of 480608
- 193077 string characters out of 5903631
- 530918 words of memory out of 5000000
- 30120 multiletter control sequences out of 15000+600000
+ 14601 strings out of 480608
+ 193097 string characters out of 5903631
+ 533918 words of memory out of 5000000
+ 30122 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,15n,46p,1314b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3137,7 +3140,7 @@ exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (11 pages, 372605 bytes).
+Output written on ESSDmanuscript.pdf (11 pages, 375270 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  164 compressed objects within 2 object streams
