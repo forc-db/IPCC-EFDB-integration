@@ -1,9 +1,12 @@
-﻿Table,Variable,EFDB field,Use,Required
+﻿ForC table,ForC field,EFDB field,Use,Required
 Sites,,,,
-Measuremennts,,,,
+Measuremennts,variable.name,-,link to variable info in ForC_variables table,y
+,mean,Value,(direct),y
+,mean.in.original.units,Value in Common Units,(direct),y
+,original.units,Common Unit,(direct),y
 ,"sd, se, lower95%CI, upper 95%CI",,,y
-,"mean.in.original.units, original.units",,,y
+,,,,
 ,data.location.within.source,,"confirm that data weren't digitized, facilitate finding data in original publication",y
 PFT,description,,,
-,,,,
+variables,units,,,y
 Citations,(several fields),,,

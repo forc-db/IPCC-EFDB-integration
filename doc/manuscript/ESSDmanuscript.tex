@@ -301,23 +301,29 @@ Fluxes are the inputs and outputs to each pool.
 \centering
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
-\textbf{Table} & \textbf{Variable} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
 \hline
-Sites &  & NA &  & \\
+Sites &  &  &  & \\
 \hline
-Measuremennts &  & NA &  & \\
+Measuremennts & variable.name & - & link to variable info in ForC\_variables table & y\\
 \hline
- & sd, se, lower95\%CI, upper 95\%CI & NA &  & y\\
+ & mean & Value & (direct) & y\\
 \hline
- & mean.in.original.units, original.units & NA &  & y\\
+ & mean.in.original.units & Value in Common Units & (direct) & y\\
 \hline
- & data.location.within.source & NA & confirm that data weren't digitized, facilitate finding data in original publication & y\\
+ & original.units & Common Unit & (direct) & y\\
 \hline
-PFT & description & NA &  & \\
+ & sd, se, lower95\%CI, upper 95\%CI &  &  & y\\
 \hline
- &  & NA &  & \\
+ &  &  &  & \\
 \hline
-Citations & (several fields) & NA &  & \\
+ & data.location.within.source &  & confirm that data weren't digitized, facilitate finding data in original publication & y\\
+\hline
+PFT & description &  &  & \\
+\hline
+variables & units &  &  & y\\
+\hline
+Citations & (several fields) &  &  & \\
 \hline
 \end{tabu}
 \end{table}
