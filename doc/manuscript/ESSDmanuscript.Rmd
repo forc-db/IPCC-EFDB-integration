@@ -253,9 +253,9 @@ record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
 library(knitr)
 library(kableExtra)
 knitr::kable(record_of_changes, format = "latex",
-             longtable = FALSE,
+             longtable = TRUE,
              caption = "\\textbf{Table of changes to ForC fields.}") %>%
-  kableExtra::kable_styling(full_width = TRUE) %>%
+  kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
   row_spec(0, bold = TRUE)
 ```
 

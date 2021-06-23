@@ -399,14 +399,17 @@ material/ OL horizon), and \emph{O.horizon} (entire O-horizon, including
 ## )
 \end{verbatim}
 
-\begin{table}
-
-\caption{\label{tab:table_ForCchanges}\textbf{Table of changes to ForC fields.}}
-\centering
-\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\caption{\label{tab:table_ForCchanges}\textbf{Table of changes to ForC fields.}}\\
 \hline
 \textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
 \hline
+\endfirsthead
+\caption[]{\textbf{Table of changes to ForC fields.} \textit{(continued)}}\\
+\hline
+\textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
+\hline
+\endhead
 Sites & coordinates.precision & Precision of geographic coordinates, as reported by source or estimated from maps. & field added & allow identification of records with poor coordinate precision\\
 \hline
 Measurements & data.location.within.source & Location of data within the source listed in citation.ID. & field added & facilitate review, ensure traceability\\
@@ -431,8 +434,7 @@ Citations & citation.citation & Full citation. Most of these records are automat
 \hline
  & pdf.in.repository & Indicates whether pdf of original study has been retrieved and saved in ForC's reference repository & field added & housekeeping\\
 \hline
-\end{tabu}
-\end{table}
+\end{longtabu}
 
 \subsection{Quality control measures}
 
