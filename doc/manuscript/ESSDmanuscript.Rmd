@@ -248,7 +248,7 @@ urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_manageme
 record_of_changes <-read_csv(url(urlfile))
 names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
 record_of_changes <- record_of_changes[c(1:5)] #include all fields but date of change
-#record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
+record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
 
 library(knitr)
 library(kableExtra)
