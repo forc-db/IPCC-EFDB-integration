@@ -295,9 +295,36 @@ Fluxes are the inputs and outputs to each pool.
 
 \section{Mapping ForC to EFDB}
 
+\begin{table}
+
+\caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.}}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\hline
+\textbf{Table} & \textbf{Variable} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
+\hline
+Sites &  & NA &  & \\
+\hline
+Measuremennts &  & NA &  & \\
+\hline
+ & sd, se, lower95\%CI, upper 95\%CI & NA &  & y\\
+\hline
+ & mean.in.original.units, original.units & NA &  & y\\
+\hline
+ & data.location.within.source & NA & confirm that data weren't digitized, facilitate finding data in original publication & y\\
+\hline
+PFT & description & NA &  & \\
+\hline
+ &  & NA &  & \\
+\hline
+Citations & (several fields) & NA &  & \\
+\hline
+\end{tabu}
+\end{table}
+
 \subsection{Carbon cycle variables}
 
-Mapping is shown in Fig. 1
+Mapping of variables is shown in Fig. 1
 
 Define relationship among NEE, NEP, and delta.C., especially noting role
 of harvest \citep{chapin_reconciling_2006}.

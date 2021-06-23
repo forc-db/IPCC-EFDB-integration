@@ -193,9 +193,24 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 
 # Mapping ForC to EFDB
 
+```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
+
+ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
+names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
+
+library(knitr)
+library(kableExtra)
+knitr::kable(ForC_variables_included, format = "latex",
+             longtable = FALSE,
+             caption = "\\textbf{Mapping of ForC fields to EFDB.}") %>%
+  kableExtra::kable_styling(full_width = TRUE) %>%
+  row_spec(0, bold = TRUE)
+```
+
+
 ## Carbon cycle variables
 
-Mapping is shown in Fig. 1
+Mapping of variables is shown in Fig. 1
 
 Define relationship among NEE, NEP, and delta.C., especially noting role of harvest [@chapin_reconciling_2006].
 

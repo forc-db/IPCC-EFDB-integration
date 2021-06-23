@@ -1,0 +1,9 @@
+﻿Table,Variable,EFDB field,Use,Required
+Sites,,,,
+Measuremennts,,,,
+,"sd, se, lower95%CI, upper 95%CI",,,y
+,"mean.in.original.units, original.units",,,y
+,data.location.within.source,,"confirm that data weren't digitized, facilitate finding data in original publication",y
+PFT,description,,,
+,,,,
+Citations,(several fields),,,
