@@ -242,13 +242,13 @@ To provide better definition of the previously existing variable *organic.layer*
 
 ## ForC restructuring
 
-```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE}
+```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE, message = FALSE}
 library (readr)
 urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_management_records/record_of_changes.csv"
-record_of_changes<-read_csv(url(urlfile))
+record_of_changes <-read_csv(url(urlfile))
 names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
 record_of_changes <- record_of_changes[c(1:5)] #include all fields but date of change
-record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
+#record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
 
 library(knitr)
 library(kableExtra)
