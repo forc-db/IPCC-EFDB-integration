@@ -327,11 +327,11 @@ Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
 \hline
  & lower95\%CI, upper 95\%CI, se, sd and n & Lower Confidence Limit, Upper Confidence Limit & direct or calculated & (yes)\\
 \hline
- & (covariates) & Other Properties & direct mapping & no\\
+ & depth, covariate\_1, cov\_1.value, covariate\_2, cov\_2.value & Other Properties & direct mapping & no\\
 \hline
- & allometry & Comments from Data Provider & link to biomass allometry source & \\
+ & allometry\_1, allometry\_2 & Comments from Data Provider & link to biomass allometry source, when provided & no\\
 \hline
- & data.location.within.source &  & confirm that data weren't digitized, facilitate finding data in original publication & yes\\
+ & data.location.within.source & - & confirm that data weren't digitized, facilitate finding data in original publication & yes\\
 \hline
  & ForC.investigator & Data Provider, Data Provider Contact & link to Data Provider, Data Provider Contact info & yes\\
 \hline
@@ -341,9 +341,7 @@ Sites & site.ID, sites.sitename & Other Properties & direct mapping & (no)\\
 \hline
  & country, state, city, lat, lon, masl, continent, Koeppen, mat, map & Region/Regional conditions & direct mapping, and lat-lon used to extract continent, Koeppen, and FAO.ecozone & no\\
 \hline
-History & (need to detail this) & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine distmrs.type & (yes)\\
-\hline
- & (need to detail this) & Abatement/Control technologies & generate list management events & no\\
+History & date, hist.cat, hist.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies & used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies & (yes)\\
 \hline
  & plot.area & Other Properties & direct mapping & no\\
 \hline
