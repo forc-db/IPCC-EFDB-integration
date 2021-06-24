@@ -197,6 +197,7 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 
 ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
 names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
+ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
 
 library(knitr)
 library(kableExtra)

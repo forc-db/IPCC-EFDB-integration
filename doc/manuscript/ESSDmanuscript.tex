@@ -307,13 +307,17 @@ Fluxes are the inputs and outputs to each pool.
 \textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
 \hline
 \endhead
-Measurements & dominant.life.form & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine land subcategories (see defining\_land\_subcategory.md) & yes\\
+Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
+\hline
+ & dominant.life.form & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine land subcategories (see defining\_land\_subcategory.md) & yes\\
 \hline
  & stand.age & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Parameters/ Conditions & used to determine land subcategories (see defining\_land\_subcategory.md), directly listed in Parameters/ Conditions & (yes)\\
 \hline
- & dominant.veg, veg.notes, min.dbh & Parameters/ Conditions &  & no\\
+ & dominant.veg, veg.notes, min.dbh & Parameters/ Conditions & direct mapping/ linking to dominant.veg description & no\\
 \hline
  & variable.name & - & link to variable info in ForC\_variables table & yes\\
+\hline
+ & date / start.date, end.date & Other Properties & direct mapping & no\\
 \hline
  & mean & Value & direct mapping & yes\\
 \hline
@@ -323,11 +327,17 @@ Measurements & dominant.life.form & 1996 Source/Sink Categories, 2006 Source/Sin
 \hline
  & lower95\%CI, upper 95\%CI, se, sd and n & Lower Confidence Limit, Upper Confidence Limit & direct or calculated & (yes)\\
 \hline
- &  &  &  & \\
+ & (covariates) & Other Properties & direct mapping & no\\
+\hline
+ & allometry & Comments from Data Provider & link to biomass allometry source & \\
 \hline
  & data.location.within.source &  & confirm that data weren't digitized, facilitate finding data in original publication & yes\\
 \hline
-Sites & soil.texture, sand, silt, clay, soil.classification, FAO.ecozone & Parameters/ Conditions & direct mapping & no\\
+ & ForC.investigator & Data Provider, Data Provider Contact & link to Data Provider, Data Provider Contact info & yes\\
+\hline
+Sites & site.ID, sites.sitename & Other Properties & direct mapping & (no)\\
+\hline
+ & soil.texture, sand, silt, clay, soil.classification, FAO.ecozone & Parameters/ Conditions & direct mapping & no\\
 \hline
  & country, state, city, lat, lon, masl, continent, Koeppen, mat, map & Region/Regional conditions & direct mapping, and lat-lon used to extract continent, Koeppen, and FAO.ecozone & no\\
 \hline
@@ -335,19 +345,35 @@ History & (need to detail this) & 1996 Source/Sink Categories, 2006 Source/Sink 
 \hline
  & (need to detail this) & Abatement/Control technologies & generate list management events & no\\
 \hline
-Plots & distmrs.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine land subcategories (see defining\_land\_subcategory.md) & auto\\
+ & plot.area & Other Properties & direct mapping & no\\
 \hline
-PFT & description &  &  & auto\\
+Plots & plot.ID, plot.name & Other Properties & direct mapping & (no)\\
+\hline
+ & distmrs.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine land subcategories (see defining\_land\_subcategory.md) & auto\\
+\hline
+ & distmrs.type, distmrs.year, regrowth.type, regrowth.year & Other Properties & direct mapping & auto\\
+\hline
+PFT & description & Parameters/ Conditions & direct mapping & auto\\
 \hline
 variables & variable.type & Gases & For stocks in unit of organic matter, gases include CO2, CO, CH4, NO, NO2, N2O. For increments, fluxes, and stocks in units of C, gases includes only CO2. & auto\\
 \hline
- & variable.name & C pool &  & auto\\
+ & variable.name & C pool, Equation & link to C pool, Equation & auto\\
 \hline
- &  & Description &  & auto\\
+ & description & Description & direct mapping & auto\\
 \hline
- & units &  &  & auto\\
+ & extended.description & Other Properties & direct mapping & auto\\
 \hline
-Citations & (several fields) &  &  & \\
+ & units & Unit (ID) & link to IPCC units & auto\\
+\hline
+Citations & citation.citation & Full Technical Reference & direct mapping & yes/auto\\
+\hline
+ & citation.language & Reference Language & direct mapping & yes/auto\\
+\hline
+ & citation.url & URL & direct mapping & no/auto\\
+\hline
+ & citation.abstract & Abstract in English & direct mapping & no/auto\\
+\hline
+ & source.type & Source of Data & direct mapping & yes\\
 \hline
 \end{longtabu}
 
@@ -440,6 +466,8 @@ Citations & citation.citation & Full citation. Most of these records are automat
  & citation.url & URL of original publication, generally retrieved automatically via URL lookup. & field added & field required by IPCC\\
 \hline
  & citation.abstract & Abstract, generally retrieved automatically via DOI lookup. & field added & field required by IPCC\\
+\hline
+ & source.type & citation source type & field added & field required by IPCC\\
 \hline
  & pdf.in.repository & Indicates whether pdf of original study has been retrieved and saved in ForC's reference repository & field added & housekeeping\\
 \hline
