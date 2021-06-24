@@ -201,9 +201,9 @@ names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_
 library(knitr)
 library(kableExtra)
 knitr::kable(ForC_variables_included, format = "latex",
-             longtable = FALSE,
+             longtable = TRUE,
              caption = "\\textbf{Mapping of ForC fields to EFDB.}") %>%
-  kableExtra::kable_styling(full_width = TRUE) %>%
+  kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
   row_spec(0, bold = TRUE)
 ```
 

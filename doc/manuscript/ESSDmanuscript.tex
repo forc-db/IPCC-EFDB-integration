@@ -296,38 +296,60 @@ Fluxes are the inputs and outputs to each pool.
 
 \section{Mapping ForC to EFDB}
 
-\begin{table}
-
-\caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.}}
-\centering
-\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.}}\\
 \hline
 \textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
 \hline
-Sites &  &  &  & \\
+\endfirsthead
+\caption[]{\textbf{Mapping of ForC fields to EFDB.} \textit{(continued)}}\\
 \hline
-Measurements & variable.name & - & link to variable info in ForC\_variables table & y\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
 \hline
- & mean & Value & (direct) & y\\
+\endhead
+Measurements & dominant.life.form & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine land subcategories (see defining\_land\_subcategory.md) & yes\\
 \hline
- & mean.in.original.units & Value in Common Units & (direct) & y\\
+ & stand.age & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Parameters/ Conditions & used to determine land subcategories (see defining\_land\_subcategory.md), directly listed in Parameters/ Conditions & (yes)\\
 \hline
- & original.units & Common Unit & (direct) & y\\
+ & dominant.veg, veg.notes, min.dbh & Parameters/ Conditions &  & no\\
 \hline
- & sd, se, lower95\%CI, upper 95\%CI &  &  & y\\
+ & variable.name & - & link to variable info in ForC\_variables table & yes\\
+\hline
+ & mean & Value & direct mapping & yes\\
+\hline
+ & mean.in.original.units & Value in Common Units & direct mapping & yes\\
+\hline
+ & original.units & Common Unit & direct mapping & yes\\
+\hline
+ & lower95\%CI, upper 95\%CI, se, sd and n & Lower Confidence Limit, Upper Confidence Limit & direct or calculated & (yes)\\
 \hline
  &  &  &  & \\
 \hline
- & data.location.within.source &  & confirm that data weren't digitized, facilitate finding data in original publication & y\\
+ & data.location.within.source &  & confirm that data weren't digitized, facilitate finding data in original publication & yes\\
 \hline
-PFT & description &  &  & \\
+Sites & soil.texture, sand, silt, clay, soil.classification, FAO.ecozone & Parameters/ Conditions & direct mapping & no\\
 \hline
-variables & units &  &  & y\\
+ & country, state, city, lat, lon, masl, continent, Koeppen, mat, map & Region/Regional conditions & direct mapping, and lat-lon used to extract continent, Koeppen, and FAO.ecozone & no\\
+\hline
+History & (need to detail this) & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine distmrs.type & (yes)\\
+\hline
+ & (need to detail this) & Abatement/Control technologies & generate list management events & no\\
+\hline
+Plots & distmrs.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories & used to determine land subcategories (see defining\_land\_subcategory.md) & auto\\
+\hline
+PFT & description &  &  & auto\\
+\hline
+variables & variable.type & Gases & For stocks in unit of organic matter, gases include CO2, CO, CH4, NO, NO2, N2O. For increments, fluxes, and stocks in units of C, gases includes only CO2. & auto\\
+\hline
+ & variable.name & C pool &  & auto\\
+\hline
+ &  & Description &  & auto\\
+\hline
+ & units &  &  & auto\\
 \hline
 Citations & (several fields) &  &  & \\
 \hline
-\end{tabu}
-\end{table}
+\end{longtabu}
 
 \subsection{Carbon cycle variables}
 
@@ -420,6 +442,8 @@ Citations & citation.citation & Full citation. Most of these records are automat
  & citation.abstract & Abstract, generally retrieved automatically via DOI lookup. & field added & field required by IPCC\\
 \hline
  & pdf.in.repository & Indicates whether pdf of original study has been retrieved and saved in ForC's reference repository & field added & housekeeping\\
+\hline
+ & EFDB.ready & Indicates whether data have been checked for export to EFDB. & field added & housekeeping\\
 \hline
 \end{longtabu}
 
