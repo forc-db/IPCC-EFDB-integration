@@ -248,6 +248,7 @@ urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_manageme
 record_of_changes <-read_csv(url(urlfile))
 names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
 record_of_changes <- record_of_changes[c(1:5)] #include all fields but date of change
+#record_of_changes<- record_of_changes[which(!grep("housekeeping",record_of_changes$Motivation)) , c(1:5)]  #trying to exclude rows for which Motivation = "housekeeping", but this is not working
 record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
 
 library(knitr)
