@@ -29,10 +29,7 @@ For the vast majority of records, this will be "Forest Land Remaining Forest Lan
 - if `distmrs.type` = "Agriculture_generic", `PAST LAND-USE` could be Cropland or Grassland. Assign "Land Converted to Forest Land (LF)".
 - if `distmrs.type` = "No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide", or "Major Storm", `PAST LAND-USE` = `CURRENT LAND-USE` ( "Forest Land Remaining Forest Land (FF)" for most)
 - if `distmrs.type`= "Cut", "Harvest", `PAST LAND-USE` = Forest if `CURRENT LAND-USE` = Forest or [Forest, Grassland ] if `CURRENT LAND-USE` =[Forest, Grassland ]
-- if `distmrs.type`= "Burned", "StandClearing", or there's a missing value code, we don't know `PAST LAND-USE`. I will need to check what to do about these. These could be something that would be valuable to have Teagan or Madison work on. 
-
-
-(C Q1 [here](https://github.com/forc-db/IPCC_database_integration/issues/1#issuecomment-809635979))
+- if `distmrs.type`= "Burned", "StandClearing", or there's a missing value code, we don't know `PAST LAND-USE`. **We don't currently know what to do with these- see Q1 [here](https://github.com/forc-db/IPCC_database_integration/issues/1#issuecomment-809635979)).**
 
 ## Assign codes
 
