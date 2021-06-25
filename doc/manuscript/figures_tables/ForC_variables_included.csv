@@ -1,4 +1,4 @@
-﻿ForC table,ForC field,EFDB field,Use,Required,TO_DO
+﻿ForC table,ForC field,EFDB field,Usage,Required,TO_DO
 Measurements,measurement.ID,Other Properties,direct mapping,(no),
 ,dominant.life.form,"1996 Source/Sink Categories, 2006 Source/Sink Categories",used to determine land subcategories (see defining_land_subcategory.md),yes,
 ,stand.age,"1996 Source/Sink Categories, 2006 Source/Sink Categories, Parameters/ Conditions","used to determine land subcategories (see defining_land_subcategory.md), directly listed in Parameters/ Conditions",(yes),
@@ -14,9 +14,12 @@ Measurements,measurement.ID,Other Properties,direct mapping,(no),
 ,data.location.within.source,-,"confirm that data weren't digitized, facilitate finding data in original publication",yes,
 ,ForC.investigator,"Data Provider, Data Provider Contact","link to Data Provider, Data Provider Contact info",yes,
 Sites,"site.ID, sites.sitename",Other Properties,direct mapping,(no),
-,"soil.texture, sand, silt, clay, soil.classification, FAO.ecozone",Parameters/ Conditions,direct mapping,no,
-,"country, state, city, lat, lon, masl, continent, Koeppen, mat, map",Region/Regional conditions,"direct mapping, and lat-lon used to extract continent, Koeppen, and FAO.ecozone",no,
-History,"date, hist.cat, hist.type","1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies","used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies",(yes),add footnote: required to know most recent disturbance type
+,"lat, lon",Region/Regional conditions,"direct mapping; used to extract continent, Koeppen, and FAO.ecozone",(no),
+,"country, state, city, masl,  mat, map",Region/Regional conditions,direct mapping,no,
+,"continent, Koeppen",Region/Regional conditions,direct mapping,auto,
+,"soil.texture, sand, silt, clay, soil.classification",Parameters/ Conditions,direct mapping,no,
+,FAO.ecozone,Parameters/ Conditions,direct mapping,auto,
+History,"date, hist.cat, hist.type","1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies","used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies",(yes)/no**,add footnote: required to know most recent disturbance type
 ,plot.area,Other Properties,direct mapping,no,
 Plots,"plot.ID, plot.name",Other Properties,direct mapping,(no),
 ,distmrs.type,"1996 Source/Sink Categories, 2006 Source/Sink Categories",used to determine land subcategories (see defining_land_subcategory.md),auto,

@@ -296,15 +296,17 @@ Fluxes are the inputs and outputs to each pool.
 
 \section{Mapping ForC to EFDB}
 
+\clearpage
+
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
-\caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.}}\\
+\caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). }\\
 \hline
-\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endfirsthead
-\caption[]{\textbf{Mapping of ForC fields to EFDB.} \textit{(continued)}}\\
+\caption[]{\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted).  \textit{(continued)}}\\
 \hline
-\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Use} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endhead
 Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
@@ -337,11 +339,17 @@ Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
 \hline
 Sites & site.ID, sites.sitename & Other Properties & direct mapping & (no)\\
 \hline
- & soil.texture, sand, silt, clay, soil.classification, FAO.ecozone & Parameters/ Conditions & direct mapping & no\\
+ & lat, lon & Region/Regional conditions & direct mapping; used to extract continent, Koeppen, and FAO.ecozone & (no)\\
 \hline
- & country, state, city, lat, lon, masl, continent, Koeppen, mat, map & Region/Regional conditions & direct mapping, and lat-lon used to extract continent, Koeppen, and FAO.ecozone & no\\
+ & country, state, city, masl,  mat, map & Region/Regional conditions & direct mapping & no\\
 \hline
-History & date, hist.cat, hist.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies & used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies & (yes)\\
+ & continent, Koeppen & Region/Regional conditions & direct mapping & auto\\
+\hline
+ & soil.texture, sand, silt, clay, soil.classification & Parameters/ Conditions & direct mapping & no\\
+\hline
+ & FAO.ecozone & Parameters/ Conditions & direct mapping & auto\\
+\hline
+History & date, hist.cat, hist.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies & used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies & (yes)/no**\\
 \hline
  & plot.area & Other Properties & direct mapping & no\\
 \hline
@@ -374,6 +382,16 @@ Citations & citation.citation & Full Technical Reference & direct mapping & yes/
  & source.type & Source of Data & direct mapping & yes\\
 \hline
 \end{longtabu}
+
+`Required' field indicates whether the field is required by EFDB: yes =
+value required; (yes) = input required, missing value acceptable if not
+reported; auto = present within ForC infrasructure, and therefore will
+always be exported to EFDB ; (no) = not required for EFDB, but required
+for ForC and therefore will always be exported to EFDB; no = not
+required, but exported to EFDB when a value is present.
+
+** `(yes)' for most recent severe disturbance; `no' for other history
+events
 
 \subsection{Carbon cycle variables}
 

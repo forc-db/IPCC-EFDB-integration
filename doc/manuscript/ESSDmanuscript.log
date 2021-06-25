@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  24 JUN 2021 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  25 JUN 2021 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3079,75 +3079,77 @@ ine 294.
 
 LaTeX Warning: Float too large for page by 10.36067pt on input line 295.
 
+[4
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 376--376
+] [5 <./figures_tables/C_variable_mapping.png>]
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 384--384
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 376--376
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 384--384
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 376--376
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 384--384
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 376--376
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 384--384
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
-[4
+[6
 
-] [5]
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 387--393
+] [7] [8]
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 405--411
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 387--393
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 405--411
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
-[6] [7 <./figures_tables/C_variable_mapping.png>]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 474--474
+
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 492--492
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 474--474
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 492--492
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
-[8] [9] [10] [11]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 573--575
+[9] [10] [11] [12]
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 591--593
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
 
-[12] (./ESSDmanuscript.bbl [13]
+[13] (./ESSDmanuscript.bbl [14]
 Underfull \hbox (badness 10000) in paragraph at lines 61--63
 []\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
 t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
-[14]) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+[15]) [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 646.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 664.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 664.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 664.
  ) 
 Here is how much of TeX's memory you used:
- 14657 strings out of 480608
- 193631 string characters out of 5903631
- 572043 words of memory out of 5000000
- 30174 multiletter control sequences out of 15000+600000
+ 14664 strings out of 480608
+ 193698 string characters out of 5903631
+ 574044 words of memory out of 5000000
+ 30180 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,15n,52p,1314b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3157,10 +3159,10 @@ exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (15 pages, 377453 bytes).
+Output written on ESSDmanuscript.pdf (16 pages, 378418 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 65 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

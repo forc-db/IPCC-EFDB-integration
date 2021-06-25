@@ -193,21 +193,25 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 
 # Mapping ForC to EFDB
 
+\clearpage
 ```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
 
 ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
 names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
 ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
 
-library(knitr)
-library(kableExtra)
 knitr::kable(ForC_variables_included, format = "latex",
              longtable = TRUE,
-             caption = "\\textbf{Mapping of ForC fields to EFDB.}") %>%
-  kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
-  row_spec(0, bold = TRUE)
-```
+             caption = "\\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). ") %>%
+  row_spec(0, bold = TRUE) %>%
+kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
 
+```
+'Required' field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
+
+** '(yes)' for most recent severe disturbance; 'no' for other history events
 
 ## Carbon cycle variables
 
