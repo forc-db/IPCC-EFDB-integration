@@ -1,7 +1,14 @@
 # IPCC-EFDB-integration
 
+This project is documented in our [in-prep manuscript](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/ESSDmanuscript.pdf).
 
-## HOW TO PROCEED
+The workflow procedure is outlined below.
+
+## CHECKING/ PREPARING DATA IN FORC
+
+Follow instructions [here](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/Data%20review%20process.md)
+
+## GENERATING FILES FOR REVIEW AND SUBMISSION TO EFDB
 
 ### STEP 1. Is there .csv file(s) in [data/2-approved](https://github.com/forc-db/IPCC-EFDB-integration/tree/main/data/2-approved) ?
 Check if there is any .csv file that has been approved and is pending processing in folder [data/2-approved](https://github.com/forc-db/IPCC-EFDB-integration/tree/main/data/2-approved)
