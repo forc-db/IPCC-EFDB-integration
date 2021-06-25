@@ -549,7 +549,7 @@ EFDB <- data.frame("EF ID" = "",
                    "Common Unit" = ForC_simplified$original.units,
                    "Equation" =  ifelse(my_is.na(V_mapping$Equation[m_vmap]), "", V_mapping$Equation[m_vmap]),
                    "IPCC Worksheet Number" = ifelse(my_is.na(V_mapping$IPCC.Worksheet.Number[m_vmap]), "", my_is.na(V_mapping$IPCC.Worksheet.Number[m_vmap])),
-                   "Source of Data" = "Peer-reviewed journal", #  Peer-reviewed journal (usually), maybe not if no ref? to check
+                   "Source of Data" = CITATIONS$source.type[m_citations], # "Peer-reviewed journal", #  Peer-reviewed journal (usually), maybe not if no ref? to check
                    "Full Technical Reference" = CITATIONS$citation.citation[m_citations],
                    "URL" = CITATIONS$citation.url[m_citations],
                    "Reference Language" = CITATIONS$citation.language[m_citations],
@@ -585,23 +585,28 @@ EFDB <- data.frame("EF ID" = "",
 ## first delete any file so that if slightly different number of records, still overwrites.
 file.remove(list.files("data/1-to-review/", pattern = ".csv", full.names = T))
 
-for(c_id in   c("Archibald_2009_doiv",
-                "Chave_2008_aepa",
-                "Goulden_1996_eocd",
-                "Keith_2009_mmce",
-                "Keller_2001_beit",
-                "Lin_2012_tvia",
-                "Meakem_2018_rots",
-                "Ngo_2013_csip",
-                "Orihuela-Belmonte_2013_csaa",
-                "Rice_2004_cbav",
-                "Saleska_2003_ciaf",
-                "Toky_1983_ssfs",
-                "Uhl_1984_sand",
-                "Lutz_2018_giol",
-                "Johnson_2018_csss",
-                "Gonzalez-Akre_2016_potm")
-   ) { # unique(ForC_simplified$citation.ID )
+
+
+for(c_id in CITATIONS$citation.ID[CITATIONS$EFDB.ready %in% 1]) { 
+  # unique(ForC_simplified$citation.ID )
+  
+  # c("Archibald_2009_doiv",
+  # "Chave_2008_aepa",
+  # "Goulden_1996_eocd",
+  # "Keith_2009_mmce",
+  # "Keller_2001_beit",
+  # "Lin_2012_tvia",
+  # "Meakem_2018_rots",
+  # "Ngo_2013_csip",
+  # "Orihuela-Belmonte_2013_csaa",
+  # "Rice_2004_cbav",
+  # "Saleska_2003_ciaf",
+  # "Toky_1983_ssfs",
+  # "Uhl_1984_sand",
+  # "Lutz_2018_giol",
+  # "Johnson_2018_csss",
+  # "Gonzalez-Akre_2016_potm",
+  # "McGarvey_2015_csio")
 
   idx <- ForC_simplified$citation.ID %in% c_id
   
