@@ -20,11 +20,12 @@ Note that studies with multiple files (e.g., manuscript and supplementary info f
 If there is not already a copy of the article in the References repository, please add it, named with `Citation.ID`, along with any supplementary files containing data. If there are supplementary files, create a folder with the `Citation_ID` name and put all files in that folder. (Remember to push to GitHub!)
 
 ## Step 3. Check/correct info in `citations.csv`
-- if `citation.doi` is NAC, fill in DOI (there should be few of these)
+- if `citation.doi` is NAC, fill in DOI (digital object identifier; generally found on front page of a publication). If none is given, change NAC to NA. 
 - check `citation.language` (may be wrong if abstract is in English, article in other language)
 - check `pdf.in.repository` -- should be 1 if pdf is there, 0 if not.
+- fill in `source.type`
 
-*NOTE: `citation.title`, `citation.citation`, `citation.url`, and `citation.abstract` can all be filled automatically via code, so no need to bother with these.*
+*NOTE: `citation.title`, `citation.citation`, `citation.url`, and `citation.abstract` can all be filled automatically via code when DOI is given, so no need to bother with these unless there is no DOI.*
 
 ## Step 4. Check/correct info in `sites.csv`
 - filter `measurement.refs` to display records that include this study
@@ -34,31 +35,13 @@ If there is not already a copy of the article in the References repository, plea
  
 ### Focus on:
 - double check lat/lon (or spot check just a few sites if there are many) and fill `coordinates.precision` (this is not sent to EFDB, but important for resolving duplicates and ensuring quality of extracted data (e.g., climate)
-- fields sent to EFDB (none mandatory):
-      `country`,
-      `state`,
-      `city`,
-      `lat`,
-      `lon`,
-      `mat`,
-      `map`,
-      `masl`,
-      `soil.texture`,
-      `sand`,
-      `silt`,
-      `clay`,
-      `soil.classification`
+- check fields sent to EFDB. Listed in  [this table](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/figures_tables/ForC_variables_included.csv) / nicely formatted in [this doc](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/ESSDmanuscript.pdf) (currently Table 2, but that could change).
 
 
 ## Step 5. Check/correct info in `history.csv`
 (*This is complex and will be a bit of a pain to manually review, as citation.ID is not associated to history records. For now, skip this and KAT will check that everything looks reasonable prior to approving the data. In the longer run, I'll need to provide instructions for this. We may also want to improve the ForC structure around this.*)
 
-- fields sent to EFDB (none mandatory):
-    `plot.area`
-    `distmrs.type`
-    `distmrs.year`
-    `regrowth.type`
-    `regrowth.year`
+- check fields sent to EFDB: Listed in  [this table](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/figures_tables/ForC_variables_included.csv) / nicely formatted in [this doc](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/ESSDmanuscript.pdf) (currently Table 2, but that could change). 
 
 ## Step 6. Check/correct info in `measurements.csv`
 
@@ -72,22 +55,8 @@ If there is not already a copy of the article in the References repository, plea
   - `mean` (This -- or `mean.in.original.units`, whichever applies- - should be reported *exactly* as in the original article, including the same number of digits.) 
   - info on the sample size/ uncertainty: `n`, `sd`, `se`, `lower95CI`, `upper95CI` (*need `n` and `sd`, `se`, or `lower95CI` and `upper95CI`*)
 - documentation of conversion from original units: `original.units` (**mandatory**), `mean.in.original.units` (**mandatory**), `C.conversion.factor` (*not sent to EFDB, but good to have*)
-- fields sent to EFDB (not mandatory):
-  -  `dominant.veg` (check that it matches `veg.notes`, fill in both if missing and the info is provided)
-  -  `scientific.name`
-  -  `veg.notes` (fill in if missing and the info is provided. In some cases, the info may even be given in plot name!)
-  -  `stand.age`
-  -  `min.dbh`
-  -  `allometry_1`	
-  -  `allometry_2`
-  -  `min.dbh`	
-  -  `depth`	
-  -  `covariate_1`
-  -  `coV_1.value`	
-  -  `covariate_2`	
-  -  `coV_2.value`
-  -  `allometry`
  - fill `data.location.within.source`. This is **required** for us to know whether data were digitized from a figure (not allowed) or pulled from text/table (allowed). 
+- check other fields sent to EFDB: Listed in  [this table](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/figures_tables/ForC_variables_included.csv) / nicely formatted in [this doc](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/manuscript/ESSDmanuscript.pdf) (currently Table 2, but that could change). 
 
 ## Step 7. Communicate that the study has been checked
 - We need to come up with a good system for this ([issue #18](https://github.com/forc-db/IPCC-EFDB-integration/issues/18))
