@@ -76,7 +76,10 @@ any(is.na(m_meas)) # should be FALSE
 
 ForC_simplified$source.notes <-  MEASUREMENTS$source.notes[m_meas]
 
-ForC_simplified <- ForC_simplified[!grepl("Fig|Figure|digitized", ForC_simplified$source.notes, ignore.case = T), ]
+ForC_simplified$data.location.within.source <- MEASUREMENTS$data.location.within.source[m_meas]
+
+
+ForC_simplified <- ForC_simplified[!grepl("Fig|Figure|digitized", paste(ForC_simplified$source.notes, ForC_simplified$data.location.within.source), ignore.case = T), ]
 
 
 # Generate/modify fields we need ####
