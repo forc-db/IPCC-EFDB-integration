@@ -17,24 +17,18 @@ author:
   - given_name: Susan 
     surname: Cook-Patton
     affiliation: "4" 
-  - given_name: Sandro 
-    surname: Federici 
-    affiliation: "5" 
   - given_name: Helene
     surname: Muller-Landau
-    affiliation: "6" 
+    affiliation: "5" 
   - given_name: Camille
     surname: Piponiot
-    affiliation: "7" 
+    affiliation: "6" 
   - given_name: Teagan
     surname: Rogers
     affiliation: "1"
-  - given_name: Valentyna
-    surname: Slivinska 
-    affiliation: "5"
   - given_name: Kristina J.
     surname: Anderson-Teixeira
-    affiliation: "1,6 *"
+    affiliation: "1,5 *"
     email: teixeirak@si.edu
     corresponding: true
 
@@ -50,10 +44,8 @@ affiliation:
   - code: 4
     address: The Nature Conservancy; Arlington VA 22203, USA
   - code: 5
-    address:  IPCC Task Force on National Greenhouse Gas Inventories Technical Support Unit, Institute for Global Environmental Strategies, Hayama, Japan
-  - code: 6
     address: Forest Global Earth Observatory, Smithsonian Tropical Research Institute, Panama, Republic of Panama
-  - code: 7
+  - code: 6
     address: CIRAD, Montpellier, France
 
 

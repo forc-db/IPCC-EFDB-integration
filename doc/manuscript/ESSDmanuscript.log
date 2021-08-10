@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  25 JUN 2021 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  10 AUG 2021 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2953,24 +2953,24 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 ) (./ESSDmanuscript.aux)
 \openout1 = `ESSDmanuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 10
-1.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 99
+.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -3005,7 +3005,7 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 101.
+Package hyperref Info: Link coloring OFF on input line 99.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -3017,27 +3017,27 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 147
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154
+LaTeX Font Info:    Trying to load font information for U+msb on input line 147
 .
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package xcolor Warning: Incompatible color definition on input line 154.
+Package xcolor Warning: Incompatible color definition on input line 147.
 
 
-Package xcolor Warning: Incompatible color definition on input line 156.
+Package xcolor Warning: Incompatible color definition on input line 149.
 
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
-9.
+2.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -3062,9 +3062,9 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 159.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
-0.
+(Font)              scaled to size 8.54997pt on input line 152.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
+3.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
@@ -3074,59 +3074,59 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
-ine 294.
+ine 287.
 (pdftex.def)             Requested size: 426.79134pt x 444.28326pt.
 
-LaTeX Warning: Float too large for page by 10.36067pt on input line 295.
+LaTeX Warning: Float too large for page by 10.36067pt on input line 288.
 
 [4
 
 ] [5 <./figures_tables/C_variable_mapping.png>]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 384--384
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 377--377
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 377--377
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 384--384
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 377--377
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 384--384
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 377--377
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 [6
 
 ] [7] [8]
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 405--411
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 398--404
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 405--411
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 398--404
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 492--492
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 485--485
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 492--492
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 485--485
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
 [9] [10] [11] [12]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 591--593
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 584--586
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
@@ -3138,18 +3138,18 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
 [15]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 664.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 664.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 664.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 657.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
  ) 
 Here is how much of TeX's memory you used:
- 14664 strings out of 480608
- 193698 string characters out of 5903631
- 574044 words of memory out of 5000000
- 30180 multiletter control sequences out of 15000+600000
+ 14662 strings out of 480608
+ 193686 string characters out of 5903631
+ 575063 words of memory out of 5000000
+ 30178 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,15n,52p,1314b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3159,7 +3159,7 @@ exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (16 pages, 378418 bytes).
+Output written on ESSDmanuscript.pdf (16 pages, 378294 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams
