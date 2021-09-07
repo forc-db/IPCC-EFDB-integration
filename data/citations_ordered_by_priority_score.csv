@@ -5,11 +5,11 @@ Poorter_2016_bron,244,1,biomass_ag,7,0,244,,synthesis of many studies
 Powers_2012_csaa,220,7,"biomass, deadwood, organic.layer, soil, total.ecosystem, biomass_ag_understory, deadwood_down",1,0,220,0,digitized from figures 
 Frouz_2008_ibsd,142,3,"biomass_root, biomass_ag, organic.layer",1,0,142,,digitized from figures (confirm)
 Fleming_1998_conm,115,7,"biomass_ag, biomass_ag_understory, biomass, deadwood_standing, deadwood_down, organic.layer, deadwood",1,0,115,1,
-Lewis_2009_icsi,79,1,biomass_ag,79,0,79,,
-Ishihara_2016_anmf,75,1,biomass_ag,4,0,75,,
+Lewis_2009_icsi,79,1,biomass_ag,79,0,79,,rainfor
+Ishihara_2016_anmf,75,1,biomass_ag,4,0,75,,looks like data are in S3
 Wang_2013_eofa,72,3,"soil2N, biomass_root_fine, organic.layer",1,0,72,,
-Krankina_1999_nbfs,68,5,"biomass_ag_foliage, biomass_ag_woody, biomass_ag, biomass, biomass_root",14,0,68,,
-Smith_2012_tsdi,64,2,"biomass_root_fine, biomass_root_coarse",1,0,64,,
+Krankina_1999_nbfs,68,5,"biomass_ag_foliage, biomass_ag_woody, biomass_ag, biomass, biomass_root",14,0,68,,duplicates
+Smith_2012_tsdi,64,2,"biomass_root_fine, biomass_root_coarse",1,0,64,,BangorFACE roots-- lower priority
 Manlay_2002_cnap,60,4,"biomass_root, organic.layer, biomass_ag_understory, biomass_ag",1,0,60,,
 Sharma_2010_tdac,60,3,"biomass_ag, biomass, biomass_root",20,0,60,,
 Swamy_2004_tgba,60,4,"biomass_ag, biomass_root, biomass_ag_foliage, biomass",3,0,60,,
