@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  10 AUG 2021 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  8 SEP 2021 13:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3126,7 +3126,7 @@ Overfull \hbox (1.27617pt too wide) in paragraph at lines 485--485
  []
 
 [9] [10] [11] [12]
-Overfull \hbox (13.58418pt too wide) in paragraph at lines 584--586
+Overfull \hbox (13.58418pt too wide) in paragraph at lines 587--589
 \T1/ptm/m/n/10 The con-clu-sion goes here. You can mod-ify the sec-tion name wi
 th \T1/pcr/m/n/10 \conclusions[modified heading if necessary]\T1/ptm/m/n/10 . 
  []
@@ -3138,12 +3138,12 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
 [15]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 660.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 660.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 657.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 657.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 660.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 660.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
  ) 
 Here is how much of TeX's memory you used:
  14662 strings out of 480608
@@ -3159,7 +3159,7 @@ exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (16 pages, 378294 bytes).
+Output written on ESSDmanuscript.pdf (16 pages, 378453 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams

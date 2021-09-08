@@ -487,9 +487,12 @@ Citations & citation.citation & Full citation. Most of these records are automat
 \subsection{Quality control measures}
 
 Prior to releasing ForC v4.0, we executed several quality control
-measures. First, to improve information on geographic coordinates, we
-flagged and reviewed records with suspected low precision \emph{(Issue
-\#29){[}https://github.com/forc-db/ForC/issues/229{]}}. Second, to
+measures. First, we implemented a system of continuous integration using
+GitHub Actions (\emph{sensu} Kim et al.~in prep) to run some automatic
+checks any time the master data files are updated. Second, to improve
+information on geographic coordinates, we flagged and reviewed records
+with suspected low precision \emph{(Issue
+\#29){[}https://github.com/forc-db/ForC/issues/229{]}}. Third, to
 identify erroneous climate data\ldots{} \emph{(Issue
 \#212){[}https://github.com/forc-db/ForC/issues/212{]}}.
 

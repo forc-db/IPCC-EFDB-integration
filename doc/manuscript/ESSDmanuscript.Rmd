@@ -260,8 +260,10 @@ knitr::kable(record_of_changes, format = "latex",
 
 ## Quality control measures
 Prior to releasing ForC v4.0, we executed several quality control measures.
-First, to improve information on geographic coordinates, we flagged and reviewed records with suspected low precision *(Issue #29)[https://github.com/forc-db/ForC/issues/229]*.
-Second, to identify erroneous climate data... *(Issue #212)[https://github.com/forc-db/ForC/issues/212]*.
+First, we implemented a system of continuous integration using GitHub Actions (*sensu* Kim et al. in prep) to run some automatic checks any time the master data files are updated.
+Second, to improve information on geographic coordinates, we flagged and reviewed records with suspected low precision *(Issue #29)[https://github.com/forc-db/ForC/issues/229]*.
+Third, to identify erroneous climate data... *(Issue #212)[https://github.com/forc-db/ForC/issues/212]*.
+
 
 ## Resolving duplicates
 
