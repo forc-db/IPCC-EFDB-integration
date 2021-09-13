@@ -47,7 +47,21 @@ citation_list <- MEASUREMENTS %>%
             ready_to_rerun_and_send = "") %>% arrange(desc(review_priority_score))
 
 
+# merge notes from previous file if it exists ####
+filename = "data/citations_ordered_by_priority_score.csv"
+
+if(file.exists(filename)) {
+  old_citation_list <- read.csv(filename)
+  
+  m <- match(citation_list$citation.ID, old_citation_list$citation.ID)
+  
+  citation_list$ready_to_rerun_and_send <- old_citation_list$ready_to_rerun_and_send[m]
+  citation_list$notes <- old_citation_list$notes[m]
+  
+  
+}
+
 # save ####
-write.csv(citation_list, file = "data/citations_ordered_by_priority_score.csv", row.names = F)
+write.csv(citation_list, file = filename, row.names = F)
 
 
