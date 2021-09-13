@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 SEP 2021 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 SEP 2021 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3070,14 +3070,14 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<figures_tables/C_variable_mapping.png, id=65, 786.94pt x 822.07124pt>
+<figures_tables/C_variable_mapping.png, id=65, 623.32875pt x 649.42625pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
 ine 287.
-(pdftex.def)             Requested size: 426.79134pt x 445.8436pt.
+(pdftex.def)             Requested size: 426.79134pt x 444.66603pt.
 
-LaTeX Warning: Float too large for page by 27.32094pt on input line 288.
+LaTeX Warning: Float too large for page by 56.94324pt on input line 288.
 
 [4
 
@@ -3148,18 +3148,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
 Here is how much of TeX's memory you used:
  14662 strings out of 480608
  193686 string characters out of 5903631
- 574260 words of memory out of 5000000
+ 576263 words of memory out of 5000000
  30178 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,15n,52p,1511b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,52p,1701b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (16 pages, 382325 bytes).
+Output written on ESSDmanuscript.pdf (16 pages, 313536 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams
