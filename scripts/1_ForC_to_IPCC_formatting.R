@@ -384,7 +384,7 @@ any(is.na(m_meas)) # should be FALSE
 
 ForC_simplified$data.location.within.source <- MEASUREMENTS$data.location.within.source[m_meas]
 
-ForC_simplified$send_SI <- ifelse(grepl("Table S", ForC_simplified$data.location.within.source), 1, 0)
+ForC_simplified$send_SI <- ifelse(grepl("Table S", ForC_simplified$data.location.within.source, ignore.case = T), 1, 0)
 
 ## import and/or modify COVARIATES ####
 m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
