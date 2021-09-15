@@ -513,7 +513,7 @@ idx_start_end_date_NA <- my_is.na(ForC_simplified$start.date) | my_is.na(ForC_si
 
 
 ForC_simplified$mean_date <- round((as.numeric(ForC_simplified$start.date) +  as.numeric(ForC_simplified$end.date))/2, 1)
-ForC_simplified$start_end_date <- paste(ForC_simplified$end.date,   ForC_simplified$start.date, sep = "-")
+ForC_simplified$start_end_date <- paste(ForC_simplified$start.date,   ForC_simplified$end.date, sep = "-")
 
 # for stocks `date`, or average of start.date and end.date
   
