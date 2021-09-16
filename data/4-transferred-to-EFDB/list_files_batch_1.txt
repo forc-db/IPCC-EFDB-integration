@@ -1,7 +1,7 @@
-n_1_Gonzalez-Akre_2016_potm.xlsm
-n_1_Lin_2012_tvia.xlsm
-n_15_Ngo_2013_csip.xlsm
-n_18_Meakem_2018_rots.xlsm
-n_25_Uhl_1984_sand.xlsm
-n_31_Lutz_2018_giol.xlsm
-n_5_Archibald_2009_doiv.xlsm
+n_1_Gonzalez-Akre_2016_potm
+n_1_Lin_2012_tvia
+n_15_Ngo_2013_csip
+n_18_Meakem_2018_rots
+n_25_Uhl_1984_sand
+n_31_Lutz_2018_giol
+n_5_Archibald_2009_doiv
