@@ -54,4 +54,15 @@ for(file_to_export in approved_files) {
   
 }
 
+
+# add a text file with list of files sent in the batch ####
+batch_list_files <- list.files("data/4-transferred-to-EFDB/", pattern = ".txt")
+last_batch <- max(as.numeric(regmatches(batch_list_files, regexpr("\\d{1}", batch_list_files))))
+
+new_batch <- last_batch + 1
+write.table(gsub(".csv", "", approved_files), row.names = F, quote = F, col.names = F,
+            file = paste0("data/3-EFDB-forms-ready/list_files_batch_", new_batch, "_", gsub("-", "", Sys.Date()), ".txt"))
+
+
+# restartR ####
 .rs.restartR()
