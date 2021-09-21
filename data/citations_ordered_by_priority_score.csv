@@ -10,13 +10,13 @@ Lewis_2009_icsi,79,1,biomass_ag,79,0,79,NA,rainfor
 Yang_2007_srac,85,8,"BNPP_root_coarse, BNPP_root_fine, BNPP_root, ANPP_litterfall_1, ANPP_woody_stem, R_het_litter, biomass_ag, biomass_root_fine",5,1,75,NA,
 Smith_2012_tsdi,68,3,"BNPP_root_fine, biomass_root_fine, biomass_root_coarse",1,0,68,NA,BangorFACE roots-- lower priority
 Curiel Yuste_2005_sria,64,8,"BNPP_root, BNPP_root_fine, BNPP_root.turnover_fine, biomass, biomass_ag, biomass_root, biomass_root_coarse, biomass_root_fine",1,0,64,NA,
-Maier_2004_rcua,60,11,"ANPP_woody_stem, ANPP_woody_branch, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass, biomass_ag, biomass_root, biomass_root_coarse, biomass_root_fine",6,0,60,NA,
-Sharma_2010_tdac,60,3,"biomass_ag, biomass, biomass_root",20,0,60,NA,on list
-Swamy_2004_tgba,60,4,"biomass_ag, biomass_root, biomass_ag_foliage, biomass",3,0,60,NA,on list
+Maier_2004_rcua,60,11,"ANPP_woody_stem, ANPP_woody_branch, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass, biomass_ag, biomass_root, biomass_root_coarse, biomass_root_fine",6,0,60,NA,duplicates
+Sharma_2010_tdac,60,3,"biomass_ag, biomass, biomass_root",20,0,60,1,on list
+Swamy_2004_tgba,60,4,"biomass_ag, biomass_root, biomass_ag_foliage, biomass",3,0,60,1,on list
 Gilroy_2014_ccab,53,1,total.ecosystem_2,1,0,53,NA,
 Comeau_1999_nbfc,52,13,"ANPP_woody_stem, ANPP_woody_branch, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass_ag_foliage, biomass_ag_woody, biomass_root_coarse, biomass_root_fine, biomass_ag, biomass, biomass_root",4,0,52,NA,
 Vieira_2003_csfu,52,1,biomass_ag,3,0,52,NA,
-Feldpausch_2007_sfgd,50,1,biomass_ag,1,0,50,NA,
+Feldpausch_2007_sfgd,50,1,biomass_ag,1,0,50,0,digitized from figures 
 Neeff_2005_agmf,49,1,biomass_ag,1,0,49,NA,
 van Breugel_2013_soes,45,1,biomass_ag,1,0,45,NA,
 Crowell_1994_vdia,44,2,"biomass_ag, biomass_ag_foliage",1,0,44,NA,
@@ -236,7 +236,7 @@ Aguilos_2013_slso,5,1,biomass_root,1,0,5,NA,
 Arburak_2013_tcos,5,1,biomass_root_fine,1,0,5,NA,
 Aththorick_2012_vssa,5,1,biomass_ag,1,0,5,NA,
 Deng_2000_boch,5,5,"biomass, biomass_ag, biomass_ag_woody, biomass_ag_foliage, biomass_root",1,0,5,NA,
-Feldpausch_2004_cana,5,1,biomass_ag_woody,1,0,5,NA,
+Feldpausch_2004_cana,5,1,biomass_ag_woody,1,0,5,1,
 Grier_1981_bdaa,5,4,"biomass_ag, biomass_ag_understory, biomass_root, deadwood_down",2,0,5,NA,
 Kaye_1998_race,5,1,soil,1,0,5,NA,
 Kinerson_1977_ccia,5,5,"BNPP_root, BNPP_root.turnover_fine, biomass, biomass_ag, biomass_root",1,0,5,NA,
