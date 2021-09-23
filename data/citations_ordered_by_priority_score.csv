@@ -17,14 +17,14 @@ Gilroy_2014_ccab,53,1,total.ecosystem_2,1,0,53,NA,
 Comeau_1999_nbfc,52,13,"ANPP_woody_stem, ANPP_woody_branch, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass_ag_foliage, biomass_ag_woody, biomass_root_coarse, biomass_root_fine, biomass_ag, biomass, biomass_root",4,0,52,NA,
 Vieira_2003_csfu,52,1,biomass_ag,3,0,52,NA,
 Feldpausch_2007_sfgd,50,1,biomass_ag,1,0,50,0,digitized from figures 
-Neeff_2005_agmf,49,1,biomass_ag,1,0,49,NA,digitized?
-van Breugel_2013_soes,45,1,biomass_ag,1,0,45,NA,digitized? 
+Neeff_2005_agmf,49,1,biomass_ag,1,0,49,NA,digitized
+van Breugel_2013_soes,45,1,biomass_ag,1,0,45,NA,digitized
 Crowell_1994_vdia,44,2,"biomass_ag, biomass_ag_foliage",1,0,44,NA,
 CROWELL_1994_vdia,44,2,"biomass_ag_understory, biomass_ag",1,0,44,NA,
 Ryan_1996_ffwa,44,14,"ANPP_woody_branch, ANPP_woody_stem, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass_ag, biomass_ag_woody, biomass_ag_foliage, biomass_root_coarse, biomass_root_fine, biomass, biomass_root, BNPP_root.turnover_fine",2,0,44,NA,
 Uri_2012_bpac,44,6,"biomass_ag, biomass_ag_woody, biomass_ag_foliage, soil, biomass_root, biomass_ag_understory",8,0,44,NA,
 Wang_1995_aban,43,3,"biomass_ag, biomass_ag_understory, deadwood_down",4,0,43,NA,
-Broadbent_2014_isas,42,2,"biomass_ag, soil",1,0,42,NA,
+Broadbent_2014_isas,42,2,"biomass_ag, soil",1,0,42,NA,on list
 Curiel Yuste_2005_cnpp,42,14,"ANPP_woody_stem, ANPP_woody_branch, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass_ag_foliage, biomass_ag_woody, biomass_root_coarse, biomass_root_fine, biomass_ag, biomass, biomass_root, BNPP_root.turnover_fine",3,0,42,NA,
 Ruess_1996_cofr,42,7,"ANPP_woody, BNPP_root_fine, biomass_root_coarse, biomass_root_fine, biomass_ag, biomass, biomass_root",6,0,42,NA,
 Ruark_1988_bnpp,40,8,"biomass_ag, biomass_root_fine, biomass_root_coarse, biomass_root, biomass, biomass_ag_foliage, deadwood_down, ANPP_woody_stem",1,0,40,NA,
