@@ -479,7 +479,7 @@ Reinke_1981_eola,1,1,R_het_litter,1,0,1,NA,NA
 Rencz_2013_nbfs,1,1,biomass_ag_woody,1,0,1,NA,
 Romero_2007_fcac,1,1,biomass_ag,1,0,1,NA,
 Schindlbacher_2009_cldt,1,1,biomass_root_fine,1,0,1,NA,
-Schmelz_1965_ssoo,1,1,biomass_ag,1,0,1,NA,
+Schmelz_1965_ssoo,1,1,biomass_ag,1,0,1,NA,duplicates
 Sha_2005_srit,1,1,R_het_litter,1,0,1,NA,NA
 Shibistova_2002_aerb,1,1,biomass_ag,1,0,1,NA,
 Silberstein_2001_eboa,1,1,biomass,1,0,1,NA,
