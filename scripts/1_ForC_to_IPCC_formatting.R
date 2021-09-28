@@ -79,7 +79,7 @@ ForC_simplified$source.notes <-  MEASUREMENTS$source.notes[m_meas]
 ForC_simplified$data.location.within.source <- MEASUREMENTS$data.location.within.source[m_meas]
 
 
-ForC_simplified <- ForC_simplified[!grepl("Fig|Figure|digitized", paste(ForC_simplified$source.notes, ForC_simplified$data.location.within.source), ignore.case = T), ]
+ForC_simplified <- ForC_simplified[!grepl("Fig|Figure|digitized|not found", paste(ForC_simplified$source.notes, ForC_simplified$data.location.within.source), ignore.case = T), ]
 
 
 # Generate/modify fields we need ####
