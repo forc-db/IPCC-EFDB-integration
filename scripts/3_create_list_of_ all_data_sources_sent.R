@@ -39,5 +39,8 @@ for(x in list_files_sent) {
 }
 
 
+# order by reference ####
+summary_table <- summary_table[order(summary_table$Full.Technical.Reference),]
+
 # save table ####
 write.csv(summary_table, "data/4-transferred-to-EFDB/List_of_all_data_submitted.csv", row.names = F)
