@@ -19,8 +19,8 @@ Vieira_2003_csfu,52,1,biomass_ag,3,0,52,NA,
 Feldpausch_2007_sfgd,50,1,biomass_ag,1,0,50,0,digitized from figures 
 Neeff_2005_agmf,49,1,biomass_ag,1,0,49,NA,digitized
 van Breugel_2013_soes,45,1,biomass_ag,1,0,45,NA,digitized
-Crowell_1994_vdia,44,2,"biomass_ag, biomass_ag_foliage",1,0,44,NA,
-CROWELL_1994_vdia,44,2,"biomass_ag_understory, biomass_ag",1,0,44,NA,
+Crowell_1994_vdia,44,2,"biomass_ag, biomass_ag_foliage",1,0,44,1,"think it's ready, but won't get any data because of duplicate prioritization/ how presented in table"
+CROWELL_1994_vdia,44,2,"biomass_ag_understory, biomass_ag",1,0,44,1,"think it's ready, but won't get any data because of duplicate prioritization/ how presented in table"
 Ryan_1996_ffwa,44,14,"ANPP_woody_branch, ANPP_woody_stem, ANPP_woody, BNPP_root_coarse, BNPP_root_fine, BNPP_root, biomass_ag, biomass_ag_woody, biomass_ag_foliage, biomass_root_coarse, biomass_root_fine, biomass, biomass_root, BNPP_root.turnover_fine",2,0,44,NA,
 Uri_2012_bpac,44,6,"biomass_ag, biomass_ag_woody, biomass_ag_foliage, soil, biomass_root, biomass_ag_understory",8,0,44,NA,
 Wang_1995_aban,43,3,"biomass_ag, biomass_ag_understory, deadwood_down",4,0,43,NA,
