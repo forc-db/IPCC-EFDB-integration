@@ -303,7 +303,7 @@ We recommend that, unless they have some specific reason to do otherwise, resear
   
   - report C variables in article text, table, or SI table. EFDB cannot accept data digitized from figures
   
-  - present calculations of all variables that would be useful to IPCC. EFDB requires that data in the database be presented in the original article, and as such cannot accept subsequent calculations. For example, if aboveground biomass and total biomass are presented, but root biomass is not presented, root biomass cannot be subsequently calculated and sent to EFDB. 
+  - present calculations of all variables that would be useful to IPCC. EFDB requires that data in the database be presented in the original article, and as such cannot accept subsequent calculations. For example, if aboveground biomass and total biomass are presented, but root biomass is not presented, root biomass cannot be subsequently calculated and sent to EFDB. Similarly, fine and coarse root biomass can't be summed; soil carbon can't be summed across depth increments, etc.
 
 For data synthesis projects, compilation can only be useful to the EFDB if they include all the required, along with transparent description on the methodology applied to derive emission factors (or have a brief description and a reference to the original source) and the original emission factor values are present (not modified/rounded).  
 
