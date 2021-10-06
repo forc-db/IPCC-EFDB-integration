@@ -100,6 +100,7 @@ ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "crop"  & !m
 
 unique(ForC_simplified$dominant.life.form)
 unique(ForC_simplified$current_LU) # should be no ""
+if(any(ForC_simplified$current_LU %in% "")) stop("some current_LU did not map!")
 unique(ForC_simplified[ForC_simplified$current_LU %in% "", c("dominant.life.form", "stand.age", "current_LU")]) # should be empty
 
 
