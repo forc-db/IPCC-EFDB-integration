@@ -70,6 +70,10 @@ ForC_simplified$variable.name <-  MEASUREMENTS$variable.name[m_meas]
 
 ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$provide.to.IPCC %in% 1], ]
 
+# consider stand.age as numeric ####
+ForC_simplified$stand.age <- as.numeric(ForC_simplified$stand.age)
+
+
 ## exclude any records for which data.location.within.source includes "Figure" or "Fig", or source.notes includes "digitized".
 m_meas <- match(ForC_simplified$measurement.ID, MEASUREMENTS$measurement.ID)
 any(is.na(m_meas)) # should be FALSE
@@ -121,11 +125,16 @@ ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")] <- ForC_simplified$current_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("No disturbance", "No severe disturbance", "Flood", "Forest dieback", "Landslide","Major Storm")]
 ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cut", "Harvest")] <- ForC_simplified$current_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Cut", "Harvest")]
 
-ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Burned", "StandClearing") | my_is.na( ForC_simplified$distmrs.type)] <- ""
+ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20) & ForC_simplified$distmrs.type %in% c("Burned", "StandClearing", "") | my_is.na( ForC_simplified$distmrs.type)] <- ""
 
 unique(ForC_simplified$past_LU)
 sum(ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20)]%in%"")
-unique(ForC_simplified[ForC_simplified$past_LU %in% "", c("distmrs.type", "stand.age", "past_LU")]) # should be empty
+unique(ForC_simplified[ForC_simplified$past_LU %in% "" & !( ForC_simplified$distmrs.type %in% c("Burned", "StandClearing", "") | my_is.na( ForC_simplified$distmrs.type)), c("distmrs.type", "stand.age", "past_LU")]) # should be empty
+
+if(sum(ForC_simplified$past_LU %in% "" & !( ForC_simplified$distmrs.type %in% c("Burned", "StandClearing", "") | my_is.na( ForC_simplified$distmrs.type))) > 0 ) stop("some Past LU did not map")
+
+# temp <- unique(ForC_simplified[ForC_simplified$past_LU %in% "", c("distmrs.type", "stand.age", "past_LU")])
+# aggregate(stand.age~distmrs.type+past_LU, data = temp, FUN = range)
 
 ## put past and current together to make up IPCC land-use sub-category
 
@@ -467,7 +476,7 @@ ForC_simplified$depth[grepl("NA", ForC_simplified$depth)] <- ""
 
 
 ### stand.age "mature" if 999 ####
-ForC_simplified$stand.age[ForC_simplified$stand.age %in% '999'] <- "mature"
+ForC_simplified$stand.age[ForC_simplified$stand.age %in% 999] <- "mature"
 
 ## import and/or modify ForC specific info ####
 
