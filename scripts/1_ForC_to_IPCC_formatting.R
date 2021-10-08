@@ -102,9 +102,10 @@ ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "grass" & !m
 ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "grass" & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age == 0] <- "Grassland"
 ForC_simplified$current_LU [ForC_simplified$dominant.life.form %in% "crop"  & !my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age == 0] <- "Cropland"
 
+
 unique(ForC_simplified$dominant.life.form)
 unique(ForC_simplified$current_LU) # should be no ""
-if(any(ForC_simplified$current_LU %in% "")) stop("some current_LU did not map!")
+if(any(ForC_simplified$current_LU %in% "")) rstudioapi::restartSession(command = "some current_LU did not map!")
 unique(ForC_simplified[ForC_simplified$current_LU %in% "", c("dominant.life.form", "stand.age", "current_LU")]) # should be empty
 
 
@@ -131,7 +132,7 @@ unique(ForC_simplified$past_LU)
 sum(ForC_simplified$past_LU[(!my_is.na(ForC_simplified$stand.age) & ForC_simplified$stand.age <20)]%in%"")
 unique(ForC_simplified[ForC_simplified$past_LU %in% "" & !( ForC_simplified$distmrs.type %in% c("Burned", "StandClearing", "") | my_is.na( ForC_simplified$distmrs.type)), c("distmrs.type", "stand.age", "past_LU")]) # should be empty
 
-if(sum(ForC_simplified$past_LU %in% "" & !( ForC_simplified$distmrs.type %in% c("Burned", "StandClearing", "") | my_is.na( ForC_simplified$distmrs.type))) > 0 ) stop("some Past LU did not map")
+if(sum(ForC_simplified$past_LU %in% "" & !( ForC_simplified$distmrs.type %in% c("Burned", "StandClearing", "") | my_is.na( ForC_simplified$distmrs.type))) > 0 ) rstudioapi::restartSession(command = "some current_LU did not map!")
 
 # temp <- unique(ForC_simplified[ForC_simplified$past_LU %in% "", c("distmrs.type", "stand.age", "past_LU")])
 # aggregate(stand.age~distmrs.type+past_LU, data = temp, FUN = range)
