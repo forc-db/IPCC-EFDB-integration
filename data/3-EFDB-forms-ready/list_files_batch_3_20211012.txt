@@ -1,0 +1,11 @@
+n_1_Lutz_2018_giol
+n_2_Chave_2008_aepa
+n_22_Crowell_1994_vdia
+n_27_Uhl_1984_sand_CORRECTED
+n_28_Broadbent_2014_isas
+n_28_Manlay_2002_cnap
+n_57_Tepley_2017_vtfl_CORRECTED
+n_63_Rothstein_2004_laro
+n_7_Wirth_2002_fast
+n_75_Ishihara_2016_anmf_CORRECTED
+n_9_Feldpausch_2004_cana
