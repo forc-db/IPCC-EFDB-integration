@@ -1,0 +1,9 @@
+n_1_Chave_2008_aepa
+n_1_Helcoski_2019_gsmd
+n_16_Litton_2003_scde
+n_16_Wirth_2002_babc
+n_24_Litton_2003_baab
+n_44_Litton_2004_eotd
+n_6_Wirth_1999_abas
+n_60_Sharma_2010_tdac
+n_60_Swamy_2004_tgba
