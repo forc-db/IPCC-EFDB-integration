@@ -95,6 +95,8 @@ Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.
 
 \introduction[Introduction]
 
+We are currently in a climate crisis and as we seek to find answers climate data is increasingly important.**something about climate change and freenhouse gasses** The influence the forests have on asmosphereic carbon has made forest data increasingly valuable. 
+
 **As we seek to mitigate climate change [@unfccc_adoption_2015], forests are critical.**
 *(See intros to other papers for relevant refs)*
 Under Paris Agreement, **##**% of Nationally Determined Contributions relate to forests [@grassi_key_2017].
