@@ -106,6 +106,7 @@ Under this guidance, GHG inventories include all managed land, including most of
 The IPCC inventory guidelines include specific instructions for accounting for forest land ... [@ipcc_agriculture_2006; @ipcc_2019_2019a].
 This guidance has improved as more of the relevant underlying data has become available [@requenasuarez_estimating_2019], but there remains room for continuous improvement as the science advances.
 For example, @cook-patton_mapping_2020 *(summarize IPCC comparison results)*. 
+Another example is @cuni-sanchez_high_2021.
 *Moreover, it is useful for those compiling national greenhouse gas inventories to have access to locally-specific information, when available.*
 To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 
