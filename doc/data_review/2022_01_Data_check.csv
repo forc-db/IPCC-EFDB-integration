@@ -1,8 +1,8 @@
 ﻿,,Author ,Number of parameters provided,Number of parameters proposed for EB consideration,Check,Comments
 Second batch of data,,,,,,
 ,1,Uhl,10,9,1 value is equal to 0.0.,I checkec into this and it looks like one value was recorded as 0 instead of NA. -Madison
-,4,Wieser,5,,The values provided are not explicitly mentioned in the paper provided. Could you please navigate me?,
-,8,Fleming,104,,The paper was not provided together with the EFDB form. Could you please provide it?,
+,4,Wieser,5,,The values provided are not explicitly mentioned in the paper provided. Could you please navigate me?,The values can be found in Table 1 and Table 2
+,8,Fleming,104,,The paper was not provided together with the EFDB form. Could you please provide it?,"Yes, it is attached as ""Fleming_1998_conm"""
 Third batch of data,,,,,,
 ,2,Chave,2,,Value (-0.25) was already provided in the first batch of data,
 ,,,,,Value (4.97) was not found in the paper provided.  Could you please navigate me?,
