@@ -4,13 +4,13 @@ Second batch of data,,,,,,
 ,4,Wieser,5,,The values provided are not explicitly mentioned in the paper provided. Could you please navigate me?,The values can be found in Table 1 and Table 2
 ,8,Fleming,104,,The paper was not provided together with the EFDB form. Could you please provide it?,"Yes, it is attached as ""Fleming_1998_conm"""
 Third batch of data,,,,,,
-,2,Chave,2,,Value (-0.25) was already provided in the first batch of data,
+,2,Chave,2,,Value (-0.25) was already provided in the first batch of data,Which previous study are you refering to? 
 ,,,,,Value (4.97) was not found in the paper provided.  Could you please navigate me?,"The information is in ""Chave_2008_aefa.tableS5"" which is within the Chave_2008_aefa folder. The value 4.97 is in the BCI, Loss column "
 ,3,Crowell,22,,10 values out of 22 are equal to 0.0. ,"These zero values are reported in Table 2 of the paper. The values reported are the Tree Aboveground Biomasss for stand age 1a,1b,2a,2b,3,5,6a,6b,8a,8b"
 ,,,,,"Difficult to compare with data source, cause there is no free access to this paper and it was not provided too. Could you please provide it?","I attached the paper as a PDF it is attached as ""Crowell_1994_vdia"""
 ,4,Uhl,27,26,1 value is equal to 0.0.,I wasn't able to find a value equal to 0 but I did find an NA value and removed it from the data -Madison
 ,7,Tepley,57,,The values provided are not explicitly mentioned neither in the paper provided nor in the supporting materials to the paper. Could you please navigate me?,"These data are from our lab and were entered directly in ForC by the lead author of the paper in question. They are not published in the paper. Perhaps these are not acceptable, but KAT can vouch for their source."
 ,9,Wirth,7,6,1 value (207.2) was not found in the paper ,This value was based on a sum and was mistakenly included. Thank you for letting us know. 
-,11,Feldpausch,9,8,1 value is equal to 0.0.,
+,11,Feldpausch,9,8,1 value is equal to 0.0.,It looks like this 0 value is correct. It is for a tree with a standing age of 1 which may explain why the standing biomass is 0. The data for this value can be found in the first paragrah under 'Carbon Sequestration' 
 ,,,,,,
 ,,Total,243,49,,
