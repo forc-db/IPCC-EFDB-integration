@@ -10,7 +10,7 @@ Third batch of data,,,,,,
 ,,,,,"Difficult to compare with data source, cause there is no free access to this paper and it was not provided too. Could you please provide it?","I attached the paper as a PDF it is attached as ""Crowell_1994_vdia"""
 ,4,Uhl,27,26,1 value is equal to 0.0.,I wasn't able to find a value equal to 0 but I did find an NA value and removed it from the data -Madison
 ,7,Tepley,57,,The values provided are not explicitly mentioned neither in the paper provided nor in the supporting materials to the paper. Could you please navigate me?,"These data are from our lab and were entered directly in ForC by the lead author of the paper in question. They are not published in the paper. Perhaps these are not acceptable, but KAT can vouch for their source."
-,9,Wirth,7,6,1 value (207.2) was not found in the paper ,
+,9,Wirth,7,6,1 value (207.2) was not found in the paper ,This value was based on a sum and was mistakenly included. Thank you for letting us know. 
 ,11,Feldpausch,9,8,1 value is equal to 0.0.,
 ,,,,,,
 ,,Total,243,49,,
