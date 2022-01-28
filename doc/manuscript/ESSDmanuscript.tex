@@ -14,8 +14,7 @@
 
 
 
-%% Journal abbreviations (please use the same for discussion papers and final revised papers)
-
+%% Journal abbreviations (please use the same for preprints and final revised papers)
 
 % Advances in Geosciences (adgeo)
 % Advances in Radio Science (ars)
@@ -23,7 +22,6 @@
 % Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
 % Annales Geophysicae (angeo)
 % Archives Animal Breeding (aab)
-% ASTRA Proceedings (ap)
 % Atmospheric Chemistry and Physics (acp)
 % Atmospheric Measurement Techniques (amt)
 % Biogeosciences (bg)
@@ -54,6 +52,7 @@
 % Polarforschung - Journal of the German Society for Polar Research (polf)
 % Primate Biology (pb)
 % Proceedings of the International Association of Hydrological Sciences (piahs)
+% Safety of Nuclear Waste Disposal (sand)
 % Scientific Drilling (sd)
 % SOIL (soil)
 % Solid Earth (se)
@@ -80,6 +79,12 @@
 % Pandoc citation processing
 
 % The "Technical instructions for LaTex" by Copernicus require _not_ to insert any additional packages.
+% 
+% tightlist command for lists without linebreak
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
 %%\usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -95,11 +100,11 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 %
-
 \begin{document}
 
-\title{Informing IPCC accounting of forest carbon using the global
-forest carbon database (ForC v4.0)}
+
+\title{Informing IPCC accounting of forest carbon using the global forest
+carbon database (ForC v4.0)}
 
 
 \Author[1]{Madison}{Williams}
@@ -113,11 +118,11 @@ forest carbon database (ForC v4.0)}
 \Author[1,5 *]{Kristina J.}{Anderson-Teixeira}
 
 
-\affil[1]{Center for Conservatiton Ecology, Smithsonian Conservation
-Biology Institute, Front Royal, VA, United States}
+\affil[1]{Center for Conservatiton Ecology, Smithsonian Conservation Biology
+Institute, Front Royal, VA, United States}
 \affil[2]{School of Geography, University of Leeds, Leeds, UK}
-\affil[3]{Joint Global Change Research Institute, Pacific Northwest
-National Laboratory, College Park, MD, United States}
+\affil[3]{Joint Global Change Research Institute, Pacific Northwest National
+Laboratory, College Park, MD, United States}
 \affil[4]{The Nature Conservancy; Arlington VA 22203, USA}
 \affil[5]{Forest Global Earth Observatory, Smithsonian Tropical Research
 Institute, Panama, Republic of Panama}
@@ -151,8 +156,8 @@ The abstract goes here. It can also be on \emph{multiple lines}.
 \end{abstract}
 
 
-\copyrightstatement{The author's copyright for this publication is
-transferred to institution/company.}
+\copyrightstatement{The author's copyright for this publication is transferred to
+institution/company.}
 
 
 \textbf{Important}: Always double-check with the official manuscript
@@ -164,11 +169,10 @@ especially the sections ``Technical instructions for LaTeX'' and
 
 \introduction[Introduction]
 
-\textbf{As we seek to mitigate climate change
-\citep{unfccc_adoption_2015}, forests are critical.} \emph{(See intros
-to other papers for relevant refs)} Under Paris Agreement,
-\textbf{\#\#}\% of Nationally Determined Contributions relate to forests
-\citep{grassi_key_2017}.
+Currently the world is in a climate crisis and as we seek to find
+answers climate data is increasingly important.Forests are critical to
+our management of greenhouse gases. The influence the forests have on
+asmosphereic carbon has made forest data increasingly valuable.
 
 \textbf{The International Panel on Climate Change (IPCC) provides
 guidance for national greenhouse gas (GHG) inventories for reporting to
@@ -182,10 +186,11 @@ improved as more of the relevant underlying data has become available
 \citep{requenasuarez_estimating_2019}, but there remains room for
 continuous improvement as the science advances. For example,
 \citet{cook-patton_mapping_2020} \emph{(summarize IPCC comparison
-results)}. \emph{Moreover, it is useful for those compiling national
-greenhouse gas inventories to have access to locally-specific
-information, when available.} To improve the data accessible for C
-accounting, the IPCC created the Emission Factor Database (EFDB;
+results)}. Another example is \citet{cuni-sanchez_high_2021}.
+\emph{Moreover, it is useful for those compiling national greenhouse gas
+inventories to have access to locally-specific information, when
+available.} To improve the data accessible for C accounting, the IPCC
+created the Emission Factor Database (EFDB;
 https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a
 recognized library of emission factors and other parameters that can be
 used for estimating greenhouse gas emissions and removals.
@@ -227,7 +232,7 @@ measurement.
 \centering
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
-\textbf{pool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
+\textbf{ï  pool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
 \hline
 aboveground biomass & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory\\
 \hline
@@ -294,12 +299,12 @@ Fluxes are the inputs and outputs to each pool.
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). }\\
 \hline
-\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
+\textbf{ï  ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endfirsthead
 \caption[]{\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted).  \textit{(continued)}}\\
 \hline
-\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
+\textbf{ï  ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endhead
 Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
@@ -389,9 +394,6 @@ events
 \subsection{Carbon cycle variables}
 
 Mapping of variables is shown in Fig. 1
-
-Define relationship among NEE, NEP, and delta.C., especially noting role
-of harvest \citep{chapin_reconciling_2006}.
 
 \subsection{Land use categories}
 
@@ -557,7 +559,9 @@ standards:
   article, and as such cannot accept subsequent calculations. For
   example, if aboveground biomass and total biomass are presented, but
   root biomass is not presented, root biomass cannot be subsequently
-  calculated and sent to EFDB.
+  calculated and sent to EFDB. Similarly, fine and coarse root biomass
+  can't be summed; soil carbon can't be summed across depth increments,
+  etc.
 \end{itemize}
 
 For data synthesis projects, compilation can only be useful to the EFDB
@@ -596,8 +600,7 @@ The conclusion goes here. You can modify the section name with
 
 
 
-\codedataavailability{use this to add a statement when having data sets
-and software code
+\codedataavailability{use this to add a statement when having data sets and software code
 available} %% use this section when having data sets and software code available
 
 
@@ -611,8 +614,7 @@ available} %% use this section when having data sets and software code available
 \authorcontribution{(fill this in)} %% optional section
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\competinginterests{The authors declare no competing
-interests.} %% this section is mandatory even if you declare that no competing interests are present
+\competinginterests{The authors declare no competing interests.} %% this section is mandatory even if you declare that no competing interests are present
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -663,5 +665,6 @@ Environmental Strategies, WLS(?)
 %% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
 %% \citeauthor{jones90}|          & Jones et al.
 %% \citeyear{jones90}|            & 1990
+
 
 \end{document}
