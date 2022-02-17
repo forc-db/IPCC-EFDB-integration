@@ -31,9 +31,6 @@ author:
     affiliation: "1,5 *"
     email: teixeirak@si.edu
     corresponding: true
-
-#affiliation numbering will need to be fixed
-
 affiliation:
   - code: 1
     address: Center for Conservatiton Ecology, Smithsonian Conservation Biology Institute, Front Royal, VA, United States
@@ -47,8 +44,6 @@ affiliation:
     address: Forest Global Earth Observatory, Smithsonian Tropical Research Institute, Panama, Republic of Panama
   - code: 6
     address: CIRAD, Montpellier, France
-
-
 abstract: |
   The abstract goes here.
   It can also be on _multiple lines_.
@@ -56,7 +51,6 @@ bibliography: references.bib
 running:
   title: IPCC forest C accounting with ForC
   author: Williams et al.
-# This section is mandatory even if you declare that no competing interests are present.
 competinginterests: |
   The authors declare no competing interests.
 # OPTIONAL:
@@ -65,14 +59,12 @@ algorithms: true
 # Note: additional copyright statements for affiliated software or data need to be placed in the data availability section. 
 copyrightstatement: |
   The author's copyright for this publication is transferred to institution/company. 
-### The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
-### It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
 ### Note: unless stated otherwise, software and data affiliated with the manuscript are assumed to be published under the same licence as the article (currently Creative Commons 4.0)
 availability:
-  #code: |
   #  use this to add a statement when having only software code available
-  #data: |
   #  use this to add a statement when having only data sets available
+  #code: |
+  #data: |
   codedata: |
     use this to add a statement when having data sets and software code available
 authorcontribution: |
@@ -82,7 +74,6 @@ acknowledgements: |
   Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have helped to build the database.
   Funding for this study was provided by Bezos Earth Fund to The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
 appendix: |
-
 output:
   rticles::copernicus_article: default
   bookdown::pdf_book:
