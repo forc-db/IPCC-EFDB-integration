@@ -45,8 +45,18 @@ affiliation:
   - code: 6
     address: CIRAD, Montpellier, France
 abstract: |
-  The abstract goes here.
-  It can also be on _multiple lines_.
+  Forests are critical for climate change mitigation and consitute a substantial portion of planned emissions reductions under the 2015 Paris Agreement.
+  Yet, the efficacy of greenhouse gas (GHG) mitigation planning and reporting is dependent upon the quality of available emission factors data, including forest carbon (C) stocks and changes therein.
+  Tens of thousands of relevant forest C estimates have been published, yet are not readily accesible to the practitioners compiling national greenhouse gas inventories. 
+  Many of these data have, however, been compiled in the Global Forest C database (ForC; https://forc-db.github.io/) and stand to be of value to greenhouse gas accounting if made available through the Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC).
+  Here, we develop and document a process for semi-automated transfer of data from ForC into the EFDB, assess the data available and transferred to date, and provide recommendations for improving forest data collection, analysis, and reporting to improve accounting of forest-sector GHG emissions and removals.
+  We begin by reconciling terminology and mapping ForC fields into EFDB.
+  This process required some updates to the ForC database structure, leading to the release of a new version of ForC (v4.0; described here).
+  At the time of writing, ForC contained ## values that would qualify for inclusion in the EFDB, ## of which have been transferred to date.
+  (Some analysis of representation/ gaps)
+  <!-- -->
+  In the future, forest C estimates in EFDB can be improved through targetted research to fill critical gaps, reporting of information required by IPCC, and continued submission of data from scientific publications to the EFDB.
+
 bibliography: references.bib
 running:
   title: IPCC forest C accounting with ForC
@@ -81,12 +91,17 @@ output:
 ---
 
 
-**Important**: Always double-check with the official manuscript preparation guidelines at [https://publications.copernicus.org/for_authors/manuscript_preparation.html](https://publications.copernicus.org/for_authors/manuscript_preparation.html), especially the sections "Technical instructions for LaTeX" and "Manuscript composition".
-Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.
+<!--**Important**: Always double-check with the official manuscript preparation guidelines at [https://publications.copernicus.org/for_authors/manuscript_preparation.html](https://publications.copernicus.org/for_authors/manuscript_preparation.html), especially the sections "Technical instructions for LaTeX" and "Manuscript composition".
+Please contact Daniel Nüst, `daniel.nuest@uni-muenster.de`, with any problems.-->
 
 \introduction[Introduction]
 
-Forests are critical to our management of greenhouse gases. The influence the forests have on asmosphereic carbon has made forest data increasingly valuable. 
+Forests are critical to our management of greenhouse gases. 
+The influence the forests have on atmospheric carbon has made forest data increasingly valuable. 
+
+**Forests play a central role in international plans for climate change mitigation [@unfccc_adoption_2015].**
+As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].
+Effective forest-based climate change mitigation requires solid scientific data [@anderson-teixeira_effective_2022].
 
 **The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas (GHG) inventories for reporting to the United Nations Framework Convention on Climate Change [UNFCCC, (REFS for older guidelines), @ipcc_2019_2019].**
 Under this guidance, GHG inventories include all managed land, including most of the world's forest land [@ogle_delineating_2018].
@@ -96,6 +111,10 @@ For example, @cook-patton_mapping_2020 *(summarize IPCC comparison results)*.
 Another example is @cuni-sanchez_high_2021.
 *Moreover, it is useful for those compiling national greenhouse gas inventories to have access to locally-specific information, when available.*
 To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
+
+**To ensure that planned emissions reductions are realistic, high-quality estimates of forest C stocks and fluxes must be publicly accessible.**
+The EFDB is intended as a recognized library, and can be used both for efforts to tally a nation's intended or accomplished GHG reductions, or as a basis of comparison for external parties to evaluate these inventories. 
+<!-- check Washington Post article on Malaysia NDC, @deng_comparing_2021 -->
 
 **The Global Forest Carbon Database, ForC, is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].**
 *(add stats/ details, maybe record of how ForC has grown over time)*
