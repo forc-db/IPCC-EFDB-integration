@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 FEB 2022 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 FEB 2022 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3127,37 +3127,49 @@ Overfull \hbox (1.27617pt too wide) in paragraph at lines 514--514
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
-[10] [11] [12] [13] [14] [15] (./ESSDmanuscript.bbl [16]
+[10] [11] [12] [13] [14] [15]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 65
+8.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [16
+
+] [17
+
+] (./ESSDmanuscript.bbl [18
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 90--92
 []\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
 t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
-[17]) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 697.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 697.
+[19]) [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 736.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 736.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 697.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 697.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 697.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 736.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 736.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 736.
  ) 
 Here is how much of TeX's memory you used:
- 14636 strings out of 480608
- 193407 string characters out of 5903631
+ 14676 strings out of 480608
+ 193937 string characters out of 5903631
  575694 words of memory out of 5000000
- 30154 multiletter control sequences out of 15000+600000
- 574035 words of font info for 83 fonts, out of 8000000 for 9000
+ 30182 multiletter control sequences out of 15000+600000
+ 574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,15n,52p,1631b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (18 pages, 365756 bytes).
+exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on ESSDmanuscript.pdf (20 pages, 376743 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
