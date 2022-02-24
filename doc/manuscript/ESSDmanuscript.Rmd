@@ -84,31 +84,13 @@ acknowledgements: |
   Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have helped to build the database.
   Funding for this study was provided by Bezos Earth Fund to The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
 appendix: |
- \clearpage 
- \section{Instructions (TEMPORARY)}
-  Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
-  \subsection{Option 1}
-  
-  If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
-  They will be correctly named automatically.
-  \subsection{Option 2}
-  If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
-  
-  To rename them correctly to A1, A2, etc., please add the following commands in front of them:
-  `\appendixfigures` needs to be added in front of appendix figures
-  `\appendixtables` needs to be added in front of appendix tables
-  
-  Please add `\clearpage` between each table and/or figure. Further guidelines on figures and tables can be found below.
-   
-   \clearpage
    \section{Mapping ForC to EFDB}
    
-    CURRENT TABLE 2 GOES HERE
+   CURRENT TABLE 2 GOES HERE
    
-   \clearpage
    \section{Updates to ForC}
    
-   CURRENT TABLE 2 GOES HERE
+   CURRENT TABLE 3 GOES HERE
    
 output:
   rticles::copernicus_article: default
@@ -220,25 +202,7 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 
 # Mapping ForC to EFDB
 
-\clearpage
-```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
-library(knitr)
-library(kableExtra)
 
-ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
-names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
-ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
-
-knitr::kable(ForC_variables_included, format = "latex",
-             longtable = TRUE,
-             caption = "\\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). ") %>%
-  row_spec(0, bold = TRUE) %>%
-kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
-
-```
-'Required' field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
-
-** '(yes)' for most recent severe disturbance; 'no' for other history events
 
 ## Carbon cycle variables
 
@@ -272,24 +236,6 @@ Although these variables currently lack records, the structure exists such that 
 To provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including *litter* (OL)).
 
 ## ForC restructuring
-
-```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE, message = FALSE}
-library (readr)
-urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_management_records/record_of_changes.csv"
-record_of_changes <-read_csv(url(urlfile))
-names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
-record_of_changes <- record_of_changes[c(1:5)] #include all fields but date of change
-#record_of_changes<- record_of_changes[which(!grep("housekeeping",record_of_changes$Motivation)) , c(1:5)]  #trying to exclude rows for which Motivation = "housekeeping", but this is not working
-record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
-
-library(knitr)
-library(kableExtra)
-knitr::kable(record_of_changes, format = "latex",
-             longtable = TRUE,
-             caption = "\\textbf{Table of changes to ForC fields.}") %>%
-  kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
-  row_spec(0, bold = TRUE)
-```
 
 
 ## Quality control measures
@@ -358,10 +304,53 @@ An important challenge is that forests are changing rapidly, and data collected 
 Remote sensing biomass estimates include standing dead wood [@duncanson_aboveground_2021].
 
 
-\conclusions[Conclusions]
+# Conclusions
 
 <!--The conclusion goes here.
 You can modify the section name with  `\conclusions[modified heading if necessary]`.-->
 
+\clearpage
+# Appendix A 
+<!--remove number-->
 
+```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+
+ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
+names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
+ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
+
+knitr::kable(ForC_variables_included, format = "latex",
+             longtable = TRUE,
+             caption = "\\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). ") %>%
+  row_spec(0, bold = TRUE) %>%
+kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
+
+```
+'Required' field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
+
+** '(yes)' for most recent severe disturbance; 'no' for other history events
+
+\clearpage
+# Appendix B
+<!--remove number-->
+
+```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE, message = FALSE}
+library (readr)
+urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_management_records/record_of_changes.csv"
+record_of_changes <-read_csv(url(urlfile))
+names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
+record_of_changes <- record_of_changes[c(1:5)] #include all fields but date of change
+#record_of_changes<- record_of_changes[which(!grep("housekeeping",record_of_changes$Motivation)) , c(1:5)]  #trying to exclude rows for which Motivation = "housekeeping", but this is not working
+record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
+
+library(knitr)
+library(kableExtra)
+knitr::kable(record_of_changes, format = "latex",
+             longtable = TRUE,
+             caption = "\\textbf{Table of changes to ForC fields.}") %>%
+  kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
+  row_spec(0, bold = TRUE)
+```
 
