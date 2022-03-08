@@ -151,6 +151,7 @@ IPCC parses into biomass (aboveground and belowground), dead organic matter (dea
 Quantifying these requires a one-time measurement.
 
 
+
 ```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
 C_pools_table <- read.csv("figures_tables/C_pools.csv")
 names(C_pools_table) <- stringr::str_replace_all(names(C_pools_table), "\\.", " ")
