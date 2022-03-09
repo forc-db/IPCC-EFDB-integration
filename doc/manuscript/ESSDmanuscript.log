@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.8)  8 MAR 2022 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.9)  9 MAR 2022 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -590,69 +590,64 @@ Package natbib Warning: Citation `anderson-teixeira_forc_2018' on page 2 undefin
 
 Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 2 undefined on input line 219.
 
-
-Overfull \hbox (2.111pt too wide) in paragraph at lines 241--246
-\T1/ptm/m/n/10 Forest ecosystem C stocks may be parsed into pools in various ways. IPCC parses into biomass (aboveground and belowground),
- []
-
 [2] [3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.293 
+l.296 
       ] [4]
 <figures_tables/C_variable_mapping.png, id=34, 788.9475pt x 821.0675pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
-Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input line 310.
+Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input line 313.
 (pdftex.def)             Requested size: 426.79134pt x 444.15915pt.
 
-LaTeX Warning: Float too large for page by 41.03642pt on input line 311.
+LaTeX Warning: Float too large for page by 41.03642pt on input line 314.
 
 
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 321--327
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 324--330
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 321--327
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 324--330
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
 
-Package natbib Warning: Citation `ogle_delineating_2018' on page 5 undefined on input line 333.
+Package natbib Warning: Citation `ogle_delineating_2018' on page 5 undefined on input line 336.
 
 
-Package natbib Warning: Citation `anderson-teixeira_forc_2018' on page 5 undefined on input line 346.
+Package natbib Warning: Citation `anderson-teixeira_forc_2018' on page 5 undefined on input line 349.
 
 [5
 
 ] [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.380 
+l.383 
        <./figures_tables/C_variable_mapping.png>] [7]
 
-Package natbib Warning: Citation `banburymorgan_global_2021' on page 8 undefined on input line 457.
+Package natbib Warning: Citation `banburymorgan_global_2021' on page 8 undefined on input line 460.
 
 
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 8 undefined on input line 457.
+Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 8 undefined on input line 460.
 
 
-Package natbib Warning: Citation `fer_ecosystem_2021' on page 8 undefined on input line 458.
+Package natbib Warning: Citation `fer_ecosystem_2021' on page 8 undefined on input line 461.
 
 
-Package natbib Warning: Citation `duncanson_aboveground_2021' on page 8 undefined on input line 474.
+Package natbib Warning: Citation `duncanson_aboveground_2021' on page 8 undefined on input line 477.
 
 [8]
 ! Dimension too large.
 \LT@max@sel #1#2->{\ifdim #2=\wd \tw@ 
                                       #1\else \number \c@LT@chunks \fi }{\th...
-l.565 \end{longtabu}
+l.568 \end{longtabu}
                      
 Here is how much of TeX's memory you used:
  13935 strings out of 480236
  218763 string characters out of 5893969
- 567896 words of memory out of 5000000
+ 568896 words of memory out of 5000000
  31594 multiletter control sequences out of 15000+600000
  508066 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
