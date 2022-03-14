@@ -145,7 +145,6 @@ For quantifying forest role in global C cycle, we ultimately care about:
 
 
 ## Carbon stocks
-
 Forest ecosystem C stocks may be parsed into pools in various ways. 
 IPCC parses into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table&nbsp;\@ref(table_variables)).
 Quantifying these requires a one-time measurement.
