@@ -181,7 +181,8 @@ Litter is defined as including " all  non-living  biomass  with  a  diameter  le
 
 ### Soil Organic Matter
 
-Soil organic matter is defined as...
+Soil organic matter is defined as "Includes organic carbon in mineral and organic soils (including peat) to a specified depth chosen by the country and
+applied consistently through the time series. Live fine roots (of less than the suggested diameter limit for belowground biomass) are included with soil organic matter where they cannot be distinguished from it empirically."(2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
 
 ## Carbon increments
 
