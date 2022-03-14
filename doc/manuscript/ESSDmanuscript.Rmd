@@ -202,7 +202,7 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 
 
 # Mapping ForC to EFDB
-
+ForC data is incredibly valuable to EFDB and there is data which is included in the ForC database that does not meet EFDB standards. There were two main EFDB guidelines which limits the amount of data we could transfer. EFDB will not accept data which has been digitized(from graph) and ForC does. 
 
 
 ## Carbon cycle variables

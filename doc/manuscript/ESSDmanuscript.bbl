@@ -1,0 +1,154 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{{Anderson-Teixeira} and
+  Belair(2022)}]{anderson-teixeira_effective_2022}
+{Anderson-Teixeira}, K.~J. and Belair, E.~P.: Effective Forest-Based Climate
+  Change Mitigation Requires Our Best Science, Global Change Biology, 28,
+  1200--1203, \doi{10.1111/gcb.16008}, 2022.
+
+\bibitem[{{Anderson-Teixeira} et~al.(2018){Anderson-Teixeira}, Wang, McGarvey,
+  Herrmann, Tepley, {Bond-Lamberty}, and LeBauer}]{anderson-teixeira_forc_2018}
+{Anderson-Teixeira}, K.~J., Wang, M. M.~H., McGarvey, J.~C., Herrmann, V.,
+  Tepley, A.~J., {Bond-Lamberty}, B., and LeBauer, D.~S.: {{ForC}} : A Global
+  Database of Forest Carbon Stocks and Fluxes, Ecology, 99, 1507--1507,
+  \doi{10.1002/ecy.2229}, 2018.
+
+\bibitem[{{Anderson-Teixeira} et~al.(2021){Anderson-Teixeira}, Herrmann,
+  Morgan, {Bond-Lamberty}, {Cook-Patton}, Ferson, {Muller-Landau}, and
+  Wang}]{anderson-teixeira_carbon_2021}
+{Anderson-Teixeira}, K.~J., Herrmann, V., Morgan, R.~B., {Bond-Lamberty}, B.,
+  {Cook-Patton}, S.~C., Ferson, A.~E., {Muller-Landau}, H.~C., and Wang, M.
+  M.~H.: Carbon Cycling in Mature and Regrowth Forests Globally, Environmental
+  Research Letters, 16, 053\,009, \doi{10.1088/1748-9326/abed01}, 2021.
+
+\bibitem[{Banbury~Morgan et~al.(2021)Banbury~Morgan, Herrmann, Kunert,
+  Bond-Lamberty, Muller-Landau, and
+  Anderson-Teixeira}]{banburymorgan_global_2021}
+Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
+  H.~C., and Anderson-Teixeira, K.~J.: Global Patterns of Forest Autotrophic
+  Carbon Fluxes, Global Change Biology, 27, 2840--2855,
+  \doi{10.1111/gcb.15574}, 2021.
+
+\bibitem[{{Cook-Patton} et~al.(2020){Cook-Patton}, Leavitt, Gibbs, Harris,
+  Lister, {Anderson-Teixeira}, Briggs, Chazdon, Crowther, Ellis, Griscom,
+  Herrmann, Holl, Houghton, Larrosa, Lomax, Lucas, Madsen, Malhi, Paquette,
+  Parker, Paul, Routh, Roxburgh, Saatchi, {van den Hoogen}, Walker, Wheeler,
+  Wood, Xu, and Griscom}]{cook-patton_mapping_2020}
+{Cook-Patton}, S.~C., Leavitt, S.~M., Gibbs, D., Harris, N.~L., Lister, K.,
+  {Anderson-Teixeira}, K.~J., Briggs, R.~D., Chazdon, R.~L., Crowther, T.~W.,
+  Ellis, P.~W., Griscom, H.~P., Herrmann, V., Holl, K.~D., Houghton, R.~A.,
+  Larrosa, C., Lomax, G., Lucas, R., Madsen, P., Malhi, Y., Paquette, A.,
+  Parker, J.~D., Paul, K., Routh, D., Roxburgh, S., Saatchi, S., {van den
+  Hoogen}, J., Walker, W.~S., Wheeler, C.~E., Wood, S.~A., Xu, L., and Griscom,
+  B.~W.: Mapping Carbon Accumulation Potential from Global Natural Forest
+  Regrowth, Nature, 585, 545--550, \doi{10.1038/s41586-020-2686-x}, 2020.
+
+\bibitem[{{Cuni-Sanchez} et~al.(2021){Cuni-Sanchez}, Sullivan, Platts, Lewis,
+  Marchant, Imani, Hubau, Abiem, Adhikari, Albrecht, Altman, Amani, Aneseyee,
+  Avitabile, Banin, Batumike, Bauters, Beeckman, Begne, Bennett, Bitariho,
+  Boeckx, Bogaert, Br{\"a}uning, Bulonvu, Burgess, Calders, Chapman, Chapman,
+  Comiskey, {de Haulleville}, Decuyper, DeVries, Dolezal, Droissart, Ewango,
+  Feyera, Gebrekirstos, Gereau, Gilpin, Hakizimana, Hall, Hamilton, Hardy,
+  Hart, Heiskanen, Hemp, Herold, Hiltner, Horak, Kamdem, Kayijamahe, Kenfack,
+  Kinyanjui, Klein, Lisingo, Lovett, Lung, Makana, Malhi, Marshall, Martin,
+  Mitchard, Morel, Mukendi, Muller, Nchu, Nyirambangutse, Okello, Peh,
+  Pellikka, Phillips, Plumptre, Qie, Rovero, Sainge, Schmitt, Sedlacek, Ngute,
+  Sheil, Sheleme, Simegn, {Simo-Droissart}, Sonk{\'e}, Soromessa, Sunderland,
+  Svoboda, Taedoumg, Taplin, Taylor, Thomas, Timberlake, Tuagben, Umunay,
+  Uzabaho, Verbeeck, Vleminckx, Wallin, Wheeler, Willcock, Woods, and
+  Zibera}]{cuni-sanchez_high_2021}
+{Cuni-Sanchez}, A., Sullivan, M. J.~P., Platts, P.~J., Lewis, S.~L., Marchant,
+  R., Imani, G., Hubau, W., Abiem, I., Adhikari, H., Albrecht, T., Altman, J.,
+  Amani, C., Aneseyee, A.~B., Avitabile, V., Banin, L., Batumike, R., Bauters,
+  M., Beeckman, H., Begne, S.~K., Bennett, A.~C., Bitariho, R., Boeckx, P.,
+  Bogaert, J., Br{\"a}uning, A., Bulonvu, F., Burgess, N.~D., Calders, K.,
+  Chapman, C., Chapman, H., Comiskey, J., {de Haulleville}, T., Decuyper, M.,
+  DeVries, B., Dolezal, J., Droissart, V., Ewango, C., Feyera, S.,
+  Gebrekirstos, A., Gereau, R., Gilpin, M., Hakizimana, D., Hall, J., Hamilton,
+  A., Hardy, O., Hart, T., Heiskanen, J., Hemp, A., Herold, M., Hiltner, U.,
+  Horak, D., Kamdem, M.-N., Kayijamahe, C., Kenfack, D., Kinyanjui, M.~J.,
+  Klein, J., Lisingo, J., Lovett, J., Lung, M., Makana, J.-R., Malhi, Y.,
+  Marshall, A., Martin, E.~H., Mitchard, E. T.~A., Morel, A., Mukendi, J.~T.,
+  Muller, T., Nchu, F., Nyirambangutse, B., Okello, J., Peh, K. S.-H.,
+  Pellikka, P., Phillips, O.~L., Plumptre, A., Qie, L., Rovero, F., Sainge,
+  M.~N., Schmitt, C.~B., Sedlacek, O., Ngute, A. S.~K., Sheil, D., Sheleme, D.,
+  Simegn, T.~Y., {Simo-Droissart}, M., Sonk{\'e}, B., Soromessa, T.,
+  Sunderland, T., Svoboda, M., Taedoumg, H., Taplin, J., Taylor, D., Thomas,
+  S.~C., Timberlake, J., Tuagben, D., Umunay, P., Uzabaho, E., Verbeeck, H.,
+  Vleminckx, J., Wallin, G., Wheeler, C., Willcock, S., Woods, J.~T., and
+  Zibera, E.: High Aboveground Carbon Stock of {{African}} Tropical Montane
+  Forests, Nature, 596, 536--542, \doi{10.1038/s41586-021-03728-4}, 2021.
+
+\bibitem[{Duncanson and MANY\_MORE(2021)}]{duncanson_aboveground_2021}
+Duncanson, L. and MANY\_MORE: Aboveground {{Woody Biomass Product Validation
+  Good Practices Protocol}}, \doi{10.5067/DOC/CEOSWGCV/LPV/AGB.001}, 2021.
+
+\bibitem[{Fer et~al.(2021)Fer, Gardella, Shiklomanov, Campbell, Cowdery, Kauwe,
+  Desai, Duveneck, Fisher, Haynes, Hoffman, Johnston, Kooper, LeBauer,
+  Mantooth, Parton, Poulter, Quaife, Raiho, Schaefer, Serbin, Simkins, Wilcox,
+  Viskari, and Dietze}]{fer_ecosystem_2021}
+Fer, I., Gardella, A.~K., Shiklomanov, A.~N., Campbell, E.~E., Cowdery, E.~M.,
+  Kauwe, M. G.~D., Desai, A., Duveneck, M.~J., Fisher, J.~B., Haynes, K.~D.,
+  Hoffman, F.~M., Johnston, M.~R., Kooper, R., LeBauer, D.~S., Mantooth, J.,
+  Parton, W.~J., Poulter, B., Quaife, T., Raiho, A., Schaefer, K., Serbin,
+  S.~P., Simkins, J., Wilcox, K.~R., Viskari, T., and Dietze, M.~C.: Beyond
+  Ecosystem Modeling: {{A}} Roadmap to Community Cyberinfrastructure for
+  Ecological Data-Model Integration, Global Change Biology, 27, 13--26,
+  \doi{10.1111/gcb.15409}, 2021.
+
+\bibitem[{Grassi et~al.(2017)Grassi, House, Dentener, Federici, {den~Elzen},
+  and Penman}]{grassi_key_2017}
+Grassi, G., House, J., Dentener, F., Federici, S., {den~Elzen}, M., and Penman,
+  J.: The Key Role of Forests in Meeting Climate Targets Requires Science for
+  Credible Mitigation, Nature Climate Change, 7, 220--226,
+  \doi{10.1038/nclimate3227}, 2017.
+
+\bibitem[{IPCC(2006)}]{ipcc_agriculture_2006}
+IPCC: Agriculture, {{Forestry}}, and {{Other Land Use}}, in: 2006 {{IPCC
+  Guidelines}} for {{National Greenhouse Gas Inventories}}, edited by
+  Eggleston, S., Buendia, L., Miwa, K., Ngara, T., and Tanabe, K., {Institute
+  for Global Environmental Strategies}, {Hayama, Japan}, 2006.
+
+\bibitem[{IPCC(2019{\natexlab{a}})}]{ipcc_2019_2019}
+IPCC: 2019 {{Refinement}} to the 2006 {{IPCC}} {{Guidelines}} for {{National}}
+  {{Greenhouse}} {{Gas}} {{Inventories}}, {IPCC}, {Switzerland},
+  2019{\natexlab{a}}.
+
+\bibitem[{IPCC(2019{\natexlab{b}})}]{ipcc_2019_2019a}
+IPCC: 2019 {{Refinement}} to the 2006 {{IPCC Guidelines}} for {{National
+  Greenhouse Gas Inventories}}, Tech. rep., 2019{\natexlab{b}}.
+
+\bibitem[{Ogle(2018)}]{ogle_delineating_2018}
+Ogle, S.~M.: Delineating Managed Land for Reporting National Greenhouse Gas
+  Emissions and Removals to the {{United Nations}} Framework Convention on
+  Climate Change, p.~13, 2018.
+
+\bibitem[{Requena~Suarez et~al.(2019)Requena~Suarez, Rozendaal, Sy, Phillips,
+  Alvarez-D{\'a}vila, Anderson-Teixeira, Araujo-Murakami, Arroyo, Baker,
+  Bongers, Brienen, Carter, Cook-Patton, Feldpausch, Griscom, Harris,
+  H{\'e}rault, Coronado, Leavitt, Lewis, Marimon, Mendoza, N'dja, N'Guessan,
+  Poorter, Qie, Rutishauser, Sist, Sonk{\'e}, Sullivan, Vilanova, Wang,
+  Martius, and Herold}]{requenasuarez_estimating_2019}
+Requena~Suarez, D., Rozendaal, D. M.~A., Sy, V.~D., Phillips, O.~L.,
+  Alvarez-D{\'a}vila, E., Anderson-Teixeira, K., Araujo-Murakami, A., Arroyo,
+  L., Baker, T.~R., Bongers, F., Brienen, R. J.~W., Carter, S., Cook-Patton,
+  S.~C., Feldpausch, T.~R., Griscom, B.~W., Harris, N., H{\'e}rault, B.,
+  Coronado, E. N.~H., Leavitt, S.~M., Lewis, S.~L., Marimon, B.~S., Mendoza,
+  A.~M., N'dja, J.~K., N'Guessan, A.~E., Poorter, L., Qie, L., Rutishauser, E.,
+  Sist, P., Sonk{\'e}, B., Sullivan, M. J.~P., Vilanova, E., Wang, M. M.~H.,
+  Martius, C., and Herold, M.: Estimating Aboveground Net Biomass Change for
+  Tropical and Subtropical Forests: {{Refinement}} of {{IPCC}} Default Rates
+  Using Forest Plot Data, Global Change Biology, 25, 3609--3624,
+  \doi{10.1111/gcb.14767}, 2019.
+
+\bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
+UNFCCC: Adoption of the {{Paris Agreement}}, 2015.
+
+\end{thebibliography}
