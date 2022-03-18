@@ -16,12 +16,14 @@
 
 %% Journal abbreviations (please use the same for preprints and final revised papers)
 
+
 % Advances in Geosciences (adgeo)
 % Advances in Radio Science (ars)
 % Advances in Science and Research (asr)
 % Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
 % Annales Geophysicae (angeo)
 % Archives Animal Breeding (aab)
+% ASTRA Proceedings (ap)
 % Atmospheric Chemistry and Physics (acp)
 % Atmospheric Measurement Techniques (amt)
 % Biogeosciences (bg)
@@ -32,7 +34,6 @@
 % Earth System Dynamics (esd)
 % Earth System Science Data (essd)
 % E&G Quaternary Science Journal (egqsj)
-% EGUsphere (egusphere) | This is only for EGUsphere preprints submitted without relation to an EGU journal.
 % European Journal of Mineralogy (ejm)
 % Fossil Record (fr)
 % Geochronology (gchron)
@@ -53,7 +54,6 @@
 % Polarforschung - Journal of the German Society for Polar Research (polf)
 % Primate Biology (pb)
 % Proceedings of the International Association of Hydrological Sciences (piahs)
-% Safety of Nuclear Waste Disposal (sand)
 % Scientific Drilling (sd)
 % SOIL (soil)
 % Solid Earth (se)
@@ -62,15 +62,24 @@
 % Web Ecology (we)
 % Wind Energy Science (wes)
 
+%% Please DO NOT add additional packages or LaTeX commands to the template. They
+%% are not supported by Coperncius. LaTeX packages already
+%% included in the copernicus.cls are:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
 % Pandoc citation processing
 
 % The "Technical instructions for LaTex" by Copernicus require _not_ to insert any additional packages.
-% 
-% tightlist command for lists without linebreak
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-
 %%\usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -86,8 +95,8 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 %
-\begin{document}
 
+\begin{document}
 
 \title{Informing IPCC accounting of forest carbon using the global
 forest carbon database (ForC v4.0)}
@@ -250,7 +259,7 @@ measurement.
 \centering
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
-\textbf{ï  pool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
+\textbf{pool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
 \hline
 aboveground biomass & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory\\
 \hline
@@ -282,13 +291,13 @@ the mineral soil layer and smaller than the litter size threshold.
 
 Dead wood is defined as\ldots{}
 
-Litter is defined as including '' all non-living biomass with a diameter
+Litter is defined as including " all non-living biomass with a diameter
 less than a minimum diameter chosen by the country (for example 10 cm),
 lying dead, in various states of decomposition above the mineral or
 organic soil. This includes litter (OL), fumic (OF), and humic (OH)
 layers. Live fine roots (of less than the suggested diameter limit for
 belowground biomass) are included in litter where they cannot be
-distinguished from it empirically.'' (2003 IPCc GPG for LULUCF
+distinguished from it empirically." (2003 IPCc GPG for LULUCF
 (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
 
 \subsubsection{Soil Organic Matter}
@@ -494,12 +503,12 @@ Remote sensing biomass estimates include standing dead wood
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). }\\
 \hline
-\textbf{ï  ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endfirsthead
 \caption[]{\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted).  \textit{(continued)}}\\
 \hline
-\textbf{ï  ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endhead
 Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
@@ -709,6 +718,5 @@ Environmental Strategies, WLS(?)
 %% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
 %% \citeauthor{jones90}|          & Jones et al.
 %% \citeyear{jones90}|            & 1990
-
 
 \end{document}
