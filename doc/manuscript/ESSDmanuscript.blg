@@ -8,45 +8,45 @@ Warning--empty journal in duncanson_aboveground_2021
 Warning--empty booktitle in ipcc_2019_2019
 Warning--empty journal in ipcc_summary_2022
 Warning--empty journal in ogle_delineating_2018
-You've used 18 entries,
+You've used 20 entries,
             2819 wiz_defined-function locations,
-            1109 strings with 19181 characters,
-and the built_in function-call counts, 31545 in all, are:
-= -- 2538
-> -- 2949
-< -- 9
-+ -- 1058
-- -- 968
-* -- 2603
-:= -- 4009
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 357
-chr.to.int$ -- 18
-cite$ -- 58
-duplicate$ -- 2142
-empty$ -- 1150
-format.name$ -- 1017
-if$ -- 6062
+            1121 strings with 20315 characters,
+and the built_in function-call counts, 35669 in all, are:
+= -- 2898
+> -- 3315
+< -- 10
++ -- 1191
+- -- 1088
+* -- 2933
+:= -- 4510
+add.period$ -- 20
+call.type$ -- 20
+change.case$ -- 401
+chr.to.int$ -- 20
+cite$ -- 64
+duplicate$ -- 2436
+empty$ -- 1293
+format.name$ -- 1143
+if$ -- 6862
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 443
-newline$ -- 63
-num.names$ -- 73
-pop$ -- 1407
+missing$ -- 496
+newline$ -- 69
+num.names$ -- 81
+pop$ -- 1587
 preamble$ -- 1
-purify$ -- 357
+purify$ -- 401
 quote$ -- 0
-skip$ -- 1235
+skip$ -- 1414
 stack$ -- 0
-substring$ -- 650
-swap$ -- 1870
-text.length$ -- 2
+substring$ -- 751
+swap$ -- 2137
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
+type$ -- 180
 warning$ -- 4
-while$ -- 90
+while$ -- 103
 width$ -- 0
-write$ -- 212
+write$ -- 236
 (There were 5 warnings)

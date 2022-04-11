@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -27,6 +27,13 @@
   {Cook-Patton}, S.~C., Ferson, A.~E., {Muller-Landau}, H.~C., and Wang, M.
   M.~H.: Carbon Cycling in Mature and Regrowth Forests Globally, Environmental
   Research Letters, 16, 053\,009, \doi{10.1088/1748-9326/abed01}, 2021.
+
+\bibitem[{Badgley et~al.(2022)Badgley, Freeman, Hamman, Haya, Trugman,
+  Anderegg, and Cullenward}]{badgley_systematic_2022}
+Badgley, G., Freeman, J., Hamman, J.~J., Haya, B., Trugman, A.~T., Anderegg,
+  W.~R., and Cullenward, D.: Systematic Over-Crediting in {{California}}'s
+  Forest Carbon Offsets Program, Global Change Biology, 28, 1433--1445,
+  \doi{10.1111/gcb.15943}, 2022.
 
 \bibitem[{Banbury~Morgan et~al.(2021)Banbury~Morgan, Herrmann, Kunert,
   Bond-Lamberty, Muller-Landau, and
@@ -85,6 +92,19 @@ Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
   Vleminckx, J., Wallin, G., Wheeler, C., Willcock, S., Woods, J.~T., and
   Zibera, E.: High Aboveground Carbon Stock of {{African}} Tropical Montane
   Forests, Nature, 596, 536--542, \doi{10.1038/s41586-021-03728-4}, 2021.
+
+\bibitem[{Deng et~al.(2021)Deng, Ciais, {Tzompa-Sosa}, Saunois, Qiu, Tan, Sun,
+  Ke, Cui, Tanaka, Lin, Thompson, Tian, Yao, Huang, Lauerwald, Jain, Xu,
+  Bastos, Sitch, Palmer, Lauvaux, {d'Aspremont}, Giron, Benoit, Poulter, Chang,
+  Petrescu, Davis, Liu, Grassi, Albergel, and Chevallier}]{deng_comparing_2021}
+Deng, Z., Ciais, P., {Tzompa-Sosa}, Z.~A., Saunois, M., Qiu, C., Tan, C., Sun,
+  T., Ke, P., Cui, Y., Tanaka, K., Lin, X., Thompson, R.~L., Tian, H., Yao, Y.,
+  Huang, Y., Lauerwald, R., Jain, A.~K., Xu, X., Bastos, A., Sitch, S., Palmer,
+  P.~I., Lauvaux, T., {d'Aspremont}, A., Giron, C., Benoit, A., Poulter, B.,
+  Chang, J., Petrescu, A. M.~R., Davis, S.~J., Liu, Z., Grassi, G., Albergel,
+  C., and Chevallier, F.: Comparing National Greenhouse Gas Budgets Reported in
+  {{UNFCCC}} Inventories against Atmospheric Inversions, Earth System Science
+  Data Discussions, pp. 1--59, \doi{10.5194/essd-2021-235}, 2021.
 
 \bibitem[{Duncanson and MANY\_MORE(2021)}]{duncanson_aboveground_2021}
 Duncanson, L. and MANY\_MORE: Aboveground {{Woody Biomass Product Validation

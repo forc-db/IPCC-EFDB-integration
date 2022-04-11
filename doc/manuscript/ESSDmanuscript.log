@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3064,19 +3064,16 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 176.
 
-Package natbib Warning: Citation `refs' on page 1 undefined on input line 199.
+Package natbib Warning: Citation `refs' on page 1 undefined on input line 197.
 
 
-Package natbib Warning: Citation `refs' on page 1 undefined on input line 200.
+Package natbib Warning: Citation `refs' on page 1 undefined on input line 198.
 
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package natbib Warning: Citation `refs' on page 2 undefined on input line 214.
-
-
-Package natbib Warning: Citation `refs' on page 2 undefined on input line 245.
+Package natbib Warning: Citation `refs' on page 2 undefined on input line 244.
 
 [2]
 Overfull \hbox (48.3296pt too wide) in paragraph at lines 341--348
@@ -3085,7 +3082,7 @@ pglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
  []
 
 [3] [4]
-<figures_tables/C_variable_mapping.png, id=86, 788.9475pt x 821.0675pt>
+<figures_tables/C_variable_mapping.png, id=91, 788.9475pt x 821.0675pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
@@ -3143,7 +3140,7 @@ Overfull \hbox (1.27617pt too wide) in paragraph at lines 677--677
 [13
 
 ] [14] (./ESSDmanuscript.bbl [15]
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
 []\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
 t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
@@ -3160,10 +3157,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 758.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  ) 
 Here is how much of TeX's memory you used:
- 14652 strings out of 480608
- 193781 string characters out of 5903631
- 576663 words of memory out of 5000000
- 30164 multiletter control sequences out of 15000+600000
+ 14659 strings out of 480608
+ 193987 string characters out of 5903631
+ 577048 words of memory out of 5000000
+ 30170 multiletter control sequences out of 15000+600000
  574035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,15n,52p,1631b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3172,10 +3169,10 @@ exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (17 pages, 370673 bytes).
+Output written on ESSDmanuscript.pdf (17 pages, 371466 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -68,7 +68,7 @@ algorithms: true
 # See https://publications.copernicus.org/for_authors/licence_and_copyright.html, normally used for transferring the copyright, if needed. 
 # Note: additional copyright statements for affiliated software or data need to be placed in the data availability section. 
 copyrightstatement: |
-  The author's copyright for this publication is transferred to institution/company. 
+### The author's copyright for this publication is transferred to institution/company. 
 ### Note: unless stated otherwise, software and data affiliated with the manuscript are assumed to be published under the same licence as the article (currently Creative Commons 4.0)
 availability:
   #  use this to add a statement when having only software code available
@@ -112,8 +112,8 @@ Going into the future, the fate of this important CO~2~ sink is highly uncertain
 Reflecting their strong influence on Earth's climate, forests play a central role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
 Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options, with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
 As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].
-Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [@refs].
-One critical need for ensuring that forest-based climate change mitigation initiatives are effective is realistic planning, underlain by solid scientific data [@anderson-teixeira_effective_2022].
+Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022]<!--could be good to add some more references here-->.
+One critical need for ensuring that forest-based climate change mitigation initiatives are effective is realistic planning and reporting, underlain by solid scientific data [@anderson-teixeira_effective_2022; @deng_comparing_2021].
 
 The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change [UNFCCC, @ipcc_2019_2019].
 Under this guidance, greenhouse gas inventories include all managed land, including most of the world's forest land [@ogle_delineating_2018].
@@ -122,12 +122,12 @@ This guidance has improved over the years as more of the relevant underlying dat
 For example, the year following the release of the latest IPCC guidelines, @cook-patton_mapping_2020 found that the latest default rates may underestimate rates of C accumulation in regrowth forests by 32% on average and fail to capture eight-fold variation within ecozones. 
 In addition, @cuni-sanchez_high_2021 found that aboveground C stocks in mature African tropical montane forests were two-thirds higher than the IPCC default values for these forests.
 This rapid evolution of scientific information on the climate mitigation potential of forests is beneficial to climate mitigation efforts, but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
-Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @refs] implies that it is useful for those compiling national greenhouse gas inventories to have access to locally-specific information, when available.
-To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
+Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @refs] implies that it is useful for practitioners to have access to locally-specific information, when available.
 
-**To ensure that planned emissions reductions are realistic, high-quality estimates of forest C stocks and fluxes must be publicly accessible.**
+To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 The EFDB is intended as a recognized library, and can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
-<!-- check Washington Post article on Malaysia NDC, @deng_comparing_2021 -->
+The EFDB encourages researchers to submit estimates of emission factors or other related parameters from peer-reviewed journal papers or other accepted sources for inclusion in the database. 
+In the case of forests, emission factors refer to ... <!--C stocks and increments, and check other GHGs-->
 
 **The Global Forest Carbon Database, ForC, is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].**
 *(add stats/ details, maybe record of how ForC has grown over time)*
