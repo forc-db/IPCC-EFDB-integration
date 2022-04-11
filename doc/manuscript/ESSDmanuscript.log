@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 12:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3075,30 +3075,30 @@ Package natbib Warning: Citation `refs' on page 1 undefined on input line 198.
 
 Package natbib Warning: Citation `refs' on page 2 undefined on input line 244.
 
-[2]
-Overfull \hbox (48.3296pt too wide) in paragraph at lines 341--348
+[2] [3]
+Overfull \hbox (48.3296pt too wide) in paragraph at lines 346--353
 \T1/ptm/m/n/10 IPCc GPG for LU-LUCF (https://www.ipcc-nggip.iges.or.jp/public/g
 pglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf) 
  []
 
-[3] [4]
-<figures_tables/C_variable_mapping.png, id=91, 788.9475pt x 821.0675pt>
+[4]
+<figures_tables/C_variable_mapping.png, id=95, 788.9475pt x 821.0675pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
-ine 361.
+ine 366.
 (pdftex.def)             Requested size: 426.79134pt x 444.15915pt.
 
-LaTeX Warning: Float too large for page by 41.03642pt on input line 362.
+LaTeX Warning: Float too large for page by 41.03642pt on input line 367.
 
 
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 378--384
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 383--389
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 378--384
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 383--389
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
@@ -3106,34 +3106,34 @@ orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
 [5
 
 ] [6 <./figures_tables/C_variable_mapping.png>] [7] [8]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 622--622
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 627--627
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 622--622
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 627--627
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 622--622
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 627--627
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 622--622
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 627--627
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 [9
 
 ] [10] [11] [12]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 677--677
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 682--682
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 677--677
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 682--682
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
@@ -3149,17 +3149,17 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 763.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 763.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 758.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 763.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 763.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 763.
  ) 
 Here is how much of TeX's memory you used:
  14659 strings out of 480608
  193987 string characters out of 5903631
- 577048 words of memory out of 5000000
+ 577072 words of memory out of 5000000
  30170 multiletter control sequences out of 15000+600000
  574035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3169,10 +3169,10 @@ exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (17 pages, 371466 bytes).
+Output written on ESSDmanuscript.pdf (17 pages, 371742 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
+ 250 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
  75 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

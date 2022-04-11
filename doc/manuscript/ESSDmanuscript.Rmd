@@ -124,21 +124,21 @@ In addition, @cuni-sanchez_high_2021 found that aboveground C stocks in mature A
 This rapid evolution of scientific information on the climate mitigation potential of forests is beneficial to climate mitigation efforts, but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
 Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @refs] implies that it is useful for practitioners to have access to locally-specific information, when available.
 
-To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
-The EFDB is intended as a recognized library, and can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
+To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; [https://www.ipcc-nggip.iges.or.jp/EFDB/main.php](https://www.ipcc-nggip.iges.or.jp/EFDB/main.php)), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
+The EFDB can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
 The EFDB encourages researchers to submit estimates of emission factors or other related parameters from peer-reviewed journal papers or other accepted sources for inclusion in the database. 
-In the case of forests, emission factors refer to ... <!--C stocks and increments, and check other GHGs-->
+In the case of forests, emission factors include carbon stocks and increments within various pools (Table&nbsp;\@ref(table_variables)).
 
-**The Global Forest Carbon Database, ForC, is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].**
-*(add stats/ details, maybe record of how ForC has grown over time)*
+The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].
+For C currently contains **##** records from **##** plots in **##** distinct geographical areas, along with records of stand age and disturbance history.
 As such, ForC is positioned to improve forest C accounting through the transfer of data to EFDB.
 The purpose of this publication is to document that process and provide recommendations for future improvements.
 
 **Here, we**
-(1) review IPCC definitions of relevant carbon stocks and increments
-(2) describe mapping of ForC to IPCC's EFDB,
-(3) describe updates to ForC  (ForC v4.0),
-(4) summarize the data in ForC that's relevant to EFDB, identifying gaps, and
+(1) review IPCC definitions of relevant carbon stocks and increments;
+(2) describe mapping of ForC to IPCC's EFDB;
+(3) describe updates to ForC  (ForC v4.0), most of which were implemented to facilitate data transfer to EFDB;
+(4) summarize the data in ForC that's relevant to EFDB and records that have been transferred to date; and
 (5) provide recommendations for improving data collection, analysis, database, and accounting.
 
 
