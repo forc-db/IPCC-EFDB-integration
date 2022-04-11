@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -12,6 +12,44 @@
 {Anderson-Teixeira}, K.~J. and Belair, E.~P.: Effective Forest-Based Climate
   Change Mitigation Requires Our Best Science, Global Change Biology, 28,
   1200--1203, \doi{10.1111/gcb.16008}, 2022.
+
+\bibitem[{{Anderson-Teixeira} et~al.(2015){Anderson-Teixeira}, Davies, Bennett,
+  {Gonzalez-Akre}, {Muller-Landau}, Joseph~Wright, Abu~Salim, Almeyda~Zambrano,
+  Alonso, Baltzer, Basset, Bourg, Broadbent, Brockelman, Bunyavejchewin,
+  Burslem, Butt, Cao, Cardenas, Chuyong, Clay, Cordell, Dattaraja, Deng, Detto,
+  Du, Duque, Erikson, Ewango, Fischer, Fletcher, Foster, Giardina, Gilbert,
+  Gunatilleke, Gunatilleke, Hao, Hargrove, Hart, Hau, He, Hoffman, Howe,
+  Hubbell, {Inman-Narahari}, Jansen, Jiang, Johnson, Kanzaki, Kassim, Kenfack,
+  Kibet, Kinnaird, Korte, Kral, Kumar, Larson, Li, Li, Liu, Lum, Lutz, Ma,
+  Maddalena, Makana, Malhi, Marthews, Mat~Serudin, McMahon, McShea, Memiaghe,
+  Mi, Mizuno, Morecroft, Myers, Novotny, {de Oliveira}, Ong, Orwig, Ostertag,
+  {den Ouden}, Parker, Phillips, Sack, Sainge, Sang, {Sri-ngernyuang}, Sukumar,
+  Sun, Sungpalee, Suresh, Tan, Thomas, Thomas, Thompson, Turner, Uriarte,
+  Valencia, Vallejo, Vicentini, Vr{\v s}ka, Wang, Wang, Weiblen, Wolf, Xu, Yap,
+  and Zimmerman}]{anderson-teixeira_ctfsforestgeo_2015}
+{Anderson-Teixeira}, K.~J., Davies, S.~J., Bennett, A.~C., {Gonzalez-Akre},
+  E.~B., {Muller-Landau}, H.~C., Joseph~Wright, S., Abu~Salim, K.,
+  Almeyda~Zambrano, A.~M., Alonso, A., Baltzer, J.~L., Basset, Y., Bourg,
+  N.~A., Broadbent, E.~N., Brockelman, W.~Y., Bunyavejchewin, S., Burslem, D.
+  F. R.~P., Butt, N., Cao, M., Cardenas, D., Chuyong, G.~B., Clay, K., Cordell,
+  S., Dattaraja, H.~S., Deng, X., Detto, M., Du, X., Duque, A., Erikson, D.~L.,
+  Ewango, C.~E., Fischer, G.~A., Fletcher, C., Foster, R.~B., Giardina, C.~P.,
+  Gilbert, G.~S., Gunatilleke, N., Gunatilleke, S., Hao, Z., Hargrove, W.~W.,
+  Hart, T.~B., Hau, B.~C., He, F., Hoffman, F.~M., Howe, R.~W., Hubbell, S.~P.,
+  {Inman-Narahari}, F.~M., Jansen, P.~A., Jiang, M., Johnson, D.~J., Kanzaki,
+  M., Kassim, A.~R., Kenfack, D., Kibet, S., Kinnaird, M.~F., Korte, L., Kral,
+  K., Kumar, J., Larson, A.~J., Li, Y., Li, X., Liu, S., Lum, S.~K., Lutz,
+  J.~A., Ma, K., Maddalena, D.~M., Makana, J.-R., Malhi, Y., Marthews, T.,
+  Mat~Serudin, R., McMahon, S.~M., McShea, W.~J., Memiaghe, H.~R., Mi, X.,
+  Mizuno, T., Morecroft, M., Myers, J.~A., Novotny, V., {de Oliveira}, A.~A.,
+  Ong, P.~S., Orwig, D.~A., Ostertag, R., {den Ouden}, J., Parker, G.~G.,
+  Phillips, R.~P., Sack, L., Sainge, M.~N., Sang, W., {Sri-ngernyuang}, K.,
+  Sukumar, R., Sun, I.-F., Sungpalee, W., Suresh, H.~S., Tan, S., Thomas,
+  S.~C., Thomas, D.~W., Thompson, J., Turner, B.~L., Uriarte, M., Valencia, R.,
+  Vallejo, M.~I., Vicentini, A., Vr{\v s}ka, T., Wang, X., Wang, X., Weiblen,
+  G., Wolf, A., Xu, H., Yap, S., and Zimmerman, J.: {{CTFS-ForestGEO}} : A
+  Worldwide Network Monitoring Forests in an Era of Global Change, Global
+  Change Biology, 21, 528--549, \doi{10.1111/gcb.12712}, 2015.
 
 \bibitem[{{Anderson-Teixeira} et~al.(2018){Anderson-Teixeira}, Wang, McGarvey,
   Herrmann, Tepley, {Bond-Lamberty}, and LeBauer}]{anderson-teixeira_forc_2018}
@@ -93,6 +131,58 @@ Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
   Zibera, E.: High Aboveground Carbon Stock of {{African}} Tropical Montane
   Forests, Nature, 596, 536--542, \doi{10.1038/s41586-021-03728-4}, 2021.
 
+\bibitem[{Davies et~al.(2021)Davies, Abiem, Abu~Salim, Aguilar, Allen, Alonso,
+  {Anderson-Teixeira}, Andrade, Arellano, Ashton, Baker, Baker, Baltzer,
+  Basset, Bissiengou, Bohlman, Bourg, Brockelman, Bunyavejchewin, Burslem, Cao,
+  C{\'a}rdenas, Chang, {Chang-Yang}, Chao, Chao, Chapman, Chen, Chisholm, Chu,
+  Chuyong, Clay, Comita, Condit, Cordell, Dattaraja, {de Oliveira}, {den
+  Ouden}, Detto, Dick, Du, Duque, Ediriweera, Ellis, Obiang, Esufali, Ewango,
+  Fernando, Filip, Fischer, Foster, Giambelluca, Giardina, Gilbert,
+  {Gonzalez-Akre}, Gunatilleke, Gunatilleke, Hao, Hau, He, Ni, Howe, Hubbell,
+  Huth, {Inman-Narahari}, Itoh, Jan{\'i}k, Jansen, Jiang, Johnson, Jones,
+  Kanzaki, Kenfack, Kiratiprayoon, Kr{\'a}l, Krizel, Lao, Larson, Li, Li,
+  Litton, Liu, Liu, Lum, Luskin, Lutz, Luu, Ma, Makana, Malhi, Martin,
+  McCarthy, McMahon, McShea, Memiaghe, Mi, Mitre, Mohamad, Monks,
+  {Muller-Landau}, Musili, Myers, Nathalang, Ngo, Norden, Novotny, O'Brien,
+  Orwig, Ostertag, Papathanassiou, Parker, P{\'e}rez, Perfecto, Phillips,
+  Pongpattananurak, Pretzsch, Ren, Reynolds, Rodriguez, Russo, Sack, Sang,
+  Shue, Singh, Song, Sukumar, Sun, Suresh, Swenson, Tan, Thomas, Thomas,
+  Thompson, Turner, Uowolo, Uriarte, Valencia, Vandermeer, Vicentini, Visser,
+  Vrska, Wang, Wang, Weiblen, Whitfeld, Wolf, Wright, Xu, Yao, Yap, Ye, Yu,
+  Zhang, Zhu, Zhu, Zimmerman, and Zuleta}]{davies_forestgeo_2021}
+Davies, S.~J., Abiem, I., Abu~Salim, K., Aguilar, S., Allen, D., Alonso, A.,
+  {Anderson-Teixeira}, K., Andrade, A., Arellano, G., Ashton, P.~S., Baker,
+  P.~J., Baker, M.~E., Baltzer, J.~L., Basset, Y., Bissiengou, P., Bohlman, S.,
+  Bourg, N.~A., Brockelman, W.~Y., Bunyavejchewin, S., Burslem, D.~F., Cao, M.,
+  C{\'a}rdenas, D., Chang, L.-W., {Chang-Yang}, C.-H., Chao, K.-J., Chao,
+  W.-C., Chapman, H., Chen, Y.-Y., Chisholm, R.~A., Chu, C., Chuyong, G., Clay,
+  K., Comita, L.~S., Condit, R., Cordell, S., Dattaraja, H.~S., {de Oliveira},
+  A.~A., {den Ouden}, J., Detto, M., Dick, C., Du, X., Duque, {\'A}.,
+  Ediriweera, S., Ellis, E.~C., Obiang, N. L.~E., Esufali, S., Ewango, C.~E.,
+  Fernando, E.~S., Filip, J., Fischer, G.~A., Foster, R., Giambelluca, T.,
+  Giardina, C., Gilbert, G.~S., {Gonzalez-Akre}, E., Gunatilleke, I.,
+  Gunatilleke, C., Hao, Z., Hau, B.~C., He, F., Ni, H., Howe, R.~W., Hubbell,
+  S.~P., Huth, A., {Inman-Narahari}, F., Itoh, A., Jan{\'i}k, D., Jansen,
+  P.~A., Jiang, M., Johnson, D.~J., Jones, F.~A., Kanzaki, M., Kenfack, D.,
+  Kiratiprayoon, S., Kr{\'a}l, K., Krizel, L., Lao, S., Larson, A.~J., Li, Y.,
+  Li, X., Litton, C.~M., Liu, Y., Liu, S., Lum, S.~K., Luskin, M.~S., Lutz,
+  J.~A., Luu, H.~T., Ma, K., Makana, J.-R., Malhi, Y., Martin, A., McCarthy,
+  C., McMahon, S.~M., McShea, W.~J., Memiaghe, H., Mi, X., Mitre, D., Mohamad,
+  M., Monks, L., {Muller-Landau}, H.~C., Musili, P.~M., Myers, J.~A.,
+  Nathalang, A., Ngo, K.~M., Norden, N., Novotny, V., O'Brien, M.~J., Orwig,
+  D., Ostertag, R., Papathanassiou, K., Parker, G.~G., P{\'e}rez, R., Perfecto,
+  I., Phillips, R.~P., Pongpattananurak, N., Pretzsch, H., Ren, H., Reynolds,
+  G., Rodriguez, L.~J., Russo, S.~E., Sack, L., Sang, W., Shue, J., Singh, A.,
+  Song, G.-Z.~M., Sukumar, R., Sun, I.-F., Suresh, H.~S., Swenson, N.~G., Tan,
+  S., Thomas, S.~C., Thomas, D., Thompson, J., Turner, B.~L., Uowolo, A.,
+  Uriarte, M., Valencia, R., Vandermeer, J., Vicentini, A., Visser, M., Vrska,
+  T., Wang, X., Wang, X., Weiblen, G.~D., Whitfeld, T.~J., Wolf, A., Wright,
+  S.~J., Xu, H., Yao, T.~L., Yap, S.~L., Ye, W., Yu, M., Zhang, M., Zhu, D.,
+  Zhu, L., Zimmerman, J.~K., and Zuleta, D.: {{ForestGEO}}: {{Understanding}}
+  Forest Diversity and Dynamics through a Global Observatory Network,
+  Biological Conservation, 253, 108\,907, \doi{10.1016/j.biocon.2020.108907},
+  2021.
+
 \bibitem[{Deng et~al.(2021)Deng, Ciais, {Tzompa-Sosa}, Saunois, Qiu, Tan, Sun,
   Ke, Cui, Tanaka, Lin, Thompson, Tian, Yao, Huang, Lauerwald, Jain, Xu,
   Bastos, Sitch, Palmer, Lauvaux, {d'Aspremont}, Giron, Benoit, Poulter, Chang,
@@ -166,6 +256,29 @@ IPCC: Summary for {{Policymakers}}. {{In}}: {{Climate Change}} 2022:
 Ogle, S.~M.: Delineating Managed Land for Reporting National Greenhouse Gas
   Emissions and Removals to the {{United Nations}} Framework Convention on
   Climate Change, p.~13, 2018.
+
+\bibitem[{Piponiot et~al.(2022)Piponiot, {Anderson-Teixeira}, Davies, Allen,
+  Bourg, Burslem, C{\'a}rdenas, {Chang-Yang}, Chuyong, Cordell, Dattaraja,
+  Duque, Ediriweera, Ewango, Ezedin, Filip, Giardina, Howe, Hsieh, Hubbell,
+  {Inman-Narahari}, Itoh, Jan{\'i}k, Kenfack, Kr{\'a}l, Lutz, Makana, McMahon,
+  McShea, Mi, Bt.~Mohamad, Novotn{\'y}, O'Brien, Ostertag, Parker, P{\'e}rez,
+  Ren, Reynolds, Md~Sabri, Sack, Shringi, Su, Sukumar, Sun, Suresh, Thomas,
+  Thompson, Uriarte, Vandermeer, Wang, Ware, Weiblen, Whitfeld, Wolf, Yao, Yu,
+  Yuan, Zimmerman, Zuleta, and {Muller-Landau}}]{piponiot_distribution_2022}
+Piponiot, C., {Anderson-Teixeira}, K.~J., Davies, S.~J., Allen, D., Bourg,
+  N.~A., Burslem, D. F. R.~P., C{\'a}rdenas, D., {Chang-Yang}, C.-H., Chuyong,
+  G., Cordell, S., Dattaraja, H.~S., Duque, {\'A}., Ediriweera, S., Ewango, C.,
+  Ezedin, Z., Filip, J., Giardina, C.~P., Howe, R., Hsieh, C.-F., Hubbell,
+  S.~P., {Inman-Narahari}, F.~M., Itoh, A., Jan{\'i}k, D., Kenfack, D.,
+  Kr{\'a}l, K., Lutz, J.~A., Makana, J.-R., McMahon, S.~M., McShea, W., Mi, X.,
+  Bt.~Mohamad, M., Novotn{\'y}, V., O'Brien, M.~J., Ostertag, R., Parker, G.,
+  P{\'e}rez, R., Ren, H., Reynolds, G., Md~Sabri, M.~D., Sack, L., Shringi, A.,
+  Su, S.-H., Sukumar, R., Sun, I.-F., Suresh, H.~S., Thomas, D.~W., Thompson,
+  J., Uriarte, M., Vandermeer, J., Wang, Y., Ware, I.~M., Weiblen, G.~D.,
+  Whitfeld, T. J.~S., Wolf, A., Yao, T.~L., Yu, M., Yuan, Z., Zimmerman, J.~K.,
+  Zuleta, D., and {Muller-Landau}, H.~C.: Distribution of Biomass Dynamics in
+  Relation to Tree Size in Forests across the World, New Phytologist, n/a,
+  \doi{10.1111/nph.17995}, 2022.
 
 \bibitem[{Requena~Suarez et~al.(2019)Requena~Suarez, Rozendaal, Sy, Phillips,
   Alvarez-D{\'a}vila, Anderson-Teixeira, Araujo-Murakami, Arroyo, Baker,

@@ -1,0 +1,36 @@
+﻿variable,n in ForC,n independent records in ForC,n reviewed,n sent to EFDB,n posted to EFDB
+STOCKS,,,,,
+biomass,NA,NA,NA,NA,NA
+biomass_ag,NA,NA,NA,NA,NA
+biomass_ag_foliage,NA,NA,NA,NA,NA
+biomass_ag_woody,NA,NA,NA,NA,NA
+biomass_root,NA,NA,NA,NA,NA
+biomass_root_fine,NA,NA,NA,NA,NA
+biomass_root_coarse,NA,NA,NA,NA,NA
+deadwood,NA,NA,NA,NA,NA
+deadwood_standing,NA,NA,NA,NA,NA
+deadwood_down,NA,NA,NA,NA,NA
+O.horizon,NA,NA,NA,NA,NA
+SOM / SOC,NA,NA,NA,NA,NA
+INCREMENTS,,,,,
+delta.biomass,NA,NA,NA,NA,NA
+delta.agb,NA,NA,NA,NA,NA
+biomass_ag_foliage,NA,NA,NA,NA,NA
+delta.biomass_root,NA,NA,NA,NA,NA
+delta.deadwood,NA,NA,NA,NA,NA
+delta.deadwood_standing,NA,NA,NA,NA,NA
+delta.deadwood_down,NA,NA,NA,NA,NA
+delta.O.horizon,NA,NA,NA,NA,NA
+delta.SOM / delta.SOC,NA,NA,NA,NA,NA
+FLUXES,,,,,
+NPP_woody,NA,NA,NA,NA,NA
+ANPP_woody_stem,NA,NA,NA,NA,NA
+ANPP_foliage,NA,NA,NA,NA,NA
+BNPP_root,NA,NA,NA,NA,NA
+BNPP_root_fine,NA,NA,NA,NA,NA
+BNPP_root_coarse,NA,NA,NA,NA,NA
+woody_mortality,NA,NA,NA,NA,NA
+NPP_litterfall,NA,NA,NA,NA,NA
+R_het_litter,NA,NA,NA,NA,NA
+R_het_soil,NA,NA,NA,NA,NA
+TOTAL,NA,NA,NA,NA,NA

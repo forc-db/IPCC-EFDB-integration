@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3076,103 +3076,152 @@ Package natbib Warning: Citation `refs' on page 1 undefined on input line 198.
 Package natbib Warning: Citation `refs' on page 2 undefined on input line 244.
 
 [2] [3]
-Overfull \hbox (48.3296pt too wide) in paragraph at lines 346--353
+Overfull \hbox (48.3296pt too wide) in paragraph at lines 345--352
 \T1/ptm/m/n/10 IPCc GPG for LU-LUCF (https://www.ipcc-nggip.iges.or.jp/public/g
 pglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf) 
  []
 
-[4]
-<figures_tables/C_variable_mapping.png, id=95, 788.9475pt x 821.0675pt>
+[4] [5]
+<figures_tables/C_variable_mapping.png, id=101, 788.9475pt x 821.0675pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
-ine 366.
+ine 365.
 (pdftex.def)             Requested size: 426.79134pt x 444.15915pt.
 
-LaTeX Warning: Float too large for page by 41.03642pt on input line 367.
+LaTeX Warning: Float too large for page by 41.03642pt on input line 366.
 
-
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 383--389
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 37
+8.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 382--388
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 383--389
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 382--388
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
-[5
+[6
 
-] [6 <./figures_tables/C_variable_mapping.png>] [7] [8]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 627--627
+] [7 <./figures_tables/C_variable_mapping.png>]
+<figures_tables/PLACEHOLDER_World_Map_of_sites.png, id=127, 480.8364pt x 284.50
+29pt>
+File: figures_tables/PLACEHOLDER_World_Map_of_sites.png Graphic file (type png)
+
+<use figures_tables/PLACEHOLDER_World_Map_of_sites.png>
+Package pdftex.def Info: figures_tables/PLACEHOLDER_World_Map_of_sites.png  use
+d on input line 462.
+(pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
+<figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png, id=1
+28, 569.0058pt x 426.6339pt>
+File: figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png 
+Graphic file (type png)
+<use figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png>
+Package pdftex.def Info: figures_tables/PLACEHOLDER_Williams_Histogram_of_domin
+ant_vegetation.png  used on input line 466.
+(pdftex.def)             Requested size: 426.79134pt x 320.00067pt.
+
+Overfull \hbox (4.05049pt too wide) in paragraph at lines 550--550
+[]\T1/ptm/m/n/9 biomass_root_coarse|  
+ []
+
+
+Overfull \hbox (19.71059pt too wide) in paragraph at lines 550--550
+[]\T1/ptm/m/n/9 delta.deadwood_standing|  
+ []
+
+
+Overfull \hbox (8.9829pt too wide) in paragraph at lines 550--550
+[]\T1/ptm/m/n/9 delta.deadwood_down|  
+ []
+
+
+Overfull \hbox (1.47682pt too wide) in paragraph at lines 550--550
+[]\T1/ptm/m/n/9 ANPP_woody_stem|  
+ []
+
+
+LaTeX Warning: Float too large for page by 44.03342pt on input line 551.
+
+
+Package natbib Warning: Citation `refs' on page 8 undefined on input line 580.
+
+[8] [9] [10 <./figures_tables/PLACEHOLDER_World_Map_of_sites.png>] [11 <./figur
+es_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png>] [12]
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 731--731
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 627--627
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 731--731
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 627--627
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 731--731
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 627--627
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 731--731
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
- []
-
-[9
-
-] [10] [11] [12]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 682--682
-[]\T1/ptm/m/n/10 data.location.within.source|  
- []
-
-
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 682--682
-[]\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
 [13
 
-] [14] (./ESSDmanuscript.bbl [15]
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+] [14] [15] [16]
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 786--786
+[]\T1/ptm/m/n/10 data.location.within.source|  
+ []
+
+
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 786--786
+[]\T1/ptm/m/n/10 mean.in.original.units, 
+ []
+
+[17
+
+] [18] (./ESSDmanuscript.bbl [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 []\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
 t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
-[16]) [17]
+[21] [22]) [23]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 763.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 763.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 867.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 867.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 763.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 763.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 763.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 867.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 867.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 867.
  ) 
 Here is how much of TeX's memory you used:
- 14659 strings out of 480608
- 193987 string characters out of 5903631
- 577072 words of memory out of 5000000
- 30170 multiletter control sequences out of 15000+600000
- 574035 words of font info for 83 fonts, out of 8000000 for 9000
+ 14733 strings out of 480608
+ 195994 string characters out of 5903631
+ 581753 words of memory out of 5000000
+ 30223 multiletter control sequences out of 15000+600000
+ 574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,15n,52p,1631b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,52p,1634b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (17 pages, 371742 bytes).
+exlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on ESSDmanuscript.pdf (23 pages, 460283 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -257,7 +257,7 @@ encourages researchers to submit estimates of emission factors or other
 related parameters from peer-reviewed journal papers or other accepted
 sources for inclusion in the database. In the case of forests, emission
 factors include carbon stocks and increments within various pools
-(Table~@ref(table\_variables)).
+\citep{ipcc_2019_2019}.
 
 The Global Forest Carbon Database, ForC
 (\url{https://forc-db.github.io/}), is the largest collection of
@@ -271,9 +271,9 @@ forest C accounting through the transfer of data to EFDB. The purpose of
 this publication is to document that process and provide recommendations
 for future improvements.
 
-\textbf{Here, we} (1) review IPCC definitions of relevant carbon stocks
-and increments; (2) describe mapping of ForC to IPCC's EFDB; (3)
-describe updates to ForC (ForC v4.0), most of which were implemented to
+Here, we (1) review IPCC definitions of relevant carbon stocks and
+increments; (2) describe mapping of ForC to IPCC's EFDB; (3) describe
+updates to ForC (ForC v4.0), most of which were implemented to
 facilitate data transfer to EFDB; (4) summarize the data in ForC that's
 relevant to EFDB and records that have been transferred to date; and (5)
 provide recommendations for improving data collection, analysis,
@@ -290,13 +290,12 @@ stocks.
 
 Forest ecosystem C stocks may be parsed into pools in various ways. IPCC
 parses into biomass (aboveground and belowground), dead organic matter
-(dead wood and litter), and soil organic matter
-(Table~@ref(table\_variables)). Quantifying these requires a one-time
-measurement.
+(dead wood and litter), and soil organic matter (Table 1). Quantifying
+these requires a one-time measurement.
 
 \begin{table}
 
-\caption{\label{tab:table_variables}\textbf{Variables with definitions and measurement methods.} Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).}
+\caption{\label{tab:table_pools}\textbf{IPCC-defined forest carbon pools with definitions and measurement methods.} Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).}
 \centering
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
@@ -363,7 +362,7 @@ Fluxes are the inputs and outputs to each pool.
 
 \clearpage
 \begin{figure}
-\includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:unnamed-chunk-1}
+\includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:fig_variable_mapping}
 \end{figure}
 
 \section{Mapping ForC to EFDB}
@@ -376,7 +375,7 @@ and ForC does.
 
 \subsection{Carbon cycle variables}
 
-Mapping of variables is shown in Fig. 1
+Mapping of variables is shown in Fig. \texttt{r}fig\_variable\_mapping`.
 
 \subsection{Land use categories}
 
@@ -442,16 +441,120 @@ identify erroneous climate data\ldots{} \emph{(Issue
 
 \subsection{Resolving duplicates}
 
+Because ForC v4.0 contained known duplicate records, we used R scripts
+to remove likely duplicates, as detailed in
+\citet{anderson-teixeira_carbon_2021}. Henceforth, we refer to the
+records with duplicates removed as ``independent records''.
+
 \section{Results}
 
-\textbf{figure: map of relevant ForC data with underlying FAO ecozones}
+\subsection{ForC v4.0 contents}
 
-\textbf{(summarize the data in ForC that's relevant to EFDB, identifying
-gaps)}
+As of April 11, 2022, ForC (v4.0) contained NA independent records (NA
+total), NA of which were for variables relevant to EFDB (Fig. 1). These
+records were distributed across all forested continents and ecozones,
+with particularly high concentrations in \emph{{[}ecozone(s){]}} and low
+concentrations in \emph{{[}ecozone(s){]}} (Fig. 2). The most widely
+represented forest type was \emph{{[}type{]}}, followed by
+\emph{{[}type{]}} and \emph{{[}type{]}} (Fig. 3).
 
-dead wood and litter comparisons will be particularly interesting, as
-IPCC values are based on just a handful of references for each climate
-zone (table 2.2 in 2019 guidelines)
+\begin{figure}
+\includegraphics[width=15cm]{figures_tables/PLACEHOLDER_World_Map_of_sites} \caption{\textbf{Map of sites in ForC shaded by number of records relavent to (circles) and transferred to (triangles) EFDB.} PLACEHOLDER. We need to add records transferred to EFDB. We also need to limit map to variables relavent to EFDB. It would also be good to add an underlying map of FAP ecozones}\label{fig:fig_map}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=15cm]{figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation} \caption{\textbf{Historgram of number of records in ForC relavent to (grey) and transferred to (black) EFDB.} PLACEHOLDER. We need to add axis labels and the two classes of records. }\label{fig:fig_dominant_veg}
+\end{figure}
+
+ForC contained data for \textbf{\#\#} of the \textbf{\#\#} variables
+relevant to EFDB (Table 2, Fig. 1).
+
+\begin{table}
+
+\caption{\label{tab:table_variables}\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.} Relationships of variables to IPCC-defined forest C pools (Table 1) and to each other are illustrated in Figure 1. }
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\hline
+\textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n sent to EFDB} & \textbf{n posted to EFDB}\\
+\hline
+STOCKS & NA & NA & NA & NA & NA\\
+\hline
+biomass & NA & NA & NA & NA & NA\\
+\hline
+biomass\_ag & NA & NA & NA & NA & NA\\
+\hline
+biomass\_ag\_foliage & NA & NA & NA & NA & \vphantom{1} NA\\
+\hline
+biomass\_ag\_woody & NA & NA & NA & NA & NA\\
+\hline
+biomass\_root & NA & NA & NA & NA & NA\\
+\hline
+biomass\_root\_fine & NA & NA & NA & NA & NA\\
+\hline
+biomass\_root\_coarse & NA & NA & NA & NA & NA\\
+\hline
+deadwood & NA & NA & NA & NA & NA\\
+\hline
+deadwood\_standing & NA & NA & NA & NA & NA\\
+\hline
+deadwood\_down & NA & NA & NA & NA & NA\\
+\hline
+O.horizon & NA & NA & NA & NA & NA\\
+\hline
+SOM / SOC & NA & NA & NA & NA & NA\\
+\hline
+INCREMENTS & NA & NA & NA & NA & NA\\
+\hline
+delta.biomass & NA & NA & NA & NA & NA\\
+\hline
+delta.agb & NA & NA & NA & NA & NA\\
+\hline
+biomass\_ag\_foliage & NA & NA & NA & NA & NA\\
+\hline
+delta.biomass\_root & NA & NA & NA & NA & NA\\
+\hline
+delta.deadwood & NA & NA & NA & NA & NA\\
+\hline
+delta.deadwood\_standing & NA & NA & NA & NA & NA\\
+\hline
+delta.deadwood\_down & NA & NA & NA & NA & NA\\
+\hline
+delta.O.horizon & NA & NA & NA & NA & NA\\
+\hline
+delta.SOM / delta.SOC & NA & NA & NA & NA & NA\\
+\hline
+FLUXES & NA & NA & NA & NA & NA\\
+\hline
+NPP\_woody & NA & NA & NA & NA & NA\\
+\hline
+ANPP\_woody\_stem & NA & NA & NA & NA & NA\\
+\hline
+ANPP\_foliage & NA & NA & NA & NA & NA\\
+\hline
+BNPP\_root & NA & NA & NA & NA & NA\\
+\hline
+BNPP\_root\_fine & NA & NA & NA & NA & NA\\
+\hline
+BNPP\_root\_coarse & NA & NA & NA & NA & NA\\
+\hline
+woody\_mortality & NA & NA & NA & NA & NA\\
+\hline
+NPP\_litterfall & NA & NA & NA & NA & NA\\
+\hline
+R\_het\_litter & NA & NA & NA & NA & NA\\
+\hline
+R\_het\_soil & NA & NA & NA & NA & NA\\
+\hline
+TOTAL & NA & NA & NA & NA & NA\\
+\hline
+\end{tabu}
+\end{table}
+
+\subsection{Data transfers to EFDB}
+
+As of April 11, 2022, we had reviewed and sent NA, NA of which have been
+reviewed, accepted, and posted (Fig. 2-3,
+\texttt{Table\ r\ table\_variables}). \emph{{[}DETAILS{]}}
 
 \section{Recommendations}
 
@@ -460,20 +563,21 @@ and useful variables that papers fail to include that EFDB needs})
 
 \subsection{Data collection and analysis needs}
 
-\textbf{(Paragraph highlighting important gaps in variables / regions)}
+\emph{(Paragraph highlighting important gaps in variables / regions)}
 
 Several variables of value to IPCC, including standing dead wood, woody
 mortality, delta.agb, are not calculated and presented as frequently as
 are AGB and ANPP\_woody, even though they can readily be derived from
 the same census data. We recommend that researchers calculate and report
-these, as specified below. Furthermore, there is an opportunity to fill
-data gaps by calculating these from existing census data. For example,
-the core census protocol of the Forest Global Earth Observatory
-{[}ForestGEO; REFS{]} collects the data required to calculate standing
-dead wood, woody mortality, and delta.agb, but these have not been
-calculated and reported for all sites for which the appropriate number
-of censuses are available (n=1 for standing dead wood, n=2 for woody
-mortality and delta.agb) {[}but see REFS{]}.
+these, following the reporting guidelines specified below. Furthermore,
+there is an opportunity to fill data gaps by calculating these from
+existing census data. For example, the core census protocol of the
+Forest Global Earth Observatory {[}ForestGEO;
+\citet{anderson-teixeira_ctfsforestgeo_2015},\citet{davies_forestgeo_2021}{]}
+collects the data required to calculate standing dead wood, woody
+mortality, and delta.agb, but these have not been calculated and
+reported for all sites for which the appropriate number of censuses are
+available \citep[but see][\citet{refs}]{piponiot_distribution_2022}.
 
 A universal challenge in estimating biomass (living or dead) from forest
 census data is applying appropriate allometries to convert DBH
@@ -526,10 +630,10 @@ ForC. Systematic review of the literature could vastly improve data
 coverage. \emph{(There are some efforts underway, including a few that
 Susan can specify.)}
 
-\subsection{IPCC}
+\subsection{IPCC protocol considerations}
 
 An important challenge is that forests are changing rapidly, and data
-collected a decaade ago may no longer be relevant, particularly in the
+collected a decade ago may no longer be relevant, particularly in the
 cases of C increments and fluxes.
 
 Remote sensing biomass estimates include standing dead wood
@@ -696,11 +800,11 @@ available} %% use this section when having data sets and software code available
 \appendix
 \section{Mapping ForC to EFDB}
 
-CURRENT TABLE 2 GOES HERE
+CURRENT TABLE 3 GOES HERE
 
 \section{Updates to ForC}
 
-CURRENT TABLE 3 GOES HERE
+CURRENT TABLE 4 GOES HERE
 \noappendix
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
