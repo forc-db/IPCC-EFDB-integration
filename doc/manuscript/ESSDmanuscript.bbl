@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -229,6 +229,12 @@ Harris, N.~L., Gibbs, D.~A., Baccini, A., Birdsey, R.~A., de~Bruin, S., Farina,
   Turubanova, S.~A., and Tyukavina, A.: Global Maps of Twenty-First Century
   Forest Carbon Fluxes, Nature Climate Change, pp. 1--7,
   \doi{10.1038/s41558-020-00976-6}, 2021.
+
+\bibitem[{{IPCC}(2006)}]{ipcc_2006_2006}
+{IPCC}: 2006 {{IPCC Guidelines}} for {{National Greenhouse Gas Inventories}},
+  {{Prepared}} by the {{National Greenhouse Gas Inventories Programme}},
+  {{Eggleston H}}.{{S}}., {{Buendia L}}., {{Miwa K}}., {{Ngara T}}. and
+  {{Tanabe K}}. (Eds)., {IGES}, {Japan}, 2006.
 
 \bibitem[{IPCC(2006)}]{ipcc_agriculture_2006}
 IPCC: Agriculture, {{Forestry}}, and {{Other Land Use}}, in: 2006 {{IPCC
