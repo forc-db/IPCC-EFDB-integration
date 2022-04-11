@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -110,20 +110,37 @@ Grassi, G., House, J., Dentener, F., Federici, S., {den~Elzen}, M., and Penman,
   Credible Mitigation, Nature Climate Change, 7, 220--226,
   \doi{10.1038/nclimate3227}, 2017.
 
+\bibitem[{Harris et~al.(2021)Harris, Gibbs, Baccini, Birdsey, de~Bruin, Farina,
+  Fatoyinbo, Hansen, Herold, Houghton, Potapov, Suarez, {Roman-Cuesta},
+  Saatchi, Slay, Turubanova, and Tyukavina}]{harris_global_2021}
+Harris, N.~L., Gibbs, D.~A., Baccini, A., Birdsey, R.~A., de~Bruin, S., Farina,
+  M., Fatoyinbo, L., Hansen, M.~C., Herold, M., Houghton, R.~A., Potapov,
+  P.~V., Suarez, D.~R., {Roman-Cuesta}, R.~M., Saatchi, S.~S., Slay, C.~M.,
+  Turubanova, S.~A., and Tyukavina, A.: Global Maps of Twenty-First Century
+  Forest Carbon Fluxes, Nature Climate Change, pp. 1--7,
+  \doi{10.1038/s41558-020-00976-6}, 2021.
+
 \bibitem[{IPCC(2006)}]{ipcc_agriculture_2006}
 IPCC: Agriculture, {{Forestry}}, and {{Other Land Use}}, in: 2006 {{IPCC
   Guidelines}} for {{National Greenhouse Gas Inventories}}, edited by
   Eggleston, S., Buendia, L., Miwa, K., Ngara, T., and Tanabe, K., {Institute
   for Global Environmental Strategies}, {Hayama, Japan}, 2006.
 
-\bibitem[{IPCC(2019{\natexlab{a}})}]{ipcc_2019_2019}
+\bibitem[{IPCC(2019)}]{ipcc_2019_2019}
 IPCC: 2019 {{Refinement}} to the 2006 {{IPCC}} {{Guidelines}} for {{National}}
-  {{Greenhouse}} {{Gas}} {{Inventories}}, {IPCC}, {Switzerland},
-  2019{\natexlab{a}}.
+  {{Greenhouse}} {{Gas}} {{Inventories}}, {IPCC}, {Switzerland}, 2019.
 
-\bibitem[{IPCC(2019{\natexlab{b}})}]{ipcc_2019_2019a}
-IPCC: 2019 {{Refinement}} to the 2006 {{IPCC Guidelines}} for {{National
-  Greenhouse Gas Inventories}}, Tech. rep., 2019{\natexlab{b}}.
+\bibitem[{IPCC(2022)}]{ipcc_summary_2022}
+IPCC: Summary for {{Policymakers}}. {{In}}: {{Climate Change}} 2022:
+  {{Mitigation}} of {{Climate Change}}. {{Contribution}} of {{Working Group
+  III}} to the {{Sixth Assessment Report}} of the {{Intergovernmental Panel}}
+  on {{Climate Change}} [{{P}}.{{R}}. {{Shukla}}, {{J}}. {{Skea}}, {{R}}.
+  {{Slade}}, {{A}}. {{Al Khourdajie}}, {{R}}. van {{Diemen}}, {{D}}.
+  {{McCollum}}, {{M}}. {{Pathak}}, {{S}}. {{Some}}, {{P}}. {{Vyas}}, {{R}}.
+  {{Fradera}}, {{M}}. {{Belkacemi}}, {{A}}. {{Hasija}}, {{G}}. {{Lisboa}},
+  {{S}}. {{Luz}}, {{J}}. {{Malley}}, (Eds.)]. {{Cambridge University Press}},
+  {{Cambridge}}, {{UK}} and {{New York}}, {{NY}}, {{USA}}.,
+  \doi{10.1017/9781009157926.001}, 2022.
 
 \bibitem[{Ogle(2018)}]{ogle_delineating_2018}
 Ogle, S.~M.: Delineating Managed Land for Reporting National Greenhouse Gas
@@ -148,7 +165,42 @@ Requena~Suarez, D., Rozendaal, D. M.~A., Sy, V.~D., Phillips, O.~L.,
   Using Forest Plot Data, Global Change Biology, 25, 3609--3624,
   \doi{10.1111/gcb.14767}, 2019.
 
+\bibitem[{Rozendaal et~al.(2022)Rozendaal, Suarez, Sy, Avitabile, Carter, Yao,
+  {Alvarez-Davila}, {Anderson-Teixeira}, {Araujo-Murakami}, Arroyo, Barca,
+  Baker, Birigazzi, Bongers, Branthomme, Brienen, Carreiras, Gatti,
+  {Cook-Patton}, Decuyper, DeVries, Espejo, Feldpausch, Fox, Gamarra, Griscom,
+  Harris, H{\'e}rault, Coronado, Jonckheere, Konan, Leavitt, Lewis, Lindsell,
+  N'Dja, N'Guessan, Marimon, Mitchard, Monteagudo, Morel, Pekkarinen, Phillips,
+  Poorter, Qie, Rutishauser, Ryan, Santoro, Silayo, Sist, Slik, Sonk{\'e},
+  Sullivan, Laurin, Vilanova, Wang, Zahabu, and
+  Herold}]{rozendaal_aboveground_2022}
+Rozendaal, D. M.~A., Suarez, D.~R., Sy, V.~D., Avitabile, V., Carter, S., Yao,
+  C. Y.~A., {Alvarez-Davila}, E., {Anderson-Teixeira}, K., {Araujo-Murakami},
+  A., Arroyo, L., Barca, B., Baker, T.~R., Birigazzi, L., Bongers, F.,
+  Branthomme, A., Brienen, R. J.~W., Carreiras, J. M.~B., Gatti, R.~C.,
+  {Cook-Patton}, S.~C., Decuyper, M., DeVries, B., Espejo, A.~B., Feldpausch,
+  T.~R., Fox, J., Gamarra, J. G.~P., Griscom, B.~W., Harris, N., H{\'e}rault,
+  B., Coronado, E. N.~H., Jonckheere, I., Konan, E., Leavitt, S.~M., Lewis,
+  S.~L., Lindsell, J.~A., N'Dja, J.~K., N'Guessan, A.~E., Marimon, B.,
+  Mitchard, E. T.~A., Monteagudo, A., Morel, A., Pekkarinen, A., Phillips,
+  O.~L., Poorter, L., Qie, L., Rutishauser, E., Ryan, C.~M., Santoro, M.,
+  Silayo, D.~S., Sist, P., Slik, J. W.~F., Sonk{\'e}, B., Sullivan, M. J.~P.,
+  Laurin, G.~V., Vilanova, E., Wang, M. M.~H., Zahabu, E., and Herold, M.:
+  Aboveground Forest Biomass Varies across Continents, Ecological Zones and
+  Successional Stages: Refined {{IPCC}} Default Values for Tropical and
+  Subtropical Forests, Environmental Research Letters, 17, 014\,047,
+  \doi{10.1088/1748-9326/ac45b3}, 2022.
+
 \bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
 UNFCCC: Adoption of the {{Paris Agreement}}, 2015.
+
+\bibitem[{Xu et~al.(2021)Xu, Saatchi, Yang, Yu, Pongratz, Bloom, Bowman,
+  Worden, Liu, Yin, Domke, McRoberts, Woodall, Nabuurs, {de-Miguel}, Keller,
+  Harris, Maxwell, and Schimel}]{xu_changes_2021}
+Xu, L., Saatchi, S.~S., Yang, Y., Yu, Y., Pongratz, J., Bloom, A.~A., Bowman,
+  K., Worden, J., Liu, J., Yin, Y., Domke, G., McRoberts, R.~E., Woodall, C.,
+  Nabuurs, G.-J., {de-Miguel}, S., Keller, M., Harris, N., Maxwell, S., and
+  Schimel, D.: Changes in Global Terrestrial Live Biomass over the 21st
+  Century, Science Advances, 7, eabe9829, \doi{10.1126/sciadv.abe9829}, 2021.
 
 \end{thebibliography}

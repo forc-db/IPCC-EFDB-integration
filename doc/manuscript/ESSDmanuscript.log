@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 MAR 2022 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  11 APR 2022 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3037,7 +3037,7 @@ Package xcolor Warning: Incompatible color definition on input line 147.
 Package xcolor Warning: Incompatible color definition on input line 149.
 
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 17
-7.
+6.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -3062,39 +3062,46 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 177.
+(Font)              scaled to size 8.54997pt on input line 176.
+
+Package natbib Warning: Citation `refs' on page 1 undefined on input line 199.
+
+
+Package natbib Warning: Citation `refs' on page 1 undefined on input line 200.
+
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (29.72949pt too wide) in paragraph at lines 200--217
-\T1/ptm/m/n/10 ces-si-ble for C ac-count-ing, the IPCC cre-ated the Emis-sion F
-ac-tor Database (EFDB; https://www.ipcc-nggip.iges.or.jp/EFDB/main.php),
- []
 
-[2] [3]
-Overfull \hbox (48.3296pt too wide) in paragraph at lines 305--312
+Package natbib Warning: Citation `refs' on page 2 undefined on input line 214.
+
+
+Package natbib Warning: Citation `refs' on page 2 undefined on input line 245.
+
+[2]
+Overfull \hbox (48.3296pt too wide) in paragraph at lines 341--348
 \T1/ptm/m/n/10 IPCc GPG for LU-LUCF (https://www.ipcc-nggip.iges.or.jp/public/g
 pglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf) 
  []
 
-[4]
-<figures_tables/C_variable_mapping.png, id=69, 788.9475pt x 821.0675pt>
+[3] [4]
+<figures_tables/C_variable_mapping.png, id=86, 788.9475pt x 821.0675pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
-ine 325.
+ine 361.
 (pdftex.def)             Requested size: 426.79134pt x 444.15915pt.
 
-LaTeX Warning: Float too large for page by 41.03642pt on input line 326.
+LaTeX Warning: Float too large for page by 41.03642pt on input line 362.
 
 
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 342--348
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 378--384
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 342--348
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 378--384
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
@@ -3102,34 +3109,34 @@ orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
 [5
 
 ] [6 <./figures_tables/C_variable_mapping.png>] [7] [8]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 586--586
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 622--622
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 586--586
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 622--622
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 586--586
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 622--622
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 586--586
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 622--622
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 [9
 
 ] [10] [11] [12]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 641--641
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 677--677
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 641--641
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 677--677
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
@@ -3142,18 +3149,21 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
  []
 
 [16]) [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 722.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 722.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 722.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 722.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 722.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 758.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  ) 
 Here is how much of TeX's memory you used:
- 14640 strings out of 480608
- 193450 string characters out of 5903631
- 575676 words of memory out of 5000000
- 30155 multiletter control sequences out of 15000+600000
+ 14652 strings out of 480608
+ 193781 string characters out of 5903631
+ 576663 words of memory out of 5000000
+ 30164 multiletter control sequences out of 15000+600000
  574035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,15n,52p,1631b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3162,10 +3172,10 @@ exlive/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/
 2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (17 pages, 366226 bytes).
+Output written on ESSDmanuscript.pdf (17 pages, 370673 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

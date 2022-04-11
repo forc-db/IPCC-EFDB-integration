@@ -3,49 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ESSDmanuscript.aux
 The style file: copernicus.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for "refs"
 Warning--empty journal in duncanson_aboveground_2021
 Warning--empty booktitle in ipcc_2019_2019
-Warning--missing institution in ipcc_2019_2019a
+Warning--empty journal in ipcc_summary_2022
 Warning--empty journal in ogle_delineating_2018
-You've used 15 entries,
+You've used 18 entries,
             2819 wiz_defined-function locations,
-            1089 strings with 16070 characters,
-and the built_in function-call counts, 23749 in all, are:
-= -- 1960
-> -- 2103
-< -- 8
-+ -- 765
-- -- 689
-* -- 1917
-:= -- 2973
-add.period$ -- 15
-call.type$ -- 15
-change.case$ -- 259
-chr.to.int$ -- 14
-cite$ -- 49
-duplicate$ -- 1679
-empty$ -- 908
-format.name$ -- 729
-if$ -- 4567
-int.to.chr$ -- 2
+            1109 strings with 19181 characters,
+and the built_in function-call counts, 31545 in all, are:
+= -- 2538
+> -- 2949
+< -- 9
++ -- 1058
+- -- 968
+* -- 2603
+:= -- 4009
+add.period$ -- 18
+call.type$ -- 18
+change.case$ -- 357
+chr.to.int$ -- 18
+cite$ -- 58
+duplicate$ -- 2142
+empty$ -- 1150
+format.name$ -- 1017
+if$ -- 6062
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 332
-newline$ -- 54
-num.names$ -- 61
-pop$ -- 1053
+missing$ -- 443
+newline$ -- 63
+num.names$ -- 73
+pop$ -- 1407
 preamble$ -- 1
-purify$ -- 258
+purify$ -- 357
 quote$ -- 0
-skip$ -- 972
+skip$ -- 1235
 stack$ -- 0
-substring$ -- 521
-swap$ -- 1455
-text.length$ -- 1
+substring$ -- 650
+swap$ -- 1870
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 135
+type$ -- 162
 warning$ -- 4
-while$ -- 73
+while$ -- 90
 width$ -- 0
-write$ -- 176
-(There were 4 warnings)
+write$ -- 212
+(There were 5 warnings)
