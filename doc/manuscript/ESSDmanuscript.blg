@@ -4,49 +4,48 @@ The top-level auxiliary file: ESSDmanuscript.aux
 The style file: copernicus.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "refs"
-Warning--empty journal in duncanson_aboveground_2021
 Warning--empty booktitle in ipcc_2019_2019
 Warning--empty journal in ipcc_summary_2022
 Warning--empty journal in ogle_delineating_2018
 You've used 24 entries,
             2819 wiz_defined-function locations,
-            1144 strings with 27995 characters,
-and the built_in function-call counts, 57164 in all, are:
-= -- 4136
-> -- 6259
+            1147 strings with 28863 characters,
+and the built_in function-call counts, 60127 in all, are:
+= -- 4284
+> -- 6683
 < -- 11
-+ -- 2185
-- -- 2066
-* -- 5024
-:= -- 7663
++ -- 2326
+- -- 2207
+* -- 5322
+:= -- 8101
 add.period$ -- 24
 call.type$ -- 24
-change.case$ -- 735
+change.case$ -- 780
 chr.to.int$ -- 24
-cite$ -- 76
-duplicate$ -- 3353
-empty$ -- 1790
-format.name$ -- 2131
-if$ -- 10903
+cite$ -- 75
+duplicate$ -- 3477
+empty$ -- 1863
+format.name$ -- 2271
+if$ -- 11468
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 849
+missing$ -- 902
 newline$ -- 81
-num.names$ -- 97
-pop$ -- 2664
+num.names$ -- 98
+pop$ -- 2809
 preamble$ -- 1
-purify$ -- 735
+purify$ -- 780
 quote$ -- 0
-skip$ -- 1866
+skip$ -- 1919
 stack$ -- 0
-substring$ -- 856
-swap$ -- 2987
-text.length$ -- 3
+substring$ -- 862
+swap$ -- 3106
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 213
-warning$ -- 4
-while$ -- 120
+warning$ -- 3
+while$ -- 122
 width$ -- 0
-write$ -- 282
-(There were 5 warnings)
+write$ -- 285
+(There were 4 warnings)

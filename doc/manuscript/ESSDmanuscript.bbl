@@ -196,9 +196,28 @@ Deng, Z., Ciais, P., {Tzompa-Sosa}, Z.~A., Saunois, M., Qiu, C., Tan, C., Sun,
   {{UNFCCC}} Inventories against Atmospheric Inversions, Earth System Science
   Data Discussions, pp. 1--59, \doi{10.5194/essd-2021-235}, 2021.
 
-\bibitem[{Duncanson and MANY\_MORE(2021)}]{duncanson_aboveground_2021}
-Duncanson, L. and MANY\_MORE: Aboveground {{Woody Biomass Product Validation
-  Good Practices Protocol}}, \doi{10.5067/DOC/CEOSWGCV/LPV/AGB.001}, 2021.
+\bibitem[{Duncanson et~al.(2021)Duncanson, Armstron, Disney, Avitabile,
+  Barbier, Calders, Carter, Chave, Herold, MacBean, McRoberts, Minor, Paul,
+  {R{\'e}jou-M{\'e}chain}, Roxburgh, Williams, Albinet, Baker, Bartholomeus,
+  Bastin, Coomes, Crowther, Davies, {de Bruin}, De~Kauwe, Domke, Labriere,
+  Lucas, Mitchard, Morsdorf, N{\ae}sset, Park, Phillips, Ploton, Puliti,
+  Quegan, Saatchi, Schaaf, Schepaschenko, Scipal, Stovall, Thiel, Wulder,
+  Camacho, Nickeson, Rom{\'a}n, and Margolis}]{duncanson_aboveground_2021}
+Duncanson, L., Armstron, J., Disney, M., Avitabile, V., Barbier, N., Calders,
+  K., Carter, S., Chave, J., Herold, M., MacBean, N., McRoberts, R., Minor, D.,
+  Paul, K., {R{\'e}jou-M{\'e}chain}, M., Roxburgh, S., Williams, M., Albinet,
+  C., Baker, T., Bartholomeus, H., Bastin, J.~F., Coomes, D., Crowther, T.,
+  Davies, S., {de Bruin}, S., De~Kauwe, M., Domke, G., Labriere, N., Lucas, R.,
+  Mitchard, E., Morsdorf, F., N{\ae}sset, E., Park, T., Phillips, O.~L.,
+  Ploton, P., Puliti, S., Quegan, S., Saatchi, S., Schaaf, C., Schepaschenko,
+  D., Scipal, K., Stovall, A., Thiel, C., Wulder, M., Camacho, F., Nickeson,
+  J., Rom{\'a}n, M., and Margolis, H.: Aboveground {{Woody Biomass Product
+  Validation Good Practices Protocol}}, in: Good {{Practices}} for
+  {{Satellite-Derived Land Product Validation}}, edited by Duncanson, L.,
+  Disney, M., Armston, J., Nickeson, J., Minor, D., and Camacho, F., p. 236,
+  {Land Product Validation Subgroup (Working Group on Calibration and
+  Validation, Committee on Earth Observation Satellites)},
+  \doi{10.5067/doc/ceoswgcv/lpv/agb.001}, 2021.
 
 \bibitem[{Fer et~al.(2021)Fer, Gardella, Shiklomanov, Campbell, Cowdery, Kauwe,
   Desai, Duveneck, Fisher, Haynes, Hoffman, Johnston, Kooper, LeBauer,

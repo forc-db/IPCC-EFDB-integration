@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 APR 2022 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 APR 2022 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3194,13 +3194,7 @@ Overfull \hbox (1.27617pt too wide) in paragraph at lines 868--868
 
 [17
 
-] [18] (./ESSDmanuscript.bbl [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
-[]\T1/ptm/m/n/9 Duncanson, L. and MANY_MORE: Above-ground Woody Biomass Prod-uc
-t Val-i-da-tion Good Prac-tices Pro-to-col,
- []
-
-[21] [22]) [23]
+] [18] (./ESSDmanuscript.bbl [19] [20] [21] [22]) [23]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3214,7 +3208,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 949.
 Here is how much of TeX's memory you used:
  14737 strings out of 480608
  196079 string characters out of 5903631
- 582146 words of memory out of 5000000
+ 582581 words of memory out of 5000000
  30226 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3228,7 +3222,7 @@ exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (23 pages, 489605 bytes).
+Output written on ESSDmanuscript.pdf (23 pages, 490592 bytes).
 PDF statistics:
  356 PDF objects out of 1000 (max. 8388607)
  313 compressed objects within 4 object streams
