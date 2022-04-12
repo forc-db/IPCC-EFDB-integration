@@ -295,7 +295,7 @@ variables in Fig. 1), or using the ``Stock-Difference Method'', which
 computes \(\Delta C\) based on C stocks at two points in time
 \citep{ipcc_2006_2006}. Thus, C cycle variables relevant to the IPCC
 methodology and to EFDB include C stocks, increments, and fluxes in the
-IPCC-defined pools (Fig. 1).
+IPCC-defined pools.
 
 \subsection{Carbon pools}
 
@@ -320,7 +320,7 @@ C estimation methodologies.
 \hline
 aboveground biomass & all biomass of living vegetation & min dbh & acceptable to exclude understory if minor component\\
 \hline
- &  & include non-dicot trees & ?\\
+ &  & include non-dicot trees? & ?\\
 \hline
  &  & include dead standing? & no\\
 \hline
@@ -328,11 +328,11 @@ aboveground biomass & all biomass of living vegetation & min dbh & acceptable to
 \hline
 belowground biomass & all biomass of live roots & all factors relevant to aboveground biomass & see above\\
 \hline
- &  & allometry or assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & \\
+ &  & allometry or assumed ratio of below- to above-ground biomass (R) & can estimate based on R\\
 \hline
- &  & min root diameter & fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter\\
+ &  & min root diameter & fine roots may be excluded\\
 \hline
- &  & sampling depth & \\
+ &  & sampling depth & ?\\
 \hline
 dead wood & all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil & min diameter & 10 cm default, but may be chosen by country\\
 \hline
@@ -363,7 +363,7 @@ biomass of living vegetation above the soil including stems, stumps,
 branches, bark, seeds, and foliage'' \citep{ipcc_2006_2006}. IPCC's
 guidance is that the understory may be excluded the understory if it
 constitutes a ``minor'' component, \emph{where quantitative definitions
-of ``understory'' and ``minor'' is not provided}, but where a commonly
+of ``understory'' and ``minor'' are not provided}, but where a commonly
 applied minimum size sampling threshold for mature forests would be 10
 cm stem diameter at breast height (DBH). A recent study characterizing
 the contributions of trees in different DBH classes to ecosystem C
@@ -397,7 +397,11 @@ generally constitutes a much smaller C pool \citep[typically \textless5
 t C ha\textsuperscript{-1},][]{anderson-teixeira_carbon_2021}, and IPCC
 guidance is that it can be excluded when fine roots cannot be
 distinguished empirically from soil organic matter or litter
-\citep{ipcc_2006_2006}, which can be a painstaking process.
+\citep{ipcc_2006_2006}, which can be a painstaking process. Field
+methods for estimating root biomass are highly variable. IPCC's default
+method for Tier 1 estimates is to apply a ratio of belowground to
+aboveground biomass, with default factors defined based on ecological
+zone, continent, and forest age \citep{ipcc_2006_2006, ipcc_2019_2019}.
 
 \subsubsection{Dead Organic Matter}
 
@@ -431,6 +435,17 @@ distinguished from it empirically.''(2003 IPCc GPG for LULUCF
 \begin{figure}
 \includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:fig_variable_mapping}
 \end{figure}
+
+\subsection{Land use categories}
+
+IPCC defines land-use categories to include six categories -- Forest
+Land, Grassland, Wetlands, Cropland, Settlements, and Other Land
+\citep{ipcc_2006_2006}. Sub-divisions include land that has remained in
+a particular category for \textgreater20 years (e.g., Forest Land
+remaining Forest Land) and land that has been converted from one
+category to another in the past 20 years (e.g., Cropland converted to
+Forest Land). Definitions of forest are allowed to vary by country, but
+must be applied consistently.
 
 \section{Mapping ForC to EFDB}
 

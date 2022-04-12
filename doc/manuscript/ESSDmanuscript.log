@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 APR 2022 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 APR 2022 12:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3083,110 +3083,112 @@ Package natbib Warning: Citation `refs' on page 3 undefined on input line 377.
 Package natbib Warning: Citation `refs' on page 3 undefined on input line 379.
 
 [3] [4]
-Overfull \hbox (48.3296pt too wide) in paragraph at lines 423--430
+Overfull \hbox (48.3296pt too wide) in paragraph at lines 427--434
 \T1/ptm/m/n/10 IPCc GPG for LU-LUCF (https://www.ipcc-nggip.iges.or.jp/public/g
 pglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf) 
  []
 
-<figures_tables/C_variable_mapping.png, id=126, 788.9475pt x 821.0675pt>
+[5]
+<figures_tables/C_variable_mapping.png, id=139, 788.9475pt x 821.0675pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
-ine 432.
+ine 436.
 (pdftex.def)             Requested size: 426.79134pt x 444.15915pt.
 
-LaTeX Warning: Float too large for page by 41.03642pt on input line 433.
+LaTeX Warning: Float too large for page by 41.03642pt on input line 437.
 
-[5] [6 <./figures_tables/C_variable_mapping.png>]
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 449--455
+
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 464--470
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 449--455
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 464--470
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
-[7]
-<figures_tables/PLACEHOLDER_World_Map_of_sites.png, id=161, 480.8364pt x 284.50
+[6] [7 <./figures_tables/C_variable_mapping.png>]
+<figures_tables/PLACEHOLDER_World_Map_of_sites.png, id=166, 480.8364pt x 284.50
 29pt>
 File: figures_tables/PLACEHOLDER_World_Map_of_sites.png Graphic file (type png)
 
 <use figures_tables/PLACEHOLDER_World_Map_of_sites.png>
 Package pdftex.def Info: figures_tables/PLACEHOLDER_World_Map_of_sites.png  use
-d on input line 529.
+d on input line 544.
 (pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
 <figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png, id=1
-62, 569.0058pt x 426.6339pt>
+67, 569.0058pt x 426.6339pt>
 File: figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png 
 Graphic file (type png)
 <use figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png>
 Package pdftex.def Info: figures_tables/PLACEHOLDER_Williams_Histogram_of_domin
-ant_vegetation.png  used on input line 533.
+ant_vegetation.png  used on input line 548.
 (pdftex.def)             Requested size: 426.79134pt x 320.00067pt.
 
-Overfull \hbox (4.05049pt too wide) in paragraph at lines 617--617
+Overfull \hbox (4.05049pt too wide) in paragraph at lines 632--632
 []\T1/ptm/m/n/9 biomass_root_coarse|  
  []
 
 
-Overfull \hbox (19.71059pt too wide) in paragraph at lines 617--617
+Overfull \hbox (19.71059pt too wide) in paragraph at lines 632--632
 []\T1/ptm/m/n/9 delta.deadwood_standing|  
  []
 
 
-Overfull \hbox (8.9829pt too wide) in paragraph at lines 617--617
+Overfull \hbox (8.9829pt too wide) in paragraph at lines 632--632
 []\T1/ptm/m/n/9 delta.deadwood_down|  
  []
 
 
-Overfull \hbox (1.47682pt too wide) in paragraph at lines 617--617
+Overfull \hbox (1.47682pt too wide) in paragraph at lines 632--632
 []\T1/ptm/m/n/9 ANPP_woody_stem|  
  []
 
 
-LaTeX Warning: Float too large for page by 44.03342pt on input line 618.
+LaTeX Warning: Float too large for page by 44.03342pt on input line 633.
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 62
-4.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 63
+9.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+) [8] [9]
 
-Package natbib Warning: Citation `refs' on page 8 undefined on input line 647.
+Package natbib Warning: Citation `refs' on page 10 undefined on input line 662.
 
-[8] [9] [10 <./figures_tables/PLACEHOLDER_World_Map_of_sites.png>] [11 <./figur
-es_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png>] [12]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 798--798
+
+[10 <./figures_tables/PLACEHOLDER_World_Map_of_sites.png>] [11 <./figures_table
+s/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png>] [12]
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 813--813
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 798--798
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 813--813
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 798--798
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 813--813
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 798--798
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 813--813
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 [13
 
 ] [14] [15] [16]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 853--853
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 868--868
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 853--853
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 868--868
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
@@ -3202,17 +3204,17 @@ t Val-i-da-tion Good Prac-tices Pro-to-col,
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 934.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 934.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 949.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 949.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 934.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 934.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 934.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 949.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 949.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 949.
  ) 
 Here is how much of TeX's memory you used:
- 14736 strings out of 480608
- 196065 string characters out of 5903631
- 586344 words of memory out of 5000000
+ 14737 strings out of 480608
+ 196079 string characters out of 5903631
+ 582146 words of memory out of 5000000
  30226 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3226,10 +3228,10 @@ exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (23 pages, 488733 bytes).
+Output written on ESSDmanuscript.pdf (23 pages, 489605 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 356 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

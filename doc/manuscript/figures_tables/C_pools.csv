@@ -1,12 +1,12 @@
 ﻿pool,definition ,important sources of estimate variation ,IPCC guidance
 aboveground biomass,all biomass of living vegetation,min dbh ,acceptable to exclude understory if minor component
-,,include non-dicot trees ,?
+,,include non-dicot trees? ,?
 ,,include dead standing?,no
 ,,biomass allometry,?
 belowground biomass,all biomass of live roots ,all factors relevant to aboveground biomass,see above
-,,allometry or assumed ratio of belowground to aboveground biomass (IPCC table 4.4) ,
-,,min root diameter,fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter
-,,sampling depth,
+,,allometry or assumed ratio of below- to above-ground biomass (R),can estimate based on R
+,,min root diameter,fine roots may be excluded
+,,sampling depth,?
 dead wood ,"all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil ",min diameter,"10 cm default, but may be chosen by country"
 ,,include belowground?,yes
 litter ,"all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil ",max diameter (= max diameter for deadwood),"10 cm default, but may be chosen by country"
