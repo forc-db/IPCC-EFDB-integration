@@ -256,8 +256,9 @@ comparison for external parties to evaluate these inventories. The EFDB
 encourages researchers to submit estimates of emission factors or other
 related parameters from peer-reviewed journal papers or other accepted
 sources for inclusion in the database. In the case of forests, emission
-factors include carbon stocks and increments within various pools
-\citep{ipcc_2019_2019}.
+factors include carbon stocks, increments (``stock changes''), and
+fluxes (``gains'' and ``losses'') for various pools
+\citep{ipcc_2006_2006, ipcc_2019_2019}.
 
 The Global Forest Carbon Database, ForC
 (\url{https://forc-db.github.io/}), is the largest collection of
@@ -271,34 +272,32 @@ through the transfer of data to EFDB. The purpose of this publication is
 to document that process and provide recommendations for future
 improvements.
 
-Here, we (1) review IPCC definitions of relevant carbon stocks and
-increments; (2) describe mapping of ForC to IPCC's EFDB; (3) describe
-updates to ForC (ForC v4.0), most of which were implemented to
-facilitate data transfer to EFDB; (4) summarize the data in ForC that's
-relevant to EFDB and records that have been transferred to date; and (5)
-provide recommendations for improving data collection, analysis,
-database, and accounting.
+Here, we (1) review IPCC methods and definitions for tallying forest C;
+(2) describe mapping of ForC to IPCC's EFDB; (3) describe updates to
+ForC (ForC v4.0), most of which were implemented to facilitate data
+transfer to EFDB; (4) summarize the data in ForC that's relevant to EFDB
+and records that have been transferred to date; and (5) provide
+recommendations for improving data collection, analysis, database, and
+accounting.
 
-\section{IPCC definitions of carbon stocks and incremenets}
+\section{IPCC methods and definitions}
 
 The end goal of IPCC greenhouse gas inventories is to quantify
 greenhouse gas emissions to, or withdrawals from, the atmosphere on an
-annual basis, most commonly for the purpose of national inventories
-\citep{ipcc_2006_2006, ipcc_2019_2019}. More proximately, IPCC
-guidelines focus on: (1) C stocks -- i.e., stores of C that would be
-vulnerable to release to the atmosphere upon land use change and (2) C
-increments -- i.e., changes in those C stocks over one or more years.
-\emph{{[}detail how these are used{]}}
-
-\subsection{Carbon stocks}
-
-Forest ecosystem C stocks may be parsed into pools in various ways, and
-while certain definitions and thresholds are more common than others,
-there is no single standard for measuring or reporting that is adhered
-to by all -- or even most -- studies. IPCC parses into biomass
-(aboveground and belowground), dead organic matter (dead wood and
-litter), and soil organic matter (Table 1). Quantifying these requires a
-one-time measurement.
+annual basis, most commonly on a national level
+\citep{ipcc_2006_2006, ipcc_2019_2019}. For each stratum of subdivision
+within a land-use category, annual stock changes (\(\Delta C\); Mg C
+yr\textsuperscript{-1}) are calculated as the sum of changes in various
+pools, including any harvested wood products. IPCC parses forest C pools
+into biomass (aboveground and belowground), dead organic matter (dead
+wood and litter), and soil organic matter (Table 1). For each pool,
+\(\Delta C\) may be calculated using the ``Gain-Loss Method'', which
+takes the difference between gains and losses (influx and outflux
+variables in Fig. 1), or using the ``Stock-Difference Method'', which
+computes \(\Delta C\) based on C stocks at two points in
+time\citep{ipcc_2006_2006}. Thus, C cycle variables relevant to the IPCC
+methodology and to EFDB include C stocks, increments, and fluxes in the
+IPCC-defined pools (Fig. 1).
 
 \begin{table}
 
@@ -306,20 +305,38 @@ one-time measurement.
 \centering
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
-\textbf{pool} & \textbf{definition} & \textbf{major sources of estimate variation} & \textbf{IPCC guidance}\\
+\textbf{pool} & \textbf{definition} & \textbf{important sources of estimate variation} & \textbf{IPCC guidance}\\
 \hline
-aboveground biomass & all biomass of living vegetation, both woody and herbaceous, above the soil & allometry, min dbh & acceptable to exclude understory\\
+aboveground biomass & all biomass of living vegetation, both woody and herbaceous & min dbh & acceptable to exclude understory if minor component\\
 \hline
-belowground biomass & all biomass of live roots & allometry, min dbh, assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter\\
+ &  & biomass allometry & \\
 \hline
-dead wood & all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil & min dbh,  ... & default min dbh = 10cm, but may be chosen by country\\
+ &  & include dead standing? & no\\
 \hline
-litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & min dbh for dead wood , .. & includes entire O horizon\\
+belowground biomass & all biomass of live roots & min dbh (coarse roots) & \\
 \hline
-soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & default sampling depth = 30cm, but may be chosen by country\\
+ &  & allometry or assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & \\
+\hline
+ &  & min root diameter & fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter\\
+\hline
+ &  & sampling depth & \\
+\hline
+dead wood & all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil & min diameter & 10 cm default, but may be chosen by country\\
+\hline
+ &  & include belowground? & \vphantom{1} yes\\
+\hline
+litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & max diameter & 10 cm default, but may be chosen by country\\
+\hline
+ &  & layers included & includes entire O horizon\\
+\hline
+ &  & include belowground? & yes\\
+\hline
+soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & depth = 30 cm default, but may be chosen by country\\
 \hline
 \end{tabu}
 \end{table}
+
+\subsection{Carbon pools}
 
 \subsubsection{Biomass}
 
@@ -347,6 +364,9 @@ belowground biomass) are included in litter where they cannot be
 distinguished from it empirically." (2003 IPCc GPG for LULUCF
 (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
 
+Not required for forest land remaining forest land under Tier 1
+methodology \citep{ipcc_2006_2006}.
+
 \subsubsection{Soil Organic Matter}
 
 Soil organic matter is defined as ``Includes organic carbon in mineral
@@ -357,17 +377,6 @@ biomass) are included with soil organic matter where they cannot be
 distinguished from it empirically.''(2003 IPCc GPG for LULUCF
 (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
 
-\subsection{Carbon increments}
-
-C increments are defined as the change over time, in annual increments,
-in each C pool. These may be estimated as the difference between C
-stocks at two time points, or as the difference between inputs and
-outputs to the pool (i.e., fluxes). Quantifying these requires at least
-two measurements. (\emph{But, Can carbon increments be inferred from a
-single measure and a known age (i.e., the approach we used in GROA)?})
-Fluxes are the inputs and outputs to each pool.
-
-\clearpage
 \begin{figure}
 \includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:fig_variable_mapping}
 \end{figure}
@@ -382,7 +391,7 @@ and ForC does.
 
 \subsection{Carbon cycle variables}
 
-Mapping of variables is shown in Fig. \texttt{r}fig\_variable\_mapping`.
+Mapping of variables is shown in Fig. 1.
 
 \subsection{Land use categories}
 
@@ -457,7 +466,7 @@ records with duplicates removed as ``independent records''.
 
 \subsection{ForC v4.0 contents}
 
-As of April 11, 2022, ForC (v4.0) contained NA independent records (NA
+As of April 12, 2022, ForC (v4.0) contained NA independent records (NA
 total), NA of which were for variables relevant to EFDB (Fig. 1). These
 records were distributed across all forested continents and ecozones,
 with particularly high concentrations in \emph{{[}ecozone(s){]}} and low
@@ -559,7 +568,7 @@ TOTAL & NA & NA & NA & NA & NA\\
 
 \subsection{Data transfers to EFDB}
 
-As of April 11, 2022, we had reviewed and sent NA, NA of which have been
+As of April 12, 2022, we had reviewed and sent NA, NA of which have been
 reviewed, accepted, and posted (Fig. 2-3,
 \texttt{Table\ r\ table\_variables}). \emph{{[}DETAILS{]}}
 
@@ -590,6 +599,11 @@ A universal challenge in estimating biomass (living or dead) from forest
 census data is applying appropriate allometries to convert DBH
 measurements to biomass. \emph{(Camille/Helene can write this paragraph
 easily.)}
+
+Forest ecosystem C pools may be parsed in various ways, and while
+certain definitions and thresholds are more common than others, there is
+no single standard for measuring or reporting that is adhered to by all
+-- or even most -- studies.
 
 \subsection{Data reporting needs}
 

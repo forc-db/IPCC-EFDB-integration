@@ -148,7 +148,7 @@ Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patt
 To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; [https://www.ipcc-nggip.iges.or.jp/EFDB/main.php](https://www.ipcc-nggip.iges.or.jp/EFDB/main.php)), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 The EFDB can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
 The EFDB encourages researchers to submit estimates of emission factors or other related parameters from peer-reviewed journal papers or other accepted sources for inclusion in the database. 
-In the case of forests, emission factors include carbon stocks and increments within various pools [@ipcc_2019_2019].
+In the case of forests, emission factors include carbon stocks, increments ("stock changes"), and fluxes ("gains" and "losses") for various pools [@ipcc_2006_2006;@ipcc_2019_2019].
 
 The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].
 For C currently contains `r n_records_ForC` records from `r n_plots_ForC` plots in `r n_areas_ForC` distinct geographical areas, along with records of stand age and disturbance history.
@@ -156,27 +156,20 @@ As such, ForC is positioned to improve forest C accounting through the transfer 
 The purpose of this publication is to document that process and provide recommendations for future improvements.
 
 Here, we
-(1) review IPCC definitions of relevant carbon stocks and increments;
+(1) review IPCC methods and definitions for tallying forest C;
 (2) describe mapping of ForC to IPCC's EFDB;
 (3) describe updates to ForC  (ForC v4.0), most of which were implemented to facilitate data transfer to EFDB;
 (4) summarize the data in ForC that's relevant to EFDB and records that have been transferred to date; and
 (5) provide recommendations for improving data collection, analysis, database, and accounting.
 
 
-# IPCC definitions of carbon stocks and incremenets
+# IPCC methods and definitions 
 
-The end goal of IPCC greenhouse gas inventories is to quantify greenhouse gas emissions to, or withdrawals from, the atmosphere on an annual basis, most commonly for the purpose of national inventories [@ipcc_2006_2006;@ipcc_2019_2019]. 
-More proximately, IPCC guidelines focus on:
-(1) C stocks -- i.e., stores of C that would be vulnerable to release to the atmosphere upon land use change
-and (2) C increments -- i.e., changes in those C stocks over one or more years.
-*[detail how these are used]*
-
-## Carbon stocks
-Forest ecosystem C stocks may be parsed into pools in various ways, and while certain definitions and thresholds are more common than others, there is no single standard for measuring or reporting that is adhered to by all -- or even most -- studies. 
-IPCC parses into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table `r table_pools`).
-Quantifying these requires a one-time measurement.
-
-
+The end goal of IPCC greenhouse gas inventories is to quantify greenhouse gas emissions to, or withdrawals from, the atmosphere on an annual basis, most commonly on a national level [@ipcc_2006_2006;@ipcc_2019_2019]. 
+For each stratum of subdivision within a land-use category, annual stock changes ($\Delta C$; Mg C yr^-1^) are calculated as the sum of changes in various pools, including any harvested wood products.
+IPCC parses forest C pools into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table `r table_pools`).
+For each pool, $\Delta C$ may be calculated using the "Gain-Loss Method", which takes the difference between gains and losses (influx and outflux variables in Fig. `r fig_variable_mapping`)<!--IPCC eq.2.4-->, or using the "Stock-Difference Method", which computes $\Delta C$ based on C stocks at two points in time<!--IPCC eq.2.5-->[@ipcc_2006_2006]. 
+Thus, C cycle variables relevant to the IPCC methodology and to EFDB include C stocks, increments, and fluxes in the IPCC-defined pools (Fig. `r fig_variable_mapping`).
 
 
 ```{r table_pools, eval = TRUE, echo=FALSE, warning=FALSE}
@@ -192,8 +185,7 @@ knitr::kable(C_pools_table, format = "latex",
   row_spec(0, bold = TRUE)
 ```
 
-
-
+## Carbon pools
 
 ### Biomass
 Biomass includes living vegetation, above- and below-ground.
@@ -210,22 +202,14 @@ Dead wood is defined as...
 
 Litter is defined as including " all  non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil. This includes litter (OL),  fumic (OF),  and  humic (OH) layers.  Live  fine  roots  (of  less  than  the  suggested  diameter  limit for  belowground  biomass) are included in litter where they cannot be distinguished from it empirically." (2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
 
+Not required for forest land remaining forest land under Tier 1 methodology [@ipcc_2006_2006].
+
 ### Soil Organic Matter
 
 Soil organic matter is defined as "Includes organic carbon in mineral and organic soils (including peat) to a specified depth chosen by the country and
 applied consistently through the time series. Live fine roots (of less than the suggested diameter limit for belowground biomass) are included with soil organic matter where they cannot be distinguished from it empirically."(2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
 
-## Carbon increments
 
-C increments are defined as the change over time, in annual increments, in each C pool.
-These may be estimated as the difference between C stocks at two time points, or as the difference between inputs and outputs to the pool (i.e., fluxes).
-Quantifying these requires at least two measurements.
-(*But, Can carbon increments be inferred from a single measure and a known age (i.e., the approach we used in GROA)?*)
-Fluxes are the inputs and outputs to each pool. 
-
-
-
-\clearpage
 ```{r fig_variable_mapping, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change."}
 #this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
 knitr::include_graphics("figures_tables/C_variable_mapping.png")
@@ -238,7 +222,8 @@ ForC data is incredibly valuable to EFDB and there is data which is included in 
 
 ## Carbon cycle variables
 
-Mapping of variables is shown in Fig. `r `fig_variable_mapping`.
+Mapping of variables is shown in Fig. `r fig_variable_mapping`.
+
 
 
 ## Land use categories
@@ -340,6 +325,8 @@ For example, the core census protocol of the Forest Global Earth Observatory [Fo
 
 A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.
 *(Camille/Helene can write this paragraph easily.)*
+
+Forest ecosystem C pools may be parsed in various ways, and while certain definitions and thresholds are more common than others, there is no single standard for measuring or reporting that is adhered to by all -- or even most -- studies. 
 
 ## Data reporting needs
 
