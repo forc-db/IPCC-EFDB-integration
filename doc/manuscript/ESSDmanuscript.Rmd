@@ -112,6 +112,9 @@ fig_variable_mapping=1
 fig_map=2
 fig_dominant_veg=3
 
+#Cited sections (listed here because these can change)
+section_C_pools = 2.1 
+
 #Statistics
 n_records_ForC= NA # total n records in ForC
 n_plots_ForC = NA # total n plots in ForC
@@ -166,10 +169,16 @@ Here, we
 # IPCC methods and definitions 
 
 The end goal of IPCC greenhouse gas inventories is to quantify greenhouse gas emissions to, or withdrawals from, the atmosphere on an annual basis, most commonly on a national level [@ipcc_2006_2006;@ipcc_2019_2019]. 
-For each stratum of subdivision within a land-use category, annual stock changes ($\Delta C$; Mg C yr^-1^) are calculated as the sum of changes in various pools, including any harvested wood products.
-IPCC parses forest C pools into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table `r table_pools`).
-For each pool, $\Delta C$ may be calculated using the "Gain-Loss Method", which takes the difference between gains and losses (influx and outflux variables in Fig. `r fig_variable_mapping`)<!--IPCC eq.2.4-->, or using the "Stock-Difference Method", which computes $\Delta C$ based on C stocks at two points in time<!--IPCC eq.2.5-->[@ipcc_2006_2006]. 
+For each stratum of subdivision within a land-use category, annual stock changes ($\Delta C$; Mg C yr^-1^) are calculated as the sum of changes in various pools (section `r section_C_pools`), plus any harvested wood products.
+For each pool, $\Delta C$ may be calculated using the "Gain-Loss Method", which takes the difference between gains and losses (influx and outflux variables in Fig. `r fig_variable_mapping`)<!--IPCC eq.2.4-->, or using the "Stock-Difference Method", which computes $\Delta C$ based on C stocks at two points in time<!--IPCC eq.2.5--> [@ipcc_2006_2006]. 
 Thus, C cycle variables relevant to the IPCC methodology and to EFDB include C stocks, increments, and fluxes in the IPCC-defined pools (Fig. `r fig_variable_mapping`).
+
+
+## Carbon pools
+
+Forest ecosystem C pools may be parsed in various ways, and while certain definitions and thresholds are more common than others, there is no single standard for measuring or reporting that is adhered to by all -- or even most -- studies. 
+IPCC parses forest C pools into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table `r table_pools`).
+While there is some flexibility around the components included in each pool, each national inventory must apply these in a consistent manner. 
 
 
 ```{r table_pools, eval = TRUE, echo=FALSE, warning=FALSE}
@@ -185,14 +194,14 @@ knitr::kable(C_pools_table, format = "latex",
   row_spec(0, bold = TRUE)
 ```
 
-## Carbon pools
 
 ### Biomass
 Biomass includes living vegetation, above- and below-ground.
 
-The IPCC defines aboveground biomass as "all biomass of living vegetation, both woody and herbaceous, above the soil including stems, stumps, branches, bark, seeds, and foliage" [].
+The IPCC defines aboveground biomass as "all biomass of living vegetation, both woody and herbaceous, above the soil including stems, stumps, branches, bark, seeds, and foliage" [@ipcc_2006_2006].
 
-Belowground biomass is defined as "all biomass of live roots" [].
+
+Belowground biomass is defined as "all biomass of live roots" [@ipcc_2006_2006].
 
 ### Dead Organic Matter
 
@@ -326,7 +335,7 @@ For example, the core census protocol of the Forest Global Earth Observatory [Fo
 A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.
 *(Camille/Helene can write this paragraph easily.)*
 
-Forest ecosystem C pools may be parsed in various ways, and while certain definitions and thresholds are more common than others, there is no single standard for measuring or reporting that is adhered to by all -- or even most -- studies. 
+
 
 ## Data reporting needs
 

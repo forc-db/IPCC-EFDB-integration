@@ -288,16 +288,25 @@ annual basis, most commonly on a national level
 \citep{ipcc_2006_2006, ipcc_2019_2019}. For each stratum of subdivision
 within a land-use category, annual stock changes (\(\Delta C\); Mg C
 yr\textsuperscript{-1}) are calculated as the sum of changes in various
-pools, including any harvested wood products. IPCC parses forest C pools
-into biomass (aboveground and belowground), dead organic matter (dead
-wood and litter), and soil organic matter (Table 1). For each pool,
+pools (section 2.1), plus any harvested wood products. For each pool,
 \(\Delta C\) may be calculated using the ``Gain-Loss Method'', which
 takes the difference between gains and losses (influx and outflux
 variables in Fig. 1), or using the ``Stock-Difference Method'', which
-computes \(\Delta C\) based on C stocks at two points in
-time\citep{ipcc_2006_2006}. Thus, C cycle variables relevant to the IPCC
+computes \(\Delta C\) based on C stocks at two points in time
+\citep{ipcc_2006_2006}. Thus, C cycle variables relevant to the IPCC
 methodology and to EFDB include C stocks, increments, and fluxes in the
 IPCC-defined pools (Fig. 1).
+
+\subsection{Carbon pools}
+
+Forest ecosystem C pools may be parsed in various ways, and while
+certain definitions and thresholds are more common than others, there is
+no single standard for measuring or reporting that is adhered to by all
+-- or even most -- studies. IPCC parses forest C pools into biomass
+(aboveground and belowground), dead organic matter (dead wood and
+litter), and soil organic matter (Table 1). While there is some
+flexibility around the components included in each pool, each national
+inventory must apply these in a consistent manner.
 
 \begin{table}
 
@@ -307,7 +316,7 @@ IPCC-defined pools (Fig. 1).
 \hline
 \textbf{pool} & \textbf{definition} & \textbf{important sources of estimate variation} & \textbf{IPCC guidance}\\
 \hline
-aboveground biomass & all biomass of living vegetation, both woody and herbaceous & min dbh & acceptable to exclude understory if minor component\\
+aboveground biomass & all biomass of living vegetation & min dbh & acceptable to exclude understory if minor component\\
 \hline
  &  & biomass allometry & \\
 \hline
@@ -325,7 +334,7 @@ dead wood & all non-living woody biomass not contained in the litter, either sta
 \hline
  &  & include belowground? & \vphantom{1} yes\\
 \hline
-litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & max diameter & 10 cm default, but may be chosen by country\\
+litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & max diameter (= max diameter for deadwood) & 10 cm default, but may be chosen by country\\
 \hline
  &  & layers included & includes entire O horizon\\
 \hline
@@ -336,17 +345,16 @@ soil organic matter & organic carbon in mineral soils to a specified depth & sam
 \end{tabu}
 \end{table}
 
-\subsection{Carbon pools}
-
 \subsubsection{Biomass}
 
 Biomass includes living vegetation, above- and below-ground.
 
 The IPCC defines aboveground biomass as ``all biomass of living
 vegetation, both woody and herbaceous, above the soil including stems,
-stumps, branches, bark, seeds, and foliage'' {[}{]}.
+stumps, branches, bark, seeds, and foliage'' \citep{ipcc_2006_2006}.
 
-Belowground biomass is defined as ``all biomass of live roots'' {[}{]}.
+Belowground biomass is defined as ``all biomass of live roots''
+\citep{ipcc_2006_2006}.
 
 \subsubsection{Dead Organic Matter}
 
@@ -599,11 +607,6 @@ A universal challenge in estimating biomass (living or dead) from forest
 census data is applying appropriate allometries to convert DBH
 measurements to biomass. \emph{(Camille/Helene can write this paragraph
 easily.)}
-
-Forest ecosystem C pools may be parsed in various ways, and while
-certain definitions and thresholds are more common than others, there is
-no single standard for measuring or reporting that is adhered to by all
--- or even most -- studies.
 
 \subsection{Data reporting needs}
 

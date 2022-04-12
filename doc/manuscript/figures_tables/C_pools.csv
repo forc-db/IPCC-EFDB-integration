@@ -1,5 +1,5 @@
 ﻿pool,definition ,important sources of estimate variation ,IPCC guidance
-aboveground biomass,"all biomass of living vegetation, both woody and herbaceous",min dbh ,acceptable to exclude understory if minor component
+aboveground biomass,all biomass of living vegetation,min dbh ,acceptable to exclude understory if minor component
 ,,biomass allometry,
 ,,include dead standing?,no
 belowground biomass,all biomass of live roots ,min dbh (coarse roots),
