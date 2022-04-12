@@ -286,7 +286,7 @@ The end goal of IPCC greenhouse gas inventories is to quantify
 greenhouse gas emissions to, or withdrawals from, the atmosphere on an
 annual basis, most commonly on a national level
 \citep{ipcc_2006_2006, ipcc_2019_2019}. For each stratum of subdivision
-within a land-use category, annual stock changes (\(\Delta C\); Mg C
+within a land-use category, annual stock changes (\(\Delta C\); t C
 yr\textsuperscript{-1}) are calculated as the sum of changes in various
 pools (section 2.1), plus any harvested wood products. For each pool,
 \(\Delta C\) may be calculated using the ``Gain-Loss Method'', which
@@ -306,7 +306,9 @@ no single standard for measuring or reporting that is adhered to by all
 (aboveground and belowground), dead organic matter (dead wood and
 litter), and soil organic matter (Table 1). While there is some
 flexibility around the components included in each pool, each national
-inventory must apply these in a consistent manner.
+inventory must apply these in a consistent manner. In this section, we
+define and review the IPCC definitions in the context of typical forest
+C estimation methodologies.
 
 \begin{table}
 
@@ -318,11 +320,13 @@ inventory must apply these in a consistent manner.
 \hline
 aboveground biomass & all biomass of living vegetation & min dbh & acceptable to exclude understory if minor component\\
 \hline
- &  & biomass allometry & \\
+ &  & include non-dicot trees & ?\\
 \hline
  &  & include dead standing? & no\\
 \hline
-belowground biomass & all biomass of live roots & min dbh (coarse roots) & \\
+ &  & biomass allometry & ?\\
+\hline
+belowground biomass & all biomass of live roots & all factors relevant to aboveground biomass & see above\\
 \hline
  &  & allometry or assumed ratio of belowground to aboveground biomass (IPCC table 4.4) & \\
 \hline
@@ -347,14 +351,53 @@ soil organic matter & organic carbon in mineral soils to a specified depth & sam
 
 \subsubsection{Biomass}
 
-Biomass includes living vegetation, above- and below-ground.
+Biomass includes living vegetation, above- and below-ground, both woody
+and herbaceous, but with a focus on woody plants and trees given their
+much greater potential to sequester large amounts of C
+\citep{ipcc_2006_2006}.
 
-The IPCC defines aboveground biomass as ``all biomass of living
-vegetation, both woody and herbaceous, above the soil including stems,
-stumps, branches, bark, seeds, and foliage'' \citep{ipcc_2006_2006}.
+Aboveground biomass, which is typically \textless200 t C
+ha\textsuperscript{-1} but can exceed 700 t C ha\textsuperscript{-1}
+\citep{anderson-teixeira_carbon_2021}, is defined by the IPCC as ``all
+biomass of living vegetation above the soil including stems, stumps,
+branches, bark, seeds, and foliage'' \citep{ipcc_2006_2006}. IPCC's
+guidance is that the understory may be excluded the understory if it
+constitutes a ``minor'' component, \emph{where quantitative definitions
+of ``understory'' and ``minor'' is not provided}, but where a commonly
+applied minimum size sampling threshold for mature forests would be 10
+cm stem diameter at breast height (DBH). A recent study characterizing
+the contributions of trees in different DBH classes to ecosystem C
+stocks and fluxes found that trees 1 - 10 cm DBH contributed up to
+\textasciitilde8\% aboveground biomass, \textasciitilde17\% aboveground
+woody net primary productivity (\(ANPP_{woody.stem}\)), and
+\textasciitilde20\% woody mortality (\(M_{woody}\)) of mature
+closed-canopy forests worldwide \citep{piponiot_distribution_2022}. In
+regrowth forests, woodlands, or savannas, small trees and shrubs
+contribute a much larger proportion of C stocks and fluxes
+\citep{piponiot_distribution_2022, refs}, and, correspondingly, biomass
+estimates for these ecosystems tend include smaller size classes
+\citep[e.g.,][]{refs}. Beyond the minimum DBH sampled, forest censuses
+and biomass estimates also differ in their inclusion of life forms other
+than dicot trees -- including lianas, ferns, palms, and bamboo -- which
+in some places can reach large sizes and/or constitute a large fraction
+of forest C. \emph{{[}IPCC guidance{]}} Further, it is important to note
+that this excludes standing dead wood, which is included in remote
+sensing biomass estimates \citep{duncanson_aboveground_2021}.
 
 Belowground biomass is defined as ``all biomass of live roots''
-\citep{ipcc_2006_2006}.
+\citep{ipcc_2006_2006}, a definition including both coarse roots, whose
+biomass is typically estimated based on stem censuses and allometries or
+belowground to aboveground biomass ratios, and fine roots, whose biomass
+is typically estimated via extraction of roots from soil samples. The
+former, which is typically \textless40 t C ha\textsuperscript{-1}
+\citep{anderson-teixeira_carbon_2021}, is methodologically linked to
+aboveground biomass estimates, sharing the same methodological sources
+of variation, but tending to be far more uncertain. Fine root biomass
+generally constitutes a much smaller C pool \citep[typically \textless5
+t C ha\textsuperscript{-1},][]{anderson-teixeira_carbon_2021}, and IPCC
+guidance is that it can be excluded when fine roots cannot be
+distinguished empirically from soil organic matter or litter
+\citep{ipcc_2006_2006}, which can be a painstaking process.
 
 \subsubsection{Dead Organic Matter}
 

@@ -1,8 +1,9 @@
 ﻿pool,definition ,important sources of estimate variation ,IPCC guidance
 aboveground biomass,all biomass of living vegetation,min dbh ,acceptable to exclude understory if minor component
-,,biomass allometry,
+,,include non-dicot trees ,?
 ,,include dead standing?,no
-belowground biomass,all biomass of live roots ,min dbh (coarse roots),
+,,biomass allometry,?
+belowground biomass,all biomass of live roots ,all factors relevant to aboveground biomass,see above
 ,,allometry or assumed ratio of belowground to aboveground biomass (IPCC table 4.4) ,
 ,,min root diameter,fine roots may be excluded when they cannot be distinguished empirically from soil organic matter or litter
 ,,sampling depth,
