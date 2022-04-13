@@ -19,9 +19,10 @@ list_files_sent <- list.files("data/4-transferred-to-EFDB/", pattern = ".txt", f
 # Create the table with all we need ####
 summary_table <- NULL
 
-for(x in list_files_sent) {
-  dates_sent_yyyymmdd = regmatches(x, regexpr("\\d{8}", x))
-  x <- readLines(x)
+for(f in list_files_sent) {
+  dates_sent_yyyymmdd = regmatches(f, regexpr("\\d{8}", f))
+  x <- readLines(f)
+  x <- x[file.exists(paste0("data/2-approved/processed/", x, ".csv"))] # remove the ones that were canceled
   
   # load each data.frame we sent
   data_sent <- lapply(x, function(y) read.csv(paste0("data/2-approved/processed/", y, ".csv")))
