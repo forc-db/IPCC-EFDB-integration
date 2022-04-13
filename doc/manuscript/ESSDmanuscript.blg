@@ -3,49 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ESSDmanuscript.aux
 The style file: copernicus.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for "ipcc_summary_2022"
+Warning--I didn't find a database entry for "cuni-sanchez_high_202"
 Warning--I didn't find a database entry for "refs"
 Warning--empty booktitle in ipcc_2019_2019
-Warning--empty journal in ipcc_summary_2022
+Warning--missing institution in ipcc_climate_2019
+Warning--empty journal in ipcc_climate_2022
 Warning--empty journal in ogle_delineating_2018
-You've used 24 entries,
+You've used 27 entries,
             2819 wiz_defined-function locations,
-            1147 strings with 28863 characters,
-and the built_in function-call counts, 60127 in all, are:
-= -- 4284
-> -- 6683
-< -- 11
-+ -- 2326
-- -- 2207
-* -- 5322
-:= -- 8101
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 780
-chr.to.int$ -- 24
-cite$ -- 75
-duplicate$ -- 3477
-empty$ -- 1863
-format.name$ -- 2271
-if$ -- 11468
-int.to.chr$ -- 1
+            1164 strings with 30577 characters,
+and the built_in function-call counts, 63343 in all, are:
+= -- 4500
+> -- 6996
+< -- 12
++ -- 2436
+- -- 2309
+* -- 5611
+:= -- 8548
+add.period$ -- 27
+call.type$ -- 27
+change.case$ -- 821
+chr.to.int$ -- 26
+cite$ -- 85
+duplicate$ -- 3682
+empty$ -- 2001
+format.name$ -- 2380
+if$ -- 12079
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 902
-newline$ -- 81
-num.names$ -- 98
-pop$ -- 2809
+missing$ -- 956
+newline$ -- 90
+num.names$ -- 110
+pop$ -- 2961
 preamble$ -- 1
-purify$ -- 780
+purify$ -- 820
 quote$ -- 0
-skip$ -- 1919
+skip$ -- 2008
 stack$ -- 0
-substring$ -- 862
-swap$ -- 3106
+substring$ -- 895
+swap$ -- 3259
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 213
-warning$ -- 3
-while$ -- 122
+type$ -- 240
+warning$ -- 4
+while$ -- 133
 width$ -- 0
-write$ -- 285
-(There were 4 warnings)
+write$ -- 319
+(There were 7 warnings)

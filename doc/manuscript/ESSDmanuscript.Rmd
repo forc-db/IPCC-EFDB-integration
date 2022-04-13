@@ -131,12 +131,12 @@ n_records_posted_EFDB = NA # n records accepted and posted in EFDB
 Forests are critical to management of atmospheric concentrations of the greenhouse gas carbon dioxide (CO~2~), and thereby climate change. 
 In recent decades, CO~2~ uptake by forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 Gt C yr^-1^ [all biomes with trees, @xu_changes_2021] to ~`r round(5.8*12/44,1)` Gt C yr^-1^<!--net forest estimate in Harris et al. Table 2--> [forests only, @harris_global_2021].
 This has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> to `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021], dramatically slowing the pace of atmospheric CO~2~ accumulation and climate change.
-Going into the future, the fate of this important CO~2~ sink is highly uncertain, depending both upon forest responses to climate change, which are likely to reduce the sink strength [@refs], and on human conservation, restoration, and management of forests [@refs].
+Going into the future, the fate of this important CO~2~ sink is highly uncertain, depending both upon forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020;@hammond_global_2022], and on human conservation, restoration, and management of forests [@ipcc_climate_2019;@ipcc_climate_2022].
 
 Reflecting their strong influence on Earth's climate, forests play a central role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
 Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options, with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
 As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].
-Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022]<!--could be good to add some more references here-->.
+Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022].
 One critical need for ensuring that forest-based climate change mitigation initiatives are effective is realistic planning and reporting, underlain by solid scientific data [@anderson-teixeira_effective_2022; @deng_comparing_2021].
 
 The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change [UNFCCC, @ipcc_2006_2006;@ipcc_2019_2019].
@@ -146,7 +146,7 @@ This guidance has improved over the years as more of the relevant underlying dat
 For example, the year following the release of the latest IPCC guidelines, @cook-patton_mapping_2020 found that the latest default rates may underestimate rates of C accumulation in regrowth forests by 32% on average and fail to capture eight-fold variation within ecozones. 
 In addition, @cuni-sanchez_high_2021 found that aboveground C stocks in mature African tropical montane forests were two-thirds higher than the IPCC default values for these forests.
 This rapid evolution of scientific information on the climate mitigation potential of forests is beneficial to climate mitigation efforts, but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
-Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @refs] implies that it is useful for practitioners to have access to locally-specific information, when available.
+Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @cuni-sanchez_high_202] implies that it is useful for practitioners to have access to locally-specific information, when available.
 
 To improve the data accessible for C accounting, the IPCC created the Emission Factor Database (EFDB; [https://www.ipcc-nggip.iges.or.jp/EFDB/main.php](https://www.ipcc-nggip.iges.or.jp/EFDB/main.php)), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 The EFDB can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
@@ -240,6 +240,8 @@ IPCC defines land-use categories to include six categories -- Forest Land, Grass
 Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
 Definitions of forest are allowed to vary by country, but must be applied consistently.
 
+Managed land...
+
 # Mapping ForC to EFDB
 ForC data is incredibly valuable to EFDB and there is data which is included in the ForC database that does not meet EFDB standards. There were two main EFDB guidelines which limits the amount of data we could transfer. EFDB will not accept data which has been digitized(from graph) and ForC does. 
 
@@ -329,7 +331,7 @@ knitr::kable(C_variables_table, format = "latex",
 
 ## Data transfers to EFDB
 
-As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed and sent `r n_records_sent_to_EFDB`, `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Fig. `r fig_map`-`r fig_dominant_veg`, `Table r table_variables`).
+As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed and sent `r n_records_sent_to_EFDB`, `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Fig. `r fig_map`-`r fig_dominant_veg`, Table `r table_variables`).
 *[DETAILS]*
 
 # Recommendations
