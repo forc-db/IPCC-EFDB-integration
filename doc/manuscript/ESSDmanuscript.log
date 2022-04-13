@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 APR 2022 07:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  13 APR 2022 08:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3225,7 +3225,7 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (25 pages, 497660 bytes).
+Output written on ESSDmanuscript.pdf (25 pages, 497630 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  376 compressed objects within 4 object streams
