@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -80,6 +80,32 @@ Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
   H.~C., and Anderson-Teixeira, K.~J.: Global Patterns of Forest Autotrophic
   Carbon Fluxes, Global Change Biology, 27, 2840--2855,
   \doi{10.1111/gcb.15574}, 2021.
+
+\bibitem[{Chave et~al.(2014)Chave, {R{\'e}jou-M{\'e}chain}, B{\'u}rquez,
+  Chidumayo, Colgan, Delitti, Duque, Eid, Fearnside, Goodman, Henry,
+  {Mart{\'i}nez-Yr{\'i}zar}, Mugasha, {Muller-Landau}, Mencuccini, Nelson,
+  Ngomanda, Nogueira, {Ortiz-Malavassi}, P{\'e}lissier, Ploton, Ryan,
+  Saldarriaga, and Vieilledent}]{chave_improved_2014}
+Chave, J., {R{\'e}jou-M{\'e}chain}, M., B{\'u}rquez, A., Chidumayo, E., Colgan,
+  M.~S., Delitti, W.~B., Duque, A., Eid, T., Fearnside, P.~M., Goodman, R.~C.,
+  Henry, M., {Mart{\'i}nez-Yr{\'i}zar}, A., Mugasha, W.~A., {Muller-Landau},
+  H.~C., Mencuccini, M., Nelson, B.~W., Ngomanda, A., Nogueira, E.~M.,
+  {Ortiz-Malavassi}, E., P{\'e}lissier, R., Ploton, P., Ryan, C.~M.,
+  Saldarriaga, J.~G., and Vieilledent, G.: Improved Allometric Models to
+  Estimate the Aboveground Biomass of Tropical Trees, Global Change Biology,
+  20, 3177--3190, \doi{10.1111/gcb.12629}, 2014.
+
+\bibitem[{Clark et~al.(2001)Clark, Brown, Kicklighter, Chambers, Thomlinson,
+  Ni, and Holland}]{clark_net_2001}
+Clark, D., Brown, S., Kicklighter, D., Chambers, J., Thomlinson, J., Ni, J.,
+  and Holland, E.: Net Primary Production in Tropical Forests: An Evaluation
+  and Synthesis of Existing Field Data, Ecological Applications, 11, 371--384,
+  2001.
+
+\bibitem[{Clark and Clark(2000)}]{clark_landscapescale_2000}
+Clark, D.~B. and Clark, D.~A.: Landscape-Scale Variation in Forest Structure
+  and Biomass in a Tropical Rain Forest, Forest Ecology and Management, 137,
+  185--198, \doi{10.1016/S0378-1127(99)00327-8}, 2000.
 
 \bibitem[{{Cook-Patton} et~al.(2020){Cook-Patton}, Leavitt, Gibbs, Harris,
   Lister, {Anderson-Teixeira}, Briggs, Chazdon, Crowther, Ellis, Griscom,
@@ -232,6 +258,20 @@ Fer, I., Gardella, A.~K., Shiklomanov, A.~N., Campbell, E.~E., Cowdery, E.~M.,
   Ecological Data-Model Integration, Global Change Biology, 27, 13--26,
   \doi{10.1111/gcb.15409}, 2021.
 
+\bibitem[{{Gonzalez-Akre} et~al.(2022){Gonzalez-Akre}, Piponiot, Lepore,
+  Herrmann, Lutz, Baltzer, Dick, Gilbert, He, Heym, Huerta, Jansen, Johnson,
+  Knapp, Kr{\'a}l, Lin, Malhi, McMahon, Myers, Orwig,
+  {Rodr{\'i}guez-Hern{\'a}ndez}, Russo, Shue, Wang, Wolf, Yang, Davies, and
+  {Anderson-Teixeira}}]{gonzalez-akre_allodb_2022}
+{Gonzalez-Akre}, E., Piponiot, C., Lepore, M., Herrmann, V., Lutz, J.~A.,
+  Baltzer, J.~L., Dick, C.~W., Gilbert, G.~S., He, F., Heym, M., Huerta, A.~I.,
+  Jansen, P.~A., Johnson, D.~J., Knapp, N., Kr{\'a}l, K., Lin, D., Malhi, Y.,
+  McMahon, S.~M., Myers, J.~A., Orwig, D., {Rodr{\'i}guez-Hern{\'a}ndez},
+  D.~I., Russo, S.~E., Shue, J., Wang, X., Wolf, A., Yang, T., Davies, S.~J.,
+  and {Anderson-Teixeira}, K.~J.: Allodb: {{An R}} Package for Biomass
+  Estimation at Globally Distributed Extratropical Forest Plots, Methods in
+  Ecology and Evolution, 13, 330--338, \doi{10.1111/2041-210X.13756}, 2022.
+
 \bibitem[{Grassi et~al.(2017)Grassi, House, Dentener, Federici, {den~Elzen},
   and Penman}]{grassi_key_2017}
 Grassi, G., House, J., Dentener, F., Federici, S., {den~Elzen}, M., and Penman,
@@ -337,6 +377,13 @@ Piponiot, C., {Anderson-Teixeira}, K.~J., Davies, S.~J., Allen, D., Bourg,
   Zuleta, D., and {Muller-Landau}, H.~C.: Distribution of Biomass Dynamics in
   Relation to Tree Size in Forests across the World, New Phytologist, n/a,
   \doi{10.1111/nph.17995}, 2022.
+
+\bibitem[{R{\'e}jou-M{\'e}chain et~al.(2017)R{\'e}jou-M{\'e}chain, Tanguy,
+  Piponiot, Chave, and H{\'e}rault}]{rejou-mechain_biomass_2017}
+R{\'e}jou-M{\'e}chain, M., Tanguy, A., Piponiot, C., Chave, J., and
+  H{\'e}rault, B.: Biomass: An r Package for Estimating above-Ground Biomass
+  and Its Uncertainty in Tropical Forests, Methods in Ecology and Evolution, 8,
+  1163--1167, \doi{10.1111/2041-210X.12753}, 2017.
 
 \bibitem[{Requena~Suarez et~al.(2019)Requena~Suarez, Rozendaal, Sy, Phillips,
   Alvarez-D{\'a}vila, Anderson-Teixeira, Araujo-Murakami, Arroyo, Baker,

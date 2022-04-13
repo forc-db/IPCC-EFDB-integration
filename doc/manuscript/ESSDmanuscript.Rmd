@@ -205,8 +205,13 @@ IPCC's guidance is that the understory may be excluded the understory if it cons
 A recent study characterizing the contributions of trees in different DBH classes to ecosystem C stocks and fluxes found that trees 1 - 10 cm DBH contributed up to ~8% aboveground biomass, ~17% aboveground woody net primary productivity ($ANPP_{woody.stem}$), and ~20% woody mortality ($M_{woody}$) of mature closed-canopy forests worldwide [@piponiot_distribution_2022].
 In regrowth forests, woodlands, or savannas, small trees and shrubs contribute a much larger proportion of C stocks and fluxes [@piponiot_distribution_2022; @refs], and, correspondingly, biomass estimates for these ecosystems tend include smaller size classes [e.g., @refs]. 
 Beyond the minimum DBH sampled, forest censuses and biomass estimates also differ in their inclusion of life forms other than dicot trees -- including lianas, ferns, palms, and bamboo -- which in some places can reach large sizes and/or constitute a large fraction of forest C.
-*[IPCC guidance]*
+*[explain IPCC guidance]*
 Further, it is important to note that this excludes standing dead wood, which is included in remote sensing biomass estimates [@duncanson_aboveground_2021].
+
+A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.
+Selection of allometries has an enormous influence on estimates of biomass stocks, increments, of fluxes [@clark_landscapescale_2000;@clark_net_2001].
+While trusted and standardized allometric equations are becoming increasingly available [@chave_improved_2014;@rejou-mechain_biomass_2017;@gonzalez-akre_allodb_2022], large uncertainties remain.
+*[explain IPCC guidance]*
 
 Belowground biomass is defined as "all biomass of live roots" [@ipcc_2006_2006], a definition including both coarse roots, whose biomass is typically estimated based on stem censuses and allometries or belowground to aboveground biomass ratios, and fine roots, whose biomass is typically estimated via extraction of roots from soil samples.
 The former, which is typically <40 t C ha^-1^ [@anderson-teixeira_carbon_2021], is methodologically linked to aboveground biomass estimates, sharing the same methodological sources of variation, but tending to be far more uncertain.
@@ -349,8 +354,7 @@ We recommend that researchers calculate and report these, following the reportin
 Furthermore, there is an opportunity to fill data gaps by calculating these from existing census data.
 For example, the core census protocol of the Forest Global Earth Observatory [ForestGEO; @anderson-teixeira_ctfsforestgeo_2015,@davies_forestgeo_2021] collects the data required to calculate standing dead wood, woody mortality, and delta.agb, but these have not been calculated and reported for all sites for which the appropriate number of censuses are available <!--"(n=1 for standing dead wood, n=2 for woody mortality and delta.agb)" -- previous text commented out because I think it's out of date-->[but see @piponiot_distribution_2022, @refs<!--insert other refs including these variables-->].
 
-A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometries to convert DBH measurements to biomass.
-*(Camille/Helene can write this paragraph easily.)*
+
 
 
 
