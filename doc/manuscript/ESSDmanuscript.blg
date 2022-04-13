@@ -9,46 +9,47 @@ Warning--I didn't find a database entry for "refs"
 Warning--empty booktitle in ipcc_2019_2019
 Warning--missing institution in ipcc_climate_2019
 Warning--empty journal in ipcc_climate_2022
+Warning--empty chapter and pages in merganicova_dadwood_2012
 Warning--empty journal in ogle_delineating_2018
-You've used 32 entries,
+You've used 35 entries,
             2819 wiz_defined-function locations,
-            1196 strings with 32833 characters,
-and the built_in function-call counts, 71963 in all, are:
-= -- 5361
-> -- 7605
+            1216 strings with 33731 characters,
+and the built_in function-call counts, 75651 in all, are:
+= -- 5706
+> -- 7857
 < -- 13
-+ -- 2673
-- -- 2507
-* -- 6238
-:= -- 9503
-add.period$ -- 32
-call.type$ -- 32
-change.case$ -- 897
-chr.to.int$ -- 31
-cite$ -- 100
-duplicate$ -- 4393
-empty$ -- 2329
-format.name$ -- 2595
-if$ -- 13756
++ -- 2769
+- -- 2588
+* -- 6517
+:= -- 9926
+add.period$ -- 35
+call.type$ -- 35
+change.case$ -- 930
+chr.to.int$ -- 34
+cite$ -- 110
+duplicate$ -- 4697
+empty$ -- 2499
+format.name$ -- 2685
+if$ -- 14476
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1057
-newline$ -- 105
-num.names$ -- 130
-pop$ -- 3341
+missing$ -- 1104
+newline$ -- 114
+num.names$ -- 142
+pop$ -- 3533
 preamble$ -- 1
-purify$ -- 896
+purify$ -- 929
 quote$ -- 0
-skip$ -- 2437
+skip$ -- 2585
 stack$ -- 0
-substring$ -- 1179
-swap$ -- 3915
+substring$ -- 1286
+swap$ -- 4170
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 285
-warning$ -- 4
-while$ -- 163
+type$ -- 309
+warning$ -- 5
+while$ -- 178
 width$ -- 0
-write$ -- 378
-(There were 7 warnings)
+write$ -- 411
+(There were 8 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -80,6 +80,13 @@ Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
   H.~C., and Anderson-Teixeira, K.~J.: Global Patterns of Forest Autotrophic
   Carbon Fluxes, Global Change Biology, 27, 2840--2855,
   \doi{10.1111/gcb.15574}, 2021.
+
+\bibitem[{Carmona et~al.(2002)Carmona, Armesto, Aravena, and
+  P{\'e}rez}]{carmona_coarse_2002}
+Carmona, M.~R., Armesto, J.~J., Aravena, J.~C., and P{\'e}rez, C.~A.: Coarse
+  Woody Debris Biomass in Successional and Primary Temperate Forests in
+  {{Chilo\'e Island}}, {{Chile}}, Forest Ecology and Management, 164, 265--275,
+  \doi{10.1016/S0378-1127(01)00602-8}, 2002.
 
 \bibitem[{Chave et~al.(2014)Chave, {R{\'e}jou-M{\'e}chain}, B{\'u}rquez,
   Chidumayo, Colgan, Delitti, Duque, Eid, Fearnside, Goodman, Henry,
@@ -350,10 +357,25 @@ McDowell, N.~G., Allen, C.~D., {Anderson-Teixeira}, K., Aukema, B.~H.,
   Forest Dynamics in a Changing World, Science, 368,
   \doi{10.1126/science.aaz9463}, 2020.
 
+\bibitem[{Mergani{\v c}ov{\'a} et~al.(2012)Mergani{\v c}ov{\'a}, Mergani{\v c},
+  Svoboda, Ba{\v c}e, and {\v S}ebe{\v n}}]{merganicova_dadwood_2012}
+Mergani{\v c}ov{\'a}, K., Mergani{\v c}, J., Svoboda, M., Ba{\v c}e, R., and
+  {\v S}ebe{\v n}, V.: Dadwood in Forest Ecosystems, {BoD \textendash{} Books
+  on Demand}, 2012.
+
 \bibitem[{Ogle(2018)}]{ogle_delineating_2018}
 Ogle, S.~M.: Delineating Managed Land for Reporting National Greenhouse Gas
   Emissions and Removals to the {{United Nations}} Framework Convention on
   Climate Change, p.~13, 2018.
+
+\bibitem[{Pan et~al.(2011)Pan, Birdsey, Fang, Houghton, Kauppi, Kurz, Phillips,
+  Shvidenko, Lewis, Canadell, Ciais, Jackson, Pacala, McGuire, Piao,
+  Rautiainen, Sitch, and Hayes}]{pan_large_2011}
+Pan, Y., Birdsey, R., Fang, J., Houghton, R., Kauppi, P., Kurz, W., Phillips,
+  O., Shvidenko, A., Lewis, S., Canadell, J., Ciais, P., Jackson, R., Pacala,
+  S., McGuire, A., Piao, S., Rautiainen, A., Sitch, S., and Hayes, D.: A
+  {{Large}} and {{Persistent Carbon Sink}} in the {{World}}'s {{Forests}},
+  Science, 333, 988--993, 2011.
 
 \bibitem[{Piponiot et~al.(2022)Piponiot, {Anderson-Teixeira}, Davies, Allen,
   Bourg, Burslem, C{\'a}rdenas, {Chang-Yang}, Chuyong, Cordell, Dattaraja,

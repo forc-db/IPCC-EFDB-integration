@@ -319,7 +319,7 @@ C estimation methodologies.
 \hline
 \textbf{pool} & \textbf{definition} & \textbf{important sources of estimate variation} & \textbf{IPCC guidance}\\
 \hline
-aboveground biomass & all biomass of living vegetation & min dbh & acceptable to exclude understory if minor component\\
+aboveground biomass & all biomass of living vegetation & min dbh & may exclude understory if minor component\\
 \hline
  &  & include non-dicot trees? & ?\\
 \hline
@@ -331,7 +331,7 @@ belowground biomass & all biomass of live roots & all factors relevant to aboveg
 \hline
  &  & allometry or assumed ratio of below- to above-ground biomass (R) & can estimate based on R\\
 \hline
- &  & min root diameter & fine roots may be excluded\\
+ &  & min root diameter & may exclude fine roots\\
 \hline
  &  & sampling depth & ?\\
 \hline
@@ -345,7 +345,7 @@ litter & all non-living biomass with a size greater than the limit for soil orga
 \hline
  &  & include belowground? & yes\\
 \hline
-soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & depth = 30 cm default, but may be chosen by country\\
+soil organic matter & organic carbon in mineral soils to a specified depth & sampling depth & 30 cm default, but may be chosen by country\\
 \hline
 \end{tabu}
 \end{table}
@@ -416,9 +416,30 @@ zone, continent, and forest age \citep{ipcc_2006_2006, ipcc_2019_2019}.
 \subsubsection{Dead Organic Matter}
 
 Dead organic matter includes all non-living biomass that is not within
-the mineral soil layer and smaller than the litter size threshold.
+the mineral soil layer and smaller than the litter size threshold. It's
+inclusion in inventories is not required under Tier 1 methodology for
+Forest Land remaining Forest Land (see section 2.2), but is required for
+land that has transitioned to or from forest within the past 20 years
+\citep{ipcc_2006_2006}.
 
-Dead wood is defined as\ldots{}
+Dead wood, which is typically \textless50 t C ha\textsuperscript{-1} but
+can exceed 150 t C ha\textsuperscript{-1}
+\citep{anderson-teixeira_carbon_2021}, is defined by IPCC as ``all
+non-living woody biomass not contained in the litter, either standing,
+lying on the ground, or in the soil'' \citep{ipcc_2006_2006}. This pool
+includes standing and fallen dead wood, stumps, and dead roots of
+diameter ≥10 cm (or a diameter specified by the country). While dead
+wood stocks and fluxes can be quite variable across forests
+\citep{anderson-teixeira_carbon_2021}, and can at times be the dominant
+pool in a forest ecosystem {[}e.g., following a severe natural
+disturbance; \citet{carmona_coarse_2002}{]}, aboveground dead wood
+remains relatively poorly characterized at a global scale
+\citep{anderson-teixeira_carbon_2021}, and belowground dead wood is
+rarely studied \citep{merganicova_dadwood_2012}. In turn, they are
+poorly characterized in large-scale forest C budgets
+\citep{pan_large_2011, harris_global_2021}, and IPCC's latest Tier 1
+default values are based on just 1-31 references per climate zone
+\citep[Table 2.2 in][]{ipcc_2019_2019}.
 
 Litter is defined as including " all non-living biomass with a diameter
 less than a minimum diameter chosen by the country (for example 10 cm),
@@ -428,9 +449,8 @@ layers. Live fine roots (of less than the suggested diameter limit for
 belowground biomass) are included in litter where they cannot be
 distinguished from it empirically." (2003 IPCc GPG for LULUCF
 (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
-
-Not required for forest land remaining forest land under Tier 1
-methodology \citep{ipcc_2006_2006}.
+IPCC's latest Tier 1 default values are based on just 1-7 references per
+climate zone \citep[Table 2.2 in][]{ipcc_2019_2019}.
 
 \subsubsection{Soil Organic Matter}
 
@@ -671,6 +691,10 @@ collects the data required to calculate standing dead wood, woody
 mortality, and delta.agb, but these have not been calculated and
 reported for all sites for which the appropriate number of censuses are
 available \citep[but see][\citet{refs}]{piponiot_distribution_2022}.
+
+Given widespread trends of increasing tree mortality\citep{refs},
+including through severe natural disturbance \citep{refs}, better
+characterization of dead wood will be critical.
 
 \subsection{Data reporting needs}
 

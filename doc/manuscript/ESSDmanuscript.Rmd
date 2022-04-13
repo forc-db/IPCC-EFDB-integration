@@ -114,6 +114,7 @@ fig_dominant_veg=3
 
 #Cited sections (listed here because these can change)
 section_C_pools = 2.1 
+section_land_use_categories = 2.2
 
 #Statistics
 n_records_ForC= NA # total n records in ForC
@@ -221,13 +222,18 @@ IPCC's default method for Tier 1 estimates is to apply a ratio of belowground to
 
 ### Dead Organic Matter
 
-Dead organic matter includes all non-living biomass that is not within the mineral soil layer and smaller than the litter size threshold.
+Dead organic matter includes all non-living biomass that is not within the mineral soil layer and smaller than the litter size threshold. 
+It's inclusion in inventories is not required under Tier 1 methodology for Forest Land remaining Forest Land (see section `r section_land_use_categories`), but is required for land that has transitioned to or from forest within the past 20 years [@ipcc_2006_2006].
 
-Dead wood is defined as...
+Dead wood, which is typically <50 t C ha^-1^ but can exceed 150 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCC as "all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil" [@ipcc_2006_2006]. 
+This pool includes standing and fallen dead wood, stumps, and dead roots of diameter ≥10 cm (or a diameter specified by the country).
+While dead wood stocks and fluxes can be quite variable across forests [@anderson-teixeira_carbon_2021], and can at times be the dominant pool in a forest ecosystem [e.g., following a severe natural disturbance; @carmona_coarse_2002], aboveground dead wood remains relatively poorly characterized at a global scale [@anderson-teixeira_carbon_2021], and belowground dead wood is rarely studied [@merganicova_dadwood_2012].
+In turn, they are poorly characterized in large-scale forest C budgets [@pan_large_2011;@harris_global_2021], and IPCC's latest Tier 1 default values are based on just 1-31 references per climate zone [Table 2.2 in @ipcc_2019_2019].<!--table 2.2-->
+
 
 Litter is defined as including " all  non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil. This includes litter (OL),  fumic (OF),  and  humic (OH) layers.  Live  fine  roots  (of  less  than  the  suggested  diameter  limit for  belowground  biomass) are included in litter where they cannot be distinguished from it empirically." (2003 IPCc GPG for LULUCF (https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf_files/Glossary_Acronyms_BasicInfo/Glossary.pdf)
+IPCC's latest Tier 1 default values are based on just 1-7 references per climate zone [Table 2.2 in @ipcc_2019_2019].<!--table 2.2-->
 
-Not required for forest land remaining forest land under Tier 1 methodology [@ipcc_2006_2006].
 
 ### Soil Organic Matter
 
@@ -347,7 +353,7 @@ As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had r
 
 *(Paragraph highlighting important gaps in variables / regions)*
 
-<!--dead wood and litter comparisons will be particularly interesting, as IPCC values are based on just a handful of references for each climate zone (table 2.2 in 2019 guidelines)-->
+
 
 Several variables of value to IPCC, including standing dead wood, woody mortality, delta.agb, are not calculated and presented as frequently as are AGB and ANPP_woody, even though they can readily be derived from the same census data. 
 We recommend that researchers calculate and report these, following the reporting guidelines specified below.
@@ -355,7 +361,7 @@ Furthermore, there is an opportunity to fill data gaps by calculating these from
 For example, the core census protocol of the Forest Global Earth Observatory [ForestGEO; @anderson-teixeira_ctfsforestgeo_2015,@davies_forestgeo_2021] collects the data required to calculate standing dead wood, woody mortality, and delta.agb, but these have not been calculated and reported for all sites for which the appropriate number of censuses are available <!--"(n=1 for standing dead wood, n=2 for woody mortality and delta.agb)" -- previous text commented out because I think it's out of date-->[but see @piponiot_distribution_2022, @refs<!--insert other refs including these variables-->].
 
 
-
+Given widespread trends of increasing tree mortality[@refs], including through severe natural disturbance [@refs], better characterization of dead wood will be critical.
 
 
 ## Data reporting needs
