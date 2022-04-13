@@ -48,6 +48,9 @@ generate_subfields <- function(field, x = ForC_simplified, y = V_mapping_subfiel
 # subset records KEEP RECORDS WE WANT TO SEND OVER ####
 
 ## only keep records we have not already processed ####
+
+ForC_simplified_already_sent <- ForC_simplified[ForC_simplified$measurement.ID %in% trace_of_measurement_IDs$measurement.ID, ] # keep a record of what we sent for the histogram later
+
 ForC_simplified <- ForC_simplified[!ForC_simplified$measurement.ID %in% trace_of_measurement_IDs$measurement.ID, ]
 
 
@@ -69,6 +72,26 @@ ForC_simplified$variable.name <-  MEASUREMENTS$variable.name[m_meas]
 
 
 ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$variable.name[V_mapping$provide.to.IPCC %in% 1], ]
+
+# ---- right, here, make the histogram for the paper ---- #
+## see this issue:https://github.com/forc-db/IPCC-EFDB-integration/issues/34
+## grey is number of records in ForC that are relevant to EFDB (n records for the variables we send)
+## black is what is already transferred to EFDB
+## x axis is dominant vegetation type
+png("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 4, units = "in", res = 300)
+
+ForBarplot <- data.frame(data_type = rep(c("relevant", "transferred"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg))
+ForBarplot <- table(ForBarplot$data_type, ForBarplot$dominant.veg)
+
+ForBarplot <- ForBarplot[, order(colSums(ForBarplot), decreasing = T)]
+
+b <- barplot(ForBarplot, col = c("grey", "black"), xaxt = "n", legend.text = T, args.legend = list(x = "topright", bty = "n"), ylab = "Number of records",, las = 1)
+text(x= b, y = -500, labels = colnames(ForBarplot), srt = 90, xpd = NA, adj= 1)
+mtext("Dominant vegetation", side = 1, line = 3.5)
+
+dev.off()
+
+# ---- END OF FIGURE FOR PAPER ----#
 
 # consider stand.age as numeric ####
 ForC_simplified$stand.age <- as.numeric(ForC_simplified$stand.age)
