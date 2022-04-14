@@ -342,14 +342,22 @@ ForC contained data for **##** of the **##** variables relevant to EFDB (Table `
 ```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
 C_variables_table <- read.csv("figures_tables/C_variables.csv")
 names(C_variables_table) <- stringr::str_replace_all(names(C_variables_table), "\\.", " ")
+C_variables_table[is.na(C_variables_table)]<- "" #replace NAs with blanks
 
 library(knitr)
 library(kableExtra)
 knitr::kable(C_variables_table, format = "latex",
-             longtable = FALSE,
+             longtable = TRUE,
              caption = "\\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.} Relationships of variables to IPCC-defined forest C pools (Table 1) and to each other are illustrated in Figure 1. ") %>%
   kableExtra::kable_styling(full_width = TRUE) %>%
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE)  %>%
+  row_spec(1, bold = TRUE)  %>% #biomass
+  row_spec(5, bold = TRUE)  %>% #agb
+  row_spec(13, bold = TRUE) %>% #root
+  row_spec(21, bold = TRUE)  %>% #dead wood
+  row_spec(28, bold = TRUE)  %>% #litter
+  row_spec(33, bold = TRUE)  %>% #som
+  row_spec(37, bold = TRUE) #total
 ```
 
 
