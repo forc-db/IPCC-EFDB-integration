@@ -118,12 +118,14 @@ section_land_use_categories = 2.2
 
 #READING IN FILES TO GET FIGURES/ TABLES/ STATS 
 path_to_dir <- dirname(dirname(getwd())) # get path to repo 
+path_to_ForC= "/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db" #Krista's laptop
+# path_to_ForC= "/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db" #Madison, to knit, you'll need to enter the path to ForC-db on your computer, then un-comment this line.
 
 # MOVE FIGURE FILES 
-#traditional comparison
-do.call(file.remove, list(list.files("/Users/kteixeira/Dropbox (Smithsonian)/GitHub//Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db/IPCC-EFDB-integration/doc/manuscript/figures_tables", "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE))) # first remove old files
-flist <- list.files("/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db/ForC/figures/", "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE)
-file.copy(flist, "/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db/IPCC-EFDB-integration/doc/manuscript/figures_tables")
+#world map from GitHub
+do.call(file.remove, list(list.files(paste0(path_to_dir, "/doc/manuscript/figures_tables"), "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE))) # first remove old file
+flist <- list.files(paste0(path_to_ForC, "/ForC/figures/"), "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE)
+file.copy(flist, paste0(path_to_dir, "/doc/manuscript/figures_tables"))
 
 
 #Statistics
