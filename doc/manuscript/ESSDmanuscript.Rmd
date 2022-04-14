@@ -116,6 +116,16 @@ fig_dominant_veg=3
 section_C_pools = 2.1 
 section_land_use_categories = 2.2
 
+#READING IN FILES TO GET FIGURES/ TABLES/ STATS 
+path_to_dir <- dirname(dirname(getwd())) # get path to repo 
+
+# MOVE FIGURE FILES 
+#traditional comparison
+do.call(file.remove, list(list.files("/Users/kteixeira/Dropbox (Smithsonian)/GitHub//Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db/IPCC-EFDB-integration/doc/manuscript/figures_tables", "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE))) # first remove old files
+flist <- list.files("/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db/ForC/figures/", "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE)
+file.copy(flist, "/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db/IPCC-EFDB-integration/doc/manuscript/figures_tables")
+
+
 #Statistics
 n_records_ForC= NA # total n records in ForC
 n_plots_ForC = NA # total n plots in ForC
@@ -315,12 +325,12 @@ The most widely represented forest type was *[type]*, followed by *[type]* and *
 
 ```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of records relavent to (circles) and transferred to (triangles) EFDB.} PLACEHOLDER. We need to add records transferred to EFDB. We also need to limit map to variables relavent to EFDB. It would also be good to add an underlying map of FAP ecozones"}
 #this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
-knitr::include_graphics("figures_tables/PLACEHOLDER_World_Map_of_sites.png")
+knitr::include_graphics("figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png")
 ```
 
 ```{r fig_dominant_veg, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Historgram of number of records in ForC relavent to (grey) and transferred to (black) EFDB.} PLACEHOLDER. We need to add axis labels and the two classes of records. "}
 #this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
-knitr::include_graphics("figures_tables/PLACEHOLDER_Williams_Histogram_of_dominant_vegetation.png")
+knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Records.png")
 ```
 
 ForC contained data for **##** of the **##** variables relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
