@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  14 APR 2022 07:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  14 APR 2022 08:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3210,7 +3210,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 979.
 Here is how much of TeX's memory you used:
  14751 strings out of 480608
  196922 string characters out of 5903631
- 585394 words of memory out of 5000000
+ 585403 words of memory out of 5000000
  30232 multiletter control sequences out of 15000+600000
  574035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3224,7 +3224,7 @@ e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (25 pages, 557269 bytes).
+Output written on ESSDmanuscript.pdf (25 pages, 557335 bytes).
 PDF statistics:
  421 PDF objects out of 1000 (max. 8388607)
  376 compressed objects within 4 object streams
