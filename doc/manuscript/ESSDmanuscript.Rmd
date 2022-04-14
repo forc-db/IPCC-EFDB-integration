@@ -254,7 +254,7 @@ applied consistently through the time series. Live fine roots (of less than the 
 
 
 ```{r fig_variable_mapping, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change."}
-#this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
+#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/C_variable_mapping.png")
 ```
 
@@ -291,8 +291,6 @@ This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_20
 
 ## Defining new variables
 
-
-
 We added eleven increment variables to the set of named and defined variables (or 22, counting _OM and _C versions), which previously included only one (aboveground biomass increment, *delta.agb*). 
 *(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)*
 These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
@@ -301,12 +299,10 @@ Although these variables currently lack records, the structure exists such that 
 
 To provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including *litter* (OL)).
 
-## ForC restructuring
-
 
 ## Quality control measures
 Prior to releasing ForC v4.0, we executed several quality control measures.
-First, we implemented a system of continuous integration using GitHub Actions (*sensu* Kim et al. in prep) to run some automatic checks any time the master data files are updated.
+First, we implemented a system of continuous integration using GitHub Actions (*sensu* Kim et al. in review) to run some automatic checks any time the master data files are updated.
 Second, to improve information on geographic coordinates, we flagged and reviewed records with suspected low precision *(Issue #29)[https://github.com/forc-db/ForC/issues/229]*.
 Third, to identify erroneous climate data... *(Issue #212)[https://github.com/forc-db/ForC/issues/212]*.
 
@@ -315,6 +311,11 @@ Third, to identify erroneous climate data... *(Issue #212)[https://github.com/fo
 
 Because ForC v4.0 contained known duplicate records, we used R scripts to remove likely duplicates, as detailed in @anderson-teixeira_carbon_2021.
 Henceforth, we refer to the records with duplicates removed as "independent records".
+
+## Manual review of records to be sent to EFDB
+
+EFDB data submissions require information that was not recorded in previous versions of ForC.
+It was therefore necessary to return to original publications to retrieve relevant information, including ...
 
 # Results
 
@@ -325,13 +326,13 @@ These records were distributed across all forested continents and ecozones, with
 The most widely represented forest type was *[type]*, followed by *[type]* and *[type]* (Fig. `r fig_dominant_veg`).
 
 
-```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of records relavent to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: ...."}
-#this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
+```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: ...."}
+#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png")
 ```
 
 ```{r fig_dominant_veg, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} Codes are as follows: .... "}
-#this is for a two-column figure. for one-column figure, use {r, out.width = "8.3cm", echo = FALSE, fig.cap = "one column figure"}
+#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Records.png")
 ```
 
