@@ -78,7 +78,6 @@ ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$
 ## grey is number of records in ForC that are relevant to EFDB (n records for the variables we send)
 ## black is what is already transferred to EFDB
 ## x axis is dominant vegetation type
-png("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 9, units = "in", res = 300)
 
 
 ForBarplot <- data.frame(data_type = rep(c("relevant", "transferred"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg), FAO.ecozone = c(ForC_simplified$FAO.ecozone, ForC_simplified_already_sent$FAO.ecozone), continent = c(ForC_simplified$continent, ForC_simplified_already_sent$continent), stand.age = c(ForC_simplified$stand.age, ForC_simplified_already_sent$stand.age))
@@ -94,10 +93,11 @@ ForBarplot$FAO.ecozone[is.na(ForBarplot$FAO.ecozone)] <- "Unclassified"
 # ForBarplot$continent <- gsub(" ", "\n", ForBarplot$continent)
 
 labels <- list(A = list("dominant.veg", "Dominant vegetation", F),
-               B = list("FAO.ecozone", "FAO ecozone", F),
-               C = list("continent", "Continent", T),
+               B = list("FAO.ecozone", "FAO ecozone", T),
+               C = list("continent", "Continent", F),
                D = list("stand.age", "Stand age", F))
 
+png("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 9, units = "in", res = 300)
 
 par(mfrow = c(2,2), mar = c(6,3,2.5,1), oma = c(1,2,0,0))
 for(i in 1:length(labels)){
@@ -106,32 +106,37 @@ for(i in 1:length(labels)){
   leg = labels[[i]][[3]]
   
   bp <- table(ForBarplot$data_type, ForBarplot[,n])
+  
+  if(n %in% "dominant.veg") {
+    colnames(bp) <- PFT$description.individual[match(colnames(bp), PFT$pftcode)]
+    colnames(bp)[is.na(colnames(bp))] <- "NAC"
+    colnames(bp) <-  gsub("Tree, ", "", colnames(bp))
+    colnames(bp) <-  gsub("\\b(\\pL)", "\\U\\1", colnames(bp), perl = T)
+    colnames(bp) <-  gsub(", ", "\n", colnames(bp))
+    
+  }
+  
   colnames(bp) <- gsub("^NAC$", "Unclassified", colnames(bp))
   idx_Other <- which(colSums(bp) < 500 & !colnames(bp) %in% "Unclassified")
-  if(length(idx_Other)> 0) {
+  
+  if(length(idx_Other)> 0 &  !n %in% "continent") {
     bp <- cbind(bp, Other=rowSums(bp[,idx_Other]))
     bp <- bp[,-idx_Other]
   }
   
-  if(!n %in% "stand.age") bp <- bp[, order(colSums(bp), decreasing = T)]
+  idx_other_then_classified <- na.omit(match(c("Other", "Unclassified"), colnames(bp)))
   
-  b <- barplot(bp, col = c("grey", "black"), xaxt = "n", legend.text = leg, args.legend = list(x = 1, y = -3000, bty = "n", xpd = NA), las = 1)
+  if(!n %in% "stand.age" ) {
+    if(length(idx_other_then_classified)>0) bp <- bp[, c(order(colSums(bp)[-idx_other_then_classified], decreasing = T), idx_other_then_classified)] else bp <- bp[, order(colSums(bp), decreasing = T)]
+  }
+  
+  b <- barplot(bp, col = c("grey", "black"), xaxt = "n", legend.text = leg, args.legend = list(x = "topright", bty = "n"), las = 1)
   text(x= b, y = -500, labels = colnames(bp), srt = 90, xpd = NA, adj= 1)
   mtext(paste0(names(labels)[i], ") ", xlab), side = 3, adj = 0,  line = 1)
   
 }
 mtext("Number of records", side = 2, outer = T, line = 1)
 
-# DomVeg <- table(ForBarplot$data_type, ForBarplot$dominant.veg)
-# 
-# DomVeg <- cbind(DomVeg, Other=rowSums(DomVeg[,colSums(DomVeg) < 500]))
-# DomVeg <- DomVeg[,!colSums(DomVeg) < 500]
-# colnames(DomVeg) <- gsub("^NAC$", "Unclassified", colnames(DomVeg))
-# DomVeg <- DomVeg[, order(colSums(DomVeg), decreasing = T)]
-# 
-# b <- barplot(DomVeg, col = c("grey", "black"), xaxt = "n", legend.text = T, args.legend = list(x = "topright", bty = "n"), ylab = "Number of records",, las = 1)
-# text(x= b, y = -500, labels = colnames(DomVeg), srt = 90, xpd = NA, adj= 1)
-# mtext("Dominant vegetation", side = 1, line = 3.5)
 
 dev.off()
 
