@@ -3,21 +3,25 @@ Biomass,,,,
 biomass,NA,NA,NA,NA
 delta.biomass,NA,NA,NA,NA
 NPP_woody,NA,NA,NA,NA
+woody.mortality,NA,NA,NA,NA
 Aboveground biomass,,,,
 biomass_ag,NA,NA,NA,NA
 biomass_ag_woody,NA,NA,NA,NA
 biomass_ag_foliage,NA,NA,NA,NA
 delta.agb,NA,NA,NA,NA
-ANPP_woody_stem,NA,NA,NA,NA
+ANPP_woody,NA,NA,NA,NA
 ANPP_foliage,NA,NA,NA,NA
-woody_mortality,NA,NA,NA,NA
+woody.mortality_ag,NA,NA,NA,NA
 Belowground biomass,,,,
 biomass_root,NA,NA,NA,NA
 biomass_root_fine,NA,NA,NA,NA
 biomass_root_coarse,NA,NA,NA,NA
 delta.biomass_root,NA,NA,NA,NA
-BNPP_root,NA,NA,NA,NA
+delta.biomass_root_coarse,NA,NA,NA,NA
+delta.biomass_root_fine,NA,NA,NA,NA
+woody.mortality_root,NA,NA,NA,NA
 BNPP_root_fine,NA,NA,NA,NA
+BNPP_root.turnover_fine,NA,NA,NA,NA
 BNPP_root_coarse,NA,NA,NA,NA
 Dead wood,,,,
 deadwood,NA,NA,NA,NA
@@ -26,6 +30,7 @@ deadwood_down,NA,NA,NA,NA
 delta.deadwood,NA,NA,NA,NA
 delta.deadwood_standing,NA,NA,NA,NA
 delta.deadwood_down,NA,NA,NA,NA
+R_het_deadwood,0,NA,NA,NA
 Litter,,,,
 O.horizon,NA,NA,NA,NA
 delta.O.horizon,NA,NA,NA,NA
