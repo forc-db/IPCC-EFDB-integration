@@ -210,6 +210,11 @@ knitr::kable(C_pools_table, format = "latex",
 ```
 
 
+```{r fig_variable_mapping, out.width = "14cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: (a,b) branch fall and mortality of stems below census min DBH, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, and that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon."}
+#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
+knitr::include_graphics("figures_tables/C_variable_mapping.png")
+```
+
 ### Biomass
 Biomass includes living vegetation, above- and below-ground, both woody and herbaceous, but with a focus on woody plants and trees given their much greater potential to sequester large amounts of C [@ipcc_2006_2006].
 
@@ -248,23 +253,21 @@ The definition includes the entire O horizion, including litter (OL), fumic (OF)
 This definition contrasts with empirical studies that focus on aboveground litter, often including only the OL layer in the definition of litter, and do not always specify the components included.
 Similar to dead wood, litter is poorly characterized in large-scale forest C budgets [@pan_large_2011;@harris_global_2021], and IPCC's latest Tier 1 default values are based on just 1-7 references per climate zone [Table 2.2 in @ipcc_2019_2019].<!--table 2.2-->
 
-### Soil Organic Matter
+### Soil Organic Matter/ Carbon
 
-Soil organic matter is defined as "Includes organic carbon in mineral and organic soils (including peat) to a specified depth chosen by the country and
-applied consistently through the time series. Live fine roots (of less than the suggested diameter limit for belowground biomass) are included with soil organic matter where they cannot be distinguished from it empirically." [@ipcc_good_2003;@ipcc_2006_2006].
-
-
-```{r fig_variable_mapping, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: 1- often excludes branch fall, assumes that change in foliage biomass is negligible (see note 7); 2- excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- excludes belowground components;  4-excludes breakage into pieces less than dead wood threshold size; 5- may exclude woody mortality of stems <10 cm DBH and branch fall, decomposition of dead wood into sizes classified as litter; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change."}
-#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
-knitr::include_graphics("figures_tables/C_variable_mapping.png")
-```
+Soil organic matter/ carbon (SOM/ SOC), which *(statistic on how much C is typial)* [@ref], is defined by IPCC as "organic carbon in mineral and organic soils (including peat) to a specified depth chosen by the country and applied consistently through the time series" [@ipcc_good_2003;@ipcc_2006_2006]. 
+Live fine roots (suggested diameter cutoff of 2 mm) may be included with soil organic matter when it is not feasible to distinguish them empirically.
+The greatest source of methodological variation in measuring SOM/ SOC is sampling depth, which has a suggested default of 30 cm but may vary by country provided that consistent criteria are applied. 
 
 ## Land use categories
 IPCC defines land-use categories to include six categories -- Forest Land, Grassland, Wetlands, Cropland, Settlements, and Other Land [@ipcc_2006_2006].
 Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
+Forest Land
 Definitions of forest are allowed to vary by country, but must be applied consistently.
 
-Managed land...
+Inventories are conducted only for managed land, which is defined by IPCC to include "all forests subject to some kind of human interactions (notably commercial management, harvest of industrial round-wood (logs) and fuelwood, production and use of wood commodities, and forest managed for amenity value or environmental protection if specified by the country), with defined geographical boundaries" [@ipcc_good_2003.
+
+
 
 # Mapping ForC to EFDB
 ForC data is incredibly valuable to EFDB and there is data which is included in the ForC database that does not meet EFDB standards. There were two main EFDB guidelines which limits the amount of data we could transfer. EFDB will not accept data which has been digitized(from graph) and ForC does. 
@@ -273,7 +276,6 @@ ForC data is incredibly valuable to EFDB and there is data which is included in 
 ## Carbon cycle variables
 
 Mapping of variables is shown in Fig. `r fig_variable_mapping`.
-
 
 
 ## Land use categories
@@ -332,7 +334,7 @@ The most widely represented forest type was *[type]*, followed by *[type]* and *
 knitr::include_graphics("figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png")
 ```
 
-```{r fig_dominant_veg, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), "Other" includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2."}
+```{r fig_dominant_veg, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2."}
 #this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Records.png")
 ```
@@ -358,7 +360,8 @@ knitr::kable(C_variables_table, format = "latex",
   row_spec(25, bold = TRUE)  %>% #dead wood
   row_spec(33, bold = TRUE)  %>% #litter
   row_spec(40, bold = TRUE)  %>% #som
-  row_spec(44, bold = TRUE) #total
+  row_spec(44, bold = TRUE)  #total
+
 ```
 
 
