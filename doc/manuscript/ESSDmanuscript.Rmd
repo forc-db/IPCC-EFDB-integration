@@ -270,7 +270,10 @@ Inventories are conducted only for managed land, which is defined by IPCC to inc
 As such, managed land constitutes all or the majority of Forest Land in most countries; however, many countries have not yet reported their approach for defining managed land [@ogle_delineating_2018; @deng_comparing_2021].
 
 # Mapping ForC to EFDB
-ForC data is incredibly valuable to EFDB and there is data which is included in the ForC database that does not meet EFDB standards. There were two main EFDB guidelines which limits the amount of data we could transfer. EFDB will not accept data which has been digitized(from graph) and ForC does. 
+
+The majority of information required by EFDB was present in previous versions of ForC [].
+We made modest structural changes to ForC (Table ##) to allow complete records to be restructured for automated population of EFDB data entry forms using R ().
+
 
 
 ## Carbon cycle variables
@@ -318,7 +321,9 @@ Henceforth, we refer to the records with duplicates removed as "independent reco
 ## Manual review of records to be sent to EFDB
 
 EFDB data submissions require information that was not recorded in previous versions of ForC.
-It was therefore necessary to return to original publications to retrieve relevant information, including ...
+It was therefore necessary to return to original publications to retrieve relevant information, including the following:
+
+- Data location within source - Because EFDB will not accept data which has been digitized (from graphs) while ForC does, it was necessary to review and note the location of the data within the original source 
 
 # Results
 
