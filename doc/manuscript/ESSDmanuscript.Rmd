@@ -254,7 +254,7 @@ Soil organic matter is defined as "Includes organic carbon in mineral and organi
 applied consistently through the time series. Live fine roots (of less than the suggested diameter limit for belowground biomass) are included with soil organic matter where they cannot be distinguished from it empirically." [@ipcc_good_2003;@ipcc_2006_2006].
 
 
-```{r fig_variable_mapping, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change."}
+```{r fig_variable_mapping, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: 1- often excludes branch fall, assumes that change in foliage biomass is negligible (see note 7); 2- excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- excludes belowground components;  4-excludes breakage into pieces less than dead wood threshold size; 5- may exclude woody mortality of stems <10 cm DBH and branch fall, decomposition of dead wood into sizes classified as litter; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change."}
 #this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/C_variable_mapping.png")
 ```
@@ -353,12 +353,12 @@ knitr::kable(C_variables_table, format = "latex",
   kableExtra::kable_styling(full_width = TRUE) %>%
   row_spec(0, bold = TRUE)  %>%
   row_spec(1, bold = TRUE)  %>% #biomass
-  row_spec(5, bold = TRUE)  %>% #agb
-  row_spec(13, bold = TRUE) %>% #root
-  row_spec(21, bold = TRUE)  %>% #dead wood
-  row_spec(28, bold = TRUE)  %>% #litter
-  row_spec(35, bold = TRUE)  %>% #som
-  row_spec(39, bold = TRUE) #total
+  row_spec(6, bold = TRUE)  %>% #agb
+  row_spec(14, bold = TRUE) %>% #root
+  row_spec(25, bold = TRUE)  %>% #dead wood
+  row_spec(33, bold = TRUE)  %>% #litter
+  row_spec(40, bold = TRUE)  %>% #som
+  row_spec(44, bold = TRUE) #total
 ```
 
 

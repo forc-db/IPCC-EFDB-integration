@@ -475,7 +475,7 @@ distinguished from it empirically.''
 \citep{ipcc_good_2003, ipcc_2006_2006}.
 
 \begin{figure}
-\includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:fig_variable_mapping}
+\includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: 1- often excludes branch fall, assumes that change in foliage biomass is negligible (see note 7); 2- excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- excludes belowground components;  4-excludes breakage into pieces less than dead wood threshold size; 5- may exclude woody mortality of stems <10 cm DBH and branch fall, decomposition of dead wood into sizes classified as litter; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:fig_variable_mapping}
 \end{figure}
 
 \subsection{Land use categories}
@@ -613,6 +613,8 @@ delta.biomass &  &  &  & \\
 \hline
 NPP\_woody &  &  &  & \\
 \hline
+woody.mortality &  &  &  & \\
+\hline
 \textbf{Aboveground biomass} & \textbf{} & \textbf{} & \textbf{} & \textbf{}\\
 \hline
 biomass\_ag &  &  &  & \\
@@ -623,11 +625,11 @@ biomass\_ag\_foliage &  &  &  & \\
 \hline
 delta.agb &  &  &  & \\
 \hline
-ANPP\_woody\_stem &  &  &  & \\
+ANPP\_woody &  &  &  & \\
 \hline
 ANPP\_foliage &  &  &  & \\
 \hline
-woody\_mortality &  &  &  & \\
+woody.mortality\_ag &  &  &  & \\
 \hline
 \textbf{Belowground biomass} & \textbf{} & \textbf{} & \textbf{} & \textbf{}\\
 \hline
@@ -639,9 +641,15 @@ biomass\_root\_coarse &  &  &  & \\
 \hline
 delta.biomass\_root &  &  &  & \\
 \hline
-BNPP\_root &  &  &  & \\
+delta.biomass\_root\_coarse &  &  &  & \\
+\hline
+delta.biomass\_root\_fine &  &  &  & \\
+\hline
+woody.mortality\_root &  &  &  & \\
 \hline
 BNPP\_root\_fine &  &  &  & \\
+\hline
+BNPP\_root.turnover\_fine &  &  &  & \\
 \hline
 BNPP\_root\_coarse &  &  &  & \\
 \hline
@@ -658,6 +666,8 @@ delta.deadwood &  &  &  & \\
 delta.deadwood\_standing &  &  &  & \\
 \hline
 delta.deadwood\_down &  &  &  & \\
+\hline
+R\_het\_deadwood & 0 &  &  & \\
 \hline
 \textbf{Litter} & \textbf{} & \textbf{} & \textbf{} & \textbf{}\\
 \hline
