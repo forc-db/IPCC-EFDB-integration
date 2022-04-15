@@ -9,7 +9,8 @@ belowground biomass,all biomass of live roots ,all factors relevant to abovegrou
 ,,sampling depth,?
 dead wood ,"all non-living woody biomass above a specified diameter, aboveground or belowground",min diameter,"10 cm default, but may be chosen by country"
 ,,include belowground?,yes
-litter ,"all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil ",max diameter (= max diameter for deadwood),"10 cm default, but may be chosen by country"
-,,layers included,includes entire O horizon
+litter ,"all non-living biomass, within specified size limits, in various states of decomposition above or within the mineral or organic soil ",max diameter (= min diameter for deadwood),"10 cm default, but may be chosen by country"
+,,min size (= size limit for soil organic matter),?
+,,layers included,"entire O horizon: litter (OL),  fumic (OF),  and  humic (OH) layers"
 ,,include belowground? ,yes
 soil organic matter ,organic carbon in mineral soils to a specified depth ,sampling depth ,"30 cm default, but may be chosen by country"

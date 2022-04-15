@@ -242,9 +242,9 @@ requires improved mechanisms for communicating the latest information
 from scientific researchers to the practitioners who need reliable
 estimates for greenhouse gas mitigation planning. Moreover, high
 variability of forest C cycling within ecozones
-\citep[e.g.,][]{cook-patton_mapping_2020, cuni-sanchez_high_202} implies
-that it is useful for practitioners to have access to locally-specific
-information, when available.
+\citep[e.g.,][]{cook-patton_mapping_2020, cuni-sanchez_high_2021}
+implies that it is useful for practitioners to have access to
+locally-specific information, when available.
 
 To improve the data accessible for C accounting, the IPCC created the
 Emission Factor Database (EFDB;
@@ -339,9 +339,11 @@ dead wood & all non-living woody biomass above a specified diameter, aboveground
 \hline
  &  & include belowground? & \vphantom{1} yes\\
 \hline
-litter & all non-living biomass with a size greater than the limit for soil organic matter  and less than the minimum diameter chosen for dead wood, lying dead, in various states of decomposition above or within the mineral or organic soil & max diameter (= max diameter for deadwood) & 10 cm default, but may be chosen by country\\
+litter & all non-living biomass, within specified size limits, in various states of decomposition above or within the mineral or organic soil & max diameter (= min diameter for deadwood) & 10 cm default, but may be chosen by country\\
 \hline
- &  & layers included & includes entire O horizon\\
+ &  & min size (= size limit for soil organic matter) & ?\\
+\hline
+ &  & layers included & entire O horizon: litter (OL),  fumic (OF),  and  humic (OH) layers\\
 \hline
  &  & include belowground? & yes\\
 \hline
@@ -361,29 +363,30 @@ Aboveground biomass, which is typically \textless200 t C
 ha\textsuperscript{-1} but can exceed 700 t C ha\textsuperscript{-1}
 \citep{anderson-teixeira_carbon_2021}, is defined by the IPCC as ``all
 biomass of living vegetation above the soil including stems, stumps,
-branches, bark, seeds, and foliage'' \citep{ipcc_2006_2006}. IPCC's
-guidance is that the understory may be excluded the understory if it
-constitutes a ``minor'' component, \emph{where quantitative definitions
-of ``understory'' and ``minor'' are not provided}, but where a commonly
-applied minimum size sampling threshold for mature forests would be 10
-cm stem diameter at breast height (DBH). A recent study characterizing
-the contributions of trees in different DBH classes to ecosystem C
-stocks and fluxes found that trees 1 - 10 cm DBH contributed up to
-\textasciitilde8\% aboveground biomass, \textasciitilde17\% aboveground
-woody net primary productivity (\(ANPP_{woody.stem}\)), and
-\textasciitilde20\% woody mortality (\(M_{woody}\)) of mature
-closed-canopy forests worldwide \citep{piponiot_distribution_2022}. In
-regrowth forests, woodlands, or savannas, small trees and shrubs
-contribute a much larger proportion of C stocks and fluxes
-\citep{piponiot_distribution_2022, refs}, and, correspondingly, biomass
-estimates for these ecosystems tend include smaller size classes
-\citep[e.g.,][]{refs}. Beyond the minimum DBH sampled, forest censuses
-and biomass estimates also differ in their inclusion of life forms other
-than dicot trees -- including lianas, ferns, palms, and bamboo -- which
-in some places can reach large sizes and/or constitute a large fraction
-of forest C. \emph{{[}explain IPCC guidance{]}} Further, it is important
-to note that this excludes standing dead wood, which is included in
-remote sensing biomass estimates \citep{duncanson_aboveground_2021}.
+branches, bark, seeds, and foliage''
+\citep{ipcc_good_2003, ipcc_2006_2006}. IPCC's guidance is that the
+understory may be excluded the understory if it constitutes a ``minor''
+component, \emph{where quantitative definitions of ``understory'' and
+``minor'' are not provided}, but where a commonly applied minimum size
+sampling threshold for mature forests would be 10 cm stem diameter at
+breast height (DBH). A recent study characterizing the contributions of
+trees in different DBH classes to ecosystem C stocks and fluxes found
+that trees 1 - 10 cm DBH contributed up to \textasciitilde8\%
+aboveground biomass, \textasciitilde17\% aboveground woody net primary
+productivity (\(ANPP_{woody.stem}\)), and \textasciitilde20\% woody
+mortality (\(M_{woody}\)) of mature closed-canopy forests worldwide
+\citep{piponiot_distribution_2022}. In regrowth forests, woodlands, or
+savannas, small trees and shrubs contribute a much larger proportion of
+C stocks and fluxes \citep{piponiot_distribution_2022, refs}, and,
+correspondingly, biomass estimates for these ecosystems tend include
+smaller size classes \citep[e.g.,][]{refs}. Beyond the minimum DBH
+sampled, forest censuses and biomass estimates also differ in their
+inclusion of life forms other than dicot trees -- including lianas,
+ferns, palms, and bamboo -- which in some places can reach large sizes
+and/or constitute a large fraction of forest C. \emph{{[}explain IPCC
+guidance{]}} Further, it is important to note that this excludes
+standing dead wood, which is included in remote sensing biomass
+estimates \citep{duncanson_aboveground_2021}.
 
 A universal challenge in estimating biomass (living or dead) from forest
 census data is applying appropriate allometries to convert DBH
@@ -395,16 +398,17 @@ standardized allometric equations are becoming increasingly available
 large uncertainties remain. \emph{{[}explain IPCC guidance{]}}
 
 Belowground biomass is defined as ``all biomass of live roots''
-\citep{ipcc_2006_2006}, a definition including both coarse roots, whose
-biomass is typically estimated based on stem censuses and allometries or
-belowground to aboveground biomass ratios, and fine roots, whose biomass
-is typically estimated via extraction of roots from soil samples. The
-former, which is typically \textless40 t C ha\textsuperscript{-1}
-\citep{anderson-teixeira_carbon_2021}, is methodologically linked to
-aboveground biomass estimates, sharing the same methodological sources
-of variation, but tending to be far more uncertain. Fine root biomass
-generally constitutes a much smaller C pool \citep[typically \textless5
-t C ha\textsuperscript{-1},][]{anderson-teixeira_carbon_2021}, and IPCC
+\citep{ipcc_good_2003, ipcc_2006_2006}, a definition including both
+coarse roots, whose biomass is typically estimated based on stem
+censuses and allometries or belowground to aboveground biomass ratios,
+and fine roots, whose biomass is typically estimated via extraction of
+roots from soil samples. The former, which is typically \textless40 t C
+ha\textsuperscript{-1} \citep{anderson-teixeira_carbon_2021}, is
+methodologically linked to aboveground biomass estimates, sharing the
+same methodological sources of variation, but tending to be far more
+uncertain. Fine root biomass generally constitutes a much smaller C pool
+\citep[typically \textless5 t C
+ha\textsuperscript{-1},][]{anderson-teixeira_carbon_2021}, and IPCC
 guidance is that it can be excluded when fine roots cannot be
 distinguished empirically from soil organic matter or litter
 \citep{ipcc_2006_2006}, which can be a painstaking process. Field
@@ -426,10 +430,11 @@ Dead wood, which is typically \textless50 t C ha\textsuperscript{-1} but
 can exceed 150 t C ha\textsuperscript{-1}
 \citep{anderson-teixeira_carbon_2021}, is defined by IPCC as ``all
 non-living woody biomass not contained in the litter, either standing,
-lying on the ground, or in the soil'' \citep{ipcc_2006_2006}. This pool
-includes standing and fallen dead wood, stumps, and dead roots of
-diameter ≥10 cm (or a diameter specified by the country). While dead
-wood stocks and fluxes can be quite variable across forests
+lying on the ground, or in the soil''
+\citep{ipcc_good_2003, ipcc_2006_2006}. This pool includes standing and
+fallen dead wood, stumps, and dead roots of diameter ≥10 cm (or a
+diameter specified by the country). While dead wood stocks and fluxes
+can be quite variable across forests
 \citep{anderson-teixeira_carbon_2021}, and can at times be the dominant
 pool in a forest ecosystem {[}e.g., following a severe natural
 disturbance; \citet{carmona_coarse_2002}{]}, aboveground dead wood
@@ -441,16 +446,23 @@ poorly characterized in large-scale forest C budgets
 default values are based on just 1-31 references per climate zone
 \citep[Table 2.2 in][]{ipcc_2019_2019}.
 
-Litter is defined as including " all non-living biomass with a diameter
-less than a minimum diameter chosen by the country (for example 10 cm),
-lying dead, in various states of decomposition above the mineral or
-organic soil. This includes litter (OL), fumic (OF), and humic (OH)
-layers. Live fine roots (of less than the suggested diameter limit for
-belowground biomass) are included in litter where they cannot be
-distinguished from it empirically." (2003 IPCc GPG for LULUCF
-(https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
-IPCC's latest Tier 1 default values are based on just 1-7 references per
-climate zone \citep[Table 2.2 in][]{ipcc_2019_2019}.
+Litter, which is typically \textless40 t C ha\textsuperscript{-1} but
+can exceed 100 t C ha\textsuperscript{-1}
+\citep{anderson-teixeira_carbon_2021}, is defined by IPCCC as including
+``all non-living biomass with a diameter less than a minimum diameter
+chosen by the country (for example 10 cm), lying dead, in various states
+of decomposition above the mineral or organic soil''
+\citep{ipcc_good_2003, ipcc_2006_2006}. As noted above, live fine roots
+may be included in litter when difficult to separate empirically. The
+definition includes the entire O horizion, including litter (OL), fumic
+(OF), and humic (OH) layers, in addition to litter embedded within the
+soil. This definition contrasts with empirical studies that focus on
+aboveground litter, often including only the OL layer in the definition
+of litter, and do not always specify the components included. Similar to
+dead wood, litter is poorly characterized in large-scale forest C
+budgets \citep{pan_large_2011, harris_global_2021}, and IPCC's latest
+Tier 1 default values are based on just 1-7 references per climate zone
+\citep[Table 2.2 in][]{ipcc_2019_2019}.
 
 \subsubsection{Soil Organic Matter}
 
@@ -459,8 +471,8 @@ and organic soils (including peat) to a specified depth chosen by the
 country and applied consistently through the time series. Live fine
 roots (of less than the suggested diameter limit for belowground
 biomass) are included with soil organic matter where they cannot be
-distinguished from it empirically.''(2003 IPCc GPG for LULUCF
-(https://www.ipcc-nggip.iges.or.jp/public/gpglulucf/gpglulucf\_files/Glossary\_Acronyms\_BasicInfo/Glossary.pdf)
+distinguished from it empirically.''
+\citep{ipcc_good_2003, ipcc_2006_2006}.
 
 \begin{figure}
 \includegraphics[width=15cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} In many cases, the match of ForC variables to IPCC criteria depends upon measurement protocols (e.g., minimum DBH). Additional caveats are as follows: 1- assumes that change in foliage biomass is negligible (see note 7); 2- incomplete: excludes large branch fall; also, under IPCC definitions, outflux from aboveground biomass should include all sizes, influx to deadwood should include only above the minimum diameter chosen for dead wood; 3- incomplete: excludes belowground components;  4-incomplete: excludes breakage into pieces less than dead wood threshold size; 5-incomplete: excludes woody mortality of stems <10 cm DBH, decomposition of dead wood (aboveground and coarse roots) into sizes classified as litter, may exclude branch fall; 6- measurements often limited to decomposition of relatively fine litter and may exclude branches and stems below the dead wood size threshold and/or the more decomposed layers of the O horizon; 7 - foliage production is generally measured by collecting leaf-fall, a method that assumes that the influx = outflux (foliage biomass is roughly constant year-to-year); 8 - excludes branch fall, which is necessary for a full accounting of woody productivity but is typically assumed negligible for calculations of net biomass change.}\label{fig:fig_variable_mapping}
@@ -569,7 +581,7 @@ original publications to retrieve relevant information, including
 
 \subsection{ForC v4.0 contents}
 
-As of April 14, 2022, ForC (v4.0) contained NA independent records (NA
+As of April 15, 2022, ForC (v4.0) contained NA independent records (NA
 total), NA of which were for variables relevant to EFDB (Fig. 1). These
 records were distributed across all forested continents and ecozones,
 with particularly high concentrations in \emph{{[}ecozone(s){]}} and low
@@ -653,6 +665,10 @@ O.horizon &  &  &  & \\
 \hline
 delta.O.horizon &  &  &  & \\
 \hline
+litter &  &  &  & \\
+\hline
+delta.litter &  &  &  & \\
+\hline
 NPP\_litterfall &  &  &  & \\
 \hline
 R\_het\_litter &  &  &  & \\
@@ -671,7 +687,7 @@ R\_het\_soil &  &  &  & \\
 
 \subsection{Data transfers to EFDB}
 
-As of April 14, 2022, we had reviewed and sent NA, NA of which have been
+As of April 15, 2022, we had reviewed and sent NA, NA of which have been
 reviewed, accepted, and posted (Fig. 2-3, Table 2). \emph{{[}DETAILS{]}}
 
 \section{Recommendations}

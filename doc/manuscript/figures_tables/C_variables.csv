@@ -29,6 +29,8 @@ delta.deadwood_down,NA,NA,NA,NA
 Litter,,,,
 O.horizon,NA,NA,NA,NA
 delta.O.horizon,NA,NA,NA,NA
+litter,NA,NA,NA,NA
+delta.litter,NA,NA,NA,NA
 NPP_litterfall,NA,NA,NA,NA
 R_het_litter,NA,NA,NA,NA
 Soil organic matter,,,,
