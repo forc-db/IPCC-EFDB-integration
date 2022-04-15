@@ -262,12 +262,12 @@ The greatest source of methodological variation in measuring SOM/ SOC is samplin
 ## Land use categories
 IPCC defines land-use categories to include six categories -- Forest Land, Grassland, Wetlands, Cropland, Settlements, and Other Land [@ipcc_2006_2006].
 Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
-Forest Land
+Forest Land is defined as at least 10-30% crown cover of trees with potential to reach a minimum height of 2-5 m *in situ* [@ipcc_good_2003].
 Definitions of forest are allowed to vary by country, but must be applied consistently.
+Forest Land includes land where vegetation temporarily falls below the threshold values for forest (e.g., due to disturbance), but is expected to exceed those thresholds in the future [@ipcc_good_2003].
 
-Inventories are conducted only for managed land, which is defined by IPCC to include "all forests subject to some kind of human interactions (notably commercial management, harvest of industrial round-wood (logs) and fuelwood, production and use of wood commodities, and forest managed for amenity value or environmental protection if specified by the country), with defined geographical boundaries" [@ipcc_good_2003.
-
-
+Inventories are conducted only for managed land, which is defined by IPCC to include "all forests subject to some kind of human interactions (notably commercial management, harvest of industrial round-wood (logs) and fuelwood, production and use of wood commodities, and forest managed for amenity value or environmental protection if specified by the country), with defined geographical boundaries" [@ipcc_good_2003].
+As such, managed land constitutes all or the majority of Forest Land in most countries; however, many countries have not yet reported their approach for defining managed land [@ogle_delineating_2018; @deng_comparing_2021].
 
 # Mapping ForC to EFDB
 ForC data is incredibly valuable to EFDB and there is data which is included in the ForC database that does not meet EFDB standards. There were two main EFDB guidelines which limits the amount of data we could transfer. EFDB will not accept data which has been digitized(from graph) and ForC does. 
