@@ -108,11 +108,13 @@ for(i in 1:length(labels)){
   bp <- table(ForBarplot$data_type, ForBarplot[,n])
   
   if(n %in% "dominant.veg") {
-    colnames(bp) <- PFT$description.individual[match(colnames(bp), PFT$pftcode)]
+    colnames(bp) <- PFT$description[match(colnames(bp), PFT$pftcode)]
     colnames(bp)[is.na(colnames(bp))] <- "NAC"
-    colnames(bp) <-  gsub("Tree, ", "", colnames(bp))
+    colnames(bp) <-  gsub("Trees, |conifer \\(|\\)|\\(.*\\)|broadleaf and/or conifer, | or.*$", "", colnames(bp))
+    colnames(bp) <-  gsub("conifer", "needleaf", colnames(bp))
     colnames(bp) <-  gsub("\\b(\\pL)", "\\U\\1", colnames(bp), perl = T)
-    colnames(bp) <-  gsub(", ", "\n", colnames(bp))
+    colnames(bp) <-  gsub(", | ", "\n", colnames(bp))
+    colnames(bp)[colnames(bp) %in% "Broadleaf"] <-  "Broadleaf\n(mixed E/D)"
     
   }
   
