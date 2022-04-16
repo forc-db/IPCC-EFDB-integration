@@ -137,6 +137,9 @@ n_records_sent_to_EFDB = NA # n records sent to EFDB
 n_records_posted_EFDB = NA # n records accepted and posted in EFDB
 
 n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
+# get n fields modified
+sampling_details <- read.csv(paste0(path_to_ForC,"/ForC/database_management_records/record_of_changes.csv"), stringsAsFactors = FALSE, check.names = FALSE)
+n_fields_modified =  length(sampling_details[,"Column"]) + 4 
 ```
 
 
@@ -272,15 +275,17 @@ As such, managed land constitutes all or the majority of Forest Land in most cou
 
 # Updates to ForC  (ForC v4.0)
 
-Previous versions of ForC [@refs] contained most of the information required for transfer to EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
+Previous versions of ForC [@refs] contained most of the information required by EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
 However, modest changes to the structure and contents of ForC were needed in order to provide all information required by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified ## fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified `r n_fields_modified` fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
 
 *This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].*
 
 ## New or modified fields
 
-(`r table_ForCchanges`)
+We added or modified a total of `r n_fields_modified` fields (`r table_ForCchanges`).
+Most notably, these included improvement of the representation of uncertainty, recording of original units and organic matter to C conversion factors, and expanding the information recorded in the citations table. 
+For the latter, we *used an R script to automatically retrieve information based on the DOI*<!--needs info from Valentine here-->.  
 
 ## New variables
 
@@ -312,7 +317,7 @@ It was therefore necessary to return to original publications to retrieve releva
 
 ## Addition of new records
 
-# ForC to EFDB data transfer
+# Transfer of data from ForC to EFDB
 
 To transfer data from ForC into the EFDB, we populated EFDB's bulk import form ("EFDB bulk import.xlsx"), using R scripts to restructure complete, reviewed records for entry into this form.
 
