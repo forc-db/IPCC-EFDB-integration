@@ -508,45 +508,21 @@ most countries; however, many countries have not yet reported their
 approach for defining managed land
 \citep{ogle_delineating_2018, deng_comparing_2021}.
 
-\section{Mapping ForC to EFDB}
-
-The majority of information required by EFDB was present in previous
-versions of ForC {[}{]}. We made modest structural changes to ForC
-(Table \#\#) to allow complete records to be restructured for automated
-population of EFDB data entry forms using R ().
-
-\subsection{Carbon cycle variables}
-
-Mapping of variables is shown in Fig. 1.
-
-\subsection{Land use categories}
-
-Documented at
-https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/defining\_land\_subcategory.md,
-https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/IPCC\_LandUse\_mapping.csv,
-and in
-\href{https://github.com/forc-db/IPCC_database_integration/issues/8}{issue
-\#8}.
-
-The UNFCCC requires greenhouse gas reporting for all managed lands in a
-country, where management is defined as ``human interventions and
-practices have been applied to perform production, ecological or social
-functions'' {[}\emph{IPCC 2006 full report REF}{]}. This definition is
-applied differently across countries, and is not clearly defined by the
-majority of governments \citep{ogle_delineating_2018}. Given this, and
-because the IPCC definition of management does not necessarily match
-that which would be reported in scientific publications and hence in
-ForC, we do not transfer any classification of land management status
-from ForC to the EFDB, but do provide auxiliary info that may be useful
-in making this determination (e.g., geographical location).
-
 \section{Updates to ForC (ForC v4.0)}
 
+Previous versions of ForC \citep{refs} contained most of the information
+required for transfer to EFDB, and, more broadly, to inform C accounting
+under IPCC guidelines. However, modest changes to the structure and
+contents of ForC were needed in order to provide all information
+fequired by EFDB and to improve ForC's capacity to serve as a repository
+of valuable information for forest C accounting under IPCC guidelines.
 To support export of data to EFDB, and to improve the overall quality of
-the ForC database, we defined \#\# new variables, implemented some
-modest restructuring, resolved duplicate records, and conducted quality
-control. This section describes changes relative to ForC v2.0
-\citep{anderson-teixeira_forc_2018}.
+the ForC database, we added \#\# new fields, defined \#\# new variables,
+implemented some modest restructuring (Table \#\#), resolved duplicate
+records, and conducted quality control. This section describes changes
+relative to ForC v2.0 \citep{anderson-teixeira_forc_2018}.
+
+\subsection{Adding new fields}
 
 \subsection{Defining new variables}
 
@@ -593,19 +569,50 @@ previous versions of ForC. It was therefore necessary to return to
 original publications to retrieve relevant information, including the
 following:
 
-\begin{itemize}
-\tightlist
-\item
-  Data location within source - Because EFDB will not accept data which
-  has been digitized (from graphs) while ForC does, it was necessary to
-  review and note the location of the data within the original source
-\end{itemize}
+\emph{Data location within source}- Because EFDB will not accept data
+which has been digitized (from graphs) while ForC does, it was necessary
+to review and note the location of the data within the original source
+
+\section{ForC to EFDB data transfer}
+
+To transfer data from ForC into the EFDB, we populated EFDB's bulk
+import form (``EFDB bulk import.xlsx''), using R scripts to restructure
+complete, reviewed records for entry into this form.
+
+\subsection{Mapping ForC to EFDB}
+
+\subsubsection{Carbon cycle variables}
+
+Mapping of variables is shown in Fig. 1.
+
+\subsubsection{Land use categories}
+
+Documented at
+https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/defining\_land\_subcategory.md,
+https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/IPCC\_LandUse\_mapping.csv,
+and in
+\href{https://github.com/forc-db/IPCC_database_integration/issues/8}{issue
+\#8}.
+
+The UNFCCC requires greenhouse gas reporting for all managed lands in a
+country, where management is defined as ``human interventions and
+practices have been applied to perform production, ecological or social
+functions'' {[}\emph{IPCC 2006 full report REF}{]}. This definition is
+applied differently across countries, and is not clearly defined by the
+majority of governments \citep{ogle_delineating_2018}. Given this, and
+because the IPCC definition of management does not necessarily match
+that which would be reported in scientific publications and hence in
+ForC, we do not transfer any classification of land management status
+from ForC to the EFDB, but do provide auxiliary info that may be useful
+in making this determination (e.g., geographical location).
+
+\subsection{Review and posting of data}
 
 \section{Results}
 
 \subsection{ForC v4.0 contents}
 
-As of April 15, 2022, ForC (v4.0) contained NA independent records (NA
+As of April 16, 2022, ForC (v4.0) contained NA independent records (NA
 total), NA of which were for variables relevant to EFDB (Fig. 1). These
 records were distributed across all forested continents and ecozones,
 with particularly high concentrations in \emph{{[}ecozone(s){]}} and low
@@ -721,7 +728,7 @@ R\_het\_soil &  &  &  & \\
 
 \subsection{Data transfers to EFDB}
 
-As of April 15, 2022, we had reviewed and sent NA, NA of which have been
+As of April 16, 2022, we had reviewed and sent NA, NA of which have been
 reviewed, accepted, and posted (Fig. 2-3, Table 2). \emph{{[}DETAILS{]}}
 
 \section{Recommendations}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  15 APR 2022 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 APR 2022 07:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2950,8 +2950,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count312
 \l__pdf_internal_box=\box69
-)
-No file ESSDmanuscript.aux.
+) (./ESSDmanuscript.aux)
 \openout1 = `ESSDmanuscript.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -3064,367 +3063,168 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 176.
-
-Package natbib Warning: Citation `xu_changes_2021' on page 1 undefined on input
- line 188.
-
-
-Package natbib Warning: Citation `harris_global_2021' on page 1 undefined on in
-put line 189.
-
-
-Package natbib Warning: Citation `xu_changes_2021' on page 1 undefined on input
- line 192.
-
-
-Package natbib Warning: Citation `harris_global_2021' on page 1 undefined on in
-put line 192.
-
-
-Package natbib Warning: Citation `mcdowell_pervasive_2020' on page 1 undefined 
-on input line 197.
-
-
-Package natbib Warning: Citation `hammond_global_2022' on page 1 undefined on i
-nput line 197.
-
-
-Package natbib Warning: Citation `ipcc_climate_2019' on page 1 undefined on inp
-ut line 199.
-
-
-Package natbib Warning: Citation `ipcc_climate_2022' on page 1 undefined on inp
-ut line 199.
-
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package natbib Warning: Citation `unfccc_adoption_2015' on page 2 undefined on 
-input line 203.
-
-
 Package natbib Warning: Citation `ipcc_summary_2022' on page 2 undefined on inp
 ut line 208.
 
-
-Package natbib Warning: Citation `grassi_key_2017' on page 2 undefined on input
- line 211.
-
-
-Package natbib Warning: Citation `badgley_systematic_2022' on page 2 undefined 
-on input line 214.
-
-
-Package natbib Warning: Citation `anderson-teixeira_effective_2022' on page 2 u
-ndefined on input line 217.
-
-
-Package natbib Warning: Citation `deng_comparing_2021' on page 2 undefined on i
-nput line 217.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 2 undefined on input 
-line 222.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 2 undefined on input 
-line 222.
-
-
-Package natbib Warning: Citation `ogle_delineating_2018' on page 2 undefined on
- input line 224.
-
-
-Package natbib Warning: Citation `ipcc_agriculture_2006' on page 2 undefined on
- input line 227.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 2 undefined on input 
-line 227.
-
-
-Package natbib Warning: Citation `requenasuarez_estimating_2019' on page 2 unde
-fined on input line 230.
-
-
-Package natbib Warning: Citation `rozendaal_aboveground_2022' on page 2 undefin
-ed on input line 230.
-
-
-Package natbib Warning: Citation `cook-patton_mapping_2020' on page 2 undefined
- on input line 233.
-
-
-Package natbib Warning: Citation `cuni-sanchez_high_2021' on page 2 undefined o
-n input line 236.
-
-
-Package natbib Warning: Citation `cook-patton_mapping_2020' on page 2 undefined
- on input line 245.
-
-
-Package natbib Warning: Citation `cuni-sanchez_high_2021' on page 2 undefined o
-n input line 245.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 2 undefined on input 
-line 262.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 2 undefined on input 
-line 262.
-
-
-Package natbib Warning: Citation `anderson-teixeira_forc_2018' on page 2 undefi
-ned on input line 268.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 2 unde
-fined on input line 268.
-
 [2]
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 3 undefined on input 
-line 289.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 3 undefined on input 
-line 289.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 3 undefined on input 
-line 297.
-
-<figures_tables/C_variable_mapping.png, id=22, 782.925pt x 875.27pt>
+<figures_tables/C_variable_mapping.png, id=97, 782.925pt x 875.27pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
 ine 356.
 (pdftex.def)             Requested size: 398.33858pt x 445.3267pt.
 
-Package natbib Warning: Citation `ipcc_2006_2006' on page 3 undefined on input 
-line 364.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 3 unde
-fined on input line 368.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 3 undefined on input 
-line 371.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 3 undefined on input 
-line 371.
-
-
-Package natbib Warning: Citation `piponiot_distribution_2022' on page 3 undefin
-ed on input line 382.
-
-
-Package natbib Warning: Citation `piponiot_distribution_2022' on page 3 undefin
-ed on input line 384.
-
-
 Package natbib Warning: Citation `refs' on page 3 undefined on input line 384.
 
 
 Package natbib Warning: Citation `refs' on page 3 undefined on input line 386.
 
-
-Package natbib Warning: Citation `duncanson_aboveground_2021' on page 3 undefin
-ed on input line 393.
-
-[3] [4] [5 <./figures_tables/C_variable_mapping.png>]
-
-Package natbib Warning: Citation `clark_landscapescale_2000' on page 6 undefine
-d on input line 399.
-
-
-Package natbib Warning: Citation `clark_net_2001' on page 6 undefined on input 
-line 399.
-
-
-Package natbib Warning: Citation `chave_improved_2014' on page 6 undefined on i
-nput line 401.
-
-
-Package natbib Warning: Citation `rejou-mechain_biomass_2017' on page 6 undefin
-ed on input line 401.
-
-
-Package natbib Warning: Citation `gonzalez-akre_allodb_2022' on page 6 undefine
-d on input line 401.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 6 undefined on input 
-line 405.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 6 undefined on input 
-line 405.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 6 unde
-fined on input line 410.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 6 unde
-fined on input line 415.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 6 undefined on input 
-line 418.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 6 undefined on input 
-line 422.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 6 undefined on input 
-line 422.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 6 undefined on input 
-line 431.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 6 unde
-fined on input line 435.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 6 undefined on input 
-line 438.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 6 undefined on input 
-line 438.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 6 unde
-fined on input line 442.
-
-
-Package natbib Warning: Citation `carmona_coarse_2002' on page 6 undefined on i
-nput line 444.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 6 unde
-fined on input line 446.
-
-
-Package natbib Warning: Citation `merganicova_dadwood_2012' on page 6 undefined
- on input line 447.
-
-
-Package natbib Warning: Citation `pan_large_2011' on page 6 undefined on input 
-line 449.
-
-
-Package natbib Warning: Citation `harris_global_2021' on page 6 undefined on in
-put line 449.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 6 undefined on input 
-line 451.
-
-
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 6 unde
-fined on input line 455.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 6 undefined on input 
-line 459.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 6 undefined on input 
-line 459.
-
-
-Package natbib Warning: Citation `pan_large_2011' on page 6 undefined on input 
-line 467.
-
-
-Package natbib Warning: Citation `harris_global_2021' on page 6 undefined on in
-put line 467.
-
-
-Package natbib Warning: Citation `ipcc_2019_2019' on page 6 undefined on input 
-line 469.
-
-[6]
+[3] [4] [5 <./figures_tables/C_variable_mapping.png>] [6]
 
 Package natbib Warning: Citation `ref' on page 7 undefined on input line 474.
 
+[7]
 
-Package natbib Warning: Citation `ipcc_good_2003' on page 7 undefined on input 
-line 477.
+Package natbib Warning: Citation `refs' on page 8 undefined on input line 513.
 
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 7 undefined on input 
-line 477.
-
-
-Package natbib Warning: Citation `ipcc_2006_2006' on page 7 undefined on input 
-line 488.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 7 undefined on input 
-line 494.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 7 undefined on input 
-line 498.
-
-
-Package natbib Warning: Citation `ipcc_good_2003' on page 7 undefined on input 
-line 505.
-
-
-Package natbib Warning: Citation `ogle_delineating_2018' on page 7 undefined on
- input line 509.
-
-
-Package natbib Warning: Citation `deng_comparing_2021' on page 7 undefined on i
-nput line 509.
-
-
-Overfull \hbox (44.51099pt too wide) in paragraph at lines 524--530
+[8]
+Overfull \hbox (44.51099pt too wide) in paragraph at lines 590--596
 \T1/ptm/m/n/10 Documented at https://github.com/forc-db/IPCC-EFDB-integration/b
 lob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md,
  []
 
 
-Overfull \hbox (4.12128pt too wide) in paragraph at lines 524--530
+Overfull \hbox (4.12128pt too wide) in paragraph at lines 590--596
 \T1/ptm/m/n/10 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/F
 orC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in
  []
 
-[7]
+[9]
+<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=261, 480
+.8364pt x 284.5029pt>
+File: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png Graphic
+ file (type png)
+<use figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>
+Package pdftex.def Info: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_da
+ta_sent.png  used on input line 624.
+(pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
+<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=262, 578.1
+6pt x 650.43pt>
+File: figures_tables/Histogram_n_Relevant_and_Transferred_Records.png Graphic f
+ile (type png)
+<use figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>
+Package pdftex.def Info: figures_tables/Histogram_n_Relevant_and_Transferred_Re
+cords.png  used on input line 628.
+(pdftex.def)             Requested size: 426.79134pt x 480.13954pt.
 
-Package natbib Warning: Citation `ogle_delineating_2018' on page 8 undefined on
- input line 536.
+Overfull \hbox (17.64595pt too wide) in paragraph at lines 727--727
+[]\T1/ptm/m/n/10 delta.biomass_root_coarse|  
+ []
 
 
-Package natbib Warning: Citation `anderson-teixeira_forc_2018' on page 8 undefi
-ned on input line 549.
+Overfull \hbox (7.10616pt too wide) in paragraph at lines 727--727
+[]\T1/ptm/m/n/10 delta.biomass_root_fine|  
+ []
 
 
-Package natbib Warning: Citation `anderson-teixeira_carbon_2021' on page 8 unde
-fined on input line 586.
+Overfull \hbox (13.47668pt too wide) in paragraph at lines 727--727
+[]\T1/ptm/m/n/10 BNPP_root.turnover_fine|  
+ []
 
-[8]
-! Undefined control sequence.
-l.597 \tightlist
-                 
+
+Overfull \hbox (13.1064pt too wide) in paragraph at lines 727--727
+[]\T1/ptm/m/n/10 delta.deadwood_standing|  
+ []
+
+
+Overfull \hbox (1.18675pt too wide) in paragraph at lines 727--727
+[]\T1/ptm/m/n/10 delta.deadwood_down|  
+ []
+
+[10 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [11]
+
+Package natbib Warning: Citation `refs' on page 12 undefined on input line 755.
+
+
+
+Package natbib Warning: Citation `refs' on page 12 undefined on input line 757.
+
+
+
+Package natbib Warning: Citation `refs' on page 12 undefined on input line 758.
+
+
+[12] [13 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [
+14]
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 905--905
+\T1/ptm/m/n/10 ing_land_subcategory.md)|  
+ []
+
+
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 905--905
+\T1/ptm/m/n/10 ing_land_subcategory.md), 
+ []
+
+
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 905--905
+[]\T1/ptm/m/n/10 data.location.within.source|  
+ []
+
+
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 905--905
+\T1/ptm/m/n/10 ing_land_subcategory.md)|  
+ []
+
+[15
+
+] [16] [17] [18]
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 960--960
+[]\T1/ptm/m/n/10 data.location.within.source|  
+ []
+
+
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 960--960
+[]\T1/ptm/m/n/10 mean.in.original.units, 
+ []
+
+[19
+
+] [20] (./ESSDmanuscript.bbl [21] [22] [23] [24] [25]) [26]
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1041.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1041.
+(./ESSDmanuscript.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1041.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1041.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1041.
+ ) 
 Here is how much of TeX's memory you used:
- 14481 strings out of 480608
- 190527 string characters out of 5903631
- 531478 words of memory out of 5000000
- 30050 multiletter control sequences out of 15000+600000
- 571187 words of font info for 81 fonts, out of 8000000 for 9000
+ 14772 strings out of 480608
+ 197184 string characters out of 5903631
+ 587984 words of memory out of 5000000
+ 30248 multiletter control sequences out of 15000+600000
+ 574035 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,15n,46p,1250b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,52p,1446b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on ESSDmanuscript.pdf (26 pages, 592039 bytes).
+PDF statistics:
+ 457 PDF objects out of 1000 (max. 8388607)
+ 410 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!
