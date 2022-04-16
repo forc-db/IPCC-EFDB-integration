@@ -517,14 +517,17 @@ contents of ForC were needed in order to provide all information
 fequired by EFDB and to improve ForC's capacity to serve as a repository
 of valuable information for forest C accounting under IPCC guidelines.
 To support export of data to EFDB, and to improve the overall quality of
-the ForC database, we added \#\# new fields, defined \#\# new variables,
-implemented some modest restructuring (Table \#\#), resolved duplicate
-records, and conducted quality control. This section describes changes
-relative to ForC v2.0 \citep{anderson-teixeira_forc_2018}.
+the ForC database, we added or modified \#\# fields (Table \#\#),
+defined \#\# new variables, implemented enhanced quality control,
+manually reviewed \textgreater\# records to obtain additional required
+information, and added \# new records.
 
-\subsection{Adding new fields}
+\emph{This section describes changes relative to ForC v2.0
+\citep{anderson-teixeira_forc_2018}.}
 
-\subsection{Defining new variables}
+\subsection{New or modified fields}
+
+\subsection{New variables}
 
 We added eleven increment variables to the set of named and defined
 variables (or 22, counting \_OM and \_C versions), which previously
@@ -555,12 +558,12 @@ with suspected low precision \emph{(Issue
 identify erroneous climate data\ldots{} \emph{(Issue
 \#212){[}https://github.com/forc-db/ForC/issues/212{]}}.
 
-\subsection{Resolving duplicates}
-
 Because ForC v4.0 contained known duplicate records, we used R scripts
 to remove likely duplicates, as detailed in
-\citet{anderson-teixeira_carbon_2021}. Henceforth, we refer to the
-records with duplicates removed as ``independent records''.
+\citet{anderson-teixeira_carbon_2021}. Henceforth, we refer to the set
+of records with likely duplicates removed as ``independent records''.
+All records sent to EFCB were ensured to be original through manual
+review, as detailed below.
 
 \subsection{Manual review of records to be sent to EFDB}
 
@@ -572,6 +575,8 @@ following:
 \emph{Data location within source}- Because EFDB will not accept data
 which has been digitized (from graphs) while ForC does, it was necessary
 to review and note the location of the data within the original source
+
+\subsection{Addition of new records}
 
 \section{ForC to EFDB data transfer}
 

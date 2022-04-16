@@ -273,12 +273,14 @@ As such, managed land constitutes all or the majority of Forest Land in most cou
 
 Previous versions of ForC [@refs] contained most of the information required for transfer to EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
 However, modest changes to the structure and contents of ForC were needed in order to provide all information fequired by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added ## new fields, defined ## new variables, implemented some modest restructuring (Table ##), resolved duplicate records, and conducted quality control.
-This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified ## fields (Table ##), defined ## new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
 
-## Adding new fields
+*This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].*
 
-## Defining new variables
+## New or modified fields
+
+## New variables
+
 
 We added eleven increment variables to the set of named and defined variables (or 22, counting _OM and _C versions), which previously included only one (aboveground biomass increment, *delta.agb*). 
 *(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)*
@@ -295,11 +297,9 @@ First, we implemented a system of continuous integration using GitHub Actions (*
 Second, to improve information on geographic coordinates, we flagged and reviewed records with suspected low precision *(Issue #29)[https://github.com/forc-db/ForC/issues/229]*.
 Third, to identify erroneous climate data... *(Issue #212)[https://github.com/forc-db/ForC/issues/212]*.
 
-
-## Resolving duplicates
-
 Because ForC v4.0 contained known duplicate records, we used R scripts to remove likely duplicates, as detailed in @anderson-teixeira_carbon_2021.
-Henceforth, we refer to the records with duplicates removed as "independent records".
+Henceforth, we refer to the set of records with likely duplicates removed as "independent records".
+All records sent to EFCB were ensured to be original through manual review, as detailed below.
 
 ## Manual review of records to be sent to EFDB
 
@@ -307,6 +307,8 @@ EFDB data submissions require information that was not recorded in previous vers
 It was therefore necessary to return to original publications to retrieve relevant information, including the following:
 
 *Data location within source*-  Because EFDB will not accept data which has been digitized (from graphs) while ForC does, it was necessary to review and note the location of the data within the original source 
+
+## Addition of new records
 
 # ForC to EFDB data transfer
 
