@@ -514,12 +514,12 @@ Previous versions of ForC \citep{refs} contained most of the information
 required for transfer to EFDB, and, more broadly, to inform C accounting
 under IPCC guidelines. However, modest changes to the structure and
 contents of ForC were needed in order to provide all information
-fequired by EFDB and to improve ForC's capacity to serve as a repository
+required by EFDB and to improve ForC's capacity to serve as a repository
 of valuable information for forest C accounting under IPCC guidelines.
 To support export of data to EFDB, and to improve the overall quality of
 the ForC database, we added or modified \#\# fields (Table \#\#),
-defined \#\# new variables, implemented enhanced quality control,
-manually reviewed \textgreater\# records to obtain additional required
+defined 15 new variables, implemented enhanced quality control, manually
+reviewed \textgreater\# records to obtain additional required
 information, and added \# new records.
 
 \emph{This section describes changes relative to ForC v2.0
@@ -529,22 +529,27 @@ information, and added \# new records.
 
 \subsection{New variables}
 
-We added eleven increment variables to the set of named and defined
-variables (or 22, counting \_OM and \_C versions), which previously
-included only one (aboveground biomass increment, \emph{delta.agb}).
-\emph{(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)} These
-are directly related to C stocks as previously defined in ForC, with
-``\emph{delta.}'' added in front of the variable name.
+We added a total of 15 new variables to the set of named and defined
+variables, counting each pair of variables with units in C (ending in
+\texttt{\_C}) or organic matter (ending in \texttt{\_OM}) as one. All of
+these variables are relevant to C accounting under IPCC, and hence to
+EFDB (Fig. 1) This included eleven increment variables, adding to only
+one previously defined increment variable (aboveground biomass
+increment, \emph{delta.agb}). These are directly related to C stocks as
+previously defined in ForC, with ``\emph{delta.}'' added in front of the
+variable name. Further, we added variables capturing the belowground
+component of woody mortality (\emph{woody.mortality\_root}) and the
+combined aboveground and belowground components of woody mortality
+(\emph{woody.mortality}). Although most of these variables currently
+lack records in ForC, the structure exists such that records can be
+populated over time.
 
-Although these variables currently lack records, the structure exists
-such that records can be populated over time.
-
-To provide better definition of the previously existing variable
-\emph{organic.layer}, which has a nebulous definition that reflects the
-varied definitions adopted by original studies, we added two clearly
-defined variables: \emph{litter} (relatively undecomposed plant
-material/ OL horizon), and \emph{O.horizon} (entire O-horizon, including
-\emph{litter} (OL)).
+Further, to provide better definition of the previously existing
+variable \emph{organic.layer}, which has a nebulous definition that
+reflects the varied definitions adopted by original studies, we added
+two clearly defined variables: \emph{litter} (relatively undecomposed
+plant material/ OL horizon), and \emph{O.horizon} (entire O-horizon,
+including \emph{litter} (OL)).
 
 \subsection{Quality control measures}
 

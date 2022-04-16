@@ -136,6 +136,8 @@ n_independent_records_ForC= NA #suspected duplicates removed
 n_records_EFDB_variables= NA #n independent records relevant to EFDB
 n_records_sent_to_EFDB = NA # n records sent to EFDB
 n_records_posted_EFDB = NA # n records accepted and posted in EFDB
+
+n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
 ```
 
 
@@ -272,8 +274,8 @@ As such, managed land constitutes all or the majority of Forest Land in most cou
 # Updates to ForC  (ForC v4.0)
 
 Previous versions of ForC [@refs] contained most of the information required for transfer to EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
-However, modest changes to the structure and contents of ForC were needed in order to provide all information fequired by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified ## fields (Table ##), defined ## new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
+However, modest changes to the structure and contents of ForC were needed in order to provide all information required by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified ## fields (Table ##), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
 
 *This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].*
 
@@ -281,15 +283,14 @@ To support export of data to EFDB, and to improve the overall quality of the For
 
 ## New variables
 
-
-We added eleven increment variables to the set of named and defined variables (or 22, counting _OM and _C versions), which previously included only one (aboveground biomass increment, *delta.agb*). 
-*(https://github.com/forc-db/IPCC-EFDB-integration/issues/6)*
+We added a total of `r n_new_variables` new variables to the set of named and defined variables, counting each pair of variables with units in C (ending in  `_C`) or organic matter (ending in `_OM`) as one. 
+All of these variables are relevant to C accounting under IPCC, and hence to EFDB (Fig. `r fig_variable_mapping`)
+This included eleven increment variables, adding to only one previously defined increment variable (aboveground biomass increment, *delta.agb*). 
 These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
+Further, we added variables capturing the belowground component of woody mortality (*woody.mortality_root*) and the combined aboveground and belowground components of woody mortality (*woody.mortality*).
+Although most of these variables currently lack records in ForC, the structure exists such that records can be populated over time. 
 
-Although these variables currently lack records, the structure exists such that records can be populated over time. 
-
-To provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including *litter* (OL)).
-
+Further, to provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including *litter* (OL)).
 
 ## Quality control measures
 Prior to releasing ForC v4.0, we executed several quality control measures.
