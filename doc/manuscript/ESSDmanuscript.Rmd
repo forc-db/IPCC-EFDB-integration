@@ -83,19 +83,14 @@ disclaimer: |
 acknowledgements: |
   Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have helped to build the database.
   Funding for this study was provided by Bezos Earth Fund to The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
-appendix: |
-   \section{Mapping ForC to EFDB}
-   
-   CURRENT TABLE 3 GOES HERE
-   
-   \section{Updates to ForC}
-   
-   CURRENT TABLE 4 GOES HERE
-   
+appendix: 
 output:
   rticles::copernicus_article: default
   bookdown::pdf_book:
     base_format: rticles::copernicus_article # for using bookdown features like \@ref()
+    
+    header-includes:
+    - \usepackage{caption}
 ---
 
 
@@ -115,6 +110,10 @@ fig_dominant_veg=3
 #Cited sections (listed here because these can change)
 section_C_pools = 2.1 
 section_land_use_categories = 2.2
+
+#Appendices
+table_ForCchanges = "Appendix A"
+table_ForCfieldmapping = "Appendix B"
 
 #READING IN FILES TO GET FIGURES/ TABLES/ STATS 
 path_to_dir <- dirname(dirname(getwd())) # get path to repo 
@@ -275,16 +274,18 @@ As such, managed land constitutes all or the majority of Forest Land in most cou
 
 Previous versions of ForC [@refs] contained most of the information required for transfer to EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
 However, modest changes to the structure and contents of ForC were needed in order to provide all information required by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified ## fields (Table ##), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified ## fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
 
 *This section describes changes relative to ForC v2.0 [@anderson-teixeira_forc_2018].*
 
 ## New or modified fields
 
+(`r table_ForCchanges`)
+
 ## New variables
 
 We added a total of `r n_new_variables` new variables to the set of named and defined variables, counting each pair of variables with units in C (ending in  `_C`) or organic matter (ending in `_OM`) as one. 
-All of these variables are relevant to C accounting under IPCC, and hence to EFDB (Fig. `r fig_variable_mapping`)
+All of these variables are relevant to C accounting under IPCC, and hence to EFDB (Fig. `r fig_variable_mapping`).
 This included eleven increment variables, adding to only one previously defined increment variable (aboveground biomass increment, *delta.agb*). 
 These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
 Further, we added variables capturing the belowground component of woody mortality (*woody.mortality_root*) and the combined aboveground and belowground components of woody mortality (*woody.mortality*).
@@ -316,6 +317,9 @@ It was therefore necessary to return to original publications to retrieve releva
 To transfer data from ForC into the EFDB, we populated EFDB's bulk import form ("EFDB bulk import.xlsx"), using R scripts to restructure complete, reviewed records for entry into this form.
 
 ## Mapping ForC to EFDB
+
+`r table_ForCfieldmapping`
+
 ### Carbon cycle variables
 
 Mapping of variables is shown in Fig. `r fig_variable_mapping`.
@@ -440,32 +444,10 @@ Remote sensing biomass estimates include standing dead wood [@duncanson_abovegro
 You can modify the section name with  `\conclusions[modified heading if necessary]`.-->
 
 \clearpage
-# Appendix A 
-<!--remove number-->
+# Appendix A. Updates to ForC {-}
 
-```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
-library(knitr)
-library(kableExtra)
-
-ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
-names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
-ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
-
-knitr::kable(ForC_variables_included, format = "latex",
-             longtable = TRUE,
-             caption = "\\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). ") %>%
-  row_spec(0, bold = TRUE) %>%
-kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
-
-```
-'Required' field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
-
-** '(yes)' for most recent severe disturbance; 'no' for other history events
-
-\clearpage
-# Appendix B
-<!--remove number-->
-
+\captionsetup[table]{labelformat=empty}
+Table A1: **Table of changes to ForC fields.**
 ```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE, message = FALSE}
 library (readr)
 urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_management_records/record_of_changes.csv"
@@ -478,9 +460,31 @@ record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
 library(knitr)
 library(kableExtra)
 knitr::kable(record_of_changes, format = "latex",
-             longtable = TRUE,
-             caption = "\\textbf{Table of changes to ForC fields.}") %>%
+             longtable = TRUE) %>%
   kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
   row_spec(0, bold = TRUE)
 ```
+
+\clearpage
+# Appendix B. Mapping ForC to EFDB {-}
+
+Table B1: **Mapping of ForC fields to EFDB.** See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
+```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+
+ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
+names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
+ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
+
+knitr::kable(ForC_variables_included, format = "latex",
+             longtable = TRUE) %>%
+  row_spec(0, bold = TRUE) %>%
+kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
+
+```
+'Required' field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
+
+** '(yes)' for most recent severe disturbance; 'no' for other history events
+
 

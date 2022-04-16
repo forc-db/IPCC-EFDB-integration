@@ -517,7 +517,7 @@ contents of ForC were needed in order to provide all information
 required by EFDB and to improve ForC's capacity to serve as a repository
 of valuable information for forest C accounting under IPCC guidelines.
 To support export of data to EFDB, and to improve the overall quality of
-the ForC database, we added or modified \#\# fields (Table \#\#),
+the ForC database, we added or modified \#\# fields (Appendix A),
 defined 15 new variables, implemented enhanced quality control, manually
 reviewed \textgreater\# records to obtain additional required
 information, and added \# new records.
@@ -527,13 +527,15 @@ information, and added \# new records.
 
 \subsection{New or modified fields}
 
+(Appendix A)
+
 \subsection{New variables}
 
 We added a total of 15 new variables to the set of named and defined
 variables, counting each pair of variables with units in C (ending in
 \texttt{\_C}) or organic matter (ending in \texttt{\_OM}) as one. All of
 these variables are relevant to C accounting under IPCC, and hence to
-EFDB (Fig. 1) This included eleven increment variables, adding to only
+EFDB (Fig. 1). This included eleven increment variables, adding to only
 one previously defined increment variable (aboveground biomass
 increment, \emph{delta.agb}). These are directly related to C stocks as
 previously defined in ForC, with ``\emph{delta.}'' added in front of the
@@ -590,6 +592,8 @@ import form (``EFDB bulk import.xlsx''), using R scripts to restructure
 complete, reviewed records for entry into this form.
 
 \subsection{Mapping ForC to EFDB}
+
+Appendix B
 
 \subsubsection{Carbon cycle variables}
 
@@ -827,15 +831,67 @@ Remote sensing biomass estimates include standing dead wood
 
 \clearpage
 
-\section{Appendix A}
+\section*{Appendix A. Updates to ForC}
+\addcontentsline{toc}{section}{Appendix A. Updates to ForC}
+
+\captionsetup[table]{labelformat=empty}
+
+Table A1: \textbf{Table of changes to ForC fields.}
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
-\caption{\label{tab:table_ForCfieldmapping}\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted). }\\
+\hline
+\textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
+\hline
+\endfirsthead
+\multicolumn{5}{@{}l}{\textit{(continued)}}\\
+\hline
+\textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
+\hline
+\endhead
+Sites & coordinates.precision & Precision of geographic coordinates, as reported by source or estimated from maps. & field added & allow identification of records with poor coordinate precision\\
+\hline
+Measurements & data.location.within.source & Location of data within the source listed in citation.ID. & field added & facilitate review, ensure traceability\\
+\hline
+ & sd, se, lower95\%CI, upper 95\%CI & Standard deviation, standard error, and lower and upper 95 percent confidence intvervals, respectively. & replaces `stat` and `stat.name` & cleaner format; ability to handle assymetrical 95 percent confidence intervals\\
+\hline
+ & mean.in.original.units, original.units & mean value and units presented in original publication & fields added & provide IPCC with original units, reduce errors/improve reproducibility\\
+\hline
+ & C.conversion.factor & Assumed/ measured C content of organic matter used to convert organic matter to C. & field added & track units conversion, allow back-calculation of OM if conversion factor deemed inappropriate\\
+\hline
+PFT & description & Definition of the pftcode at the community level. Differs from individual level in that properly describes mixed plant functional types. & field added & \\
+\hline
+ & description.individual & Definition of the pftcode at the individual plant level. & field name change (previously `description`) & \\
+\hline
+Citations & citation.citation & Full citation. Most of these records are automatically generated in R based upon DOI lookup. & field added & field required by IPCC\\
+\hline
+ & citation.language & Language of original publication, automatically generated based on the title and abstract, with some manual entries and corrections. & field added & field required by IPCC\\
+\hline
+ & citation.url & URL of original publication, generally retrieved automatically via URL lookup. & field added & field required by IPCC\\
+\hline
+ & citation.abstract & Abstract, generally retrieved automatically via DOI lookup. & field added & field required by IPCC\\
+\hline
+ & source.type & citation source type & field added & field required by IPCC\\
+\hline
+ & pdf.in.repository & Indicates whether pdf of original study has been retrieved and saved in ForC's reference repository & field added & housekeeping\\
+\hline
+ & EFDB.ready & Indicates whether data have been checked for export to EFDB. & field added & housekeeping\\
+\hline
+\end{longtabu}
+
+\clearpage
+
+\section*{Appendix B. Mapping ForC to EFDB}
+\addcontentsline{toc}{section}{Appendix B. Mapping ForC to EFDB}
+
+Table B1: \textbf{Mapping of ForC fields to EFDB.} See footnotes at end
+of table (STILL NEED TO BE PROPERLY INSERTED).
+
+\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
 \textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
 \endfirsthead
-\caption[]{\textbf{Mapping of ForC fields to EFDB.} See footnotes at end of table (still need to be properly inserted).  \textit{(continued)}}\\
+\multicolumn{5}{@{}l}{\textit{(continued)}}\\
 \hline
 \textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
 \hline
@@ -924,51 +980,6 @@ required, but exported to EFDB when a value is present.
 ** `(yes)' for most recent severe disturbance; `no' for other history
 events
 
-\clearpage
-
-\section{Appendix B}
-
-\begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
-\caption{\label{tab:table_ForCchanges}\textbf{Table of changes to ForC fields.}}\\
-\hline
-\textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
-\hline
-\endfirsthead
-\caption[]{\textbf{Table of changes to ForC fields.} \textit{(continued)}}\\
-\hline
-\textbf{Table} & \textbf{Column} & \textbf{Description} & \textbf{Changes} & \textbf{Motivation}\\
-\hline
-\endhead
-Sites & coordinates.precision & Precision of geographic coordinates, as reported by source or estimated from maps. & field added & allow identification of records with poor coordinate precision\\
-\hline
-Measurements & data.location.within.source & Location of data within the source listed in citation.ID. & field added & facilitate review, ensure traceability\\
-\hline
- & sd, se, lower95\%CI, upper 95\%CI & Standard deviation, standard error, and lower and upper 95 percent confidence intvervals, respectively. & replaces `stat` and `stat.name` & cleaner format; ability to handle assymetrical 95 percent confidence intervals\\
-\hline
- & mean.in.original.units, original.units & mean value and units presented in original publication & fields added & provide IPCC with original units, reduce errors/improve reproducibility\\
-\hline
- & C.conversion.factor & Assumed/ measured C content of organic matter used to convert organic matter to C. & field added & track units conversion, allow back-calculation of OM if conversion factor deemed inappropriate\\
-\hline
-PFT & description & Definition of the pftcode at the community level. Differs from individual level in that properly describes mixed plant functional types. & field added & \\
-\hline
- & description.individual & Definition of the pftcode at the individual plant level. & field name change (previously `description`) & \\
-\hline
-Citations & citation.citation & Full citation. Most of these records are automatically generated in R based upon DOI lookup. & field added & field required by IPCC\\
-\hline
- & citation.language & Language of original publication, automatically generated based on the title and abstract, with some manual entries and corrections. & field added & field required by IPCC\\
-\hline
- & citation.url & URL of original publication, generally retrieved automatically via URL lookup. & field added & field required by IPCC\\
-\hline
- & citation.abstract & Abstract, generally retrieved automatically via DOI lookup. & field added & field required by IPCC\\
-\hline
- & source.type & citation source type & field added & field required by IPCC\\
-\hline
- & pdf.in.repository & Indicates whether pdf of original study has been retrieved and saved in ForC's reference repository & field added & housekeeping\\
-\hline
- & EFDB.ready & Indicates whether data have been checked for export to EFDB. & field added & housekeeping\\
-\hline
-\end{longtabu}
-
 
 
 \codedataavailability{use this to add a statement when having data sets
@@ -981,15 +992,6 @@ available} %% use this section when having data sets and software code available
 %% optional
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix
-\section{Mapping ForC to EFDB}
-
-CURRENT TABLE 3 GOES HERE
-
-\section{Updates to ForC}
-
-CURRENT TABLE 4 GOES HERE
-\noappendix
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \authorcontribution{(fill this in)} %% optional section
