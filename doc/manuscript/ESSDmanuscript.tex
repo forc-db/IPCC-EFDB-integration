@@ -521,7 +521,7 @@ guidelines. To support export of data to EFDB, and to improve the
 overall quality of the ForC database, we added or modified 18 fields
 (Appendix A), defined 15 new variables, implemented enhanced quality
 control, manually reviewed \textgreater\# records to obtain additional
-required information, and added \# new records.
+required information, and added 305 new records.
 
 This section describes changes relative to ForC v3.0
 \citep{anderson-teixeira_carbon_2021}.
@@ -585,11 +585,16 @@ review, as detailed below.
 EFDB data submissions required information that was not recorded in
 previous versions of ForC, but rather was recorded in fields (Appendix
 A). It was therefore necessary to return to original publications to
-retrieve relevant information, including (1) whether data were presented
-in tables / text or digitized from figures (EFDB will not accept
-digitized data, whereas ForC does), (2) estimates in original units, and
-(3) confidence intervals (when not already in ForC). We also checked
-that existing ForC records were complete and correct.
+retrieve relevant information, including (1) whether records of interest
+were presented in tables / text or digitized from figures (EFDB will not
+accept digitized data, whereas ForC does), (2) whether records of
+interest were presented directly, as opposed to having been calculated
+from related variables (for example, if a study presents aboveground
+biomass and root biomass but not total biomass, ForC would accept the
+sum of these as a valid estimate of total biomass, whereas EFDB would
+not) (3) estimates in original units, and (4) confidence intervals (when
+not already in ForC). We also checked that existing ForC records were
+complete and correct.
 
 Manual review of records was the limiting step for data transfer to
 EFDB. We prioritized review of (1) records from the Forest Global Earth
@@ -617,13 +622,50 @@ publication that were not yet present in ForC.
 
 \section{Transfer of data from ForC to EFDB}
 
-To transfer data from ForC into the EFDB, we populated EFDB's bulk
-import form (``EFDB bulk import.xlsx''), using R scripts to restructure
-complete, reviewed records for entry into this form.
+To transfer complete, reviewed ForC records into EFDB, we created R
+scripts to restructure ForC records and populate EFDB's bulk import form
+(``EFDB bulk import.xlsx''). Criteria for data transfer were that (1)
+records had been checked against the original study and determined to be
+complete and correct (\texttt{EFDB.ready} field in
+\texttt{ForC\_citations} table), (2) the original study presented values
+in tables or text, as opposed to the values having been digitized from
+graphs or calculated based on related variables
+(\texttt{data.location.within.source} field in
+\texttt{ForC\_measurements} table), and (3) the records had not
+previously been sent to EFDB. Once converted into EFDB format, the
+records were reviewed and then sent to the IPCC's Technical Support Unit
+for inclusion in EFDB. Complete records needed to be reviewed by the
+EFDB editorial board prior to posting in the database -- a process that
+lags behind records transfer and had not yet been completed for all
+records sent as of April 18, 2022.
 
 \subsection{Mapping ForC to EFDB}
 
-Appendix B
+The mapping of ForC fields into EFDB fields is documented in Appendix B.
+
+For the majority of fields, contents of the field in ForC was
+transferred directly into an EFDB field, either as the only contents of
+that field or as part of a composite record. For example, ten ForC
+fields describing site location, climate, and edaphic properties all
+mapped into the EFDB field \texttt{Region/Regionalconditions} (Appendix
+B). In cases where original studies did not present 95\% confidence
+intervals (required by IPCC when available) but did present information
+required to calculate these (standard error or n and standard
+deviation), we calculated the 95\% confidence intervals and populated
+the EFDB field with this information (noting the calculation in the EFDB
+field \texttt{Comments\ from\ Data\ Provider}). For some fields, simple
+conditional logic was used to populate EFDB fields based on ForC
+records. For example, for stock variables presented in the original
+publication in units of dry organic matter mass (as opposed to C),
+several greenhouse gasses (CO\textsubscript{2}, CO, CH\textsubscript{4},
+NO, NO\textsubscript{2}, N\textsubscript{2}O) were entered in the EFDB
+field indicating the greenhouse gases to which the record could be
+pertinent (\texttt{Gases} field) because these values could be used in
+calculations of greenhouse gas emissions from biomass burning
+\citep{ipcc_2006_2006}; otherwise, the only pertinent greenhouse gas
+would be CO\textsubscript{2}. There were two cases in which more complex
+mapping was required: (1) mapping of C cycle variables (section 4.1.1)
+and (2) determination of land use categories (section 4.1.2).
 
 \subsubsection{Carbon cycle variables}
 
@@ -773,7 +815,7 @@ R\_het\_soil &  &  &  & \\
 
 \subsection{Data transfers to EFDB}
 
-As of April 18, 2022, we had reviewed and sent NA, NA of which have been
+As of April 18, 2022, we had reviewed and sent NA, 73 of which have been
 reviewed, accepted, and posted (Fig. 2-3, Table 2). \emph{{[}DETAILS{]}}
 
 \section{Recommendations}

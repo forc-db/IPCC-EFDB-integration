@@ -110,6 +110,9 @@ fig_dominant_veg=3
 #Cited sections (listed here because these can change)
 section_C_pools = 2.1 
 section_land_use_categories = 2.2
+section_C_variable_mapping = "4.1.1"
+section_land_use_mapping = "4.1.2"
+  
 
 #Appendices
 table_ForCchanges = "Appendix A"
@@ -140,7 +143,7 @@ n_areas_ForC = max(ForC_sites$geographic.area, na.rm = TRUE) # total n geographi
 n_independent_records_ForC= NA #suspected duplicates removed. This is the number of records fin ForC simplified.
 n_records_EFDB_variables= NA #n independent records relevant to EFDB
 n_records_sent_to_EFDB = NA # n records sent to EFDB
-n_records_posted_EFDB = NA # n records accepted and posted in EFDB
+n_records_posted_EFDB = 73 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records")
 
 n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
 # get n fields modified
@@ -286,7 +289,7 @@ As such, managed land constitutes all or the majority of Forest Land in most cou
 
 Previous versions of ForC [@anderson-teixeira_carbon_2016; @anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021] contained most of the information required by EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
 However, modest changes to the structure and contents of ForC were needed in order to provide all information required by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified `r n_fields_modified` fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added # new records.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified `r n_fields_modified` fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added `r n_records_added` new records.
 
 This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_2021].
 
@@ -321,9 +324,10 @@ All records sent to EFCB were ensured to be original through manual review, as d
 
 EFDB data submissions required information that was not recorded in previous versions of ForC, but rather was recorded in fields (`r table_ForCchanges`).
 It was therefore necessary to return to original publications to retrieve relevant information, including 
-(1) whether data were presented in tables / text or digitized from figures (EFDB will not accept digitized data, whereas ForC does), 
-(2) estimates in original units, 
-and (3) confidence intervals (when not already in ForC).
+(1) whether records of interest were presented in tables / text or digitized from figures (EFDB will not accept digitized data, whereas ForC does), 
+(2) whether records of interest were presented directly, as opposed to having been calculated from related variables (for example, if a study presents aboveground biomass and root biomass but not total biomass, ForC would accept the sum of these as a valid estimate of total biomass, whereas EFDB would not)
+(3) estimates in original units, 
+and (4) confidence intervals (when not already in ForC).
 We also checked that existing ForC records were complete and correct.
 
 Manual review of records was the limiting step for data transfer to EFDB. 
@@ -342,11 +346,21 @@ In addition, we created new records for **##** EFDB-relevant estimates presented
 
 # Transfer of data from ForC to EFDB
 
-To transfer data from ForC into the EFDB, we populated EFDB's bulk import form ("EFDB bulk import.xlsx"), using R scripts to restructure complete, reviewed records for entry into this form.
+To transfer complete, reviewed ForC records into EFDB, we created R scripts to restructure ForC records and populate EFDB's bulk import form ("EFDB bulk import.xlsx").
+Criteria for data transfer were that (1) records had been checked against the original study and determined to be complete and correct (`EFDB.ready` field in `ForC_citations` table), (2) the original study presented values in tables or text, as opposed to the values having been digitized from graphs or calculated based on related variables (`data.location.within.source` field in `ForC_measurements` table), and (3) the records had not previously been sent to EFDB.
+Once converted into EFDB format, the records were reviewed and then sent to the IPCC's Technical Support Unit for inclusion in EFDB. 
+Complete records needed to be reviewed by the EFDB editorial board prior to posting in the database -- a process that lags behind records transfer and had not yet been completed for all records sent as of `r format(Sys.time(), '%B %d, %Y')`.
 
 ## Mapping ForC to EFDB
 
-`r table_ForCfieldmapping`
+The mapping of ForC fields into EFDB fields is documented in `r table_ForCfieldmapping`. 
+
+For the majority of fields, contents of the field in ForC was transferred directly into an EFDB field, either as the only contents of that field or as part of a composite record.
+For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field `Region/Regionalconditions` (`r table_ForCfieldmapping`).
+In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field `Comments from Data Provider`).
+For some fields, simple conditional logic was used to populate EFDB fields based on ForC records. 
+For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (`Gases` field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
+There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (section `r section_C_variable_mapping`) and (2) determination of land use categories (section `r section_land_use_mapping`).
 
 ### Carbon cycle variables
 
