@@ -110,6 +110,7 @@ fig_dominant_veg=3
 #Cited sections (listed here because these can change)
 section_C_pools = 2.1 
 section_land_use_categories = 2.2
+section_new_variables = 3.2
 section_C_variable_mapping = "4.1.1"
 section_land_use_mapping = "4.1.2"
   
@@ -353,10 +354,10 @@ Complete records needed to be reviewed by the EFDB editorial board prior to post
 
 ## Mapping ForC to EFDB
 
-The mapping of ForC fields into EFDB fields is documented in `r table_ForCfieldmapping`. 
+The mapping of ForC fields into EFDB fields is summarized in `r table_ForCfieldmapping`, with details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
 
 For the majority of fields, contents of the field in ForC was transferred directly into an EFDB field, either as the only contents of that field or as part of a composite record.
-For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field `Region/Regionalconditions` (`r table_ForCfieldmapping`).
+For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field `Region/Regional conditions` (`r table_ForCfieldmapping`).
 In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field `Comments from Data Provider`).
 For some fields, simple conditional logic was used to populate EFDB fields based on ForC records. 
 For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (`Gases` field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
@@ -364,7 +365,12 @@ There were two cases in which more complex mapping was required: (1) mapping of 
 
 ### Carbon cycle variables
 
-Mapping of variables is shown in Fig. `r fig_variable_mapping`.
+With input from the IPCC's Technical Support Unit, we reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into the C pools and stock, stock changes, increments, and losses (Fig. `r fig_variable_mapping`).
+As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented. 
+It it important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
+For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
+Information on minimum diameters censused and other important sources of methodological variation are recorded as covariates in ForC and mapped into the EFDB field *Other Properties* (`r table_ForCfieldmapping`).
+Details on the mapping of ForC variables to EFDB -- including associated covariates, IPCC pools (Table `r table_pools`) and relevant equations [@ipcc_2006_2006] -- are documented in the file ForC_variables_mapping.csv in the IPCC-EFDB-integration repository ([https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
 
 
 ### Land use categories

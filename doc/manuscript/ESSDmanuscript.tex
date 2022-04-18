@@ -641,35 +641,56 @@ records sent as of April 18, 2022.
 
 \subsection{Mapping ForC to EFDB}
 
-The mapping of ForC fields into EFDB fields is documented in Appendix B.
+The mapping of ForC fields into EFDB fields is summarized in Appendix B,
+with details documented in the public GitHub repository associated with
+the project, IPCC-EFDB-integration repository within the ForC-db
+organization (file \emph{ForC-EFDB\_mapping.csv} available at
+\url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
 
 For the majority of fields, contents of the field in ForC was
 transferred directly into an EFDB field, either as the only contents of
 that field or as part of a composite record. For example, ten ForC
 fields describing site location, climate, and edaphic properties all
-mapped into the EFDB field \texttt{Region/Regionalconditions} (Appendix
-B). In cases where original studies did not present 95\% confidence
-intervals (required by IPCC when available) but did present information
-required to calculate these (standard error or n and standard
-deviation), we calculated the 95\% confidence intervals and populated
-the EFDB field with this information (noting the calculation in the EFDB
-field \texttt{Comments\ from\ Data\ Provider}). For some fields, simple
-conditional logic was used to populate EFDB fields based on ForC
-records. For example, for stock variables presented in the original
-publication in units of dry organic matter mass (as opposed to C),
-several greenhouse gasses (CO\textsubscript{2}, CO, CH\textsubscript{4},
-NO, NO\textsubscript{2}, N\textsubscript{2}O) were entered in the EFDB
-field indicating the greenhouse gases to which the record could be
-pertinent (\texttt{Gases} field) because these values could be used in
-calculations of greenhouse gas emissions from biomass burning
-\citep{ipcc_2006_2006}; otherwise, the only pertinent greenhouse gas
-would be CO\textsubscript{2}. There were two cases in which more complex
-mapping was required: (1) mapping of C cycle variables (section 4.1.1)
-and (2) determination of land use categories (section 4.1.2).
+mapped into the EFDB field \texttt{Region/Regional\ conditions}
+(Appendix B). In cases where original studies did not present 95\%
+confidence intervals (required by IPCC when available) but did present
+information required to calculate these (standard error or n and
+standard deviation), we calculated the 95\% confidence intervals and
+populated the EFDB field with this information (noting the calculation
+in the EFDB field \texttt{Comments\ from\ Data\ Provider}). For some
+fields, simple conditional logic was used to populate EFDB fields based
+on ForC records. For example, for stock variables presented in the
+original publication in units of dry organic matter mass (as opposed to
+C), several greenhouse gasses (CO\textsubscript{2}, CO,
+CH\textsubscript{4}, NO, NO\textsubscript{2}, N\textsubscript{2}O) were
+entered in the EFDB field indicating the greenhouse gases to which the
+record could be pertinent (\texttt{Gases} field) because these values
+could be used in calculations of greenhouse gas emissions from biomass
+burning \citep{ipcc_2006_2006}; otherwise, the only pertinent greenhouse
+gas would be CO\textsubscript{2}. There were two cases in which more
+complex mapping was required: (1) mapping of C cycle variables (section
+4.1.1) and (2) determination of land use categories (section 4.1.2).
 
 \subsubsection{Carbon cycle variables}
 
-Mapping of variables is shown in Fig. 1.
+With input from the IPCC's Technical Support Unit, we reviewed the list
+of ForC variables to identify those that were relevant to EFDB and to
+appropriately map them into the C pools and stock, stock changes,
+increments, and losses (Fig. 1). As described in section 3.2, we also
+defined 15 new EFDB-relevant variables that were not previously
+represented. It it important to note that the correspondence of ForC
+variables to IPCC criteria often depends upon measurement protocols
+(``important sources of estimate variation'' in Table 1). For example,
+ForC records of biomass and dead wood vary in the minimum stem diameter
+censused, such that some records would match the IPCC criteria whereas
+others would not. Information on minimum diameters censused and other
+important sources of methodological variation are recorded as covariates
+in ForC and mapped into the EFDB field \emph{Other Properties} (Appendix
+B). Details on the mapping of ForC variables to EFDB -- including
+associated covariates, IPCC pools (Table 1) and relevant equations
+\citep{ipcc_2006_2006} -- are documented in the file
+ForC\_variables\_mapping.csv in the IPCC-EFDB-integration repository
+(\url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
 
 \subsubsection{Land use categories}
 
