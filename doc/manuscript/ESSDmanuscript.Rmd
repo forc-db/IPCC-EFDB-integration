@@ -128,10 +128,16 @@ file.copy(flist, paste0(path_to_dir, "/doc/manuscript/figures_tables"))
 
 
 #Statistics
-n_records_ForC= NA # total n records in ForC
-n_plots_ForC = NA # total n plots in ForC
-n_areas_ForC = NA # total n geographic areas in ForC
-n_independent_records_ForC= NA #suspected duplicates removed
+ForC_measurements <- read.csv(paste0(path_to_ForC,"/ForC/data/ForC_measurements.csv"), stringsAsFactors = FALSE, check.names = FALSE)
+n_records_ForC= length(ForC_measurements[,"measurement.ID"])  # total n records in ForC
+
+ForC_plots <- read.csv(paste0(path_to_ForC,"/ForC/data/ForC_plots.csv"), stringsAsFactors = FALSE, check.names = FALSE)
+n_plots_ForC = length(ForC_plots[,"plot.ID"]) # total n plots in ForC
+
+ForC_sites <- read.csv(paste0(path_to_ForC,"/ForC/data/ForC_sites.csv"), stringsAsFactors = FALSE, check.names = FALSE)
+n_areas_ForC = max(ForC_sites$geographic.area, na.rm = TRUE) # total n geographic areas in ForC
+
+n_independent_records_ForC= NA #suspected duplicates removed. This is the number of records fin ForC simplified.
 n_records_EFDB_variables= NA #n independent records relevant to EFDB
 n_records_sent_to_EFDB = NA # n records sent to EFDB
 n_records_posted_EFDB = NA # n records accepted and posted in EFDB
@@ -141,7 +147,7 @@ n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
 sampling_details <- read.csv(paste0(path_to_ForC,"/ForC/database_management_records/record_of_changes.csv"), stringsAsFactors = FALSE, check.names = FALSE)
 n_fields_modified =  length(sampling_details[,"Column"]) + 4 
 n_records_checked = NA # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
-n_records_added = NA 
+n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entries start with measurement.ID = 48956
 
 ```
 
