@@ -1,0 +1,10 @@
+﻿criteria,recommendation,rationale
+variables to include,"When possible, calculate and present all relevant variables that can be readily caluclated based on available data. ",Estimates of relevant variables are not always calcualted.
+forest census methods,Census stems down to the smallest diameter feasible. ,IPCC biomass pool definition includes all living vegetation
+,taxa to include:,IPCC biomass pool definition includes all living vegetation
+dead organic matter sampling,include damage estimates on standing dead trees,
+,adopt IPCC recommendations for min diameter of deadwood,
+belowground sampling,Select soil sampling increments to include a cutoff at 30 cm depth.,
+reporting variiables,"Present each variable individually, as opposed to requiring that variables of interest be calculated from related variables. ","EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations."
+reporting estimates,"Report all relevant values in tables, text, or supplementary tables/ data files, as opposed to in figures only.",EFDB does not acceptvalues digitized from figures.
+reporting confidence intervals,"Report 95% confidence intervals, standard error, or standard deviation and sample size.","EFDB requires confidence invervals, when possible. "
