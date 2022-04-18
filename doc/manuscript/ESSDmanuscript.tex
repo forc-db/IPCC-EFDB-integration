@@ -510,20 +510,21 @@ approach for defining managed land
 
 \section{Updates to ForC (ForC v4.0)}
 
-Previous versions of ForC \citep{refs} contained most of the information
-required by EFDB, and, more broadly, to inform C accounting under IPCC
-guidelines. However, modest changes to the structure and contents of
-ForC were needed in order to provide all information required by EFDB
-and to improve ForC's capacity to serve as a repository of valuable
-information for forest C accounting under IPCC guidelines. To support
-export of data to EFDB, and to improve the overall quality of the ForC
-database, we added or modified 18 fields (Appendix A), defined 15 new
-variables, implemented enhanced quality control, manually reviewed
-\textgreater\# records to obtain additional required information, and
-added \# new records.
+Previous versions of ForC
+\citep{anderson-teixeira_carbon_2016, anderson-teixeira_forc_2018, anderson-teixeira_carbon_2021}
+contained most of the information required by EFDB, and, more broadly,
+to inform C accounting under IPCC guidelines. However, modest changes to
+the structure and contents of ForC were needed in order to provide all
+information required by EFDB and to improve ForC's capacity to serve as
+a repository of valuable information for forest C accounting under IPCC
+guidelines. To support export of data to EFDB, and to improve the
+overall quality of the ForC database, we added or modified 18 fields
+(Appendix A), defined 15 new variables, implemented enhanced quality
+control, manually reviewed \textgreater\# records to obtain additional
+required information, and added \# new records.
 
-\emph{This section describes changes relative to ForC v2.0
-\citep{anderson-teixeira_forc_2018}.}
+This section describes changes relative to ForC v3.0
+\citep{anderson-teixeira_carbon_2021}.
 
 \subsection{New or modified fields}
 
@@ -562,12 +563,14 @@ including \emph{litter} (OL)).
 
 Prior to releasing ForC v4.0, we executed several quality control
 measures. First, we implemented a system of continuous integration using
-GitHub Actions (\emph{sensu} Kim et al.~in review) to run some automatic
-checks any time the master data files are updated. Second, to improve
-information on geographic coordinates, we flagged and reviewed records
-with suspected low precision \emph{(Issue
-\#29){[}https://github.com/forc-db/ForC/issues/229{]}}. Third, to
-identify erroneous climate data\ldots{} \emph{(Issue
+GitHub Actions \citep[\emph{sensu}][]{kim_using_inreview} to run some
+automatic checks any time the master data files are updated, including
+outlier tests and checks for completeness and naming consistency of
+records across data files. Second, to improve information on geographic
+coordinates, we created a field to record coordinate precision (Appendix
+A), and flagged and reviewed records with suspected low precision
+\emph{(Issue \#29){[}https://github.com/forc-db/ForC/issues/229{]}}.
+Third, to identify erroneous climate data\ldots{} \emph{(Issue
 \#212){[}https://github.com/forc-db/ForC/issues/212{]}}.
 
 Because ForC v4.0 contained known duplicate records, we used R scripts
@@ -579,16 +582,38 @@ review, as detailed below.
 
 \subsection{Manual review of records to be sent to EFDB}
 
-EFDB data submissions require information that was not recorded in
-previous versions of ForC. It was therefore necessary to return to
-original publications to retrieve relevant information, including the
-following:
+EFDB data submissions required information that was not recorded in
+previous versions of ForC, but rather was recorded in fields (Appendix
+A). It was therefore necessary to return to original publications to
+retrieve relevant information, including (1) whether data were presented
+in tables / text or digitized from figures (EFDB will not accept
+digitized data, whereas ForC does), (2) estimates in original units, and
+(3) confidence intervals (when not already in ForC). We also checked
+that existing ForC records were complete and correct.
 
-\emph{Data location within source}- Because EFDB will not accept data
-which has been digitized (from graphs) while ForC does, it was necessary
-to review and note the location of the data within the original source
+Manual review of records was the limiting step for data transfer to
+EFDB. We prioritized review of (1) records from the Forest Global Earth
+Observatory
+\citep[ForestGEO,][]{anderson-teixeira_ctfsforestgeo_2015, davies_forestgeo_2021},
+(2) studies with confidence intervals recorded in ForC (because
+uncertainty estimates are important to the IPCC), (3) original
+publications containing large numbers of EFDB-relevant records, and (4)
+records from tropical regions. The latter criteria was motivated by the
+fact that although tropical forest is the single most important biome
+for climate change mitigation \citep{refs}, ground-based data on
+tropical forest C cycling tend to be more scarce due to a variety of
+challenges \citep{delima_making_2022}, and \emph{tropical countries are
+more likely to apply Tier 1 methodology that bases forest C budgets on
+previously existing data \citep{ref}.}
 
 \subsection{Addition of new records}
+
+In addition to reviewing existing records, we added a total of NA new
+records to ForC. These included \textbf{\#\#} records from \textbf{\#\#}
+studies \citep{piponiot_distribution_2022, refs} that were not
+previously included in ForC. In addition, we created new records for
+\textbf{\#\#} EFDB-relevant estimates presented in the original
+publication that were not yet present in ForC.
 
 \section{Transfer of data from ForC to EFDB}
 
@@ -631,7 +656,7 @@ in making this determination (e.g., geographical location).
 
 \subsection{ForC v4.0 contents}
 
-As of April 16, 2022, ForC (v4.0) contained NA independent records (NA
+As of April 18, 2022, ForC (v4.0) contained NA independent records (NA
 total), NA of which were for variables relevant to EFDB (Fig. 1). These
 records were distributed across all forested continents and ecozones,
 with particularly high concentrations in \emph{{[}ecozone(s){]}} and low
@@ -747,7 +772,7 @@ R\_het\_soil &  &  &  & \\
 
 \subsection{Data transfers to EFDB}
 
-As of April 16, 2022, we had reviewed and sent NA, NA of which have been
+As of April 18, 2022, we had reviewed and sent NA, NA of which have been
 reviewed, accepted, and posted (Fig. 2-3, Table 2). \emph{{[}DETAILS{]}}
 
 \section{Recommendations}

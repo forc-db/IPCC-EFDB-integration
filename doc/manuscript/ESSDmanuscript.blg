@@ -12,45 +12,45 @@ Warning--missing institution in ipcc_climate_2019
 Warning--empty journal in ipcc_climate_2022
 Warning--empty chapter and pages in merganicova_dadwood_2012
 Warning--empty journal in ogle_delineating_2018
-You've used 36 entries,
+You've used 39 entries,
             2819 wiz_defined-function locations,
-            1220 strings with 33967 characters,
-and the built_in function-call counts, 75997 in all, are:
-= -- 5724
-> -- 7867
+            1236 strings with 35324 characters,
+and the built_in function-call counts, 80158 in all, are:
+= -- 6045
+> -- 8263
 < -- 14
-+ -- 2773
-- -- 2591
-* -- 6541
-:= -- 9975
-add.period$ -- 36
-call.type$ -- 36
-change.case$ -- 933
-chr.to.int$ -- 35
-cite$ -- 114
-duplicate$ -- 4729
-empty$ -- 2538
-format.name$ -- 2689
-if$ -- 14546
++ -- 2913
+- -- 2720
+* -- 6900
+:= -- 10521
+add.period$ -- 39
+call.type$ -- 39
+change.case$ -- 982
+chr.to.int$ -- 38
+cite$ -- 123
+duplicate$ -- 5005
+empty$ -- 2698
+format.name$ -- 2827
+if$ -- 15343
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1112
-newline$ -- 117
-num.names$ -- 146
-pop$ -- 3549
+missing$ -- 1172
+newline$ -- 126
+num.names$ -- 158
+pop$ -- 3742
 preamble$ -- 1
-purify$ -- 932
+purify$ -- 981
 quote$ -- 0
-skip$ -- 2598
+skip$ -- 2742
 stack$ -- 0
-substring$ -- 1289
-swap$ -- 4182
+substring$ -- 1359
+swap$ -- 4405
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 315
+type$ -- 342
 warning$ -- 6
-while$ -- 181
+while$ -- 193
 width$ -- 0
-write$ -- 421
+write$ -- 454
 (There were 9 warnings)

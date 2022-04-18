@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -50,6 +50,13 @@
   G., Wolf, A., Xu, H., Yap, S., and Zimmerman, J.: {{CTFS-ForestGEO}} : A
   Worldwide Network Monitoring Forests in an Era of Global Change, Global
   Change Biology, 21, 528--549, \doi{10.1111/gcb.12712}, 2015.
+
+\bibitem[{{Anderson-Teixeira} et~al.(2016){Anderson-Teixeira}, Wang, McGarvey,
+  and LeBauer}]{anderson-teixeira_carbon_2016}
+{Anderson-Teixeira}, K.~J., Wang, M. M.~H., McGarvey, J.~C., and LeBauer,
+  D.~S.: Carbon Dynamics of Mature and Regrowth Tropical Forests Derived from a
+  Pantropical Database ({{TropForC-db}}), Global Change Biology, 22,
+  1690--1709, \doi{10.1111/gcb.13226}, 2016.
 
 \bibitem[{{Anderson-Teixeira} et~al.(2018){Anderson-Teixeira}, Wang, McGarvey,
   Herrmann, Tepley, {Bond-Lamberty}, and LeBauer}]{anderson-teixeira_forc_2018}
@@ -216,6 +223,18 @@ Davies, S.~J., Abiem, I., Abu~Salim, K., Aguilar, S., Allen, D., Alonso, A.,
   Biological Conservation, 253, 108\,907, \doi{10.1016/j.biocon.2020.108907},
   2021.
 
+\bibitem[{{de Lima} et~al.(2022){de Lima}, Phillips, Duque, Tello, Davies, {de
+  Oliveira}, Muller, Honorio~Coronado, Vilanova, {Cuni-Sanchez}, Baker, Ryan,
+  Malizia, Lewis, {ter Steege}, Ferreira, Marimon, Luu, Imani, Arroyo, Blundo,
+  Kenfack, Sainge, Sonk{\'e}, and V{\'a}squez}]{delima_making_2022}
+{de Lima}, R. A.~F., Phillips, O.~L., Duque, A., Tello, J.~S., Davies, S.~J.,
+  {de Oliveira}, A.~A., Muller, S., Honorio~Coronado, E.~N., Vilanova, E.,
+  {Cuni-Sanchez}, A., Baker, T.~R., Ryan, C.~M., Malizia, A., Lewis, S.~L.,
+  {ter Steege}, H., Ferreira, J., Marimon, B.~S., Luu, H.~T., Imani, G.,
+  Arroyo, L., Blundo, C., Kenfack, D., Sainge, M.~N., Sonk{\'e}, B., and
+  V{\'a}squez, R.: Making Forest Data Fair and Open, Nature Ecology \&
+  Evolution, \doi{10.1038/s41559-022-01738-7}, 2022.
+
 \bibitem[{Deng et~al.(2021)Deng, Ciais, {Tzompa-Sosa}, Saunois, Qiu, Tan, Sun,
   Ke, Cui, Tanaka, Lin, Thompson, Tian, Yao, Huang, Lauerwald, Jain, Xu,
   Bastos, Sitch, Palmer, Lauvaux, {d'Aspremont}, Giron, Benoit, Poulter, Chang,
@@ -349,6 +368,15 @@ IPCC: Climate {{Change}} 2022: {{Mitigation}} of {{Climate Change}}.
   {{Hasija}}, {{G}}. {{Lisboa}}, {{S}}. {{Luz}}, {{J}}. {{Malley}}, (Eds.)].
   {{Cambridge University Press}}, {{Cambridge}}, {{UK}} and {{New York}},
   {{NY}}, {{USA}}., \doi{10.1017/9781009157926.001}, 2022.
+
+\bibitem[{Kim et~al.(in review)Kim, {Valentine Herrmann}, Bareto, Calkins,
+  {Gonzalez-Akre}, Johnson, Jordan, Magee, McGregor, Montero, Novak, Rogers,
+  Shue, and {Anderson-Teixeira}}]{kim_using_inreview}
+Kim, A., {Valentine Herrmann}, Bareto, R., Calkins, B., {Gonzalez-Akre}, E.~B.,
+  Johnson, D., Jordan, J., Magee, L., McGregor, I.~R., Montero, N., Novak, K.,
+  Rogers, T., Shue, J., and {Anderson-Teixeira}, K.: Using {{GitHub Actions}}
+  Continuous Integration to Automate Quality Assurance and Control of Data on
+  Ecological Dynamics, Methods in Ecology and Evolution, in review.
 
 \bibitem[{McDowell et~al.(2020)McDowell, Allen, {Anderson-Teixeira}, Aukema,
   {Bond-Lamberty}, Chini, Clark, Dietze, Grossiord, {Hanbury-Brown}, Hurtt,
