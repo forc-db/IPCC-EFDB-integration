@@ -257,7 +257,7 @@ comparison for external parties to evaluate these inventories. The EFDB
 encourages researchers to submit estimates of emission factors or other
 related parameters from peer-reviewed journal papers or other accepted
 sources for inclusion in the database. In the case of forests, emission
-factors include carbon stocks, increments (``stock changes''), and
+factors include carbon stocks, net increments (``stock changes''), and
 fluxes (``gains'' and ``losses'') for various pools
 \citep{ipcc_2006_2006, ipcc_2019_2019}.
 
@@ -301,7 +301,7 @@ takes the difference between gains and losses, or using the
 ``Stock-Difference Method'', which computes \(\Delta C\) based on C
 stocks at two points in time \citep{ipcc_2006_2006}. Thus, C cycle
 variables relevant to the IPCC methodology and to EFDB include C stocks,
-increments, and fluxes in the IPCC-defined pools.
+net annual increments, and fluxes in the IPCC-defined pools.
 
 \subsection{Carbon pools}
 
@@ -736,7 +736,7 @@ type was \emph{{[}type{]}}, followed by \emph{{[}type{]}} and
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=15cm]{figures_tables/Histogram_n_Relevant_and_Transferred_Records} \caption{\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2.}\label{fig:fig_dominant_veg}
+\includegraphics[width=15cm]{figures_tables/Histogram_n_Relevant_and_Transferred_Records} \caption{\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2.}\label{fig:fig_histograms}
 \end{figure}
 
 ForC contained data for \textbf{\#\#} of the \textbf{\#\#} variables
@@ -840,35 +840,77 @@ R\_het\_soil &  &  &  & \\
 \subsection{Data transfers to EFDB}
 
 As of April 18, 2022, we had reviewed and sent NA records to EFDB, 73 of
-which have been reviewed, accepted, and posted (Fig. 2-3, Table 2).
+which have been reviewed, accepted, and posted (Figs. 2-3, Table 2).
 \emph{{[}DETAILS{]}}
 
 \section{Recommendations}
 
-(\emph{strongly flag both useful variables that the EFDB does not track
-and useful variables that papers fail to include that EFDB needs})
+Based on our experience contributing forest C data to EFDB via ForC, we
+make several recommendations as to how scientists can improve forest C
+records in EFDB through database work (section 6.1), new data collection
+and analysis (section 6.2), and reporting (section 6.3). We also
+highlight notable mismatches between IPCC accounting methods and forest
+C mensuration (section 6.4).
+
+\subsection{Database needs}
+
+There is vast potential to expand forest C data in EFDB by completing
+the process of reviewing and sending data that are already in ForC
+(Figs. 2-3). So far, only \textasciitilde NA\% of the EFDB-relevant data
+in ForC have been sent to EFDB.
+
+Moreover, there are many published EFDB-relevant forest C data that are
+not included in ForC, with more being published on a nearly daily basis.
+Coverage of particular variables or regions could be vastly improved
+through systematic review of the literature. \emph{(There are some
+efforts underway, including a few that Susan can specify.)} Such reviews
+are necessary to even develop a rigorous assessment of forest C data
+that are available, versus those that require additional data collection
+and analysis.
 
 \subsection{Data collection and analysis needs}
 
-\emph{(Paragraph highlighting important gaps in variables / regions)}
+New data collection and analysis is needed to fill notable knowledge
+gaps. While aboveground biomass stocks in particular have received --
+and continue to receive -- significant research attention, other pools
+and variables remain poorly quantified \citep[Table
+2,][]{anderson-teixeira_carbon_2021}. Furthermore, data distribution is
+uneven across forest types and geographical regions (Figs. 2-3). For
+instance, C cycling of tropical forests -- particularly in Africa --
+remains relatively poorly characterized, in large part due to
+substantial barriers to data collection and distribution
+\citep{delima_making_2022} \emph{(add some more here?)}
 
-Several variables of value to IPCC, including standing dead wood, woody
-mortality, delta.agb, are not calculated and presented as frequently as
-are AGB and ANPP\_woody, even though they can readily be derived from
-the same census data. We recommend that researchers calculate and report
-these, following the reporting guidelines specified below. Furthermore,
-there is an opportunity to fill data gaps by calculating these from
-existing census data. For example, the core census protocol of the
-Forest Global Earth Observatory {[}ForestGEO;
-\citet{anderson-teixeira_ctfsforestgeo_2015},\citet{davies_forestgeo_2021}{]}
-collects the data required to calculate standing dead wood, woody
-mortality, and delta.agb, but these have not been calculated and
-reported for all sites for which the appropriate number of censuses are
-available \citep[but see][\citet{refs}]{piponiot_distribution_2022}.
+Several variables of value for IPCC C accounting have not been
+calculated and presented as would be possible given the same forest
+census data and minimal extra research effort. For example, aboveground
+woody mortality (\emph{woody.mortality\_ag}) and aboveground biomass
+increment (\emph{delta.agb}) can be calculated from the same census data
+as aboveground woody productivity (\emph{ANPP\_woody}), yet the latter
+has received far more research attention, and correspondingly has far
+more records in ForC \citetext{\citealp[Table
+2,][]{anderson-teixeira_carbon_2021}; \citealp[but
+see][]{piponiot_distribution_2022}}. Similarly, live coarse root
+biomass, total biomass, and changes in both of these pools could in
+theory be easily be estimated in parallel with aboveground biomass, with
+the greatest barrier being availability of reliable allometries, as have
+been developed for aboveground biomass
+\citep{chave_improved_2014, rejou-mechain_biomass_2017, gonzalez-akre_allodb_2022}.
+However, while equations for estimating root (and thereby total) biomass
+require improvement, they do exist \emph{for many forest
+types}\citep{refs}, and IPCC provides default recommendations of
+below-ground to above-ground ratios for estimation of root biomass
+\citep{ipcc_2019_2019}. In addition, standing dead trees are captured in
+most forest censuses and could be used to estimate standing dead wood,
+although additional data on breakage would be needed for accurate
+accounting. We recommend that, when possible, researchers calculate
+these, following the reporting guidelines specified in section 6.3.
 
-Given widespread trends of increasing tree mortality\citep{refs},
-including through severe natural disturbance \citep{refs}, better
-characterization of dead wood will be critical.
+\emph{Other EFDB-relevant variables require more effort but are
+warrented given their importance for forest C accounting.} Given
+widespread trends of increasing tree mortality\citep{refs}, including
+through severe natural disturbance \citep{refs}, better characterization
+of dead wood will be critical. \ldots{}
 
 \subsection{Data reporting needs}
 
@@ -909,21 +951,19 @@ useful--for example, being used for basic science
 \citep[e.g.,][]{banburymorgan_global_2021, anderson-teixeira_carbon_2021}
 or model benchmarking \citep{fer_ecosystem_2021}.
 
-\subsection{Database needs}
+\subsection{Mismatches between IPCC accounting methods and forest C
+mensuration}
 
-There are plenty of relevant, published data that are not included in
-ForC. Systematic review of the literature could vastly improve data
-coverage. \emph{(There are some efforts underway, including a few that
-Susan can specify.)}
+Remote sensing biomass estimates include standing dead wood
+\citep{duncanson_aboveground_2021}.
 
-\subsection{IPCC protocol considerations}
+IPCC accounting methods cannot leverage eddy-covariance measurements,
+which are widely seen as the best available method for quantifying
+ecosystem-atmosphere gas exchange.
 
 An important challenge is that forests are changing rapidly, and data
 collected a decade ago may no longer be relevant, particularly in the
 cases of C increments and fluxes.
-
-Remote sensing biomass estimates include standing dead wood
-\citep{duncanson_aboveground_2021}.
 
 \section{Conclusions}
 

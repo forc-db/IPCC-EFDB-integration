@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 APR 2022 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  18 APR 2022 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3166,78 +3166,79 @@ Overfull \hbox (1.18675pt too wide) in paragraph at lines 838--838
 []\T1/ptm/m/n/10 delta.deadwood_down|  
  []
 
-[11] [12]
+[11] [12] [13]
 
-Package natbib Warning: Citation `refs' on page 13 undefined on input line 867.
-
-
-
-Package natbib Warning: Citation `refs' on page 13 undefined on input line 869.
+Package natbib Warning: Citation `refs' on page 14 undefined on input line 901.
 
 
+[14 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [15 
+<./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>]
 
-Package natbib Warning: Citation `refs' on page 13 undefined on input line 870.
+Package natbib Warning: Citation `refs' on page 16 undefined on input line 911.
 
 
-[13] [14 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>]
-[15 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [16]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 977--977
+
+Package natbib Warning: Citation `refs' on page 16 undefined on input line 912.
+
+
+[16] [17]
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 1017--1017
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 977--977
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 1017--1017
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
-[17
+[18
 
-] [18] [19]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 1069--1069
+] [19] [20]
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 1109--1109
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 1069--1069
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 1109--1109
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 1069--1069
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 1109--1109
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 1069--1069
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 1109--1109
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
-[20
+[21
 
-] [21] [22] (./ESSDmanuscript.bbl [23]
+] [22] [23] (./ESSDmanuscript.bbl [24]
 Underfull \hbox (badness 10000) in paragraph at lines 92--94
 []\T1/ptm/m/n/9 Bond-Lamberty, B. and Thom-son, A.: A Global Database of Soil R
 es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
  []
 
-[24] [25] [26] [27]) [28]
+[25] [26] [27] [28]) [29]
 
-Package caption Warning: Unused \captionsetup[table] on input line 935.
+Package caption Warning: Unused \captionsetup[table] on input line 975.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1151.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1151.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1191.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1151.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1151.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1191.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1191.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1191.
  ) 
 Here is how much of TeX's memory you used:
- 14821 strings out of 480608
- 198166 string characters out of 5903631
+ 14822 strings out of 480608
+ 198171 string characters out of 5903631
  595164 words of memory out of 5000000
  30288 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
@@ -3253,10 +3254,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (28 pages, 624107 bytes).
+Output written on ESSDmanuscript.pdf (29 pages, 626749 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 455 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
