@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -87,6 +87,10 @@ Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
   H.~C., and Anderson-Teixeira, K.~J.: Global Patterns of Forest Autotrophic
   Carbon Fluxes, Global Change Biology, 27, 2840--2855,
   \doi{10.1111/gcb.15574}, 2021.
+
+\bibitem[{{Bond-Lamberty} and Thomson(2010)}]{bond-lamberty_global_2010}
+{Bond-Lamberty}, B. and Thomson, A.: A Global Database of Soil Respiration
+  Data, Biogeosciences, 7, 1915--1926, \doi{10.5194/bg-7-1915-2010}, 2010.
 
 \bibitem[{Carmona et~al.(2002)Carmona, Armesto, Aravena, and
   P{\'e}rez}]{carmona_coarse_2002}
@@ -368,6 +372,15 @@ IPCC: Climate {{Change}} 2022: {{Mitigation}} of {{Climate Change}}.
   {{Hasija}}, {{G}}. {{Lisboa}}, {{S}}. {{Luz}}, {{J}}. {{Malley}}, (Eds.)].
   {{Cambridge University Press}}, {{Cambridge}}, {{UK}} and {{New York}},
   {{NY}}, {{USA}}., \doi{10.1017/9781009157926.001}, 2022.
+
+\bibitem[{Jian et~al.(2021)Jian, Vargas, {Anderson-Teixeira}, Stell, Herrmann,
+  Horn, Kholod, Manzon, Marchesi, Paredes, and
+  {Bond-Lamberty}}]{jian_restructured_2021}
+Jian, J., Vargas, R., {Anderson-Teixeira}, K., Stell, E., Herrmann, V., Horn,
+  M., Kholod, N., Manzon, J., Marchesi, R., Paredes, D., and {Bond-Lamberty},
+  B.: A Restructured and Updated Global Soil Respiration Database
+  ({{SRDB-V5}}), Earth System Science Data, 13, 255--267,
+  \doi{10.5194/essd-13-255-2021}, 2021.
 
 \bibitem[{Kim et~al.(in review)Kim, {Valentine Herrmann}, Bareto, Calkins,
   {Gonzalez-Akre}, Johnson, Jordan, Magee, McGregor, Montero, Novak, Rogers,

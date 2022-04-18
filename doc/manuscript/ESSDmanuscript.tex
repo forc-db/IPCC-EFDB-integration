@@ -265,8 +265,14 @@ The Global Forest Carbon Database, ForC
 (\url{https://forc-db.github.io/}), is the largest collection of
 published estimates of forest carbon stocks, increments, and annual
 fluxes
-\citep{anderson-teixeira_forc_2018, anderson-teixeira_carbon_2021}. For
-C currently contains 39838 records from 10585 plots in 1531 distinct
+\citep{anderson-teixeira_forc_2018, anderson-teixeira_carbon_2021}. ForC
+includes data ingested from individual publications and relevant
+databases, including the Global Reforestation Opportunity Assessment
+(GROA) database \citep[database doi:
+10.5281/zenodo.3983644]{cook-patton_mapping_2020}, the global soil
+respiration database
+\citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
+For C currently contains 39838 records from 10585 plots in 1531 distinct
 geographical areas, along with records of stand age and disturbance
 history. As such, ForC is positioned to improve forest C accounting
 through the transfer of data to EFDB. The purpose of this publication is
@@ -291,12 +297,11 @@ within a land-use category, annual stock changes (\(\Delta C\); t C
 yr\textsuperscript{-1}) are calculated as the sum of changes in various
 pools (section 2.1), plus any harvested wood products. For each pool,
 \(\Delta C\) may be calculated using the ``Gain-Loss Method'', which
-takes the difference between gains and losses (influx and outflux
-variables in Fig. 1), or using the ``Stock-Difference Method'', which
-computes \(\Delta C\) based on C stocks at two points in time
-\citep{ipcc_2006_2006}. Thus, C cycle variables relevant to the IPCC
-methodology and to EFDB include C stocks, increments, and fluxes in the
-IPCC-defined pools.
+takes the difference between gains and losses, or using the
+``Stock-Difference Method'', which computes \(\Delta C\) based on C
+stocks at two points in time \citep{ipcc_2006_2006}. Thus, C cycle
+variables relevant to the IPCC methodology and to EFDB include C stocks,
+increments, and fluxes in the IPCC-defined pools.
 
 \subsection{Carbon pools}
 
@@ -351,10 +356,6 @@ soil organic matter & organic carbon in mineral soils to a specified depth & sam
 \hline
 \end{tabu}
 \end{table}
-
-\begin{figure}
-\includegraphics[width=14cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: (a,b) branch fall and mortality of stems below census min DBH, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, and that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon.}\label{fig:fig_variable_mapping}
-\end{figure}
 
 \subsubsection{Biomass}
 
@@ -537,12 +538,11 @@ based on the DOI}.
 
 \subsection{New variables}
 
-We added a total of 15 new variables to the set of named and defined
-variables, counting each pair of variables with units in C (ending in
-\texttt{\_C}) or organic matter (ending in \texttt{\_OM}) as one. All of
-these variables are relevant to C accounting under IPCC, and hence to
-EFDB (Fig. 1). This included eleven increment variables, adding to only
-one previously defined increment variable (aboveground biomass
+We added a total of 15 new EFDB-relevant variables to the set of named
+and defined variables (Fig. 1), counting each pair of variables with
+units in C (ending in \texttt{\_C}) or organic matter (ending in
+\texttt{\_OM}) as one. This included eleven increment variables, adding
+to only one previously defined increment variable (aboveground biomass
 increment, \emph{delta.agb}). These are directly related to C stocks as
 previously defined in ForC, with ``\emph{delta.}'' added in front of the
 variable name. Further, we added variables capturing the belowground
@@ -550,14 +550,16 @@ component of woody mortality (\emph{woody.mortality\_root}) and the
 combined aboveground and belowground components of woody mortality
 (\emph{woody.mortality}). Although most of these variables currently
 lack records in ForC, the structure exists such that records can be
-populated over time.
+populated over time. Finally, to provide better definition of the
+previously existing variable \emph{organic.layer}, which has a nebulous
+definition that reflects the varied definitions adopted by original
+studies, we added two clearly defined variables: \emph{litter}
+(relatively undecomposed plant material/ OL horizon), and
+\emph{O.horizon} (entire O-horizon, including OL).
 
-Further, to provide better definition of the previously existing
-variable \emph{organic.layer}, which has a nebulous definition that
-reflects the varied definitions adopted by original studies, we added
-two clearly defined variables: \emph{litter} (relatively undecomposed
-plant material/ OL horizon), and \emph{O.horizon} (entire O-horizon,
-including \emph{litter} (OL)).
+\begin{figure}
+\includegraphics[width=14cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; corresponding ForC variables, and relationships among them.} For each C pool, we show ForC variables corresponding to the stock, stock change (net annual increment), gain (influx), and loss. Most, but not all, EFDB-relevant ForC variables are shown here. Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: (a,b) branch fall and mortality of stems below census min DBH, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, or that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon.}\label{fig:fig_variable_mapping}
+\end{figure}
 
 \subsection{Quality control measures}
 
@@ -675,11 +677,14 @@ complex mapping was required: (1) mapping of C cycle variables (section
 
 With input from the IPCC's Technical Support Unit, we reviewed the list
 of ForC variables to identify those that were relevant to EFDB and to
-appropriately map them into the C pools and stock, stock changes,
-increments, and losses (Fig. 1). As described in section 3.2, we also
-defined 15 new EFDB-relevant variables that were not previously
-represented. It it important to note that the correspondence of ForC
-variables to IPCC criteria often depends upon measurement protocols
+appropriately map them into EFDB (Fig. 1). For each C pools (Table 1),
+we identified variables representing organic matter or C stocks, stock
+changes (a.k.a. ``net annual increments'' by IPCC, ``increments'' in
+ForC), gains (a.k.a. ``gross annual increments'' by IPCC, ``fluxes'' in
+ForC), and losses (``fluxes'' in ForC). As described in section 3.2, we
+also defined 15 new EFDB-relevant variables that were not previously
+represented in ForC. It it important to note that the correspondence of
+ForC variables to IPCC criteria often depends upon measurement protocols
 (``important sources of estimate variation'' in Table 1). For example,
 ForC records of biomass and dead wood vary in the minimum stem diameter
 censused, such that some records would match the IPCC criteria whereas
@@ -712,8 +717,6 @@ that which would be reported in scientific publications and hence in
 ForC, we do not transfer any classification of land management status
 from ForC to the EFDB, but do provide auxiliary info that may be useful
 in making this determination (e.g., geographical location).
-
-\subsection{Review and posting of data}
 
 \section{Results}
 
@@ -836,8 +839,9 @@ R\_het\_soil &  &  &  & \\
 
 \subsection{Data transfers to EFDB}
 
-As of April 18, 2022, we had reviewed and sent NA, 73 of which have been
-reviewed, accepted, and posted (Fig. 2-3, Table 2). \emph{{[}DETAILS{]}}
+As of April 18, 2022, we had reviewed and sent NA records to EFDB, 73 of
+which have been reviewed, accepted, and posted (Fig. 2-3, Table 2).
+\emph{{[}DETAILS{]}}
 
 \section{Recommendations}
 

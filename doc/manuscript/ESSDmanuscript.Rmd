@@ -184,6 +184,7 @@ The EFDB encourages researchers to submit estimates of emission factors or other
 In the case of forests, emission factors include carbon stocks, increments ("stock changes"), and fluxes ("gains" and "losses") for various pools [@ipcc_2006_2006;@ipcc_2019_2019].
 
 The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest carbon stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].
+ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
 For C currently contains `r n_records_ForC` records from `r n_plots_ForC` plots in `r n_areas_ForC` distinct geographical areas, along with records of stand age and disturbance history.
 As such, ForC is positioned to improve forest C accounting through the transfer of data to EFDB.
 The purpose of this publication is to document that process and provide recommendations for future improvements.
@@ -200,7 +201,7 @@ Here, we
 
 The end goal of IPCC greenhouse gas inventories is to quantify greenhouse gas emissions to, or withdrawals from, the atmosphere on an annual basis, most commonly on a national level [@ipcc_2006_2006;@ipcc_2019_2019]. 
 For each stratum of subdivision within a land-use category, annual stock changes ($\Delta C$; t C yr^-1^) are calculated as the sum of changes in various pools (section `r section_C_pools`), plus any harvested wood products.
-For each pool, $\Delta C$ may be calculated using the "Gain-Loss Method", which takes the difference between gains and losses (influx and outflux variables in Fig. `r fig_variable_mapping`)<!--IPCC eq.2.4-->, or using the "Stock-Difference Method", which computes $\Delta C$ based on C stocks at two points in time<!--IPCC eq.2.5--> [@ipcc_2006_2006]. 
+For each pool, $\Delta C$ may be calculated using the "Gain-Loss Method", which takes the difference between gains and losses<!--IPCC eq.2.4-->, or using the "Stock-Difference Method", which computes $\Delta C$ based on C stocks at two points in time<!--IPCC eq.2.5--> [@ipcc_2006_2006]. 
 Thus, C cycle variables relevant to the IPCC methodology and to EFDB include C stocks, increments, and fluxes in the IPCC-defined pools.
 
 
@@ -226,11 +227,6 @@ knitr::kable(C_pools_table, format = "latex",
   row_spec(0, bold = TRUE)
 ```
 
-
-```{r fig_variable_mapping, out.width = "14cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; ForC variables corresponding to the stock, increment, influx and outflux; and relationships among them.} Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: (a,b) branch fall and mortality of stems below census min DBH, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, and that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon."}
-#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
-knitr::include_graphics("figures_tables/C_variable_mapping.png")
-```
 
 ### Biomass
 Biomass includes living vegetation, above- and below-ground, both woody and herbaceous, but with a focus on woody plants and trees given their much greater potential to sequester large amounts of C [@ipcc_2006_2006].
@@ -302,14 +298,18 @@ For the latter, we *used an R script to automatically retrieve information based
 
 ## New variables
 
-We added a total of `r n_new_variables` new variables to the set of named and defined variables, counting each pair of variables with units in C (ending in  `_C`) or organic matter (ending in `_OM`) as one. 
-All of these variables are relevant to C accounting under IPCC, and hence to EFDB (Fig. `r fig_variable_mapping`).
+We added a total of `r n_new_variables` new EFDB-relevant variables to the set of named and defined variables (Fig. `r fig_variable_mapping`), counting each pair of variables with units in C (ending in  `_C`) or organic matter (ending in `_OM`) as one. 
 This included eleven increment variables, adding to only one previously defined increment variable (aboveground biomass increment, *delta.agb*). 
 These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
 Further, we added variables capturing the belowground component of woody mortality (*woody.mortality_root*) and the combined aboveground and belowground components of woody mortality (*woody.mortality*).
 Although most of these variables currently lack records in ForC, the structure exists such that records can be populated over time. 
+Finally, to provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including OL).
 
-Further, to provide better definition of the previously existing variable *organic.layer*, which has a nebulous definition that reflects the varied definitions adopted by original studies, we added two clearly defined variables: *litter* (relatively undecomposed plant material/ OL horizon), and *O.horizon* (entire O-horizon, including *litter* (OL)).
+```{r fig_variable_mapping, out.width = "14cm", echo = FALSE, fig.cap = "\\textbf{Schematic illustrating the carbon pools quantified under IPCC accounting; corresponding ForC variables, and relationships among them.} For each C pool, we show ForC variables corresponding to the stock, stock change (net annual increment), gain (influx), and loss. Most, but not all, EFDB-relevant ForC variables are shown here. Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., min DBH). Additional caveats are as follows: (a,b) branch fall and mortality of stems below census min DBH, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, or that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon."}
+#this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
+knitr::include_graphics("figures_tables/C_variable_mapping.png")
+```
+
 
 ## Quality control measures
 Prior to releasing ForC v4.0, we executed several quality control measures.
@@ -365,8 +365,9 @@ There were two cases in which more complex mapping was required: (1) mapping of 
 
 ### Carbon cycle variables
 
-With input from the IPCC's Technical Support Unit, we reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into the C pools and stock, stock changes, increments, and losses (Fig. `r fig_variable_mapping`).
-As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented. 
+With input from the IPCC's Technical Support Unit, we reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into EFDB (Fig. `r fig_variable_mapping`).
+For each C pools (Table `r table_pools`), we identified variables representing organic matter or C stocks, stock changes (a.k.a. "net annual increments" by IPCC, "increments" in ForC), gains (a.k.a. "gross annual increments" by IPCC, "fluxes" in ForC), and losses ("fluxes" in ForC).
+As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented in ForC. 
 It it important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
 For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
 Information on minimum diameters censused and other important sources of methodological variation are recorded as covariates in ForC and mapped into the EFDB field *Other Properties* (`r table_ForCfieldmapping`).
@@ -381,11 +382,6 @@ Documented at https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/For
 The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [*IPCC 2006 full report REF*]. 
 This definition is applied differently across countries, and is not clearly defined by the majority of governments [@ogle_delineating_2018]. 
 Given this, and because the IPCC definition of management does not necessarily match that which would be reported in scientific publications and hence in ForC, we do not transfer any classification of land management status from ForC to the EFDB, but do provide auxiliary info that may be useful in making this determination (e.g., geographical location).
-
-## Review and posting of data
-
-
-
 
 
 # Results
@@ -434,7 +430,7 @@ knitr::kable(C_variables_table, format = "latex",
 
 ## Data transfers to EFDB
 
-As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed and sent `r n_records_sent_to_EFDB`, `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Fig. `r fig_map`-`r fig_dominant_veg`, Table `r table_variables`).
+As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed and sent `r n_records_sent_to_EFDB` records to EFDB, `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Fig. `r fig_map`-`r fig_dominant_veg`, Table `r table_variables`).
 *[DETAILS]*
 
 # Recommendations
