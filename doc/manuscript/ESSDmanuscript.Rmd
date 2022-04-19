@@ -389,10 +389,12 @@ This dual classification indicates that records may be relevant to either catego
 For (rare) cases where *dominant.life.form* was grass and stand age was greater than zero, indicative of early successional vegetation, we assigned a classification of Forest Land, consistent with the IPCC definition that Forest Land includes land expected to succeed to forest.
 Cases where *dominant.life.form* was grass or crop and stand age was zero were indicative of a control for studies of forest regrowth following agricultural abandonment, and were classified as Grassland and Cropland, respectively.
 
-*(now describe sub-category classification, which depends on past land use)*
-
-Documented at https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md, https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in [issue #8](https://github.com/forc-db/IPCC_database_integration/issues/8). 
-
+Classification into sub-categories was dependent upon stand age and site history (section `r  section_land_use_categories`).
+For Forest Land ≥ 20 years old or of unknown (relatively mature) age, or Forest Land < 20 years old that was forest prior to a stand-clearing disturbance, the past land-use category was Forest Land, making the sub-category "Forest Land Remaining Forest land".
+For forests <20 years old with history including cultivation/ tillage or grazing, past land-use categories were Cropland and Grassland, respectively, making land-use subcategories were "Cropland converted to Forest Land" and "Cropland converted to Forest Land", respectively.
+For forests <20 years old with unspecified previous agricultural use, we assigned the sub-category "Land Converted to Forest land".
+Forests <20 years old with unknown land use prior to the study date were simply classified as "Forest Land".
+The same logic was applied for savannas, but including both Forest Land and Grassland as potentially relevant categories. 
 
 Given the lack of public information needed to determine whether lands are classified as mangaged [@ogle_delineating_2018; @deng_comparing_2021], and because the IPCC's definition of managed land is more expansive than is commonly applied in the scientific literature and hence in ForC, we did not transfer any classification of land management status from ForC to the EFDB.
 However, we do provide auxiliary information that should be useful in making this determination, including geographical location and notable disturbance events. 
