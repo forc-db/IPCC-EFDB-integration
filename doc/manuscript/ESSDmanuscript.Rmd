@@ -276,15 +276,17 @@ Soil organic matter/ carbon (SOM/ SOC), which *(statistic on how much C is typia
 Live fine roots (suggested diameter cutoff of 2 mm) may be included with soil organic matter when it is not feasible to distinguish them empirically.
 The greatest source of methodological variation in measuring SOM/ SOC is sampling depth, which has a suggested default of 30 cm but may vary by country provided that consistent criteria are applied. 
 
-## Land use categories
+## Land classification
 IPCC defines land-use categories to include six categories -- Forest Land, Grassland, Wetlands, Cropland, Settlements, and Other Land [@ipcc_2006_2006].
 Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
-Forest Land is defined as at least 10-30% crown cover of trees with potential to reach a minimum height of 2-5 m *in situ* [@ipcc_good_2003].
+Forest Land is defined as at least 10-30% crown cover of trees with potential to reach a minimum height of 2-5 m *in situ*, and shorter-stature natural vegetation would be classified as Grassland [@ipcc_good_2003].
 Definitions of forest are allowed to vary by country, but must be applied consistently.
 Forest Land includes land where vegetation temporarily falls below the threshold values for forest (e.g., due to disturbance), but is expected to exceed those thresholds in the future [@ipcc_good_2003].
 
-Inventories are conducted only for managed land, which is defined by IPCC to include "all forests subject to some kind of human interactions (notably commercial management, harvest of industrial round-wood (logs) and fuelwood, production and use of wood commodities, and forest managed for amenity value or environmental protection if specified by the country), with defined geographical boundaries" [@ipcc_good_2003].
-As such, managed land constitutes all or the majority of Forest Land in most countries; however, many countries have not yet reported their approach for defining managed land [@ogle_delineating_2018; @deng_comparing_2021].
+The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [@ipcc_2006_2006]. 
+This expansive definition of managed land implies that the majority of Forest Land in most countries is managed [e.g.,].
+However, the definition is applied differently across countries, and the majority of governments have yet to report their approach for defining managed land or provide maps of managed land [@ogle_delineating_2018; @deng_comparing_2021].
+
 
 # Updates to ForC (ForC v4.0)
 
@@ -365,7 +367,7 @@ For example, ten ForC fields describing site location, climate, and edaphic prop
 In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field `Comments from Data Provider`).
 For some fields, simple conditional logic was used to populate EFDB fields based on ForC records. 
 For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (`Gases` field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
-There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (section `r section_C_variable_mapping`) and (2) determination of land use categories (section `r section_land_use_mapping`).
+There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (section `r section_C_variable_mapping`) and (2) land classification (section `r section_land_use_mapping`).
 
 ### Carbon cycle variables
 
@@ -378,15 +380,22 @@ Information on minimum diameters censused and other important sources of methodo
 Details on the mapping of ForC variables to EFDB -- including associated covariates, IPCC pools (Table `r table_pools`) and relevant equations [@ipcc_2006_2006] -- are documented in the file ForC_variables_mapping.csv in the IPCC-EFDB-integration repository ([https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
 
 
-### Land use categories
+### Land classification
+
+Determination of the IPCC land-use category (i.e., Forest Land, Grassland, Wetlands, Cropland, Settlements, or Other Land; section `r  section_land_use_categories`) was made based on the categorical ForC field *dominant.life.form*, sometimes drawing upon stand age.
+Records with "woody" *dominant.life.form* were classified as Forest Land.
+Those with *dominant.life.form* of "woody+grass", which in ForC is indicative of anything from a shrub-encroached grassland to a tree-dominated savanna, were given dual classification of Forest Land and Grassland.
+This dual classification indicates that records may be relevant to either category depending on the definition of forest applied (varies by country).
+For (rare) cases where *dominant.life.form* was grass and stand age was greater than zero, indicative of early successional vegetation, we assigned a classification of Forest Land, consistent with the IPCC definition that Forest Land includes land expected to succeed to forest.
+Cases where *dominant.life.form* was grass or crop and stand age was zero were indicative of a control for studies of forest regrowth following agricultural abandonment, and were classified as Grassland and Cropland, respectively.
+
+*(now describe sub-category classification, which depends on past land use)*
 
 Documented at https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/defining_land_subcategory.md, https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/IPCC_LandUse_mapping.csv, and in [issue #8](https://github.com/forc-db/IPCC_database_integration/issues/8). 
 
 
-The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [*IPCC 2006 full report REF*]. 
-This definition is applied differently across countries, and is not clearly defined by the majority of governments [@ogle_delineating_2018]. 
-Given this, and because the IPCC definition of management does not necessarily match that which would be reported in scientific publications and hence in ForC, we do not transfer any classification of land management status from ForC to the EFDB, but do provide auxiliary info that may be useful in making this determination (e.g., geographical location).
-
+Given the lack of public information needed to determine whether lands are classified as mangaged [@ogle_delineating_2018; @deng_comparing_2021], and because the IPCC's definition of managed land is more expansive than is commonly applied in the scientific literature and hence in ForC, we did not transfer any classification of land management status from ForC to the EFDB.
+However, we do provide auxiliary information that should be useful in making this determination, including geographical location and notable disturbance events. 
 
 # Results
 

@@ -482,7 +482,7 @@ of methodological variation in measuring SOM/ SOC is sampling depth,
 which has a suggested default of 30 cm but may vary by country provided
 that consistent criteria are applied.
 
-\subsection{Land use categories}
+\subsection{Land classification}
 
 IPCC defines land-use categories to include six categories -- Forest
 Land, Grassland, Wetlands, Cropland, Settlements, and Other Land
@@ -491,22 +491,22 @@ a particular category for \textgreater20 years (e.g., Forest Land
 remaining Forest Land) and land that has been converted from one
 category to another in the past 20 years (e.g., Cropland converted to
 Forest Land). Forest Land is defined as at least 10-30\% crown cover of
-trees with potential to reach a minimum height of 2-5 m \emph{in situ}
+trees with potential to reach a minimum height of 2-5 m \emph{in situ},
+and shorter-stature natural vegetation would be classified as Grassland
 \citep{ipcc_good_2003}. Definitions of forest are allowed to vary by
 country, but must be applied consistently. Forest Land includes land
 where vegetation temporarily falls below the threshold values for forest
 (e.g., due to disturbance), but is expected to exceed those thresholds
 in the future \citep{ipcc_good_2003}.
 
-Inventories are conducted only for managed land, which is defined by
-IPCC to include ``all forests subject to some kind of human interactions
-(notably commercial management, harvest of industrial round-wood (logs)
-and fuelwood, production and use of wood commodities, and forest managed
-for amenity value or environmental protection if specified by the
-country), with defined geographical boundaries'' \citep{ipcc_good_2003}.
-As such, managed land constitutes all or the majority of Forest Land in
-most countries; however, many countries have not yet reported their
-approach for defining managed land
+The UNFCCC requires greenhouse gas reporting for all managed lands in a
+country, where management is defined as ``human interventions and
+practices have been applied to perform production, ecological or social
+functions'' \citep{ipcc_2006_2006}. This expansive definition of managed
+land implies that the majority of Forest Land in most countries is
+managed {[}e.g.,{]}. However, the definition is applied differently
+across countries, and the majority of governments have yet to report
+their approach for defining managed land or provide maps of managed land
 \citep{ogle_delineating_2018, deng_comparing_2021}.
 
 \section{Updates to ForC (ForC v4.0)}
@@ -639,7 +639,7 @@ records were reviewed and then sent to the IPCC's Technical Support Unit
 for inclusion in EFDB. Complete records needed to be reviewed by the
 EFDB editorial board prior to posting in the database -- a process that
 lags behind records transfer and had not yet been completed for all
-records sent as of April 18, 2022.
+records sent as of April 19, 2022.
 
 \subsection{Mapping ForC to EFDB}
 
@@ -671,7 +671,7 @@ could be used in calculations of greenhouse gas emissions from biomass
 burning \citep{ipcc_2006_2006}; otherwise, the only pertinent greenhouse
 gas would be CO\textsubscript{2}. There were two cases in which more
 complex mapping was required: (1) mapping of C cycle variables (section
-4.1.1) and (2) determination of land use categories (section 4.1.2).
+4.1.1) and (2) land classification (section 4.1.2).
 
 \subsubsection{Carbon cycle variables}
 
@@ -697,7 +697,30 @@ associated covariates, IPCC pools (Table 1) and relevant equations
 ForC\_variables\_mapping.csv in the IPCC-EFDB-integration repository
 (\url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
 
-\subsubsection{Land use categories}
+\subsubsection{Land classification}
+
+Determination of the IPCC land-use category (i.e., Forest Land,
+Grassland, Wetlands, Cropland, Settlements, or Other Land; section 2.2)
+was made based on the categorical ForC field \emph{dominant.life.form},
+sometimes drawing upon stand age. Records with ``woody''
+\emph{dominant.life.form} were classified as Forest Land. Those with
+\emph{dominant.life.form} of ``woody+grass'', which in ForC is
+indicative of anything from a shrub-encroached grassland to a
+tree-dominated savanna, were given dual classification of Forest Land
+and Grassland. This dual classification indicates that records may be
+relevant to either category depending on the definition of forest
+applied (varies by country). For (rare) cases where
+\emph{dominant.life.form} was grass and stand age was greater than zero,
+indicative of early successional vegetation, we assigned a
+classification of Forest Land, consistent with the IPCC definition that
+Forest Land includes land expected to succeed to forest. Cases where
+\emph{dominant.life.form} was grass or crop and stand age was zero were
+indicative of a control for studies of forest regrowth following
+agricultural abandonment, and were classified as Grassland and Cropland,
+respectively.
+
+\emph{(now describe sub-category classification, which depends on past
+land use)}
 
 Documented at
 https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB\_mapping/defining\_land\_subcategory.md,
@@ -706,23 +729,21 @@ and in
 \href{https://github.com/forc-db/IPCC_database_integration/issues/8}{issue
 \#8}.
 
-The UNFCCC requires greenhouse gas reporting for all managed lands in a
-country, where management is defined as ``human interventions and
-practices have been applied to perform production, ecological or social
-functions'' {[}\emph{IPCC 2006 full report REF}{]}. This definition is
-applied differently across countries, and is not clearly defined by the
-majority of governments \citep{ogle_delineating_2018}. Given this, and
-because the IPCC definition of management does not necessarily match
-that which would be reported in scientific publications and hence in
-ForC, we do not transfer any classification of land management status
-from ForC to the EFDB, but do provide auxiliary info that may be useful
-in making this determination (e.g., geographical location).
+Given the lack of public information needed to determine whether lands
+are classified as mangaged
+\citep{ogle_delineating_2018, deng_comparing_2021}, and because the
+IPCC's definition of managed land is more expansive than is commonly
+applied in the scientific literature and hence in ForC, we did not
+transfer any classification of land management status from ForC to the
+EFDB. However, we do provide auxiliary information that should be useful
+in making this determination, including geographical location and
+notable disturbance events.
 
 \section{Results}
 
 \subsection{ForC v4.0 contents}
 
-As of April 18, 2022, ForC (v4.0) contained NA independent records
+As of April 19, 2022, ForC (v4.0) contained NA independent records
 (39838 total), NA of which were for variables relevant to EFDB (Fig. 1).
 These records were distributed across all forested continents and
 ecozones, with particularly high concentrations in
@@ -839,7 +860,7 @@ R\_het\_soil &  &  &  & \\
 
 \subsection{Data transfers to EFDB}
 
-As of April 18, 2022, we had reviewed and sent NA records to EFDB, 73 of
+As of April 19, 2022, we had reviewed and sent NA records to EFDB, 73 of
 which have been reviewed, accepted, and posted (Figs. 2-3, Table 2).
 \emph{{[}DETAILS{]}}
 
@@ -941,15 +962,15 @@ or model benchmarking \citep{fer_ecosystem_2021}.
 \hline
 variables to include & When possible, calculate and present all relevant variables that can be readily caluclated based on available data. & Estimates of relevant variables are not always calcualted.\\
 \hline
-forest census methods & Census stems down to the smallest diameter feasible. & IPCC biomass pool definition includes all living vegetation\\
+forest census methods & Adopt IPCC guidelines (country-specific) for minimum stem size in censues in census and reporting. Ideally, census stem down to the smallest diameter feasible. & IPCC biomass pool definition includes all living vegetation\\
 \hline
- & taxa to include: & IPCC biomass pool definition includes all living vegetation\\
+ & *taxa to include* & \\
 \hline
-dead organic matter sampling & include damage estimates on standing dead trees & \\
+dead organic matter sampling & *include damage estimates on standing dead trees* & \\
 \hline
- & adopt IPCC recommendations for min diameter of deadwood & \\
+ & Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm). & \\
 \hline
-belowground sampling & Select soil sampling increments to include a cutoff at 30 cm depth. & \\
+belowground sampling & Select and report soil sampling increments to include a cutoff at 30 cm depth (or country-specific depth). & IPCC biomass pool definition includes all living vegetation\\
 \hline
 reporting variiables & Present each variable individually, as opposed to requiring that variables of interest be calculated from related variables. & EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations.\\
 \hline
