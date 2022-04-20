@@ -436,18 +436,12 @@ C_variables_table[is.na(C_variables_table)]<- "" #replace NAs with blanks
 
 library(knitr)
 library(kableExtra)
-knitr::kable(C_variables_table, format = "latex",
+knitr::kable(C_variables_table[,-1], format = "latex",
              longtable = TRUE,
              caption = "\\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.} Relationships of variables to IPCC-defined forest C pools (Table 1) and to each other are illustrated in Figure 1. ") %>%
   kableExtra::kable_styling(full_width = TRUE) %>%
   row_spec(0, bold = TRUE)  %>%
-  row_spec(1, bold = TRUE)  %>% #biomass
-  row_spec(6, bold = TRUE)  %>% #agb
-  row_spec(14, bold = TRUE) %>% #root
-  row_spec(25, bold = TRUE)  %>% #dead wood
-  row_spec(33, bold = TRUE)  %>% #litter
-  row_spec(40, bold = TRUE)  %>% #som
-  row_spec(44, bold = TRUE)  #total
+  row_spec(which(C_variables_table$bold), bold = TRUE) #total
 ```
 
 
