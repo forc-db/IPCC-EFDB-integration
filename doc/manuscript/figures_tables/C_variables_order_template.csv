@@ -1,0 +1,38 @@
+pool,variable.name,variable
+Biomass,biomass,biomass
+Biomass,delta.biomass,delta.biomass
+Biomass,NPP_woody,NPP_woody
+Biomass,woody.mortality,woody.mortality
+Aboveground biomass,biomass_ag,biomass_ag
+Aboveground biomass,biomass_ag_woody,biomass_ag_woody
+Aboveground biomass,biomass_ag_foliage,biomass_ag_foliage
+Aboveground biomass,delta.agb,delta.agb
+Aboveground biomass,ANPP_woody,ANPP_woody
+Aboveground biomass,ANPP_foliage,ANPP_foliage
+Aboveground biomass,woody.mortality_ag,woody.mortality_ag
+Belowground biomass,biomass_root,biomass_root
+Belowground biomass,biomass_root_fine,biomass_root_fine
+Belowground biomass,biomass_root_coarse,biomass_root_coarse
+Belowground biomass,delta.biomass_root,delta.biomass_root
+Belowground biomass,delta.biomass_root_coarse,delta.biomass_root_coarse
+Belowground biomass,delta.biomass_root_fine,delta.biomass_root_fine
+Belowground biomass,woody.mortality_root,woody.mortality_root
+Belowground biomass,BNPP_root_fine,BNPP_root_fine
+Belowground biomass,BNPP_root.turnover_fine,BNPP_root.turnover_fine
+Belowground biomass,BNPP_root_coarse,BNPP_root_coarse
+Dead wood,deadwood,deadwood
+Dead wood,deadwood_standing,deadwood_standing
+Dead wood,deadwood_down,deadwood_down
+Dead wood,delta.deadwood,delta.deadwood
+Dead wood,delta.deadwood_standing,delta.deadwood_standing
+Dead wood,delta.deadwood_down,delta.deadwood_down
+Dead wood,R_het_deadwood,R_het_deadwood
+Litter,O.horizon,O.horizon
+Litter,delta.O.horizon,delta.O.horizon
+Litter,litter,litter
+Litter,delta.litter,delta.litter
+Litter,NPP_litter,NPP_litterfall
+Litter,R_het_litter,R_het_litter
+Soil organic matter,soil,SOM / SOC
+Soil organic matter,delta.soil,delta.SOM / delta.SOC
+Soil organic matter,R_het_soil,R_het_soil
