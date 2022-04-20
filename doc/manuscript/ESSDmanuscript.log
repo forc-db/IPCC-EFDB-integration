@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 APR 2022 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  20 APR 2022 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3158,46 +3158,46 @@ Overfull \hbox (1.18675pt too wide) in paragraph at lines 866--866
 [12 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [13]
 [14] [15 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>]
 
-Package natbib Warning: Citation `refs' on page 16 undefined on input line 929.
-
-
-
-Package natbib Warning: Citation `refs' on page 16 undefined on input line 939.
+Package natbib Warning: Citation `refs' on page 16 undefined on input line 930.
 
 
 
 Package natbib Warning: Citation `refs' on page 16 undefined on input line 940.
 
 
+
+Package natbib Warning: Citation `refs' on page 16 undefined on input line 941.
+
+
 [16] [17] [18]
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 1054--1054
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 1055--1055
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (1.27617pt too wide) in paragraph at lines 1054--1054
+Overfull \hbox (1.27617pt too wide) in paragraph at lines 1055--1055
 []\T1/ptm/m/n/10 mean.in.original.units, 
  []
 
 [19
 
 ] [20] [21]
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 1146--1146
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 1147--1147
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
 
-Overfull \hbox (19.90659pt too wide) in paragraph at lines 1146--1146
+Overfull \hbox (19.90659pt too wide) in paragraph at lines 1147--1147
 \T1/ptm/m/n/10 ing_land_subcategory.md), 
  []
 
 
-Overfull \hbox (19.31596pt too wide) in paragraph at lines 1146--1146
+Overfull \hbox (19.31596pt too wide) in paragraph at lines 1147--1147
 []\T1/ptm/m/n/10 data.location.within.source|  
  []
 
 
-Overfull \hbox (17.40659pt too wide) in paragraph at lines 1146--1146
+Overfull \hbox (17.40659pt too wide) in paragraph at lines 1147--1147
 \T1/ptm/m/n/10 ing_land_subcategory.md)|  
  []
 
@@ -3211,18 +3211,18 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
 
 [26] [27] [28] [29]) [30]
 
-Package caption Warning: Unused \captionsetup[table] on input line 1012.
+Package caption Warning: Unused \captionsetup[table] on input line 1013.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1229.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1229.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1228.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1228.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1229.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1229.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1229.
  ) 
 Here is how much of TeX's memory you used:
  14825 strings out of 480608
@@ -3242,7 +3242,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (30 pages, 629421 bytes).
+Output written on ESSDmanuscript.pdf (30 pages, 629411 bytes).
 PDF statistics:
  530 PDF objects out of 1000 (max. 8388607)
  478 compressed objects within 5 object streams

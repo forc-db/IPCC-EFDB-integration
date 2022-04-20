@@ -152,8 +152,10 @@ n_independent_records_ForC= length(ForC_simplified[,"measurement.ID"]) #suspecte
 
 n_records_EFDB_variables= NA #n independent records relevant to EFDB
 
-n_records_checked = NA # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
+n_records_reviewed_or_added= NA
 n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entries start with measurement.ID = 48956
+n_records_checked = n_records_reviewed_or_added - n_records_added # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
+
 
 n_records_sent_to_EFDB = NA # n records sent to EFDB
 
@@ -447,7 +449,7 @@ knitr::kable(C_variables_table[,-1], format = "latex",
 
 ## Data transfers to EFDB
 
-As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed and sent `r n_records_sent_to_EFDB` records to EFDB, `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`).
+As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed or added `r n_records_reviewed_or_added` EFDB-relevant records, `r n_records_sent_to_EFDB` records of which were sent to EFDB, and `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`).
 *[DETAILS]*
 
 # Recommendations
