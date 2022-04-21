@@ -36,7 +36,7 @@
 "FALSE","delta.O.horizon","4","4","4","4"
 "FALSE","litter","30","30","23","23"
 "FALSE","delta.litter","0","0","0","0"
-"FALSE","NPP_litterfall","0","0","0","0"
+"FALSE","NPP_litter","0","0","0","0"
 "FALSE","R_het_litter","167","143","0","0"
 "TRUE","Soil organic matter",NA,NA,NA,NA
 "FALSE","SOM / SOC","693","398","81","46"
