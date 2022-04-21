@@ -118,7 +118,7 @@ varibales_in_order$pool <- NULL
 
 # add a row for the total
 
-varibales_in_order <- rbind(varibales_in_order, c(TRUE, "TOTAL", t(colSums(varibales_in_order[, -c(1,2)]))))
+varibales_in_order <- rbind(varibales_in_order, c(TRUE, "TOTAL", t(colSums(varibales_in_order[, -c(1,2)], na.rm = T))))
 
 
 colnames(varibales_in_order) <- gsub("_", " ", colnames(varibales_in_order))
