@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  22 APR 2022 07:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  22 APR 2022 07:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3033,11 +3033,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 Package xcolor Warning: Incompatible color definition on input line 147.
 
-
-Package xcolor Warning: Incompatible color definition on input line 149.
-
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 17
-6.
+9.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 
@@ -3062,7 +3059,7 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 176.
+(Font)              scaled to size 8.54997pt on input line 179.
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -3087,7 +3084,7 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 54
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<figures_tables/C_variable_mapping.png, id=237, 783.92876pt x 875.27pt>
+<figures_tables/C_variable_mapping.png, id=236, 783.92876pt x 875.27pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
@@ -3114,7 +3111,7 @@ EFDB_mapping.csv
  []
 
 [10] [11]
-<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=305, 480
+<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=304, 480
 .8364pt x 284.5029pt>
 File: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png Graphic
  file (type png)
@@ -3122,7 +3119,7 @@ File: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png Graphic
 Package pdftex.def Info: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_da
 ta_sent.png  used on input line 762.
 (pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
-<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=306, 578.1
+<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=305, 578.1
 6pt x 650.43pt>
 File: figures_tables/Histogram_n_Relevant_and_Transferred_Records.png Graphic f
 ile (type png)
@@ -3211,6 +3208,9 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
 
 [26] [27] [28] [29]) [30]
 
+Class copernicus Warning: No section Abstract; proceeding without it.
+
+
 Package caption Warning: Unused \captionsetup[table] on input line 1036.
 See the caption package documentation for explanation.
 
@@ -3225,9 +3225,9 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1252.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1252.
  ) 
 Here is how much of TeX's memory you used:
- 14825 strings out of 480608
- 198220 string characters out of 5903631
- 593534 words of memory out of 5000000
+ 14824 strings out of 480608
+ 198210 string characters out of 5903631
+ 593517 words of memory out of 5000000
  30289 multiletter control sequences out of 15000+600000
  574656 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3242,10 +3242,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (30 pages, 630705 bytes).
+Output written on ESSDmanuscript.pdf (30 pages, 630713 bytes).
 PDF statistics:
- 530 PDF objects out of 1000 (max. 8388607)
- 478 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 476 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
