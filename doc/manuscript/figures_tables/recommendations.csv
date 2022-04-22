@@ -1,6 +1,6 @@
 ﻿criteria,recommendation,rationale
 variables to include,"When possible, calculate and present all relevant variables that can be readily caluclated based on available data. ",Estimates of relevant variables are not always calcualted.
-forest census methods,"Adopt IPCC guidelines (country-specific) for minimum stem size in censues in census and reporting. Ideally, census stem down to the smallest diameter feasible. ",IPCC biomass pool definition includes all living vegetation
+forest census methods,"Adopt IPCC guidelines (country-specific) for minimum stem size in censues in census and reporting. Ideally, census stem down to the smallest diameter feasible. ","IPCC biomass pool definition includes all living vegetation, but understory may be excluded when contribution is minor."
 ,*taxa to include*,
 dead organic matter sampling,*include damage estimates on standing dead trees*,
 ,"Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm).",

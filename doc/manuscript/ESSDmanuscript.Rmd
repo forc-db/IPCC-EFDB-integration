@@ -150,14 +150,15 @@ n_areas_ForC = max(ForC_sites$geographic.area, na.rm = TRUE) # total n geographi
 ForC_simplified <- read.csv(paste0(path_to_ForC,"/ForC/ForC_simplified/ForC_simplified.csv"), stringsAsFactors = FALSE, check.names = FALSE)
 n_independent_records_ForC= length(ForC_simplified[,"measurement.ID"]) #suspected duplicates removed. This is the number of records fin ForC simplified.
 
-n_records_EFDB_variables= NA #n independent records relevant to EFDB
+C_variables <- read.csv(paste0(path_to_dir,"/doc/manuscript/figures_tables/C_variables.csv"), stringsAsFactors = FALSE, check.names = FALSE)
+n_records_EFDB_variables= C_variables[length(C_variables[,"variable"]), "n independent records in ForC"] #n independent records relevant to EFDB
 
-n_records_reviewed_or_added= NA
+n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"]
 n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entries start with measurement.ID = 48956
 n_records_checked = n_records_reviewed_or_added - n_records_added # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
 
 
-n_records_sent_to_EFDB = NA # n records sent to EFDB
+n_records_sent_to_EFDB = C_variables[length(C_variables[,"variable"]), "n sent to EFDB"] # n records sent to EFDB
 
 n_records_posted_EFDB = 73 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records")
 
@@ -489,13 +490,22 @@ Given widespread trends of increasing tree mortality [@refs], including through 
 
 ## Data reporting needs
 
+We recommend that, unless they have some specific reason to do otherwise, researchers calculate and report the values according to IPCC standards (Table `r table_recommendations`).
+It is particularly noteworthy that simple decisions on the presentation of results will determine whether the data meet the criteria for inclusion in EFDB.
+Some examples are as follows:
+(1) presenting data only in a figure makes it ineligible for inclusion in EFDB, whereas presentation in a table or supplementary data file allows inclusion;
+(2) direct presentation of all relevant variables allows inclusion, whereas presenting only components of variables of interest (e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or requiring simple mathematical operations to obtain a variable of interest (e.g., *delta.agb* = *ANPP_woody* - *woody.mortality.agb*) disqualifies data from inclusion;
+(3) matching IPCC-defined thresholds for defining C pools (Table `r table_pools`), which may vary by country, can make the data far more relevant for IPCC accounting (e.g., using a 10 cm cutoff between dead wood and litter, presenting soil C to a depth of 30 cm).
+It should also be emphasized that reporting of 95% confidence intervals (or other metrics of error), when applicable, is highly desirable and makes the data more relevant to IPCC.
 
-We recommend that, unless they have some specific reason to do otherwise, researchers calculate and report the values according to IPCC standards (`r table_recommendations`).
+For those compiling published data (e.g., for meta-analyses), the data set can have added value if all information required by IPCC is extracted from original publications. 
+This includes -- but is not limited to -- retaining original values as presented without modification or rounding, noting whether data were digitized, recording confidence intervals, and recording all required fields (as indicated in the EFDB's bulk import template).
+The significant effort required to map a database into EFDB has been accomplished here (`r table_ForCfieldmapping`), and we welcome other researchers to use the ForC template.
 
-For data synthesis projects, compilation can only be useful to the EFDB if they include all the required, along with transparent description on the methodology applied to derive emission factors (or have a brief description and a reference to the original source) and the original emission factor values are present (not modified/rounded).  
+Once EFDB-relevant data are available in peer-reviewed publications, they may be submitted directly to EFDB or may use the ForC - EFDB data pipline developed here.
+For individual publications, the former option will generally be more efficient.
+However, by getting the data into ForC as well as EFDB, the latter option will allow the data to be more broadly useful--for example, being used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021] or model benchmarking [@fer_ecosystem_2021].
 
-**Contributing data to ForC and/or EFDB directly will ensure its broader impact.**
-The latter is more efficient for getting data to EFDB, but does not get the data into ForC, where it can be more broadly useful--for example, being used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021] or model benchmarking [@fer_ecosystem_2021].
 
 ```{r table_recommendations, eval = TRUE, echo=FALSE, warning=FALSE}
 recommendations_table <- read.csv("figures_tables/recommendations.csv")
