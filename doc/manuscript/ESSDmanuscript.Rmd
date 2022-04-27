@@ -430,7 +430,7 @@ These records were distributed across all forested continents and ecozones, with
 The most widely represented forest type was *[type]*, followed by *[type]* and *[type]* (Fig. `r fig_histograms`).
 
 
-```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: ...."}
+```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems."}
 #this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png")
 ```
