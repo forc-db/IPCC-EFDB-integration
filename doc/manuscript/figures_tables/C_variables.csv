@@ -5,13 +5,12 @@
 "FALSE","NPP_woody","136","93","0","0"
 "FALSE","woody.mortality","0","0","0","0"
 "TRUE","Aboveground biomass",NA,NA,NA,NA
-"FALSE","biomass_ag","9038","7724","1232","693"
+"FALSE","biomass_ag","9050","7737","1251","693"
 "FALSE","biomass_ag_woody","460","366","10","10"
 "FALSE","biomass_ag_foliage","601","502","49","27"
 "FALSE","delta.agb","166","128","123","123"
 "FALSE","ANPP_woody","299","242","0","0"
-"FALSE","ANPP_foliage","0","0","0","0"
-"FALSE","woody.mortality_ag","113","61","17","17"
+"FALSE","woody.mortality_ag","112","62","30","17"
 "TRUE","Belowground biomass",NA,NA,NA,NA
 "FALSE","biomass_root","4629","4180","123","55"
 "FALSE","biomass_root_fine","931","594","18","18"
@@ -24,7 +23,7 @@
 "FALSE","BNPP_root.turnover_fine","91","56","0","0"
 "FALSE","BNPP_root_coarse","329","250","0","0"
 "TRUE","Dead wood",NA,NA,NA,NA
-"FALSE","deadwood","438","303","94","61"
+"FALSE","deadwood","437","303","103","61"
 "FALSE","deadwood_standing","152","120","17","17"
 "FALSE","deadwood_down","424","368","51","27"
 "FALSE","delta.deadwood","0","0","0","0"
@@ -39,7 +38,7 @@
 "FALSE","NPP_litter","0","0","0","0"
 "FALSE","R_het_litter","167","143","0","0"
 "TRUE","Soil organic matter",NA,NA,NA,NA
-"FALSE","SOM / SOC","693","398","81","46"
+"FALSE","SOM / SOC","693","398","89","46"
 "FALSE","delta.SOM / delta.SOC","0","0","0","0"
 "FALSE","R_het_soil","0","0","0","0"
-"TRUE","TOTAL","20922","17190","1985","1214"
+"TRUE","TOTAL","20932","17204","2034","1214"
