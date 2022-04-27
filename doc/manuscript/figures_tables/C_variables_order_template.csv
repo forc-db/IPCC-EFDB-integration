@@ -8,7 +8,6 @@ Aboveground biomass,biomass_ag_woody,biomass_ag_woody
 Aboveground biomass,biomass_ag_foliage,biomass_ag_foliage
 Aboveground biomass,delta.agb,delta.agb
 Aboveground biomass,ANPP_woody,ANPP_woody
-Aboveground biomass,ANPP_foliage,ANPP_foliage
 Aboveground biomass,woody.mortality_ag,woody.mortality_ag
 Belowground biomass,biomass_root,biomass_root
 Belowground biomass,biomass_root_fine,biomass_root_fine
