@@ -83,6 +83,8 @@ output:
     
     header-includes:
     - \usepackage{caption}
+    #- \usepackage{booktabs}
+    #- \usepackage{makecell}
 ---
 
 
@@ -246,9 +248,9 @@ library(kableExtra)
 knitr::kable(C_pools_table, format = "latex",
              longtable = FALSE,
              caption = "\\textbf{IPCC-defined forest carbon pools with definitions and measurement methods.} Definitions from IPCC Table 1.1. (See Table 1.1 in IPCC guidance).") %>%
-  kableExtra::kable_styling(full_width = TRUE) %>%
-  #column_spec(1, width = ".7cm") %>% #This doesn't seem to work
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE) %>%
+  kableExtra::kable_styling(full_width = TRUE) 
+  #kable_styling(latex_options = c("scale_down", "hold_position"), protect_latex = T) 
 ```
 
 
@@ -441,6 +443,7 @@ knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Rec
 ForC contained data for **##** of the **##** variables relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
 The records were very unevenly distributed across variables ... 
 
+\newpage
 ```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
 C_variables_table <- read.csv("figures_tables/C_variables.csv")
 names(C_variables_table) <- stringr::str_replace_all(names(C_variables_table), "\\.", " ")
@@ -448,12 +451,14 @@ C_variables_table[is.na(C_variables_table)]<- "" #replace NAs with blanks
 
 library(knitr)
 library(kableExtra)
-knitr::kable(C_variables_table[,-1], format = "latex",
-             longtable = TRUE,
+knitr::kable(C_variables_table[,-1], format = "latex",  
+             longtable = T,
              caption = "\\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.} Relationships of variables to IPCC-defined forest C pools (Table 1) and to each other are illustrated in Figure 1. ") %>%
-  kableExtra::kable_styling(full_width = TRUE) %>%
   row_spec(0, bold = TRUE)  %>%
-  row_spec(which(C_variables_table$bold), bold = TRUE) #total
+  row_spec(which(C_variables_table$bold), bold = TRUE) %>% #total
+  kable_styling(font_size = 8) %>%
+  #kableExtra::kable_styling(full_width = TRUE) 
+  kable_styling(latex_options = c("hold_position", "repeat_header"), protect_latex = T) 
 ```
 
 
@@ -516,8 +521,10 @@ library(kableExtra)
 knitr::kable(recommendations_table, format = "latex",
              longtable = FALSE,
              caption = "\\textbf{Recommended best practices for reporting forest C estimates of value to national greenhouse gas inventories under IPCC guidance. } ....") %>%
-  kableExtra::kable_styling(full_width = TRUE) %>%
-  row_spec(0, bold = TRUE)
+  row_spec(0, bold = TRUE)%>%
+  kable_styling(font_size = 10) %>%
+  kableExtra::kable_styling(full_width = TRUE) 
+  #kable_styling(latex_options = c("scale_down", "hold_position"), protect_latex = T) 
 ```
 
 For those compiling published data (e.g., for meta-analyses), the data set can have added value if all information required by IPCC is extracted from original publications. 
@@ -563,6 +570,7 @@ library(kableExtra)
 knitr::kable(record_of_changes, format = "latex",
              longtable = TRUE) %>%
   kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
+  kable_styling(font_size = 8) %>%
   row_spec(0, bold = TRUE)
 ```
 
@@ -581,6 +589,7 @@ ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields b
 knitr::kable(ForC_variables_included, format = "latex",
              longtable = TRUE) %>%
   row_spec(0, bold = TRUE) %>%
+  kable_styling(font_size = 8) %>%
 kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
 
 ```
