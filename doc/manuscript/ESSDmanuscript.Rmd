@@ -453,7 +453,7 @@ library(knitr)
 library(kableExtra)
 knitr::kable(C_variables_table[,-1], format = "latex",  
              longtable = T,
-             caption = "\\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.} Relationships of variables to IPCC-defined forest C pools (Table 1) and to each other are illustrated in Figure 1. ") %>%
+             caption = "\\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.}") %>%
   row_spec(0, bold = TRUE)  %>%
   row_spec(which(C_variables_table$bold), bold = TRUE) %>% #total
   kable_styling(font_size = 8) %>%
