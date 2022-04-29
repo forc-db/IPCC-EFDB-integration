@@ -181,6 +181,7 @@ Geographic representation is also quite uneven, with the highest densities of re
 ForC represents a diversity of stand ages, although records for young stands are primarily limited to C stocks, as opposed to net increments of fluxes.
 This distribution of records is generally reflected in the subset of records that have been submitted to EFDB to date.
 In the future, forest C estimates in EFDB can be improved through targeted research to fill critical gaps, reporting of information required by IPCC, and continued submission of data from scientific publications to the EFDB.
+Given that climate change is rapidly impacting the world's forests, timely reporting of recent estimates will be especially critical to accurate forest C accounting.  
 
 \introduction[Introduction]
 
@@ -370,7 +371,7 @@ The latter criteria was motivated by the fact that although tropical forest is t
 ## Addition of new records
 
 In addition to reviewing existing records, we added a total of `r n_records_added` new records to ForC.
-These included **##** records from **##** studies [@piponiot_distribution_2022; @refs<!--others?-->] that were not previously included in ForC.
+These included **##** records from **##** studies [@piponiot_distribution_2022; @lutz_largediameter_2021; @refs<!--others?-->] that were not previously included in ForC.
 In addition, we created new records for **##** EFDB-relevant estimates presented in the original publication that were not yet present in ForC.
 
 # Transfer of data from ForC to EFDB

@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -390,6 +390,13 @@ Kim, A., {Valentine Herrmann}, Bareto, R., Calkins, B., {Gonzalez-Akre}, E.~B.,
   Rogers, T., Shue, J., and {Anderson-Teixeira}, K.: Using {{GitHub Actions}}
   Continuous Integration to Automate Quality Assurance and Control of Data on
   Ecological Dynamics, Methods in Ecology and Evolution, in review.
+
+\bibitem[{Lutz et~al.(2021)Lutz, Struckman, Furniss, Birch, Yocom, and
+  McAvoy}]{lutz_largediameter_2021}
+Lutz, J.~A., Struckman, S., Furniss, T.~J., Birch, J.~D., Yocom, L.~L., and
+  McAvoy, D.~J.: Large-Diameter Trees, Snags, and Deadwood in Southern
+  {{Utah}}, {{USA}}, Ecological Processes, 10, 9,
+  \doi{10.1186/s13717-020-00275-0}, 2021.
 
 \bibitem[{McDowell et~al.(2020)McDowell, Allen, {Anderson-Teixeira}, Aukema,
   {Bond-Lamberty}, Chini, Clark, Dietze, Grossiord, {Hanbury-Brown}, Hurtt,
