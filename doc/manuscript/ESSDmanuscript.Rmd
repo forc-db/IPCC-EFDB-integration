@@ -511,7 +511,7 @@ Some examples are as follows:
 (1) presenting data only in a figure makes it ineligible for inclusion in EFDB, whereas presentation in a table or supplementary data file allows inclusion;
 (2) direct presentation of all relevant variables allows inclusion, whereas presenting only components of variables of interest (e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or requiring simple mathematical operations to obtain a variable of interest (e.g., *delta.agb* = *ANPP_woody* - *woody.mortality.agb*) disqualifies data from inclusion;
 (3) matching IPCC-defined thresholds for defining C pools (Table `r table_pools`), which may vary by country, can make the data far more relevant for IPCC accounting (e.g., using a 10 cm cutoff between dead wood and litter, presenting soil C to a depth of 30 cm).
-It should also be emphasized that reporting of 95% confidence intervals (or other metrics of error), when applicable, is highly desirable and makes the data more relevant to IPCC.
+It should also be emphasized that reporting of 95% confidence intervals (or other metrics of error), when applicable, is highly desirable and makes the data more relevant to IPCC. Reports which had the most successful data transfers used EFDB variables and had clear tables showing their results. 
 
 ```{r table_recommendations, eval = TRUE, echo=FALSE, warning=FALSE}
 recommendations_table <- read.csv("figures_tables/recommendations.csv")
