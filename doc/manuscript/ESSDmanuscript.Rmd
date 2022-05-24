@@ -442,7 +442,7 @@ knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Rec
 ```
 
 ForC contained data for **##** of the **##** variables relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
-The records were very unevenly distributed across variables ... 
+The records were very unevenly distributed across variables. The most records colected were for the Aboveground biomass variable(biomass_ag).This variable  
 
 \newpage
 ```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
