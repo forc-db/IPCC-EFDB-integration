@@ -85,7 +85,7 @@ ForBarplot <- data.frame(data_type = rep(c("relevant", "transferred"),  times= c
 ForBarplot$stand.age <- addNA(cut(as.numeric(ForBarplot$stand.age), breaks = c(0, 20, 100, 10000), labels = c("<20 yrs", "20-100 yrs", ">100 yrs" )))
 levels(ForBarplot$stand.age)[4] <- "Unclassified"
 
-FAO_codes <- MEASUREMENTS <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/supplementary_resources/World%20Map%20data/Biogegraphic_Regions/FAO_%20names_and_codes.csv", stringsAsFactors = F)
+FAO_codes <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/supplementary_resources/World%20Map%20data/Biogegraphic_Regions/FAO_%20names_and_codes.csv", stringsAsFactors = F)
 
 ForBarplot$FAO.ecozone <- FAO_codes$gez_abbrev[match(ForBarplot$FAO.ecozone, FAO_codes$ï..gez_name)]
 ForBarplot$FAO.ecozone[is.na(ForBarplot$FAO.ecozone)] <- "Unclassified"
