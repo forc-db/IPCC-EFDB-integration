@@ -1,0 +1,8 @@
+
+n_6_Ishihara_2016_anmf was withdrawn because we realized the values had been calculated (from records in the Supplementary Information)
+
+n_28_Manlay_2002_cnap was edited to correct an erroneous land classification code
+
+n_32_Broadbent_2014 replaces n_28_Broadbent_2014, having added 4 records that were previously missing
+
+n_1_Lutz_2018_giol adds a previously-missed record from this study (note that there are now several files for this study, including one with the same name)
