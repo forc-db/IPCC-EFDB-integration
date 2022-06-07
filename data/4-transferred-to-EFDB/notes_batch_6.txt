@@ -9,3 +9,4 @@ n_1_Lutz_2018_giol adds a previously-missed record from this study (note that th
 
 n_6_Mall_1991_sobl is for mangroves. I'm not sure if they should be classified as forests, wetlands, or both. We currently have the classified as forest; please let us know if it should be otherwise
 
+n_30_Wirth_1999_abas adds to n_6_Wirth_1999_abas
