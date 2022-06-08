@@ -5,7 +5,7 @@ n_28_Manlay_2002_cnap was edited to correct an erroneous land classification cod
 
 n_32_Broadbent_2014 replaces n_28_Broadbent_2014, having added 4 records that were previously missing
 
-n_1_Lutz_2018_giol adds a previously-missed record from this study (note that there are now several files for this study, including one with the same name)
+n_28_Lutz_2018_giol adds a previously-missed record from this study + consolidate multiple files we sent your from this study. It does not include 7 records we already sent you, as we decided that those were better described by other studies.
 
 n_6_Mall_1991_sobl is for mangroves. I'm not sure if they should be classified as forests, wetlands, or both. We currently have the classified as forest; please let us know if it should be otherwise
 
