@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -508,6 +508,12 @@ Rozendaal, D. M.~A., Suarez, D.~R., Sy, V.~D., Avitabile, V., Carter, S., Yao,
   Successional Stages: Refined {{IPCC}} Default Values for Tropical and
   Subtropical Forests, Environmental Research Letters, 17, 014\,047,
   \doi{10.1088/1748-9326/ac45b3}, 2022.
+
+\bibitem[{Sanderman et~al.(2017)Sanderman, Hengl, and
+  Fiske}]{sanderman_soil_2017}
+Sanderman, J., Hengl, T., and Fiske, G.~J.: Soil Carbon Debt of 12,000 Years of
+  Human Land Use, Proceedings of the National Academy of Sciences, 114,
+  9575--9580, \doi{10.1073/pnas.1706103114}, 2017.
 
 \bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
 UNFCCC: Adoption of the {{Paris Agreement}}, 2015.

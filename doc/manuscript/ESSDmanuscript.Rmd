@@ -283,8 +283,9 @@ It's inclusion in inventories is not required under Tier 1 methodology for Fores
 
 Dead wood, which is typically <50 t C ha^-1^ but can exceed 150 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCC as "all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil" [@ipcc_good_2003;@ipcc_2006_2006]. 
 This pool includes standing and fallen dead wood, stumps, and dead roots of diameter ≥10 cm (or a diameter specified by the country).
-While dead wood stocks and fluxes can be quite variable across forests [@anderson-teixeira_carbon_2021], and can at times be the dominant pool in a forest ecosystem [e.g., following a severe natural disturbance; @carmona_coarse_2002], aboveground dead wood remains relatively poorly characterized at a global scale [@anderson-teixeira_carbon_2021], and belowground dead wood is rarely studied [@merganicova_dadwood_2012].
-In turn, they are poorly characterized in large-scale forest C budgets [@pan_large_2011;@harris_global_2021], and IPCC's latest Tier 1 default values are based on just 1-31 references per climate zone [Table 2.2 in @ipcc_2019_2019].<!--table 2.2-->
+Dead wood stocks and fluxes can be quite variable across forests [@anderson-teixeira_carbon_2021], and can at times be the dominant pool in a forest ecosystem [e.g., following a severe natural disturbance, @carmona_coarse_2002].
+However, aboveground dead wood remains relatively poorly characterized at a global scale [@anderson-teixeira_carbon_2021], and belowground dead wood is rarely studied [@merganicova_dadwood_2012].
+In turn, dead wood pools are poorly characterized in large-scale forest C budgets [@pan_large_2011;@harris_global_2021], and IPCC's latest Tier 1 default values are based on just 1-31 references per climate zone [Table 2.2 in @ipcc_2019_2019].<!--table 2.2-->
 
 Litter, which is typically <40 t C ha^-1^ but can exceed 100 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCCC as including "all non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil" [@ipcc_good_2003;@ipcc_2006_2006].
 As noted above, live fine roots may be included in litter when difficult to separate empirically.
@@ -294,8 +295,8 @@ Similar to dead wood, litter is poorly characterized in large-scale forest C bud
 
 ### Soil Organic Matter/ Carbon
 
-Soil organic matter/ carbon (SOM/ SOC), which *(statistic on how much C is typial)* [@ref], is defined by IPCC as "organic carbon in mineral and organic soils (including peat) to a specified depth chosen by the country and applied consistently through the time series" [@ipcc_good_2003;@ipcc_2006_2006]. 
-Live fine roots (suggested diameter cutoff of 2 mm) may be included with soil organic matter when it is not feasible to distinguish them empirically.
+Soil organic matter/ carbon (SOM/ SOC), which is typically >100 t C and can exceed 300 t C in the top two meters of soil [@sanderman_soil_2017], is defined by IPCC as "organic carbon in mineral and organic soils (including peat) to a specified depth chosen by the country and applied consistently through the time series" [@ipcc_good_2003;@ipcc_2006_2006]. 
+Live fine roots may be included with soil organic matter when it is not feasible to distinguish them empirically.
 The greatest source of methodological variation in measuring SOM/ SOC is sampling depth, which has a suggested default of 30 cm but may vary by country provided that consistent criteria are applied. 
 
 ## Land classification
@@ -306,7 +307,7 @@ Definitions of forest are allowed to vary by country, but must be applied consis
 Forest Land includes land where vegetation temporarily falls below the threshold values for forest (e.g., due to disturbance), but is expected to exceed those thresholds in the future [@ipcc_good_2003].
 
 The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [@ipcc_2006_2006]. 
-This expansive definition of managed land implies that the majority of Forest Land in most countries is managed [e.g.,].
+This expansive definition of managed land implies that the majority of Forest Land in most countries is managed.
 However, the definition is applied differently across countries, and the majority of governments have yet to report their approach for defining managed land or provide maps of managed land [@ogle_delineating_2018; @deng_comparing_2021].
 
 
