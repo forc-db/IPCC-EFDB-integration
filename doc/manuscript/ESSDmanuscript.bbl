@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -275,6 +275,11 @@ Duncanson, L., Armstron, J., Disney, M., Avitabile, V., Barbier, N., Calders,
   Validation, Committee on Earth Observation Satellites)},
   \doi{10.5067/doc/ceoswgcv/lpv/agb.001}, 2021.
 
+\bibitem[{FAO(2012)}]{fao_global_2012}
+FAO: Global {{Ecological Zones}} for {{FAO Forest Reporting}}: 2010 Update,
+  Tech. Rep. Forest Resources Assessment Working Paper 179, {FOOD AND
+  AGRICULTURE ORGANIZATION OF THE UNITED NATIONS}, {Rome}, 2012.
+
 \bibitem[{Fer et~al.(2021)Fer, Gardella, Shiklomanov, Campbell, Cowdery, Kauwe,
   Desai, Duveneck, Fisher, Haynes, Hoffman, Johnston, Kooper, LeBauer,
   Mantooth, Parton, Poulter, Quaife, Raiho, Schaefer, Serbin, Simkins, Wilcox,
@@ -413,8 +418,8 @@ McDowell, N.~G., Allen, C.~D., {Anderson-Teixeira}, K., Aukema, B.~H.,
 \bibitem[{Mergani{\v c}ov{\'a} et~al.(2012)Mergani{\v c}ov{\'a}, Mergani{\v c},
   Svoboda, Ba{\v c}e, and {\v S}ebe{\v n}}]{merganicova_dadwood_2012}
 Mergani{\v c}ov{\'a}, K., Mergani{\v c}, J., Svoboda, M., Ba{\v c}e, R., and
-  {\v S}ebe{\v n}, V.: Dadwood in Forest Ecosystems, {BoD \textendash{} Books
-  on Demand}, 2012.
+  {\v S}ebe{\v n}, {\relax VV}.: Dadwood in Forest Ecosystems, {BoD
+  \textendash{} Books on Demand}, 2012.
 
 \bibitem[{Ogle(2018)}]{ogle_delineating_2018}
 Ogle, S.~M.: Delineating Managed Land for Reporting National Greenhouse Gas
