@@ -315,7 +315,7 @@ However, the definition is applied differently across countries, and the majorit
 
 Previous versions of ForC [@anderson-teixeira_carbon_2016; @anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021] contained most of the information required by EFDB, and, more broadly, to inform C accounting under IPCC guidelines. 
 However, modest changes to the structure and contents of ForC were needed in order to provide all information required by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C accounting under IPCC guidelines.
-To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified `r n_fields_modified` fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed ># records to obtain additional required information, and added `r n_records_added` new records.
+To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified `r n_fields_modified` fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed >`r n_records_checked` records to obtain additional required information, and added `r n_records_added` new records.
 
 This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_2021].
 
@@ -323,7 +323,7 @@ This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_
 
 We added or modified a total of `r n_fields_modified` fields (`r table_ForCchanges`).
 Most notably, these included improvement of the representation of uncertainty, recording of original units and organic matter to C conversion factors, and expanding the information recorded in the citations table. 
-For the latter, we *used an R script to automatically retrieve information based on the DOI*<!--needs info from Valentine here-->.  
+For the latter, we *used an R script to automatically retrieve information based on the DOI ([issue 41](https://github.com/forc-db/IPCC-EFDB-integration/issues/41))*<!--needs info from Valentine here-->.  
 
 ## New variables
 
