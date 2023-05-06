@@ -353,12 +353,12 @@ All records sent to EFDB were ensured to be independent and original through man
 
 ## Manual review of records to be sent to EFDB
 
-EFDB data submissions required information that was not recorded in previous versions of ForC, but rather was recorded in fields (`r table_ForCchanges`).
+EFDB data submissions required information that was not recorded in previous versions of ForC, but for which new fields were created for EFDB compatibility (`r table_ForCchanges`).
 It was therefore necessary to return to original publications to retrieve relevant information, including 
-(1) whether records of interest were presented in tables / text or digitized from figures (EFDB will not accept digitized data, whereas ForC does), 
-(2) whether records of interest were presented directly, as opposed to having been calculated from related variables (for example, if a study presents aboveground biomass and root biomass but not total biomass, ForC would accept the sum of these as a valid estimate of total biomass, whereas EFDB would not)
-(3) estimates in original units, 
-and (4) confidence intervals (when not already in ForC).
+(1) estimates in original units, 
+(2) confidence intervals (when not already in ForC),
+(3) whether records of interest were presented in tables or text or digitized from figures (EFDB will not accept digitized data), 
+(4) whether records of interest were presented directly, as opposed to having been calculated from related variables (for example, if a study presents aboveground biomass and root biomass but not total biomass, EFDB would not accept the sum of these as a valid record of total biomass)
 We also checked that existing ForC records were complete and correct.
 
 Manual review of records was the limiting step for data transfer to EFDB. 
@@ -367,13 +367,13 @@ We prioritized review of
 (2) studies with confidence intervals recorded in ForC (because uncertainty estimates are important to the IPCC),
 (3) original publications containing large numbers of EFDB-relevant records,
 and (4) records from tropical regions.
-The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@refs], ground-based data on tropical forest C cycling tend to be more scarce due to a variety of challenges [@delima_making_2022], and *tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on previously existing data [@ref].* <!-- I'm almost certain this is true, but need to confirm/ find ref.-->
+The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@refs], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@refs; @delima_making_2022], and *tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on previously existing data [@ref].* <!-- I'm almost certain this is true, but need to confirm/ find ref.-->
 
 ## Addition of new records
 
 In addition to reviewing existing records, we added a total of `r n_records_added` new records to ForC.
-These included **##** records from **##** studies [@piponiot_distribution_2022; @lutz_largediameter_2021; @refs<!--others?-->] that were not previously included in ForC.
-In addition, we created new records for **##** EFDB-relevant estimates presented in the original publication that were not yet present in ForC.
+These included 104 records<!--100 from Piponiot, 4 from Lutz--> from two studies [@piponiot_distribution_2022; @lutz_largediameter_2021] that were not previously included in ForC.
+In addition, we created new records for `r n_records_added-104` EFDB-relevant estimates presented in the original publication that were not yet present in ForC.
 
 # Transfer of data from ForC to EFDB
 

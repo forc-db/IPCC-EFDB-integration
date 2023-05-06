@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  6 MAY 2023 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  6 MAY 2023 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3115,14 +3115,14 @@ Package natbib Warning: Citation `refs' on page 10 undefined on input line 633.
 
 
 
+Package natbib Warning: Citation `refs' on page 10 undefined on input line 635.
+
+
+
 Package natbib Warning: Citation `ref' on page 10 undefined on input line 637.
 
 
-Package natbib Warning: Citation `refs' on page 10 undefined on input line 644.
-
-
-
-Overfull \hbox (41.29123pt too wide) in paragraph at lines 670--675
+Overfull \hbox (41.29123pt too wide) in paragraph at lines 669--674
 \T1/ptm/m/n/10 repos-i-tory as-so-ci-ated with the project, IPCC-EFDB-integrati
 on repos-i-tory within the ForC-db or-ga-ni-za-tion (file \T1/ptm/m/it/10 ForC-
 EFDB_mapping.csv
@@ -3135,7 +3135,7 @@ File: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png Graphic
  file (type png)
 <use figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>
 Package pdftex.def Info: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_da
-ta_sent.png  used on input line 786.
+ta_sent.png  used on input line 785.
 (pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
 [12]
 <figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=331, 578.1
@@ -3144,21 +3144,21 @@ File: figures_tables/Histogram_n_Relevant_and_Transferred_Records.png Graphic f
 ile (type png)
 <use figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>
 Package pdftex.def Info: figures_tables/Histogram_n_Relevant_and_Transferred_Re
-cords.png  used on input line 791.
+cords.png  used on input line 790.
 (pdftex.def)             Requested size: 426.79134pt x 480.13954pt.
 [13 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [14 
 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15]
 
-Package natbib Warning: Citation `refs' on page 16 undefined on input line 964.
+Package natbib Warning: Citation `refs' on page 16 undefined on input line 963.
 
 
 [16]
 
+Package natbib Warning: Citation `refs' on page 17 undefined on input line 973.
+
+
+
 Package natbib Warning: Citation `refs' on page 17 undefined on input line 974.
-
-
-
-Package natbib Warning: Citation `refs' on page 17 undefined on input line 975.
 
 
 [17] [18] [19] [20
@@ -3176,18 +3176,18 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
 Class copernicus Warning: No section Abstract; proceeding without it.
 
 
-Package caption Warning: Unused \captionsetup[table] on input line 1072.
+Package caption Warning: Unused \captionsetup[table] on input line 1071.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1293.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1293.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1292.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1292.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1293.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1293.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1292.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1292.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1292.
  ) 
 Here is how much of TeX's memory you used:
  14850 strings out of 480608
@@ -3207,7 +3207,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (29 pages, 631841 bytes).
+Output written on ESSDmanuscript.pdf (29 pages, 631786 bytes).
 PDF statistics:
  548 PDF objects out of 1000 (max. 8388607)
  497 compressed objects within 5 object streams
