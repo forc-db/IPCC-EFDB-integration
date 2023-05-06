@@ -166,7 +166,7 @@ and reporting to improve accounting of forest-sector greenhoouse gas
 emissions and removals. We begin by reconciling terminology and mapping
 ForC fields into EFDB. This process required some updates to the ForC
 database structure, leading to the release of a new version of ForC
-(v4.0; described here). At the time of writing, ForC contained
+(v4.0; described here). As of May 06, 2023, ForC contained
 \textasciitilde17204 independent records that would be relevant to EFDB,
 1214 of which have been submitted to date. Among the data in ForC, there
 is disproportionate representation of biomass (particularly aboveground)
@@ -286,12 +286,12 @@ databases, including the Global Reforestation Opportunity Assessment
 10.5281/zenodo.3983644]{cook-patton_mapping_2020}, the global soil
 respiration database
 \citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
-For C currently contains 39855 records from 10589 plots in 1535 distinct
-geographical areas, along with records of stand age and disturbance
-history. As such, ForC is positioned to improve forest C accounting
-through the transfer of data to EFDB. The purpose of this publication is
-to document that process and provide recommendations for future
-improvements.
+As of May 06, 2023, ForC contained 39855 records from 10589 plots in
+1535 distinct geographical areas, along with records of stand age and
+disturbance history. As such, ForC is positioned to improve forest C
+accounting through the transfer of data to EFDB. The purpose of this
+publication is to document that process and provide recommendations for
+future improvements.
 
 Here, we (1) review IPCC methods and definitions for forest C accounting
 in the context of typical forest C estimation methodologies; (2)
@@ -558,15 +558,16 @@ based on the DOI
 We added a total of 15 new EFDB-relevant variables to the set of named
 and defined variables (Fig. 1), counting each pair of variables with
 units in C (ending in \texttt{\_C}) or organic matter (ending in
-\texttt{\_OM}) as one. This included eleven increment variables, adding
-to only one previously defined increment variable (aboveground biomass
-increment, \emph{delta.agb}). These are directly related to C stocks as
-previously defined in ForC, with ``\emph{delta.}'' added in front of the
-variable name. Further, we added variables capturing the belowground
-component of woody mortality (\emph{woody.mortality\_root}) and the
-combined aboveground and belowground components of woody mortality
-(\emph{woody.mortality}). Although most of these variables currently
-lack records in ForC, the structure exists such that records can be
+\texttt{\_OM}) as one. The majority of these were increment variables
+(n=11), adding to only one previously defined increment variable
+(aboveground biomass increment, \emph{delta.agb}). These are directly
+related to C stocks as previously defined in ForC, with
+``\emph{delta.}'' added in front of the variable name. Further, we added
+variables capturing the belowground component of woody mortality
+(\emph{woody.mortality\_root}) and the combined aboveground and
+belowground components of woody mortality (\emph{woody.mortality}).
+Although most of these variables lacked records in ForC as of May 06,
+2023, their addition gave the structure such that records can be
 populated over time. Finally, to provide better definition of the
 previously existing variable \emph{organic.layer}, which has a nebulous
 definition that reflects the varied definitions adopted by original
@@ -582,22 +583,27 @@ studies, we added two clearly defined variables: \emph{litter}
 
 Prior to releasing ForC v4.0, we executed several quality control
 measures. First, we implemented a system of continuous integration using
-GitHub Actions \citep[\emph{sensu}][]{kim_using_inreview} to run some
+GitHub Actions \citep[\emph{sensu}][]{kim_implementing_2022} to run some
 automatic checks any time the master data files are updated, including
 outlier tests and checks for completeness and naming consistency of
 records across data files. Second, to improve information on geographic
 coordinates, we created a field to record coordinate precision (Appendix
-A), and flagged and reviewed records with suspected low precision
-\emph{(Issue \#29){[}https://github.com/forc-db/ForC/issues/229{]}}.
-Third, to identify erroneous climate data\ldots{} \emph{(Issue
-\#212){[}https://github.com/forc-db/ForC/issues/212{]}}.
+A), and flagged and reviewed records with suspected low precision.
+Third, to identify erroneous climate data, we compared ForC climate
+values to those extracted from WorldClim version \textbf{\#\#}
+\citep{climwin_ref} based on site coordinates. Records deviating from
+WorldClim values by more variable-specific thresholds (\textgreater5°C
+for mean annual temperature, \textgreater7.5°C for mean temperatures of
+the warmest and coldest months, or \textgreater1 for log(mean annual
+precipitation in mm)) were flagged as requiring review prior to use in
+analysis or transfer to EFDB.
 
 Because ForC v4.0 contained known duplicate records, we used R scripts
-to remove likely duplicates, as detailed in
+to identify likely duplicates, as detailed in
 \citet{anderson-teixeira_carbon_2021}. Henceforth, we refer to the set
 of records with likely duplicates removed as ``independent records''.
-All records sent to EFCB were ensured to be original through manual
-review, as detailed below.
+All records sent to EFDB were ensured to be independent and original
+through manual review, as detailed below.
 
 \subsection{Manual review of records to be sent to EFDB}
 
@@ -657,7 +663,7 @@ records were reviewed and then sent to the IPCC's Technical Support Unit
 for inclusion in EFDB. Complete records needed to be reviewed by the
 EFDB editorial board prior to posting in the database -- a process that
 lags behind records transfer and had not yet been completed for all
-records sent as of May 05, 2023.
+records sent as of May 06, 2023.
 
 \subsection{Mapping ForC to EFDB}
 
@@ -767,7 +773,7 @@ notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of May 05, 2023, ForC (v4.0) contained 32693 independent records
+As of May 06, 2023, ForC (v4.0) contained 32693 independent records
 (39855 total), 17204 of which were for variables relevant to EFDB (Fig.
 1). These records were distributed across all forested continents and
 ecozones, with particularly high concentrations in
@@ -895,7 +901,7 @@ R\_het\_soil & 0 & 0 & 0 & 0\\
 
 \subsection{Data transfers to EFDB}
 
-As of May 05, 2023, we had reviewed or added 2034 EFDB-relevant records,
+As of May 06, 2023, we had reviewed or added 2034 EFDB-relevant records,
 1214 records of which were sent to EFDB, and 73 of which have been
 reviewed, accepted, and posted (Figs. 2-3, Table 2).
 \emph{{[}DETAILS{]}}

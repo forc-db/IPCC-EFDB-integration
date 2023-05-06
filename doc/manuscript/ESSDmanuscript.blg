@@ -6,6 +6,7 @@ Database file #1: references.bib
 Warning--I didn't find a database entry for "ipcc_summary_2022"
 Warning--I didn't find a database entry for "refs_from_ForC"
 Warning--I didn't find a database entry for "ref"
+Warning--I didn't find a database entry for "climwin_ref"
 Warning--I didn't find a database entry for "refs"
 Warning--can't use both author and editor fields in ipcc_good_2003
 Warning--empty booktitle in ipcc_2019_2019
@@ -15,43 +16,43 @@ Warning--empty chapter and pages in merganicova_dadwood_2012
 Warning--empty journal in ogle_delineating_2018
 You've used 44 entries,
             2819 wiz_defined-function locations,
-            1271 strings with 36568 characters,
-and the built_in function-call counts, 85168 in all, are:
-= -- 6588
+            1273 strings with 36633 characters,
+and the built_in function-call counts, 85903 in all, are:
+= -- 6713
 > -- 8483
 < -- 17
-+ -- 3010
++ -- 3018
 - -- 2789
-* -- 7228
-:= -- 11041
+* -- 7254
+:= -- 11076
 add.period$ -- 44
 call.type$ -- 44
 change.case$ -- 1015
 chr.to.int$ -- 43
 cite$ -- 138
-duplicate$ -- 5493
-empty$ -- 2950
+duplicate$ -- 5589
+empty$ -- 2974
 format.name$ -- 2911
-if$ -- 16329
+if$ -- 16478
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1230
+missing$ -- 1232
 newline$ -- 141
 num.names$ -- 178
-pop$ -- 3977
+pop$ -- 4010
 preamble$ -- 1
 purify$ -- 1014
 quote$ -- 0
-skip$ -- 2994
+skip$ -- 3057
 stack$ -- 0
-substring$ -- 1551
-swap$ -- 4825
+substring$ -- 1612
+swap$ -- 4933
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 387
 warning$ -- 6
-while$ -- 219
+while$ -- 222
 width$ -- 0
-write$ -- 514
-(There were 10 warnings)
+write$ -- 516
+(There were 11 warnings)
