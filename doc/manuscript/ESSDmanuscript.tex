@@ -166,7 +166,7 @@ and reporting to improve accounting of forest-sector greenhoouse gas
 emissions and removals. We begin by reconciling terminology and mapping
 ForC fields into EFDB. This process required some updates to the ForC
 database structure, leading to the release of a new version of ForC
-(v4.0; described here). As of May 06, 2023, ForC contained
+(v4.0; described here). As of May 07, 2023, ForC contained
 \textasciitilde17204 independent records that would be relevant to EFDB,
 1214 of which have been submitted to date. Among the data in ForC, there
 is disproportionate representation of biomass (particularly aboveground)
@@ -286,7 +286,7 @@ databases, including the Global Reforestation Opportunity Assessment
 10.5281/zenodo.3983644]{cook-patton_mapping_2020}, the global soil
 respiration database
 \citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
-As of May 06, 2023, ForC contained 39855 records from 10589 plots in
+As of May 07, 2023, ForC contained 39855 records from 10589 plots in
 1535 distinct geographical areas, along with records of stand age and
 disturbance history. As such, ForC is positioned to improve forest C
 accounting through the transfer of data to EFDB. The purpose of this
@@ -566,7 +566,7 @@ related to C stocks as previously defined in ForC, with
 variables capturing the belowground component of woody mortality
 (\emph{woody.mortality\_root}) and the combined aboveground and
 belowground components of woody mortality (\emph{woody.mortality}).
-Although most of these variables lacked records in ForC as of May 06,
+Although most of these variables lacked records in ForC as of May 07,
 2023, their addition gave the structure such that records can be
 populated over time. Finally, to provide better definition of the
 previously existing variable \emph{organic.layer}, which has a nebulous
@@ -651,57 +651,49 @@ To transfer complete, reviewed ForC records into EFDB, we created R
 scripts to restructure ForC records and populate EFDB's bulk import form
 (``EFDB bulk import.xlsx''). Criteria for data transfer were that (1)
 records had been checked against the original study and determined to be
-complete and correct (\texttt{EFDB.ready} field in
-\texttt{ForC\_citations} table), (2) the original study presented values
-in tables or text, as opposed to the values having been digitized from
-graphs or calculated based on related variables
-(\texttt{data.location.within.source} field in
-\texttt{ForC\_measurements} table), and (3) the records had not
-previously been sent to EFDB. Once converted into EFDB format, the
-records were reviewed and then sent to the IPCC's Technical Support Unit
-for inclusion in EFDB. Complete records needed to be reviewed by the
-EFDB editorial board prior to posting in the database -- a process that
-lags behind records transfer and had not yet been completed for all
-records sent as of May 06, 2023.
+complete and correct, and as originally presented, (2) the original
+study presented values in tables or text, as opposed to the values
+having been digitized from graphs or calculated based on related
+variables, and (3) the records had not previously been sent to EFDB.
+Once converted into EFDB format, the records were reviewed and then sent
+to the IPCC's Technical Support Unit for inclusion in EFDB. Complete
+records needed to be reviewed by the EFDB editorial board prior to
+posting in the database -- a process that lags behind records transfer
+and had not yet been completed for all records sent as of May 07, 2023.
 
 \subsection{Mapping ForC to EFDB}
 
-The mapping of ForC fields into EFDB fields is summarized in Appendix B,
-with details documented in the public GitHub repository associated with
-the project, IPCC-EFDB-integration repository within the ForC-db
-organization (file \emph{ForC-EFDB\_mapping.csv} available at
-\url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
-
+The mapping of ForC fields into EFDB fields is summarized in Appendix B.
 For the majority of fields, contents of the field in ForC was
 transferred directly into an EFDB field, either as the only contents of
 that field or as part of a composite record. For example, ten ForC
 fields describing site location, climate, and edaphic properties all
-mapped into the EFDB field \texttt{Region/Regional\ conditions}
-(Appendix B). In cases where original studies did not present 95\%
-confidence intervals (required by IPCC when available) but did present
-information required to calculate these (standard error or n and
-standard deviation), we calculated the 95\% confidence intervals and
-populated the EFDB field with this information (noting the calculation
-in the EFDB field \texttt{Comments\ from\ Data\ Provider}). For some
-fields, simple conditional logic was used to populate EFDB fields based
-on ForC records. For example, for stock variables presented in the
-original publication in units of dry organic matter mass (as opposed to
-C), several greenhouse gasses (CO\textsubscript{2}, CO,
-CH\textsubscript{4}, NO, NO\textsubscript{2}, N\textsubscript{2}O) were
-entered in the EFDB field indicating the greenhouse gases to which the
-record could be pertinent (\texttt{Gases} field) because these values
-could be used in calculations of greenhouse gas emissions from biomass
-burning \citep{ipcc_2006_2006}; otherwise, the only pertinent greenhouse
-gas would be CO\textsubscript{2}. There were two cases in which more
-complex mapping was required: (1) mapping of C cycle variables (section
-4.1.1) and (2) land classification (section 4.1.2).
+mapped into the EFDB field \emph{Region/Regional conditions} (Appendix
+B). In cases where original studies did not present 95\% confidence
+intervals (required by IPCC when available) but did present information
+required to calculate these (standard error or n and standard
+deviation), we calculated the 95\% confidence intervals and populated
+the EFDB field with this information (noting the calculation in the EFDB
+field \emph{Comments from Data Provider}). For some fields, simple
+conditional logic was used to populate EFDB fields based on ForC
+records. For example, for stock variables presented in the original
+publication in units of dry organic matter mass (as opposed to C),
+several greenhouse gasses (CO\textsubscript{2}, CO, CH\textsubscript{4},
+NO, NO\textsubscript{2}, N\textsubscript{2}O) were entered in the EFDB
+field indicating the greenhouse gases to which the record could be
+pertinent (\emph{Gases} field) because these values could be used in
+calculations of greenhouse gas emissions from biomass burning
+\citep{ipcc_2006_2006}; otherwise, the only pertinent greenhouse gas
+would be CO\textsubscript{2}. There were two cases in which more complex
+mapping was required: (1) mapping of C cycle variables (section 4.1.1)
+and (2) land classification (section 4.1.2).
 
 \subsubsection{Carbon cycle variables}
 
 With input from the IPCC's Technical Support Unit, we reviewed the list
 of ForC variables to identify those that were relevant to EFDB and to
-appropriately map them into EFDB (Fig. 1). For each C pools (Table 1),
-we identified variables representing organic matter or C stocks, stock
+appropriately map them into EFDB (Fig. 1). For each C pool (Table 1), we
+identified variables representing organic matter or C stocks, stock
 changes (a.k.a. ``net annual increments'' by IPCC, ``increments'' in
 ForC), gains (a.k.a. ``gross annual increments'' by IPCC, ``fluxes'' in
 ForC), and losses (``fluxes'' in ForC). As described in section 3.2, we
@@ -717,8 +709,9 @@ in ForC and mapped into the EFDB field \emph{Other Properties} (Appendix
 B). Details on the mapping of ForC variables to EFDB -- including
 associated covariates, IPCC pools (Table 1) and relevant equations
 \citep{ipcc_2006_2006} -- are documented in the file
-ForC\_variables\_mapping.csv in the IPCC-EFDB-integration repository
-(\url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
+ForC\_variables\_mapping.csv in the GitHub repository associated with
+this publication IPCC-EFDB-integration repository in ForC-db
+organization (\url{https://github.com/forc-db/IPCC-EFDB-integration}).
 
 \subsubsection{Land classification}
 
@@ -772,28 +765,52 @@ notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of May 06, 2023, ForC (v4.0) contained 32693 independent records
-(39855 total), 17204 of which were for variables relevant to EFDB (Fig.
-1). These records were distributed across all forested continents and
-ecozones, with particularly high concentrations in
-\emph{{[}ecozone(s){]}} and low concentrations in
-\emph{{[}ecozone(s){]}} (Fig. 2). The most widely represented forest
-type was \emph{{[}type{]}}, followed by \emph{{[}type{]}} and
-\emph{{[}type{]}} (Fig. 3).
+As of May 07, 2023, ForC (v4.0) contained 32693 independent records
+(39855 total), 17204 of which were for the the 36 variables relevant to
+EFDB (Fig. 1). These records were distributed across all forested
+continents and ecozones (Fig. 2). The largest number of records came
+from Asia, followed by North America, South America, and Europe, with
+relatively few records from Africa, Australia, and Oceania (Fig. 3c).
+Categorized by FAO ecozone, the greatest numbers of records came from
+subtropical humid forests, temperate mountain systems, and tropical rain
+forests, each with \textgreater2,000 independent records (Fig. 3b).
+Boreal coniferous forests, temperate continental forests, subtropical
+mountain systems, and tropical moist deciduous forests had
+\textgreater1,000 independent records each, while other ecozones all had
+\textless1,000 records. The most widely represented forest type was
+needleleaf evergreen, followed by broadleaf deciduous and broadleaf
+evergreen (Fig. 3a). In terms of stand age, the most represented age
+class was 20-100 years, followed by \textless20 years and then
+\textgreater100 years (Fig. 3d).
 
 \begin{figure}
-\includegraphics[width=15cm]{figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent} \caption{\textbf{Map of sites in ForC shaded by number of records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems.}\label{fig:fig_map}
+\includegraphics[width=15cm]{figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent} \caption{\textbf{Map of sites in ForC shaded by number of independent records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems.}\label{fig:fig_map}
 \end{figure}
 
 \newpage
 \begin{figure}
-\includegraphics[width=15cm]{figures_tables/Histogram_n_Relevant_and_Transferred_Records} \caption{\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2.}\label{fig:fig_histograms}
+\includegraphics[width=15cm]{figures_tables/Histogram_n_Relevant_and_Transferred_Records} \caption{\textbf{Histograms of number of independent records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2.}\label{fig:fig_histograms}
 \end{figure}
 
-ForC contained data for \textbf{\#\#} of the \textbf{\#\#} variables
-relevant to EFDB (Table 2, Fig. 1). The records were very unevenly
-distributed across variables. The most records colected were for the
-Aboveground biomass variable(biomass\_ag).This variable
+ForC contained records for 22 of the 36 variables relevant to EFDB
+(Table 2, Fig. 1). The records were very unevenly distributed across
+variables. The variable with most records was aboveground biomass,
+representing 45\% of all independent records relevant to EFDB, and
+aboveground biomass components (woody biomass or foliage) representing
+an additional 5\%. A total of 30\% of relevant records were for root
+biomass (including fine and coarse root components), while 5\% described
+total biomass. The non-living pools were less represented, with 5\% of
+relevant were for dead wood (including standing and fallen components),
+0.4\% for litter, and 2.3\% for soil carbon.
+
+Increment and flux variables were poorly represented (Table 2). The
+increment variable with most records was the aboveground biomass
+increment, representing 0.7\% of all independent records relevant to
+EFDB. The only other relevant increment variable with any records was
+the O horizon (litter) increment, with just 4 records. Relevant flux
+variable records (n=974) were limited to the biomass pools (aboveground,
+belowground, or total) and together constituted 6\% of ForC's
+independent records relevant to EFDB.
 
 \newpage
 \begingroup\fontsize{8}{10}\selectfont
@@ -900,7 +917,7 @@ R\_het\_soil & 0 & 0 & 0 & 0\\
 
 \subsection{Data transfers to EFDB}
 
-As of May 06, 2023, we had reviewed or added 2034 EFDB-relevant records,
+As of May 07, 2023, we had reviewed or added 2034 EFDB-relevant records,
 1214 records of which were sent to EFDB, and 73 of which have been
 reviewed, accepted, and posted (Figs. 2-3, Table 2).
 \emph{{[}DETAILS{]}}
@@ -1119,8 +1136,12 @@ Citations & citation.citation & Full citation. Most of these records are automat
 \section*{Appendix B. Mapping ForC to EFDB}
 \addcontentsline{toc}{section}{Appendix B. Mapping ForC to EFDB}
 
-Table B1: \textbf{Mapping of ForC fields to EFDB.} See footnotes at end
-of table (STILL NEED TO BE PROPERLY INSERTED).
+Table B1: \textbf{Mapping of ForC fields to EFDB.} Details documented in
+the public GitHub repository associated with the project,
+IPCC-EFDB-integration repository within the ForC-db organization (file
+\emph{ForC-EFDB\_mapping.csv} available at
+\url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
+See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
 \begingroup\fontsize{8}{10}\selectfont
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}

@@ -143,7 +143,23 @@ ForC_simplified <- read.csv(paste0(path_to_ForC,"/ForC/ForC_simplified/ForC_simp
 n_independent_records_ForC= length(ForC_simplified[,"measurement.ID"]) #suspected duplicates removed. This is the number of records fin ForC simplified.
 
 C_variables <- read.csv(paste0(path_to_dir,"/doc/manuscript/figures_tables/C_variables.csv"), stringsAsFactors = FALSE, check.names = FALSE)
+n_relevant_variables = nrow(C_variables) - 7 # n variables relevant = rows in C_variables - headers and total
+n_relevant_variables_with_no_data =  sum(C_variables$`n in ForC` == 0,  na.rm = TRUE)
+n_relevant_variables_with_data= n_relevant_variables - n_relevant_variables_with_no_data
+
+
 n_ind_records_EFDB_variables= C_variables[length(C_variables[,"variable"]), "n independent records in ForC"] #n independent records relevant to EFDB
+n_ind_records_agb <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_ag"]
+n_ind_records_agb_components <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_ag_woody"] + C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_ag_foliage"]
+n_ind_records_biomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass"]
+n_ind_records_rootbiomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_coarse"]
+n_ind_records_deadwood <- C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_down"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_standing"]
+n_ind_records_OL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "litter"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "O.horizon"]
+n_ind_records_SOC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "SOM / SOC"] 
+n_ind_records_deltaagb <- C_variables$`n independent records in ForC`[C_variables$`variable` == "delta.agb"] 
+n_ind_records_deltaOL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "delta.O.horizon"] 
+flux_variables_with_records <- c("NPP_woody", "ANPP_woody", "ANPP_woody_ag", "BNPP_root_fine","BNPP_root.turnover_fine","BNPP_root_coarse" )
+n_ind_records_flux <- sum(C_variables$`n independent records in ForC`[C_variables$`variable` %in% flux_variables_with_records])
 
 n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"]
 n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entries start with measurement.ID = 48956
@@ -378,30 +394,29 @@ In addition, we created new records for `r n_records_added-104` EFDB-relevant es
 # Transfer of data from ForC to EFDB
 
 To transfer complete, reviewed ForC records into EFDB, we created R scripts to restructure ForC records and populate EFDB's bulk import form ("EFDB bulk import.xlsx").
-Criteria for data transfer were that (1) records had been checked against the original study and determined to be complete and correct (`EFDB.ready` field in `ForC_citations` table), (2) the original study presented values in tables or text, as opposed to the values having been digitized from graphs or calculated based on related variables (`data.location.within.source` field in `ForC_measurements` table), and (3) the records had not previously been sent to EFDB.
+Criteria for data transfer were that (1) records had been checked against the original study and determined to be complete and correct, and as originally presented, (2) the original study presented values in tables or text, as opposed to the values having been digitized from graphs or calculated based on related variables, and (3) the records had not previously been sent to EFDB.
 Once converted into EFDB format, the records were reviewed and then sent to the IPCC's Technical Support Unit for inclusion in EFDB. 
 Complete records needed to be reviewed by the EFDB editorial board prior to posting in the database -- a process that lags behind records transfer and had not yet been completed for all records sent as of `r format(Sys.time(), '%B %d, %Y')`.
 
 ## Mapping ForC to EFDB
 
-The mapping of ForC fields into EFDB fields is summarized in `r table_ForCfieldmapping`, with details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
-
+The mapping of ForC fields into EFDB fields is summarized in `r table_ForCfieldmapping`.
 For the majority of fields, contents of the field in ForC was transferred directly into an EFDB field, either as the only contents of that field or as part of a composite record.
-For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field `Region/Regional conditions` (`r table_ForCfieldmapping`).
-In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field `Comments from Data Provider`).
+For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field *Region/Regional conditions* (`r table_ForCfieldmapping`).
+In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field *Comments from Data Provider*).
 For some fields, simple conditional logic was used to populate EFDB fields based on ForC records. 
-For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (`Gases` field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
+For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (*Gases* field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
 There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (section `r section_C_variable_mapping`) and (2) land classification (section `r section_land_use_mapping`).
 
 ### Carbon cycle variables
 
 With input from the IPCC's Technical Support Unit, we reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into EFDB (Fig. `r fig_variable_mapping`).
-For each C pools (Table `r table_pools`), we identified variables representing organic matter or C stocks, stock changes (a.k.a. "net annual increments" by IPCC, "increments" in ForC), gains (a.k.a. "gross annual increments" by IPCC, "fluxes" in ForC), and losses ("fluxes" in ForC).
+For each C pool (Table `r table_pools`), we identified variables representing organic matter or C stocks, stock changes (a.k.a. "net annual increments" by IPCC, "increments" in ForC), gains (a.k.a. "gross annual increments" by IPCC, "fluxes" in ForC), and losses ("fluxes" in ForC).
 As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented in ForC. 
 It it important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
 For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
 Information on minimum diameters censused and other important sources of methodological variation are recorded as covariates in ForC and mapped into the EFDB field *Other Properties* (`r table_ForCfieldmapping`).
-Details on the mapping of ForC variables to EFDB -- including associated covariates, IPCC pools (Table `r table_pools`) and relevant equations [@ipcc_2006_2006] -- are documented in the file ForC_variables_mapping.csv in the IPCC-EFDB-integration repository ([https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
+Details on the mapping of ForC variables to EFDB -- including associated covariates, IPCC pools (Table `r table_pools`) and relevant equations [@ipcc_2006_2006] -- are documented in the file ForC_variables_mapping.csv in the GitHub repository associated with this publication IPCC-EFDB-integration repository in ForC-db organization ([https://github.com/forc-db/IPCC-EFDB-integration](https://github.com/forc-db/IPCC-EFDB-integration)). 
 
 
 ### Land classification
@@ -427,24 +442,37 @@ However, we do provide auxiliary information that should be useful in making thi
 
 ## ForC v4.0 contents
 
-As of `r format(Sys.time(), '%B %d, %Y')`, ForC (v4.0) contained `r n_independent_records_ForC` independent records (`r n_records_ForC` total), `r n_ind_records_EFDB_variables` of which were for variables relevant to EFDB (Fig. `r fig_variable_mapping`).
-These records were distributed across all forested continents and ecozones, with particularly high concentrations in *[ecozone(s)]* and low concentrations in *[ecozone(s)]* (Fig. `r fig_map`).
-The most widely represented forest type was *[type]*, followed by *[type]* and *[type]* (Fig. `r fig_histograms`).
+As of `r format(Sys.time(), '%B %d, %Y')`, ForC (v4.0) contained `r n_independent_records_ForC` independent records (`r n_records_ForC` total), `r n_ind_records_EFDB_variables` of which were for the the `r n_relevant_variables` variables relevant to EFDB (Fig. `r fig_variable_mapping`).
+These records were distributed across all forested continents and ecozones, albeit unevenly (Fig. `r fig_map`).
+The largest number of records came from Asia, followed by North America, South America, and Europe, with relatively few records from Africa, Australia, and Oceania (Fig. `r fig_histograms`c).
+Categorized by FAO ecozone, the greatest numbers of records came from subtropical humid forests, temperate mountain systems, and tropical rain forests, each with >2,000 independent records (Fig. `r fig_histograms`b). 
+Boreal coniferous forests, temperate continental forests, subtropical mountain systems, and tropical moist deciduous forests had >1,000 independent records each, while other ecozones all had <1,000 records.
+The most widely represented forest type was needleleaf evergreen, followed by broadleaf deciduous and broadleaf evergreen (Fig. `r fig_histograms`a).
+In terms of stand age, the most represented age class was 20-100 years, followed by <20 years and then >100 years (Fig. `r fig_histograms`d).
 
 
-```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems."}
+```{r fig_map, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Map of sites in ForC shaded by number of independent records relevant to (circles) and transferred to (triangles) EFDB.} Symbols are colored according to the number of records at each site. Underlying map shows FAO ecozones, which are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems."}
 #this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png")
 ```
 
 \newpage
-```{r fig_histograms, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Histograms of number of records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2."}
+```{r fig_histograms, out.width = "15cm", echo = FALSE, fig.cap = "\\textbf{Histograms of number of independent records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2."}
 #this is for a two-column figure. for one-column figure, use out.width = "8.3cm"
 knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Records.png")
 ```
 
-ForC contained data for **##** of the **##** variables relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
-The records were very unevenly distributed across variables. The most records colected were for the Aboveground biomass variable(biomass_ag).This variable  
+ForC contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
+The records were very unevenly distributed across variables. 
+The variable with most records was aboveground biomass, representing `r round(n_ind_records_agb/n_ind_records_EFDB_variables,2)*100`% of all independent records relevant to EFDB, and aboveground biomass components (woody biomass or foliage) representing an additional `r round(n_ind_records_agb_components/n_ind_records_EFDB_variables,2)*100`%.
+A total of `r round(n_ind_records_rootbiomass/n_ind_records_EFDB_variables,2)*100`% of relevant records were for root biomass (including fine and coarse root components), while `r round(n_ind_records_biomass/n_ind_records_EFDB_variables,2)*100`% described total biomass.
+The non-living pools were less represented, with `r round(n_ind_records_deadwood/n_ind_records_EFDB_variables,2)*100`% of relevant were for dead wood (including standing and fallen components), `r round(n_ind_records_OL/n_ind_records_EFDB_variables*100,1)`% for litter, and `r round(n_ind_records_SOC/n_ind_records_EFDB_variables*100,1)`% for soil carbon.
+
+Increment and flux variables were poorly represented (Table `r table_variables`).
+The increment variable with most records was the aboveground biomass increment, representing `r round(n_ind_records_deltaagb/n_ind_records_EFDB_variables*100,1)`% of all independent records relevant to EFDB.
+The only other relevant increment variable with any records was the O horizon (litter) increment, with just `r n_ind_records_deltaOL` records.
+Relevant flux variable records (n=`r n_ind_records_flux`) were limited to the biomass pools (aboveground, belowground, or total) and together constituted `r round(n_ind_records_flux/n_ind_records_EFDB_variables,2)*100`% of ForC's independent records relevant to EFDB.
+
 
 \newpage
 ```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
@@ -580,7 +608,7 @@ knitr::kable(record_of_changes, format = "latex",
 \clearpage
 # Appendix B. Mapping ForC to EFDB {-}
 
-Table B1: **Mapping of ForC fields to EFDB.** See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
+Table B1: **Mapping of ForC fields to EFDB.** Details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
 ```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
 library(knitr)
 library(kableExtra)
