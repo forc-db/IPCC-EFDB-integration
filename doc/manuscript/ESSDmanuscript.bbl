@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -518,6 +518,11 @@ Sanderman, J., Hengl, T., and Fiske, G.~J.: Soil Carbon Debt of 12,000 Years of
 
 \bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
 UNFCCC: Adoption of the {{Paris Agreement}}, 2015.
+
+\bibitem[{Wickham(2022)}]{rvest}
+Wickham, H.: rvest: Easily Harvest (Scrape) Web Pages,
+  \urlprefix\url{https://CRAN.R-project.org/package=rvest}, r package version
+  1.0.3, 2022.
 
 \bibitem[{Xu et~al.(2021)Xu, Saatchi, Yang, Yu, Pongratz, Bloom, Bowman,
   Worden, Liu, Yin, Domke, McRoberts, Woodall, Nabuurs, {de-Miguel}, Keller,
