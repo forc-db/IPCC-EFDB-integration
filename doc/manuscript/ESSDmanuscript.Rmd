@@ -339,7 +339,7 @@ This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_
 
 We added or modified a total of `r n_fields_modified` fields (`r table_ForCchanges`).
 Most notably, these included improvement of the representation of uncertainty, recording of original units and organic matter to C conversion factors, and expanding the information recorded in the citations table. 
-For the latter, we *used an R script to automatically retrieve information based on the DOI ([issue 41](https://github.com/forc-db/IPCC-EFDB-integration/issues/41))*<!--needs info from Valentine here-->.  
+For the latter, we used an R script to automatically harvest (scrape) the URL, citation, abstract and language of the publications, based on their DOI, using R package `rvest`[ @rvest]). That information was manually retrieved when the web scraping failed. 
 
 ## New variables
 
