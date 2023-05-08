@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  8 MAY 2023 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  8 MAY 2023 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3092,14 +3092,14 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 55
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [7]
-<figures_tables/C_variable_mapping.png, id=262, 777.90625pt x 871.255pt>
+<figures_tables/C_variable_mapping.png, id=262, 779.91376pt x 872.25874pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
 ine 579.
-(pdftex.def)             Requested size: 398.33858pt x 446.15549pt.
+(pdftex.def)             Requested size: 398.33858pt x 445.49825pt.
 
-LaTeX Warning: Float too large for page by 43.03276pt on input line 580.
+LaTeX Warning: Float too large for page by 26.97559pt on input line 580.
 
 
 Package natbib Warning: Citation `climwin_ref' on page 8 undefined on input lin
@@ -3142,15 +3142,15 @@ cords.png  used on input line 792.
 [13 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [14 
 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15] [16]
 
-Package natbib Warning: Citation `refs' on page 17 undefined on input line 1002
-.
-
-
 Package natbib Warning: Citation `refs' on page 17 undefined on input line 1012
 .
 
 
-Package natbib Warning: Citation `refs' on page 17 undefined on input line 1013
+Package natbib Warning: Citation `refs' on page 17 undefined on input line 1022
+.
+
+
+Package natbib Warning: Citation `refs' on page 17 undefined on input line 1023
 .
 
 [17] [18] [19] [20
@@ -3168,27 +3168,27 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
 Class copernicus Warning: No section Abstract; proceeding without it.
 
 
-Package caption Warning: Unused \captionsetup[table] on input line 1110.
+Package caption Warning: Unused \captionsetup[table] on input line 1120.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1335.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1345.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1345.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1335.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1335.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1335.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1345.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1345.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1345.
  ) 
 Here is how much of TeX's memory you used:
  14854 strings out of 480608
  198842 string characters out of 5903631
- 586439 words of memory out of 5000000
+ 583785 words of memory out of 5000000
  30310 multiletter control sequences out of 15000+600000
  580621 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,15n,49p,1608b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,15n,49p,1446b,651s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -3199,7 +3199,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (29 pages, 633588 bytes).
+Output written on ESSDmanuscript.pdf (29 pages, 634487 bytes).
 PDF statistics:
  554 PDF objects out of 1000 (max. 8388607)
  502 compressed objects within 6 object streams
