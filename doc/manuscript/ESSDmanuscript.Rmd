@@ -155,10 +155,11 @@ n_ind_records_biomass <- C_variables$`n independent records in ForC`[C_variables
 n_ind_records_rootbiomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_coarse"]
 n_ind_records_deadwood <- C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_down"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_standing"]
 n_ind_records_OL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "litter"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "O.horizon"]
+n_ind_records_TotEcosystemC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "total.ecosystem_2"] 
 n_ind_records_SOC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "SOM / SOC"] 
 n_ind_records_deltaagb <- C_variables$`n independent records in ForC`[C_variables$`variable` == "delta.agb"] 
 n_ind_records_deltaOL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "delta.O.horizon"] 
-flux_variables_with_records <- c("NPP_woody", "ANPP_woody", "ANPP_woody_ag", "BNPP_root_fine","BNPP_root.turnover_fine","BNPP_root_coarse" )
+flux_variables_with_records <- c("NPP_woody", "ANPP_woody", "ANPP_woody_stem", "ANPP_woody_branch", "woody.mortality_ag", "BNPP_root", "BNPP_root_fine","BNPP_root.turnover_fine","BNPP_root_coarse" , "ANPP_litterfall", "NPP_litter", "R_het_litter", "R_het_soil")
 n_ind_records_flux <- sum(C_variables$`n independent records in ForC`[C_variables$`variable` %in% flux_variables_with_records])
 
 n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"]
@@ -466,12 +467,13 @@ ForC contained records for `r n_relevant_variables_with_data` of the `r n_releva
 The records were very unevenly distributed across variables. 
 The variable with most records was aboveground biomass, representing `r round(n_ind_records_agb/n_ind_records_EFDB_variables,2)*100`% of all independent records relevant to EFDB, and aboveground biomass components (woody biomass or foliage) representing an additional `r round(n_ind_records_agb_components/n_ind_records_EFDB_variables,2)*100`%.
 A total of `r round(n_ind_records_rootbiomass/n_ind_records_EFDB_variables,2)*100`% of relevant records were for root biomass (including fine and coarse root components), while `r round(n_ind_records_biomass/n_ind_records_EFDB_variables,2)*100`% described total biomass.
-The non-living pools were less represented, with `r round(n_ind_records_deadwood/n_ind_records_EFDB_variables,2)*100`% of relevant were for dead wood (including standing and fallen components), `r round(n_ind_records_OL/n_ind_records_EFDB_variables*100,1)`% for litter, and `r round(n_ind_records_SOC/n_ind_records_EFDB_variables*100,1)`% for soil carbon.
+The non-living pools were less represented, with `r round(n_ind_records_deadwood/n_ind_records_EFDB_variables,2)*100`% of relevant were for dead wood (including standing and fallen components), `r round(n_ind_records_OL/n_ind_records_EFDB_variables*100,1)`% for litter, `r round(n_ind_records_TotEcosystemC/n_ind_records_EFDB_variables*100,1)`% for total ecosystem C excluding soils, and `r round(n_ind_records_SOC/n_ind_records_EFDB_variables*100,1)`% for soil carbon.
+
 
 Increment and flux variables were poorly represented (Table `r table_variables`).
 The increment variable with most records was the aboveground biomass increment, representing `r round(n_ind_records_deltaagb/n_ind_records_EFDB_variables*100,1)`% of all independent records relevant to EFDB.
 The only other relevant increment variable with any records was the O horizon (litter) increment, with just `r n_ind_records_deltaOL` records.
-Relevant flux variable records (n=`r n_ind_records_flux`) were limited to the biomass pools (aboveground, belowground, or total) and together constituted `r round(n_ind_records_flux/n_ind_records_EFDB_variables,2)*100`% of ForC's independent records relevant to EFDB.
+Relevant flux variable records (n=`r n_ind_records_flux`) together constituted `r round(n_ind_records_flux/n_ind_records_EFDB_variables,2)*100`% of ForC's independent records relevant to EFDB.
 
 
 \newpage
@@ -499,10 +501,9 @@ As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had r
 The `r round((n_records_reviewed_or_added -n_records_sent_to_EFDB )/n_records_reviewed_or_added,2)*100`% attenuation between records reviewed and those sent to EFDB was attributable to the presence of digitized records and records where a variable's value had been calculated as the sum or difference of related variables rather than presented directly in the text.
 The discrepancy between the number of records sent and that posted to EFDB is primarily attributable to the time required for the IPCC to review the records, and it is not expected that many -- if any -- records will be rejected.
 
-<!-- this paragraph will need to be revisited after we solve issues 42 and 43-->
 The records transferred from ForC to EFDB were broadly distributed across Earth's forests (Fig. `r fig_map`).
 However, the density of these records was very unevenly distributed across continents, biomes, and forest types and was not proportional to the numbers of relevant records in ForC (Fig. `r fig_histograms`).
-Rather, the largest number of records came from North America, followed by Asia and South America (Fig. `r fig_histograms`c), with the most represented FAO ecozones being boreal coniferous forest, temperate continental forest, and temperate mountain systems, followed by tropical rain forests and moist deciduous forests (Fig. `r fig_histograms`b).
+Rather, the largest number of records came from North America, followed by Asia, South America, and Africa (Fig. `r fig_histograms`c), with the most represented FAO ecozones being boreal coniferous forest, temperate continental forest, and temperate mountain systems, followed by tropical rain forests and moist deciduous forests (Fig. `r fig_histograms`b).
 In terms of dominant vegetation, by far the most records came from needleleaf evergreen forests, followed by broadleaf deciduous and broadleaf evergreen (Fig. `r fig_histograms`b). 
 The largest records came from mature forests (>100 years), followed by young and intermediate-aged stands (Fig. `r fig_histograms`d).
 

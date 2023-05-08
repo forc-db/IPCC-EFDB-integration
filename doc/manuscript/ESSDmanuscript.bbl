@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -79,14 +79,6 @@ Badgley, G., Freeman, J., Hamman, J.~J., Haya, B., Trugman, A.~T., Anderegg,
   W.~R., and Cullenward, D.: Systematic Over-Crediting in {{California}}'s
   Forest Carbon Offsets Program, Global Change Biology, 28, 1433--1445,
   \doi{10.1111/gcb.15943}, 2022.
-
-\bibitem[{Banbury~Morgan et~al.(2021)Banbury~Morgan, Herrmann, Kunert,
-  Bond-Lamberty, Muller-Landau, and
-  Anderson-Teixeira}]{banburymorgan_global_2021}
-Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
-  H.~C., and Anderson-Teixeira, K.~J.: Global Patterns of Forest Autotrophic
-  Carbon Fluxes, Global Change Biology, 27, 2840--2855,
-  \doi{10.1111/gcb.15574}, 2021.
 
 \bibitem[{{Bond-Lamberty} and Thomson(2010)}]{bond-lamberty_global_2010}
 {Bond-Lamberty}, B. and Thomson, A.: A Global Database of Soil Respiration
@@ -279,19 +271,6 @@ Duncanson, L., Armstron, J., Disney, M., Avitabile, V., Barbier, N., Calders,
 FAO: Global {{Ecological Zones}} for {{FAO Forest Reporting}}: 2010 Update,
   Tech. Rep. Forest Resources Assessment Working Paper 179, {FOOD AND
   AGRICULTURE ORGANIZATION OF THE UNITED NATIONS}, {Rome}, 2012.
-
-\bibitem[{Fer et~al.(2021)Fer, Gardella, Shiklomanov, Campbell, Cowdery, Kauwe,
-  Desai, Duveneck, Fisher, Haynes, Hoffman, Johnston, Kooper, LeBauer,
-  Mantooth, Parton, Poulter, Quaife, Raiho, Schaefer, Serbin, Simkins, Wilcox,
-  Viskari, and Dietze}]{fer_ecosystem_2021}
-Fer, I., Gardella, A.~K., Shiklomanov, A.~N., Campbell, E.~E., Cowdery, E.~M.,
-  Kauwe, M. G.~D., Desai, A., Duveneck, M.~J., Fisher, J.~B., Haynes, K.~D.,
-  Hoffman, F.~M., Johnston, M.~R., Kooper, R., LeBauer, D.~S., Mantooth, J.,
-  Parton, W.~J., Poulter, B., Quaife, T., Raiho, A., Schaefer, K., Serbin,
-  S.~P., Simkins, J., Wilcox, K.~R., Viskari, T., and Dietze, M.~C.: Beyond
-  Ecosystem Modeling: {{A}} Roadmap to Community Cyberinfrastructure for
-  Ecological Data-Model Integration, Global Change Biology, 27, 13--26,
-  \doi{10.1111/gcb.15409}, 2021.
 
 \bibitem[{{Gonzalez-Akre} et~al.(2022){Gonzalez-Akre}, Piponiot, Lepore,
   Herrmann, Lutz, Baltzer, Dick, Gilbert, He, Heym, Huerta, Jansen, Johnson,
