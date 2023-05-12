@@ -555,24 +555,24 @@ information was manually retrieved when the web scraping failed.
 
 \subsection{New variables}
 
-We added a total of 15 new EFDB-relevant variables to the set of named
-and defined variables (Fig. 1), counting each pair of variables with
-units in C (ending in \texttt{\_C}) or organic matter (ending in
-\texttt{\_OM}) as one. The majority of these were increment variables
-(n=11), adding to only one previously defined increment variable
-(aboveground biomass increment, \emph{delta.agb}). These are directly
-related to C stocks as previously defined in ForC, with
-``\emph{delta.}'' added in front of the variable name. Further, we added
-variables capturing the belowground component of woody mortality
-(\emph{woody.mortality\_root}) and the combined aboveground and
-belowground components of woody mortality (\emph{woody.mortality}).
-Although most of these variables lacked records in ForC as of May 12,
-2023, their addition gave the structure such that records can be
-populated over time. Finally, to provide better definition of the
-previously existing variable \emph{organic.layer}, which has a nebulous
-definition that reflects the varied definitions adopted by original
-studies, we added two clearly defined variables: \emph{litter}
-(relatively undecomposed plant material/ OL horizon), and
+To create structure for EFDB-relevant records, we added a total of 15
+new variables to the set of named and defined variables (Fig. 1),
+counting each pair of variables with units in C (ending in \texttt{\_C})
+or organic matter (ending in \texttt{\_OM}) as one. The majority of
+these were increment variables (n=11), adding to only one previously
+defined increment variable (aboveground biomass increment,
+\emph{delta.agb}). These are directly related to C stocks as previously
+defined in ForC, with ``\emph{delta.}'' added in front of the variable
+name. Further, we added variables capturing the belowground component of
+woody mortality (\emph{woody.mortality\_root}) and the combined
+aboveground and belowground components of woody mortality
+(\emph{woody.mortality}). Although most of these variables lacked
+records in ForC as of May 12, 2023, their addition gave the structure
+such that records can be populated over time. Finally, to provide better
+definition of the previously existing variable \emph{organic.layer},
+which has a nebulous definition that reflects the varied definitions
+adopted by original studies, we added two clearly defined variables:
+\emph{litter} (relatively undecomposed plant material/ OL horizon), and
 \emph{O.horizon} (entire O-horizon, including OL).
 
 \begin{figure}
@@ -766,7 +766,7 @@ notable disturbance events.
 \subsection{ForC v4.0 contents}
 
 As of May 12, 2023, ForC (v4.0) contained 32693 independent records
-(39855 total), 19323 of which were for the the 45 variables relevant to
+(39855 total), 19323 of which were for the the 43 variables relevant to
 EFDB (Fig. 1). These records were distributed across all forested
 continents and ecozones, albeit unevenly (Fig. 2). The largest number of
 records came from Asia, followed by North America, South America, and
@@ -792,17 +792,17 @@ class was 20-100 years, followed by \textless20 years and then
 \includegraphics[width=15cm]{figures_tables/Histogram_n_Relevant_and_Transferred_Records} \caption{\textbf{Histograms of number of independent records in ForC relevant to (grey) and transferred to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2.}\label{fig:fig_histograms}
 \end{figure}
 
-ForC contained records for 31 of the 45 variables relevant to EFDB
-(Table 2, Fig. 1). The records were very unevenly distributed across
-variables. The variable with most records was aboveground biomass,
-representing 42\% of all independent records relevant to EFDB, and
-aboveground biomass components (woody biomass or foliage) representing
-an additional 5\%. A total of 27\% of relevant records were for root
-biomass (including fine and coarse root components), while 4\% described
-total biomass. The non-living pools were less represented, with 4\% of
-relevant were for dead wood (including standing and fallen components),
-0.4\% for litter, 0.3\% for total ecosystem C excluding soils, and 2.1\%
-for soil carbon.
+ForC contained records for 29 of the 43 variables (or closely-related
+variable groups) relevant to EFDB (Table 2, Fig. 1). The records were
+very unevenly distributed across variables. The variable with most
+records was aboveground biomass, representing 42\% of all independent
+records relevant to EFDB, and aboveground biomass components (woody
+biomass or foliage) representing an additional 5\%. A total of 27\% of
+relevant records were for root biomass (including fine and coarse root
+components), while 4\% described total biomass. The non-living pools
+were less represented, with 4\% of relevant were for dead wood
+(including standing and fallen components), 0.4\% for litter, 0.3\% for
+total ecosystem C excluding soils, and 2.1\% for soil carbon.
 
 Increment and flux variables were poorly represented (Table 2). The
 increment variable with most records was the aboveground biomass
@@ -816,12 +816,12 @@ independent records relevant to EFDB.
 \begingroup\fontsize{8}{10}\selectfont
 
 \begin{longtable}[t]{l|l|l|l|l}
-\caption{\label{tab:table_variables}\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.}}\\
+\caption{\label{tab:table_variables}\textbf{Numbers of records of ForC variables (or closely related variable groups) relevant to, and sent to, EFDB.}}\\
 \hline
 \textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n sent to EFDB}\\
 \hline
 \endfirsthead
-\caption[]{\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.} \textit{(continued)}}\\
+\caption[]{\textbf{Numbers of records of ForC variables (or closely related variable groups) relevant to, and sent to, EFDB.} \textit{(continued)}}\\
 \hline
 \textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n sent to EFDB}\\
 \hline
@@ -958,19 +958,20 @@ forests, followed by broadleaf deciduous and broadleaf evergreen (Fig.
 3b). The largest records came from mature forests (\textgreater100
 years), followed by young and intermediate-aged stands (Fig. 3d).
 
-In terms of variables transferred, records were sent for 21 variables,
-including variables from each C pool (Table 2). The majority (82\%) of
-records sent were for C stocks, including 3\% for total biomass, 53\%
-for aboveground biomass, 4\% for components of aboveground biomass (wood
-or foliage), 4\% for root biomass, 2\% for components of root biomass
-(coarse or fine roots), 5\% for dead wood, 3\% for components of dead
-wood (standing or fallen), 4\% for litter (OL layer or entire O
-horizon), and 4\% for SOM/ SOC. Increment records totaled 9\% of records
-sent, including 8.55\% for aboveground biomass increments and 0.28\% for
-organic horizon increments. The remaining (9\%) of records sent
-described fluxes, all of which were either inputs or outputs to the
-aboveground biomass pool, and a subset of which also described inputs to
-the dead wood or litter pool (Table 2, Fig. 1).
+In terms of variables transferred, records were sent for 19 variables
+(or closely-related variable groups), including variables from each C
+pool (Table 2). The majority (82\%) of records sent were for C stocks,
+including 3\% for total biomass, 53\% for aboveground biomass, 4\% for
+components of aboveground biomass (wood or foliage), 4\% for root
+biomass, 2\% for components of root biomass (coarse or fine roots), 5\%
+for dead wood, 3\% for components of dead wood (standing or fallen), 4\%
+for litter (entire O horizon or OL layer component), and 4\% for SOM/
+SOC. Increment records totaled 9\% of records sent, including 8.55\% for
+aboveground biomass increments and 0.28\% for organic horizon
+increments. The remaining (9\%) of records sent described fluxes, all of
+which were either inputs or outputs to the aboveground biomass pool, and
+a subset of which also described inputs to the dead wood or litter pool
+(Table 2, Fig. 1).
 
 \section{Recommendations}
 

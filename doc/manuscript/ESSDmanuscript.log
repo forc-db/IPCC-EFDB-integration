@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 MAY 2023 08:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 MAY 2023 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3142,16 +3142,16 @@ cords.png  used on input line 792.
 [13 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [14 
 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15] [16]
 
-Package natbib Warning: Citation `refs' on page 17 undefined on input line 1043
+Package natbib Warning: Citation `refs' on page 17 undefined on input line 1044
 .
 
 [17]
 
-Package natbib Warning: Citation `refs' on page 18 undefined on input line 1053
+Package natbib Warning: Citation `refs' on page 18 undefined on input line 1054
 .
 
 
-Package natbib Warning: Citation `refs' on page 18 undefined on input line 1054
+Package natbib Warning: Citation `refs' on page 18 undefined on input line 1055
 .
 
 [18] [19] [20] [21
@@ -3169,23 +3169,23 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
 Class copernicus Warning: No section Abstract; proceeding without it.
 
 
-Package caption Warning: Unused \captionsetup[table] on input line 1151.
+Package caption Warning: Unused \captionsetup[table] on input line 1152.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1376.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1377.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1376.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1376.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1377.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1377.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1377.
  ) 
 Here is how much of TeX's memory you used:
  14859 strings out of 480608
  199002 string characters out of 5903631
- 583961 words of memory out of 5000000
+ 583992 words of memory out of 5000000
  30313 multiletter control sequences out of 15000+600000
  580621 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3200,7 +3200,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (30 pages, 636585 bytes).
+Output written on ESSDmanuscript.pdf (30 pages, 636725 bytes).
 PDF statistics:
  561 PDF objects out of 1000 (max. 8388607)
  508 compressed objects within 6 object streams

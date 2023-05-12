@@ -143,7 +143,7 @@ ForC_simplified <- read.csv(paste0(path_to_ForC,"/ForC/ForC_simplified/ForC_simp
 n_independent_records_ForC= length(ForC_simplified[,"measurement.ID"]) #suspected duplicates removed. This is the number of records fin ForC simplified.
 
 C_variables <- read.csv(paste0(path_to_dir,"/doc/manuscript/figures_tables/C_variables.csv"), stringsAsFactors = FALSE, check.names = FALSE)
-n_relevant_variables = nrow(C_variables) - 8 + 2  # n variables relevant = rows in C_variables - headers and total + 2 that are grouped with similar variables
+n_relevant_variables = nrow(C_variables) - 8  # n variables relevant = rows in C_variables - headers and total 
 n_relevant_variables_with_no_data =  sum(C_variables$`n in ForC` == 0,  na.rm = TRUE)
 n_relevant_variables_with_data= n_relevant_variables - n_relevant_variables_with_no_data
 
@@ -183,8 +183,8 @@ n_records_sent_stocks = n_records_sent_biomass+n_records_sent_agb+n_records_sent
 n_records_sent_delta.agb<- C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.agb"]
 n_records_sent_delta.litter<- C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.O.horizon"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.litter"]
 n_records_sent_increments <- n_records_sent_delta.agb+n_records_sent_delta.litter
-n_records_sent_fluxes = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
-
+n_records_sent_fluxes <- sum(C_variables$`n sent to EFDB`[C_variables$`variable` %in% flux_variables_with_records])
+n_records_sent_fluxes_check = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
 
 
 n_records_posted_EFDB = 376 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records")
@@ -363,7 +363,7 @@ That information was manually retrieved when the web scraping failed.
 
 ## New variables
 
-We added a total of `r n_new_variables` new EFDB-relevant variables to the set of named and defined variables (Fig. `r fig_variable_mapping`), counting each pair of variables with units in C (ending in  `_C`) or organic matter (ending in `_OM`) as one. 
+To create structure for EFDB-relevant records, we added a total of `r n_new_variables` new variables to the set of named and defined variables (Fig. `r fig_variable_mapping`), counting each pair of variables with units in C (ending in  `_C`) or organic matter (ending in `_OM`) as one. 
 The majority of these were increment variables (n=11), adding to only one previously defined increment variable (aboveground biomass increment, *delta.agb*). 
 These are directly related to C stocks as previously defined in ForC, with "*delta.*" added in front of the variable name.
 Further, we added variables capturing the belowground component of woody mortality (*woody.mortality_root*) and the combined aboveground and belowground components of woody mortality (*woody.mortality*).
@@ -482,7 +482,7 @@ knitr::include_graphics("figures_tables/World_Map_of_sites_with_FAO_and_IPCC_dat
 knitr::include_graphics("figures_tables/Histogram_n_Relevant_and_Transferred_Records.png")
 ```
 
-ForC contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
+ForC contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables (or closely-related variable groups) relevant to EFDB (Table `r table_variables`, Fig. `r fig_variable_mapping`).
 The records were very unevenly distributed across variables. 
 The variable with most records was aboveground biomass, representing `r round(n_ind_records_agb/n_ind_records_EFDB_variables,2)*100`% of all independent records relevant to EFDB, and aboveground biomass components (woody biomass or foliage) representing an additional `r round(n_ind_records_agb_components/n_ind_records_EFDB_variables,2)*100`%.
 A total of `r round(n_ind_records_rootbiomass/n_ind_records_EFDB_variables,2)*100`% of relevant records were for root biomass (including fine and coarse root components), while `r round(n_ind_records_biomass/n_ind_records_EFDB_variables,2)*100`% described total biomass.
@@ -505,7 +505,7 @@ library(knitr)
 library(kableExtra)
 knitr::kable(C_variables_table[,-1], format = "latex",  
              longtable = T,
-             caption = "\\textbf{Numbers of records of ForC variables relevant to, and sent to, EFDB.}") %>%
+             caption = "\\textbf{Numbers of records of ForC variables (or closely related variable groups) relevant to, and sent to, EFDB.}") %>%
   row_spec(0, bold = TRUE)  %>%
   row_spec(which(C_variables_table$bold), bold = TRUE) %>% #total
   kable_styling(font_size = 8) %>%
@@ -526,7 +526,7 @@ Rather, the largest number of records came from North America, followed by Asia,
 In terms of dominant vegetation, by far the most records came from needleleaf evergreen forests, followed by broadleaf deciduous and broadleaf evergreen (Fig. `r fig_histograms`b). 
 The largest records came from mature forests (>100 years), followed by young and intermediate-aged stands (Fig. `r fig_histograms`d).
 
-In terms of variables transferred, records were sent for `r n_relevant_variables_records_sent` variables, including variables from each C pool (Table `r table_variables`).
+In terms of variables transferred, records were sent for `r n_relevant_variables_records_sent` variables (or closely-related variable groups), including variables from each C pool (Table `r table_variables`).
 The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) of records sent were for C stocks, including
 `r round(n_records_sent_biomass/n_records_sent_to_EFDB,2)*100`% for total biomass, 
 `r round(n_records_sent_agb/n_records_sent_to_EFDB,2)*100`% for aboveground biomass,
@@ -535,7 +535,7 @@ The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) o
 `r round(n_records_sent_rootbiomass_components/n_records_sent_to_EFDB,2)*100`% for components of root biomass (coarse or fine roots), 
 `r round(n_records_sent_deadwood/n_records_sent_to_EFDB,2)*100`% for dead wood, 
 `r round(n_records_sent_deadwood_components/n_records_sent_to_EFDB,2)*100`% for components of dead wood (standing or fallen), 
-`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (OL layer or entire O horizon),
+`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (entire O horizon or OL layer component),
 and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for SOM/ SOC.
 Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records sent, including
 `r round(n_records_sent_delta.agb/n_records_sent_to_EFDB*100,2)`% for aboveground biomass increments 
@@ -543,8 +543,6 @@ and `r round(n_records_sent_delta.litter/n_records_sent_to_EFDB*100,2)`% for org
 The remaining (`r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`%) of records sent described fluxes,
 all of which were either inputs or outputs to the aboveground biomass pool,
 and a subset of which also described inputs to the dead wood or litter pool (Table `r table_variables`, Fig. `r fig_variable_mapping`).
-
-
 
 # Recommendations
 
