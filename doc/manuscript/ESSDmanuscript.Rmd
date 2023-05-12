@@ -111,7 +111,6 @@ section_land_use_mapping = "4.1.2"
 section_database_needs = "6.1"
 section_new_data_needs = "6.2"
 section_data_reporting_needs = "6.3" 
-section_mismatches = 6.4
 
 #Appendices
 table_ForCchanges = "Appendix A"
@@ -543,7 +542,6 @@ The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of
 # Recommendations
 
 Based on our experience contributing forest C data to EFDB via ForC, we make several recommendations as to how scientists can improve forest C records in EFDB through database work (section `r section_database_needs`), new data collection and analysis (section `r section_new_data_needs`), and reporting (section `r section_data_reporting_needs`).
-We also highlight notable mismatches between IPCC accounting methods and forest C mensuration (section `r section_mismatches`).
 
 
 ## Database needs
@@ -588,7 +586,7 @@ Some examples are as follows:
 (1) presenting data only in a figure makes them ineligible for inclusion in EFDB, whereas presentation in a table or supplementary data file allows inclusion;
 (2) direct presentation of all relevant variables allows inclusion, whereas presenting only components of variables of interest (e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or requiring simple mathematical operations to obtain a variable of interest (e.g., *delta.agb* = *ANPP_woody* - *woody.mortality.agb*) disqualifies records from inclusion;
 (3) matching IPCC-defined thresholds for defining C pools (Table `r table_pools`), which may vary by country, can make the data far more relevant for IPCC accounting (e.g., using a 10 cm cutoff between dead wood and litter, presenting soil C to a depth of 30 cm).
-It should also be emphasized that reporting of 95% confidence intervals (or other metrics of error), when applicable, is highly desirable and makes the data more relevant to IPCC. Reports which had the most successful data transfers used EFDB variables and had clear tables showing their results. 
+It should also be emphasized that reporting of 95% confidence intervals (or other metrics of error), when applicable, is highly desirable and makes the data more relevant to IPCC. 
 
 ```{r table_recommendations, eval = TRUE, echo=FALSE, warning=FALSE}
 recommendations_table <- read.csv("figures_tables/recommendations.csv")
@@ -614,18 +612,12 @@ For individual publications, the former option will generally be more efficient.
 However, data incorporated into ForC as well as EFDB will be more broadly useful; for example, these data may be used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021], analyses of forest-based climate change mititagation potential [e.g., @cook-patton_mapping_2020; @goldstein_protecting_2020], and model benchmarking [@fer_ecosystem_2021].
 
 
-## Mismatches between IPCC accounting methods and forest C mensuration 
-
-Remote sensing biomass estimates include standing dead wood [@duncanson_aboveground_2021].
-
-IPCC accounting methods cannot leverage eddy-covariance measurements, which are widely seen as the best available method for quantifying ecosystem-atmosphere gas exchange. 
-
-An important challenge is that forests are changing rapidly, and data collected a decade ago may no longer be relevant, particularly in the cases of C increments and fluxes.
-
 # Conclusions
 
 <!--The conclusion goes here.
 You can modify the section name with  `\conclusions[modified heading if necessary]`.-->
+
+An important challenge is that forests are changing rapidly, and data collected a decade ago may no longer be relevant, particularly in the cases of C increments and fluxes.
 
 \clearpage
 # Appendix A. Updates to ForC {-}

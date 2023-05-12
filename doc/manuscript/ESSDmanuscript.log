@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 MAY 2023 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 MAY 2023 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3142,20 +3142,28 @@ cords.png  used on input line 792.
 [13 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [14 
 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15] [16]
 
+Package natbib Warning: Citation `refs' on page 17 undefined on input line 1019
+.
+
+
 Package natbib Warning: Citation `refs' on page 17 undefined on input line 1021
 .
 
 
-Package natbib Warning: Citation `refs' on page 17 undefined on input line 1023
-.
-
-
-Package natbib Warning: Citation `refs' on page 17 undefined on input line 1031
+Package natbib Warning: Citation `refs' on page 17 undefined on input line 1029
 .
 
 [17]
 
+Package natbib Warning: Citation `refs' on page 18 undefined on input line 1060
+.
+
+
 Package natbib Warning: Citation `refs' on page 18 undefined on input line 1062
+.
+
+
+Package natbib Warning: Citation `refs' on page 18 undefined on input line 1063
 .
 
 
@@ -3163,15 +3171,7 @@ Package natbib Warning: Citation `refs' on page 18 undefined on input line 1064
 .
 
 
-Package natbib Warning: Citation `refs' on page 18 undefined on input line 1065
-.
-
-
-Package natbib Warning: Citation `refs' on page 18 undefined on input line 1066
-.
-
-
-Package natbib Warning: Citation `refs' on page 18 undefined on input line 1069
+Package natbib Warning: Citation `refs' on page 18 undefined on input line 1067
 .
 
 [18] [19] [20] [21
@@ -3189,22 +3189,22 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
 Class copernicus Warning: No section Abstract; proceeding without it.
 
 
-Package caption Warning: Unused \captionsetup[table] on input line 1167.
+Package caption Warning: Unused \captionsetup[table] on input line 1153.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1392.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1392.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1378.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1378.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1392.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1392.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1392.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1378.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1378.
  ) 
 Here is how much of TeX's memory you used:
- 14875 strings out of 480608
- 199478 string characters out of 5903631
+ 14874 strings out of 480608
+ 199464 string characters out of 5903631
  584353 words of memory out of 5000000
  30325 multiletter control sequences out of 15000+600000
  580621 words of font info for 90 fonts, out of 8000000 for 9000
@@ -3220,10 +3220,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (30 pages, 638988 bytes).
+Output written on ESSDmanuscript.pdf (30 pages, 638427 bytes).
 PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
- 123 named destinations out of 1000 (max. 500000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
