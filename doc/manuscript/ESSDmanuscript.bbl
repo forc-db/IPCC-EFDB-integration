@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -92,6 +92,14 @@ Banbury~Morgan, R., Herrmann, V., Kunert, N., Bond-Lamberty, B., Muller-Landau,
 {Bond-Lamberty}, B. and Thomson, A.: A Global Database of Soil Respiration
   Data, Biogeosciences, 7, 1915--1926, \doi{10.5194/bg-7-1915-2010}, 2010.
 
+\bibitem[{Brassard et~al.(2011)Brassard, Chen, Bergeron, and
+  Par{\'e}}]{brassard_coarse_2011}
+Brassard, B.~W., Chen, H. Y.~H., Bergeron, Y., and Par{\'e}, D.: Coarse Root
+  Biomass Allometric Equations for {{Abies}} Balsamea, {{Picea}} Mariana,
+  {{Pinus}} Banksiana, and {{Populus}} Tremuloides in the Boreal Forest of
+  {{Ontario}}, {{Canada}}, Biomass and Bioenergy, 35, 4189--4196,
+  \doi{10.1016/j.biombioe.2011.06.045}, 2011.
+
 \bibitem[{Bukoski et~al.(2022)Bukoski, {Cook-Patton}, Melikov, Ban, Chen,
   Goldman, Harris, and Potts}]{bukoski_rates_2022}
 Bukoski, J.~J., {Cook-Patton}, S.~C., Melikov, C., Ban, H., Chen, J.~L.,
@@ -119,6 +127,12 @@ Chave, J., {R{\'e}jou-M{\'e}chain}, M., B{\'u}rquez, A., Chidumayo, E., Colgan,
   Saldarriaga, J.~G., and Vieilledent, G.: Improved Allometric Models to
   Estimate the Aboveground Biomass of Tropical Trees, Global Change Biology,
   20, 3177--3190, \doi{10.1111/gcb.12629}, 2014.
+
+\bibitem[{Chojnacky et~al.(2014)Chojnacky, Heath, and
+  Jenkins}]{chojnacky_updated_2014}
+Chojnacky, D.~C., Heath, L.~S., and Jenkins, J.~C.: Updated Generalized Biomass
+  Equations for {{North American}} Tree Species, Forestry, 87, 129--151,
+  \doi{10.1093/forestry/cpt053}, 2014.
 
 \bibitem[{Clark et~al.(2001)Clark, Brown, Kicklighter, Chambers, Thomlinson,
   Ni, and Holland}]{clark_net_2001}
@@ -299,6 +313,16 @@ Fer, I., Gardella, A.~K., Shiklomanov, A.~N., Campbell, E.~E., Cowdery, E.~M.,
   Ecosystem Modeling: {{A}} Roadmap to Community Cyberinfrastructure for
   Ecological Data-Model Integration, Global Change Biology, 27, 13--26,
   \doi{10.1111/gcb.15409}, 2021.
+
+\bibitem[{Goldstein et~al.(2020)Goldstein, Turner, Spawn, {Anderson-Teixeira},
+  {Cook-Patton}, Fargione, Gibbs, Griscom, Hewson, Howard, Ledezma, Page, Koh,
+  Rockstr{\"o}m, Sanderman, and Hole}]{goldstein_protecting_2020}
+Goldstein, A., Turner, W.~R., Spawn, S.~A., {Anderson-Teixeira}, K.~J.,
+  {Cook-Patton}, S., Fargione, J., Gibbs, H.~K., Griscom, B., Hewson, J.~H.,
+  Howard, J.~F., Ledezma, J.~C., Page, S., Koh, L.~P., Rockstr{\"o}m, J.,
+  Sanderman, J., and Hole, D.~G.: Protecting Irrecoverable Carbon in
+  {{Earth}}'s Ecosystems, Nature Climate Change, 10, 287--295,
+  \doi{10.1038/s41558-020-0738-8}, 2020.
 
 \bibitem[{{Gonzalez-Akre} et~al.(2022){Gonzalez-Akre}, Piponiot, Lepore,
   Herrmann, Lutz, Baltzer, Dick, Gilbert, He, Heym, Huerta, Jansen, Johnson,
@@ -525,6 +549,12 @@ Sanderman, J., Hengl, T., and Fiske, G.~J.: Soil Carbon Debt of 12,000 Years of
 
 \bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
 UNFCCC: Adoption of the {{Paris Agreement}}, 2015.
+
+\bibitem[{Waring and Powers(2017)}]{waring_overlooking_2017}
+Waring, B.~G. and Powers, J.~S.: Overlooking What Is Underground:
+  {{Root}}:Shoot Ratios and Coarse Root Allometric Equations for Tropical
+  Forests, Forest Ecology and Management, 385, 10--15,
+  \doi{10.1016/j.foreco.2016.11.007}, 2017.
 
 \bibitem[{Wickham and RStudio(2022)}]{wickham_rvest_2022}
 Wickham, H. and RStudio: Rvest: {{Easily Harvest}} ({{Scrape}}) {{Web Pages}},

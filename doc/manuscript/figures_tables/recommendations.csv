@@ -1,10 +1,9 @@
 ﻿criteria,recommendation,rationale
-variables to include,"When possible, calculate and present all relevant variables that can be readily caluclated based on available data. ",Estimates of relevant variables are not always calcualted.
+variables to include,"When possible, calculate and present all relevant variables that can be readily estimated based on available data. ",Estimates of relevant variables are not always calcualted.
 forest census methods,"Adopt IPCC guidelines (country-specific) for minimum stem size in censues in census and reporting. Ideally, census stem down to the smallest diameter feasible. ","IPCC biomass pool definition includes all living vegetation, but understory may be excluded when contribution is minor."
-,*taxa to include*,
-dead organic matter sampling,*include damage estimates on standing dead trees*,
-,"Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm).",
-belowground sampling,Select and report soil sampling increments to include a cutoff at 30 cm depth (or country-specific depth).,IPCC biomass pool definition includes all living vegetation
-reporting variiables,"Present each variable individually, as opposed to requiring that variables of interest be calculated from related variables. ","EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations."
+,Census all taxa crontributing signficantly to biomass,IPCC biomass pool definition includes all living vegetation.
+dead organic matter sampling,"Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm).",Diameter cutoff must be applied consistently by each country.
+belowground sampling,Select and report soil sampling increments to include a cutoff at 30 cm depth (or country-specific depth).,Diameter cutoff must be applied consistently by each country.
+reporting variables,"Present each EFDB- relevant variable individually, as opposed to requiring summation of related variables. ","EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations."
 reporting estimates,"Report all relevant values in tables, text, or supplementary tables/ data files, as opposed to in figures only.",EFDB does not acceptvalues digitized from figures.
-reporting confidence intervals,"Report 95% confidence intervals, standard error, or standard deviation and sample size.","EFDB requires confidence invervals, when possible. "
+reporting confidence intervals,"Report 95% confidence intervals, standard error, or standard deviation and sample size.",EFDB requires confidence invervals whenever possible. 

@@ -1015,102 +1015,115 @@ additional data collection and analysis.
 
 New data collection and analysis is needed to fill notable knowledge
 gaps. While aboveground biomass stocks in particular have received --
-and continue to receive -- significant research attention, other pools
-and variables remain poorly quantified \citep[Table
-2,][]{anderson-teixeira_carbon_2021}. Furthermore, data distribution is
-uneven across forest types and geographical regions (Figs. 2-3). For
-instance, C cycling of tropical forests -- particularly in Africa --
-remains relatively poorly characterized, in large part due to
-substantial barriers to data collection and distribution
-\citep{delima_making_2022} \emph{(add some more here?)}
+and continue to receive -- by far the most research attention
+\citep[Table 2,][]{anderson-teixeira_carbon_2021}, production of an
+accurate global map of forest C stocks remains an ongoing challenge
+\citep{refs}. Other pools and variables remain very poorly quantified
+\citep[Table 2,][]{anderson-teixeira_carbon_2021}, introducing
+substantive uncertainties into global forest C budgets \citep{refs}.
+Furthermore, data distribution is uneven across forest types and
+geographical regions (Figs. 2-3). For instance, data on C cycling of
+tropical forests -- particularly in Africa -- remains relatively sparse,
+in large part due to substantial barriers to data collection and
+distribution \citep{delima_making_2022}. Significant investment in
+research and researchers focused on ground-based measurement of forest C
+in such regions will be important to filling knowledge gaps in forest C
+cycling \citep{delima_making_2022, refs}.
 
-Several variables of value for IPCC C accounting have not been
-calculated and presented as would be possible given the same forest
-census data and minimal extra research effort. For example, aboveground
-woody mortality (\emph{woody.mortality\_ag}) and aboveground biomass
-increment (\emph{delta.agb}) can be calculated from the same census data
-as aboveground woody productivity (\emph{ANPP\_woody}), yet the latter
-has received far more research attention, and correspondingly has far
-more records in ForC \citetext{\citealp[Table
+Several EFDB-relevant variables have not been calculated and presented
+as frequently as would be possible given existing forest census data and
+minimal extra research effort. For example, aboveground woody mortality
+(\emph{woody.mortality\_ag}) and aboveground biomass increment
+(\emph{delta.agb}) can be calculated from the same census data as
+aboveground woody productivity (\emph{ANPP\_woody}), yet the latter has
+received far more research attention, and correspondingly has far more
+records in ForC \citetext{\citealp[Table
 2,][]{anderson-teixeira_carbon_2021}; \citealp[but
 see][]{piponiot_distribution_2022}}. Similarly, live coarse root
 biomass, total biomass, and changes in both of these pools could in
-theory be easily be estimated in parallel with aboveground biomass, with
-the greatest barrier being availability of reliable allometries, as have
-been developed for aboveground biomass
+theory be estimated in parallel with aboveground biomass, with the
+greatest barrier being that allometric models for estimating root
+biomass are not as reliable or easily available as are those for
+aboveground biomass
 \citep{chave_improved_2014, rejou-mechain_biomass_2017, gonzalez-akre_allodb_2022}.
 However, while equations for estimating root (and thereby total) biomass
-require improvement, they do exist \emph{for many forest
-types}\citep{refs}, and IPCC provides default recommendations of
-below-ground to above-ground ratios for estimation of root biomass
-\citep{ipcc_2019_2019}. In addition, standing dead trees are captured in
-most forest censuses and could be used to estimate standing dead wood,
-although additional data on breakage would be needed for accurate
-accounting. We recommend that, when possible, researchers calculate
-these, following the reporting guidelines specified in section 6.3.
+require improvement, they do exist for many forest types
+\citep[e.g.,][]{brassard_coarse_2011, chojnacky_updated_2014, waring_overlooking_2017}.
+In addition, standing dead trees are captured in most forest censuses
+and could be used to estimate standing dead wood, although additional
+data on breakage would be needed for accurate accounting. We recommend
+that, when possible, researchers calculate and report these variables,
+following the reporting guidelines specified in section 6.3.
 
-\emph{Other EFDB-relevant variables require more effort but are
-warranted given their importance for forest C accounting.} Given
-widespread trends of increasing tree mortality \citep{refs}, including
-through severe natural disturbance \citep{refs}, better characterization
-of dead wood will be critical. \ldots{}
+Filling knowledge gaps in other EFDB-relevant variables will require
+more effort, but this effort is warranted given their importance for
+forest C accounting. Although aboveground biomass is the most studied
+variable considered here (Table 2) and is the target of satellite
+missions \citep{refs}, significant ground-based research effort is
+required to create accurate global maps of forest biomass and changes
+therein \citep{refs}. Given observations of increasing tree mortality in
+some forested regions \citep{refs}, including through severe natural
+disturbance \citep{refs}, better characterization of forest dead wood
+will be critical. Additionally, C stocks in forest organic horizons and
+soils can be quite substantial and highly uncertain in many parts of the
+world \citep{refs}. Significant investment in ground-based forest
+research will be critical to filling these gaps.
 
 \subsection{Data reporting needs}
 
-We recommend that, unless they have some specific reason to do
-otherwise, researchers calculate and report the values according to IPCC
-standards (Table 3). It is particularly noteworthy that simple decisions
-on the presentation of results will determine whether the data meet the
-criteria for inclusion in EFDB. Some examples are as follows: (1)
-presenting data only in a figure makes it ineligible for inclusion in
-EFDB, whereas presentation in a table or supplementary data file allows
-inclusion; (2) direct presentation of all relevant variables allows
-inclusion, whereas presenting only components of variables of interest
-(e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or
-requiring simple mathematical operations to obtain a variable of
-interest (e.g., \emph{delta.agb} = \emph{ANPP\_woody} -
-\emph{woody.mortality.agb}) disqualifies data from inclusion; (3)
-matching IPCC-defined thresholds for defining C pools (Table 1), which
-may vary by country, can make the data far more relevant for IPCC
-accounting (e.g., using a 10 cm cutoff between dead wood and litter,
-presenting soil C to a depth of 30 cm). It should also be emphasized
-that reporting of 95\% confidence intervals (or other metrics of error),
-when applicable, is highly desirable and makes the data more relevant to
-IPCC. Reports which had the most successful data transfers used EFDB
-variables and had clear tables showing their results.
+We recommend that, in order to make research valuable to C accounting
+under IPCC guidelines, researchers calculate and report results
+according to IPCC standards (Table 3). It is particularly noteworthy
+that simple decisions on the presentation of results will determine
+whether the records meet the criteria for inclusion in EFDB. Some
+examples are as follows: (1) presenting data only in a figure makes them
+ineligible for inclusion in EFDB, whereas presentation in a table or
+supplementary data file allows inclusion; (2) direct presentation of all
+relevant variables allows inclusion, whereas presenting only components
+of variables of interest (e.g., parsing litter into fine woody debris,
+OL, OF, and OH layers) or requiring simple mathematical operations to
+obtain a variable of interest (e.g., \emph{delta.agb} =
+\emph{ANPP\_woody} - \emph{woody.mortality.agb}) disqualifies records
+from inclusion; (3) matching IPCC-defined thresholds for defining C
+pools (Table 1), which may vary by country, can make the data far more
+relevant for IPCC accounting (e.g., using a 10 cm cutoff between dead
+wood and litter, presenting soil C to a depth of 30 cm). It should also
+be emphasized that reporting of 95\% confidence intervals (or other
+metrics of error), when applicable, is highly desirable and makes the
+data more relevant to IPCC. Reports which had the most successful data
+transfers used EFDB variables and had clear tables showing their
+results.
 
 \begin{table}
 
-\caption{\label{tab:table_recommendations}\textbf{Recommended best practices for reporting forest C estimates of value to national greenhouse gas inventories under IPCC guidance. } ....}
+\caption{\label{tab:table_recommendations}\textbf{Recommended best practices for reporting forest C estimates of value to national greenhouse gas inventories under IPCC guidance.}}
 \centering
 \fontsize{10}{12}\selectfont
 \begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
 \textbf{criteria} & \textbf{recommendation} & \textbf{rationale}\\
 \hline
-variables to include & When possible, calculate and present all relevant variables that can be readily caluclated based on available data. & Estimates of relevant variables are not always calcualted.\\
+variables to include & When possible, calculate and present all relevant variables that can be readily estimated based on available data. & Estimates of relevant variables are not always calcualted.\\
 \hline
 forest census methods & Adopt IPCC guidelines (country-specific) for minimum stem size in censues in census and reporting. Ideally, census stem down to the smallest diameter feasible. & IPCC biomass pool definition includes all living vegetation, but understory may be excluded when contribution is minor.\\
 \hline
- & *taxa to include* & \\
+ & Census all taxa crontributing signficantly to biomass & IPCC biomass pool definition includes all living vegetation.\\
 \hline
-dead organic matter sampling & *include damage estimates on standing dead trees* & \\
+dead organic matter sampling & Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm). & Diameter cutoff must be applied consistently by each country.\\
 \hline
- & Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm). & \\
+belowground sampling & Select and report soil sampling increments to include a cutoff at 30 cm depth (or country-specific depth). & Diameter cutoff must be applied consistently by each country.\\
 \hline
-belowground sampling & Select and report soil sampling increments to include a cutoff at 30 cm depth (or country-specific depth). & IPCC biomass pool definition includes all living vegetation\\
-\hline
-reporting variiables & Present each variable individually, as opposed to requiring that variables of interest be calculated from related variables. & EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations.\\
+reporting variables & Present each EFDB- relevant variable individually, as opposed to requiring summation of related variables. & EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations.\\
 \hline
 reporting estimates & Report all relevant values in tables, text, or supplementary tables/ data files, as opposed to in figures only. & EFDB does not acceptvalues digitized from figures.\\
 \hline
-reporting confidence intervals & Report 95\% confidence intervals, standard error, or standard deviation and sample size. & EFDB requires confidence invervals, when possible.\\
+reporting confidence intervals & Report 95\% confidence intervals, standard error, or standard deviation and sample size. & EFDB requires confidence invervals whenever possible.\\
 \hline
 \end{tabu}
 \end{table}
 
-For those compiling published data (e.g., for meta-analyses), the data
-set can have added value if all information required by IPCC is
+For those compiling published records (e.g., for meta-analyses), the
+data set can have added value if all information required by EFDB is
 extracted from original publications. This includes -- but is not
 limited to -- retaining original values as presented without
 modification or rounding, noting whether data were digitized, recording
@@ -1121,12 +1134,14 @@ welcome other researchers to use the ForC template.
 
 Once EFDB-relevant data are available in peer-reviewed publications,
 they may be submitted directly to EFDB or may use the ForC - EFDB data
-pipline developed here. For individual publications, the former option
-will generally be more efficient. However, by getting the data into ForC
-as well as EFDB, the latter option will allow the data to be more
-broadly useful--for example, being used for basic science
-\citep[e.g.,][]{banburymorgan_global_2021, anderson-teixeira_carbon_2021}
-or model benchmarking \citep{fer_ecosystem_2021}.
+pipeline developed here. For individual publications, the former option
+will generally be more efficient. However, data incorporated into ForC
+as well as EFDB will be more broadly useful; for example, these data may
+be used for basic science
+\citep[e.g.,][]{banburymorgan_global_2021, anderson-teixeira_carbon_2021},
+analyses of forest-based climate change mititagation potential
+\citep[e.g.,][]{cook-patton_mapping_2020, goldstein_protecting_2020},
+and model benchmarking \citep{fer_ecosystem_2021}.
 
 \subsection{Mismatches between IPCC accounting methods and forest C
 mensuration}
