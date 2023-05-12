@@ -209,10 +209,9 @@ Many of these data have, however, been compiled in the Global Forest C database 
 Here, we develop and document a process for semi-automated transfer of data from ForC into the EFDB, assess the data available and transferred to date, and provide recommendations for improving forest data collection, analysis, and reporting to improve accounting of forest-sector greenhoouse gas emissions and removals.
 We begin by reconciling terminology and mapping ForC fields into EFDB.
 This process required some updates to the ForC database structure, leading to the release of a new version of ForC (v4.0; described here).
-As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records that would be relevant to EFDB, `r n_records_sent_to_EFDB` of which have been submitted to date.
+As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_sent_to_EFDB` of which have been submitted to date.
 Among the data in ForC, there is disproportionate representation of biomass (particularly aboveground) stocks, with far fewer records for dead organic matter and soil C, and relatively few or no records for net annual increments or C fluxes into (gains) or out of (losses) the IPCC-defined C pools.
 Geographic representation is also quite uneven, with the highest densities of relevant records in temperate forests, and with relatively scant representation of tropical forests in Africa and Asia. 
-ForC represents a diversity of stand ages, although records for young stands are primarily limited to C stocks, as opposed to net increments of fluxes.
 This distribution of records is generally reflected in the subset of records that have been submitted to EFDB to date.
 In the future, forest C estimates in EFDB can be improved through targeted research to fill critical gaps, reporting of information required by IPCC, and continued submission of data from scientific publications to the EFDB.
 Given that climate change is rapidly impacting the world's forests, timely reporting of recent estimates will be especially critical to accurate forest C accounting.  
@@ -609,15 +608,24 @@ The significant effort required to map a database into EFDB has been accomplishe
 
 Once EFDB-relevant data are available in peer-reviewed publications, they may be submitted directly to EFDB or may use the ForC - EFDB data pipeline developed here.
 For individual publications, the former option will generally be more efficient.
-However, data incorporated into ForC as well as EFDB will be more broadly useful; for example, these data may be used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021], analyses of forest-based climate change mititagation potential [e.g., @cook-patton_mapping_2020; @goldstein_protecting_2020], and model benchmarking [@fer_ecosystem_2021].
+However, data incorporated into ForC as well as EFDB will be more broadly useful; for example, these data may be used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021], analyses of forest-based climate change mitigation potential [e.g., @cook-patton_mapping_2020; @goldstein_protecting_2020], and model benchmarking [@fer_ecosystem_2021].
 
 
 # Conclusions
-
 <!--The conclusion goes here.
 You can modify the section name with  `\conclusions[modified heading if necessary]`.-->
 
-An important challenge is that forests are changing rapidly, and data collected a decade ago may no longer be relevant, particularly in the cases of C increments and fluxes.
+The ForC database contains large numbers of records that could potentially be useful for C accounting under IPCC guidelines.
+Here we have developed a framework for transferring these records to the EFDB, making them more accessible for forest C accounting under IPCC guidelines [@ipcc_2006_2006;@ipcc_2019_2019].
+As of `r format(Sys.time(), '%B %d, %Y')`, we have submitted `r n_records_sent_to_EFDB` records to EFDB.
+Although this represents just `r round(n_records_sent_to_EFDB/n_ind_records_EFDB_variables*100,0)`% of relevant records in ForC, it substantially increases the number of forest land records in EFDB.
+The records transferred to EFDB and present in ForC are very unevenly distributed across variables, regions, and forest types (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`), reflecting broader patterns in allocation of research effort.
+
+Going forward, forest researchers can make their research more useful for forest C accounting under IPCC guidelines by calculating and reporting results in ways that are compatible with IPCC guidelines (Tables `r table_pools`, `r table_recommendations`).
+In addition, substantial investments in research and researchers focused on ground-based measurement of forest C will be required to fill knowledge gaps and thereby increase the accuracy of forest C accounting. 
+This challenge is heightened by the fact that forests are changing rapidly [@refs], and data collected a decade or more in the past may no longer be relevant.
+This heightens the need for an efficient system of making forest C data accessible for national greenhouse gas inventories.
+We view this publication as one step towards that goal.
 
 \clearpage
 # Appendix A. Updates to ForC {-}
