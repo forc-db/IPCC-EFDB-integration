@@ -537,9 +537,7 @@ The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) o
 `r round(n_records_sent_deadwood_components/n_records_sent_to_EFDB,2)*100`% for components of dead wood (standing or fallen), 
 `r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (entire O horizon or OL layer component),
 and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for SOM/ SOC.
-Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records sent, including
-`r round(n_records_sent_delta.agb/n_records_sent_to_EFDB*100,2)`% for aboveground biomass increments 
-and `r round(n_records_sent_delta.litter/n_records_sent_to_EFDB*100,2)`% for organic horizon increments.
+Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records sent, all for aboveground biomass excepting `r n_records_sent_delta.litter` records for organic horizon increments.
 The remaining (`r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`%) of records sent described fluxes,
 all of which were either inputs or outputs to the aboveground biomass pool,
 and a subset of which also described inputs to the dead wood or litter pool (Table `r table_variables`, Fig. `r fig_variable_mapping`).
