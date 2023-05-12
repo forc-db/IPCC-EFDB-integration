@@ -168,6 +168,24 @@ n_records_checked = n_records_reviewed_or_added - n_records_added # this will be
 
 
 n_records_sent_to_EFDB = C_variables[length(C_variables[,"variable"]), "n sent to EFDB"] # n records sent to EFDB
+n_relevant_variables_no_records_sent =  sum(C_variables$`n sent to EFDB` == 0,  na.rm = TRUE)
+n_relevant_variables_records_sent= n_relevant_variables - n_relevant_variables_no_records_sent
+n_records_sent_biomass<- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass"]
+n_records_sent_agb <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_ag"]
+n_records_sent_agb_components <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_ag_woody"] + C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_ag_foliage"]
+n_records_sent_rootbiomass <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_root"] 
+n_records_sent_rootbiomass_components <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_root_coarse"]
+n_records_sent_deadwood<- C_variables$`n sent to EFDB`[C_variables$`variable` == "deadwood"] 
+n_records_sent_deadwood_components<- C_variables$`n sent to EFDB`[C_variables$`variable` == "deadwood_down"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "deadwood_standing"]
+n_records_sent_litter<- C_variables$`n sent to EFDB`[C_variables$`variable` == "litter"] +C_variables$`n sent to EFDB`[C_variables$`variable` == "O.horizon"]
+n_records_sent_soil<- C_variables$`n sent to EFDB`[C_variables$`variable` == "SOM / SOC"] 
+n_records_sent_stocks = n_records_sent_biomass+n_records_sent_agb+n_records_sent_agb_components+n_records_sent_rootbiomass+n_records_sent_rootbiomass_components+n_records_sent_deadwood+n_records_sent_deadwood_components+ n_records_sent_litter+ n_records_sent_soil
+n_records_sent_delta.agb<- C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.agb"]
+n_records_sent_delta.litter<- C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.O.horizon"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.litter"]
+n_records_sent_increments <- n_records_sent_delta.agb+n_records_sent_delta.litter
+n_records_sent_fluxes = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
+
+
 
 n_records_posted_EFDB = 376 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records")
 
@@ -340,7 +358,8 @@ This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_
 
 We added or modified a total of `r n_fields_modified` fields (`r table_ForCchanges`).
 Most notably, these included improvement of the representation of uncertainty, recording of original units and organic matter to C conversion factors, and expanding the information recorded in the citations table. 
-For the latter, we used an R script to automatically harvest (scrape) the URL, citation, abstract and language of the publications, based on their DOI, using R package `rvest`[ @rvest]). That information was manually retrieved when the web scraping failed. 
+For the latter, we used an R script to automatically harvest (scrape) the URL, citation, abstract and language of the publications, based on their DOI, using R package `rvest`[ @wickham_rvest_2022]. 
+That information was manually retrieved when the web scraping failed. 
 
 ## New variables
 
@@ -507,8 +526,25 @@ Rather, the largest number of records came from North America, followed by Asia,
 In terms of dominant vegetation, by far the most records came from needleleaf evergreen forests, followed by broadleaf deciduous and broadleaf evergreen (Fig. `r fig_histograms`b). 
 The largest records came from mature forests (>100 years), followed by young and intermediate-aged stands (Fig. `r fig_histograms`d).
 
-In terms of variables transferred, ...
-*[DETAILS]*
+In terms of variables transferred, records were sent for `r n_relevant_variables_records_sent` variables, including variables from each C pool (Table `r table_variables`).
+The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) of records sent were for C stocks, including
+`r round(n_records_sent_biomass/n_records_sent_to_EFDB,2)*100`% for total biomass, 
+`r round(n_records_sent_agb/n_records_sent_to_EFDB,2)*100`% for aboveground biomass,
+`r round(n_records_sent_agb_components/n_records_sent_to_EFDB,2)*100`% for components of aboveground biomass (wood or foliage), 
+`r round(n_records_sent_rootbiomass/n_records_sent_to_EFDB,2)*100`% for root biomass, 
+`r round(n_records_sent_rootbiomass_components/n_records_sent_to_EFDB,2)*100`% for components of root biomass (coarse or fine roots), 
+`r round(n_records_sent_deadwood/n_records_sent_to_EFDB,2)*100`% for dead wood, 
+`r round(n_records_sent_deadwood_components/n_records_sent_to_EFDB,2)*100`% for components of dead wood (standing or fallen), 
+`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (OL layer or entire O horizon),
+and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for SOM/ SOC.
+Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records sent, including
+`r round(n_records_sent_delta.agb/n_records_sent_to_EFDB*100,2)`% for aboveground biomass increments 
+and `r round(n_records_sent_delta.litter/n_records_sent_to_EFDB*100,2)`% for organic horizon increments.
+The remaining (`r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`%) of records sent described fluxes,
+all of which were either inputs or outputs to the aboveground biomass pool,
+and a subset of which also described inputs to the dead wood or litter pool (Table `r table_variables`, Fig. `r fig_variable_mapping`).
+
+
 
 # Recommendations
 
@@ -520,13 +556,13 @@ We also highlight notable mismatches between IPCC accounting methods and forest 
 
 There is vast potential to expand forest C data in EFDB by completing the process of reviewing and sending data that are already in ForC (Figs. `r fig_map`-`r fig_histograms`).
 So far, only ~`r round(n_records_sent_to_EFDB/n_ind_records_EFDB_variables,2)*100`% of the EFDB-relevant data in ForC have been sent to EFDB.
-Moreover, the process of selecting studies to review for transfer has yet to be optimized for representation across geographic regions, forest types, and variables, with the result that records transferred to date are unevenly distributed across these categories (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`).
-Future work reviewing records for transfer will be most valuable if priority is given to those from currently under-represented regions and forest types, *to records from countries relying on existing records (as opposed to regular collection of new data through forest inventories)*, to the variables most needed by EFDB users, and to more contemporary records.
+Although this process requires manual review of records, the addition of new records to EFDB is hugely facilitated by the fact that most pertinent information for each record is already entered in ForC and can be easily transferred to EFDB using the system developed here.
+Future efforts to review studies for transfer should optimize for representation across geographic regions, forest types, and variables, giving priority to those from currently under-represented regions and forest types (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`), *to records from countries relying on existing records (as opposed to regular collection of new data through forest inventories)*, to the variables most needed by EFDB users, and to the more contemporary records.
 
-Moreover, there are innumerous published EFDB-relevant forest C data that are not included in ForC, with more being published on a nearly daily basis. 
+In addition to the large potential to expand EFDB using records already in ForC, there are innumerous published EFDB-relevant forest C data that are not currently included in ForC, with more being published on a nearly daily basis. 
 Coverage of particular variables or regions could be vastly improved through systematic review of the literature.
-*(There are some efforts underway, including a few that Susan can specify.)*
-Such reviews are necessary to assess the availability of published EFDB-relevant forest C records, versus those that require additional data collection and analysis. 
+Indeed, recent efforts have compiled large databases of relevant data from monoculture plantation forests [@bukoski_rates_2022], ... *others?  (SUSAN)*. 
+Such reviews valuable for assessing the availability of published EFDB-relevant forest C records, versus those that require additional data collection and analysis. 
 
 ## Data collection and analysis needs
 
