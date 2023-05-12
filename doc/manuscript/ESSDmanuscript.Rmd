@@ -537,10 +537,8 @@ The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) o
 `r round(n_records_sent_deadwood_components/n_records_sent_to_EFDB,2)*100`% for components of dead wood (standing or fallen), 
 `r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (entire O horizon or OL layer component),
 and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for SOM/ SOC.
-Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records sent, all for aboveground biomass excepting `r n_records_sent_delta.litter` records for organic horizon increments.
-The remaining (`r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`%) of records sent described fluxes,
-all of which were either inputs or outputs to the aboveground biomass pool,
-and a subset of which also described inputs to the dead wood or litter pool (Table `r table_variables`, Fig. `r fig_variable_mapping`).
+Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records sent, virtually all for aboveground biomass (excepting `r n_records_sent_delta.litter` records for delta.O.horizon).
+The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records sent described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, a subset of which also described inputs to the dead wood or litter pool (Table `r table_variables`, Fig. `r fig_variable_mapping`).
 
 # Recommendations
 
@@ -558,7 +556,7 @@ Future efforts to review studies for transfer should optimize for representation
 In addition to the large potential to expand EFDB using records already in ForC, there are innumerous published EFDB-relevant forest C data that are not currently included in ForC, with more being published on a nearly daily basis. 
 Coverage of particular variables or regions could be vastly improved through systematic review of the literature.
 Indeed, recent efforts have compiled large databases of relevant data from monoculture plantation forests [@bukoski_rates_2022], ... *others?  (SUSAN)*. 
-Such reviews valuable for assessing the availability of published EFDB-relevant forest C records, versus those that require additional data collection and analysis. 
+Beyond expanding collections of relevant forest C records, such reviews are valuable for assessing the availability of published records and identifying variables and regions that require additional data collection and analysis. 
 
 ## Data collection and analysis needs
 
