@@ -4,7 +4,7 @@ Biomass,delta.biomass,delta.biomass
 Biomass,NPP_woody,NPP_woody
 Biomass,woody.mortality,woody.mortality
 Aboveground biomass,biomass_ag,biomass_ag
-Aboveground biomass,biomass_ag_understory,biomass_ag_understory
+Aboveground biomass,biomass_ag_understory,biomass_ag
 Aboveground biomass,biomass_ag_woody,biomass_ag_woody
 Aboveground biomass,biomass_ag_foliage,biomass_ag_foliage
 Aboveground biomass,delta.agb,delta.agb
