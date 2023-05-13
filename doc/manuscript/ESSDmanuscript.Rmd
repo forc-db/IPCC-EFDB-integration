@@ -68,13 +68,14 @@ availability:
   #code: |
   #data: |
   codedata: |
-    use this to add a statement when having data sets and software code available
+    All code and data are openly available. The ForC database and associated code is available via the ForC repository within the ForC-db organization on GitHub (https://github.com/forc-db/ForC), and the version used here (ForC v4.0) archived in Zenodo (DOI: TBD). The data and code associated with data transfer to EFDB and preparation of this manuscript are available via the the IPCC-EFDB-integration repository within the ForC-db organization on GitHub  (https://github.com/forc-db/IPCC-EFDB-integration). 
 authorcontribution: |
-  (fill this in)
+  KAT and VH conceived and designed the project; VH wrote the scripts for database management, data transfer to EFDB, and the analyses presented here; MW, TR, and RBM added and reviewed ForC data, BBL and SCP contributed large databases to ForC; HML and CP provided methodological expertise; KAT, VH, and MW prepared the first draft of the manuscript; all authors reviewed the results and approved the final version of the manuscript.
 disclaimer: |
 acknowledgements: |
-  Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have helped to build the database.
-  Funding for this study was provided by Bezos Earth Fund to The Nature Conservancy, the Institute for Global Environmental Strategies, WLS(?)
+  We gratefully acknowledge the substantial contributions of Valentyna Slivinska and Sandro Federici for collaboration on the conception, design, and technical review of this project.
+  Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have contributed to building the database.
+  Funding for this study was provided by the Institute for Global Environmental Strategies, a Bezos Earth Fund award to The Nature Conservancy, and a Smithsonian Working Land and Seascapes grant.
 appendix: 
 output:
   rticles::copernicus_article: default
@@ -628,6 +629,9 @@ This heightens the need for an efficient system of making forest C data accessib
 We view this publication as one step towards that goal.
 
 \clearpage
+
+\clearpage
+
 # Appendix A. Updates to ForC {-}
 
 \captionsetup[table]{labelformat=empty}
@@ -651,6 +655,8 @@ knitr::kable(record_of_changes, format = "latex",
 ```
 
 \clearpage
+
+
 # Appendix B. Mapping ForC to EFDB {-}
 
 Table B1: **Mapping of ForC fields to EFDB.** Details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
