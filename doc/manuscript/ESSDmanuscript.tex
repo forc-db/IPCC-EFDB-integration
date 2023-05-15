@@ -166,7 +166,7 @@ and reporting to improve accounting of forest-sector greenhoouse gas
 emissions and removals. We begin by reconciling terminology and mapping
 ForC fields into EFDB. This process required some updates to the ForC
 database structure, leading to the release of a new version of ForC
-(v4.0; described here). As of May 13, 2023, ForC contained
+(v4.0; described here). As of May 15, 2023, ForC contained
 \textasciitilde19323 independent records relevant to EFDB, 1438 of which
 have been submitted to date. Among the data in ForC, there is
 disproportionate representation of biomass (particularly aboveground)
@@ -283,7 +283,7 @@ databases, including the Global Reforestation Opportunity Assessment
 10.5281/zenodo.3983644]{cook-patton_mapping_2020}, the global soil
 respiration database
 \citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
-As of May 13, 2023, ForC contained 39855 records from 10589 plots in
+As of May 15, 2023, ForC contained 39855 records from 10589 plots in
 1535 distinct geographical areas, along with records of stand age and
 disturbance history. As such, ForC is positioned to improve forest C
 accounting through the transfer of data to EFDB. The purpose of this
@@ -564,7 +564,7 @@ name. Further, we added variables capturing the belowground component of
 woody mortality (\emph{woody.mortality\_root}) and the combined
 aboveground and belowground components of woody mortality
 (\emph{woody.mortality}). Although most of these variables lacked
-records in ForC as of May 13, 2023, their addition gave the structure
+records in ForC as of May 15, 2023, their addition gave the structure
 such that records can be populated over time. Finally, to provide better
 definition of the previously existing variable \emph{organic.layer},
 which has a nebulous definition that reflects the varied definitions
@@ -629,9 +629,10 @@ records from tropical regions. The latter criteria was motivated by the
 fact that although tropical forest is the single most important biome
 for climate change mitigation \citep{refs}, ground-based data on
 tropical forest C cycling tends to be more scarce due to a variety of
-challenges \citep{refs, delima_making_2022}, and \emph{tropical
-countries are more likely to apply Tier 1 methodology that bases forest
-C budgets on previously existing data \citep{ref}.}
+challenges \citep{refs, delima_making_2022}, and tropical countries are
+more likely to apply Tier 1 methodology that bases forest C budgets on
+internationally defined IPCC default values
+\citep{romijn_assessing_2015}.
 
 \subsection{Addition of new records}
 
@@ -656,7 +657,7 @@ Once converted into EFDB format, the records were reviewed and then sent
 to the IPCC's Technical Support Unit for inclusion in EFDB. Complete
 records needed to be reviewed by the EFDB editorial board prior to
 posting in the database -- a process that lags behind records transfer
-and had not yet been completed for all records sent as of May 13, 2023.
+and had not yet been completed for all records sent as of May 15, 2023.
 
 \subsection{Mapping ForC to EFDB}
 
@@ -762,7 +763,7 @@ notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of May 13, 2023, ForC (v4.0) contained 32693 independent records
+As of May 15, 2023, ForC (v4.0) contained 32693 independent records
 (39855 total), 19323 of which were for the the 43 variables relevant to
 EFDB (Fig. 1). These records were distributed across all forested
 continents and ecozones, albeit unevenly (Fig. 2). The largest number of
@@ -930,7 +931,7 @@ R\_het\_soil & 0 & 0 & 0 & 0\\
 
 \subsection{Data transfers to EFDB}
 
-As of May 13, 2023, we had reviewed or added 2283 EFDB-relevant records,
+As of May 15, 2023, we had reviewed or added 2283 EFDB-relevant records,
 1438 records of which were sent to EFDB, and 376 of which have been
 reviewed, accepted, and posted (Figs. 2-3, Table 2). The 37\%
 attenuation between records reviewed and those sent to EFDB was
@@ -988,11 +989,10 @@ is already entered in ForC and can be easily transferred to EFDB using
 the system developed here. Future efforts to review studies for transfer
 should optimize for representation across geographic regions, forest
 types, and variables, giving priority to those from currently
-under-represented regions and forest types (Figs. 2-3, Table 2),
-\emph{to records from countries relying on existing records (as opposed
-to regular collection of new data through forest inventories)}, to the
-variables most needed by EFDB users, and to the more contemporary
-records.
+under-represented regions and forest types (Figs. 2-3, Table 2), to
+records from countries relying on existing data for their greenhouse gas
+inventories (Tier 1 or 2 methodology), to the variables most needed by
+EFDB users, and to the more contemporary records.
 
 In addition to the large potential to expand EFDB using records already
 in ForC, there are innumerous published EFDB-relevant forest C data that
@@ -1013,17 +1013,18 @@ gaps. While aboveground biomass stocks in particular have received --
 and continue to receive -- by far the most research attention
 \citep[Table 2,][]{anderson-teixeira_carbon_2021}, production of an
 accurate global map of forest C stocks remains an ongoing challenge
-\citep{refs}. Other pools and variables remain very poorly quantified
-\citep[Table 2,][]{anderson-teixeira_carbon_2021}, introducing
-substantive uncertainties into global forest C budgets \citep{refs}.
-Furthermore, data distribution is uneven across forest types and
-geographical regions (Figs. 2-3). For instance, data on C cycling of
-tropical forests -- particularly in Africa -- remains relatively sparse,
-in large part due to substantial barriers to data collection and
-distribution \citep{delima_making_2022}. Significant investment in
-research and researchers focused on ground-based measurement of forest C
-in such regions will be important to filling knowledge gaps in forest C
-cycling \citep{delima_making_2022, refs}.
+\citep{refs, labrière_forest_2023}. Other pools and variables remain
+very poorly quantified \citep[Table
+2,][]{anderson-teixeira_carbon_2021}, introducing substantive
+uncertainties into global forest C budgets \citep{refs}. Furthermore,
+data distribution is uneven across forest types and geographical regions
+(Figs. 2-3). For instance, data on C cycling of tropical forests --
+particularly in Africa -- remains relatively sparse, in large part due
+to substantial barriers to data collection and distribution
+\citep{delima_making_2022}. Significant investment in research and
+researchers focused on ground-based measurement of forest C in such
+regions will be important to filling knowledge gaps in forest C cycling
+\citep{delima_making_2022, refs}.
 
 Several EFDB-relevant variables have not been calculated and presented
 as frequently as would be possible given existing forest census data and
@@ -1054,15 +1055,18 @@ Filling knowledge gaps in other EFDB-relevant variables will require
 more effort, but this effort is warranted given their importance for
 forest C accounting. Although aboveground biomass is the most studied
 variable considered here (Table 2) and is the target of satellite
-missions \citep{refs}, significant ground-based research effort is
-required to create accurate global maps of forest biomass and changes
-therein \citep{refs}. Given observations of increasing tree mortality in
-some forested regions \citep{refs}, including through severe natural
-disturbance \citep{refs}, better characterization of forest dead wood
-will be critical. Additionally, C stocks in forest organic horizons and
-soils can be quite substantial and highly uncertain in many parts of the
-world \citep{refs}. Significant investment in ground-based forest
-research will be critical to filling these gaps.
+missions
+\citep{dubayah_global_2020, quegan_european_2019, nisar_nasaisro_2018},
+significant ground-based research effort is required to create accurate
+global maps of forest biomass and changes therein
+\citep{duncanson_importance_2019, labrière_forest_2023}. Given
+observations of increasing tree mortality in some forested regions
+\citep{refs}, including through severe natural disturbance \citep{refs},
+better characterization of forest dead wood will be critical.
+Additionally, C stocks in forest organic horizons and soils can be quite
+substantial and highly uncertain in many parts of the world
+\citep{refs}. Significant investment in ground-based forest research
+will be critical to filling these gaps.
 
 \subsection{Data reporting needs}
 
@@ -1142,7 +1146,7 @@ The ForC database contains large numbers of records that could
 potentially be useful for C accounting under IPCC guidelines. Here we
 have developed a framework for transferring these records to the EFDB,
 making them more accessible for forest C accounting under IPCC
-guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of May 13, 2023,
+guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of May 15, 2023,
 we have submitted 1438 records to EFDB. Although this represents just
 7\% of relevant records in ForC, it substantially increases the number
 of forest land records in EFDB. The records transferred to EFDB and
@@ -1162,8 +1166,6 @@ or more in the past may no longer be relevant. This heightens the need
 for an efficient system of making forest C data accessible for national
 greenhouse gas inventories. We view this publication as one step towards
 that goal.
-
-\clearpage
 
 \clearpage
 

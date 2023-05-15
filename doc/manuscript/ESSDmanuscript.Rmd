@@ -402,7 +402,7 @@ We prioritized review of
 (2) studies with confidence intervals recorded in ForC (because uncertainty estimates are important to the IPCC),
 (3) original publications containing large numbers of EFDB-relevant records,
 and (4) records from tropical regions.
-The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@refs], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@refs; @delima_making_2022], and *tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on previously existing data [@ref].* <!-- I'm almost certain this is true, but need to confirm/ find ref.-->
+The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@refs], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@refs; @delima_making_2022], and tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on internationally defined IPCC default values [@romijn_assessing_2015].
 
 ## Addition of new records
 
@@ -549,7 +549,7 @@ Based on our experience contributing forest C data to EFDB via ForC, we make sev
 There is vast potential to expand forest C data in EFDB by completing the process of reviewing and sending data that are already in ForC (Figs. `r fig_map`-`r fig_histograms`).
 So far, only ~`r round(n_records_sent_to_EFDB/n_ind_records_EFDB_variables,2)*100`% of the EFDB-relevant data in ForC have been sent to EFDB.
 Although this process requires manual review of records, the addition of new records to EFDB is hugely facilitated by the fact that most pertinent information for each record is already entered in ForC and can be easily transferred to EFDB using the system developed here.
-Future efforts to review studies for transfer should optimize for representation across geographic regions, forest types, and variables, giving priority to those from currently under-represented regions and forest types (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`), *to records from countries relying on existing records (as opposed to regular collection of new data through forest inventories)*, to the variables most needed by EFDB users, and to the more contemporary records.
+Future efforts to review studies for transfer should optimize for representation across geographic regions, forest types, and variables, giving priority to those from currently under-represented regions and forest types (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`), to records from countries relying on existing data for their greenhouse gas inventories (Tier 1 or 2 methodology), to the variables most needed by EFDB users, and to the more contemporary records.
 
 In addition to the large potential to expand EFDB using records already in ForC, there are innumerous published EFDB-relevant forest C data that are not currently included in ForC, with more being published on a nearly daily basis. 
 Coverage of particular variables or regions could be vastly improved through systematic review of the literature.
@@ -559,7 +559,7 @@ Beyond expanding collections of relevant forest C records, such reviews are valu
 ## Data collection and analysis needs
 
 New data collection and analysis is needed to fill notable knowledge gaps.
-While aboveground biomass stocks in particular have received -- and continue to receive -- by far the most research attention [Table `r table_variables`, @anderson-teixeira_carbon_2021], production of an accurate global map of forest C stocks remains an ongoing challenge [@refs]. 
+While aboveground biomass stocks in particular have received -- and continue to receive -- by far the most research attention [Table `r table_variables`, @anderson-teixeira_carbon_2021], production of an accurate global map of forest C stocks remains an ongoing challenge [@refs; @labrière_forest_2023]. 
 Other pools and variables remain very poorly quantified [Table `r table_variables`, @anderson-teixeira_carbon_2021], introducing substantive uncertainties into global forest C budgets [@refs].
 Furthermore, data distribution is uneven across forest types and geographical regions (Figs. `r fig_map`-`r fig_histograms`).
 For instance, data on C cycling of tropical forests -- particularly in Africa -- remains relatively sparse, in large part due to substantial barriers to data collection and distribution [@delima_making_2022].
@@ -573,7 +573,7 @@ In addition, standing dead trees are captured in most forest censuses and could 
 We recommend that, when possible, researchers calculate and report these variables, following the reporting guidelines specified in section `r section_data_reporting_needs`.
 
 Filling knowledge gaps in other EFDB-relevant variables will require more effort, but this effort is warranted given their importance for forest C accounting.
-Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@refs], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@refs].
+Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@duncanson_importance_2019; @labrière_forest_2023].
 Given observations of increasing tree mortality in some forested regions [@refs], including through severe natural disturbance [@refs], better characterization of forest dead wood will be critical.
 Additionally, C stocks in forest organic horizons and soils can be quite substantial and highly uncertain in many parts of the world [@refs].
 Significant investment in ground-based forest research will be critical to filling these gaps.
@@ -628,7 +628,6 @@ This challenge is heightened by the fact that forests are changing rapidly [@ref
 This heightens the need for an efficient system of making forest C data accessible for national greenhouse gas inventories.
 We view this publication as one step towards that goal.
 
-\clearpage
 
 \clearpage
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -273,6 +273,32 @@ Deng, Z., Ciais, P., {Tzompa-Sosa}, Z.~A., Saunois, M., Qiu, C., Tan, C., Sun,
   {{UNFCCC}} Inventories against Atmospheric Inversions, Earth System Science
   Data Discussions, pp. 1--59, \doi{10.5194/essd-2021-235}, 2021.
 
+\bibitem[{Dubayah et~al.(2020)Dubayah, Blair, Goetz, Fatoyinbo, Hansen, Healey,
+  Hofton, Hurtt, Kellner, Luthcke, Armston, Tang, Duncanson, Hancock, Jantz,
+  Marselis, Patterson, Qi, and Silva}]{dubayah_global_2020}
+Dubayah, R., Blair, J.~B., Goetz, S., Fatoyinbo, L., Hansen, M., Healey, S.,
+  Hofton, M., Hurtt, G., Kellner, J., Luthcke, S., Armston, J., Tang, H.,
+  Duncanson, L., Hancock, S., Jantz, P., Marselis, S., Patterson, P.~L., Qi,
+  W., and Silva, C.: The {{Global Ecosystem Dynamics Investigation}}:
+  {{High-resolution}} Laser Ranging of the {{Earth}}'s Forests and Topography,
+  Science of Remote Sensing, 1, 100\,002, \doi{10.1016/j.srs.2020.100002},
+  2020.
+
+\bibitem[{Duncanson et~al.(2019)Duncanson, Armston, Disney, Avitabile, Barbier,
+  Calders, Carter, Chave, Herold, Crowther, Falkowski, Kellner, Labri{\`e}re,
+  Lucas, MacBean, McRoberts, Meyer, N{\ae}sset, Nickeson, Paul, Phillips,
+  {R{\'e}jou-M{\'e}chain}, Rom{\'a}n, Roxburgh, Saatchi, Schepaschenko, Scipal,
+  Siqueira, Whitehurst, and Williams}]{duncanson_importance_2019}
+Duncanson, L., Armston, J., Disney, M., Avitabile, V., Barbier, N., Calders,
+  K., Carter, S., Chave, J., Herold, M., Crowther, T.~W., Falkowski, M.,
+  Kellner, J.~R., Labri{\`e}re, N., Lucas, R., MacBean, N., McRoberts, R.~E.,
+  Meyer, V., N{\ae}sset, E., Nickeson, J.~E., Paul, K.~I., Phillips, O.~L.,
+  {R{\'e}jou-M{\'e}chain}, M., Rom{\'a}n, M., Roxburgh, S., Saatchi, S.,
+  Schepaschenko, D., Scipal, K., Siqueira, P.~R., Whitehurst, A., and Williams,
+  M.: The {{Importance}} of {{Consistent Global Forest Aboveground Biomass
+  Product Validation}}, Surveys in Geophysics, 40, 979--999,
+  \doi{10.1007/s10712-019-09538-8}, 2019.
+
 \bibitem[{Duncanson et~al.(2021)Duncanson, Armstron, Disney, Avitabile,
   Barbier, Calders, Carter, Chave, Herold, MacBean, McRoberts, Minor, Paul,
   {R{\'e}jou-M{\'e}chain}, Roxburgh, Williams, Albinet, Baker, Bartholomeus,
@@ -453,6 +479,10 @@ Mergani{\v c}ov{\'a}, K., Mergani{\v c}, J., Svoboda, M., Ba{\v c}e, R., and
   {\v S}ebe{\v n}, {\relax VV}.: Dadwood in Forest Ecosystems, {BoD
   \textendash{} Books on Demand}, 2012.
 
+\bibitem[{NISAR(2018)}]{nisar_nasaisro_2018}
+NISAR: {{NASA-ISRO SAR}} ({{NISAR}}) {{Mission Science Users}}' {{Handbook}},
+  Tech. rep., {NASA Jet Propulsion Laboratory}, 2018.
+
 \bibitem[{Ogle(2018)}]{ogle_delineating_2018}
 Ogle, S.~M.: Delineating Managed Land for Reporting National Greenhouse Gas
   Emissions and Removals to the {{United Nations}} Framework Convention on
@@ -490,6 +520,18 @@ Piponiot, C., {Anderson-Teixeira}, K.~J., Davies, S.~J., Allen, D., Bourg,
   Relation to Tree Size in Forests across the World, New Phytologist, n/a,
   \doi{10.1111/nph.17995}, 2022.
 
+\bibitem[{Quegan et~al.(2019)Quegan, Le~Toan, Chave, Dall, Exbrayat, Minh,
+  Lomas, D'Alessandro, Paillou, Papathanassiou, Rocca, Saatchi, Scipal,
+  Shugart, Smallman, Soja, Tebaldini, Ulander, Villard, and
+  Williams}]{quegan_european_2019}
+Quegan, S., Le~Toan, T., Chave, J., Dall, J., Exbrayat, J.-F., Minh, D. H.~T.,
+  Lomas, M., D'Alessandro, M.~M., Paillou, P., Papathanassiou, K., Rocca, F.,
+  Saatchi, S., Scipal, K., Shugart, H., Smallman, T.~L., Soja, M.~J.,
+  Tebaldini, S., Ulander, L., Villard, L., and Williams, M.: The {{European
+  Space Agency BIOMASS}} Mission: {{Measuring}} Forest above-Ground Biomass
+  from Space, Remote Sensing of Environment, 227, 44--60,
+  \doi{10.1016/j.rse.2019.03.032}, 2019.
+
 \bibitem[{R{\'e}jou-M{\'e}chain et~al.(2017)R{\'e}jou-M{\'e}chain, Tanguy,
   Piponiot, Chave, and H{\'e}rault}]{rejou-mechain_biomass_2017}
 R{\'e}jou-M{\'e}chain, M., Tanguy, A., Piponiot, C., Chave, J., and
@@ -514,6 +556,13 @@ Requena~Suarez, D., Rozendaal, D. M.~A., Sy, V.~D., Phillips, O.~L.,
   Tropical and Subtropical Forests: {{Refinement}} of {{IPCC}} Default Rates
   Using Forest Plot Data, Global Change Biology, 25, 3609--3624,
   \doi{10.1111/gcb.14767}, 2019.
+
+\bibitem[{Romijn et~al.(2015)Romijn, Lantican, Herold, Lindquist, Ochieng,
+  Wijaya, Murdiyarso, and Verchot}]{romijn_assessing_2015}
+Romijn, E., Lantican, C.~B., Herold, M., Lindquist, E., Ochieng, R., Wijaya,
+  A., Murdiyarso, D., and Verchot, L.: Assessing Change in National Forest
+  Monitoring Capacities of 99 Tropical Countries, Forest Ecology and
+  Management, 352, 109--123, \doi{10.1016/j.foreco.2015.06.003}, 2015.
 
 \bibitem[{Rozendaal et~al.(2022)Rozendaal, Suarez, Sy, Avitabile, Carter, Yao,
   {Alvarez-Davila}, {Anderson-Teixeira}, {Araujo-Murakami}, Arroyo, Barca,

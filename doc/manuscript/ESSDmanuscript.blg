@@ -8,51 +8,52 @@ Warning--I didn't find a database entry for "refs_from_ForC"
 Warning--I didn't find a database entry for "ref"
 Warning--I didn't find a database entry for "climwin_ref"
 Warning--I didn't find a database entry for "refs"
+Warning--I didn't find a database entry for "labrière_forest_2023"
 Warning--can't use both author and editor fields in ipcc_good_2003
 Warning--empty booktitle in ipcc_2019_2019
 Warning--missing institution in ipcc_climate_2019
 Warning--empty journal in ipcc_climate_2022
 Warning--empty chapter and pages in merganicova_dadwood_2012
 Warning--empty journal in ogle_delineating_2018
-You've used 50 entries,
+You've used 55 entries,
             2819 wiz_defined-function locations,
-            1306 strings with 38252 characters,
-and the built_in function-call counts, 92484 in all, are:
-= -- 7420
-> -- 8816
-< -- 19
-+ -- 3156
-- -- 2894
-* -- 7703
-:= -- 11769
-add.period$ -- 50
-call.type$ -- 50
-change.case$ -- 1062
-chr.to.int$ -- 49
-cite$ -- 156
-duplicate$ -- 6201
-empty$ -- 3281
-format.name$ -- 3038
-if$ -- 17768
+            1339 strings with 40612 characters,
+and the built_in function-call counts, 100677 in all, are:
+= -- 8116
+> -- 9531
+< -- 20
++ -- 3417
+- -- 3128
+* -- 8364
+:= -- 12782
+add.period$ -- 55
+call.type$ -- 55
+change.case$ -- 1151
+chr.to.int$ -- 54
+cite$ -- 171
+duplicate$ -- 6789
+empty$ -- 3587
+format.name$ -- 3285
+if$ -- 19344
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1306
-newline$ -- 159
-num.names$ -- 202
-pop$ -- 4277
+missing$ -- 1419
+newline$ -- 174
+num.names$ -- 222
+pop$ -- 4648
 preamble$ -- 1
-purify$ -- 1061
+purify$ -- 1149
 quote$ -- 0
-skip$ -- 3426
+skip$ -- 3753
 stack$ -- 0
-substring$ -- 1857
-swap$ -- 5468
+substring$ -- 2051
+swap$ -- 5986
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 441
+type$ -- 486
 warning$ -- 6
-while$ -- 255
+while$ -- 281
 width$ -- 0
-write$ -- 585
-(There were 11 warnings)
+write$ -- 644
+(There were 12 warnings)
