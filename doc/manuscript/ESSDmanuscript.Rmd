@@ -376,7 +376,7 @@ knitr::include_graphics("figures_tables/C_variable_mapping.png")
 Prior to releasing ForC v4.0, we executed several quality control measures.
 First, we implemented a system of continuous integration using GitHub Actions [*sensu* @kim_implementing_2022] to run some automatic checks any time the master data files are updated, including outlier tests and checks for completeness and naming consistency of records across data files.
 Second, to improve information on geographic coordinates, we created a field to record coordinate precision (`r table_ForCchanges`), and flagged and reviewed records with suspected low precision.
-Third, to identify erroneous climate data, we compared ForC climate values to those extracted from WorldClim version **##** <!--need this from Becky--> [@climwin_ref] based on site coordinates. 
+Third, to identify erroneous climate data, we compared ForC climate values to those extracted from WorldClim version 2.1 [@vandepol_identifying_2016; @bailey_climwin_2016] based on site coordinates. 
 Records deviating from WorldClim values by more variable-specific thresholds (>5°C for mean annual temperature, >7.5°C for mean temperatures of the warmest and coldest months, or >1 for log(mean annual precipitation in mm)) were flagged as requiring review prior to use in analysis or transfer to EFDB.
 
 Because ForC v4.0 contained known duplicate records, we used R scripts to identify likely duplicates, as detailed in @anderson-teixeira_carbon_2021.
