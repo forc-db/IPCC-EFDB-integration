@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -72,6 +72,21 @@
   {Cook-Patton}, S.~C., Ferson, A.~E., {Muller-Landau}, H.~C., and Wang, M.
   M.~H.: Carbon Cycling in Mature and Regrowth Forests Globally, Environmental
   Research Letters, 16, 053\,009, \doi{10.1088/1748-9326/abed01}, 2021.
+
+\bibitem[{Araza et~al.(2023)Araza, Herold, {de Bruin}, Ciais, Gibbs, Harris,
+  Santoro, Wigneron, Yang, M{\'a}laga, Nesha, {Rodriguez-Veiga}, Brovkina,
+  Brown, Chanev, Dimitrov, Filchev, Fridman, Garc{\'i}a, Gikov, Govaere,
+  Dimitrov, Moradi, Muelbert, Novotn{\'y}, Pugh, Schelhaas, Schepaschenko,
+  Stere{\'n}czak, and Hein}]{araza_decade_2023}
+Araza, A., Herold, M., {de Bruin}, S., Ciais, P., Gibbs, D.~A., Harris, N.,
+  Santoro, M., Wigneron, J.-P., Yang, H., M{\'a}laga, N., Nesha, K.,
+  {Rodriguez-Veiga}, P., Brovkina, O., Brown, H. C.~A., Chanev, M., Dimitrov,
+  Z., Filchev, L., Fridman, J., Garc{\'i}a, M., Gikov, A., Govaere, L.,
+  Dimitrov, P., Moradi, F., Muelbert, A.~E., Novotn{\'y}, J., Pugh, T. A.~M.,
+  Schelhaas, M.-J., Schepaschenko, D., Stere{\'n}czak, K., and Hein, L.: Past
+  Decade Above-Ground Biomass Change Comparisons from Four Multi-Temporal
+  Global Maps, International Journal of Applied Earth Observation and
+  Geoinformation, 118, 103\,274, \doi{10.1016/j.jag.2023.103274}, 2023.
 
 \bibitem[{Badgley et~al.(2022)Badgley, Freeman, Hamman, Haya, Trugman,
   Anderegg, and Cullenward}]{badgley_systematic_2022}
@@ -454,6 +469,39 @@ Kim, A.~Y., Herrmann, V., Bareto, R., Calkins, B., {Gonzalez-Akre}, E.,
   Data Collection, Methods in Ecology and Evolution, 13, 2572--2585,
   \doi{10.1111/2041-210X.13982}, 2022.
 
+\bibitem[{Lutz et~al.(2018)Lutz, Furniss, Johnson, Davies, Allen, Alonso,
+  Anderson-Teixeira, Andrade, Baltzer, Becker, Blomdahl, Bourg, Bunyavejchewin,
+  Burslem, Cansler, Cao, Cao, C{\'a}rdenas, Chang, Chao, Chao, Chiang, Chu,
+  Chuyong, Clay, Condit, Cordell, Dattaraja, Duque, Ewango, Fischer, Fletcher,
+  Freund, Giardina, Germain, Gilbert, Hao, Hart, Hau, He, Hector, Howe, Hsieh,
+  Hu, Hubbell, Inman-Narahari, Itoh, Jan{\'i}k, Kassim, Kenfack, Korte,
+  Kr{\'a}l, Larson, Li, Lin, Liu, Lum, Ma, Makana, Malhi, McMahon, McShea,
+  Memiaghe, Mi, Morecroft, Musili, Myers, Novotny, de~Oliveira, Ong, Orwig,
+  Ostertag, Parker, Patankar, Phillips, Reynolds, Sack, Song, Su, Sukumar, Sun,
+  Suresh, Swanson, Tan, Thomas, Thompson, Uriarte, Valencia, Vicentini, Vr{\v
+  s}ka, Wang, Weiblen, Wolf, Wu, Xu, Yamakura, Yap, and
+  Zimmerman}]{lutz_global_2018}
+Lutz, J.~A., Furniss, T.~J., Johnson, D.~J., Davies, S.~J., Allen, D., Alonso,
+  A., Anderson-Teixeira, K.~J., Andrade, A., Baltzer, J., Becker, K. M.~L.,
+  Blomdahl, E.~M., Bourg, N.~A., Bunyavejchewin, S., Burslem, D. F. R.~P.,
+  Cansler, C.~A., Cao, K., Cao, M., C{\'a}rdenas, D., Chang, L.-W., Chao,
+  K.-J., Chao, W.-C., Chiang, J.-M., Chu, C., Chuyong, G.~B., Clay, K., Condit,
+  R., Cordell, S., Dattaraja, H.~S., Duque, A., Ewango, C. E.~N., Fischer,
+  G.~A., Fletcher, C., Freund, J.~A., Giardina, C., Germain, S.~J., Gilbert,
+  G.~S., Hao, Z., Hart, T., Hau, B. C.~H., He, F., Hector, A., Howe, R.~W.,
+  Hsieh, C.-F., Hu, Y.-H., Hubbell, S.~P., Inman-Narahari, F.~M., Itoh, A.,
+  Jan{\'i}k, D., Kassim, A.~R., Kenfack, D., Korte, L., Kr{\'a}l, K., Larson,
+  A.~J., Li, Y., Lin, Y., Liu, S., Lum, S., Ma, K., Makana, J.-R., Malhi, Y.,
+  McMahon, S.~M., McShea, W.~J., Memiaghe, H.~R., Mi, X., Morecroft, M.,
+  Musili, P.~M., Myers, J.~A., Novotny, V., de~Oliveira, A., Ong, P., Orwig,
+  D.~A., Ostertag, R., Parker, G.~G., Patankar, R., Phillips, R.~P., Reynolds,
+  G., Sack, L., Song, G.-Z.~M., Su, S.-H., Sukumar, R., Sun, I.-F., Suresh,
+  H.~S., Swanson, M.~E., Tan, S., Thomas, D.~W., Thompson, J., Uriarte, M.,
+  Valencia, R., Vicentini, A., Vr{\v s}ka, T., Wang, X., Weiblen, G.~D., Wolf,
+  A., Wu, S.-H., Xu, H., Yamakura, T., Yap, S., and Zimmerman, J.~K.: Global
+  Importance of Large-Diameter Trees, Global Ecology and Biogeography, 27,
+  849--864, \doi{10.1111/geb.12747}, 2018.
+
 \bibitem[{Lutz et~al.(2021)Lutz, Struckman, Furniss, Birch, Yocom, and
   McAvoy}]{lutz_largediameter_2021}
 Lutz, J.~A., Struckman, S., Furniss, T.~J., Birch, J.~D., Yocom, L.~L., and
@@ -595,6 +643,13 @@ Rozendaal, D. M.~A., Suarez, D.~R., Sy, V.~D., Avitabile, V., Carter, S., Yao,
 Sanderman, J., Hengl, T., and Fiske, G.~J.: Soil Carbon Debt of 12,000 Years of
   Human Land Use, Proceedings of the National Academy of Sciences, 114,
   9575--9580, \doi{10.1073/pnas.1706103114}, 2017.
+
+\bibitem[{Tifafi et~al.(2018)Tifafi, Guenet, and Hatt{\'e}}]{tifafi_large_2018}
+Tifafi, M., Guenet, B., and Hatt{\'e}, C.: Large {{Differences}} in {{Global}}
+  and {{Regional Total Soil Carbon Stock Estimates Based}} on {{SoilGrids}},
+  {{HWSD}}, and {{NCSCD}}: {{Intercomparison}} and {{Evaluation Based}} on
+  {{Field Data From USA}}, {{England}}, {{Wales}}, and {{France}}, Global
+  Biogeochemical Cycles, 32, 42--56, \doi{10.1002/2017GB005678}, 2018.
 
 \bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
 UNFCCC: Adoption of the {{Paris Agreement}}, 2015.
