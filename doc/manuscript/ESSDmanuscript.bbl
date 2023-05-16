@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -94,6 +94,11 @@ Badgley, G., Freeman, J., Hamman, J.~J., Haya, B., Trugman, A.~T., Anderegg,
   W.~R., and Cullenward, D.: Systematic Over-Crediting in {{California}}'s
   Forest Carbon Offsets Program, Global Change Biology, 28, 1433--1445,
   \doi{10.1111/gcb.15943}, 2022.
+
+\bibitem[{Bailey and van~de Pol(2016)}]{bailey_climwin_2016}
+Bailey, L.~D. and van~de Pol, M.: Climwin: {{An R Toolbox}} for {{Climate
+  Window Analysis}}, PLOS ONE, 11, e0167\,980,
+  \doi{10.1371/journal.pone.0167980}, 2016.
 
 \bibitem[{Banbury~Morgan et~al.(2021)Banbury~Morgan, Herrmann, Kunert,
   Bond-Lamberty, Muller-Landau, and
@@ -354,6 +359,13 @@ Fer, I., Gardella, A.~K., Shiklomanov, A.~N., Campbell, E.~E., Cowdery, E.~M.,
   Ecosystem Modeling: {{A}} Roadmap to Community Cyberinfrastructure for
   Ecological Data-Model Integration, Global Change Biology, 27, 13--26,
   \doi{10.1111/gcb.15409}, 2021.
+
+\bibitem[{Fukushima et~al.(2007)Fukushima, Kanzaki, Maung, and
+  Minn}]{fukushima_recovery_2007}
+Fukushima, M., Kanzaki, M., Maung, T., and Minn, Y.: Recovery Process of Fallow
+  Vegetation in the {{Traditional Karen Swidden Cultivation System}} in the
+  {{Bago Mountain Range}}, {{Myanmar}}, Southeast Asian Studies, 45, 317--333,
+  2007.
 
 \bibitem[{Goldstein et~al.(2020)Goldstein, Turner, Spawn, {Anderson-Teixeira},
   {Cook-Patton}, Fargione, Gibbs, Griscom, Hewson, Howard, Ledezma, Page, Koh,
@@ -659,6 +671,13 @@ Tifafi, M., Guenet, B., and Hatt{\'e}, C.: Large {{Differences}} in {{Global}}
 
 \bibitem[{UNFCCC(2015)}]{unfccc_adoption_2015}
 UNFCCC: Adoption of the {{Paris Agreement}}, 2015.
+
+\bibitem[{{van de Pol} et~al.(2016){van de Pol}, Bailey, McLean, Rijsdijk,
+  Lawson, and Brouwer}]{vandepol_identifying_2016}
+{van de Pol}, M., Bailey, L.~D., McLean, N., Rijsdijk, L., Lawson, C.~R., and
+  Brouwer, L.: Identifying the Best Climatic Predictors in Ecology and
+  Evolution, Methods in Ecology and Evolution, 7, 1246--1257,
+  \doi{10.1111/2041-210X.12590}, 2016.
 
 \bibitem[{Waring and Powers(2017)}]{waring_overlooking_2017}
 Waring, B.~G. and Powers, J.~S.: Overlooking What Is Underground:
