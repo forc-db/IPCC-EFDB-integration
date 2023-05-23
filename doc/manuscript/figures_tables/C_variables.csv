@@ -1,52 +1,51 @@
-"bold","variable","n in ForC","n independent records in ForC","n reviewed","n submitted to EFDB"
-"TRUE","Biomass",NA,NA,NA,NA
-"FALSE","biomass","1094","850","95","50"
-"FALSE","delta.biomass","0","0","0","0"
-"FALSE","NPP_woody","136","93","0","0"
-"FALSE","woody.mortality","0","0","0","0"
-"TRUE","Aboveground biomass",NA,NA,NA,NA
-"FALSE","biomass_ag","9449","8148","1357","764"
-"FALSE","biomass_ag_woody","460","366","10","10"
-"FALSE","biomass_ag_foliage","601","520","73","45"
-"FALSE","delta.agb","166","150","145","123"
-"FALSE","ANPP_woody","299","242","0","0"
-"FALSE","ANPP_woody_stem","949","622","60","61"
-"FALSE","ANPP_woody_branch","243","200","4","4"
-"FALSE","woody.mortality_ag","112","75","47","50"
-"FALSE","stem_pC","9","0","0","0"
-"TRUE","Belowground biomass",NA,NA,NA,NA
-"FALSE","biomass_root","4629","4185","125","57"
-"FALSE","biomass_root_fine","930","595","18","18"
-"FALSE","biomass_root_coarse","599","413","12","7"
-"FALSE","delta.biomass_root","0","0","0","0"
-"FALSE","delta.biomass_root_coarse","0","0","0","0"
-"FALSE","delta.biomass_root_fine","0","0","0","0"
-"FALSE","woody.mortality_root","0","0","0","0"
-"FALSE","BNPP_root","577","416","0","0"
-"FALSE","BNPP_root_fine","488","331","0","0"
-"FALSE","BNPP_root.turnover_fine","91","56","0","0"
-"FALSE","BNPP_root_coarse","329","250","0","0"
-"TRUE","Dead wood",NA,NA,NA,NA
-"FALSE","deadwood","438","304","104","70"
-"FALSE","deadwood_standing","153","121","18","17"
-"FALSE","deadwood_down","425","369","52","28"
-"FALSE","delta.deadwood","0","0","0","0"
-"FALSE","delta.deadwood_standing","0","0","0","0"
-"FALSE","delta.deadwood_down","0","0","0","0"
-"FALSE","R_het_deadwood","0","0","0","0"
-"TRUE","Litter",NA,NA,NA,NA
-"FALSE","O.horizon","45","45","45","40"
-"FALSE","delta.O.horizon","4","4","4","4"
-"FALSE","litter","30","30","23","23"
-"FALSE","delta.litter","0","0","0","0"
-"FALSE","ANPP_litterfall","294","253","11","11"
-"FALSE","NPP_litter","94","70","0","0"
-"FALSE","R_het_litter","167","143","0","0"
-"TRUE","Total Ecosystem C (excl. soils)",NA,NA,NA,NA
-"FALSE","total.ecosystem_2","64","64","0","0"
-"FALSE","delta.total.ecosystem_2","0","0","0","0"
-"TRUE","Soil organic matter",NA,NA,NA,NA
-"FALSE","SOM / SOC","693","401","89","56"
-"FALSE","delta.SOM / delta.SOC","0","0","0","0"
-"FALSE","R_het_soil","0","0","0","0"
-"TRUE","TOTAL","23568","19316","2292","1438"
+bold,variable,n in ForC,n independent records in ForC,n reviewed,n submitted to EFDB
+TRUE,Biomass,NA,NA,NA,NA
+FALSE,biomass,1094,850,95,50
+FALSE,delta.biomass,0,0,0,0
+FALSE,NPP_woody,136,93,0,0
+FALSE,woody.mortality,0,0,0,0
+TRUE,Aboveground biomass,NA,NA,NA,NA
+FALSE,biomass_ag,9449,8148,1357,764
+FALSE,biomass_ag_woody,460,366,10,10
+FALSE,biomass_ag_foliage,601,520,73,45
+FALSE,delta.agb,166,150,145,123
+FALSE,ANPP_woody,299,242,0,0
+FALSE,ANPP_woody_stem,949,622,60,61
+FALSE,ANPP_woody_branch,243,200,4,4
+FALSE,woody.mortality_ag,112,75,47,50
+FALSE,stem_pC,9,0,0,0
+TRUE,Belowground biomass,NA,NA,NA,NA
+FALSE,biomass_root,4629,4185,125,57
+FALSE,biomass_root_fine,930,595,18,18
+FALSE,biomass_root_coarse,599,413,12,7
+FALSE,delta.biomass_root,0,0,0,0
+FALSE,delta.biomass_root_coarse,0,0,0,0
+FALSE,delta.biomass_root_fine,0,0,0,0
+FALSE,woody.mortality_root,0,0,0,0
+FALSE,BNPP_root,577,416,0,0
+FALSE,BNPP_root_fine,488,331,0,0
+FALSE,BNPP_root.turnover_fine,91,56,0,0
+FALSE,BNPP_root_coarse,329,250,0,0
+TRUE,Dead wood,NA,NA,NA,NA
+FALSE,deadwood,438,304,104,70
+FALSE,deadwood_standing,153,121,18,17
+FALSE,deadwood_down,425,369,52,28
+FALSE,delta.deadwood,0,0,0,0
+FALSE,delta.deadwood_standing,0,0,0,0
+FALSE,delta.deadwood_down,0,0,0,0
+FALSE,R_het_deadwood,0,0,0,0
+TRUE,Litter,NA,NA,NA,NA
+FALSE,O.horizon,45,45,45,40
+FALSE,delta.O.horizon,4,4,4,4
+FALSE,litter,30,30,23,23
+FALSE,delta.litter,0,0,0,0
+FALSE,ANPP_litterfall,294,253,11,11
+FALSE,NPP_litter,94,70,0,0
+FALSE,R_het_litter,167,143,0,0
+TRUE,Total Ecosystem C (excl. soils),NA,NA,NA,NA
+FALSE,total.ecosystem_2,64,64,0,0
+FALSE,delta.total.ecosystem_2,0,0,0,0
+TRUE,Soil organic matter,NA,NA,NA,NA
+FALSE,SOM / SOC,693,401,89,56
+FALSE,delta.SOM / delta.SOC,0,0,0,0
+TRUE,TOTAL,23568,19316,2292,1438
