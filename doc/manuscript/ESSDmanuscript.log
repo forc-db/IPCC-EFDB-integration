@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 MAY 2023 08:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  23 MAY 2023 07:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3069,67 +3069,67 @@ ut line 214.
 
 [2] [3]
 
-Package natbib Warning: Citation `ref' on page 4 undefined on input line 425.
+Package natbib Warning: Citation `ref' on page 4 undefined on input line 427.
 
 
-Package natbib Warning: Citation `ref' on page 4 undefined on input line 431.
+Package natbib Warning: Citation `ref' on page 4 undefined on input line 433.
 
 [4] [5] [6]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 55
-0.
+3.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [7]
-<figures_tables/C_variable_mapping.png, id=272, 779.91376pt x 872.25874pt>
+<figures_tables/C_variable_mapping.png, id=269, 779.91376pt x 872.25874pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
-ine 576.
+ine 579.
 (pdftex.def)             Requested size: 398.33858pt x 445.49825pt.
 
-LaTeX Warning: Float too large for page by 26.97559pt on input line 577.
+LaTeX Warning: Float too large for page by 26.97559pt on input line 580.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-93.
+96.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [8] [9 <./figures_tables/C_variable_mapping.png>]
 
-Package natbib Warning: Citation `refs' on page 10 undefined on input line 631.
+Package natbib Warning: Citation `refs' on page 10 undefined on input line 634.
 
 
 
-Package natbib Warning: Citation `refs' on page 10 undefined on input line 633.
+Package natbib Warning: Citation `refs' on page 10 undefined on input line 636.
 
 
 [10] [11]
-<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=341, 480
+<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=339, 480
 .8364pt x 284.5029pt>
 File: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png Graphic
  file (type png)
 <use figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>
 Package pdftex.def Info: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_da
-ta_sent.png  used on input line 786.
+ta_sent.png  used on input line 789.
 (pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
 [12]
-<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=350, 578.1
+<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=348, 578.1
 6pt x 650.43pt>
 File: figures_tables/Histogram_n_Relevant_and_Transferred_Records.png Graphic f
 ile (type png)
 <use figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>
 Package pdftex.def Info: figures_tables/Histogram_n_Relevant_and_Transferred_Re
-cords.png  used on input line 791.
+cords.png  used on input line 794.
 (pdftex.def)             Requested size: 426.79134pt x 480.13954pt.
 [13 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [14 
 <./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15] [16]
 
 Package natbib Warning: Citation `labrière_forest_2023' on page 17 undefined on
- input line 1030.
+ input line 1034.
 
 [17]
 
 Package natbib Warning: Citation `labrière_forest_2023' on page 18 undefined on
- input line 1065.
+ input line 1069.
 
 [18] [19] [20] [21
 
@@ -3164,18 +3164,18 @@ p-i-cal Coun-tries, For-est Ecol-ogy and Man-age-ment, 352, 109--123,
 Class copernicus Warning: No section Abstract; proceeding without it.
 
 
-Package caption Warning: Unused \captionsetup[table] on input line 1177.
+Package caption Warning: Unused \captionsetup[table] on input line 1187.
 See the caption package documentation for explanation.
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1417.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1417.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1427.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1427.
 (./ESSDmanuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1417.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1417.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1417.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1427.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1427.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1427.
  ) 
 Here is how much of TeX's memory you used:
  14923 strings out of 480608
@@ -3195,10 +3195,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ESSDmanuscript.pdf (32 pages, 647098 bytes).
+Output written on ESSDmanuscript.pdf (32 pages, 647461 bytes).
 PDF statistics:
- 657 PDF objects out of 1000 (max. 8388607)
- 601 compressed objects within 7 object streams
+ 654 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
  136 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
