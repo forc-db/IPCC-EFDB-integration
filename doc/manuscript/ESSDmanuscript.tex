@@ -167,7 +167,7 @@ greenhouse gas emissions and removals. We begin by reconciling
 terminology and mapping ForC fields into EFDB. This process required
 some updates to the ForC database structure, leading to the release of a
 new version of ForC (v4.0; described here). As of May 23, 2023, ForC
-contained \textasciitilde19323 independent records relevant to EFDB,
+contained \textasciitilde19316 independent records relevant to EFDB,
 1438 of which have been submitted to date. Among the data in ForC, there
 is disproportionate representation of biomass (particularly aboveground)
 stocks, with far fewer records for dead organic matter and soil C, and
@@ -382,11 +382,10 @@ biomass of living vegetation above the soil including stems, stumps,
 branches, bark, seeds, and foliage''
 \citep{ipcc_good_2003, ipcc_2006_2006}. IPCC's guidance is that the
 understory may be excluded the understory if it constitutes a ``minor''
-component, \emph{where quantitative definitions of ``understory'' and
-``minor'' are not provided}, but where a commonly applied minimum size
-sampling threshold for mature forests would be 10 cm stem diameter at
-breast height (DBH). A recent study characterizing the contributions of
-trees in different DBH classes to ecosystem C stocks and fluxes found
+component (defined as \ldots{}), and where a commonly applied minimum
+size sampling threshold for mature forests would be 10 cm stem diameter
+at breast height (DBH). A recent study characterizing the contributions
+of trees in different DBH classes to ecosystem C stocks and fluxes found
 that trees 1 - 10 cm DBH contributed up to \textasciitilde8\%
 aboveground biomass, \textasciitilde17\% aboveground woody net primary
 productivity (\(ANPP_{woody.stem}\)), and \textasciitilde20\% woody
@@ -537,7 +536,7 @@ improve ForC's capacity to serve as a repository of valuable information
 for forest C inventories under IPCC guidelines. To support export of
 data to EFDB, and to improve the overall quality of the ForC database,
 we added or modified 18 fields (Appendix A), defined 15 new variables,
-implemented enhanced quality control, manually reviewed \textgreater1954
+implemented enhanced quality control, manually reviewed \textgreater1963
 records to obtain additional required information, and added 329 new
 records.
 
@@ -578,7 +577,7 @@ adopted by original studies, we added two clearly defined variables:
 \emph{O.horizon} (entire O-horizon, including OL).
 
 \begin{figure}
-\includegraphics[width=14cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools defined under IPCC Guidelines for national greenhouse gas inventories; corresponding ForC variables, and relationships among them.} For each C pool, we show ForC variables corresponding to the stock, stock change (net annual increment), gain (influx), and loss. Most, but not all, EFDB-relevant ForC variables are shown here. Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., minimum stem diameter censused). Additional caveats are as follows: (a,b) branch fall and mortality of stems below the minimum stem diameter censused, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, or that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon.}\label{fig:fig_variable_mapping}
+\includegraphics[width=14cm]{figures_tables/C_variable_mapping} \caption{\textbf{Schematic illustrating the carbon pools defined under IPCC Guidelines for national greenhouse gas inventories; corresponding ForC variables, and relationships among them.} For each C pool, we show ForC variables corresponding to the stock, stock change (net annual increment), gain (influx), and loss. Most, but not all, EFDB-relevant ForC variables are shown here. Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., minimum stem diameter censused). Additional caveats are as follows: (a,b) branch fall and mortality of stems below the minimum stem diameter censused, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, or that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon. **This variable is techically EFDB-relevant but not selected for submission because their is no corresponding influx variable.}\label{fig:fig_variable_mapping}
 \end{figure}
 
 \subsection{Quality control measures}
@@ -771,7 +770,7 @@ geographical location and notable disturbance events.
 \subsection{ForC v4.0 contents}
 
 As of May 23, 2023, ForC (v4.0) contained 32693 independent records
-(39848 total), 19323 of which were for the 43 variables relevant to EFDB
+(39848 total), 19316 of which were for the 42 variables relevant to EFDB
 (Fig. 1). These records were distributed across all forested continents
 and ecozones, albeit unevenly (Fig. 2). The largest number of records
 came from Asia, followed by North America, South America, and Europe,
@@ -797,7 +796,7 @@ class was 20-100 years, followed by \textless20 years and then
 \includegraphics[width=15cm]{figures_tables/Histogram_n_Relevant_and_Transferred_Records} \caption{\textbf{Histograms of number of independent records in ForC relevant to (grey) and submitted to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.} For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure 2.}\label{fig:fig_histograms}
 \end{figure}
 
-ForC contained records for 29 of the 43 variables (or closely-related
+ForC contained records for 29 of the 42 variables (or closely-related
 variable groups) relevant to EFDB (Table 2, Fig. 1). The records were
 very unevenly distributed across variables. The variable with most
 records was aboveground biomass, representing 42\% of all independent
@@ -823,12 +822,12 @@ independent records relevant to EFDB.
 \begin{longtable}[t]{l|l|l|l|l}
 \caption{\label{tab:table_variables}\textbf{Numbers of records of ForC variables (or closely related variable groups) relevant to, and sent to, EFDB.}}\\
 \hline
-\textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n sent to EFDB}\\
+\textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n submitted to EFDB}\\
 \hline
 \endfirsthead
 \caption[]{\textbf{Numbers of records of ForC variables (or closely related variable groups) relevant to, and sent to, EFDB.} \textit{(continued)}}\\
 \hline
-\textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n sent to EFDB}\\
+\textbf{variable} & \textbf{n in ForC} & \textbf{n independent records in ForC} & \textbf{n reviewed} & \textbf{n submitted to EFDB}\\
 \hline
 \endhead
 \textbf{Biomass} & \textbf{} & \textbf{} & \textbf{} & \textbf{}\\
@@ -843,7 +842,7 @@ woody.mortality & 0 & 0 & 0 & 0\\
 \hline
 \textbf{Aboveground biomass} & \textbf{} & \textbf{} & \textbf{} & \textbf{}\\
 \hline
-biomass\_ag & 9456 & 8155 & 1348 & 764\\
+biomass\_ag & 9449 & 8148 & 1357 & 764\\
 \hline
 biomass\_ag\_woody & 460 & 366 & 10 & 10\\
 \hline
@@ -929,16 +928,14 @@ SOM / SOC & 693 & 401 & 89 & 56\\
 \hline
 delta.SOM / delta.SOC & 0 & 0 & 0 & 0\\
 \hline
-R\_het\_soil & 0 & 0 & 0 & 0\\
-\hline
-\textbf{TOTAL} & \textbf{23575} & \textbf{19323} & \textbf{2283} & \textbf{1438}\\
+\textbf{TOTAL} & \textbf{23568} & \textbf{19316} & \textbf{2292} & \textbf{1438}\\
 \hline
 \end{longtable}
 \endgroup{}
 
 \subsection{Data submissions to EFDB}
 
-As of May 23, 2023, we had reviewed or added 2283 EFDB-relevant records,
+As of May 23, 2023, we had reviewed or added 2292 EFDB-relevant records,
 1438 records of which were submitted to EFDB, and 376 of which have been
 reviewed, accepted, and posted (Figs. 2-3, Table 2). The 37\%
 attenuation between records reviewed and those sent to EFDB was
