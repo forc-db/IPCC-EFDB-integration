@@ -1,11 +1,11 @@
-"bold","variable","n in ForC","n independent records in ForC","n reviewed","n sent to EFDB"
+"bold","variable","n in ForC","n independent records in ForC","n reviewed","n submitted to EFDB"
 "TRUE","Biomass",NA,NA,NA,NA
 "FALSE","biomass","1094","850","95","50"
 "FALSE","delta.biomass","0","0","0","0"
 "FALSE","NPP_woody","136","93","0","0"
 "FALSE","woody.mortality","0","0","0","0"
 "TRUE","Aboveground biomass",NA,NA,NA,NA
-"FALSE","biomass_ag","9456","8155","1348","764"
+"FALSE","biomass_ag","9449","8148","1357","764"
 "FALSE","biomass_ag_woody","460","366","10","10"
 "FALSE","biomass_ag_foliage","601","520","73","45"
 "FALSE","delta.agb","166","150","145","123"
@@ -49,4 +49,4 @@
 "FALSE","SOM / SOC","693","401","89","56"
 "FALSE","delta.SOM / delta.SOC","0","0","0","0"
 "FALSE","R_het_soil","0","0","0","0"
-"TRUE","TOTAL","23575","19323","2283","1438"
+"TRUE","TOTAL","23568","19316","2292","1438"

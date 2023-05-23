@@ -76,11 +76,11 @@ ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$
 # ---- right, here, make the histogram for the paper ---- #
 ## see this issue:https://github.com/forc-db/IPCC-EFDB-integration/issues/34
 ## grey is number of records in ForC that are relevant to EFDB (n records for the variables we send)
-## black is what is already transferred to EFDB
+## black is what is already submitted to EFDB
 ## x axis is dominant vegetation type
 
 
-ForBarplot <- data.frame(data_type = rep(c("relevant", "transferred"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg), FAO.ecozone = c(ForC_simplified$FAO.ecozone, ForC_simplified_already_sent$FAO.ecozone), continent = c(ForC_simplified$continent, ForC_simplified_already_sent$continent), stand.age = c(ForC_simplified$stand.age, ForC_simplified_already_sent$stand.age))
+ForBarplot <- data.frame(data_type = rep(c("relevant", "submitted"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg), FAO.ecozone = c(ForC_simplified$FAO.ecozone, ForC_simplified_already_sent$FAO.ecozone), continent = c(ForC_simplified$continent, ForC_simplified_already_sent$continent), stand.age = c(ForC_simplified$stand.age, ForC_simplified_already_sent$stand.age))
 
 ForBarplot$stand.age <- addNA(cut(as.numeric(ForBarplot$stand.age), breaks = c(0, 20, 100, 10000), labels = c("<20 yrs", "20-100 yrs", ">100 yrs" )))
 levels(ForBarplot$stand.age)[4] <- "Unclassified"

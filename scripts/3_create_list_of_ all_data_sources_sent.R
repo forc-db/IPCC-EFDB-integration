@@ -97,7 +97,7 @@ n_independent <- as.data.frame(table(ForC_simplified$variable_pretty[ForC_simpli
 
 n_reviewed <- as.data.frame(table(ForC_simplified$variable_pretty[ForC_simplified$citation.ID %in% CITATIONS$citation.ID[CITATIONS$EFDB.ready == 1]]), responseName = "n_reviewed")
 
-n_sent_to_EFDB <- as.data.frame(table(MEASUREMENTS$variable_pretty[MEASUREMENTS$measurement.ID %in% trace_of_measurement_IDs$measurement.ID]), responseName = "n_sent_to_EFDB")
+n_submitted_to_EFDB <- as.data.frame(table(MEASUREMENTS$variable_pretty[MEASUREMENTS$measurement.ID %in% trace_of_measurement_IDs$measurement.ID]), responseName = "n_submitted_to_EFDB")
 
 
 
@@ -106,7 +106,7 @@ n_sent_to_EFDB <- as.data.frame(table(MEASUREMENTS$variable_pretty[MEASUREMENTS$
 variables_in_order$n_in_ForC <- n_in_ForC$n_in_ForC[match(variables_in_order$variable, n_in_ForC$Var1)]
 variables_in_order$n_independent_records_in_ForC <- n_independent$n_independent_records_in_ForC[match(variables_in_order$variable, n_independent$Var1)]
 variables_in_order$n_reviewed <- n_reviewed$n_reviewed[match(variables_in_order$variable, n_reviewed$Var1)]
-variables_in_order$n_sent_to_EFDB <- n_sent_to_EFDB$n_sent_to_EFDB[match(variables_in_order$variable, n_sent_to_EFDB$Var1)]
+variables_in_order$n_submitted_to_EFDB <- n_submitted_to_EFDB$n_submitted_to_EFDB[match(variables_in_order$variable, n_submitted_to_EFDB$Var1)]
 
 
 

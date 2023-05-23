@@ -164,23 +164,23 @@ n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entri
 n_records_checked = n_records_reviewed_or_added - n_records_added # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
 
 
-n_records_sent_to_EFDB = C_variables[length(C_variables[,"variable"]), "n sent to EFDB"] # n records sent to EFDB
-n_relevant_variables_no_records_sent =  sum(C_variables$`n sent to EFDB` == 0,  na.rm = TRUE)
+n_records_sent_to_EFDB = C_variables[length(C_variables[,"variable"]), "n submitted to EFDB"] # n records sent to EFDB
+n_relevant_variables_no_records_sent =  sum(C_variables$`n submitted to EFDB` == 0,  na.rm = TRUE)
 n_relevant_variables_records_sent= n_relevant_variables - n_relevant_variables_no_records_sent
-n_records_sent_biomass<- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass"]
-n_records_sent_agb <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_ag"]
-n_records_sent_agb_components <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_ag_woody"] + C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_ag_foliage"]
-n_records_sent_rootbiomass <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_root"] 
-n_records_sent_rootbiomass_components <- C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "biomass_root_coarse"]
-n_records_sent_deadwood<- C_variables$`n sent to EFDB`[C_variables$`variable` == "deadwood"] 
-n_records_sent_deadwood_components<- C_variables$`n sent to EFDB`[C_variables$`variable` == "deadwood_down"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "deadwood_standing"]
-n_records_sent_litter<- C_variables$`n sent to EFDB`[C_variables$`variable` == "litter"] +C_variables$`n sent to EFDB`[C_variables$`variable` == "O.horizon"]
-n_records_sent_soil<- C_variables$`n sent to EFDB`[C_variables$`variable` == "SOM / SOC"] 
+n_records_sent_biomass<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass"]
+n_records_sent_agb <- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_ag"]
+n_records_sent_agb_components <- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_ag_woody"] + C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_ag_foliage"]
+n_records_sent_rootbiomass <- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root"] 
+n_records_sent_rootbiomass_components <- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root_coarse"]
+n_records_sent_deadwood<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood"] 
+n_records_sent_deadwood_components<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood_down"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood_standing"]
+n_records_sent_litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "litter"] +C_variables$`n submitted to EFDB`[C_variables$`variable` == "O.horizon"]
+n_records_sent_soil<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "SOM / SOC"] 
 n_records_sent_stocks = n_records_sent_biomass+n_records_sent_agb+n_records_sent_agb_components+n_records_sent_rootbiomass+n_records_sent_rootbiomass_components+n_records_sent_deadwood+n_records_sent_deadwood_components+ n_records_sent_litter+ n_records_sent_soil
-n_records_sent_delta.agb<- C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.agb"]
-n_records_sent_delta.litter<- C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.O.horizon"]+C_variables$`n sent to EFDB`[C_variables$`variable` == "delta.litter"]
+n_records_sent_delta.agb<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.agb"]
+n_records_sent_delta.litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.O.horizon"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.litter"]
 n_records_sent_increments <- n_records_sent_delta.agb+n_records_sent_delta.litter
-n_records_sent_fluxes <- sum(C_variables$`n sent to EFDB`[C_variables$`variable` %in% flux_variables_with_records])
+n_records_sent_fluxes <- sum(C_variables$`n submitted to EFDB`[C_variables$`variable` %in% flux_variables_with_records])
 n_records_sent_fluxes_check = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
 
 
