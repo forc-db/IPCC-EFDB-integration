@@ -201,7 +201,7 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 
 **Abstract.**
 Forests are critical for climate change mitigation and constitute a substantial portion of planned net emissions reductions under the 2015 Paris Agreement.
-Yet, the efficacy of greenhouse gas mitigation planning and reporting is dependent upon the quality of available emission factors data, including forest carbon (C) stocks and changes therein.
+However, the efficacy of greenhouse gas mitigation planning and reporting is dependent upon the quality of available emission factors data, including forest carbon (C) stocks and changes therein.
 Tens of thousands of relevant forest C estimates have been published, yet are not readily accessible to the practitioners compiling national greenhouse gas inventories. 
 Many of these data have, however, been compiled in the Global Forest C database (ForC; https://forc-db.github.io/) and stand to be of value to greenhouse gas inventories if made available through the Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC).
 Here, we develop and document a process for semi-automated submission of data from ForC into the EFDB, assess the data available and submitted to date, and provide recommendations for improving forest data collection, analysis, and reporting to improve inventories of forest-sector greenhouse gas emissions and removals.
@@ -210,7 +210,6 @@ This process required some updates to the ForC database structure, leading to th
 As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_sent_to_EFDB` of which have been submitted to date.
 Among the data in ForC, there is disproportionate representation of biomass (particularly aboveground) stocks, with far fewer records for dead organic matter and soil C, and relatively few or no records for net annual increments or C fluxes into (gains) or out of (losses) the IPCC-defined C pools.
 Geographic representation is also quite uneven, with the highest densities of relevant records in temperate forests, and with relatively scant representation of tropical forests in Africa and Asia. 
-This distribution of records is generally reflected in the subset of records that have been submitted to EFDB to date.
 In the future, forest C estimates in EFDB can be improved through targeted research to fill critical gaps, reporting of information required by IPCC, and continued submission of data from scientific publications to the EFDB.
 Given that climate change is rapidly impacting the world's forests, timely reporting of recent estimates will be especially critical to accurate forest C inventories.  
 
@@ -219,9 +218,9 @@ Given that climate change is rapidly impacting the world's forests, timely repor
 Forests are critical to management of the atmospheric concentration of the greenhouse gas carbon dioxide (CO~2~), and thereby climate change. 
 In recent decades, CO~2~ uptake by forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 Gt C yr^-1^ [all biomes with trees, @xu_changes_2021] to ~`r round(5.8*12/44,1)` Gt C yr^-1^<!--net forest estimate in Harris et al. Table 2--> [forests only, @harris_global_2021].
 This has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> to `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021], dramatically slowing the pace of atmospheric CO~2~ accumulation and associated climate change.
-Going into the future, the fate of this important CO~2~ sink is highly uncertain, depending both upon forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020;@hammond_global_2022], and on human conservation, restoration, and management of forests [@ipcc_climate_2019;@ipcc_climate_2022].
+The future of this important CO~2~ sink is highly uncertain, and depends upon both forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020;@hammond_global_2022], and human conservation, restoration, and management of forests [@ipcc_climate_2019;@ipcc_climate_2022].
 
-Reflecting their strong influence on Earth's climate, forests play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
+Forests play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
 Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options, with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
 As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].
 Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022].
@@ -231,7 +230,7 @@ The International Panel on Climate Change (IPCC) provides guidance for national 
 Under this guidance, greenhouse gas inventories include all managed land, including most of the world's forest land [@ogle_delineating_2018].
 The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [@ipcc_agriculture_2006; @ipcc_2019_2019].
 A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone [@fao_global_2012] and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
-Tier 1 values have improved over the years as more of the relevant underlying data has become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for continuous improvement as the science advances and datasets grow and become more widely accessible.
+Tier 1 values have improved over the years as more of the relevant underlying data has become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement as datasets grow and become more widely accessible.
 For example, the year following the release of the latest IPCC guidelines, a more thorough analysis of C accumulation in regrowth forests found that IPCC's Tier 1 default values underestimated C sequestration by 32% on average and failed to capture eight-fold variation within ecozones [@cook-patton_mapping_2020]. 
 In addition, it was revealed that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
 This rapid evolution of scientific information on C cycling in forests is valuable for informing climate change mitigation efforts but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
@@ -243,7 +242,7 @@ The EFDB encourages researchers to submit estimates of emission factors or other
 In the case of forests, emission factors include C stocks, net increments ("stock changes"), and fluxes ("gains" and "losses") for various pools [@ipcc_2006_2006;@ipcc_2019_2019].
 
 The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].
-ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
+ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], and the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
 As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained `r n_records_ForC` records from `r n_plots_ForC` plots in `r n_areas_ForC` distinct geographical areas, along with records of stand age and disturbance history.
 As such, ForC is positioned to improve forest-related estimates of CO~2~ emissions and removals through the submission of data to the EFDB.
 The purpose of this publication is to document that process and provide recommendations for future improvements.
@@ -252,7 +251,7 @@ Here, we
 (1) review IPCC methods and definitions applied to estimate CO~2~ emissions and removals from forest in the context of typical forest C estimation methodologies;
 (2) describe mapping of ForC to IPCC's EFDB;
 (3) describe updates to ForC  (ForC v4.0), most of which were implemented to facilitate data submission to EFDB;
-(4) summarize the data in ForC that's relevant to EFDB and records that have been submitted to date; and
+(4) summarize the data in ForC relevant to EFDB and records that have been submitted to date; and
 (5) provide recommendations as to how the scientific community can better provide useful data for forest C inventories under the Paris Agreement.
 
 
@@ -296,8 +295,7 @@ In regrowth forests, woodlands, or savannas, small trees and shrubs contribute a
 While IPCC guidance specifies that all living vegetation should be included in biomass estimates, forest censuses and biomass estimates do not consistently include life forms other than dicot trees (e.g., lianas, ferns, palms, bamboo), although these do tend to be censused when they constitute a large proportion of the biomass [e.g., @fukushima_recovery_2007].
 Further, it is important to note that the IPCC definition of aboveground biomass excludes standing dead wood, which is included in remote sensing biomass estimates [@duncanson_aboveground_2021].
 
-A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometric models to convert DBH measurements to biomass.
-Selection of allometric models has an enormous influence on estimates of biomass stocks, increments, of fluxes [@clark_landscapescale_2000;@clark_net_2001].
+A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometric models to convert DBH measurements to biomass, and such selection has an enormous influence on estimates of biomass stocks, increments, and fluxes [@clark_landscapescale_2000;@clark_net_2001].
 While trusted and standardized allometric models are becoming increasingly available [@chave_improved_2014;@rejou-mechain_biomass_2017;@gonzalez-akre_allodb_2022], large uncertainties remain.
 IPCC Tier 1 values currently draw on studies applying a variety of allometric models [e.g., @requenasuarez_estimating_2019; @rozendaal_aboveground_2022].
 
@@ -310,7 +308,7 @@ IPCC's default method for Tier 1 estimates is to apply a ratio of belowground to
 ### Dead Organic Matter
 
 Dead organic matter includes all non-living biomass that is not within the mineral soil layer and smaller than the litter size threshold. 
-It's inclusion in inventories is not required under Tier 1 methodology for Forest Land remaining Forest Land (see section `r section_land_use_categories`), but is required for land that has transitioned to or from forest within the past 20 years [@ipcc_2006_2006].
+Its inclusion in inventories is not required under Tier 1 methodology for Forest Land remaining Forest Land (see section `r section_land_use_categories`), but is required for land that has transitioned to or from forest within the past 20 years [@ipcc_2006_2006].
 
 Dead wood, which is typically <50 t C ha^-1^ but can exceed 150 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCC as "all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil" [@ipcc_good_2003;@ipcc_2006_2006]. 
 This pool includes standing and fallen dead wood, stumps, and dead roots of diameter ≥10 cm (or a diameter specified by the country).
@@ -344,11 +342,11 @@ However, the definition is applied differently across countries, and the majorit
 
 # Updates to ForC (ForC v4.0)
 
+This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_2021].
 Previous versions of ForC [@anderson-teixeira_carbon_2016; @anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021] contained most of the information required by EFDB, and, more broadly, to inform C stock change calculations under the Paris Agreement. 
 However, modest changes to the structure and contents of ForC were needed in order to provide all information required by EFDB and to improve ForC's capacity to serve as a repository of valuable information for forest C inventories under IPCC guidelines.
 To support export of data to EFDB, and to improve the overall quality of the ForC database, we added or modified `r n_fields_modified` fields (`r table_ForCchanges`), defined `r n_new_variables` new variables, implemented enhanced quality control, manually reviewed >`r n_records_checked` records to obtain additional required information, and added `r n_records_added` new records.
 
-This section describes changes relative to ForC v3.0 [@anderson-teixeira_carbon_2021].
 
 ## New or modified fields
 
@@ -580,7 +578,7 @@ Significant investment in ground-based forest research will be critical to filli
 We recommend that, in order to make research valuable to estimate C stock changes according to methods provided in the IPCC guidelines, researchers calculate and report results according to IPCC good practice (Table `r table_recommendations`).
 It is particularly noteworthy that simple decisions on the presentation of results will determine whether the records meet the criteria for inclusion in EFDB.
 Some examples are as follows:
-(1) presenting data only in a figure makes them ineligible for inclusion in EFDB, whereas presentation in a table or supplementary data file allows inclusion;
+(1) presenting data only in a figure makes them ineligible for inclusion in EFDB, whereas presentation in a table or supplementary data file allows inclusion while supporting FAIR (http://dx.doi.org/10.1038/d41586-019-01720-7) goals;
 (2) direct presentation of all relevant variables allows inclusion, whereas presenting only components of variables of interest (e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or requiring simple mathematical operations to obtain a variable of interest (e.g., *delta.agb* = *ANPP_woody* - *woody.mortality.agb*) disqualifies records from inclusion;
 (3) matching IPCC-defined thresholds for defining C pools (Table `r table_pools`), which may vary by country, can make the data far more relevant estimating forest C stock changes according to IPCC guidelines (e.g., using a 10 cm cutoff between dead wood and litter, presenting soil C to a depth of 30 cm).
 It should also be emphasized that reporting of 95% confidence intervals (or other metrics of error), when applicable, is highly desirable and makes the data more relevant to IPCC. 
