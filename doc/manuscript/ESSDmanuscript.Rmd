@@ -25,9 +25,6 @@ author:
   - given_name: Susan 
     surname: Cook-Patton
     affiliation: "5" 
-  - given_name: Camille
-    surname: Piponiot
-    affiliation: "6" 
 
 
 affiliation:
@@ -41,8 +38,7 @@ affiliation:
     address: Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, United States
   - code: 5
     address: The Nature Conservancy; Arlington VA 22203, USA
-  - code: 6
-    address: CIRAD, Montpellier, France
+
 abstract: |
 
 
