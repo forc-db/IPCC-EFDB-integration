@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{64}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -360,6 +360,26 @@ Fer, I., Gardella, A.~K., Shiklomanov, A.~N., Campbell, E.~E., Cowdery, E.~M.,
   Ecological Data-Model Integration, Global Change Biology, 27, 13--26,
   \doi{10.1111/gcb.15409}, 2021.
 
+\bibitem[{Freschet et~al.(2021)Freschet, Pag{\`e}s, Iversen, Comas, Rewald,
+  Roumet, Klime{\v s}ov{\'a}, Zadworny, Poorter, Postma, Adams,
+  {Bagniewska-Zadworna}, Bengough, Blancaflor, Brunner, Cornelissen, Garnier,
+  Gessler, Hobbie, Meier, Mommer, {Picon-Cochard}, Rose, Ryser,
+  {Scherer-Lorenzen}, Soudzilovskaia, Stokes, Sun, {Valverde-Barrantes},
+  Weemstra, Weigelt, Wurzburger, York, Batterman, {Gomes de Moraes}, Jane{\v
+  c}ek, Lambers, Salmon, Tharayil, and McCormack}]{freschet_starting_2021}
+Freschet, G.~T., Pag{\`e}s, L., Iversen, C.~M., Comas, L.~H., Rewald, B.,
+  Roumet, C., Klime{\v s}ov{\'a}, J., Zadworny, M., Poorter, H., Postma, J.~A.,
+  Adams, T.~S., {Bagniewska-Zadworna}, A., Bengough, A.~G., Blancaflor, E.~B.,
+  Brunner, I., Cornelissen, J. H.~C., Garnier, E., Gessler, A., Hobbie, S.~E.,
+  Meier, I.~C., Mommer, L., {Picon-Cochard}, C., Rose, L., Ryser, P.,
+  {Scherer-Lorenzen}, M., Soudzilovskaia, N.~A., Stokes, A., Sun, T.,
+  {Valverde-Barrantes}, O.~J., Weemstra, M., Weigelt, A., Wurzburger, N., York,
+  L.~M., Batterman, S.~A., {Gomes de Moraes}, M., Jane{\v c}ek, {\v S}.,
+  Lambers, H., Salmon, V., Tharayil, N., and McCormack, M.~L.: A Starting Guide
+  to Root Ecology: Strengthening Ecological Concepts and Standardising Root
+  Classification, Sampling, Processing and Trait Measurements, New Phytologist,
+  232, 973--1122, \doi{10.1111/nph.17572}, 2021.
+
 \bibitem[{Fukushima et~al.(2007)Fukushima, Kanzaki, Maung, and
   Minn}]{fukushima_recovery_2007}
 Fukushima, M., Kanzaki, M., Maung, T., and Minn, Y.: Recovery Process of Fallow
@@ -476,6 +496,12 @@ Jian, J., Vargas, R., {Anderson-Teixeira}, K., Stell, E., Herrmann, V., Horn,
   B.: A Restructured and Updated Global Soil Respiration Database
   ({{SRDB-V5}}), Earth System Science Data, 13, 255--267,
   \doi{10.5194/essd-13-255-2021}, 2021.
+
+\bibitem[{Keller et~al.(2001)Keller, Palace, and Hurtt}]{keller_biomass_2001}
+Keller, M., Palace, M., and Hurtt, G.: Biomass Estimation in the {{Tapajos
+  National Forest}}, {{Brazil}}: {{Examination}} of Sampling and Allometric
+  Uncertainties, Forest Ecology and Management, 154, 371--382,
+  \doi{10.1016/S0378-1127(01)00509-6}, 2001.
 
 \bibitem[{Kim et~al.(2022)Kim, Herrmann, Bareto, Calkins, {Gonzalez-Akre},
   Johnson, Jordan, Magee, McGregor, Montero, Novak, Rogers, Shue, and

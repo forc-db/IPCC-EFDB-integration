@@ -68,6 +68,7 @@ disclaimer: |
 acknowledgements: |
   We gratefully acknowledge the substantial contributions of Valentyna Slivinska and Sandro Federici for collaboration on the conception, design, and technical review of this project.
   Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have contributed to building the database.
+  Thank you to Avni Malhotra for helpful comments on an earlier draft of this manuscript.
   Funding for this study was provided by the Institute for Global Environmental Strategies, a Bezos Earth Fund award to The Nature Conservancy, and a Smithsonian Working Land and Seascapes grant.
 appendix: 
 output:
@@ -296,9 +297,9 @@ While trusted and standardized allometric models are becoming increasingly avail
 IPCC Tier 1 values currently draw on studies applying a variety of allometric models [e.g., @requenasuarez_estimating_2019; @rozendaal_aboveground_2022].
 
 Belowground biomass is defined as "all biomass of live roots" [@ipcc_good_2003;@ipcc_2006_2006], a definition including both coarse roots, whose biomass is typically estimated based on stem censuses and allometries or belowground to aboveground biomass ratios, and fine roots, whose biomass is typically estimated via extraction of roots from soil samples.
-The former, which is typically <40 t C ha^-1^ [@anderson-teixeira_carbon_2021], is methodologically linked to aboveground biomass estimates, sharing the same methodological sources of variation, but tending to be far more uncertain [@ref].
+The former, which is typically <40 t C ha^-1^ [@anderson-teixeira_carbon_2021], is methodologically linked to aboveground biomass estimates, sharing the same methodological sources of variation, and tending to be very uncertain [e.g., @keller_biomass_2001].
 Fine root biomass generally constitutes a much smaller C pool [typically <5 t C ha^-1^, @anderson-teixeira_carbon_2021], and IPCC guidance is that it can be excluded when fine roots cannot be distinguished empirically from soil organic matter or litter [@ipcc_2006_2006], which can be a painstaking process. 
-Field methods for estimating root biomass are highly variable [@ref].
+Field methods for estimating root biomass are highly variable [@freschet_starting_2021].
 IPCC's default method for Tier 1 estimates is to apply a ratio of belowground to aboveground biomass, with default factors defined based on ecological zone, continent, and forest age<!--IPCC table 4.4--> [@ipcc_2006_2006;@ipcc_2019_2019].
 
 ### Dead Organic Matter

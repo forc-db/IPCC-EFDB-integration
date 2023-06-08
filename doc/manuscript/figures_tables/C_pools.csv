@@ -5,7 +5,7 @@ aboveground biomass,all biomass of living vegetation,minimum size censused ,may 
 ,,biomass allometry,Tier 1 defaults draw on a variety of allometric models
 belowground biomass,all biomass of live roots ,all factors relevant to aboveground biomass,see above
 ,,allometry or assumed ratio of below- to above-ground biomass (R),can estimate based on R
-,,minimum root diameter,may exclude fine roots; suggested minimum diameter of 2 mm for fine roots
+,,minimum root diameter,may exclude fine roots; suggested diameter cutoff of 2 mm for fine roots
 dead wood ,"all non-living woody biomass above a specified diameter, aboveground or belowground",minimum diameter,"10 cm default, but may be chosen by country"
 ,,include belowground?,yes
 litter ,"all non-living biomass smaller than dead wood but larger than soil organic matter, in various states of decomposition both above or within the mineral or organic soil",maximum diameter (= minimum diameter for deadwood),"10 cm default, but may be chosen by country"

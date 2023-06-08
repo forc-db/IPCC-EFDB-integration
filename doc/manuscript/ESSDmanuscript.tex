@@ -100,7 +100,6 @@ using the Global Forest Carbon Database (ForC v4.0)}
 \Author[1,3]{Rebecca}{Banbury Morgan}
 \Author[4]{Ben}{Bond-Lamberty}
 \Author[5]{Susan}{Cook-Patton}
-\Author[6]{Camille}{Piponiot}
 
 
 \affil[1]{Center for Conservation Ecology, Smithsonian's National Zoo \&
@@ -111,7 +110,6 @@ Institute, Panama, Republic of Panama}
 \affil[4]{Joint Global Change Research Institute, Pacific Northwest
 National Laboratory, College Park, MD, United States}
 \affil[5]{The Nature Conservancy; Arlington VA 22203, USA}
-\affil[6]{CIRAD, Montpellier, France}
 
 \runningtitle{Informing forest CO\textsubscript{2} inventories with
 ForC}
@@ -149,7 +147,7 @@ ForC}
 
 \textbf{Abstract.} Forests are critical for climate change mitigation
 and constitute a substantial portion of planned net emissions reductions
-under the 2015 Paris Agreement. Yet, the efficacy of greenhouse gas
+under the 2015 Paris Agreement. However, the efficacy of greenhouse gas
 mitigation planning and reporting is dependent upon the quality of
 available emission factors data, including forest carbon (C) stocks and
 changes therein. Tens of thousands of relevant forest C estimates have
@@ -166,7 +164,7 @@ analysis, and reporting to improve inventories of forest-sector
 greenhouse gas emissions and removals. We begin by reconciling
 terminology and mapping ForC fields into EFDB. This process required
 some updates to the ForC database structure, leading to the release of a
-new version of ForC (v4.0; described here). As of May 23, 2023, ForC
+new version of ForC (v4.0; described here). As of June 08, 2023, ForC
 contained \textasciitilde19316 independent records relevant to EFDB,
 1438 of which have been submitted to date. Among the data in ForC, there
 is disproportionate representation of biomass (particularly aboveground)
@@ -175,14 +173,13 @@ relatively few or no records for net annual increments or C fluxes into
 (gains) or out of (losses) the IPCC-defined C pools. Geographic
 representation is also quite uneven, with the highest densities of
 relevant records in temperate forests, and with relatively scant
-representation of tropical forests in Africa and Asia. This distribution
-of records is generally reflected in the subset of records that have
-been submitted to EFDB to date. In the future, forest C estimates in
-EFDB can be improved through targeted research to fill critical gaps,
-reporting of information required by IPCC, and continued submission of
-data from scientific publications to the EFDB. Given that climate change
-is rapidly impacting the world's forests, timely reporting of recent
-estimates will be especially critical to accurate forest C inventories.
+representation of tropical forests in Africa and Asia. In the future,
+forest C estimates in EFDB can be improved through targeted research to
+fill critical gaps, reporting of information required by IPCC, and
+continued submission of data from scientific publications to the EFDB.
+Given that climate change is rapidly impacting the world's forests,
+timely reporting of recent estimates will be especially critical to
+accurate forest C inventories.
 
 \introduction[Introduction]
 
@@ -198,26 +195,26 @@ only,][]{harris_global_2021}. This has offset an estimated 10\% to 18\%
 of anthropogenic CO\textsubscript{2} emissions from fossil fuels and
 cement \citep{xu_changes_2021, harris_global_2021}, dramatically slowing
 the pace of atmospheric CO\textsubscript{2} accumulation and associated
-climate change. Going into the future, the fate of this important
-CO\textsubscript{2} sink is highly uncertain, depending both upon forest
-responses to climate change, which are likely to reduce the sink
-strength \citep{mcdowell_pervasive_2020, hammond_global_2022}, and on
-human conservation, restoration, and management of forests
+climate change. The future of this important CO\textsubscript{2} sink is
+highly uncertain, and depends upon both forest responses to climate
+change, which are likely to reduce the sink strength
+\citep{mcdowell_pervasive_2020, hammond_global_2022}, and human
+conservation, restoration, and management of forests
 \citep{ipcc_climate_2019, ipcc_climate_2022}.
 
-Reflecting their strong influence on Earth's climate, forests play a
-substantial role in international plans for climate change mitigation
-under the Paris Agreement \citep{unfccc_adoption_2015}. Forest
-conservation, reforestation, and improved sustainable management all
-have significant -- and relatively cost-effective -- potential as
-climate change mitigation options, with conservation and reforestation
-having the fourth and fifth largest net emission reduction potentials or
-all mitigation options \citep{ipcc_summary_2022}. As of 2016,
-forest-based mitigation accounted for 26\% of total planned greenhouse
-gas mitigation within Nationally Determined Contributions under the
-Paris Agreement \citep{grassi_key_2017}. Yet, envisioned forest-based
-climate change mitigation initiatives do not always correspond to actual
-emission reductions through on-the-ground implementation
+Forests play a substantial role in international plans for climate
+change mitigation under the Paris Agreement
+\citep{unfccc_adoption_2015}. Forest conservation, reforestation, and
+improved sustainable management all have significant -- and relatively
+cost-effective -- potential as climate change mitigation options, with
+conservation and reforestation having the fourth and fifth largest net
+emission reduction potentials or all mitigation options
+\citep{ipcc_summary_2022}. As of 2016, forest-based mitigation accounted
+for 26\% of total planned greenhouse gas mitigation within Nationally
+Determined Contributions under the Paris Agreement
+\citep{grassi_key_2017}. Yet, envisioned forest-based climate change
+mitigation initiatives do not always correspond to actual emission
+reductions through on-the-ground implementation
 \citep[e.g.,][]{badgley_systematic_2022}. One critical need for ensuring
 that forest-based climate change mitigation initiatives are effective is
 realistic planning and reporting, underlain by solid scientific data
@@ -240,15 +237,14 @@ published estimates \citep{ipcc_2019_2019, rozendaal_aboveground_2022}.
 Tier 1 values have improved over the years as more of the relevant
 underlying data has become available
 \citep{requenasuarez_estimating_2019, rozendaal_aboveground_2022}, but
-there remains room for continuous improvement as the science advances
-and datasets grow and become more widely accessible. For example, the
-year following the release of the latest IPCC guidelines, a more
-thorough analysis of C accumulation in regrowth forests found that
-IPCC's Tier 1 default values underestimated C sequestration by 32\% on
-average and failed to capture eight-fold variation within ecozones
-\citep{cook-patton_mapping_2020}. In addition, it was revealed that C
-stocks in mature African tropical montane forests were two-thirds higher
-than the IPCC Tier 1 values for these forests
+there remains room for improvement as datasets grow and become more
+widely accessible. For example, the year following the release of the
+latest IPCC guidelines, a more thorough analysis of C accumulation in
+regrowth forests found that IPCC's Tier 1 default values underestimated
+C sequestration by 32\% on average and failed to capture eight-fold
+variation within ecozones \citep{cook-patton_mapping_2020}. In addition,
+it was revealed that C stocks in mature African tropical montane forests
+were two-thirds higher than the IPCC Tier 1 values for these forests
 \citep{cuni-sanchez_high_2021}. This rapid evolution of scientific
 information on C cycling in forests is valuable for informing climate
 change mitigation efforts but requires improved mechanisms for
@@ -281,10 +277,10 @@ published estimates of forest C stocks, increments, and annual fluxes
 includes data ingested from individual publications and relevant
 databases, including the Global Reforestation Opportunity Assessment
 (GROA) database \citep[database doi:
-10.5281/zenodo.3983644]{cook-patton_mapping_2020}, the global soil
+10.5281/zenodo.3983644]{cook-patton_mapping_2020}, and the global soil
 respiration database
 \citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
-As of May 23, 2023, ForC contained 39848 records from 10589 plots in
+As of June 08, 2023, ForC contained 39848 records from 10589 plots in
 1535 distinct geographical areas, along with records of stand age and
 disturbance history. As such, ForC is positioned to improve
 forest-related estimates of CO\textsubscript{2} emissions and removals
@@ -297,10 +293,10 @@ CO\textsubscript{2} emissions and removals from forest in the context of
 typical forest C estimation methodologies; (2) describe mapping of ForC
 to IPCC's EFDB; (3) describe updates to ForC (ForC v4.0), most of which
 were implemented to facilitate data submission to EFDB; (4) summarize
-the data in ForC that's relevant to EFDB and records that have been
-submitted to date; and (5) provide recommendations as to how the
-scientific community can better provide useful data for forest C
-inventories under the Paris Agreement.
+the data in ForC relevant to EFDB and records that have been submitted
+to date; and (5) provide recommendations as to how the scientific
+community can better provide useful data for forest C inventories under
+the Paris Agreement.
 
 \section{IPCC methods and definitions}
 
@@ -349,7 +345,7 @@ belowground biomass & all biomass of live roots & all factors relevant to aboveg
 \hline
  &  & allometry or assumed ratio of below- to above-ground biomass (R) & can estimate based on R\\
 \hline
- &  & minimum root diameter & may exclude fine roots; suggested minimum diameter of 2 mm for fine roots\\
+ &  & minimum root diameter & may exclude fine roots; suggested diameter cutoff of 2 mm for fine roots\\
 \hline
 dead wood & all non-living woody biomass above a specified diameter, aboveground or belowground & minimum diameter & 10 cm default, but may be chosen by country\\
 \hline
@@ -407,8 +403,8 @@ estimates \citep{duncanson_aboveground_2021}.
 
 A universal challenge in estimating biomass (living or dead) from forest
 census data is applying appropriate allometric models to convert DBH
-measurements to biomass. Selection of allometric models has an enormous
-influence on estimates of biomass stocks, increments, of fluxes
+measurements to biomass, and such selection has an enormous influence on
+estimates of biomass stocks, increments, and fluxes
 \citep{clark_landscapescale_2000, clark_net_2001}. While trusted and
 standardized allometric models are becoming increasingly available
 \citep{chave_improved_2014, rejou-mechain_biomass_2017, gonzalez-akre_allodb_2022},
@@ -424,23 +420,23 @@ and fine roots, whose biomass is typically estimated via extraction of
 roots from soil samples. The former, which is typically \textless40 t C
 ha\textsuperscript{-1} \citep{anderson-teixeira_carbon_2021}, is
 methodologically linked to aboveground biomass estimates, sharing the
-same methodological sources of variation, but tending to be far more
-uncertain \citep{ref}. Fine root biomass generally constitutes a much
-smaller C pool \citep[typically \textless5 t C
-ha\textsuperscript{-1},][]{anderson-teixeira_carbon_2021}, and IPCC
+same methodological sources of variation, and tending to be very
+uncertain \citep[e.g.,][]{keller_biomass_2001}. Fine root biomass
+generally constitutes a much smaller C pool \citep[typically \textless5
+t C ha\textsuperscript{-1},][]{anderson-teixeira_carbon_2021}, and IPCC
 guidance is that it can be excluded when fine roots cannot be
 distinguished empirically from soil organic matter or litter
 \citep{ipcc_2006_2006}, which can be a painstaking process. Field
-methods for estimating root biomass are highly variable \citep{ref}.
-IPCC's default method for Tier 1 estimates is to apply a ratio of
-belowground to aboveground biomass, with default factors defined based
-on ecological zone, continent, and forest age
-\citep{ipcc_2006_2006, ipcc_2019_2019}.
+methods for estimating root biomass are highly variable
+\citep{freschet_starting_2021}. IPCC's default method for Tier 1
+estimates is to apply a ratio of belowground to aboveground biomass,
+with default factors defined based on ecological zone, continent, and
+forest age \citep{ipcc_2006_2006, ipcc_2019_2019}.
 
 \subsubsection{Dead Organic Matter}
 
 Dead organic matter includes all non-living biomass that is not within
-the mineral soil layer and smaller than the litter size threshold. It's
+the mineral soil layer and smaller than the litter size threshold. Its
 inclusion in inventories is not required under Tier 1 methodology for
 Forest Land remaining Forest Land (see section 2.2), but is required for
 land that has transitioned to or from forest within the past 20 years
@@ -526,7 +522,8 @@ approach for defining managed land or provide maps of managed land
 
 \section{Updates to ForC (ForC v4.0)}
 
-Previous versions of ForC
+This section describes changes relative to ForC v3.0
+\citep{anderson-teixeira_carbon_2021}. Previous versions of ForC
 \citep{anderson-teixeira_carbon_2016, anderson-teixeira_forc_2018, anderson-teixeira_carbon_2021}
 contained most of the information required by EFDB, and, more broadly,
 to inform C stock change calculations under the Paris Agreement.
@@ -539,9 +536,6 @@ we added or modified 18 fields (Appendix A), defined 15 new variables,
 implemented enhanced quality control, manually reviewed \textgreater1963
 records to obtain additional required information, and added 329 new
 records.
-
-This section describes changes relative to ForC v3.0
-\citep{anderson-teixeira_carbon_2021}.
 
 \subsection{New or modified fields}
 
@@ -568,7 +562,7 @@ name. Further, we added variables capturing the belowground component of
 woody mortality (\emph{woody.mortality\_root}) and the combined
 aboveground and belowground components of woody mortality
 (\emph{woody.mortality}). Although most of these variables lacked
-records in ForC as of May 23, 2023, their addition gave the structure
+records in ForC as of June 08, 2023, their addition gave the structure
 such that records can be populated over time. Finally, to provide better
 definition of the previously existing variable \emph{organic.layer},
 which has a nebulous definition that reflects the varied definitions
@@ -662,8 +656,8 @@ EFDB. Once converted into EFDB format, the records were reviewed and
 then sent to the IPCC's Technical Support Unit for submission to EFDB.
 Complete records needed to be reviewed by the EFDB editorial board and
 then posted in the database -- a process that lags behind submission of
-records and had not yet been completed for all records sent as of May
-23, 2023.
+records and had not yet been completed for all records sent as of June
+08, 2023.
 
 \subsection{Mapping ForC to EFDB}
 
@@ -769,7 +763,7 @@ geographical location and notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of May 23, 2023, ForC (v4.0) contained 32693 independent records
+As of June 08, 2023, ForC (v4.0) contained 32693 independent records
 (39848 total), 19316 of which were for the 42 variables relevant to EFDB
 (Fig. 1). These records were distributed across all forested continents
 and ecozones, albeit unevenly (Fig. 2). The largest number of records
@@ -935,9 +929,9 @@ delta.SOM / delta.SOC & 0 & 0 & 0 & 0\\
 
 \subsection{Data submissions to EFDB}
 
-As of May 23, 2023, we had reviewed or added 2292 EFDB-relevant records,
-1438 records of which were submitted to EFDB, and 376 of which have been
-reviewed, accepted, and posted (Figs. 2-3, Table 2). The 37\%
+As of June 08, 2023, we had reviewed or added 2292 EFDB-relevant
+records, 1438 records of which were submitted to EFDB, and 376 of which
+have been reviewed, accepted, and posted (Figs. 2-3, Table 2). The 37\%
 attenuation between records reviewed and those sent to EFDB was
 attributable to the presence of digitized records and records where a
 variable's value had been calculated as the sum or difference of related
@@ -1084,19 +1078,21 @@ presentation of results will determine whether the records meet the
 criteria for inclusion in EFDB. Some examples are as follows: (1)
 presenting data only in a figure makes them ineligible for inclusion in
 EFDB, whereas presentation in a table or supplementary data file allows
-inclusion; (2) direct presentation of all relevant variables allows
-inclusion, whereas presenting only components of variables of interest
-(e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or
-requiring simple mathematical operations to obtain a variable of
-interest (e.g., \emph{delta.agb} = \emph{ANPP\_woody} -
-\emph{woody.mortality.agb}) disqualifies records from inclusion; (3)
-matching IPCC-defined thresholds for defining C pools (Table 1), which
-may vary by country, can make the data far more relevant estimating
-forest C stock changes according to IPCC guidelines (e.g., using a 10 cm
-cutoff between dead wood and litter, presenting soil C to a depth of 30
-cm). It should also be emphasized that reporting of 95\% confidence
-intervals (or other metrics of error), when applicable, is highly
-desirable and makes the data more relevant to IPCC.
+inclusion while supporting FAIR
+(http://dx.doi.org/10.1038/d41586-019-01720-7) goals; (2) direct
+presentation of all relevant variables allows inclusion, whereas
+presenting only components of variables of interest (e.g., parsing
+litter into fine woody debris, OL, OF, and OH layers) or requiring
+simple mathematical operations to obtain a variable of interest (e.g.,
+\emph{delta.agb} = \emph{ANPP\_woody} - \emph{woody.mortality.agb})
+disqualifies records from inclusion; (3) matching IPCC-defined
+thresholds for defining C pools (Table 1), which may vary by country,
+can make the data far more relevant estimating forest C stock changes
+according to IPCC guidelines (e.g., using a 10 cm cutoff between dead
+wood and litter, presenting soil C to a depth of 30 cm). It should also
+be emphasized that reporting of 95\% confidence intervals (or other
+metrics of error), when applicable, is highly desirable and makes the
+data more relevant to IPCC.
 
 \begin{table}
 
@@ -1119,7 +1115,7 @@ belowground sampling & Select and report soil sampling increments to include a c
 \hline
 reporting variables & Present each EFDB- relevant variable individually, as opposed to requiring summation of related variables. & EFDB requires that values in the database be presented in the original article, and cannot accept subsequent calculations.\\
 \hline
-reporting estimates & Report all relevant values in tables, text, or supplementary tables/ data files, as opposed to in figures only. & EFDB does not acceptvalues digitized from figures.\\
+reporting estimates & Report all relevant values in tables, text, or supplementary tables/ data files, as opposed to in figures only. & EFDB does not accept values digitized from figures.\\
 \hline
 reporting confidence intervals & Report 95\% confidence intervals, standard error, or standard deviation and sample size. & EFDB requires confidence invervals whenever possible.\\
 \hline
@@ -1155,7 +1151,7 @@ methodological guidance provided by the IPCC. Here we have developed a
 framework for submitting these records to the EFDB, thus making those
 data more accessible for reporting CO\textsubscript{2} emissions and
 removals from forest land consistent with good practice in the IPCC
-guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of May 23, 2023,
+guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of June 08, 2023,
 we have submitted 1438 records to EFDB. Although this represents just
 7\% of relevant records in ForC, it substantially increases the number
 of forest land records in EFDB. The records submitted to EFDB and
@@ -1360,10 +1356,11 @@ repository within the ForC-db organization on GitHub
 \authorcontribution{KAT and VH conceived and designed the project; VH
 wrote the scripts for database management, data submission to EFDB, and
 the analyses presented here; MW, TR, and RBM added and reviewed ForC
-data, BBL and SCP contributed large databases to ForC; CP provided
-methodological expertise; KAT, VH, and MW prepared the first draft of
-the manuscript; all authors reviewed the results and approved the final
-version of the manuscript.} %% optional section
+data, BBL and SCP contributed large databases to ForC (EFDB and GROA,
+respectively); CP provided methodological expertise; KAT, VH, and MW
+prepared the first draft of the manuscript; all authors reviewed the
+results and approved the final version of the
+manuscript.} %% optional section
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \competinginterests{The authors declare no competing
@@ -1378,10 +1375,11 @@ Slivinska and Sandro Federici for collaboration on the conception,
 design, and technical review of this project. Thank you to all
 researchers who collected and published the data contained in ForC, and
 to all research assistants and collaborators who have contributed to
-building the database. Funding for this study was provided by the
-Institute for Global Environmental Strategies, a Bezos Earth Fund award
-to The Nature Conservancy, and a Smithsonian Working Land and Seascapes
-grant.
+building the database. Thank you to Avni Malhotra for helpful comments
+on an earlier draft of this manuscript. Funding for this study was
+provided by the Institute for Global Environmental Strategies, a Bezos
+Earth Fund award to The Nature Conservancy, and a Smithsonian Working
+Land and Seascapes grant.
 \end{acknowledgements}
 
 %% REFERENCES

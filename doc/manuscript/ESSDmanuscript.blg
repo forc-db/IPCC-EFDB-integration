@@ -4,7 +4,6 @@ The top-level auxiliary file: ESSDmanuscript.aux
 The style file: copernicus.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "ipcc_summary_2022"
-Warning--I didn't find a database entry for "ref"
 Warning--I didn't find a database entry for "refs"
 Warning--I didn't find a database entry for "labrière_forest_2023"
 Warning--can't use both author and editor fields in ipcc_good_2003
@@ -13,45 +12,45 @@ Warning--missing institution in ipcc_climate_2019
 Warning--empty journal in ipcc_climate_2022
 Warning--empty chapter and pages in merganicova_dadwood_2012
 Warning--empty journal in ogle_delineating_2018
-You've used 62 entries,
+You've used 64 entries,
             2819 wiz_defined-function locations,
-            1383 strings with 44825 characters,
-and the built_in function-call counts, 115559 in all, are:
-= -- 9412
-> -- 10866
+            1395 strings with 46245 characters,
+and the built_in function-call counts, 119947 in all, are:
+= -- 9799
+> -- 11259
 < -- 21
-+ -- 3907
-- -- 3566
-* -- 9560
-:= -- 14588
-add.period$ -- 62
-call.type$ -- 62
-change.case$ -- 1311
-chr.to.int$ -- 61
-cite$ -- 192
-duplicate$ -- 7843
-empty$ -- 4095
-format.name$ -- 3746
-if$ -- 22210
++ -- 4051
+- -- 3695
+* -- 9912
+:= -- 15118
+add.period$ -- 64
+call.type$ -- 64
+change.case$ -- 1358
+chr.to.int$ -- 63
+cite$ -- 198
+duplicate$ -- 8156
+empty$ -- 4242
+format.name$ -- 3881
+if$ -- 23055
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 1614
-newline$ -- 195
-num.names$ -- 250
-pop$ -- 5342
+missing$ -- 1671
+newline$ -- 201
+num.names$ -- 258
+pop$ -- 5538
 preamble$ -- 1
-purify$ -- 1309
+purify$ -- 1356
 quote$ -- 0
-skip$ -- 4349
+skip$ -- 4535
 stack$ -- 0
-substring$ -- 2429
-swap$ -- 6958
+substring$ -- 2539
+swap$ -- 7248
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 549
+type$ -- 567
 warning$ -- 6
-while$ -- 321
+while$ -- 333
 width$ -- 0
-write$ -- 726
-(There were 10 warnings)
+write$ -- 750
+(There were 9 warnings)
