@@ -393,7 +393,7 @@ We prioritized review of
 (2) studies with confidence intervals recorded in ForC (because uncertainty estimates are important to the IPCC),
 (3) original publications containing large numbers of EFDB-relevant records,
 and (4) records from tropical regions.
-The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@griscom_natural_2017;@griscom_national_2020], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@refs; @delima_making_2022], and tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on internationally defined IPCC default values [@romijn_assessing_2015].
+The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@griscom_natural_2017;@griscom_national_2020], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@anderson-teixeira_carbon_2021; @delima_making_2022], and tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on internationally defined IPCC default values [@romijn_assessing_2015].
 
 ## Addition of new records
 
@@ -554,7 +554,7 @@ While aboveground biomass stocks in particular have received -- and continue to 
 Other pools and variables remain very poorly quantified [Table `r table_variables`, @anderson-teixeira_carbon_2021], introducing substantive uncertainties into global forest C budgets [@pan_large_2011;@harris_global_2021].
 Furthermore, data distribution is uneven across forest types and geographical regions (Figs. `r fig_map`-`r fig_histograms`).
 For instance, data on C cycling of tropical forests -- particularly in Africa -- remains relatively sparse, in large part due to substantial barriers to data collection and distribution [@delima_making_2022].
-Significant investment in research and researchers focused on ground-based measurement of forest C in such regions will be important to filling knowledge gaps in forest C cycling [@delima_making_2022;@araza_decade_2023; @labrière_forest_2023].
+Significant investment in research and researchers focused on ground-based measurement of forest C in such regions will be important to filling knowledge gaps in forest C cycling [@delima_making_2022;@araza_decade_2023; @labriere_forest_2023].
 
 Several EFDB-relevant variables have not been calculated and presented as frequently as would be possible given existing forest census data and minimal extra research effort.
 For example, aboveground woody mortality (*woody.mortality_ag*) and aboveground biomass increment (*delta.agb*) can be calculated from the same census data as aboveground woody productivity (*ANPP_woody*), yet the latter has received far more research attention, and correspondingly has far more records in ForC [Table `r table_variables`, @anderson-teixeira_carbon_2021; but see @piponiot_distribution_2022]. 
@@ -564,7 +564,7 @@ In addition, standing dead trees are captured in most forest censuses and could 
 We recommend that, when possible, researchers calculate and report these variables, following the reporting guidelines specified in section `r section_data_reporting_needs`.
 
 Filling knowledge gaps in other EFDB-relevant variables will require more effort, but this effort is warranted given their importance for estimating forest C stock chnages.
-Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@duncanson_importance_2019; @labrière_forest_2023;@calders_laser_2022].
+Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@duncanson_importance_2019; @labriere_forest_2023;@calders_laser_2022].
 Given observations of increasing tree mortality in some forested regions [@mcdowell_pervasive_2020], better characterization of forest dead wood will be critical.
 Additionally, C stocks in forest organic horizons and soils can be quite substantial and highly uncertain in many parts of the world [@tifafi_large_2018].
 Significant investment in ground-based forest research will be critical to filling these gaps.
@@ -625,7 +625,7 @@ We view the system developed here for submitting ForC data to the IPCC EFDB as o
 # Appendix A. Updates to ForC {-}
 
 \captionsetup[table]{labelformat=empty}
-Table A1: **Table of changes to ForC fields.**
+Table A1: **Table of changes to ForC fields.** These are changes implemented between releases of v3.0 and v4.0. 
 ```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE, message = FALSE}
 library (readr)
 urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_management_records/record_of_changes.csv"

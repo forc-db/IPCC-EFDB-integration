@@ -3,54 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ESSDmanuscript.aux
 The style file: copernicus.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "ipcc_summary_2022"
-Warning--I didn't find a database entry for "refs"
-Warning--I didn't find a database entry for "labrière_forest_2023"
 Warning--can't use both author and editor fields in ipcc_good_2003
 Warning--empty booktitle in ipcc_2019_2019
 Warning--missing institution in ipcc_climate_2019
 Warning--empty journal in ipcc_climate_2022
+Warning--empty journal in ipcc_summary_2022
 Warning--empty chapter and pages in merganicova_dadwood_2012
 Warning--empty journal in ogle_delineating_2018
-You've used 71 entries,
+You've used 73 entries,
             2819 wiz_defined-function locations,
-            1441 strings with 49958 characters,
-and the built_in function-call counts, 133581 in all, are:
-= -- 10981
-> -- 12468
-< -- 21
-+ -- 4495
-- -- 4091
-* -- 11026
-:= -- 16778
-add.period$ -- 71
-call.type$ -- 71
-change.case$ -- 1504
-chr.to.int$ -- 70
-cite$ -- 219
-duplicate$ -- 9123
-empty$ -- 4719
-format.name$ -- 4298
-if$ -- 25676
-int.to.chr$ -- 2
+            1444 strings with 51348 characters,
+and the built_in function-call counts, 134984 in all, are:
+= -- 11064
+> -- 12598
+< -- 22
++ -- 4540
+- -- 4133
+* -- 11156
+:= -- 16987
+add.period$ -- 73
+call.type$ -- 73
+change.case$ -- 1522
+chr.to.int$ -- 71
+cite$ -- 226
+duplicate$ -- 9212
+empty$ -- 4794
+format.name$ -- 4344
+if$ -- 25942
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1849
-newline$ -- 222
-num.names$ -- 286
-pop$ -- 6168
+missing$ -- 1874
+newline$ -- 228
+num.names$ -- 294
+pop$ -- 6232
 preamble$ -- 1
-purify$ -- 1502
+purify$ -- 1520
 quote$ -- 0
-skip$ -- 5068
+skip$ -- 5102
 stack$ -- 0
-substring$ -- 2896
-swap$ -- 8132
+substring$ -- 2902
+swap$ -- 8181
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 630
-warning$ -- 6
-while$ -- 370
+type$ -- 648
+warning$ -- 7
+while$ -- 376
 width$ -- 0
-write$ -- 832
-(There were 9 warnings)
+write$ -- 853
+(There were 7 warnings)

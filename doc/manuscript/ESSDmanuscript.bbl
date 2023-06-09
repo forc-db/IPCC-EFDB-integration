@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -519,7 +519,7 @@ IPCC: Climate {{Change}} and {{Land}}: An {{IPCC}} Special Report on Climate
   {{Vyas}}, {{E}}. {{Huntley}}, {{K}}. {{Kissick}}, {{M}}. {{Belkacemi}},
   {{J}}. {{Malley}}, (Eds.)], Tech. rep., 2019{\natexlab{b}}.
 
-\bibitem[{IPCC(2022)}]{ipcc_climate_2022}
+\bibitem[{IPCC(2022{\natexlab{a}})}]{ipcc_climate_2022}
 IPCC: Climate {{Change}} 2022: {{Mitigation}} of {{Climate Change}}.
   {{Contribution}} of {{Working Group III}} to the {{Sixth Assessment Report}}
   of the {{Intergovernmental Panel}} on {{Climate Change}} [{{P}}.{{R}}.
@@ -528,7 +528,23 @@ IPCC: Climate {{Change}} 2022: {{Mitigation}} of {{Climate Change}}.
   {{Some}}, {{P}}. {{Vyas}}, {{R}}. {{Fradera}}, {{M}}. {{Belkacemi}}, {{A}}.
   {{Hasija}}, {{G}}. {{Lisboa}}, {{S}}. {{Luz}}, {{J}}. {{Malley}}, (Eds.)].
   {{Cambridge University Press}}, {{Cambridge}}, {{UK}} and {{New York}},
-  {{NY}}, {{USA}}., \doi{10.1017/9781009157926.001}, 2022.
+  {{NY}}, {{USA}}., \doi{10.1017/9781009157926.001}, 2022{\natexlab{a}}.
+
+\bibitem[{IPCC(2022{\natexlab{b}})}]{ipcc_summary_2022}
+IPCC: Summary for {{Policymakers}}. {{Policymakers}} [{{P}}.{{R}}. {{Shukla}},
+  {{J}}. {{Skea}}, {{A}}. {{Reisinger}}, {{R}}. {{Slade}}, {{R}}. {{Fradera}},
+  {{M}}. {{Pathak}}, {{A}}. {{Al Khourdajie}}, {{M}}. {{Belkacemi}}, {{R}}. van
+  {{Diemen}}, {{A}}. {{Hasija}}, {{G}}. {{Lisboa}}, {{S}}. {{Luz}}, {{J}}.
+  {{Malley}}, {{D}}. {{McCollum}}, {{S}}. {{Some}}, {{P}}. {{Vyas}}, (Eds.)].
+  {{In}}: {{Climate Change}} 2022: {{Mitigation}} of {{Climate Change}}.
+  {{Contribution}} of {{Working Group III}} to the {{Sixth Assessment Report}}
+  of the {{Intergovernmental Panel}} on {{Climate Change}} [{{P}}.{{R}}.
+  {{Shukla}}, {{J}}. {{Skea}}, {{R}}. {{Slade}}, {{A}}. {{Al Khourdajie}},
+  {{R}}. van {{Diemen}}, {{D}}. {{McCollum}}, {{M}}. {{Pathak}}, {{S}}.
+  {{Some}}, {{P}}. {{Vyas}}, {{R}}. {{Fradera}}, {{M}}. {{Belkacemi}}, {{A}}.
+  {{Hasija}}, {{G}}. {{Lisboa}}, {{S}}. {{Luz}}, {{J}}. {{Malley}}, (Eds.)].
+  {{Cambridge University Press}}, {{Cambridge}}, {{UK}} and {{New York}},
+  {{NY}}, {{USA}}. Doi: 10.1017/9781009157926.001, 2022{\natexlab{b}}.
 
 \bibitem[{Jian et~al.(2021)Jian, Vargas, {Anderson-Teixeira}, Stell, Herrmann,
   Horn, Kholod, Manzon, Marchesi, Paredes, and
@@ -554,6 +570,15 @@ Kim, A.~Y., Herrmann, V., Bareto, R., Calkins, B., {Gonzalez-Akre}, E.,
   {{GitHub Actions}} Continuous Integration to Reduce Error Rates in Ecological
   Data Collection, Methods in Ecology and Evolution, 13, 2572--2585,
   \doi{10.1111/2041-210X.13982}, 2022.
+
+\bibitem[{Labri{\`e}re et~al.(2023)Labri{\`e}re, Davies, Disney, Duncanson,
+  Herold, Lewis, Phillips, Quegan, Saatchi, Schepaschenko, Scipal, Sist, and
+  Chave}]{labriere_forest_2023}
+Labri{\`e}re, N., Davies, S.~J., Disney, M.~I., Duncanson, L.~I., Herold, M.,
+  Lewis, S.~L., Phillips, O.~L., Quegan, S., Saatchi, S.~S., Schepaschenko,
+  D.~G., Scipal, K., Sist, P., and Chave, J.: Toward a Forest Biomass Reference
+  Measurement System for Remote Sensing Applications, Global Change Biology,
+  n/a, \doi{10.1111/gcb.16497}, 2023.
 
 \bibitem[{Lutz et~al.(2018)Lutz, Furniss, Johnson, Davies, Allen, Alonso,
   Anderson-Teixeira, Andrade, Baltzer, Becker, Blomdahl, Bourg, Bunyavejchewin,
