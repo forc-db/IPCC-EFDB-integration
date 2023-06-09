@@ -9,4 +9,4 @@ This project is documented in our [in-prep manuscript](https://github.com/forc-d
 The workflow procedure is outlined in [workflow.md](https://github.com/forc-db/IPCC-EFDB-integration/tree/main).
 
 
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8021474.svg)](https://doi.org/10.5281/zenodo.8021474)
