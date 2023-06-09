@@ -761,7 +761,7 @@ geographical location and notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of June 09, 2023, ForC (v4.0) contained 32693 independent records
+As of June 09, 2023, ForC (v4.0) contained 32686 independent records
 (39848 total), 19316 of which were for the 42 variables relevant to EFDB
 (Fig. 1). These records were distributed across all forested continents
 and ecozones, albeit unevenly (Fig. 2). The largest number of records
@@ -1204,23 +1204,23 @@ Measurements & data.location.within.source & Location of data within the source 
 \hline
  & sd, se, lower95\%CI, upper 95\%CI & Standard deviation, standard error, and lower and upper 95 percent confidence intvervals, respectively. & replaces `stat` and `stat.name` & cleaner format; ability to handle assymetrical 95 percent confidence intervals\\
 \hline
- & mean.in.original.units, original.units & mean value and units presented in original publication & fields added & provide IPCC with original units, reduce errors/improve reproducibility\\
+ & mean.in.original.units, original.units & mean value and units presented in original publication & fields added & provide IPCC's EFDB with original units, reduce errors/improve reproducibility\\
 \hline
  & C.conversion.factor & Assumed/ measured C content of organic matter used to convert organic matter to C. & field added & track units conversion, allow back-calculation of OM if conversion factor deemed inappropriate\\
 \hline
-PFT & description & Definition of the pftcode at the community level. Differs from individual level in that properly describes mixed plant functional types. & field added & \\
+PFT & description & Definition of the pftcode at the community level. Differs from individual level in that properly describes mixed plant functional types. & field added & clarify PFT at community and individual levels\\
 \hline
- & description.individual & Definition of the pftcode at the individual plant level. & field name change (previously `description`) & \\
+ & description.individual & Definition of the pftcode at the individual plant level. & field name change (previously `description`) & clarify PFT at community and individual levels\\
 \hline
-Citations & citation.citation & Full citation. Most of these records are automatically generated in R based upon DOI lookup. & field added & field required by IPCC\\
+Citations & citation.citation & Full citation. Most of these records are automatically generated in R based upon DOI lookup. & field added & field required by IPCC's EFDB\\
 \hline
- & citation.language & Language of original publication, automatically generated based on the title and abstract, with some manual entries and corrections. & field added & field required by IPCC\\
+ & citation.language & Language of original publication, automatically generated based on the title and abstract, with some manual entries and corrections. & field added & field required by IPCC's EFDB\\
 \hline
- & citation.url & URL of original publication, generally retrieved automatically via URL lookup. & field added & field required by IPCC\\
+ & citation.url & URL of original publication, generally retrieved automatically via URL lookup. & field added & field required by IPCC's EFDB\\
 \hline
- & citation.abstract & Abstract, generally retrieved automatically via DOI lookup. & field added & field required by IPCC\\
+ & citation.abstract & Abstract, generally retrieved automatically via DOI lookup. & field added & field required by IPCC's EFDB\\
 \hline
- & source.type & citation source type & field added & field required by IPCC\\
+ & source.type & citation source type & field added & field required by IPCC's EFDB\\
 \hline
  & pdf.in.repository & Indicates whether pdf of original study has been retrieved and saved in ForC's reference repository & field added & housekeeping\\
 \hline
