@@ -61,7 +61,7 @@ availability:
   #code: |
   #data: |
   codedata: |
-    All code and data are openly available. The ForC database and associated code is available via the ForC repository within the ForC-db organization on GitHub (https://github.com/forc-db/ForC), and the version used here (ForC v4.0) archived in Zenodo (DOI: TBD). The data and code associated with data submission to EFDB and preparation of this manuscript are available via the the IPCC-EFDB-integration repository within the ForC-db organization on GitHub  (https://github.com/forc-db/IPCC-EFDB-integration). 
+    All code and data are openly available. The ForC database and associated code is available via the ForC repository within the ForC-db organization on GitHub (https://github.com/forc-db/ForC), and the version used here (ForC v4.0) archived in Zenodo (DOI: TBD). The data and code associated with data submission to EFDB and preparation of this manuscript are available via the the IPCC-EFDB-integration repository within the ForC-db organization on GitHub  (https://github.com/forc-db/IPCC-EFDB-integration) and archived in Zenodo (DOI: 10.5281/zenodo.8021474). 
 authorcontribution: |
   KAT and VH conceived and designed the project; VH wrote the scripts for database management, data submission to EFDB, and the analyses presented here; MW, TR, and RBM added and reviewed ForC data, BBL and SCP contributed large databases to ForC (EFDB and GROA, respectively); CP provided methodological expertise; KAT, VH, and MW prepared the first draft of the manuscript; all authors reviewed the results and approved the final version of the manuscript.
 disclaimer: |

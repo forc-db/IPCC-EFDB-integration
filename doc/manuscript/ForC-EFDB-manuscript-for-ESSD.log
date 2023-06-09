@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JUN 2023 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JUN 2023 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3119,13 +3119,13 @@ es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
  []
 
 [26] [27] [28] [29] [30] [31]
-Underfull \hbox (badness 1360) in paragraph at lines 741--745
+Underfull \hbox (badness 1360) in paragraph at lines 744--748
 []\T1/ptm/m/n/9 Romijn, E., Lan-ti-can, C. B., Herold, M., Lindquist, E., Ochie
 ng, R., Wi-jaya, A., Mur-di-yarso, D., and Ver-chot, L.: As-sess-ing
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 741--745
+Underfull \hbox (badness 1132) in paragraph at lines 744--748
 \T1/ptm/m/n/9 Change in Na-tional For-est Mon-i-tor-ing Ca-pac-i-ties of 99 Tro
 p-i-cal Coun-tries, For-est Ecol-ogy and Man-age-ment, 352, 109--123,
  []
@@ -3138,17 +3138,17 @@ Class copernicus Warning: No section Abstract; proceeding without it.
 Package caption Warning: Unused \captionsetup[table] on input line 1179.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1419.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1419.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1421.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1421.
 (./ForC-EFDB-manuscript-for-ESSD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1419.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1419.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1419.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1421.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1421.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1421.
  ) 
 Here is how much of TeX's memory you used:
  14966 strings out of 480608
  202142 string characters out of 5903631
- 590194 words of memory out of 5000000
+ 590264 words of memory out of 5000000
  30391 multiletter control sequences out of 15000+600000
  580621 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3163,10 +3163,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ForC-EFDB-manuscript-for-ESSD.pdf (33 pages, 646465 bytes).
+Output written on ForC-EFDB-manuscript-for-ESSD.pdf (33 pages, 646646 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
- 651 compressed objects within 7 object streams
+ 709 PDF objects out of 1000 (max. 8388607)
+ 652 compressed objects within 7 object streams
  148 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
