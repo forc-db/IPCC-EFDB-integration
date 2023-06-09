@@ -1239,17 +1239,16 @@ the public GitHub repository associated with the project,
 IPCC-EFDB-integration repository within the ForC-db organization (file
 \emph{ForC-EFDB\_mapping.csv} available at
 \url{https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv}).
-See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
 \begingroup\fontsize{8}{10}\selectfont
 
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
 \hline
-\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required*}\\
 \hline
 \endfirsthead
 \multicolumn{5}{@{}l}{\textit{(continued)}}\\
 \hline
-\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required}\\
+\textbf{ForC table} & \textbf{ForC field} & \textbf{EFDB field} & \textbf{Usage} & \textbf{Required*}\\
 \hline
 \endhead
 Measurements & measurement.ID & Other Properties & direct mapping & (no)\\
@@ -1292,7 +1291,7 @@ Sites & site.ID, sites.sitename & Other Properties & direct mapping & (no)\\
 \hline
  & FAO.ecozone & Parameters/ Conditions & direct mapping & auto\\
 \hline
-History & date, hist.cat, hist.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies & used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies & (yes)/no**\\
+History & date, hist.cat, hist.type & 1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies & used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies & most recent severe disturbance: (yes) / other history events: no\\
 \hline
  & plot.area & Other Properties & direct mapping & no\\
 \hline
@@ -1327,15 +1326,12 @@ Citations & citation.citation & Full Technical Reference & direct mapping & yes/
 \end{longtabu}
 \endgroup{}
 
-`Required' field indicates whether the field is required by EFDB: yes =
-value required; (yes) = input required, missing value acceptable if not
-reported; auto = present within ForC infrasructure, and therefore will
-always be exported to EFDB ; (no) = not required for EFDB, but required
-for ForC and therefore will always be exported to EFDB; no = not
-required, but exported to EFDB when a value is present.
-
-** `(yes)' for most recent severe disturbance; `no' for other history
-events
+* \emph{Required} field indicates whether the field is required by EFDB:
+yes = value required; (yes) = input required, missing value acceptable
+if not reported; auto = present within ForC infrasructure, and therefore
+will always be exported to EFDB ; (no) = not required for EFDB, but
+required for ForC and therefore will always be exported to EFDB; no =
+not required, but exported to EFDB when a value is present.
 
 
 

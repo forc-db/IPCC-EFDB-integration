@@ -649,14 +649,17 @@ knitr::kable(record_of_changes, format = "latex",
 
 # Appendix B. Mapping ForC to EFDB {-}
 
-Table B1: **Mapping of ForC fields to EFDB.** Details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). See footnotes at end of table (STILL NEED TO BE PROPERLY INSERTED).
+Table B1: **Mapping of ForC fields to EFDB.** Details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
 ```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
 library(knitr)
 library(kableExtra)
 
 ForC_variables_included <- read.csv("figures_tables/ForC_fields_included.csv")
 names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
-ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
+column_names <- names(ForC_variables_included) # Define column names
+column_names[5] <- "Required*" # Add asterisk for footnote
+names(ForC_variables_included) <- column_names# Set column names of the matrix
+ForC_variables_included <- ForC_variables_included[c(1:5)] 
 
 knitr::kable(ForC_variables_included, format = "latex",
              longtable = TRUE) %>%
@@ -665,8 +668,7 @@ knitr::kable(ForC_variables_included, format = "latex",
 kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
 
 ```
-'Required' field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
+\* *Required* field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
 
-** '(yes)' for most recent severe disturbance; 'no' for other history events
 
 
