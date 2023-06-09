@@ -191,10 +191,6 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 
 ```
 
-****
-*THIS IS AN IN-PREP MANUSCRIPT.*
-
-****
 
 **Abstract.**
 Forests are critical for climate change mitigation and constitute a substantial portion of planned net emissions reductions under the 2015 Paris Agreement.
