@@ -654,7 +654,7 @@ Table B1: **Mapping of ForC fields to EFDB.** Details documented in the public G
 library(knitr)
 library(kableExtra)
 
-ForC_variables_included <- read.csv("figures_tables/ForC_variables_included.csv")
+ForC_variables_included <- read.csv("figures_tables/ForC_fields_included.csv")
 names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
 ForC_variables_included <- ForC_variables_included[c(1:5)] #include all fields but TO_DO
 
