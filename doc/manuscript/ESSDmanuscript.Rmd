@@ -204,7 +204,7 @@ Many of these data have, however, been compiled in the Global Forest C database 
 Here, we develop and document a process for semi-automated submission of data from ForC into the EFDB, assess the data available and submitted to date, and provide recommendations for improving forest data collection, analysis, and reporting to improve inventories of forest-sector greenhouse gas emissions and removals.
 We begin by reconciling terminology and mapping ForC fields into EFDB.
 This process required some updates to the ForC database structure, leading to the release of a new version of ForC (v4.0; described here).
-As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_sent_to_EFDB` of which have been submitted to date.
+As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_sent_to_EFDB` of which have undergone necessary review and been submitted to date.
 Among the data in ForC, there is disproportionate representation of biomass (particularly aboveground) stocks, with far fewer records for dead organic matter and soil C, and relatively few or no records for net annual increments or C fluxes into or out of the IPCC-defined C pools.
 Geographic representation is also quite uneven, with the highest densities of relevant records in temperate forests, and with relatively scant representation of tropical forests in Africa and Asia. 
 In the future, forest C estimates in EFDB can be improved through targeted research to fill critical gaps, reporting of information required by IPCC, and continued submission of data from scientific publications to the EFDB.
@@ -218,7 +218,7 @@ This has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estima
 The future of this important CO~2~ sink is highly uncertain, and depends upon both forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020;@hammond_global_2022], and human conservation, restoration, and management of forests [@ipcc_climate_2019;@ipcc_climate_2022].
 
 Forests play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
-Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options, with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
+Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options [@roe_landbased_2021], with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
 As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].
 Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022].
 One critical need for ensuring that forest-based climate change mitigation initiatives are effective is realistic planning and reporting, underlain by solid scientific data [@anderson-teixeira_effective_2022; @deng_comparing_2021].
@@ -228,7 +228,7 @@ Under this guidance, greenhouse gas inventories include all managed land, includ
 The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [@ipcc_agriculture_2006; @ipcc_2019_2019].
 A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone [@fao_global_2012] and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
 Tier 1 values have improved over the years as more of the relevant underlying data has become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement as datasets grow and become more widely accessible.
-For example, the year following the release of the latest IPCC guidelines, a more thorough analysis of C accumulation in regrowth forests found that IPCC's Tier 1 default values underestimated C sequestration by 32% on average and failed to capture eight-fold variation within ecozones [@cook-patton_mapping_2020]. 
+For example, the year following the release of the latest IPCC guidelines, a more thorough analysis of C accumulation in regrowth forests found that IPCC's Tier 1 default failed to capture eight-fold variation within ecozones [@cook-patton_mapping_2020]. 
 In addition, it was revealed that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
 This rapid evolution of scientific information on C cycling in forests is valuable for informing climate change mitigation efforts but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
 Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @cuni-sanchez_high_2021] implies that it is useful for practitioners to have access to locally-specific information, when available.
@@ -285,13 +285,13 @@ knitr::kable(C_pools_table, format = "latex",
 Biomass includes living vegetation, above- and below-ground, both woody and herbaceous, but with a focus on woody plants and trees given their much greater potential to sequester large amounts of C [@ipcc_2006_2006].
 
 Aboveground biomass, which is typically <200 t C ha^-1^ but can exceed 700 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by the IPCC as "all biomass of living vegetation above the soil including stems, stumps, branches, bark, seeds, and foliage" [@ipcc_good_2003;@ipcc_2006_2006].
-IPCC's guidance is that the understory may be excluded the understory if it constitutes a "minor" component [defined as < 25 - 30 % of emissions/removals for the overall category, @ipcc_2006_2006], and where a commonly applied minimum size sampling threshold for mature forests would be 10 cm stem diameter at breast height (DBH).
+IPCC's guidance is that the understory may be excluded if it constitutes a "minor" component [defined as < 25 - 30 % of emissions/removals for the overall category, @ipcc_2006_2006], and where a commonly applied minimum size sampling threshold for mature forests would be 10 cm stem diameter at breast height (DBH).
 A recent study characterizing the contributions of trees in different DBH classes to ecosystem C stocks and fluxes found that trees 1 - 10 cm DBH contributed up to ~8% aboveground biomass, ~17% aboveground woody net primary productivity ($ANPP_{woody.stem}$), and ~20% woody mortality ($M_{woody}$) of mature closed-canopy forests worldwide [@piponiot_distribution_2022], and therefore stems < 10 cm DBH can usually be considered a minor component of aboveground biomass for these forests.
 In regrowth forests, woodlands, or savannas, small trees and shrubs contribute a much larger proportion of C stocks and fluxes [@lutz_global_2018; @piponiot_distribution_2022; @hughes_biomass_1999], and, correspondingly, biomass estimates for these ecosystems tend include smaller size classes. 
 While IPCC guidance specifies that all living vegetation should be included in biomass estimates, forest censuses and biomass estimates do not consistently include life forms other than dicot trees (e.g., lianas, ferns, palms, bamboo), although these do tend to be censused when they constitute a large proportion of the biomass [e.g., @fukushima_recovery_2007].
 Further, it is important to note that the IPCC definition of aboveground biomass excludes standing dead wood, which is included in remote sensing biomass estimates [@duncanson_aboveground_2021].
 
-A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometric models to convert DBH measurements to biomass, and such selection has an enormous influence on estimates of biomass stocks, increments, and fluxes [@clark_landscapescale_2000;@clark_net_2001].
+A universal challenge in estimating biomass (living or dead) from forest census data is applying appropriate allometric models to convert DBH measurements to biomass, and such selection has an enormous influence on estimates of biomass stocks, increments, and fluxes [@clark_landscapescale_2000;@clark_net_2001;@calders_laser_2022].
 While trusted and standardized allometric models are becoming increasingly available [@chave_improved_2014;@rejou-mechain_biomass_2017;@gonzalez-akre_allodb_2022], large uncertainties remain.
 IPCC Tier 1 values currently draw on studies applying a variety of allometric models [e.g., @requenasuarez_estimating_2019; @rozendaal_aboveground_2022].
 
@@ -303,7 +303,7 @@ IPCC's default method for Tier 1 estimates is to apply a ratio of belowground to
 
 ### Dead Organic Matter
 
-Dead organic matter includes all non-living biomass that is not within the mineral soil layer and smaller than the litter size threshold. 
+Dead organic matter includes all non-living biomass larger than the litter size threshold. 
 Its inclusion in inventories is not required under Tier 1 methodology for Forest Land remaining Forest Land (see section `r section_land_use_categories`), but is required for land that has transitioned to or from forest within the past 20 years [@ipcc_2006_2006].
 
 Dead wood, which is typically <50 t C ha^-1^ but can exceed 150 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCC as "all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil" [@ipcc_good_2003;@ipcc_2006_2006]. 
@@ -314,7 +314,7 @@ In turn, dead wood pools are poorly characterized in large-scale forest C budget
 
 Litter, which is typically <40 t C ha^-1^ but can exceed 100 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCC as including "all non-living  biomass  with  a  diameter  less  than  a  minimum  diameter  chosen  by  the  country  (for  example 10 cm), lying dead, in various states of decomposition above the mineral or organic soil" [@ipcc_good_2003;@ipcc_2006_2006].
 As noted above, live fine roots may be included in litter when difficult to separate empirically.
-The definition includes the entire O horizion, including litter (OL), fumic (OF), and humic (OH) layers, in addition to litter embedded within the soil.
+The definition includes the entire O horizon, including litter (OL), fumic (OF), and humic (OH) layers, in addition to litter embedded within the soil.
 This definition contrasts with empirical studies that focus on aboveground litter, often including only the OL layer in the definition of litter, and do not always specify the components included.
 Similar to dead wood, litter is poorly characterized in large-scale forest C budgets [@pan_large_2011;@harris_global_2021], and IPCC's latest Tier 1 default values are based on just 1-7 references per climate zone [Table 2.2 in @ipcc_2019_2019].<!--table 2.2-->
 
@@ -393,7 +393,7 @@ We prioritized review of
 (2) studies with confidence intervals recorded in ForC (because uncertainty estimates are important to the IPCC),
 (3) original publications containing large numbers of EFDB-relevant records,
 and (4) records from tropical regions.
-The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@refs], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@refs; @delima_making_2022], and tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on internationally defined IPCC default values [@romijn_assessing_2015].
+The latter criteria was motivated by the fact that although tropical forest is the single most important biome for climate change mitigation [@griscom_natural_2017;@griscom_national_2020], ground-based data on tropical forest C cycling tends to be more scarce due to a variety of challenges [@refs; @delima_making_2022], and tropical countries are more likely to apply Tier 1 methodology that bases forest C budgets on internationally defined IPCC default values [@romijn_assessing_2015].
 
 ## Addition of new records
 
@@ -544,7 +544,7 @@ Future efforts to review studies for submission should optimize for representati
 
 In addition to the large potential to expand EFDB using records already in ForC, there are innumerous published EFDB-relevant forest C data that are not currently included in ForC, with more being published on a nearly daily basis. 
 Coverage of particular variables or regions could be vastly improved through systematic review of the literature.
-Indeed, recent efforts have compiled large databases of relevant data from monoculture plantation forests [@bukoski_rates_2022], ... *others?  (SUSAN)*. 
+Indeed, recent efforts have compiled large databases of relevant data from monoculture plantation forests [@bukoski_rates_2022] and mixed species plantation forests [@feng_multispecies_2022;@warner_higher_2022], and such a compilation is in works for agroforestry (Susan Cook-Patton, unpublished data). 
 Beyond expanding collections of relevant forest C records, such reviews are valuable for assessing the availability of published records and identifying variables and regions that require additional data collection and analysis. 
 
 ## Data collection and analysis needs
@@ -559,12 +559,12 @@ Significant investment in research and researchers focused on ground-based measu
 Several EFDB-relevant variables have not been calculated and presented as frequently as would be possible given existing forest census data and minimal extra research effort.
 For example, aboveground woody mortality (*woody.mortality_ag*) and aboveground biomass increment (*delta.agb*) can be calculated from the same census data as aboveground woody productivity (*ANPP_woody*), yet the latter has received far more research attention, and correspondingly has far more records in ForC [Table `r table_variables`, @anderson-teixeira_carbon_2021; but see @piponiot_distribution_2022]. 
 Similarly, live coarse root biomass, total biomass, and changes in both of these pools could in theory be estimated in parallel with aboveground biomass, with the greatest barrier being that allometric models for estimating root biomass are not as reliable or easily available as are those for aboveground biomass [@chave_improved_2014;@rejou-mechain_biomass_2017;@gonzalez-akre_allodb_2022].
-However, while equations for estimating root (and thereby total) biomass require improvement, they do exist for many forest types [e.g., @brassard_coarse_2011; @chojnacky_updated_2014;  @waring_overlooking_2017].
+However, while equations for estimating root (and thereby total) biomass require improvement, they do exist for many forest types [e.g., @brassard_coarse_2011; @chojnacky_updated_2014;  @waring_overlooking_2017; @mokany_critical_2006].
 In addition, standing dead trees are captured in most forest censuses and could be used to estimate standing dead wood, although additional data on breakage would be needed for accurate estimates. 
 We recommend that, when possible, researchers calculate and report these variables, following the reporting guidelines specified in section `r section_data_reporting_needs`.
 
 Filling knowledge gaps in other EFDB-relevant variables will require more effort, but this effort is warranted given their importance for estimating forest C stock chnages.
-Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@duncanson_importance_2019; @labrière_forest_2023].
+Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@duncanson_importance_2019; @labrière_forest_2023;@calders_laser_2022].
 Given observations of increasing tree mortality in some forested regions [@mcdowell_pervasive_2020], better characterization of forest dead wood will be critical.
 Additionally, C stocks in forest organic horizons and soils can be quite substantial and highly uncertain in many parts of the world [@tifafi_large_2018].
 Significant investment in ground-based forest research will be critical to filling these gaps.

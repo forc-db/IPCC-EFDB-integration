@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{71}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -126,6 +126,14 @@ Bukoski, J.~J., {Cook-Patton}, S.~C., Melikov, C., Ban, H., Chen, J.~L.,
   Goldman, E.~D., Harris, N.~L., and Potts, M.~D.: Rates and Drivers of
   Aboveground Carbon Accumulation in Global Monoculture Plantation Forests,
   Nature Communications, 13, 1--13, \doi{10.1038/s41467-022-31380-7}, 2022.
+
+\bibitem[{Calders et~al.(2022)Calders, Verbeeck, Burt, Origo, Nightingale,
+  Malhi, Wilkes, Raumonen, Bunce, and Disney}]{calders_laser_2022}
+Calders, K., Verbeeck, H., Burt, A., Origo, N., Nightingale, J., Malhi, Y.,
+  Wilkes, P., Raumonen, P., Bunce, R. G.~H., and Disney, M.: Laser Scanning
+  Reveals Potential Underestimation of Biomass Carbon in Temperate Forest,
+  Ecological Solutions and Evidence, 3, e12\,197,
+  \doi{10.1002/2688-8319.12197}, 2022.
 
 \bibitem[{Carmona et~al.(2002)Carmona, Armesto, Aravena, and
   P{\'e}rez}]{carmona_coarse_2002}
@@ -347,6 +355,14 @@ FAO: Global {{Ecological Zones}} for {{FAO Forest Reporting}}: 2010 Update,
   Tech. Rep. Forest Resources Assessment Working Paper 179, {FOOD AND
   AGRICULTURE ORGANIZATION OF THE UNITED NATIONS}, {Rome}, 2012.
 
+\bibitem[{Feng et~al.(2022)Feng, Schmid, Loreau, Forrester, Fei, Zhu, Tang,
+  Zhu, Hong, Ji, Shi, Su, Xiong, Xiao, Wang, and Fang}]{feng_multispecies_2022}
+Feng, Y., Schmid, B., Loreau, M., Forrester, D.~I., Fei, S., Zhu, J., Tang, Z.,
+  Zhu, J., Hong, P., Ji, C., Shi, Y., Su, H., Xiong, X., Xiao, J., Wang, S.,
+  and Fang, J.: Multispecies Forest Plantations Outyield Monocultures across a
+  Broad Range of Conditions, Science, 376, 865--868,
+  \doi{10.1126/science.abm6363}, 2022.
+
 \bibitem[{Fer et~al.(2021)Fer, Gardella, Shiklomanov, Campbell, Cowdery, Kauwe,
   Desai, Duveneck, Fisher, Haynes, Hoffman, Johnston, Kooper, LeBauer,
   Mantooth, Parton, Poulter, Quaife, Raiho, Schaefer, Serbin, Simkins, Wilcox,
@@ -417,6 +433,32 @@ Grassi, G., House, J., Dentener, F., Federici, S., {den~Elzen}, M., and Penman,
   J.: The Key Role of Forests in Meeting Climate Targets Requires Science for
   Credible Mitigation, Nature Climate Change, 7, 220--226,
   \doi{10.1038/nclimate3227}, 2017.
+
+\bibitem[{Griscom et~al.(2017)Griscom, Adams, Ellis, Houghton, Lomax, Miteva,
+  Schlesinger, Shoch, Siikam{\"a}ki, Smith, Woodbury, Zganjar, Blackman,
+  Campari, Conant, Delgado, Elias, Gopalakrishna, Hamsik, Herrero, Kiesecker,
+  Landis, Laestadius, Leavitt, Minnemeyer, Polasky, Potapov, Putz, Sanderman,
+  Silvius, Wollenberg, and Fargione}]{griscom_natural_2017}
+Griscom, B.~W., Adams, J., Ellis, P.~W., Houghton, R.~A., Lomax, G., Miteva,
+  D.~A., Schlesinger, W.~H., Shoch, D., Siikam{\"a}ki, J.~V., Smith, P.,
+  Woodbury, P., Zganjar, C., Blackman, A., Campari, J., Conant, R.~T., Delgado,
+  C., Elias, P., Gopalakrishna, T., Hamsik, M.~R., Herrero, M., Kiesecker, J.,
+  Landis, E., Laestadius, L., Leavitt, S.~M., Minnemeyer, S., Polasky, S.,
+  Potapov, P., Putz, F.~E., Sanderman, J., Silvius, M., Wollenberg, E., and
+  Fargione, J.: Natural Climate Solutions, Proceedings of the National Academy
+  of Sciences, 114, 11\,645--11\,650, \doi{10.1073/pnas.1710465114}, 2017.
+
+\bibitem[{Griscom et~al.(2020)Griscom, Busch, {Cook-Patton}, Ellis, Funk,
+  Leavitt, Lomax, Turner, Chapman, Engelmann, Gurwick, Landis, Lawrence, Malhi,
+  Schindler~Murray, Navarrete, Roe, Scull, Smith, Streck, Walker, and
+  Worthington}]{griscom_national_2020}
+Griscom, B.~W., Busch, J., {Cook-Patton}, S.~C., Ellis, P.~W., Funk, J.,
+  Leavitt, S.~M., Lomax, G., Turner, W.~R., Chapman, M., Engelmann, J.,
+  Gurwick, N.~P., Landis, E., Lawrence, D., Malhi, Y., Schindler~Murray, L.,
+  Navarrete, D., Roe, S., Scull, S., Smith, P., Streck, C., Walker, W.~S., and
+  Worthington, T.: National Mitigation Potential from Natural Climate Solutions
+  in the Tropics, Philosophical Transactions of the Royal Society B: Biological
+  Sciences, 375, 20190\,126, \doi{10.1098/rstb.2019.0126}, 2020.
 
 \bibitem[{Hammond et~al.(2022)Hammond, Williams, Abatzoglou, Adams, Klein,
   L{\'o}pez, {S{\'a}enz-Romero}, Hartmann, Breshears, and
@@ -571,6 +613,12 @@ Mergani{\v c}ov{\'a}, K., Mergani{\v c}, J., Svoboda, M., Ba{\v c}e, R., and
   {\v S}ebe{\v n}, {\relax VV}.: Dadwood in Forest Ecosystems, {BoD
   \textendash{} Books on Demand}, 2012.
 
+\bibitem[{Mokany et~al.(2006)Mokany, Raison, and
+  Prokushkin}]{mokany_critical_2006}
+Mokany, K., Raison, R.~J., and Prokushkin, A.~S.: Critical Analysis of Root :
+  Shoot Ratios in Terrestrial Biomes, Global Change Biology, 12, 84--96,
+  \doi{10.1111/j.1365-2486.2005.001043.x}, 2006.
+
 \bibitem[{NISAR(2018)}]{nisar_nasaisro_2018}
 NISAR: {{NASA-ISRO SAR}} ({{NISAR}}) {{Mission Science Users}}' {{Handbook}},
   Tech. rep., {NASA Jet Propulsion Laboratory}, 2018.
@@ -649,6 +697,20 @@ Requena~Suarez, D., Rozendaal, D. M.~A., Sy, V.~D., Phillips, O.~L.,
   Using Forest Plot Data, Global Change Biology, 25, 3609--3624,
   \doi{10.1111/gcb.14767}, 2019.
 
+\bibitem[{Roe et~al.(2021)Roe, Streck, Beach, Busch, Chapman, Daioglou,
+  Deppermann, Doelman, {Emmet-Booth}, Engelmann, Fricko, Frischmann, Funk,
+  Grassi, Griscom, Havlik, Hanssen, Humpen{\"o}der, Landholm, Lomax, Lehmann,
+  Mesnildrey, Nabuurs, Popp, Rivard, Sanderman, Sohngen, Smith, Stehfest,
+  Woolf, and Lawrence}]{roe_landbased_2021}
+Roe, S., Streck, C., Beach, R., Busch, J., Chapman, M., Daioglou, V.,
+  Deppermann, A., Doelman, J., {Emmet-Booth}, J., Engelmann, J., Fricko, O.,
+  Frischmann, C., Funk, J., Grassi, G., Griscom, B., Havlik, P., Hanssen, S.,
+  Humpen{\"o}der, F., Landholm, D., Lomax, G., Lehmann, J., Mesnildrey, L.,
+  Nabuurs, G.-J., Popp, A., Rivard, C., Sanderman, J., Sohngen, B., Smith, P.,
+  Stehfest, E., Woolf, D., and Lawrence, D.: Land-Based Measures to Mitigate
+  Climate Change: {{Potential}} and Feasibility by Country, Global Change
+  Biology, 27, 6025--6058, \doi{10.1111/gcb.15873}, 2021.
+
 \bibitem[{Romijn et~al.(2015)Romijn, Lantican, Herold, Lindquist, Ochieng,
   Wijaya, Murdiyarso, and Verchot}]{romijn_assessing_2015}
 Romijn, E., Lantican, C.~B., Herold, M., Lindquist, E., Ochieng, R., Wijaya,
@@ -710,6 +772,16 @@ Waring, B.~G. and Powers, J.~S.: Overlooking What Is Underground:
   {{Root}}:Shoot Ratios and Coarse Root Allometric Equations for Tropical
   Forests, Forest Ecology and Management, 385, 10--15,
   \doi{10.1016/j.foreco.2016.11.007}, 2017.
+
+\bibitem[{Warner et~al.(2022)Warner, {Cook-Patton}, Lewis, Brown, Koricheva,
+  Eisenhauer, Ferlian, Gravel, Hall, Jactel, Mayoral, Meredieu, Messier,
+  Paquette, Parker, Potvin, Reich, and Hector}]{warner_higher_2022}
+Warner, E., {Cook-Patton}, S.~C., Lewis, O.~T., Brown, N., Koricheva, J.,
+  Eisenhauer, N., Ferlian, O., Gravel, D., Hall, J.~S., Jactel, H., Mayoral,
+  C., Meredieu, C., Messier, C., Paquette, A., Parker, W.~C., Potvin, C.,
+  Reich, P.~B., and Hector, A.: Higher Aboveground Carbon Stocks in
+  Mixed-Species Planted Forests than Monocultures \textendash{} a
+  Meta-Analysis, \doi{10.1101/2022.01.17.476441}, 2022.
 
 \bibitem[{Wickham and RStudio(2022)}]{wickham_rvest_2022}
 Wickham, H. and RStudio: Rvest: {{Easily Harvest}} ({{Scrape}}) {{Web Pages}},
