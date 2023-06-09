@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JUN 2023 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JUN 2023 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3138,12 +3138,12 @@ Class copernicus Warning: No section Abstract; proceeding without it.
 Package caption Warning: Unused \captionsetup[table] on input line 1179.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1418.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1418.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1419.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1419.
 (./ForC-EFDB-manuscript-for-ESSD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1418.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1418.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1418.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1419.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1419.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1419.
  ) 
 Here is how much of TeX's memory you used:
  14966 strings out of 480608
@@ -3163,7 +3163,7 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ForC-EFDB-manuscript-for-ESSD.pdf (33 pages, 646410 bytes).
+Output written on ForC-EFDB-manuscript-for-ESSD.pdf (33 pages, 646465 bytes).
 PDF statistics:
  708 PDF objects out of 1000 (max. 8388607)
  651 compressed objects within 7 object streams

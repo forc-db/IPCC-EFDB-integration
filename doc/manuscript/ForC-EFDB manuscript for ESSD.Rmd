@@ -69,7 +69,7 @@ acknowledgements: |
   We gratefully acknowledge the substantial contributions of Valentyna Slivinska and Sandro Federici for collaboration on the conception, design, and technical review of this project.
   Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have contributed to building the database.
   Thank you to Avni Malhotra for helpful comments on an earlier draft of this manuscript.
-  Funding for this study was provided by the Institute for Global Environmental Strategies, a Bezos Earth Fund award to The Nature Conservancy, and a Smithsonian Working Land and Seascapes grant.
+  Funding for this study was provided by the Smithsonian (Forest Global Earth Observatory, Smithsonian Working Land and Seascapes); a Bezos Earth Fund grant to the Nature Conservancy, with a sub-grant to NZCBI; and the Institute for Global Environmental Strategies.
 appendix: 
 output:
   rticles::copernicus_article: default
