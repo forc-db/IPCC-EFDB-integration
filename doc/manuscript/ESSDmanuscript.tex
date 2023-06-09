@@ -164,7 +164,7 @@ analysis, and reporting to improve inventories of forest-sector
 greenhouse gas emissions and removals. We begin by reconciling
 terminology and mapping ForC fields into EFDB. This process required
 some updates to the ForC database structure, leading to the release of a
-new version of ForC (v4.0; described here). As of June 08, 2023, ForC
+new version of ForC (v4.0; described here). As of June 09, 2023, ForC
 contained \textasciitilde19316 independent records relevant to EFDB,
 1438 of which have been submitted to date. Among the data in ForC, there
 is disproportionate representation of biomass (particularly aboveground)
@@ -266,9 +266,8 @@ comparison for external parties to evaluate these inventories. The EFDB
 encourages researchers to submit estimates of emission factors or other
 related parameters from peer-reviewed journal papers or other accepted
 sources for inclusion in the database. In the case of forests, emission
-factors include C stocks, net increments (``stock changes''), and fluxes
-(``gains'' and ``losses'') for various pools
-\citep{ipcc_2006_2006, ipcc_2019_2019}.
+factors include C stocks, net annual increments, and annual fluxes for
+various pools \citep{ipcc_2006_2006, ipcc_2019_2019}.
 
 The Global Forest Carbon Database, ForC
 (\url{https://forc-db.github.io/}), is the largest collection of
@@ -280,7 +279,7 @@ databases, including the Global Reforestation Opportunity Assessment
 10.5281/zenodo.3983644]{cook-patton_mapping_2020}, and the global soil
 respiration database
 \citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
-As of June 08, 2023, ForC contained 39848 records from 10589 plots in
+As of June 09, 2023, ForC contained 39848 records from 10589 plots in
 1535 distinct geographical areas, along with records of stand age and
 disturbance history. As such, ForC is positioned to improve
 forest-related estimates of CO\textsubscript{2} emissions and removals
@@ -388,10 +387,10 @@ stocks and fluxes found that trees 1 - 10 cm DBH contributed up to
 woody net primary productivity (\(ANPP_{woody.stem}\)), and
 \textasciitilde20\% woody mortality (\(M_{woody}\)) of mature
 closed-canopy forests worldwide \citep{piponiot_distribution_2022}, and
-therefore stems \textless{} 10 cm DBH can generally be considered a
-minor component of aboveground biomass for these forests. In regrowth
-forests, woodlands, or savannas, small trees and shrubs contribute a
-much larger proportion of C stocks and fluxes
+therefore stems \textless{} 10 cm DBH can usually be considered a minor
+component of aboveground biomass for these forests. In regrowth forests,
+woodlands, or savannas, small trees and shrubs contribute a much larger
+proportion of C stocks and fluxes
 \citep{lutz_global_2018, piponiot_distribution_2022, hughes_biomass_1999},
 and, correspondingly, biomass estimates for these ecosystems tend
 include smaller size classes. While IPCC guidance specifies that all
@@ -565,7 +564,7 @@ name. Further, we added variables capturing the belowground component of
 woody mortality (\emph{woody.mortality\_root}) and the combined
 aboveground and belowground components of woody mortality
 (\emph{woody.mortality}). Although most of these variables lacked
-records in ForC as of June 08, 2023, their addition gave the structure
+records in ForC as of June 09, 2023, their addition gave the structure
 such that records can be populated over time. Finally, to provide better
 definition of the previously existing variable \emph{organic.layer},
 which has a nebulous definition that reflects the varied definitions
@@ -660,7 +659,7 @@ then sent to the IPCC's Technical Support Unit for submission to EFDB.
 Complete records needed to be reviewed by the EFDB editorial board and
 then posted in the database -- a process that lags behind submission of
 records and had not yet been completed for all records sent as of June
-08, 2023.
+09, 2023.
 
 \subsection{Mapping ForC to EFDB}
 
@@ -694,21 +693,20 @@ land classification (section 4.1.2).
 With input from the IPCC's Technical Support Unit, we reviewed the list
 of ForC variables to identify those that were relevant to EFDB and to
 appropriately map them into EFDB (Fig. 1). For each C pool (Table 1), we
-identified variables representing organic matter or C stocks, stock
-changes (a.k.a. ``net annual increments'' by IPCC, ``increments'' in
-ForC), gains (a.k.a. ``gross annual increments'' by IPCC, ``fluxes'' in
-ForC), and losses (``fluxes'' in ForC). As described in section 3.2, we
-also defined 15 new EFDB-relevant variables that were not previously
-represented in ForC. It is important to note that the correspondence of
-ForC variables to IPCC criteria often depends upon measurement protocols
-(``important sources of estimate variation'' in Table 1). For example,
-ForC records of biomass and dead wood vary in the minimum stem diameter
-censused, such that some records would match the IPCC criteria whereas
-others would not. Information on minimum diameters censused and other
-important sources of methodological variation are recorded as covariates
-in ForC and mapped into the EFDB field \emph{Other Properties} (Appendix
-B). Details on the mapping of ForC variables to EFDB -- including
-associated covariates, IPCC pools (Table 1) and relevant equations
+identified variables representing organic matter or C stocks, net annual
+increments, influxes (a.k.a. ``gross annual increments'' by IPCC), and
+outfluxes. As described in section 3.2, we also defined 15 new
+EFDB-relevant variables that were not previously represented in ForC. It
+is important to note that the correspondence of ForC variables to IPCC
+criteria often depends upon measurement protocols (``important sources
+of estimate variation'' in Table 1). For example, ForC records of
+biomass and dead wood vary in the minimum stem diameter censused, such
+that some records would match the IPCC criteria whereas others would
+not. Information on minimum diameters censused and other important
+sources of methodological variation are recorded as covariates in ForC
+and mapped into the EFDB field \emph{Other Properties} (Appendix B).
+Details on the mapping of ForC variables to EFDB -- including associated
+covariates, IPCC pools (Table 1) and relevant equations
 \citep{ipcc_2006_2006} -- are documented in the file
 ForC\_variables\_mapping.csv in the GitHub repository associated with
 this publication IPCC-EFDB-integration repository in ForC-db
@@ -766,7 +764,7 @@ geographical location and notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of June 08, 2023, ForC (v4.0) contained 32693 independent records
+As of June 09, 2023, ForC (v4.0) contained 32693 independent records
 (39848 total), 19316 of which were for the 42 variables relevant to EFDB
 (Fig. 1). These records were distributed across all forested continents
 and ecozones, albeit unevenly (Fig. 2). The largest number of records
@@ -932,7 +930,7 @@ delta.SOM / delta.SOC & 0 & 0 & 0 & 0\\
 
 \subsection{Data submissions to EFDB}
 
-As of June 08, 2023, we had reviewed or added 2292 EFDB-relevant
+As of June 09, 2023, we had reviewed or added 2292 EFDB-relevant
 records, 1438 records of which were submitted to EFDB, and 376 of which
 have been reviewed, accepted, and posted (Figs. 2-3, Table 2). The 37\%
 attenuation between records reviewed and those sent to EFDB was
@@ -1154,7 +1152,7 @@ methodological guidance provided by the IPCC. Here we have developed a
 framework for submitting these records to the EFDB, thus making those
 data more accessible for reporting CO\textsubscript{2} emissions and
 removals from forest land consistent with good practice in the IPCC
-guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of June 08, 2023,
+guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of June 09, 2023,
 we have submitted 1438 records to EFDB. Although this represents just
 7\% of relevant records in ForC, it substantially increases the number
 of forest land records in EFDB. The records submitted to EFDB and

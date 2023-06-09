@@ -236,7 +236,7 @@ Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patt
 To improve data accessibility for preparing greenhouse gas estimates, the IPCC created the Emission Factor Database (EFDB; [https://www.ipcc-nggip.iges.or.jp/EFDB/main.php](https://www.ipcc-nggip.iges.or.jp/EFDB/main.php)), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 The EFDB can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
 The EFDB encourages researchers to submit estimates of emission factors or other related parameters from peer-reviewed journal papers or other accepted sources for inclusion in the database. 
-In the case of forests, emission factors include C stocks, net increments ("stock changes"), and fluxes ("gains" and "losses") for various pools [@ipcc_2006_2006;@ipcc_2019_2019].
+In the case of forests, emission factors include C stocks, net annual increments, and annual fluxes for various pools [@ipcc_2006_2006;@ipcc_2019_2019].
 
 The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021].
 ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], and the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
@@ -422,7 +422,7 @@ There were two cases in which more complex mapping was required: (1) mapping of 
 ### Carbon cycle variables
 
 With input from the IPCC's Technical Support Unit, we reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into EFDB (Fig. `r fig_variable_mapping`).
-For each C pool (Table `r table_pools`), we identified variables representing organic matter or C stocks, stock changes (a.k.a. "net annual increments" by IPCC, "increments" in ForC), gains (a.k.a. "gross annual increments" by IPCC, "fluxes" in ForC), and losses ("fluxes" in ForC).
+For each C pool (Table `r table_pools`), we identified variables representing organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes.
 As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented in ForC. 
 It is important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
 For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
