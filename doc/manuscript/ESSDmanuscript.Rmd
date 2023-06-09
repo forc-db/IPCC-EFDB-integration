@@ -508,7 +508,7 @@ knitr::kable(C_variables_table[,-1], format = "latex",
 
 As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed or added `r n_records_reviewed_or_added` EFDB-relevant records, `r n_records_sent_to_EFDB` records of which were submitted to EFDB, and `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`).
 The `r round((n_records_reviewed_or_added -n_records_sent_to_EFDB )/n_records_reviewed_or_added,2)*100`% attenuation between records reviewed and those sent to EFDB was attributable to the presence of digitized records and records where a variable's value had been calculated as the sum or difference of related variables rather than presented directly in the text.
-The discrepancy between the number of records sent and that posted to EFDB is primarily attributable to the time required for the IPCC to review the records, and it is not expected that many -- if any -- records will be rejected.
+The discrepancy between the number of records sent and that posted to EFDB is primarily attributable to the time required for the IPCC to review and post the records, and also because a minority of records were deemed not applicable to EFDB by the review panel.
 
 The ForC records submitted to EFDB were broadly distributed across Earth's forests (Fig. `r fig_map`).
 However, the density of these records was very unevenly distributed across continents, biomes, and forest types and was not proportional to the numbers of relevant records in ForC (Fig. `r fig_histograms`).
