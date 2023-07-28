@@ -158,7 +158,7 @@ analysis, and reporting to improve inventories of forest-sector
 greenhouse gas emissions and removals. We begin by reconciling
 terminology and mapping ForC fields into EFDB. This process required
 some updates to the ForC database structure, leading to the release of a
-new version of ForC (v4.0; described here). As of June 09, 2023, ForC
+new version of ForC (v4.0; described here). As of July 28, 2023, ForC
 contained \textasciitilde19316 independent records relevant to EFDB,
 1438 of which have undergone necessary review and been submitted to
 date. Among the data in ForC, there is disproportionate representation
@@ -265,14 +265,14 @@ various pools \citep{ipcc_2006_2006, ipcc_2019_2019}.
 The Global Forest Carbon Database, ForC
 (\url{https://forc-db.github.io/}), is the largest collection of
 published estimates of forest C stocks, increments, and annual fluxes
-\citep{anderson-teixeira_forc_2018, anderson-teixeira_carbon_2021}. ForC
-includes data ingested from individual publications and relevant
+\citep{anderson-teixeira_forc_2018, anderson-teixeira_carbon_2021, anderson-teixeira_forcdb_2023}.
+ForC includes data ingested from individual publications and relevant
 databases, including the Global Reforestation Opportunity Assessment
 (GROA) database \citep[database doi:
 10.5281/zenodo.3983644]{cook-patton_mapping_2020}, and the global soil
 respiration database
 \citep[SRDB-V5,][]{bond-lamberty_global_2010, jian_restructured_2021}.
-As of June 09, 2023, ForC contained 39848 records from 10589 plots in
+As of July 28, 2023, ForC contained 39848 records from 10589 plots in
 1535 distinct geographical areas, along with records of stand age and
 disturbance history. As such, ForC is positioned to improve
 forest-related estimates of CO\textsubscript{2} emissions and removals
@@ -554,7 +554,7 @@ name. Further, we added variables capturing the belowground component of
 woody mortality (\emph{woody.mortality\_root}) and the combined
 aboveground and belowground components of woody mortality
 (\emph{woody.mortality}). Although most of these variables lacked
-records in ForC as of June 09, 2023, their addition gave the structure
+records in ForC as of July 28, 2023, their addition gave the structure
 such that records can be populated over time. Finally, to provide better
 definition of the previously existing variable \emph{organic.layer},
 which has a nebulous definition that reflects the varied definitions
@@ -649,8 +649,8 @@ EFDB. Once converted into EFDB format, the records were reviewed and
 then sent to the IPCC's Technical Support Unit for submission to EFDB.
 Complete records needed to be reviewed by the EFDB editorial board and
 then posted in the database -- a process that lags behind submission of
-records and had not yet been completed for all records sent as of June
-09, 2023.
+records and had not yet been completed for all records sent as of July
+28, 2023.
 
 \subsection{Mapping ForC to EFDB}
 
@@ -755,7 +755,7 @@ geographical location and notable disturbance events.
 
 \subsection{ForC v4.0 contents}
 
-As of June 09, 2023, ForC (v4.0) contained 32686 independent records
+As of July 28, 2023, ForC (v4.0) contained 32686 independent records
 (39848 total), 19316 of which were for the 42 variables relevant to EFDB
 (Fig. 1). These records were distributed across all forested continents
 and ecozones, albeit unevenly (Fig. 2). The largest number of records
@@ -921,7 +921,7 @@ delta.SOM / delta.SOC & 0 & 0 & 0 & 0\\
 
 \subsection{Data submissions to EFDB}
 
-As of June 09, 2023, we had reviewed or added 2292 EFDB-relevant
+As of July 28, 2023, we had reviewed or added 2292 EFDB-relevant
 records, 1438 records of which were submitted to EFDB, and 376 of which
 have been reviewed, accepted, and posted (Figs. 2-3, Table 2). The 37\%
 attenuation between records reviewed and those sent to EFDB was
@@ -1147,7 +1147,7 @@ methodological guidance provided by the IPCC. Here we have developed a
 framework for submitting these records to the EFDB, thus making those
 data more accessible for reporting CO\textsubscript{2} emissions and
 removals from forest land consistent with good practice in the IPCC
-guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of June 09, 2023,
+guidelines \citep{ipcc_2006_2006, ipcc_2019_2019}. As of July 28, 2023,
 we have submitted 1438 records to EFDB. Although this represents just
 7\% of relevant records in ForC, it substantially increases the number
 of forest land records in EFDB. The records submitted to EFDB and
@@ -1333,11 +1333,13 @@ not required, but exported to EFDB when a value is present.
 database and associated code are available via the ForC repository
 within the ForC-db organization on GitHub
 (https://github.com/forc-db/ForC), and the version used here (ForC v4.0)
-is archived in Zenodo (DOI: TBD). The data and code associated with data
-submission to EFDB and preparation of this manuscript are available via
-the the IPCC-EFDB-integration repository within the ForC-db organization
-on GitHub (https://github.com/forc-db/IPCC-EFDB-integration) and
-archived in Zenodo (DOI:
+is archived in Zenodo \citep[DOI:
+10.5281/zenodo.8020861]{anderson-teixeira_forcdb_2023}. The data and
+code associated with data submission to EFDB and preparation of this
+manuscript are available via the the IPCC-EFDB-integration repository
+within the ForC-db organization on GitHub
+(https://github.com/forc-db/IPCC-EFDB-integration) and archived in
+Zenodo (DOI:
 10.5281/zenodo.8021474).} %% use this section when having data sets and software code available
 
 

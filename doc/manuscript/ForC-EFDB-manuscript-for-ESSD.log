@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  9 JUN 2023 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  28 JUL 2023 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3069,7 +3069,7 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 54
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [7]
-<figures_tables/C_variable_mapping.png, id=289, 781.92125pt x 871.255pt>
+<figures_tables/C_variable_mapping.png, id=291, 781.92125pt x 871.255pt>
 File: figures_tables/C_variable_mapping.png Graphic file (type png)
 <use figures_tables/C_variable_mapping.png>
 Package pdftex.def Info: figures_tables/C_variable_mapping.png  used on input l
@@ -3083,7 +3083,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [8] [9 <./figures_tables/C_variable_mapping.png>] [10] [11]
-<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=361, 480
+<figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png, id=363, 480
 .8364pt x 284.5029pt>
 File: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png Graphic
  file (type png)
@@ -3092,7 +3092,7 @@ Package pdftex.def Info: figures_tables/World_Map_of_sites_with_FAO_and_IPCC_da
 ta_sent.png  used on input line 777.
 (pdftex.def)             Requested size: 426.79134pt x 252.53389pt.
 [12]
-<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=368, 578.1
+<figures_tables/Histogram_n_Relevant_and_Transferred_Records.png, id=370, 578.1
 6pt x 650.43pt>
 File: figures_tables/Histogram_n_Relevant_and_Transferred_Records.png Graphic f
 ile (type png)
@@ -3101,31 +3101,40 @@ Package pdftex.def Info: figures_tables/Histogram_n_Relevant_and_Transferred_Re
 cords.png  used on input line 782.
 (pdftex.def)             Requested size: 426.79134pt x 480.13954pt.
 [13 <./figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png>] [14 
-<./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15] [16] 
-[17] [18] [19] [20] [21
+<./figures_tables/Histogram_n_Relevant_and_Transferred_Records.png>] [15] [16]
+
+Package natbib Warning: Citation `labriere_forest_2023' on page 17 undefined on
+ input line 1024.
+
+[17]
+
+Package natbib Warning: Citation `labriere_forest_2023' on page 18 undefined on
+ input line 1059.
+
+[18] [19] [20] [21
 
 ] [22] [23
 
 ] [24] (./ForC-EFDB-manuscript-for-ESSD.bbl [25]
-Underfull \hbox (badness 3128) in paragraph at lines 99--102
+Underfull \hbox (badness 3128) in paragraph at lines 109--112
 []\T1/ptm/m/n/9 Bailey, L. D. and van de Pol, M.: Climwin: An R Tool-box for Cl
 i-mate Win-dow Anal-y-sis, PLOS ONE, 11, e0167980,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 []\T1/ptm/m/n/9 Bond-Lamberty, B. and Thom-son, A.: A Global Database of Soil R
 es-pi-ra-tion Data, Bio-geo-sciences, 7, 1915--1926,
  []
 
 [26] [27] [28] [29] [30] [31]
-Underfull \hbox (badness 1360) in paragraph at lines 744--748
+Underfull \hbox (badness 1360) in paragraph at lines 745--749
 []\T1/ptm/m/n/9 Romijn, E., Lan-ti-can, C. B., Herold, M., Lindquist, E., Ochie
 ng, R., Wi-jaya, A., Mur-di-yarso, D., and Ver-chot, L.: As-sess-ing
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 744--748
+Underfull \hbox (badness 1132) in paragraph at lines 745--749
 \T1/ptm/m/n/9 Change in Na-tional For-est Mon-i-tor-ing Ca-pac-i-ties of 99 Tro
 p-i-cal Coun-tries, For-est Ecol-ogy and Man-age-ment, 352, 109--123,
  []
@@ -3138,17 +3147,20 @@ Class copernicus Warning: No section Abstract; proceeding without it.
 Package caption Warning: Unused \captionsetup[table] on input line 1179.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1421.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1421.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1423.
 (./ForC-EFDB-manuscript-for-ESSD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1421.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1421.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1421.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1423.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1423.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1423.
  ) 
 Here is how much of TeX's memory you used:
  14966 strings out of 480608
- 202142 string characters out of 5903631
- 590264 words of memory out of 5000000
+ 202178 string characters out of 5903631
+ 590309 words of memory out of 5000000
  30391 multiletter control sequences out of 15000+600000
  580621 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3163,10 +3175,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ForC-EFDB-manuscript-for-ESSD.pdf (33 pages, 646665 bytes).
+Output written on ForC-EFDB-manuscript-for-ESSD.pdf (33 pages, 646731 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 652 compressed objects within 7 object streams
+ 706 PDF objects out of 1000 (max. 8388607)
+ 649 compressed objects within 7 object streams
  148 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
