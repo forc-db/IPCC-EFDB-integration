@@ -45,6 +45,8 @@ Susan Cook-Patton^5^
 *corresponding author: teixeirak@si.edu
 
 <!--
+special issue: Anthromes and terrestrial carbon: from the deep past to net-zero
+special issue description: https://www.newphytologist.org/news/view/332#submission-procedure
 journal: Plants, People, Planet
 author guidelines: https://nph-onlinelibrary-wiley-com.smithsonian.idm.oclc.org/hub/journal/25722611/about/author-guidelines
 Manuscript Category: Methods and Techniques
