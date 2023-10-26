@@ -1,0 +1,67 @@
+---
+title: ''
+output: 
+    pdf_document
+bibliography: references.bib
+csl: new-phytologist.csl
+
+---
+
+
+```{r eval = TRUE, echo=FALSE, warning=FALSE, results='hide'}
+
+
+#Appendices
+appendix_ForC_updates = "Methods S1"
+appendix_IPCC_definitions = "Notes S1"
+table_ForCchanges = "Table S1"
+table_ForCfieldmapping = "Table S2"
+
+
+
+```
+
+
+
+**`r table_ForCchanges`. Updates to ForC field implemented between releases of v3.0 and v4.0.** 
+```{r table_ForCchanges, eval = TRUE, echo=FALSE, warning=FALSE, message = FALSE}
+library (readr)
+urlfile="https://raw.githubusercontent.com/forc-db/ForC/master/database_management_records/record_of_changes.csv"
+record_of_changes <-read_csv(url(urlfile))
+names(record_of_changes) <- stringr::str_replace_all(names(record_of_changes), "\\.", " ")
+record_of_changes <- record_of_changes[c(1:5)] #include all fields but date of change
+#record_of_changes<- record_of_changes[which(!grep("housekeeping",record_of_changes$Motivation)) , c(1:5)]  #trying to exclude rows for which Motivation = "housekeeping", but this is not working
+record_of_changes[is.na(record_of_changes)]<- "" #replace NAs with blanks
+
+library(knitr)
+library(kableExtra)
+knitr::kable(record_of_changes, format = "latex",
+             longtable = TRUE) %>%
+  kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header")) %>%
+  kable_styling(font_size = 8) %>%
+  row_spec(0, bold = TRUE)
+```
+
+\clearpage
+
+
+**`r table_ForCfieldmapping`. Mapping of ForC fields to EFDB.** Details documented in the public GitHub repository associated with the project, IPCC-EFDB-integration repository within the ForC-db organization (file *ForC-EFDB_mapping.csv* available at [https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv](https://github.com/forc-db/IPCC-EFDB-integration/blob/main/doc/ForC-EFDB_mapping/ForC-EFDB_mapping.csv)). 
+```{r table_ForCfieldmapping, eval = TRUE, echo=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+
+ForC_variables_included <- read.csv("figures_tables/ForC_fields_included.csv")
+names(ForC_variables_included) <- stringr::str_replace_all(names(ForC_variables_included), "\\.", " ")
+column_names <- names(ForC_variables_included) # Define column names
+column_names[5] <- "Required*" # Add asterisk for footnote
+names(ForC_variables_included) <- column_names# Set column names of the matrix
+ForC_variables_included <- ForC_variables_included[c(1:5)] 
+
+knitr::kable(ForC_variables_included, format = "latex",
+             longtable = TRUE) %>%
+  row_spec(0, bold = TRUE) %>%
+  kable_styling(font_size = 8) %>%
+kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", "hold position"))
+
+```
+\* *Required* field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
