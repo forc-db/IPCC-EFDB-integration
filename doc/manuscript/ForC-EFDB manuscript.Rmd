@@ -44,7 +44,13 @@ Susan Cook-Patton^5^
 
 *corresponding author: teixeirak@si.edu
 
-
+<!--
+journal: Plants, People, Planet
+author guidelines: https://nph-onlinelibrary-wiley-com.smithsonian.idm.oclc.org/hub/journal/25722611/about/author-guidelines
+Manuscript Category: Methods and Techniques
+Length: usually in the region of 3000–4000 words
+Display Items: 6
+-->
 
 ```{r eval = TRUE, echo=FALSE, warning=FALSE, results='hide'}
 #Tables
