@@ -237,19 +237,25 @@ Here, we
 
 # Materials and Methods
 
+Major steps included
+(1) mapping ForC into EFDB, including aligning ForC and IPCC definitions (summarized in `r appendix_IPCC_definitions`),
+(2) revising ForC v3.0 to support semi-automated submissions to EFDB, yielding ForC v4.0 (detailed in `r appendix_ForC_updates`), and
+(3) submitting data to EFDB. 
+These steps are detailed below.
+
 ## Mapping ForC to EFDB
 
-The mapping of ForC fields into EFDB fields is summarized in `r table_ForCfieldmapping`.
+With input from the IPCC's Technical Support Unit and referencing IPCC guidance [@refs], we mapped ForC fields into EFDB fields, as summarized in `r table_ForCfieldmapping`.
 For the majority of fields, contents of the field in ForC was copied directly into an EFDB field, either as the only contents of that field or as part of a composite record.
 For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field *Region/Regional conditions* (`r table_ForCfieldmapping`).
 In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field *Comments from Data Provider*).
 For some fields, simple conditional logic was used to populate EFDB fields based on ForC records. 
 For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (*Gases* field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
-There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (section `r section_C_variable_mapping`) and (2) land classification (section `r section_land_use_mapping`).
+There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (detailed below in **Carbon cycle variables**) and (2) land classification (detailed below in **Land classification**).
 
 ### Carbon cycle variables
 
-With input from the IPCC's Technical Support Unit, we reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into EFDB (Fig. `r fig_variable_mapping`).
+We reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into EFDB (Fig. `r fig_variable_mapping`).
 For each C pool (Table `r table_pools`), we identified variables representing organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes.
 As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented in ForC. 
 It is important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
