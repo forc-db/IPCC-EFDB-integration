@@ -1,0 +1,37 @@
+﻿ForC table,ForC field,EFDB field,Usage,Required
+Measurements,measurement.ID,Other Properties,direct mapping,(no)
+,dominant.life.form,"1996 Source/Sink Categories, 2006 Source/Sink Categories",used to determine land subcategories (see defining_land_subcategory.md),yes
+,stand.age,"1996 Source/Sink Categories, 2006 Source/Sink Categories, Parameters/ Conditions","used to determine land subcategories (see defining_land_subcategory.md), directly listed in Parameters/ Conditions",(yes)
+,"dominant.veg, veg.notes, min.dbh",Parameters/ Conditions,direct mapping/ linking to dominant.veg description,no
+,variable.name,-,link to variable info in ForC_variables table,yes
+,"date / start.date, end.date",Other Properties,direct mapping,no
+,mean,Value,direct mapping,yes
+,mean.in.original.units,Value in Common Units,direct mapping,yes
+,original.units,Common Unit,direct mapping,yes
+,"lower95%CI, upper 95%CI, se, sd and n","Lower Confidence Limit, Upper Confidence Limit",direct or calculated,(yes)
+,"depth, covariate_1, cov_1.value, covariate_2, cov_2.value",Other Properties,direct mapping,no
+,"allometry_1, allometry_2",Comments from Data Provider,"link to biomass allometry source, when provided",no
+,data.location.within.source,-,"confirm that data weren't digitized, facilitate finding data in original publication",yes
+,ForC.investigator,"Data Provider, Data Provider Contact","link to Data Provider, Data Provider Contact info",yes
+Sites,"site.ID, sites.sitename",Other Properties,direct mapping,(no)
+,"lat, lon",Region/Regional conditions,"direct mapping; used to extract continent, Koeppen, and FAO.ecozone",(no)
+,"country, state, city, masl,  mat, map",Region/Regional conditions,direct mapping,no
+,"continent, Koeppen",Region/Regional conditions,direct mapping,auto
+,"soil.texture, sand, silt, clay, soil.classification",Parameters/ Conditions,direct mapping,no
+,FAO.ecozone,Parameters/ Conditions,direct mapping,auto
+History,"date, hist.cat, hist.type","1996 Source/Sink Categories, 2006 Source/Sink Categories, Abatement/Control technologies","used to determine distmrs.type for Source/Sink Categories, generate list of events for Abatement/Control technologies",most recent severe disturbance: (yes) / other history events: no
+,plot.area,Other Properties,direct mapping,no
+Plots,"plot.ID, plot.name",Other Properties,direct mapping,(no)
+,distmrs.type,"1996 Source/Sink Categories, 2006 Source/Sink Categories",used to determine land subcategories (see defining_land_subcategory.md),auto
+,"distmrs.type, distmrs.year, regrowth.type, regrowth.year",Other Properties,direct mapping,auto
+PFT,description,Parameters/ Conditions,direct mapping,auto
+variables,variable.type,Gases,"For stocks in unit of organic matter, gases include CO2, CO, CH4, NO, NO2, N2O. For increments, fluxes, and stocks in units of C, gases includes only CO2. ",auto
+,variable.name,"C pool, Equation","link to C pool, Equation",auto
+,description,Description,direct mapping,auto
+,extended.description,Other Properties,direct mapping,auto
+,units,Unit (ID),link to IPCC units,auto
+Citations,citation.citation,Full Technical Reference,direct mapping,yes/auto
+,citation.language,Reference Language,direct mapping,yes/auto
+,citation.url,URL,direct mapping,no/auto
+,citation.abstract,Abstract in English,direct mapping,no/auto
+,source.type,Source of Data,direct mapping,yes
