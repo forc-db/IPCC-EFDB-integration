@@ -168,17 +168,21 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 
 
 <!-- (1) the research conducted or aims, including the rationale-->
-- Forests are critical for climate change mitigation and constitute a substantial portion of planned net emissions reductions under the 2015 Paris Agreement.
-The efficacy of greenhouse gas mitigation planning and reporting depends on the accessibility and quality of data on forest carbon (C) stocks and changes therein.
-Tens of thousands of relevant forest C estimates have been published and compiled in the Global Forest C database (ForC) and could be valuable for this purpose if made accessible through the Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC).
+- Forests are recognized as a critical source of additional climate change mitigation needed to meet the goals of the Paris Agreement. 
+However, the efficacy climate change mitigation planning and reporting depends on having high quality of data on forest carbon (C) stocks and changes.
+The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data, but needs comprehensive and well-documented data to be so.
 <!-- (2) methods-->
-- Here, we develop and document a process for semi-automated submission of data from ForC into the EFDB, assess the data available and submitted to date, and provide recommendations for improving forest data collection, analysis, and reporting to improve inventories of forest-sector greenhouse gas emissions and removals.
+- The Global Forest C database (ForC) represents a compilation of tens of thousands of forest C estimates that is fully traceable and publicly available.
+Here, we develop and document a process for semi-automated submission of data from ForC into the EFDB to help ensure that the EFDB has access to the best available data. We then assess the data available and provide recommendations for improving forest data collection, analysis, and reporting.
 <!-- (3) key results-->
 - As of `r format(Sys.time(), '%B %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_sent_to_EFDB` of which had undergone necessary review and been submitted.
 Records were unevenly distributed across variables (skewed towards aboveground biomass stocks) and geographic regions (skewed towards temperate forests). 
+However, XX% of ForC records cannot be transferred because the original publication lacked the necessary information required by the IPCC.
 <!-- (4) the main conclusion, including the key points of discussion-->
-- In the future, forest C estimates in EFDB can be improved through targeted research to fill critical gaps, reporting of information required by IPCC, and continued submission of data from scientific publications to the EFDB.
-Given that climate change is rapidly impacting the world's forests, timely reporting of recent estimates will be especially critical to accurate forest C inventories.  
+- In the future, forest C estimates should be targeted towards other carbon pools and tropical forests, and studies should ensure that they report all necessary information to enable data integration into the EFDB. 
+Given that climate change is rapidly impacting the world’s forests, timely reporting of recent estimates will be especially critical to accurate forest C inventories.  
+
+<!--suggestions from Sandro: “In the next future, forest C IPCC default values can be improved based on data populated in the EFDB, being thus of high relevance any process for the population of the EFDB with large datasets, especially to fill critical gaps in it. Given that climate change is rapidly impacting the world’s forests, timely uploading in the EFDB of recent data is critical to support quality of estimates C stock gains and losses reported in national GHG inventories.”-->
 
 **Keywords:**
 <!--Five to eight keywords (in alphabetical order) must be given at the end of the Summary.-->
