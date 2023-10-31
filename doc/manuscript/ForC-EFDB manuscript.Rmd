@@ -9,7 +9,7 @@ csl: new-phytologist.csl
 ---
 
 
-**Title:** Informing forest carbon inventories under the Paris Agreement using the Global Forest Carbon Database (ForC v4.0)
+**Title:** Informing forest carbon inventories under the Paris Agreement using ground-based forest monitoring data
 
 
 **Authors:**
@@ -163,26 +163,39 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 
 \newpage 
 
+
 # Summary {-}
 <!--The Summary for research articles must not exceed 250 words and should be organised using four bullet points to indicate (1) the research conducted or aims, including the rationale, (2) methods, (3) key results, and (4) the main conclusion, including the key points of discussion. It should not contain citations of other papers. For reviews, keep to the word limit, but bullet points do not apply. -->
 
 
 <!-- (1) the research conducted or aims, including the rationale-->
-- Forests are recognized as a critical source of additional climate change mitigation needed to meet the goals of the Paris Agreement. 
-However, the efficacy climate change mitigation planning and reporting depends on having high quality of data on forest carbon (C) stocks and changes.
-The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data, but needs comprehensive and well-documented data to be so.
+- Forests are recognized as critical to climate change mitigation under the Paris Agreement. 
+<!--Forests are recognized as a critical source of additional climate change mitigation needed to meet the goals of the Paris Agreement. -->
+However, the efficacy of climate change mitigation planning and reporting depends on having high quality data on forest carbon (C) stocks and changes.
+The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data.<!--, but needs comprehensive and well-documented data to be so.-->
 <!-- (2) methods-->
-- The Global Forest C database (ForC) represents a compilation of tens of thousands of forest C estimates that is fully traceable and publicly available.
-Here, we develop and document a process for semi-automated submission of data from ForC into the EFDB to help ensure that the EFDB has access to the best available data. We then assess the data available and provide recommendations for improving forest data collection, analysis, and reporting.
+- The Global Forest C database (ForC) is a compilation of tens of thousands of ground-based forest C estimates that is fully traceable and publicly available.
+Here, we develop and document a process for semi-automated submission of data from ForC into EFDB, <!-- to help ensure that the EFDB has access to the best available data. --> assess the data currently available through ForC, and provide recommendations for improving forest data collection, analysis, and reporting.
 <!-- (3) key results-->
 - As of `r format(Sys.time(), '%B %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_sent_to_EFDB` of which had undergone necessary review and been submitted.
 Records were unevenly distributed across variables (skewed towards aboveground biomass stocks) and geographic regions (skewed towards temperate forests). 
-However, XX% of ForC records cannot be transferred because the original publication lacked the necessary information required by the IPCC.
+However, `r round((n_records_reviewed_or_added-n_records_sent_to_EFDB)/n_records_sent_to_EFDB,2)*100`% of ForC records reviewed could not be submitted because the original publication lacked information required by the IPCC.
 <!-- (4) the main conclusion, including the key points of discussion-->
-- In the future, forest C estimates should be targeted towards other carbon pools and tropical forests, and studies should ensure that they report all necessary information to enable data integration into the EFDB. 
+- In the future, ground-based forest C estimates should be target gaps in the record, and studies should ensure that they report all information necessary for inclusion in EFDB. 
 Given that climate change is rapidly impacting the world’s forests, timely reporting of recent estimates will be especially critical to accurate forest C inventories.  
 
 <!--suggestions from Sandro: “In the next future, forest C IPCC default values can be improved based on data populated in the EFDB, being thus of high relevance any process for the population of the EFDB with large datasets, especially to fill critical gaps in it. Given that climate change is rapidly impacting the world’s forests, timely uploading in the EFDB of recent data is critical to support quality of estimates C stock gains and losses reported in national GHG inventories.”-->
+
+
+<!--
+# 200 word summary submitted to Anthromes special issue
+The efficacy of climate change mitigation planning and reporting depends on high quality data on forest carbon (C) stocks and changes. The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended as a definitive source for such data. 
+The Global Forest C database (ForC) is a compilation of tens of thousands of ground-based forest C estimates that is fully traceable and publicly available. Here, we develop and document a process for semi-automated submission of data from ForC into EFDB,  assess the data currently available through ForC, and provide recommendations for improving forest data collection, analysis, and reporting. 
+ForC contained ~19,316 independent records relevant to EFDB, 1,438 of which had undergone necessary review and been submitted. Records were unevenly distributed across variables and geographic regions. 59% of ForC records reviewed could not be submitted because the original publication lacked information required by the IPCC. 
+In the future, ground-based forest C estimates should be target gaps in the record, and studies should ensure that they report all information necessary for inclusion in EFDB. Given that climate change is rapidly impacting the world’s forests, timely reporting of recent estimates will be especially critical to accurate forest C inventories.
+-->
+
+
 
 **Keywords:**
 <!--Five to eight keywords (in alphabetical order) must be given at the end of the Summary.-->
@@ -193,6 +206,7 @@ Given that climate change is rapidly impacting the world’s forests, timely rep
 # Societal Impact Statement {-}
 
 <!--Please provide a Societal Impact Statement to accompany your manuscript. Societal Impact Statements should outline the wider impact or relevance of the work for people, society or the planet, including any implications for policy and/or practice. This engaging 100 word statement should be written in plain language to be accessible for non-experts.-->
+
 
 \newpage
 
