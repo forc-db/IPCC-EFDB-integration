@@ -172,7 +172,7 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 - Forests are recognized as critical to climate change mitigation under the Paris Agreement. 
 <!--Forests are recognized as a critical source of additional climate change mitigation needed to meet the goals of the Paris Agreement. -->
 However, the efficacy of climate change mitigation planning and reporting depends on having high quality data on forest carbon (C) stocks and changes.
-The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data.<!--, but needs comprehensive and well-documented data to be so.-->
+The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data, but needs comprehensive and well-documented data to be so.
 <!-- (2) methods-->
 - The Global Forest C database (ForC) is a compilation of tens of thousands of ground-based forest C estimates that is fully traceable and publicly available.
 Here, we develop and document a process for semi-automated submission of data from ForC into EFDB, <!-- to help ensure that the EFDB has access to the best available data. --> assess the data currently available through ForC, and provide recommendations for improving forest data collection, analysis, and reporting.
@@ -188,7 +188,7 @@ Given that climate change is rapidly impacting the world’s forests, timely rep
 
 
 <!--
-# 200 word summary submitted to Anthromes special issue
+# 200 word summary submitted to Anthromes special issue (invited for full submission)
 The efficacy of climate change mitigation planning and reporting depends on high quality data on forest carbon (C) stocks and changes. The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended as a definitive source for such data. 
 The Global Forest C database (ForC) is a compilation of tens of thousands of ground-based forest C estimates that is fully traceable and publicly available. Here, we develop and document a process for semi-automated submission of data from ForC into EFDB,  assess the data currently available through ForC, and provide recommendations for improving forest data collection, analysis, and reporting. 
 ForC contained ~19,316 independent records relevant to EFDB, 1,438 of which had undergone necessary review and been submitted. Records were unevenly distributed across variables and geographic regions. 59% of ForC records reviewed could not be submitted because the original publication lacked information required by the IPCC. 
@@ -207,15 +207,18 @@ In the future, ground-based forest C estimates should be target gaps in the reco
 
 <!--Please provide a Societal Impact Statement to accompany your manuscript. Societal Impact Statements should outline the wider impact or relevance of the work for people, society or the planet, including any implications for policy and/or practice. This engaging 100 word statement should be written in plain language to be accessible for non-experts.-->
 
+- helps bridge scientific research accounting under Paris agreement
 
 \newpage
 
 # Introduction
 
 Forests are critical to management of the atmospheric concentration of the greenhouse gas carbon dioxide (CO~2~), and thereby climate change. 
-In recent decades, CO~2~ uptake by forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 Gt C yr^-1^ [all biomes with trees, @xu_changes_2021] to ~`r round(5.8*12/44,1)` Gt C yr^-1^<!--net forest estimate in Harris et al. Table 2--> [forests only, @harris_global_2021].
-This has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> to `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021], dramatically slowing the pace of atmospheric CO~2~ accumulation and associated climate change.
-The future of this important CO~2~ sink is highly uncertain, and depends upon both forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020;@hammond_global_2022], and human conservation, restoration, and management of forests [@ipcc_climate_2019;@ipcc_climate_2022].
+In recent decades, CO~2~ uptake by forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 - `r round(5.8*12/44,1)` Gt C yr^-1^ [@xu_changes_2021;@harris_global_2021].
+<!--@xu_changes_2021 includes all biomes with trees, estimates ~0.88 Gt C yr^-1^-->
+<!--1.6 is net forest estimate in @harris_global_2021 Table 2, which includes only forests-->
+This has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> to `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021], slowing the pace of atmospheric CO~2~ accumulation and associated climate change.
+The future of this important CO~2~ sink is highly uncertain, depending upon both direct human impacts on forests [i.e., deforestation/ degradation vs. conservation/ restoration, @ipcc_climate_2019;@ipcc_climate_2022] and forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020].
 
 Forests play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
 Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options [@roe_landbased_2021], with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
@@ -223,25 +226,27 @@ As of 2016, forest-based mitigation accounted for 26% of total planned greenhous
 Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022].
 One critical need for ensuring that forest-based climate change mitigation initiatives are effective is realistic planning and reporting, underlain by solid scientific data [@anderson-teixeira_effective_2022; @deng_comparing_2021].
 
-The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change [UNFCCC, @ipcc_2006_2006;@ipcc_2019_2019].
+The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change (UNFCCC) [@ipcc_2006_2006;@ipcc_2019_2019].
 Under this guidance, greenhouse gas inventories include all managed land, including most of the world's forest land [@ogle_delineating_2018].
 The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [@ipcc_agriculture_2006; @ipcc_2019_2019].
 A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone [@fao_global_2012] and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
 Tier 1 values have improved over the years as more of the relevant underlying data has become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement as datasets grow and become more widely accessible.
-For example, the year following the release of the latest IPCC guidelines, a more thorough analysis of C accumulation in regrowth forests found that IPCC's Tier 1 default failed to capture eight-fold variation within ecozones [@cook-patton_mapping_2020]. 
-In addition, it was revealed that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
+For example, following the 2019 release of the latest IPCC guidelines, it was revealed that IPCC's Tier 1 default failed to capture eight-fold variation of C accumulation in regrowth forests within ecozones [@cook-patton_mapping_2020] and that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
 This rapid evolution of scientific information on C cycling in forests is valuable for informing climate change mitigation efforts but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
 Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @cuni-sanchez_high_2021] implies that it is useful for practitioners to have access to locally-specific information, when available.
 
 To improve data accessibility for preparing greenhouse gas estimates, the IPCC created the Emission Factor Database (EFDB; [https://www.ipcc-nggip.iges.or.jp/EFDB/main.php](https://www.ipcc-nggip.iges.or.jp/EFDB/main.php)), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 The EFDB can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
-The EFDB encourages researchers to submit estimates of emission factors or other related parameters from peer-reviewed journal papers or other accepted sources for inclusion in the database. 
-In the case of forests, emission factors include C stocks, net annual increments, and annual fluxes for various pools [@ipcc_2006_2006;@ipcc_2019_2019].
+The EFDB encourages researchers to submit estimates of emission factors or other related parameters [e.g., C stocks, net annual increments, and annual fluxes for various pools [@ipcc_2006_2006;@ipcc_2019_2019] from peer-reviewed journal articles or other accepted sources for inclusion in the database. 
+Needed is an efficient system for submission of data to the EFDB.
 
 The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021; @anderson-teixeira_forcdb_2023].
 ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], and the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
 As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained `r n_records_ForC` records from `r n_plots_ForC` plots in `r n_areas_ForC` distinct geographical areas, along with records of stand age and disturbance history.
 As such, ForC is positioned to improve forest-related estimates of CO~2~ emissions and removals through the submission of data to the EFDB.
+
+*(The following needs work:)*
+
 The purpose of this publication is to document that process and provide recommendations for future improvements.
 
 Here, we
