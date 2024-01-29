@@ -151,7 +151,8 @@ n_records_sent_fluxes <- sum(C_variables$`n submitted to EFDB`[C_variables$`vari
 n_records_sent_fluxes_check = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
 
 
-n_records_posted_EFDB = 1068 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records")
+n_records_posted_EFDB = 1068 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records". Updated Jan 2024)
+percent_forest_records = round(n_records_posted_EFDB/5644*100,0); #as of Jan 2024
 
 n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
 # get n fields modified
@@ -169,7 +170,7 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 
 
 <!-- (1) the research conducted or aims, including the rationale-->
-- Forests are recognized as critical to climate change mitigation under the Paris Agreement. 
+- *(Humans have been influencing Earth's climate via interactions with forests for thousands of years, and now)* Forests are recognized as critical to climate change mitigation under the Paris Agreement. 
 <!--Forests are recognized as a critical source of additional climate change mitigation needed to meet the goals of the Paris Agreement. -->
 However, the efficacy of climate change mitigation planning and reporting depends on having high quality data on forest carbon (C) stocks and changes.
 The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data, but needs comprehensive and well-documented data to be so.
@@ -213,14 +214,16 @@ In the future, ground-based forest C estimates should be target gaps in the reco
 
 # Introduction
 
-Forests are critical to management of the atmospheric concentration of the greenhouse gas carbon dioxide (CO~2~), and thereby climate change. 
-In recent decades, CO~2~ uptake by forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 - `r round(5.8*12/44,1)` Gt C yr^-1^ [@xu_changes_2021;@harris_global_2021].
+Humans have been influencing Earth's climate via ecologically transformative land use practices for >12,000 years [@ellis_people_2021;@sanderman_soil_2017; @bonan_forests_2016].
+In recent decades, as anthropogenic climate change has accelerated, this relationship has come into increasing focus [@ipcc_climate_2019;@ipcc_climate_2022].
+Deforestation and forest degradation are substantial sources of the greenhouse gas carbon dioxide (CO~2~), currently accounting for >10% of anthropogenic emissions [@friedlingstein_global_2022].
+Yet at the same time, CO~2~ uptake by remaining forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 - `r round(5.8*12/44,1)` Gt C yr^-1^ [@xu_changes_2021;@harris_global_2021],
 <!--@xu_changes_2021 includes all biomes with trees, estimates ~0.88 Gt C yr^-1^-->
 <!--1.6 is net forest estimate in @harris_global_2021 Table 2, which includes only forests-->
-This has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> to `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021], slowing the pace of atmospheric CO~2~ accumulation and associated climate change.
-The future of this important CO~2~ sink is highly uncertain, depending upon both direct human impacts on forests [i.e., deforestation/ degradation vs. conservation/ restoration, @ipcc_climate_2019;@ipcc_climate_2022] and forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020].
+which has offset an estimated `r round(.88*44/12/32,2)*100`%<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> to `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021].
+The future of this important CO~2~ sink depends primarily upon future trajectories of direct human impacts on forests [i.e., deforestation/ degradation vs. conservation/ restoration, [@ipcc_climate_2019;@ipcc_climate_2022], and also upon forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020].
 
-Forests play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
+Given this important role of forests in climate regulation, they play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015].
 Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options [@roe_landbased_2021], with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
 As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].
 Yet, envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions through on-the-ground implementation [e.g., @badgley_systematic_2022].
@@ -237,28 +240,28 @@ Moreover, high variability of forest C cycling within ecozones [e.g., @cook-patt
 
 To improve data accessibility for preparing greenhouse gas estimates, the IPCC created the Emission Factor Database (EFDB; [https://www.ipcc-nggip.iges.or.jp/EFDB/main.php](https://www.ipcc-nggip.iges.or.jp/EFDB/main.php)), which is intended as a recognized library of emission factors and other parameters that can be used for estimating greenhouse gas emissions and removals.
 The EFDB can be used both for efforts to tally a nation's intended or accomplished greenhouse gas reductions, or as a basis of comparison for external parties to evaluate these inventories. 
-The EFDB encourages researchers to submit estimates of emission factors or other related parameters [e.g., C stocks, net annual increments, and annual fluxes for various pools [@ipcc_2006_2006;@ipcc_2019_2019] from peer-reviewed journal articles or other accepted sources for inclusion in the database. 
-Needed is an efficient system for submission of data to the EFDB.
+The EFDB encourages researchers to submit estimates of emission factors or other related parameters [e.g., C stocks, net annual increments, and annual fluxes for various pools, @ipcc_2006_2006;@ipcc_2019_2019] from peer-reviewed journal articles or other accepted sources for inclusion in the database. 
+Tens of thousands of relevant forest carbon estimates have been published -- and continue to be published at an accelerating rate -- but are not readily accessible to the practitioners assembling national greenhouse gas inventories.
+To contribute to the goal of making forest C parameters available for accounting under IPCC guidelines, forest scientists need an accessible summary of EFDB's requirements and an efficient system for submission of data to the EFDB.
+
+The goal of this publication is to lower the activation energy required for forest scientists to make their estimates of forest C stocks and changes therein useful and accessible for accounting under IPCC inventory guidelines.
+To accomplish this, we document the process of submitting data to EFDB from the Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), which is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021; @anderson-teixeira_forcdb_2023], updated to facilitate data submission to EFDB (ForC v4.0).
+We (1) map common scientific forest C estimation methods and definitions to those used by the IPCC;
+(2) develop a semi-automated process for preparing ForC data for submission to EFDB;
+and (3) assess the data in ForC relevant to EFDB and records that have been submitted to date;
+We conclude with recommendations as to how the scientific community can better provide useful data for forest C inventories under the Paris Agreement.
+
+
+# Materials and Methods
+
+
+
 
 The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021; @anderson-teixeira_forcdb_2023].
 ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], and the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
 As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained `r n_records_ForC` records from `r n_plots_ForC` plots in `r n_areas_ForC` distinct geographical areas, along with records of stand age and disturbance history.
 As such, ForC is positioned to improve forest-related estimates of CO~2~ emissions and removals through the submission of data to the EFDB.
 
-*(The following needs work:)*
-
-The purpose of this publication is to document that process and provide recommendations for future improvements.
-
-Here, we
-(1) review IPCC methods and definitions applied to estimate CO~2~ emissions and removals from forest in the context of typical forest C estimation methodologies;
-(2) describe mapping of ForC to IPCC's EFDB;
-(3) describe updates to ForC  (ForC v4.0), most of which were implemented to facilitate data submission to EFDB;
-(4) summarize the data in ForC relevant to EFDB and records that have been submitted to date; and
-(5) provide recommendations as to how the scientific community can better provide useful data for forest C inventories under the Paris Agreement.
-
-
-
-# Materials and Methods
 
 Major steps included
 (1) mapping ForC into EFDB, including aligning ForC and IPCC definitions (summarized in `r appendix_IPCC_definitions`),
@@ -402,6 +405,7 @@ ft
 As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, we had reviewed or added `r n_records_reviewed_or_added` EFDB-relevant records, `r n_records_sent_to_EFDB` records of which were submitted to EFDB, and `r n_records_posted_EFDB` of which have been reviewed, accepted, and posted (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`).
 The `r round((n_records_reviewed_or_added -n_records_sent_to_EFDB )/n_records_reviewed_or_added,2)*100`% attenuation between records reviewed and those sent to EFDB was attributable to the presence of digitized records and records where a variable's value had been calculated as the sum or difference of related variables rather than presented directly in the text.
 The discrepancy between the number of records sent and that posted to EFDB is because some records (`r round((1-(n_records_posted_EFDB/n_records_sent_to_EFDB)),2)*100`%) were deemed not applicable to EFDB by the review panel.
+As of `r format(Sys.time(), '%B %d, %Y')`, the `r n_records_sent_to_EFDB` ForC records posted in EFDB represented `r percent_forest_records`% of the total EFDB records for forest land.
 
 The ForC records submitted to EFDB were broadly distributed across Earth's forests (Fig. `r fig_map`).
 However, the density of these records was very unevenly distributed across continents, biomes, and forest types and was not proportional to the numbers of relevant records in ForC (Fig. `r fig_histograms`).
