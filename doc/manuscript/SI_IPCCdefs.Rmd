@@ -25,7 +25,7 @@ table_ForCfieldmapping = "Table S2"
 
 
 
-# `r appendix_IPCC_definitions`. IPCC methods and definitions {-}
+# `r appendix_IPCC_definitions`. Summary of IPCC methods and definitions for forests {-}
 
 
 The end goal of IPCC greenhouse gas inventories is to quantify greenhouse gas emissions to, or withdrawals from, the atmosphere on an annual basis, most commonly on a national level [@ipcc_2006_2006;@ipcc_2019_2019]. 

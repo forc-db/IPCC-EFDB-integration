@@ -229,7 +229,7 @@ One critical need for ensuring that forest-based climate change mitigation initi
 
 The International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change (UNFCCC) [@ipcc_2006_2006;@ipcc_2019_2019].
 Under this guidance, greenhouse gas inventories include all managed land, which includes most of the world's forest land [@ogle_delineating_2018; @ellis_anthropogenic_2010].
-The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [@ipcc_agriculture_2006; @ipcc_2019_2019].
+The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [summarized in `r appendix_IPCC_definitions`, @ipcc_agriculture_2006; @ipcc_2019_2019].
 A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone [@fao_global_2012] and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
 Tier 1 values have improved over the years as more of the relevant underlying data has become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement as datasets grow and become more widely accessible.
 For example, following the 2019 release of the latest IPCC guidelines, it was revealed that IPCC's Tier 1 default failed to capture eight-fold variation of C accumulation in regrowth forests within ecozones [@cook-patton_mapping_2020] and that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
@@ -243,7 +243,7 @@ Tens of thousands of relevant forest carbon estimates have been published -- and
 To contribute to the goal of making forest C parameters available for accounting under IPCC guidelines, forest scientists need an accessible summary of EFDB's requirements and an efficient system for submission of data to the EFDB.
 
 The goal of this publication is to facilitate submission of forest C estimates from scientific studies to EFDB.
-We document the process of submitting data to EFDB from the Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), which is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021; @anderson-teixeira_forcdb_2023].
+We document the process of submitting data to EFDB from the Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), which is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021; @anderson-teixeira_forcdb_2023], including data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], and the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
 We (1) map common scientific forest C estimation methods and definitions to those used by the IPCC;
 (2) develop a semi-automated process for preparing ForC data for submission to EFDB;
 and (3) assess the data in ForC relevant to EFDB and records that have been submitted to date;
@@ -252,16 +252,7 @@ We conclude with recommendations as to how the scientific community can better p
 
 # Materials and Methods
 
-
-
-
-The Global Forest Carbon Database, ForC ([https://forc-db.github.io/](https://forc-db.github.io/)), is the largest collection of published estimates of forest C stocks, increments, and annual fluxes [@anderson-teixeira_forc_2018; @anderson-teixeira_carbon_2021; @anderson-teixeira_forcdb_2023].
-ForC includes data ingested from individual publications and relevant databases, including the Global Reforestation Opportunity Assessment (GROA) database [@cook-patton_mapping_2020, database doi: 10.5281/zenodo.3983644], and the global soil respiration database [SRDB-V5, @bond-lamberty_global_2010; @jian_restructured_2021].
-As of `r format(Sys.time(), '%B %d, %Y')`, ForC contained `r n_records_ForC` records from `r n_plots_ForC` plots in `r n_areas_ForC` distinct geographical areas, along with records of stand age and disturbance history.
-As such, ForC is positioned to improve forest-related estimates of CO~2~ emissions and removals through the submission of data to the EFDB.
-<!--ForC is fully traceable and publicly available.-->
-
-Major steps included
+Major steps for submission of data from ForC to EFDB included
 (1) mapping ForC into EFDB, including aligning ForC and IPCC definitions (summarized in `r appendix_IPCC_definitions`),
 (2) revising ForC v3.0 to support semi-automated submissions to EFDB, yielding ForC v4.0 (detailed in `r appendix_ForC_updates`), and
 (3) submitting data to EFDB. 
@@ -269,12 +260,10 @@ These steps are detailed below.
 
 ## Mapping ForC to EFDB
 
-With input from the IPCC's Technical Support Unit and referencing IPCC guidance [@refs], we mapped ForC fields into EFDB fields, as summarized in `r table_ForCfieldmapping`.
-For the majority of fields, contents of the field in ForC was copied directly into an EFDB field, either as the only contents of that field or as part of a composite record.
-For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field *Region/Regional conditions* (`r table_ForCfieldmapping`).
-In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present information required to calculate these (standard error or n and standard deviation), we calculated the 95% confidence intervals and populated the EFDB field with this information (noting the calculation in the EFDB field *Comments from Data Provider*).
-For some fields, simple conditional logic was used to populate EFDB fields based on ForC records. 
-For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (*Gases* field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~. 
+With input from the IPCC's Technical Support Unit and referencing IPCC guidance [@ipcc_good_2003; @ipcc_2006_2006; @ipcc_2019_2019], we mapped ForC fields into EFDB fields, as summarized in `r table_ForCfieldmapping`.
+For the majority of fields, contents of the field in ForC was copied directly into an EFDB field, either as the only contents of that field or as part of a composite record. <!--For example, ten ForC fields describing site location, climate, and edaphic properties all mapped into the EFDB field *Region/Regional conditions* (`r table_ForCfieldmapping`).-->
+For some fields, simple conditional logic was used to populate EFDB fields based on ForC records.<!--For example, for stock variables presented in the original publication in units of dry organic matter mass (as opposed to C), several greenhouse gasses (CO~2~, CO, CH~4~, NO, NO~2~, N~2~O) were entered in the EFDB field indicating the greenhouse gases to which the record could be pertinent (*Gases* field) because these values could be used in calculations of greenhouse gas emissions from biomass burning [@ipcc_2006_2006]; otherwise, the only pertinent greenhouse gas would be CO~2~.--> 
+In cases where original studies did not present 95% confidence intervals (required by IPCC when available) but did present standard error or n and standard deviation, we calculated the 95% confidence intervals.<!--and populated the EFDB field with this information (noting the calculation in the EFDB field *Comments from Data Provider*)-->
 There were two cases in which more complex mapping was required: (1) mapping of C cycle variables (detailed below in **Carbon cycle variables**) and (2) land classification (detailed below in **Land classification**).
 
 ### Carbon cycle variables
