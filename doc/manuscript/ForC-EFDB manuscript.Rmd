@@ -269,13 +269,13 @@ There were two cases in which more complex mapping was required: (1) mapping of 
 
 ### Carbon cycle variables {-}
 
-We reviewed the list of ForC variables to identify those that were relevant to EFDB and to appropriately map them into EFDB (Fig. `r fig_variable_mapping`).
-For each C pool (Table `r table_pools`), we identified variables representing organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes.
-As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented in ForC. 
+We reviewed the list of ForC variables to identify those that were relevant to the IPCC methodology and to EFDB (`r appendix_IPCC_definitions`).
+These included  organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes for each IPCC-defied C pool (Table `r table_pools`, Fig. `r fig_variable_mapping`).
+As described in section `r section_new_variables`, we also defined `r n_new_variables` new EFDB-relevant variables that were not previously represented in ForC (`r appendix_ForC_updates`). 
 It is important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
 For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
-Information on minimum diameters censused and other important sources of methodological variation are recorded as covariates in ForC and mapped into the EFDB field *Other Properties* (`r table_ForCfieldmapping`).
-Details on the mapping of ForC variables to EFDB -- including associated covariates, IPCC pools (Table `r table_pools`) and relevant equations [@ipcc_2006_2006] -- are documented in the file ForC_variables_mapping.csv in the GitHub repository associated with this publication IPCC-EFDB-integration repository in ForC-db organization ([https://github.com/forc-db/IPCC-EFDB-integration](https://github.com/forc-db/IPCC-EFDB-integration)). 
+Information on minimum diameters censused and other important sources of methodological variation were mapped into EFDB (`r table_ForCfieldmapping`).
+Details on the mapping of ForC variables to EFDB are documented in the file ForC_variables_mapping.csv in the GitHub repository associated with this publication IPCC-EFDB-integration repository in ForC-db organization ([https://github.com/forc-db/IPCC-EFDB-integration](https://github.com/forc-db/IPCC-EFDB-integration)). 
 
 
 \newpage
