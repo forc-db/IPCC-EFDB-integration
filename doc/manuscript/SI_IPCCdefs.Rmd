@@ -25,15 +25,28 @@ table_ForCfieldmapping = "Table S2"
 
 
 
-# `r appendix_IPCC_definitions`. Summary of IPCC methods and definitions for forests {-}
+# `r appendix_IPCC_definitions`. Primer on forest land classification and carbon pools under IPCC guidelines {-}
 
 
-The end goal of IPCC greenhouse gas inventories is to quantify greenhouse gas emissions to, or withdrawals from, the atmosphere on an annual basis, most commonly on a national level [@ipcc_2006_2006;@ipcc_2019_2019]. 
-For each stratum of subdivision within a land-use category, annual stock changes ($\Delta C$; t C yr^-1^) are calculated as the sum of changes in various pools (see **Carbon Pools** section below), plus any harvested wood products.
+
+
+
+## Land classification {-}
+IPCC defines land-use categories to include six categories -- Forest Land, Grassland, Wetlands, Cropland, Settlements, and Other Land [@ipcc_2006_2006].
+Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
+Forest Land is defined as at least 10-30% crown cover of trees with potential to reach a minimum height of 2-5 m *in situ*, and shorter-stature natural vegetation would be classified as Grassland [@ipcc_good_2003].
+Definitions of forest are allowed to vary by country, but must be applied consistently.
+Forest Land includes land where vegetation temporarily falls below the threshold values for forest (e.g., due to disturbance), but is expected to exceed those thresholds in the future [@ipcc_good_2003].
+
+The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [@ipcc_2006_2006]. 
+This expansive definition of managed land implies that the majority of Forest Land in most countries is managed.
+However, the definition is applied differently across countries, and the majority of governments have yet to report their approach for defining managed land or provide maps of managed land [@ogle_delineating_2018; @deng_comparing_2021].
+
+
+## Carbon pools {-}
+
+For each stratum of subdivision within a land-use category (see **Land classification** section below), annual stock changes ($\Delta C$; t C yr^-1^) are calculated as the sum of changes in various pools (see **Carbon pools** section below), plus any harvested wood products.
 Thus, C cycle variables relevant to the IPCC methodology and to EFDB include C stocks, net annual increments, and fluxes in the IPCC-defined pools.
-
-
-## Carbon Pools {-}
 
 Forest ecosystem C pools may be parsed in various ways, and while certain definitions and thresholds are more common than others, there is no single standard for measuring or reporting that is adhered to by all -- or even most -- scientific studies. 
 IPCC parses forest C pools into biomass (aboveground and belowground), dead organic matter (dead wood and litter), and soil organic matter (Table `r table_pools`).
@@ -83,16 +96,6 @@ Soil organic matter/ carbon (SOM/ SOC), which is typically >100 t C and can exce
 Live fine roots may be included with soil organic matter when it is not feasible to distinguish them empirically.
 The greatest source of methodological variation in measuring SOM/ SOC is sampling depth, which has a suggested default of 30 cm but may vary by country provided that consistent criteria are applied. 
 
-## Land classification {-}
-IPCC defines land-use categories to include six categories -- Forest Land, Grassland, Wetlands, Cropland, Settlements, and Other Land [@ipcc_2006_2006].
-Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
-Forest Land is defined as at least 10-30% crown cover of trees with potential to reach a minimum height of 2-5 m *in situ*, and shorter-stature natural vegetation would be classified as Grassland [@ipcc_good_2003].
-Definitions of forest are allowed to vary by country, but must be applied consistently.
-Forest Land includes land where vegetation temporarily falls below the threshold values for forest (e.g., due to disturbance), but is expected to exceed those thresholds in the future [@ipcc_good_2003].
-
-The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [@ipcc_2006_2006]. 
-This expansive definition of managed land implies that the majority of Forest Land in most countries is managed.
-However, the definition is applied differently across countries, and the majority of governments have yet to report their approach for defining managed land or provide maps of managed land [@ogle_delineating_2018; @deng_comparing_2021].
 
 
 ## References {-}

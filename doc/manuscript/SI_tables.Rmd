@@ -16,7 +16,7 @@ appendix_ForC_updates = "Methods S1"
 appendix_IPCC_definitions = "Notes S1"
 table_ForCchanges = "Table S1"
 table_ForCfieldmapping = "Table S2"
-
+table_variables ="Table S3"
 
 
 ```
@@ -65,3 +65,25 @@ kableExtra::kable_styling(full_width = TRUE, latex_options = c("repeat_header", 
 
 ```
 \* *Required* field indicates whether the field is required by EFDB: yes = value required; (yes) = input required, missing value acceptable if not reported; auto = present within ForC infrasructure, and therefore will always be exported to EFDB ; (no) = not required for EFDB, but required for ForC and therefore will always be exported to EFDB; no = not required, but exported to EFDB when a value is present.
+
+\clearpage
+
+
+\newpage
+**`r table_variables`. Numbers of records of ForC variables (or closely related variable groups) relevant to, and sent to, EFDB.**
+```{r table_variables, eval = TRUE, echo=FALSE, warning=FALSE}
+C_variables_table <- read.csv("figures_tables/C_variables.csv")
+names(C_variables_table) <- stringr::str_replace_all(names(C_variables_table), "\\.", " ")
+C_variables_table[is.na(C_variables_table)]<- "" #replace NAs with blanks
+
+library(flextable)
+set_flextable_defaults(font.family = "Arial", font.size = 8) # set font
+
+ft <- flextable(C_variables_table[,-1])
+ft <- autofit(ft)
+ft <- width(ft, 1, width = 2)
+ft <- width(ft, 2:5, width = 1)
+ft <- bold(ft, i = 1, j = NULL, bold = TRUE, part = "header") # put title in bold
+ft <- bold(ft, i = which(C_variables_table$bold), j = NULL, bold = TRUE, part = "body") # put categories in bold
+ft
+```
