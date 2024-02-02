@@ -14,11 +14,13 @@ table_pools =1
 
 
 
+
 #Appendices
 appendix_ForC_updates = "Methods S1"
 appendix_IPCC_definitions = "Notes S1"
 table_ForCchanges = "Table S1"
 table_ForCfieldmapping = "Table S2"
+table_variables ="Table S3"
 
 
 ```

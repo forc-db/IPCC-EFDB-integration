@@ -57,30 +57,20 @@ Display Items: 6
 ```{r eval = TRUE, echo=FALSE, warning=FALSE, results='hide'}
 #Tables
 table_pools =1
-
-table_recommendations = 3
+table_recommendations = 2
 
 #Figures
 fig_variable_mapping=1
 fig_map=2
 fig_histograms=3
 
-#Cited sections (listed here because these can change)
-section_C_pools = 2.1 
-section_land_use_categories = 2.2
-section_new_variables = 3.2
-section_C_variable_mapping = "4.1.1"
-section_land_use_mapping = "4.1.2"
-section_database_needs = "6.1"
-section_new_data_needs = "6.2"
-section_data_reporting_needs = "6.3" 
 
 #Appendices
 appendix_ForC_updates = "Methods S1"
 appendix_IPCC_definitions = "Notes S1"
 table_ForCchanges = "Table S1"
 table_ForCfieldmapping = "Table S2"
-table_variables ="S3"
+table_variables ="Table S3"
 
 #READING IN FILES TO GET FIGURES/ TABLES/ STATS 
 path_to_dir <- dirname(dirname(getwd())) # get path to repo 
@@ -180,7 +170,7 @@ We then assess the data currently available through ForC and provide recommendat
 <!-- (3) key results-->
 - As of `r format(Sys.time(), '%B %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_posted_EFDB` of which had been submitted and posted to EFDB.
 Records were unevenly distributed across variables (skewed towards aboveground biomass stocks) and geographic regions (skewed towards temperate forests).
-`r round((n_records_reviewed_or_added-n_records_sent_to_EFDB)/n_records_sent_to_EFDB,2)*100`% of ForC records reviewed could not be submitted because the original publication lacked required information.
+`r round((n_records_reviewed_or_added-n_records_sent_to_EFDB)/n_records_reviewed_or_added,2)*100`% of ForC records reviewed could not be submitted because the original publication lacked required information.
 <!-- (4) the main conclusion, including the key points of discussion-->
 - In the future, ground-based forest C estimates should target gaps in the record, and studies should ensure that they report all information necessary for inclusion in EFDB. 
 Given that climate change is rapidly impacting the world’s forests, timely reporting of recent estimates will be especially critical to accurate forest C inventories.  
@@ -201,14 +191,19 @@ In the future, ground-based forest C estimates should be target gaps in the reco
 **Keywords:**
 <!--Five to eight keywords (in alphabetical order) must be given at the end of the Summary.-->
 
-
+climate change, database, forest carbon, greenhouse gas inventory, International Panel on Climate Change (IPCC), natural climate solutions
 
 
 # Societal Impact Statement {-}
 
 <!--Please provide a Societal Impact Statement to accompany your manuscript. Societal Impact Statements should outline the wider impact or relevance of the work for people, society or the planet, including any implications for policy and/or practice. This engaging 100 word statement should be written in plain language to be accessible for non-experts.-->
 
-- helps bridge scientific research accounting under Paris agreement
+Human interactions with forests have shaped Earth's climate for >12,000 years and will continue to do so as we target net-zero emissions.
+Accurately characterizing these climate impacts requires accurate forest carbon data available for national greenhouse gas inventories conducted under the Paris Agreement. 
+Here we develop a semi-automated process for submitting forest carbon measurements from the largest relevant scientific database to the International Panel on Climate Change's Emission Factor Database, which currently has sparse forest carbon data.
+Building this bridge from scientific research to international policy is an important step towards managing forests in a net-zero motivated future.
+
+
 
 \newpage
 
@@ -342,15 +337,15 @@ Once converted into EFDB format, the records were reviewed and then sent to the 
 # Results {-}
 
 As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, ForC (v4.0) contained `r n_independent_records_ForC` independent records (`r n_records_ForC` total), `r n_ind_records_EFDB_variables` of which were for the `r n_relevant_variables` variables relevant to EFDB (Fig. `r fig_variable_mapping`).
-We had reviewed or added `r n_records_reviewed_or_added` records for submission to EFDB, `r n_records_sent_to_EFDB` of which met the criteria for submission, and `r n_records_posted_EFDB` of which had been reviewed by EFDB's review panel, accepted, and posted (Table `r table_variables`).
+We had reviewed or added `r n_records_reviewed_or_added` records for submission to EFDB, `r n_records_sent_to_EFDB` of which met the criteria for submission, and `r n_records_posted_EFDB` of which had been reviewed by EFDB's review panel, accepted, and posted (`r table_variables`).
 The `r round((n_records_reviewed_or_added -n_records_sent_to_EFDB )/n_records_reviewed_or_added,2)*100`% attenuation between records we reviewed and those submitted to EFDB was attributable to the presence of digitized records and records where a variable's value had been calculated as the sum or difference of related variables rather than presented directly in the text.
 The discrepancy between the number of records sent and that posted to EFDB is because some records (`r round((1-(n_records_posted_EFDB/n_records_sent_to_EFDB)),2)*100`%) were deemed not applicable to EFDB by the review panel.
 As of `r format(Sys.time(), '%B %d, %Y')`, the `r n_records_sent_to_EFDB` ForC records posted in EFDB represented `r percent_forest_records`% of the total EFDB records for forest land.
 
 
-ForC v4.0 contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables (or closely-related variable groups) relevant to EFDB (Fig. `r fig_variable_mapping`, Table `r table_variables`).
-Records were submitted for `r n_relevant_variables_records_sent` variables (or closely-related variable groups), including variables from each C pool (Table `r table_variables`).
-The records available in ForC v4.0 -- and the subset submitted to EFDB -- were very unevenly distributed across variables (Table `r table_variables`). 
+ForC v4.0 contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables (or closely-related variable groups) relevant to EFDB (Fig. `r fig_variable_mapping`,  `r table_variables`).
+Records were submitted for `r n_relevant_variables_records_sent` variables (or closely-related variable groups), including variables from each C pool (`r table_variables`).
+The records available in ForC v4.0 -- and the subset submitted to EFDB -- were very unevenly distributed across variables (`r table_variables`). 
 The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) of records submitted were for C stocks, including
 `r round(n_records_sent_biomass/n_records_sent_to_EFDB,2)*100`% for total biomass, 
 `r round(n_records_sent_agb/n_records_sent_to_EFDB,2)*100`% for aboveground biomass,
@@ -362,7 +357,7 @@ The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) o
 `r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (entire O horizon or OL layer component),
 and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for SOM/ SOC.
 Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records submitted, all but four of which described aboveground biomass.
-The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records submitted described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, a subset of which also described inputs to the dead wood or litter pool (Fig. `r fig_variable_mapping`,Table `r table_variables`).
+The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records submitted described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, a subset of which also described inputs to the dead wood or litter pool (Fig. `r fig_variable_mapping`,`r table_variables`).
 
 
 ForC v4.0 records and the subset submitted to EFDB were distributed across all forested continents, biomes, and forest types, albeit very unevenly (Figs. `r fig_map`-`r fig_histograms`).
@@ -388,46 +383,41 @@ In terms of stand age, the most represented age class was 20-100 years, followed
 
 # Discussion {-}
 
-** RECOMENDATIONS ** 
+Here we have developed a framework for submitting records from ForC v4.0, the largest compilation of ground-based forest C estimates, to the EFDB, thus making those data more accessible for reporting CO~2~ emissions and removals from forest land consistent with good practice in the IPCC guidelines  [@ipcc_2006_2006;@ipcc_2019_2019].
+As of `r format(Sys.time(), '%B %d, %Y')`, `r n_records_posted_EFDB` ForC records have been posted to EFDB, which represents just `r round(n_records_posted_EFDB/n_ind_records_EFDB_variables*100,0)`% of potentially relevant records in ForC v4.0, but currently comprises `r percent_forest_records`% of the total EFDB records for forest land.
+The records present in ForC and submitted to EFDB are very unevenly distributed across variables, regions, and forest types (Figs. `r fig_map`-`r fig_histograms`, `r table_variables`), reflecting broader patterns in allocation of research effort and pointing to scientific research and reporting needs.
 
-Based on our experience contributing forest C data to EFDB via ForC, we make several recommendations as to how scientists can improve forest C records in EFDB through database work (section `r section_database_needs`), new data collection and analysis (section `r section_new_data_needs`), and reporting (section `r section_data_reporting_needs`).
+Based on our experience contributing forest C data to EFDB via ForC, we make several recommendations as to how scientists can improve forest C records in EFDB through database work, new data collection and analysis, and reporting.
 
-
-## Database needs {-}
+### Database needs {-}
 
 There is vast potential to expand forest C data in EFDB by completing the process of reviewing and submitting data that are already in ForC (Figs. `r fig_map`-`r fig_histograms`).
 So far, only ~`r round(n_records_sent_to_EFDB/n_ind_records_EFDB_variables,2)*100`% of the EFDB-relevant data in ForC have been submitted to EFDB.
 Although this process requires manual review of records, the submission of new records to EFDB is hugely facilitated by the fact that most pertinent information for each record is already entered in ForC and can be easily prepared for submission to EFDB using the system developed here.
-Future efforts to review studies for submission should optimize for representation across geographic regions, forest types, and variables, giving priority to those from currently under-represented regions and forest types (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`), to records from countries relying on existing data for their greenhouse gas inventories (Tier 1 or 2 methodology), to the variables most needed by EFDB users, and to the more contemporary records.
+Future efforts to review studies for submission should optimize for representation across geographic regions, forest types, and variables, giving priority to those from currently under-represented regions and forest types (Figs. `r fig_map`-`r fig_histograms`, `r table_variables`), to records from countries relying on existing data for their greenhouse gas inventories (Tier 1 or 2 methodology), to the variables most needed by EFDB users, and to the more contemporary records.
 
 In addition to the large potential to expand EFDB using records already in ForC, there are innumerous published EFDB-relevant forest C data that are not currently included in ForC, with more being published on a nearly daily basis. 
 Coverage of particular variables or regions could be vastly improved through systematic review of the literature.
 Indeed, recent efforts have compiled large databases of relevant data from monoculture plantation forests [@bukoski_rates_2022] and mixed species plantation forests [@feng_multispecies_2022;@warner_higher_2022], and such a compilation is in works for agroforestry (Susan Cook-Patton, unpublished data). 
 Beyond expanding collections of relevant forest C records, such reviews are valuable for assessing the availability of published records and identifying variables and regions that require additional data collection and analysis. 
 
-## Data collection and analysis needs {-}
+### Data collection and analysis needs {-}
 
-New data collection and analysis is needed to fill notable knowledge gaps.
-While aboveground biomass stocks in particular have received -- and continue to receive -- by far the most research attention [Table `r table_variables`, @anderson-teixeira_carbon_2021;@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], production of an accurate global map of forest C stocks remains an ongoing challenge [@araza_decade_2023]. 
-Other pools and variables remain very poorly quantified [Table `r table_variables`, @anderson-teixeira_carbon_2021], introducing substantive uncertainties into global forest C budgets [@pan_large_2011;@harris_global_2021].
-Furthermore, data distribution is uneven across forest types and geographical regions (Figs. `r fig_map`-`r fig_histograms`).
+New data collection and analyses are needed to fill notable knowledge gaps.
+While aboveground biomass stocks in particular have received -- and continue to receive -- by far the most research attention [`r table_variables`, @anderson-teixeira_carbon_2021;@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], production of an accurate global map of forest C stocks remains an ongoing challenge [@araza_decade_2023]. 
+Other pools and variables remain very poorly quantified and highly uncertain for many parts of the world [`r table_variables`,@tifafi_large_2018; @anderson-teixeira_carbon_2021], introducing substantive uncertainties into global forest C budgets [@pan_large_2011;@harris_global_2021].
+Furthermore, data distribution is very uneven across forest types and geographical regions (Figs. `r fig_map`-`r fig_histograms`).
 For instance, data on C cycling of tropical forests -- particularly in Africa -- remains relatively sparse, in large part due to substantial barriers to data collection and distribution [@delima_making_2022].
 Significant investment in research and researchers focused on ground-based measurement of forest C in such regions will be important to filling knowledge gaps in forest C cycling [@delima_making_2022;@araza_decade_2023; @labrière_forest_2023].
 
 Several EFDB-relevant variables have not been calculated and presented as frequently as would be possible given existing forest census data and minimal extra research effort.
-For example, aboveground woody mortality (*woody.mortality_ag*) and aboveground biomass increment (*delta.agb*) can be calculated from the same census data as aboveground woody productivity (*ANPP_woody*), yet the latter has received far more research attention, and correspondingly has far more records in ForC [Table `r table_variables`, @anderson-teixeira_carbon_2021; but see @piponiot_distribution_2022]. 
-Similarly, live coarse root biomass, total biomass, and changes in both of these pools could in theory be estimated in parallel with aboveground biomass, with the greatest barrier being that allometric models for estimating root biomass are not as reliable or easily available as are those for aboveground biomass [@chave_improved_2014;@rejou-mechain_biomass_2017;@gonzalez-akre_allodb_2022].
+For example, aboveground woody mortality and aboveground biomass increment can be calculated from the same census data as aboveground woody productivity, yet the latter has received far more research attention [`r table_variables`, @anderson-teixeira_carbon_2021]. 
+Similarly, live coarse root biomass, total biomass, and changes therein could in theory be estimated in parallel with aboveground biomass, with the greatest barrier being that allometric models for estimating root biomass are not as reliable or easily available as are those for aboveground biomass [@chave_improved_2014;@rejou-mechain_biomass_2017;@gonzalez-akre_allodb_2022].
 However, while equations for estimating root (and thereby total) biomass require improvement, they do exist for many forest types [e.g., @brassard_coarse_2011; @chojnacky_updated_2014;  @waring_overlooking_2017; @mokany_critical_2006].
-In addition, standing dead trees are captured in most forest censuses and could be used to estimate standing dead wood, although additional data on breakage would be needed for accurate estimates. 
-We recommend that, when possible, researchers calculate and report these variables, following the reporting guidelines specified in section `r section_data_reporting_needs`.
+We recommend that, when possible, researchers calculate and report all EFDB-relevant variables.
 
-Filling knowledge gaps in other EFDB-relevant variables will require more effort, but this effort is warranted given their importance for estimating forest C stock chnages.
-Although aboveground biomass is the most studied variable considered here (Table `r table_variables`) and is the target of satellite missions [@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], significant ground-based research effort is required to create accurate global maps of forest biomass and changes therein [@duncanson_importance_2019; @labrière_forest_2023;@calders_laser_2022].
-Given observations of increasing tree mortality in some forested regions [@mcdowell_pervasive_2020], better characterization of forest dead wood will be critical.
-Additionally, C stocks in forest organic horizons and soils can be quite substantial and highly uncertain in many parts of the world [@tifafi_large_2018].
-Significant investment in ground-based forest research will be critical to filling these gaps.
 
-## Data reporting needs {-}
+### Data reporting needs {-}
 
 We recommend that, in order to make research valuable to estimate C stock changes according to methods provided in the IPCC guidelines, researchers calculate and report results according to IPCC good practice (Table `r table_recommendations`).
 It is particularly noteworthy that simple decisions on the presentation of results will determine whether the records meet the criteria for inclusion in EFDB.
@@ -456,22 +446,12 @@ ft
 
 For those compiling published records (e.g., for meta-analyses), the data set can have added value if all information required by EFDB is extracted from original publications. 
 This includes -- but is not limited to -- retaining original values as presented without modification or rounding, noting whether data were digitized, recording confidence intervals, and recording all required fields (as indicated in the EFDB's bulk import template).
-The significant effort required to map a database into EFDB has been accomplished here (`r table_ForCfieldmapping`), and we welcome other researchers to use the ForC template.
-
-Once EFDB-relevant data are available in peer-reviewed publications, they may be submitted directly to EFDB or may use the ForC - EFDB data pipeline developed here.
-For individual publications, the former option will generally be more efficient.
-However, data incorporated into ForC as well as EFDB will be more broadly useful; for example, these data may be used for basic science [e.g., @banburymorgan_global_2021; @anderson-teixeira_carbon_2021], analyses of forest-based climate change mitigation potential [e.g., @cook-patton_mapping_2020; @goldstein_protecting_2020], and model benchmarking [@fer_ecosystem_2021].
+The significant effort required to map a database into EFDB has been accomplished here (`r table_ForCfieldmapping`), and we hope that it will prove useful as a model for other efforts.
 
 
 # Conclusions {-}
 
-The ForC database contains large numbers of records that could potentially be useful for estimating C stock changes applying methodological guidance provided by the IPCC.
-Here we have developed a framework for submitting these records to the EFDB, thus making those data more accessible for reporting CO~2~ emissions and removals from forest land consistent with good practice in the IPCC guidelines  [@ipcc_2006_2006;@ipcc_2019_2019].
-As of `r format(Sys.time(), '%B %d, %Y')`, we have submitted `r n_records_sent_to_EFDB` records to EFDB.
-Although this represents just `r round(n_records_sent_to_EFDB/n_ind_records_EFDB_variables*100,0)`% of relevant records in ForC, it substantially increases the number of forest land records in EFDB.
-The records submitted to EFDB and present in ForC are very unevenly distributed across variables, regions, and forest types (Figs. `r fig_map`-`r fig_histograms`, Table `r table_variables`), reflecting broader patterns in allocation of research effort.
-
-Going forward, forest researchers can make their research more useful for forest C inventories under IPCC guidelines by calculating and reporting results in ways that are consistent with methodologies provided in the IPCC guidelines (Tables `r table_pools`, `r table_recommendations`).
+As human society strives to achieve net-zero greenhouse gas emissions, forest researchers can make their research more useful for forest C inventories under IPCC guidelines by calculating and reporting results in ways that are consistent with methodologies provided in the IPCC guidelines (Tables `r table_pools`, `r table_recommendations`).
 In addition, substantial investments in research and researchers focused on ground-based measurement of forest C will be required to fill knowledge gaps and thereby increase the accuracy of forest CO~2~ inventories for forest lands under teh Paris Agreement. 
 This challenge is heightened by the fact that forests are changing rapidly [e.g., @mcdowell_pervasive_2020], and data collected a decade or more in the past may no longer be relevant.
 This heightens the need for an efficient system of making forest C data accessible for national greenhouse gas inventories.
@@ -479,18 +459,27 @@ We view the system developed here for submitting ForC data to the IPCC EFDB as o
 
 
 # Acknowledgements {-}
-  We gratefully acknowledge the substantial contributions of Valentyna Slivinska and Sandro Federici for collaboration on the conception, design, and technical review of this project.
-  Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have contributed to building the database.
-  Thank you to Avni Malhotra for helpful comments on an earlier draft of this manuscript.
-  Funding for this study was provided by the Smithsonian (Forest Global Earth Observatory, Smithsonian Working Land and Seascapes); a Bezos Earth Fund grant to the Nature Conservancy, with a sub-grant to NZCBI; and the Institute for Global Environmental Strategies.
+We gratefully acknowledge the substantial contributions of Valentyna Slivinska and Sandro Federici for collaboration on the conception, design, and technical review of this project.
+Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have contributed to building the database.
+Thank you to Avni Malhotra for helpful comments on an earlier draft of this manuscript.
+Funding for this study was provided by the Smithsonian (Forest Global Earth Observatory, Smithsonian Working Land and Seascapes); a Bezos Earth Fund grant to the Nature Conservancy, with a sub-grant to NZCBI; and the Institute for Global Environmental Strategies.
 
 # Author Contribution {-}
-  KAT and VH conceived and designed the project; VH wrote the scripts for database management, data submission to EFDB, and the analyses presented here; MW, TR, and RBM added and reviewed ForC data, BBL and SCP contributed large databases to ForC (EFDB and GROA, respectively); CP provided methodological expertise; KAT, VH, and MW prepared the first draft of the manuscript; all authors reviewed the results and approved the final version of the manuscript.
+KAT and VH conceived and designed the project; VH wrote the scripts for database management, data submission to EFDB, and the analyses presented here; MW, TR, and RBM added and reviewed ForC data, BBL and SCP contributed large databases to ForC (EFDB and GROA, respectively); CP provided methodological expertise; KAT, VH, and MW prepared the first draft of the manuscript; all authors reviewed the results and approved the final version of the manuscript.
  
 # Data Availability Statement  {-}
 All code and data are openly available. The ForC database and associated code are available via the ForC repository within the ForC-db organization on GitHub (https://github.com/forc-db/ForC), and the version used here (ForC v4.0) is archived in Zenodo [@anderson-teixeira_forcdb_2023, DOI: 10.5281/zenodo.8020861]. The data and code associated with data submission to EFDB and preparation of this manuscript are available via the the IPCC-EFDB-integration repository within the ForC-db organization on GitHub  (https://github.com/forc-db/IPCC-EFDB-integration) and archived in Zenodo (DOI: 10.5281/zenodo.8021474). 
 
- 
+# Supplementary Information
+`r appendix_IPCC_definitions`. Primer on forest land classification and carbon pools under IPCC guidelines
+
+`r appendix_ForC_updates`. Updates to ForC (ForC v4.0)
+
+`r table_ForCchanges`.  Updates to ForC field implemented between releases of v3.0 and v4.0
+
+`r table_ForCfieldmapping`. Mapping of ForC fields to EFDB
+
+`r table_variables`. Numbers of ForC records and EFDB submissions by variable
 
 \clearpage
 # References {-}

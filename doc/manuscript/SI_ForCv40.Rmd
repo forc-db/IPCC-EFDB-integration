@@ -12,8 +12,7 @@ csl: new-phytologist.csl
 ```{r eval = TRUE, echo=FALSE, warning=FALSE, results='hide'}
 #Tables
 table_pools =1
-table_variables =2
-table_recommendations = 3
+table_recommendations = 2
 
 #Figures
 fig_variable_mapping=1
@@ -26,6 +25,7 @@ appendix_ForC_updates = "Methods S1"
 appendix_IPCC_definitions = "Notes S1"
 table_ForCchanges = "Table S1"
 table_ForCfieldmapping = "Table S2"
+table_variables ="Table S3"
 
 #READING IN FILES TO GET FIGURES/ TABLES/ STATS 
 path_to_dir <- dirname(dirname(getwd())) # get path to repo 
@@ -151,7 +151,7 @@ It was therefore necessary to return to original publications to retrieve releva
 (1) estimates in original units, 
 (2) confidence intervals (when not already in ForC),
 (3) whether records of interest were presented in tables or text or digitized from figures (EFDB will not accept digitized data), 
-(4) whether records of interest were presented directly, as opposed to having been calculated from related variables (for example, if a study presents aboveground biomass and root biomass but not total biomass, EFDB would not accept the sum of these as a valid record of total biomass)
+and (4) whether records of interest were presented directly, as opposed to having been calculated from related variables (for example, if a study presents aboveground biomass and root biomass but not total biomass, EFDB would not accept the sum of these as a valid record of total biomass).
 We also checked that existing ForC records were complete and correct.
 
 Manual review of records was the limiting step for data submission to EFDB. 
