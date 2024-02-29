@@ -191,7 +191,7 @@ In the future, ground-based forest C estimates should be target gaps in the reco
 **Keywords:**
 <!--Five to eight keywords (in alphabetical order) must be given at the end of the Summary.-->
 
-climate change, database, forest carbon, greenhouse gas inventory, International Panel on Climate Change (IPCC), natural climate solutions
+climate change, database, forest carbon, greenhouse gas inventory, International Panel on Climate Change (IPCC), natural climate solutions, nature based climate solutions
 
 
 # Societal Impact Statement {-}
@@ -199,7 +199,7 @@ climate change, database, forest carbon, greenhouse gas inventory, International
 <!--Please provide a Societal Impact Statement to accompany your manuscript. Societal Impact Statements should outline the wider impact or relevance of the work for people, society or the planet, including any implications for policy and/or practice. This engaging 100 word statement should be written in plain language to be accessible for non-experts.-->
 
 Human interactions with forests have shaped Earth's climate for millenia and will continue to do so as we target net-zero emission goals.
-Accurately characterizing these climate impacts requires accurate forest carbon data available for national greenhouse gas inventories conducted under the Paris Agreement. 
+Accurately characterizing these climate impacts requires making accurate forest carbon data available for forest monitoring and planning. 
 Here we develop a semi-automated process for submitting forest carbon measurements from the largest relevant scientific database to the International Panel on Climate Change's Emission Factor Database, which currently has sparse forest carbon data.
 Building this bridge from scientific research to international policy is an important step towards managing forests in a net-zero motivated future.
 
@@ -209,7 +209,7 @@ Building this bridge from scientific research to international policy is an impo
 
 # Introduction {-}
 
-Humans have been influencing Earth's climate via ecologically transformative land use practices for >12,000 years [@ellis_people_2021;@sanderman_soil_2017; @bonan_forests_2016].
+Humans have been influencing Earth's climate via ecologically transformative impacts on ecosystems for >12,000 years [@ellis_people_2021;@sanderman_soil_2017; @bonan_forests_2016].
 In recent decades, as both anthropogenic land transformation and climate change have accelerated, this relationship has come into increasing focus [@ipcc_climate_2019].
 Deforestation and forest degradation are substantial sources of the greenhouse gas carbon dioxide (CO~2~), currently accounting for >10% of anthropogenic emissions [@friedlingstein_global_2022].
 At the same time, CO~2~ uptake by remaining and regrowing forests, woodlands, and savannas has exceeded releases from deforestation and other severe disturbances, resulting in a net carbon CO~2~ sink of ~0.88 - `r round(5.8*12/44,1)` Gt C yr^-1^ [@xu_changes_2021;@harris_global_2021],
@@ -222,14 +222,15 @@ The future of this important CO~2~ sink depends primarily upon future trajectori
 
 Accordingly, forests play a substantial role in international plans for climate change mitigation under the Paris Agreement [@unfccc_adoption_2015; @grassi_key_2017].<!--As of 2016, forest-based mitigation accounted for 26% of total planned greenhouse gas mitigation within Nationally Determined Contributions under the Paris Agreement [@grassi_key_2017].-->
 Forest conservation, reforestation, and improved sustainable management all have significant -- and relatively cost-effective -- potential as climate change mitigation options [@roe_landbased_2021], with conservation and reforestation having the fourth and fifth largest net emission reduction potentials or all mitigation options [@ipcc_summary_2022].
+<!--SCP: You might get asked to say relative to what...the answer could be the social cost of carbon or more technological solutions. But it's probably fine to leave as is.-->
 However, these envisioned forest-based climate change mitigation initiatives do not always correspond to actual emission reductions implemented on the ground [e.g., @badgley_systematic_2022].
-One critical need for ensuring that forest-based climate change mitigation initiatives are effective is realistic planning and reporting, underlain by solid scientific data [@anderson-teixeira_effective_2022; @deng_comparing_2021].
+Realistic planning and reporting is critically needed to ensure that forest-based climate change mitigation initiatives are effective, and this requires solid scientific data [@anderson-teixeira_effective_2022; @deng_comparing_2021].
 
 To this end, the International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change (UNFCCC) [@ipcc_2006_2006;@ipcc_2019_2019].
 Under this guidance, greenhouse gas emissions to, or withdrawals from, the atmosphere are quantified on an annual basis for all managed land, which includes most of the world's forest land [@ogle_delineating_2018; @ellis_anthropogenic_2010].
 The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [`r appendix_IPCC_definitions`, @ipcc_agriculture_2006; @ipcc_2019_2019].
 A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone [@fao_global_2012] and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
-Tier 1 values have improved over the years as more data have become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement.
+Tier 1 values have improved over the years as more data and methods have become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement.
 For example, following the 2019 release of the latest IPCC guidelines, it was revealed that IPCC's Tier 1 default failed to capture eight-fold variation of C accumulation in regrowth forests within ecozones [@cook-patton_mapping_2020] and that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
 High variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @cuni-sanchez_high_2021] means that it is crucial for practitioners to have access to locally-specific information, when available.
 This rapid evolution of scientific information on C cycling in forests is valuable for informing climate change mitigation efforts but requires improved mechanisms for communicating the latest information from scientific researchers to the practitioners who need reliable estimates for greenhouse gas mitigation planning. 
@@ -422,7 +423,7 @@ We recommend that, when possible, researchers calculate and report all EFDB-rele
 ### Data reporting needs {-}
 
 We recommend that, in order to make research most useful for estimating C stock changes following IPCC guidelines, researchers calculate and report results according to IPCC good practice (Table `r table_recommendations`).
-Importantly, simple decisions on the presentation of results will determine whether the records meet the criteria for inclusion in EFDB.
+Importantly, simple decisions on the presentation of results will determine whether the records meet the current criteria for inclusion in EFDB.
 For example:
 (1) presenting data only in a figure makes them ineligible for inclusion in EFDB, whereas presentation in a table or supplementary data file allows inclusion while supporting FAIR goals [@stall_make_2019];
 (2) direct presentation of all relevant variables allows inclusion, whereas presenting only components of variables of interest (e.g., parsing litter into fine woody debris, OL, OF, and OH layers) or requiring simple mathematical operations to obtain a variable of interest (e.g., *delta.agb* = *ANPP_woody* - *woody.mortality.agb*) disqualifies records from inclusion;
@@ -446,7 +447,8 @@ ft <- bold(ft, i = 1, j = NULL, bold = TRUE, part = "header") # put title in bol
 ft
 ```
 
-For those compiling published records (e.g., for meta-analyses), the data set can have added value if all information required by EFDB is extracted from original publications. 
+For those compiling published records (e.g., for meta-analyses), the data set can have added value if all information required by EFDB is extracted from original publications.
+<!--SCP - optional addition : Realistic  planning and reporting is critically needed to ensure that forest-based climate change mitigation initiatives are effective, and this requires solid scientific data -->
 This includes -- but is not limited to -- retaining original values as presented without modification or rounding, noting whether data were digitized, recording confidence intervals, and recording all required fields (as indicated in the EFDB's bulk import template).
 The significant effort required to map a database into EFDB has been accomplished here (`r table_ForCfieldmapping`), and we hope that it will prove useful as a model for other efforts.
 
@@ -454,8 +456,8 @@ The significant effort required to map a database into EFDB has been accomplishe
 # Conclusions {-}
 
 As human society strives to achieve net-zero greenhouse gas emissions, forest researchers can make their research more useful for forest C inventories under IPCC guidelines by calculating and reporting results in ways that are consistent with methodologies provided in the IPCC guidelines (Tables `r table_pools`, `r table_recommendations`).
-In addition, substantial investments in research and researchers focused on ground-based measurement of forest C will be required to fill knowledge gaps and thereby increase the accuracy of forest CO~2~ inventories for forest lands under teh Paris Agreement. 
-This challenge is heightened by the fact that forests are changing rapidly [e.g., @mcdowell_pervasive_2020], and data collected a decade or more in the past may no longer be relevant.
+In addition, substantial investments in research and researchers focused on ground-based measurement of forest C will be required to fill knowledge gaps and thereby increase the accuracy of forest CO~2~ inventories for forest lands under the Paris Agreement. 
+This challenge is heightened by the fact that forests are changing rapidly [e.g., @mcdowell_pervasive_2020], and data collected a decade or more in the past may be increasingly less accurate.
 This heightens the need for an efficient system of making forest C data accessible for national greenhouse gas inventories.
 We view the system developed here for submitting ForC data to the IPCC EFDB as one important step towards that goal.
 
