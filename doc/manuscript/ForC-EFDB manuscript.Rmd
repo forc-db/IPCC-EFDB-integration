@@ -20,13 +20,13 @@ Valentine Herrmann^1^
 
 Madison Williams^1^
 
-Teagan Rogers^1^
+Teagan Rogers^3^
 
-Rebecca Banbury Morgan^1,3^
+Rebecca Banbury Morgan^1,4^
 
-Ben Bond-Lamberty^4^
+Ben Bond-Lamberty^5^
 
-Susan Cook-Patton^5^
+Susan Cook-Patton^6^
 
 
 
@@ -36,11 +36,13 @@ Susan Cook-Patton^5^
 
 2. Forest Global Earth Observatory, Smithsonian Tropical Research Institute, Panama, Republic of Panama
 
-3. School of Geography, University of Leeds, Leeds, UK
+3. Smithsonian-Mason School of Conservation, Front Royal, VA, United States
 
-4. Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, United States
+4. School of Geography, University of Leeds, Leeds, United Kingdom
 
-5. The Nature Conservancy; Arlington VA 22203, USA
+5. Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, United States
+
+6. The Nature Conservancy; Arlington VA 22203, United States
 
 *corresponding author: teixeirak@si.edu
 
@@ -148,7 +150,7 @@ percent_forest_records = round(n_records_posted_EFDB/5644*100,0); #as of Jan 202
 n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
 # get n fields modified
 sampling_details <- read.csv(paste0(path_to_ForC,"/ForC/database_management_records/record_of_changes.csv"), stringsAsFactors = FALSE, check.names = FALSE)
-n_fields_modified =  length(sampling_details[,"Column"]) + 4 
+n_fields_modified =  length(sampling_details[,"Field"]) + 4 
 
 
 ```
@@ -161,15 +163,15 @@ n_fields_modified =  length(sampling_details[,"Column"]) + 4
 
 
 <!-- (1) the research conducted or aims, including the rationale-->
-- Humans have been influencing Earth's climate via transformative impacts on forests for >12,000 years, and forests are now recognized as critical to climate change mitigation under the Paris Agreement.
-However, the efficacy of climate change mitigation planning and reporting depends on having quality data on forest carbon (C) stocks and changes.
+- Humans have been influencing Earth's climate via transformative impacts on forests for millenia, and forests are now recognized as critical to climate change mitigation under the Paris Agreement.
+The efficacy of climate change mitigation planning and reporting depends on quality data on forest carbon (C) stocks and changes.
 The Emission Factor Database (EFDB) of the International Panel on Climate Change (IPCC) is intended to be a definitive source for such data, but needs comprehensive and well-documented data to be so.
 <!-- (2) methods-->
 - To facilitate submission of forest C estimates from scientific studies to EFDB, we develop and document a process for semi-automated data submission from the Global Forest C database (ForC v4.0), which is the largest compilation of ground-based forest C estimates. 
 We then assess the data currently available through ForC and provide recommendations for improving forest data collection, analysis, and reporting.
 <!-- (3) key results-->
-- As of `r format(Sys.time(), '%B %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_posted_EFDB` of which had been submitted and posted to EFDB. These represent 19% of the total EFDB records for forest land.
-Records were unevenly distributed across variables (skewed towards aboveground biomass stocks) and geographic regions (skewed towards temperate forests).
+- As of `r format(Sys.time(), '%B %Y')`, ForC contained ~`r n_ind_records_EFDB_variables` independent records relevant to EFDB, `r n_records_posted_EFDB` of which had been submitted and posted to EFDB. These represented `r round(n_records_posted_EFDB/5644*100,0)`% of the total EFDB records for forest land.
+Records were unevenly distributed across variables<!-- (skewed towards aboveground biomass stocks)--> and geographic regions<!-- (skewed towards temperate forests)-->.
 `r round((n_records_reviewed_or_added-n_records_sent_to_EFDB)/n_records_reviewed_or_added,2)*100`% of ForC records reviewed could not be submitted because the original publication lacked required information.
 <!-- (4) the main conclusion, including the key points of discussion-->
 - In the future, ground-based forest C estimates should target gaps in the record, and studies should ensure that they report all information necessary for inclusion in EFDB. 
@@ -216,7 +218,7 @@ At the same time, CO~2~ uptake by remaining and regrowing forests, woodlands, an
 <!--@xu_changes_2021 includes all biomes with trees, estimates ~0.88 Gt C yr^-1^
 -1.6 is net forest estimate in @harris_global_2021 Table 2, which includes only forests;
 BBL: might cite Ruehr et al. 2023 http://dx.doi.org/10.1038/s43017-023-00456-3 here-->
-ofsetting an estimated `r round(.88*44/12/32,2)*100`<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> - `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021].
+offsetting an estimated `r round(.88*44/12/32,2)*100`<!--net forest estimate from xu_changes_2021 / fossil fuel & cement, (Harris et al. Table 2)--> - `r round(5.8/32,2)*100`%<!--net forest estimate / fossil fuel & cement, (Harris et al. Table 2)--> of anthropogenic CO~2~ emissions from fossil fuels and cement [@xu_changes_2021;@harris_global_2021].
 The future of this important CO~2~ sink depends primarily upon future trajectories of direct human impacts on forests [i.e., deforestation/ degradation vs. conservation/ restoration, @ipcc_climate_2019;@ipcc_climate_2022], and also upon forest responses to climate change, which are likely to reduce the sink strength [@mcdowell_pervasive_2020].
 <!--here I would definitely cite the Ruehr et al. 2023 paper-->
 
@@ -229,7 +231,7 @@ Realistic planning and reporting is critically needed to ensure that forest-base
 To this end, the International Panel on Climate Change (IPCC) provides guidance for national greenhouse gas inventories for reporting to the United Nations Framework Convention on Climate Change (UNFCCC) [@ipcc_2006_2006;@ipcc_2019_2019].
 Under this guidance, greenhouse gas emissions to, or withdrawals from, the atmosphere are quantified on an annual basis for all managed land, which includes most of the world's forest land [@ogle_delineating_2018; @ellis_anthropogenic_2010].
 The IPCC inventory guidelines include specific instructions for inventories for greenhouse gas (mainly CO~2~) exchanges between forest land and the atmosphere [`r appendix_IPCC_definitions`, @ipcc_agriculture_2006; @ipcc_2019_2019].
-A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone [@fao_global_2012] and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
+A tiered approach is employed, where the lowest tier (Tier 1) represents the simplest approach and relies on default parameter values -- for example, forest carbon (C) stocks values by ecozone<!-- [@fao_global_2012]--> and forest age class derived as the average of published estimates [@ipcc_2019_2019;@rozendaal_aboveground_2022].
 Tier 1 values have improved over the years as more data and methods have become available [@requenasuarez_estimating_2019; @rozendaal_aboveground_2022], but there remains room for improvement.
 For example, following the 2019 release of the latest IPCC guidelines, it was revealed that IPCC's Tier 1 default failed to capture eight-fold variation of C accumulation in regrowth forests within ecozones [@cook-patton_mapping_2020] and that C stocks in mature African tropical montane forests were two-thirds higher than the IPCC Tier 1 values for these forests [@cuni-sanchez_high_2021].
 High variability of forest C cycling within ecozones [e.g., @cook-patton_mapping_2020; @cuni-sanchez_high_2021] means that it is crucial for practitioners to have access to locally-specific information, when available.
@@ -267,7 +269,7 @@ There were two cases in which more complex mapping was required: (1) mapping of 
 
 ### Carbon cycle variables {-}
 
-We identified ForC variables that were relevant to the IPCC methodology and to EFDB (`r appendix_IPCC_definitions`).
+We identified ForC variables that were relevant to the IPCC methodology and EFDB (`r appendix_IPCC_definitions`).
 These included  organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes for each IPCC-defied C pool (Table `r table_pools`, Fig. `r fig_variable_mapping`).
 It is important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
 For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
@@ -406,7 +408,7 @@ Beyond expanding collections of relevant forest C records, such reviews are valu
 ### Data collection and analysis needs {-}
 
 New data collection and analyses are needed to fill notable knowledge gaps.
-While aboveground biomass stocks in particular have received -- and continue to receive -- by far the most research attention [`r table_variables`, @anderson-teixeira_carbon_2021;@dubayah_global_2020; @quegan_european_2019; @nisar_nasaisro_2018], production of an accurate global map of forest C stocks remains an ongoing challenge [@araza_decade_2023]. 
+While aboveground biomass stocks in particular have received -- and continue to receive -- by far the most research attention [`r table_variables`,@nisar_nasaisro_2018; @anderson-teixeira_carbon_2021;@dubayah_global_2020; @quegan_european_2019], production of an accurate global map of forest C stocks remains an ongoing challenge [@araza_decade_2023]. 
 Other pools and variables remain poorly quantified and highly uncertain for many parts of the world [`r table_variables`,@tifafi_large_2018; @anderson-teixeira_carbon_2021], introducing substantive uncertainties into global forest C budgets [@pan_large_2011;@harris_global_2021].
 Furthermore, data distribution is very uneven across forest types and geographical regions (Figs. `r fig_map`-`r fig_histograms`).
 For instance, data on C cycling of tropical forests -- particularly in Africa -- remains relatively sparse, in large part due to substantial barriers to data collection and distribution [@delima_making_2022].
