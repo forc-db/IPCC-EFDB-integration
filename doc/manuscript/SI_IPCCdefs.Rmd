@@ -37,7 +37,7 @@ table_variables ="Table S3"
 IPCC defines land-use categories to include six categories -- Forest Land, Grassland, Wetlands, Cropland, Settlements, and Other Land [@ipcc_2006_2006].
 Sub-divisions include land that has remained in a particular category for >20 years (e.g., Forest Land remaining Forest Land) and land that has been converted from one category to another in the past 20 years (e.g., Cropland converted to Forest Land). 
 Forest Land is defined as at least 10-30% crown cover of trees with potential to reach a minimum height of 2-5 m *in situ*, and shorter-stature natural vegetation would be classified as Grassland [@ipcc_good_2003].
-Definitions of forest are allowed to vary by country, but must be applied consistently.
+Definitions of forest are allowed to vary by country but must be applied consistently.
 Forest Land includes land where vegetation temporarily falls below the threshold values for forest (e.g., due to disturbance), but is expected to exceed those thresholds in the future [@ipcc_good_2003].
 
 The UNFCCC requires greenhouse gas reporting for all managed lands in a country, where management is defined as "human interventions and practices have been applied to perform production, ecological or social functions" [@ipcc_2006_2006]. 
@@ -47,7 +47,7 @@ However, the definition is applied differently across countries, and the majorit
 
 ## Carbon pools {-}
 
-For each stratum of subdivision within a land-use category (see **Land classification** section below), annual stock changes ($\Delta C$; t C yr^-1^) are calculated as the sum of changes in various pools (see **Carbon pools** section below), plus any harvested wood products.
+For each stratum of subdivision within a land-use category, annual stock changes ($\Delta C$; t C yr^-1^) are calculated as the sum of changes in various pools, plus any harvested wood products.
 Thus, C cycle variables relevant to the IPCC methodology and to EFDB include C stocks, net annual increments, and fluxes in the IPCC-defined pools.
 
 Forest ecosystem C pools may be parsed in various ways, and while certain definitions and thresholds are more common than others, there is no single standard for measuring or reporting that is adhered to by all -- or even most -- scientific studies. 
@@ -78,7 +78,7 @@ IPCC's default method for Tier 1 estimates is to apply a ratio of belowground to
 ### Dead Organic Matter {-}
 
 Dead organic matter includes all non-living biomass larger than the litter size threshold. 
-Its inclusion in inventories is not required under Tier 1 methodology for Forest Land remaining Forest Land (see **Land Classification** section below), but is required for land that has transitioned to or from forest within the past 20 years [@ipcc_2006_2006].
+Its inclusion in inventories is not required under Tier 1 methodology for Forest Land remaining Forest Land but is required for land that has transitioned to or from forest within the past 20 years [@ipcc_2006_2006].
 
 Dead wood, which is typically <50 t C ha^-1^ but can exceed 150 t C ha^-1^ [@anderson-teixeira_carbon_2021], is defined by IPCC as "all non-living woody biomass not contained in the litter, either standing, lying on the ground, or in the soil" [@ipcc_good_2003;@ipcc_2006_2006]. 
 This pool includes standing and fallen dead wood, stumps, and dead roots of diameter ≥10 cm (or a diameter specified by the country).
