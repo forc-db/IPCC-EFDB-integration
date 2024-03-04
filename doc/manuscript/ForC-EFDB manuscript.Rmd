@@ -20,7 +20,7 @@ Valentine Herrmann^1^
 
 Madison Williams^1^
 
-Teagan Rogers^3^
+Teagan Rogers^3^ (ORCID: 0000-0002-8828-9640)
 
 Rebecca Banbury Morgan^1,4,5^
 
@@ -202,7 +202,7 @@ climate change, database, forest carbon, greenhouse gas inventory, International
 
 <!--Please provide a Societal Impact Statement to accompany your manuscript. Societal Impact Statements should outline the wider impact or relevance of the work for people, society or the planet, including any implications for policy and/or practice. This engaging 100 word statement should be written in plain language to be accessible for non-experts.-->
 
-Human interactions with forests have shaped Earth's climate for millenia and will continue to do so as we target net-zero emission goals.
+Human interactions with forests have shaped Earth's climate for millennia and will continue to do so as we target net-zero emission goals.
 Accurately characterizing these climate impacts requires making accurate forest carbon data available for forest monitoring and planning. 
 Here we develop a semi-automated process for submitting forest carbon measurements from the largest relevant scientific database to the International Panel on Climate Change's Emission Factor Database, which currently has sparse forest carbon data.
 Building this bridge from scientific research to international policy is an important step towards managing forests in a net-zero motivated future.
