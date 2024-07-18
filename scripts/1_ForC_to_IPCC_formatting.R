@@ -4,6 +4,7 @@
 rm(list = ls())
 
 # load library ####
+library(tidyverse)
 
 # load data ####
 MEASUREMENTS <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/data/ForC_measurements.csv", stringsAsFactors = F)
@@ -78,7 +79,7 @@ ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$
 ## grey is number of records in ForC that are relevant to EFDB (n records for the variables we send)
 ## black is what is already submitted to EFDB
 ## x axis is dominant vegetation type
-
+load("scripts/X_area_of_forest_categories_for_barplot.RData")
 
 ForBarplot <- data.frame(data_type = rep(c("relevant", "submitted"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg), FAO.ecozone = c(ForC_simplified$FAO.ecozone, ForC_simplified_already_sent$FAO.ecozone), continent = c(ForC_simplified$continent, ForC_simplified_already_sent$continent), stand.age = c(ForC_simplified$stand.age, ForC_simplified_already_sent$stand.age))
 
@@ -87,23 +88,23 @@ levels(ForBarplot$stand.age)[4] <- "Unclassified"
 
 FAO_codes <- read.csv("https://raw.githubusercontent.com/forc-db/ForC/master/supplementary_resources/World%20Map%20data/Biogegraphic_Regions/FAO_%20names_and_codes.csv", stringsAsFactors = F)
 
-ForBarplot$FAO.ecozone <- FAO_codes$gez_abbrev[match(ForBarplot$FAO.ecozone, FAO_codes$ï..gez_name)]
+ForBarplot$FAO.ecozone <- FAO_codes$gez_abbrev[match(ForBarplot$FAO.ecozone, FAO_codes$gez_name)]
 ForBarplot$FAO.ecozone[is.na(ForBarplot$FAO.ecozone)] <- "Unclassified"
 
 # ForBarplot$continent <- gsub(" ", "\n", ForBarplot$continent)
 
-labels <- list(A = list("dominant.veg", "Dominant vegetation", F),
-               B = list("FAO.ecozone", "FAO ecozone", T),
-               C = list("continent", "Continent", F),
-               D = list("stand.age", "Stand age", F))
+labels <- list(A = list("dominant.veg", "Dominant vegetation", F, dom_veg_areas),
+               B = list("FAO.ecozone", "FAO ecozone", T, FAO_ecozone_areas),
+               C = list("continent", "Continent", F, continents_areas),
+               D = list("stand.age", "Stand age", F, stand_age_area))
 
-png("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 9, units = "in", res = 300)
 
-par(mfrow = c(2,2), mar = c(6,3,2.5,1), oma = c(1,2,0,0))
+all_data = NULL
 for(i in 1:length(labels)){
   n = labels[[i]][[1]]
   xlab = labels[[i]][[2]]
   leg = labels[[i]][[3]]
+  area = labels[[i]][[4]]
   
   bp <- table(ForBarplot$data_type, ForBarplot[,n])
   
@@ -132,15 +133,38 @@ for(i in 1:length(labels)){
     if(length(idx_other_then_classified)>0) bp <- bp[, c(order(colSums(bp)[-idx_other_then_classified], decreasing = T), idx_other_then_classified)] else bp <- bp[, order(colSums(bp), decreasing = T)]
   }
   
-  b <- barplot(bp, col = c("grey", "black"), xaxt = "n", legend.text = leg, args.legend = list(x = "topright", bty = "n"), las = 1)
-  text(x= b, y = -500, labels = colnames(bp), srt = 90, xpd = NA, adj= 1)
-  mtext(paste0(names(labels)[i], ") ", xlab), side = 3, adj = 0,  line = 1)
   
+  bp_long <- rbind(bp,
+                   "global area" = prop.table(setNames(as.numeric(area$Area), area$name))[colnames(bp)]*100) %>% as.data.frame() %>% rownames_to_column("what") %>% pivot_longer(cols = -what) %>%
+    mutate( scale = max(bp)/100,
+            scaled_value = ifelse(what %in% "global area", value * (max(bp)/100), value)) %>%
+    mutate(panel = xlab) %>% 
+    arrange(what)
+  
+  all_data <- rbind(all_data, bp_long)
 }
-mtext("Number of records", side = 2, outer = T, line = 1)
+
+all_data <- all_data %>% mutate(panel = factor(panel, levels = c("Dominant vegetation", "FAO ecozone", "Continent", "Stand age")),
+                                name = factor(name, levels= (c(all_data %>% filter(!panel %in% "Stand age", !name %in%  c("Other", "Unclassified")) %>% arrange(panel, -value) %>% pull(name) %>% unique(), all_data %>% filter(panel %in% "Stand age", !name %in%  c("Other", "Unclassified")) %>% pull(name) %>% unique(), c("Other", "Unclassified")) %>% unique())),
+                                group = factor(ifelse(what %in% "global area", what, "data"), levels = c("global area", "data")),
+                                what = factor(what, levels = c( "relevant", "submitted","global area")))
 
 
-dev.off()
+ggplot(all_data, aes(x=name, y = scaled_value, fill= what, group = group)) + 
+  geom_col( position= position_dodge2(reverse = T)) +
+  scale_y_continuous(sec.axis = sec_axis(~ . / (max(bp)/100), name = "Relative Area (%)"))+
+  labs(y="Number of records", x = "", fill = "") + 
+  scale_fill_manual(values = c(relevant = "grey", submitted = "grey15", "global area" = "tomato3")) +
+  facet_wrap(~panel, scale = "free_x")  + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        axis.title.y.right =  element_text(colour = "tomato3"),
+        axis.ticks.y.right = element_line(colour = "tomato3"),
+        axis.text.y.right = element_text(colour = "tomato3"),
+        legend.position = "bottom"
+  ) 
+
+ggsave("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 8, units = "in", dpi = 300)
+
 
 # ---- END OF FIGURE FOR PAPER ----#
 
