@@ -64,17 +64,17 @@ Another example, the map (Fig 2) is fine as an illustration or proof of the glob
 
 **We have made some of the suggested revisions (detailed below) to improve the assessment of data representativeness and consider this to be an important improvement. At the same time, we also wish to emphasize that the goal of this paper was to document the process and provide an overview of the types of data submitted, as opposed to submitting data that adequately represents all forest types and documenting their representativeness. The latter -- to the extent that it would even be possible -- would be a massive project far beyond the scope of this paper. Therefore, while improving the assessment of data representativeness, we believe it would be overkill to analyze all aspects of representativeness.**
 
-**We have added a graph to the map (Fig. `r fig_map`) showing the proportional breakdown by FAO ecozone of (1) area with tree cover, (2) sites with records submitted to EFDB, (3) records submitted to EFDB. We have also added a statement on relative representation by biome: "Relative to forested area, submitted data under-represented the tropics and over-represented temperate and boreal biomes (Fig. `r fig_map`)."**
+**We have added a graph to the map (Fig. `r fig_map`) showing the proportional breakdown by FAO ecozone of (1) area with tree cover, (2) sites and records submitted to EFDB, (3) sites and records submitted to EFDB. We have also added a statement on relative representation by biome: "Relative to forested area, submitted data under-represented the tropics and over-represented temperate regions, mirroring the composition of ForC (Fig. `r fig_map`)."**
 
-**To assess the data distribution within in the global climate space, we have added a Whittaker-style diagram showing ForC sites and those with submitted data within the MAT-MAP climate space (new Fig. `r fig_climate`). We have also added a statement on climate representativity: "Submitted data were concentrated in climates that are relatively common over Earth's land area (Fig. `r fig_climate`)." **
+**To assess the data distribution within in the global climate space, we have added a Whittaker-style diagram showing ForC sites and those with submitted data within the MAT-MAP climate space (new Fig. `r fig_climate`). We have also added a statement on climate representativity: "Submitted data covered all forested climates with substantial land area except the colder boreal regions (boreal tundra woodland; Figs. `r fig_map`, `r fig_climate`) and were concentrated in climates that are relatively common over Earth's land area (Fig. `r fig_climate`)." **
 
 **Regarding imbalance among variable types, `r table_variables` provides a complete record of the numbers of records in ForC and submitted to EFDB. We feel that further analyzing by categories such as ecozone or age would be overkill, make the manuscript too long, and of little interest to most readers.** 
 
 Fig. 3 *(now 4)* isn’t conclusive either because ecozones have different sizes, so the number of reports on itself is not a sufficient to evaluate the coverage. The representativity of the data within an ecozone depends on the variability between records: if they all cover the same age classes, again, the representativity is bad.
 
-*https://github.com/forc-db/IPCC-EFDB-integration/issues/63*
+**To evaluate the coverage, we have modified this figure to include bars representing the relative area (% of global) of each category and added some text summarizing the results/ citing this figure (3rd paragraph in Results).**
 
-*Again, we feel that deeper analysis of the representativity would be overkill....* 
+**Again, we feel that deeper analysis (e.g., age x ecozone) of the representativity would be overkill and of little interest to most readers.** 
 
 Consequently, the “Database needs” as discussed L297 are not convincingly demonstrated by the results which are limited to just frequencies. Overall the discussion seems somewhat verbose.
 

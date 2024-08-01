@@ -6,6 +6,8 @@ output:
 bibliography: references.bib
 csl: new-phytologist.csl
 
+nocite: |
+  @harris_updated_2014; @jung_exploiting_2006; @besnard_mapping_2021
 ---
 
 
@@ -372,12 +374,13 @@ Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_E
 The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records submitted described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, a subset of which also described inputs to the dead wood or litter pool (Fig. `r fig_variable_mapping`,`r table_variables`).
 
 
-ForC v4.0 records and the subset submitted to EFDB were distributed across all forested continents, biomes, and forest types, albeit very unevenly (Figs. `r fig_map`-`r fig_histograms`).
-Relative to forested area, submitted data under-represented the tropics and over-represented temperate and boreal biomes (Fig. `r fig_map`).
-Submitted data were concentrated in climates that are relatively common over Earth's land area (Fig. `r fig_climate`).
-Among the records submitted to EFDB, the largest number came from North America, followed by Asia, South America, and Africa (Fig. `r fig_histograms`c), with the most represented FAO ecozones being boreal coniferous forest, temperate continental forest, and temperate mountain systems, followed by tropical rain forests and moist deciduous forests (Fig. `r fig_histograms`b).
-By far the most records came from needleleaf evergreen forests, followed by broadleaf deciduous and broadleaf evergreen (Fig. `r fig_histograms`b). 
-The largest number of records came from mature forests (>100 years), followed by young and intermediate-aged stands (Fig. `r fig_histograms`d).
+ForC v4.0 records and the subset submitted to EFDB were distributed across all forested continents, biomes, and forest types, albeit unevenly (Figs. `r fig_map`-`r fig_histograms`).
+Relative to forested area, submitted data under-represented the tropics and over-represented temperate regions, mirroring the composition of ForC (Figs. `r fig_map`, `r fig_histograms`b).
+Submitted data covered all forested climates with substantial land area except the colder boreal regions (boreal tundra woodland; Figs. `r fig_map`, `r fig_climate`) and were concentrated in climates that are relatively common over Earth's land area (Fig. `r fig_climate`).
+Among the records submitted to EFDB, the largest number came from North America, followed by Asia, South America, and Africa, with strongly disproportionate representation of North America and under-representation of South America, Africa, Europe, Australia, and Oceania (Fig. `r fig_histograms`c).
+In terms of FAO ecozones, boreal coniferous forest, temperate continental forest, and temperate mountain systems had the most records and were the best represented relative to their global area, whereas other ecozones were poorly represented relative to their global area (Fig. `r fig_histograms`b).
+By far the most records and best representation relative to global area were for needleleaf evergreen forests, followed by broadleaf deciduous and broadleaf evergreen (Fig. `r fig_histograms`b). 
+The largest number of records came from mature forests (>100 years), followed by young and intermediate-aged stands, but young (<20 year) stands were best represented relative to their global area (Fig. `r fig_histograms`d).
 
 <!--In ForC v4.0, the largest number of records came from Asia, followed by North America, South America, and Europe, with relatively few records from Africa, Australia, and Oceania (Fig. `r fig_histograms`c).
 Categorized by FAO ecozone, the greatest numbers of records came from subtropical humid forests, temperate mountain systems, and tropical rain forests, each with >2,000 independent records (Fig. `r fig_histograms`b). 
@@ -388,11 +391,11 @@ In terms of stand age, the most represented age class was 20-100 years, followed
 
 
 
-![**Figure `r fig_map`. Map of sites in ForC shaded by number of independent records relevant (circles) and submitted (triangles) to EFDB.**  Underlying map shows FAO ecozones, and symbols are colored according to the number of records at each site. Inset stacked bar chart shows proportional representation by FAO ecozone for tree cover area (from SYNMAP,@jung_exploiting_2006, relevant ForC records, and submitted records. FAO ecozones are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems.](figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png)
+![**Figure `r fig_map`. Map of sites in ForC shaded by number of independent records relevant (circles) and submitted (triangles) to EFDB.**  Underlying map shows FAO ecozones, and symbols are colored according to the number of records at each site. Inset stacked bar chart shows proportional representation by FAO ecozone for tree cover area (from SYNMAP, Jung *et al*, 2006), relevant ForC records, and submitted records. FAO ecozones (obtained from FAO’s GEOnetwork: http://www.fao.org:80/geonetwork) are coded as follows: Ba-Boreal coniferous forest, Bb-Boreal tundra woodland, BM-Boreal mountain systems, P-Polar, SBSh-Subtropical steppe, SBWh-Subtropical desert, SCf-Subtropical humid forest, SCs-Subtropical dry forest, SM-Subtropical mountain systems, TAr-Tropical rain forest,  TAwa-Tropical moist deciduous forest, TAwb-Tropical dry forest, TBSh-Tropical shrubland, TBWh-Tropical desert, TeBSk-Temperate steppe, TeBWk-Temperate desert, TeDc-Temperate continental forest, TeDo-Temperate oceanic forest, TeM-Temperate mountain systems, TM-Tropical mountain systems.](figures_tables/World_Map_of_sites_with_FAO_and_IPCC_data_sent.png)
 
-![**Figure `r fig_climate`. Distribution of ForC records relevant (dots) and submitted (triangles) to EFDB within the global climate space of mean annual temperature (MAT) and mean annual precipitation (MAP).** Climate data are from *WorldClim 2 (0.5 resolution, Fick & Hijmans, 2017*. Background colors indicate the global land area with each MAT-MAP combination. GitHub issue 61:https://onlinelibrary-wiley-com.smithsonian.idm.oclc.org/doi/full/10.1111/gcb.15353](figures_tables/Climate_of_forC_sites_IPCC.png)
+![**Figure `r fig_climate`. Distribution of ForC records relevant (dots) and submitted (triangles) to EFDB within the global climate space of mean annual temperature (MAT) and mean annual precipitation (MAP).** Climate data are from the CRU TS3.10 dataset (0.5° resolution, 1990-2014, Harris *et al*, 2014). Background colors indicate the global land area with each MAT-MAP combination.](figures_tables/Climate_of_forC_sites_IPCC.png)
 
-![**Figure `r fig_histograms`. Histograms of number of independent records in ForC relevant to (grey) and submitted to (black) EFDB, organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.** For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. For FAO ecozones (b), codes are as listed in the caption of Figure `r fig_map`.](figures_tables/Histogram_n_Relevant_and_Transferred_Records.png)
+![**Figure `r fig_histograms`. Histograms of number of independent records in ForC relevant (grey) and submitted (black) to EFDB (both left axis), along with the relative global area of each type (red, right axis), organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.** For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. Global coverage of each was obtained from SYNMAP (Jung *et al*, 2006). For FAO ecozones (b), codes are as listed in the caption of Figure `r fig_map`. The relative area of forests by age class was obtained from the global forest age database of Besnard *et al.* (2021), updated in 2024 (DOI: xxx).  ](figures_tables/Histogram_n_Relevant_and_Transferred_Records.png)
 
 
 
