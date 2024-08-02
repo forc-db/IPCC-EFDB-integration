@@ -11,13 +11,15 @@ csl: new-phytologist.csl
 
 ```{r eval = TRUE, echo=FALSE, warning=FALSE, results='hide'}
 #Tables
+#Tables
 table_pools =1
 table_recommendations = 2
 
 #Figures
 fig_variable_mapping=1
 fig_map=2
-fig_histograms=3
+fig_climate=3
+fig_histograms=4
 
 
 #Appendices
@@ -33,11 +35,15 @@ path_to_ForC= "/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db" #Krista's 
 # path_to_ForC= "/Users/kteixeira/Dropbox (Smithsonian)/GitHub/ForC-db" #Madison, to knit, you'll need to enter the path to ForC-db on your computer, then un-comment this line.
 
 # MOVE FIGURE FILES 
-#world map from GitHub
+#world map from ForC GitHub
 do.call(file.remove, list(list.files(paste0(path_to_dir, "/doc/manuscript/figures_tables"), "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE))) # first remove old file
 flist <- list.files(paste0(path_to_ForC, "/ForC/figures/"), "World_Map_of_sites_with_FAO_and_IPCC_data_sent.png", full.names = TRUE)
 file.copy(flist, paste0(path_to_dir, "/doc/manuscript/figures_tables"))
 
+#climate diagram from ForC GitHub
+do.call(file.remove, list(list.files(paste0(path_to_dir, "/doc/manuscript/figures_tables"), "Climate_of_forC_sites_IPCC.png", full.names = TRUE))) # first remove old file
+flist <- list.files(paste0(path_to_ForC, "/ForC/figures/"), "Climate_of_forC_sites_IPCC.png", full.names = TRUE)
+file.copy(flist, paste0(path_to_dir, "/doc/manuscript/figures_tables"))
 
 #Statistics
 ForC_measurements <- read.csv(paste0(path_to_ForC,"/ForC/data/ForC_measurements.csv"), stringsAsFactors = FALSE, check.names = FALSE)
@@ -64,7 +70,7 @@ n_ind_records_agb_components <- C_variables$`n independent records in ForC`[C_va
 n_ind_records_biomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass"]
 n_ind_records_rootbiomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_coarse"]
 n_ind_records_deadwood <- C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_down"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_standing"]
-n_ind_records_OL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "litter"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "O.horizon"]
+n_ind_records_OL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "O.horizon"]
 n_ind_records_TotEcosystemC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "total.ecosystem_2"] 
 n_ind_records_SOC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "SOM / SOC"] 
 n_ind_records_deltaagb <- C_variables$`n independent records in ForC`[C_variables$`variable` == "delta.agb"] 
@@ -72,12 +78,13 @@ n_ind_records_deltaOL <- C_variables$`n independent records in ForC`[C_variables
 flux_variables_with_records <- c("NPP_woody", "ANPP_woody", "ANPP_woody_stem", "ANPP_woody_branch", "woody.mortality_ag", "BNPP_root", "BNPP_root_fine","BNPP_root.turnover_fine","BNPP_root_coarse" , "ANPP_litterfall", "NPP_litter", "R_het_litter")
 n_ind_records_flux <- sum(C_variables$`n independent records in ForC`[C_variables$`variable` %in% flux_variables_with_records])
 
-n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"]
+n_records_rejected_variables = 23+5  # 23 litter, 5 NEE
+
+n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"] + n_records_rejected_variables
 n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entries start with measurement.ID = 48956
-n_records_checked = n_records_reviewed_or_added - n_records_added # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
+n_records_checked = n_records_reviewed_or_added - n_records_added  # this is hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
 
-
-n_records_sent_to_EFDB = C_variables[length(C_variables[,"variable"]), "n submitted to EFDB"] # n records sent to EFDB
+n_records_sent_to_EFDB =  C_variables[length(C_variables[,"variable"]), "n submitted to EFDB"] + n_records_rejected_variables  # n records sent to EFDB
 n_relevant_variables_no_records_sent =  sum(C_variables$`n submitted to EFDB` == 0,  na.rm = TRUE)
 n_relevant_variables_records_sent= n_relevant_variables - n_relevant_variables_no_records_sent
 n_records_sent_biomass<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass"]
@@ -87,22 +94,24 @@ n_records_sent_rootbiomass <- C_variables$`n submitted to EFDB`[C_variables$`var
 n_records_sent_rootbiomass_components <- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root_coarse"]
 n_records_sent_deadwood<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood"] 
 n_records_sent_deadwood_components<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood_down"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood_standing"]
-n_records_sent_litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "litter"] +C_variables$`n submitted to EFDB`[C_variables$`variable` == "O.horizon"]
+n_records_sent_litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "O.horizon"]
 n_records_sent_soil<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "SOM / SOC"] 
 n_records_sent_stocks = n_records_sent_biomass+n_records_sent_agb+n_records_sent_agb_components+n_records_sent_rootbiomass+n_records_sent_rootbiomass_components+n_records_sent_deadwood+n_records_sent_deadwood_components+ n_records_sent_litter+ n_records_sent_soil
 n_records_sent_delta.agb<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.agb"]
-n_records_sent_delta.litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.O.horizon"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.litter"]
+n_records_sent_delta.litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.O.horizon"]
 n_records_sent_increments <- n_records_sent_delta.agb+n_records_sent_delta.litter
 n_records_sent_fluxes <- sum(C_variables$`n submitted to EFDB`[C_variables$`variable` %in% flux_variables_with_records])
 n_records_sent_fluxes_check = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
 
 
-n_records_posted_EFDB = 376 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records")
+n_records_posted_EFDB = 1068 # n records accepted and posted in EFDB (easy to determine by entering "ForC" in the "Other Properties" search field of EFDB: https://www.ipcc-nggip.iges.or.jp/EFDB/find_ef.php. Then get number from upper left box where it says "displayed records". Updated Jan 2024)
+percent_forest_records = round(n_records_posted_EFDB/5644*100,0); #as of Jan 2024
 
 n_new_variables = 11 + 2 + 2 #delta. + woody.mortality + O horizon
 # get n fields modified
 sampling_details <- read.csv(paste0(path_to_ForC,"/ForC/database_management_records/record_of_changes.csv"), stringsAsFactors = FALSE, check.names = FALSE)
-n_fields_modified =  length(sampling_details[,"Column"]) + 4 
+n_fields_modified =  length(sampling_details[,"Field"]) + 4 
+
 
 
 ```

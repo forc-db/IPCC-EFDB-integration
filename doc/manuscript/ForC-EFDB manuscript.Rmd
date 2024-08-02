@@ -120,7 +120,7 @@ n_ind_records_agb_components <- C_variables$`n independent records in ForC`[C_va
 n_ind_records_biomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass"]
 n_ind_records_rootbiomass <- C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "biomass_root_coarse"]
 n_ind_records_deadwood <- C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_down"]+C_variables$`n independent records in ForC`[C_variables$`variable` == "deadwood_standing"]
-n_ind_records_OL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "litter"] +C_variables$`n independent records in ForC`[C_variables$`variable` == "O.horizon"]
+n_ind_records_OL <- C_variables$`n independent records in ForC`[C_variables$`variable` == "O.horizon"]
 n_ind_records_TotEcosystemC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "total.ecosystem_2"] 
 n_ind_records_SOC <- C_variables$`n independent records in ForC`[C_variables$`variable` == "SOM / SOC"] 
 n_ind_records_deltaagb <- C_variables$`n independent records in ForC`[C_variables$`variable` == "delta.agb"] 
@@ -128,12 +128,13 @@ n_ind_records_deltaOL <- C_variables$`n independent records in ForC`[C_variables
 flux_variables_with_records <- c("NPP_woody", "ANPP_woody", "ANPP_woody_stem", "ANPP_woody_branch", "woody.mortality_ag", "BNPP_root", "BNPP_root_fine","BNPP_root.turnover_fine","BNPP_root_coarse" , "ANPP_litterfall", "NPP_litter", "R_het_litter")
 n_ind_records_flux <- sum(C_variables$`n independent records in ForC`[C_variables$`variable` %in% flux_variables_with_records])
 
-n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"]
+n_records_rejected_variables = 23+5  # 23 litter, 5 NEE
+
+n_records_reviewed_or_added= C_variables[length(C_variables[,"variable"]), "n reviewed"] + n_records_rejected_variables
 n_records_added = max(ForC_measurements$measurement.ID) -48956 # Madison's entries start with measurement.ID = 48956
-n_records_checked = n_records_reviewed_or_added - n_records_added # this will be hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
+n_records_checked = n_records_reviewed_or_added - n_records_added  # this is hard to get at, but we can at least estimate a minimum (= previously existing records in records sent to EFDB)
 
-
-n_records_sent_to_EFDB = C_variables[length(C_variables[,"variable"]), "n submitted to EFDB"] # n records sent to EFDB
+n_records_sent_to_EFDB =  C_variables[length(C_variables[,"variable"]), "n submitted to EFDB"] + n_records_rejected_variables  # n records sent to EFDB
 n_relevant_variables_no_records_sent =  sum(C_variables$`n submitted to EFDB` == 0,  na.rm = TRUE)
 n_relevant_variables_records_sent= n_relevant_variables - n_relevant_variables_no_records_sent
 n_records_sent_biomass<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass"]
@@ -143,11 +144,11 @@ n_records_sent_rootbiomass <- C_variables$`n submitted to EFDB`[C_variables$`var
 n_records_sent_rootbiomass_components <- C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root_fine"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "biomass_root_coarse"]
 n_records_sent_deadwood<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood"] 
 n_records_sent_deadwood_components<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood_down"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "deadwood_standing"]
-n_records_sent_litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "litter"] +C_variables$`n submitted to EFDB`[C_variables$`variable` == "O.horizon"]
+n_records_sent_litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "O.horizon"]
 n_records_sent_soil<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "SOM / SOC"] 
 n_records_sent_stocks = n_records_sent_biomass+n_records_sent_agb+n_records_sent_agb_components+n_records_sent_rootbiomass+n_records_sent_rootbiomass_components+n_records_sent_deadwood+n_records_sent_deadwood_components+ n_records_sent_litter+ n_records_sent_soil
 n_records_sent_delta.agb<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.agb"]
-n_records_sent_delta.litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.O.horizon"]+C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.litter"]
+n_records_sent_delta.litter<- C_variables$`n submitted to EFDB`[C_variables$`variable` == "delta.O.horizon"]
 n_records_sent_increments <- n_records_sent_delta.agb+n_records_sent_delta.litter
 n_records_sent_fluxes <- sum(C_variables$`n submitted to EFDB`[C_variables$`variable` %in% flux_variables_with_records])
 n_records_sent_fluxes_check = n_records_sent_to_EFDB-n_records_sent_stocks-n_records_sent_increments
@@ -305,7 +306,7 @@ ft
 ```
 
 
-![**Figure `r fig_variable_mapping`. Schematic illustrating the carbon pools defined under IPCC Guidelines for national greenhouse gas inventories; corresponding ForC variables, and relationships among them.** For each C pool, we show ForC variables corresponding to the stock, net annual increment, influx, and outflux. Most, but not all, EFDB-relevant ForC variables are shown here. Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., minimum stem diameter censused). Additional caveats are as follows: (a,b) branch fall and mortality of stems below the minimum stem diameter censused, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, or that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter horizon (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon. **This variable is techically EFDB-relevant but not selected for submission because their is no corresponding influx variable.](figures_tables/C_variable_mapping.png)
+![**Figure `r fig_variable_mapping`. Schematic illustrating the carbon pools defined under IPCC Guidelines for national greenhouse gas inventories; corresponding ForC variables, and relationships among them.** For each C pool, we show ForC variables corresponding to the stock, net annual increment, influx, and outflux. Most, but not all, EFDB-relevant ForC variables are shown here. Correspondence of ForC variables to IPCC criteria often depends upon measurement protocols (e.g., minimum stem diameter censused). Additional caveats are as follows: (a,b) branch fall and mortality of stems below the minimum stem diameter censused, which are necessary for a full accounting of dead organic matter production but typically assumed negligible for calculations of biomass change, are excluded by common measurement practice (a) or ForC variable definition (b); (c) assumes that leaf production equals leaf fall, or that changes in foliage biomass are negligble; (d,e) belowground components excluded by common measurement practice (d) or ForC variable definition (e); (f) excludes movement of dead wood into litter through breakage or size reduction; (g) measurements often limited to litter layer (OL) and may exclude larger branches and stems classified as litter and/or the more decomposed layers of the O horizon. **This variable is techically EFDB-relevant but not selected for submission because their is no corresponding influx variable.](figures_tables/C_variable_mapping.png)
 
 
 
@@ -351,9 +352,10 @@ Once converted into EFDB format, the records were reviewed and then sent to the 
 # Results {-}
 
 As of `r format(Sys.time(), '%B %d, %Y')`<!--inserts date upon knit-->, ForC (v4.0) contained `r n_independent_records_ForC` independent records (`r n_records_ForC` total), `r n_ind_records_EFDB_variables` of which were for the `r n_relevant_variables` variables relevant to EFDB (Fig. `r fig_variable_mapping`).
-We had reviewed or added `r n_records_reviewed_or_added` records for submission to EFDB, `r n_records_sent_to_EFDB` of which met the criteria for submission, and `r n_records_posted_EFDB` of which had been reviewed by EFDB's review panel, accepted, and posted (`r table_variables`).
+We had reviewed or added `r n_records_reviewed_or_added` records for submission to EFDB, `r n_records_sent_to_EFDB` of which had been submitted, and `r n_records_posted_EFDB` of which had been reviewed by EFDB's review panel, accepted, and posted (`r table_variables`).
 The `r round((n_records_reviewed_or_added -n_records_sent_to_EFDB )/n_records_reviewed_or_added,2)*100`% discrepancy between records we reviewed and those submitted to EFDB was due to the presence of digitized records and records where a variable's value had been calculated as the sum or difference of related variables rather than presented directly in the text.
-The discrepancy between the number of records sent and that posted to EFDB is because some records (`r round((1-(n_records_posted_EFDB/n_records_sent_to_EFDB)),2)*100`%) were deemed not applicable to EFDB by the review panel.
+The discrepancy between the number of records submitted and that posted to EFDB is because some records (`r round((1-(n_records_posted_EFDB/n_records_sent_to_EFDB)),2)*100`%) were deemed not applicable to EFDB by the review panel.
+Reasons included -- but were not limited to -- non-applicability to the IPCC methodology of the variable submitted (e.g., net ecosystem CO~2~ exchange, litter - OL layer; subsequently excluded from lists of relevant variables and counts of relevant records), inadequate information on the quality of data and thus on its replicability (e.g., confidence interval/uncertainty), and vaguely described disturbance histories (e.g., "moderately"/ "severely" burned). 
 As of `r format(Sys.time(), '%B %d, %Y')`, the `r n_records_sent_to_EFDB` ForC records posted in EFDB represented `r percent_forest_records`% of the total EFDB records for forest land.
 
 
@@ -368,7 +370,7 @@ The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) o
 `r round(n_records_sent_rootbiomass_components/n_records_sent_to_EFDB,2)*100`% for components of root biomass (coarse or fine roots), 
 `r round(n_records_sent_deadwood/n_records_sent_to_EFDB,2)*100`% for dead wood, 
 `r round(n_records_sent_deadwood_components/n_records_sent_to_EFDB,2)*100`% for components of dead wood (standing or fallen), 
-`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (entire O horizon or OL layer component),
+`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (entire O horizon),
 and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for SOM/ SOC.
 Increment records totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records submitted, all but four of which described aboveground biomass.
 The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records submitted described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, a subset of which also described inputs to the dead wood or litter pool (Fig. `r fig_variable_mapping`,`r table_variables`).
