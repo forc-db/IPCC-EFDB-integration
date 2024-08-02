@@ -54,7 +54,7 @@ The aims of the study are clearly identified and very relevant to the community,
 
 The results section is however disconcerting, partly because it is not clearly structured, and partly because it is quite unclear what point authors wanted to make out of the few graphs presented.
 
-*(NEEDS RESPONSE)*
+**We believe that the responses to specific concerns (detailed below) help to clarify the message. This section is intended as a straightforward, objective assessment of the data available through ForC and submitted to EFDB, and is not intended to make a particular point.**
 
 The first paragraph is about records with deficiencies, a fraction being “deemed not applicable to EFDB…”. This is not informative at all in absence of a series of well-identified examples. Quite verbose but not that useful.
 
@@ -80,7 +80,9 @@ Fig. 3 *(now 4)* isn’t conclusive either because ecozones have different sizes
 
 Consequently, the “Database needs” as discussed L297 are not convincingly demonstrated by the results which are limited to just frequencies. Overall the discussion seems somewhat verbose.
 
-*(NEEDS RESPONSE)*
+**We believe that the changes to the results section and figures now convincingly demonstrate the claims in the discussion.**
+
+*(VERBOSITY CRITICISM NEEDS RESPONSE)*
 
 Some parts of the writing are a bit frustrating, as they suggest that authors have some relevant information that they do not share:
 
