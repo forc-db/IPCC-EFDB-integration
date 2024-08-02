@@ -482,7 +482,7 @@ We view the system developed here for submitting ForC data to the IPCC EFDB as o
 We gratefully acknowledge the substantial contributions of Valentyna Slivinska and Sandro Federici for collaboration on the conception, design, and technical review of this project.
 Thank you to all researchers who collected and published the data contained in ForC, and to all research assistants and collaborators who have contributed to building the database.
 Thank you to Avni Malhotra for helpful comments on an earlier draft of this manuscript.
-Funding for this study was provided by the Smithsonian (Forest Global Earth Observatory, Smithsonian Working Land and Seascapes); a Bezos Earth Fund grant to the Nature Conservancy, with a sub-grant to NZCBI; and the Institute for Global Environmental Strategies.
+Funding for this study was provided by the Smithsonian (Forest Global Earth Observatory, Smithsonian Working Land and Seascapes) and a Bezos Earth Fund grant to the Nature Conservancy with a sub-grant to NZCBI.
 
 # Author Contribution {-}
 KAT and VH conceived and designed the project; VH wrote the scripts for database management, data submission to EFDB, and the analyses presented here; MW, TR, and RBM added and reviewed ForC data, BBL and SCP contributed large databases to ForC (EFDB and GROA, respectively); CP provided methodological expertise; KAT, VH, and MW prepared the first draft of the manuscript; all authors reviewed the results and approved the final version of the manuscript.
