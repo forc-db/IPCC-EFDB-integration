@@ -54,17 +54,17 @@ The aims of the study are clearly identified and very relevant to the community,
 
 The results section is however disconcerting, partly because it is not clearly structured, and partly because it is quite unclear what point authors wanted to make out of the few graphs presented.
 
-**We believe that the responses to specific concerns (detailed below) help to clarify the message. This section is intended as a straightforward, objective assessment of the data available through ForC and submitted to EFDB, and is not intended to make a particular point.**
+**To help clarify the message, we have responded to specific concerns (detailed below) and done some reorganization and rewording to make it less verbose. Our aim has been to present an objective overview of the ForC data contributed to EFDB and the potential for future submissions to improve EFDB data volume and composition.**
 
 The first paragraph is about records with deficiencies, a fraction being “deemed not applicable to EFDB…”. This is not informative at all in absence of a series of well-identified examples. Quite verbose but not that useful.
 
-**We have added a sentence detailing some of the reasons for rejection: "Reasons included -- but were not limited to -- non-applicability to the IPCC methodology of the variable submitted (e.g., net ecosystem CO~2~ exchange, litter - OL layer; subsequently excluded from lists of relevant variables and counts of relevant records), inadequate information on the quality of data and thus on its replicability (e.g., confidence interval/uncertainty), and vaguely described disturbance histories (e.g., "moderately"/ "severely" burned)."**
+**We have added a sentence detailing some of the reasons for rejection: "Reasons included -- but were not limited to -- non-applicability to the IPCC methodology of the variable submitted (e.g., net ecosystem CO~2~ exchange, litter - OL layer; subsequently excluded from lists of relevant variables and counts of relevant records), inadequate information on the quality of data and thus on its replicability (e.g., confidence interval/uncertainty), and vaguely described disturbance histories (e.g., "moderately"/ "severely" burned)." We also note that the authors of this study were not privy to the discussions of the review panel and do not have detailed information on all reasons for rejection of each record.**
 
-**We also note that the authors of this study were not privy to the discussions of the review panel and do not have detailed information on all reasons for rejection of each record.**
+**In addition, we have reworded and reorganized this paragraph (and the following) to make it less verbose.**
 
 Another example, the map (Fig 2) is fine as an illustration or proof of the global participation to the efforts of reporting, but it doesn’t help identify the gaps in the current reporting. Some vegetation types are well represented, others have a serious deficit. Identifying and quantifying this, for instance in terms of report per area, would have been a more eloquent and useful than a map. The imbalance in the data goes for the below/aboveground compartments too.
 
-**We have made some of the suggested revisions (detailed below) to improve the assessment of data representativeness and consider this to be an important improvement. At the same time, we also wish to emphasize that the goal of this paper was to document the process and provide an overview of the types of data submitted, as opposed to submitting data that adequately represents all forest types and documenting their representativeness. The latter -- to the extent that it would even be possible -- would be a massive project far beyond the scope of this paper. Therefore, while improving the assessment of data representativeness, we believe it would be overkill to analyze all aspects of representativeness.**
+<!--**We have made many of the suggested revisions (detailed below) to improve the assessment of data representativeness and consider this to be an important improvement. At the same time, we also wish to emphasize that the goal of this paper was to document the process and provide an overview of the types of data submitted, as opposed to submitting data that adequately represents all forest types and documenting their representativeness. The latter -- to the extent that it would even be possible -- would be a massive project far beyond the scope of this paper. Therefore, while improving the assessment of data representativeness, we believe it would be overkill to analyze all aspects of representativeness.**-->
 
 **We have added a graph to the map (Fig. `r fig_map`) showing the proportional breakdown by FAO ecozone of (1) area with tree cover, (2) sites and records submitted to EFDB, (3) sites and records submitted to EFDB. We have also added a statement on relative representation by biome: "Relative to forested area, submitted data under-represented the tropics and over-represented temperate regions, mirroring the composition of ForC (Fig. `r fig_map`)."**
 
@@ -116,7 +116,7 @@ The summary lists up a point on human’s influence on earth’s climate, which 
 L239: “The 37% attenuation between records we reviewed and those submitted…”
 Why “attenuation”?, it seems to be a mere discrepancy, or deficit.
 
-**We have changed this word to "discrepancy".**
+**This sentence has been reworded.**
 
 In conclusion, although the aims and principle seem simple, the results are both vague and expeditive, resulting in a rather unconvincing article. Some efforts to make results more relevant, and some more details on key aspects would help.
 
