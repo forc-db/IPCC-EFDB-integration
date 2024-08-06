@@ -360,21 +360,6 @@ Of `r n_records_sent_to_EFDB` submitted records, EFDB's review panel accepted an
 Reasons included -- but were not limited to -- non-applicability to the IPCC methodology of the variable submitted (e.g., net ecosystem CO~2~ exchange, litter - OL layer; subsequently excluded from lists of relevant variables and counts of relevant records), inadequate information on the quality of data and thus on its replicability (e.g., confidence interval/uncertainty), and imprecisely described disturbance histories (e.g., "moderately"/ "severely" burned).
 An iterative process of data submission review by the EFDB Technical Support Unit and review panel greatly improved but did not perfect (100% acceptance rate) our process.
 
-In terms of variables, ForC v4.0 contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables (or closely-related variable groups) relevant to EFDB (Fig. `r fig_variable_mapping`,  `r table_variables`).
-The records submitted to EFDB (`r n_relevant_variables_records_sent` variables) were very unevenly distributed across variables, mirroring the composition of ForC (`r table_variables`). 
-The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) of records submitted were for C stocks, including
-`r round(n_records_sent_biomass/n_records_sent_to_EFDB,2)*100`% for total biomass, 
-`r round(n_records_sent_agb/n_records_sent_to_EFDB,2)*100`% for aboveground biomass,
-`r round(n_records_sent_agb_components/n_records_sent_to_EFDB,2)*100`% for components of aboveground biomass (wood or foliage), 
-`r round((n_records_sent_rootbiomass+n_records_sent_rootbiomass_components)/n_records_sent_to_EFDB,2)*100`% for root biomass or its components, 
-`r round((n_records_sent_deadwood+n_records_sent_deadwood_components)/n_records_sent_to_EFDB,2)*100`% for dead wood or its components, 
-`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (O horizon),
-and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for soils.
-Increment records (mostly for aboveground biomass) totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records submitted.
-The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records submitted described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, with some also describing inputs to dead wood or litter pools (Fig. `r fig_variable_mapping`,`r table_variables`).
-Many of the EFDB-relevant variables remain poorly represented in ForC (`r table_variables`).
-
-
 
 ForC v4.0 records -- and the subset submitted to EFDB -- were unevenly distributed across all forested continents, biomes, and forest types (Figs. `r fig_map`-`r fig_histograms`).
 Relative to forested area, submitted data under-represented the tropics and over-represented temperate regions, mirroring the composition of ForC (Figs. `r fig_map`, `r fig_histograms`b).
@@ -397,6 +382,19 @@ In terms of stand age, the most represented age class was 20-100 years, followed
 
 ![**Figure `r fig_histograms`. Histograms of number of independent records in ForC relevant (grey) and submitted (black) to EFDB (both left axis), along with the relative global area of each type (red, right axis), organized by (a) dominant vegetation type, (b) FAO ecozone, (c) continent, and (d) stand age.** For dominant vegetation (a), 'Other' includes deciduous needleleaf, mixed broadleaf- needleleaf, non-woody vegetation (e.g., early successional), and incompletely classified or mixed forest types. Global coverage of each was obtained from SYNMAP (Jung *et al*, 2006). For FAO ecozones (b), codes are as listed in the caption of Figure `r fig_map`. The relative area of forests by age class was obtained from the global forest age database of Besnard *et al.* (2021, 2024).  ](figures_tables/Histogram_n_Relevant_and_Transferred_Records.png)
 
+In terms of variables, ForC v4.0 contained records for `r n_relevant_variables_with_data` of the `r n_relevant_variables` variables (or closely-related variable groups) relevant to EFDB (Fig. `r fig_variable_mapping`,  `r table_variables`).
+The records submitted to EFDB (`r n_relevant_variables_records_sent` variables) were very unevenly distributed across variables, mirroring the composition of ForC (`r table_variables`). 
+The majority (`r round(n_records_sent_stocks/n_records_sent_to_EFDB, 2)*100`%) of records submitted were for C stocks, including
+`r round(n_records_sent_biomass/n_records_sent_to_EFDB,2)*100`% for total biomass, 
+`r round(n_records_sent_agb/n_records_sent_to_EFDB,2)*100`% for aboveground biomass,
+`r round(n_records_sent_agb_components/n_records_sent_to_EFDB,2)*100`% for components of aboveground biomass (wood or foliage), 
+`r round((n_records_sent_rootbiomass+n_records_sent_rootbiomass_components)/n_records_sent_to_EFDB,2)*100`% for root biomass or its components, 
+`r round((n_records_sent_deadwood+n_records_sent_deadwood_components)/n_records_sent_to_EFDB,2)*100`% for dead wood or its components, 
+`r round(n_records_sent_litter/n_records_sent_to_EFDB,2)*100`% for litter (O horizon),
+and `r round(n_records_sent_soil/n_records_sent_to_EFDB,2)*100`% for soils.
+Increment records (mostly for aboveground biomass) totaled `r round(n_records_sent_increments/n_records_sent_to_EFDB*100, 0)`% of records submitted.
+The remaining `r round(n_records_sent_fluxes/n_records_sent_to_EFDB*100, 0)`% of records submitted described fluxes, all of which were either inputs or outputs to the aboveground biomass pool, with some also describing inputs to dead wood or litter pools (Fig. `r fig_variable_mapping`,`r table_variables`).
+Many of the EFDB-relevant variables remain poorly represented in ForC (`r table_variables`).
 
 
 
