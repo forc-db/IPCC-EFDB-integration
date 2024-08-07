@@ -165,7 +165,7 @@ We also checked that existing ForC records were complete and correct.
 
 Manual review of records was the limiting step for data submission to EFDB. 
 We prioritized review of
-(1) records from the Forest Global Earth Observatory [ForestGEO, @anderson-teixeira_ctfsforestgeo_2015; @davies_forestgeo_2021],
+(1) records from the Forest Global Earth Observatory [ForestGEO, @anderson-teixeira_ctfsforestgeo_2015; @davies_forestgeo_2021], which are familiar to our team and generally high quality,
 (2) studies with confidence intervals recorded in ForC (because uncertainty estimates are important to the IPCC),
 (3) original publications containing large numbers of EFDB-relevant records,
 and (4) records from tropical regions.
