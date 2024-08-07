@@ -32,7 +32,15 @@ table_variables ="Table S3"
 
 Dear Editor:
 
-Below please find our responses to reviews for our manuscript ' Informing forest carbon inventories under the Paris Agreement using ground-based forest monitoring data' (PPP-MT-2024-00903). We have addressed all points, as detailed below.
+Below please find our responses to reviews for our manuscript ' Informing forest carbon inventories under the Paris Agreement using ground-based forest monitoring data' (PPP-MT-2024-00903). We have addressed all points, as detailed below. The most important changes have been:
+
+1. In order to give a better picture of the representativeness of the submitted data (requested by reviewer 1), we revised two of the figures (global map, histogram of submitted data) and added one new figure (a Whittaker-style diagram showing ForC sites and those with submitted data within the MAT-MAP climate space (new Fig. `r fig_climate`).
+
+2. We have given some more specifics about the process (requested by reviewer 1), as well as specific recommendations (requested by reviewer 2).
+
+3. We have revised the text to make it clearer and less verbose (requested by reviewer 1).
+
+We believe these changes have signficantly improved the manuscript. Thank you for your consideration, and we look forward to receiving your decision.
 
 Sincerely,
 
@@ -105,7 +113,7 @@ L300. So far, only ~7% of the EFDB-relevant data in ForC have been submitted to 
 How do you get that number? What are those 7% and what consequences does this have?
 Providing concrete examples of mistakes to avoid would have been very appreciable, and made the text sound less theoretical.
 
-**We now clarify what is meant by the 7% in the first sentence of the Results section: "...we had submitted to EFBD only a fraction (~`r round(n_records_sent_to_EFDB/n_ind_records_EFDB_variables,2)*100`%) of potentially relevant ForC records (i.e., records for EFDB-relevant variables)..."**
+**We now clarify what is meant by the 7% in the first sentence of the Results section: "...we had submitted to EFBD only a fraction (~7%) of potentially relevant ForC records (i.e., records for EFDB-relevant variables)..."**
 
 **We have also made several changes to give more information on our process. For example, in the methods (section 3), we now refer readers to Methods S1 for a description of how we prioritized ForC records for review. We also added a description of our iterative process of submission, review, and improvement of our process: "Submissions were sent in six batches between April 2021 and June 2022, and feedback on each batch from the EFDB team was used to improve our system for subsequent submissions." (methods, section 3)... "The iterative process of review by EFDB's Technical Support Unit and review panel significantly improved our process, though it did not achieve a 100% acceptance rate." (results, end of 1st paragraph)**
 
