@@ -84,7 +84,7 @@ Consequently, the “Database needs” as discussed L297 are not convincingly de
 
 Overall the discussion seems somewhat verbose.
 
-*(VERBOSITY CRITICISM NEEDS RESPONSE)*
+**We have reviewed and revised the discussion, removing extra verbosity where possible.**
 
 Some parts of the writing are a bit frustrating, as they suggest that authors have some relevant information that they do not share:
 
