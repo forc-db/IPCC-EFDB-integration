@@ -145,7 +145,7 @@ for(i in 1:length(labels)){
 }
 
 all_data <- all_data %>% mutate(panel = factor(panel, levels = c("(a) Dominant vegetation", "(b) FAO ecozone", "(c) Continent", "(d) Stand age")),
-                                name = factor(name, levels= (c(all_data %>% filter(!panel %in% "Stand age", !name %in%  c("Other", "Unclassified")) %>% arrange(panel, -value) %>% pull(name) %>% unique(), all_data %>% filter(panel %in% "Stand age", !name %in%  c("Other", "Unclassified")) %>% pull(name) %>% unique(), c("Other", "Unclassified")) %>% unique())),
+                                name = factor(name, levels= (c(all_data %>% filter(!panel %in% "(d) Stand age", !name %in%  c("Other", "Unclassified")) %>% arrange(panel, -value) %>% pull(name) %>% unique(), all_data %>% filter(panel %in% "(d) Stand age", !name %in%  c("Other", "Unclassified")) %>% pull(name) %>% unique(), c("Other", "Unclassified")) %>% unique())),
                                 group = factor(ifelse(what %in% "global area", what, "data"), levels = c("global area", "data")),
                                 what = factor(what, levels = c("potentially relevant", "submitted","global area")))
 
