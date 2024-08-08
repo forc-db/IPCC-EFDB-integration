@@ -81,7 +81,7 @@ ForC_simplified <- ForC_simplified[ForC_simplified$variable.name %in% V_mapping$
 ## x axis is dominant vegetation type
 load("scripts/X_area_of_forest_categories_for_barplot.RData")
 
-ForBarplot <- data.frame(data_type = rep(c("relevant", "submitted"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg), FAO.ecozone = c(ForC_simplified$FAO.ecozone, ForC_simplified_already_sent$FAO.ecozone), continent = c(ForC_simplified$continent, ForC_simplified_already_sent$continent), stand.age = c(ForC_simplified$stand.age, ForC_simplified_already_sent$stand.age))
+ForBarplot <- data.frame(data_type = rep(c("potentially relevant", "submitted"),  times= c(nrow(ForC_simplified), nrow(ForC_simplified_already_sent))), dominant.veg = c(ForC_simplified$dominant.veg, ForC_simplified_already_sent$dominant.veg), FAO.ecozone = c(ForC_simplified$FAO.ecozone, ForC_simplified_already_sent$FAO.ecozone), continent = c(ForC_simplified$continent, ForC_simplified_already_sent$continent), stand.age = c(ForC_simplified$stand.age, ForC_simplified_already_sent$stand.age))
 
 ForBarplot$stand.age <- addNA(cut(as.numeric(ForBarplot$stand.age), breaks = c(0, 20, 100, 10000), labels = c("<20 yrs", "20-100 yrs", ">100 yrs" )))
 levels(ForBarplot$stand.age)[4] <- "Unclassified"
@@ -93,10 +93,10 @@ ForBarplot$FAO.ecozone[is.na(ForBarplot$FAO.ecozone)] <- "Unclassified"
 
 # ForBarplot$continent <- gsub(" ", "\n", ForBarplot$continent)
 
-labels <- list(A = list("dominant.veg", "Dominant vegetation", F, dom_veg_areas),
-               B = list("FAO.ecozone", "FAO ecozone", T, FAO_ecozone_areas),
-               C = list("continent", "Continent", F, continents_areas),
-               D = list("stand.age", "Stand age", F, stand_age_area))
+labels <- list(A = list("dominant.veg", "(a) Dominant vegetation", F, dom_veg_areas),
+               B = list("FAO.ecozone", "(b) FAO ecozone", T, FAO_ecozone_areas),
+               C = list("continent", "(c) Continent", F, continents_areas),
+               D = list("stand.age", "(d) Stand age", F, stand_age_area))
 
 
 all_data = NULL
@@ -144,26 +144,32 @@ for(i in 1:length(labels)){
   all_data <- rbind(all_data, bp_long)
 }
 
-all_data <- all_data %>% mutate(panel = factor(panel, levels = c("Dominant vegetation", "FAO ecozone", "Continent", "Stand age")),
+all_data <- all_data %>% mutate(panel = factor(panel, levels = c("(a) Dominant vegetation", "(b) FAO ecozone", "(c) Continent", "(d) Stand age")),
                                 name = factor(name, levels= (c(all_data %>% filter(!panel %in% "Stand age", !name %in%  c("Other", "Unclassified")) %>% arrange(panel, -value) %>% pull(name) %>% unique(), all_data %>% filter(panel %in% "Stand age", !name %in%  c("Other", "Unclassified")) %>% pull(name) %>% unique(), c("Other", "Unclassified")) %>% unique())),
                                 group = factor(ifelse(what %in% "global area", what, "data"), levels = c("global area", "data")),
-                                what = factor(what, levels = c( "relevant", "submitted","global area")))
+                                what = factor(what, levels = c("potentially relevant", "submitted","global area")))
 
 
 ggplot(all_data, aes(x=name, y = scaled_value, fill= what, group = group)) + 
   geom_col( position= position_dodge2(reverse = T)) +
-  scale_y_continuous(sec.axis = sec_axis(~ . / (max(bp)/100), name = "Relative Area (%)"))+
+  scale_y_continuous(sec.axis = sec_axis(~ . / (max(bp)/100), name = "Relative Area (%)"), limits = range(all_data$scaled_value, na.rm = T))+
   labs(y="Number of records", x = "", fill = "") + 
-  scale_fill_manual(values = c(relevant = "grey", submitted = "grey15", "global area" = "tomato3")) +
-  facet_wrap(~panel, scale = "free_x")  + 
+  scale_fill_manual(values = c('potentially relevant' = "grey", submitted = "grey15", "global area" = "tomato3")) +
+  facet_wrap(~panel, scale = "free")  + 
+  theme_bw() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         axis.title.y.right =  element_text(colour = "tomato3"),
         axis.ticks.y.right = element_line(colour = "tomato3"),
         axis.text.y.right = element_text(colour = "tomato3"),
-        legend.position = "bottom"
-  ) 
+        axis.line.y.right = element_line(colour = "tomato3"),
+        legend.position = c(0.88, 0.9),
+        legend.text.position = "left",
+        legend.background = element_rect(fill = NA, colour = NA),
+        strip.background = element_rect(colour = "white", fill = "white"),
+        strip.text = element_text(hjust = 0)
+  )
 
-ggsave("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 8, units = "in", dpi = 300)
+ggsave("doc/manuscript/figures_tables/Histogram_n_Relevant_and_Transferred_Records.png", width = 8, height = 6, units = "in", dpi = 300)
 
 
 # ---- END OF FIGURE FOR PAPER ----#
