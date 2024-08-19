@@ -34,7 +34,7 @@ Dear Editor:
 
 Below please find our responses to reviews for our manuscript ' Informing forest carbon inventories under the Paris Agreement using ground-based forest monitoring data' (PPP-MT-2024-00903). We have addressed all points, as detailed below. The most important changes have been:
 
-1. In order to give a better picture of the representativeness of the submitted data (requested by reviewer 1), we revised two of the figures (global map, histogram of submitted data) and added one new figure (a Whittaker-style diagram showing ForC sites and those with submitted data within the MAT-MAP climate space (new Fig. `r fig_climate`).
+1. In order to give a better picture of the representativeness of the submitted data (requested by reviewer 1), we revised two of the figures (global map, histogram of submitted data) and added one new figure (a Whittaker-style diagram showing ForC sites and those with submitted data within the MAT-MAP climate space; new Fig. `r fig_climate`).
 
 2. We have given some more specifics about the process (requested by reviewer 1), as well as specific recommendations (requested by reviewer 2).
 
@@ -74,13 +74,13 @@ Another example, the map (Fig 2) is fine as an illustration or proof of the glob
 
 <!--**We have made many of the suggested revisions (detailed below) to improve the assessment of data representativeness and consider this to be an important improvement. At the same time, we also wish to emphasize that the goal of this paper was to document the process and provide an overview of the types of data submitted, as opposed to submitting data that adequately represents all forest types and documenting their representativeness. The latter -- to the extent that it would even be possible -- would be a massive project far beyond the scope of this paper. Therefore, while improving the assessment of data representativeness, we believe it would be overkill to analyze all aspects of representativeness.**-->
 
-**We have added a graph to the map (Fig. `r fig_map`) showing the proportional breakdown by FAO ecozone of (1) area with tree cover, (2) sites and records submitted to EFDB, (3) sites and records submitted to EFDB. We have also added a statement on relative representation by biome: "Relative to forested area, submitted data under-represented the tropics and over-represented temperate regions, reflecting the composition of ForC (Fig. `r fig_map`)."**
+**We have added a graph to the map (Fig. `r fig_map`) showing the proportional breakdown by FAO ecozone of (1) area with tree cover, (2) sites and records potentially relevant to EFDB, (3) sites and records submitted to EFDB. We have also added a statement on relative representation by biome: "Relative to forested area, submitted data under-represented the tropics and over-represented temperate regions, reflecting the composition of ForC (Fig. `r fig_map`)."**
 
 **To assess the data distribution within in the global climate space, we have added a Whittaker-style diagram showing ForC sites and those with submitted data within the MAT-MAP climate space (new Fig. `r fig_climate`). We have also added a statement on climate representativity: "Submitted data were concentrated in climates that are relatively common over Earth's land area and covered all forested climates with substantial land area except the colder boreal regions (boreal tundra woodland; Figs. `r fig_map`, `r fig_climate`)." **
 
 **Regarding imbalance among variable types, `r table_variables` provides a complete record of the numbers of records in ForC and submitted to EFDB. We feel that further analyzing by categories such as ecozone or age would be overkill, make the manuscript too long, and of little interest to most readers.** 
 
-Fig. 3 *(now 4)* isn’t conclusive either because ecozones have different sizes, so the number of reports on itself is not a sufficient to evaluate the coverage. The representativity of the data within an ecozone depends on the variability between records: if they all cover the same age classes, again, the representativity is bad.
+Fig. 3 **(now 4)** isn’t conclusive either because ecozones have different sizes, so the number of reports on itself is not a sufficient to evaluate the coverage. The representativity of the data within an ecozone depends on the variability between records: if they all cover the same age classes, again, the representativity is bad.
 
 **To evaluate the coverage, we have modified this figure to include bars representing the relative area (% of global) of each category and added some text summarizing the results/ citing this figure (2nd paragraph in Results).**
 
@@ -107,7 +107,7 @@ L226 “To submit complete, reviewed ForC records into EFDB, we created R script
 What are those scripts?
 Why not share these scripts?
 
-**These scripts are publicly available in the associated GitHub repository (https://github.com/forc-db/IPCC-EFDB-integration) and also archived in Zenodo. This is explained in our data availability statement, but that fact is easy to miss. To ensure that this is clear to readers, we have modified this statement to read: "To submit complete, reviewed ForC records into EFDB, we created R scripts to restructure ForC records and populate EFDB's bulk import form (publicly available; see Data Availability Statement).**
+**These scripts are publicly available in the associated GitHub repository (https://github.com/forc-db/IPCC-EFDB-integration) and also archived in Zenodo. This is explained in our data availability statement, but that fact was easy to miss. To ensure that this is clear to readers, we have modified this statement to read: "To submit complete, reviewed ForC records into EFDB, we created R scripts to restructure ForC records and populate EFDB's bulk import form (publicly available; see Data Availability Statement)."**
 
 L300. So far, only ~7% of the EFDB-relevant data in ForC have been submitted to EFDB.
 How do you get that number? What are those 7% and what consequences does this have?

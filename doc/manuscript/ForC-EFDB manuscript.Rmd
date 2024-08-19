@@ -279,7 +279,7 @@ There were two cases in which more complex mapping was required: (1) mapping of 
 ### Carbon cycle variables {-}
 
 Working in consultation with the EFDB Technical Support Unit and referencing IPCC guidance [@ipcc_good_2003; @ipcc_2006_2006; @ipcc_2019_2019], we identified ForC variables that were relevant to the IPCC methodology and EFDB (Fig. `r fig_variable_mapping`, `r appendix_IPCC_definitions`).
-These included  organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes for each IPCC-defied C pool (Table `r table_pools`, Fig. `r fig_variable_mapping`).
+These included  organic matter or C stocks, net annual increments, influxes (a.k.a. "gross annual increments" by IPCC), and outfluxes for each IPCC-defined C pool (Table `r table_pools`, Fig. `r fig_variable_mapping`).
 It is important to note that the correspondence of ForC variables to IPCC criteria often depends upon measurement protocols ("important sources of estimate variation" in Table `r table_pools`).
 For example, ForC records of biomass and dead wood vary in the minimum stem diameter censused, such that some records would match the IPCC criteria whereas others would not.
 Information on minimum diameters censused and other important sources of methodological variation were mapped into EFDB (`r table_ForCfieldmapping`).
@@ -471,8 +471,8 @@ ft
 # Conclusions {-}
 
 As human society strives to achieve net-zero greenhouse gas emissions, forest researchers can make their research more useful for forest C inventories under IPCC guidelines by calculating and reporting results in ways that are consistent with methodologies provided in the IPCC guidelines (Tables `r table_pools`, `r table_recommendations`).
-In addition, substantial investments in research and researchers focused on ground-based measurement of forest C will be required to fill knowledge gaps and thereby increase the accuracy of forest CO~2~ inventories for forest lands under the Paris Agreement. 
-This challenge is heightened by the fact that forests are changing rapidly [e.g., @mcdowell_pervasive_2020], and data collected a decade or more in the past may be increasingly less accurate.
+In addition, substantial investments in research and researchers focused on ground-based measurement of forest C will be required to fill knowledge gaps and thereby increase the accuracy of C inventories for forest lands under the Paris Agreement. 
+This challenge is heightened by the fact that forests are changing rapidly [e.g., @mcdowell_pervasive_2020], making data collected a decade or more in the past increasingly unreliable.
 This heightens the need for an efficient system of making forest C data accessible for national greenhouse gas inventories.
 We view the system developed here for submitting ForC data to the IPCC EFDB as one important step towards that goal.
 

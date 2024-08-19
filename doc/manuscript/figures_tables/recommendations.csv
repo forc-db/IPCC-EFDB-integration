@@ -1,5 +1,5 @@
 ﻿criteria,recommendation,rationale
-variables to include,"When possible, calculate and present all relevant variables that can be readily estimated based on available data. ",Estimates of relevant variables are not always calcualted.
+variables to include,"When possible, calculate and present all relevant variables that can be readily estimated based on available data. ",Estimates of relevant variables are not always calculated.
 forest census methods,"Adopt IPCC guidelines (country-specific) for minimum stem size in censues in census and reporting. Ideally, census stem down to the smallest diameter feasible. ","IPCC biomass pool definition includes all living vegetation, but understory may be excluded when contribution is minor."
 ,Census all taxa crontributing signficantly to biomass,IPCC biomass pool definition includes all living vegetation.
 dead organic matter sampling,"Adopt IPCC recommendations for minimum diameter of deadwood (country-specific, default 10 cm).",Diameter cutoff must be applied consistently by each country.
