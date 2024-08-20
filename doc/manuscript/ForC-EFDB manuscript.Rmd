@@ -336,7 +336,7 @@ Having implemented these changes, which are described in detail in `r appendix_F
 
 ## 3. Submission of ForC data to EFDB {-}
 
-To submit complete, reviewed ForC records tp EFDB, we created R scripts to restructure ForC records and populate EFDB's bulk import form (publicly available; see **Data Availability Statement**).
+To submit complete, reviewed ForC records to EFDB, we created R scripts to restructure ForC records and populate EFDB's bulk import form (publicly available; see **Data Availability Statement**).
 Criteria for data submission were that
 (1) records had been checked against the original study and determined to be complete and correct, and as originally presented,
 (2) all relevant records within the publication were included in ForC,
